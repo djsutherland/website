@@ -1,0 +1,79 @@
+a, a:visited {
+    text-decoration: none;
+    color: blue;
+}
+a:hover, a:visited:hover {
+    color: red;
+    text-decoration: underline;
+}
+body {
+    font-size: 14px;
+    font-family: Palatino, Helvetica, Arial, sans-serif;
+}
+#content {
+    margin: 5em auto;
+    max-width: 53em; min-width: 40em; width: 90%;
+}
+h1 {
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+li {
+    margin-bottom: 5px;
+}
+.code {
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+.block {
+    margin-left: 15px;
+}
+#back {
+    text-align: center;
+}
+.centered {
+    text-align: center;
+}
+
+
+/* home page */
+img#me {
+    float: right;
+    margin-left: 10px;
+    height: 220px;
+}
+
+
+.paper {
+    margin-top: 1em;
+    display: list-item;
+    list-style-type: square;
+}
+.paper .title {
+    font-style: italic;
+    display: block;
+}
+.paper .authors {
+    display: block;
+}
+.paper .venue {
+    display: block;
+}
+.paper .workshop .venue {
+    display: inline;
+}
+.paper a {
+    color: #00a;
+}
+.paper a:hover {
+    color: red;
+}
+.equal {
+    color: #c33;
+}
+.workshop {
+    margin-left: 3em;
+    margin-top: 1ex;
+}
+.paper .links {
+    text-align: right;
+}
