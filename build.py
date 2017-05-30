@@ -1,5 +1,8 @@
 #!/usr/bin/env python
+from __future__ import unicode_literals
+
 import argparse
+import io
 import json
 import os
 
@@ -10,7 +13,7 @@ _dir = os.path.abspath(os.path.dirname(__file__))
 
 
 def paper_data():
-    with open(os.path.join(_dir, "papers.json")) as f:
+    with io.open(os.path.join(_dir, "papers.json")) as f:
         return json.load(f)
 
 def venue_url(venue, year=None):
