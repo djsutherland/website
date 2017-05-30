@@ -209,11 +209,15 @@
     }
     , "csd": {
         "name": "Computer Science Department, Carnegie Mellon University"
+      , "school": "Carnegie Mellon University"
+      , "department": "Computer Science Department"
       , "type": "phd-thesis"
     }
     , "swat": {
         "name": "Computer Science Department, Swarthmore College"
       , "type": "ba-thesis"
+      , "school": "Swarthmore College"
+      , "department": "Computer Science Department"
     }
     , "nss": {
         "name": "IEEE Nuclear Science Symposium"
@@ -252,6 +256,7 @@
     , {
         "key": "caponnetto-fix"
       , "title": "Fixing an error in Caponnetto and de Vito (2007)"
+      , "bibtex_title": "Fixing an error in {C}aponnetto and de {V}ito (2007)"
       , "authors": ["me"]
       , "arXiv": "1702.02982"
       , "venue": "tech-report"
@@ -260,6 +265,7 @@
     , {
         "key": "trump-clinton"
       , "title": "Understanding the 2016 US Presidential Election using ecological inference and distribution regression with census microdata"
+      , "bibtex_title": "Understanding the 2016 {US} Presidential Election using ecological inference and distribution regression with census microdata"
       , "authors": ["seth", "me", "yu-xiang", "yee-whye"]
       , "arXiv": "1611.03787"
       , "related": [
@@ -317,12 +323,10 @@
       , "authors": ["michelle", "hy", "me", "sebastian", "barnabas", "jeff"]
       , "venue": "ApJ"
       , "year": "2016"
-      , "venue_extra": {
-          "volume": 831
-        , "number": 2
-        , "pages": "135"
-      }
-      , "official": "https://dx.doi.org/10.3847/0004-637X/831/2/135"
+      , "volume": "831"
+      , "number": "2"
+      , "pages": "135"
+      , "doi": "10.3847/0004-637X/831/2/135"
       , "arXiv": "1509.05409"
     }
     , {
@@ -352,6 +356,7 @@
     , {
         "key": "rff"
       , "title": "On the Error of Random Fourier Features"
+      , "bibtex_title": "On the Error of Random {F}ourier Features"
       , "authors": ["me", "jeff"]
       , "venue": "uai"
       , "year": "2015"
@@ -391,12 +396,10 @@
       , "authors": ["michelle", "hy", "me", "battaglia", "barnabas", "jeff"]
       , "venue": "ApJ"
       , "year": "2015"
-      , "venue_extra": {
-          "volume": 803
-        , "number": 2
-        , "pages": 50
-      }
-      , "official": "https://dx.doi.org/10.1088/0004-637X/803/2/50"
+      , "volume": 803
+      , "number": 2
+      , "pages": 50
+      , "doi": "10.1088/0004-637X/803/2/50"
       , "arXiv": "1410.0686"
     }
     , {
@@ -405,7 +408,7 @@
       , "authors": ["me", "barnabas", "jeff"]
       , "venue": "kdd"
       , "year": "2013"
-      , "official": "https://dx.doi.org/10.1145/2487575.2487627"
+      , "doi": "10.1145/2487575.2487627"
       , "related": [
           ["pdf", "https://cs.cmu.edu/~dsutherl/papers/kdd-13.pdf"]
         , ["poster", "https://cs.cmu.edu/~dsutherl/papers/kdd-13-poster.pdf"]
@@ -438,7 +441,7 @@
       , "authors": ["barnabas", "liang", "me", "jeff"]
       , "venue": "cvpr"
       , "year": "2012"
-      , "official": "https://dx.doi.org/10.1109/CVPR.2012.6248028"
+      , "doi": "10.1109/CVPR.2012.6248028"
       , "related": [
           ["pdf", "https://cs.cmu.edu/~dsutherl/papers/cvpr-12.pdf"]
         , ["poster", "https://cs.cmu.edu/~dsutherl/papers/cvpr-12-poster.pdf"]
@@ -447,6 +450,7 @@
     , {
         "key": "guts"
       , "title": "Managing User Requests with the Grand Unified Task System (GUTS)"
+      , "bibtex_title": "Managing User Requests with the {G}rand {U}nified {T}ask {S}ystem ({GUTS})"
       , "authors": ["stromme", "me", "burka", "lipton", "felt", "becca", "daniel-elia", "dini", "welkie"]
       , "venue": "lisa"
       , "year": "2012"

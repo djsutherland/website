@@ -1,2 +1,4 @@
-index.html: templates/index.html papers.json build.py
-	python build.py
+all: index.html biblio.bib
+
+%: papers.json build.py templates/%
+	python build.py $@

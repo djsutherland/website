@@ -41,6 +41,7 @@
     <h3>Publications</h3>
     <p>
       Below, <span class="equal">**</span> denotes equal contribution.
+      Also available as <a href="biblio.bib">a .bib file</a>.
     </p>
 
     {% for sec_name, sec_types in sections %}
@@ -100,11 +101,10 @@
                 {%- set conf = venues[venue.conference] -%}
                 {%- set conf_href = conf|venue_url(venue.year) -%}
                 , {{ conf.short|default(conf.name)|maybe_link(conf_href) }}
-              {%- elif paper.venue_extra %}
-                {{
-                  [paper.venue_extra.volume, paper.venue_extra.number, paper.venue_extra.pages] | reject("none") | join(", ")
-                }}.
               {% endif %}
+              {{
+                [paper.volume, paper.number, paper.pages] | reject("falsey") | join(", ") | maybe_wrap("", ".")
+              }}
               {{ paper.year }}.
             </span>
           {% endif %}
@@ -117,6 +117,7 @@
 
           <div class="links">
             {% if paper.official %}<span class="info">[<a href="{{ paper.official }}">official</a>]</span>{% endif %}
+            {% if paper.doi %}<span class="info">[<a href="https://dx.doi.org/{{ paper.doi }}">doi</a>]</span>{% endif %}
             {% if paper.arXiv %}<span class="info">[<a href="https://arxiv.org/abs/{{ paper.arXiv }}">arXiv</a>]</span>{% endif %}
             {% for name, link in paper.related %}
               <span class="info">[<a href="{{ link }}">{{ name }}</a>]</span>

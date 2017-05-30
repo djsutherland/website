@@ -1,0 +1,43 @@
+{%- for paper in papers -%}
+{%- set venue = venues[paper.venue] -%}
+    {%- if venue.type == "conference" or venue.type == "workshop" -%}
+        @inproceedings
+    {%- elif venue.type == "journal" -%} 
+        @article
+    {%- elif venue.type == "phd-thesis" -%}
+        @phdthesis
+    {%- elif venue.type == "ba-thesis" -%}
+        @thesis
+    {%- else -%}
+        @misc
+    {%- endif -%}
+{
+    {{- paper.authors[0] | get_author(coauthors) | last_name | lower }}:{{ paper.key }},
+    author = { {{- paper.authors | bibtex_authors(coauthors) -}} },
+    title = { {{- paper.bibtex_title | default(paper.title) -}} },
+    year = { {{- paper.year -}} },
+    {%- if paper.arXiv %}
+    archivePrefix = {arXiv},
+    arxivId = { {{- paper.arXiv -}} },
+    eprint = { {{- paper.arXiv -}} },
+    {%- endif %}
+    {{- paper.doi | maybe_wrap("\n    doi = {", "},") -}}
+    {%- if venue.type == "conference" or venue.type == "workshop" %}
+    booktitle = { {{- venue.name -}} {{- venue.short | maybe_wrap(" (", ")") -}} },
+    {%- elif venue.type == "journal" %}
+    journal = { {{- venue.name -}} },
+    {%- elif venue.type == "phd-thesis" %}
+    type = {Ph.D.},
+    {%- elif venue.type == "ba-thesis" %}
+    type = {B.A.},
+    {%- endif %}
+    {{- paper.volume | maybe_wrap("\n    volume = {", "},") -}}
+    {{- paper.number | maybe_wrap("\n    number = {", "},") -}}
+    {{- paper.pages | maybe_wrap("\n    pages = {", "},") -}}
+    {{- venue.school | maybe_wrap("\n    school = {", "},") -}}
+    {{- venue.department | maybe_wrap("\n    department = {", "},") -}}
+    {{- venue.bib_type | maybe_wrap("\n    type = {", "},") -}}
+{# make sure there's a newline here #}
+}
+
+{% endfor -%}
