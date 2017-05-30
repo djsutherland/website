@@ -17,7 +17,7 @@
       "name": "Dino Sejdinovic"
       , "web": "http://www.stats.ox.ac.uk/~sejdinov/"
     }, "seth": {
-      "name": "Seth Flaxmann"
+      "name": "Seth Flaxman"
       , "web": "http://sethrf.com/"
     }, "yu-xiang": {
       "name": "Yu-Xiang Wang"
@@ -287,6 +287,7 @@
       , "venue": "csd"
       , "year": "2016"
       , "committee": ["jeff", "barnabas", "nina", "arthur"]
+      , "authors": ["me"]
       , "official": "http://reports-archive.adm.cs.cmu.edu/anon/2016/abstracts/16-128.html"
       , "related": [
           ["pdf", "http://reports-archive.adm.cs.cmu.edu/anon/2016/CMU-CS-16-128.pdf"]
