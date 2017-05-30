@@ -1,0 +1,479 @@
+{
+  "coauthors": {
+    "me": {
+      "name": "Dougal J. Sutherland"
+    }, "arthur": {
+      "name": "Arthur Gretton"
+      , "web": "http://www.gatsby.ucl.ac.uk/~gretton/"
+    }, "heiko": {
+      "name": "Heiko Strathmann"
+      , "web": "http://herrstrathmann.de/about/"
+    }, "michael": {
+      "name": "Michael Arbel"
+    }, "leon": {
+      "name": "Ho Chung Leon Law"
+      , "web": "http://csml.stats.ox.ac.uk/people/law/"
+    }, "dino": {
+      "name": "Dino Sejdinovic"
+      , "web": "http://www.stats.ox.ac.uk/~sejdinov/"
+    }, "seth": {
+      "name": "Seth Flaxmann"
+      , "web": "http://sethrf.com/"
+    }, "yu-xiang": {
+      "name": "Yu-Xiang Wang"
+      , "web": "https://www.cs.cmu.edu/~yuxiangw/"
+    }, "yee-whye": {
+      "name": "Yee Whye Teh"
+      , "web": "https://www.stats.ox.ac.uk/~teh/"
+    }, "fish": {
+      "name": "Hsiao-Yu Tung"
+      , "web": "http://sfish0101.bitbucket.org"
+    }, "rahul": {
+      "name": "Soumyajit De"
+      , "web": "https://github.com/lambday/"
+    }, "aadi": {
+      "name": "Aaditya Ramdas"
+      , "web": "https://people.eecs.berkeley.edu/~aramdas/"
+    }, "smola": {
+      "name": "Alex Smola"
+      , "web": "https://alex.smola.org"
+    }, "michelle": {
+      "name": "Michelle Ntampaka"
+      , "web": "http://www.andrew.cmu.edu/user/cmhicks/"
+    }, "hy": {
+      "name": "Hy Trac"
+      , "web": "https://www.cmu.edu/physics/people/faculty/trac.html"
+    }, "sebastian": {
+      "name": "Sebastian Fromenteau"
+    }, "barnabas": {
+      "name": "Barnabás Póczos"
+      , "web": "https://www.cs.cmu.edu/~bapoczos/"
+    }, "jeff": {
+      "name": "Jeff Schneider"
+      , "web": "https://www.cs.cmu.edu/~schneide/"
+    }, "junier": {
+      "name": "Junier B. Oliva"
+      , "web": "https://www.cs.cmu.edu/~joliva/"
+    }, "yifei": {
+      "name": "Yifei Ma"
+      , "web": "https://www.cs.cmu.edu/~yifeim/"
+    }, "roman": {
+      "name": "Roman Garnett"
+      , "web": "http://www.cse.wutsl.edu/~garnett/"
+    }, "battaglia": {
+      "name": "Nicholas Battaglia"
+      , "web": "http://www.astro.utoronto.ca/~battaglia/Home.html" 
+    }, "liang": {
+      "name": "Liang Xiong"
+      , "web": "https://www.cs.cmu.edu/~lxiong/"
+    }, "stromme": {
+      "name": "Andrew Stromme"
+      , "web": "http://andrewstromme.com"
+    }, "burka": {
+      "name": "Alexander Burka"
+      , "web": "http://alexburka.com"
+    }, "lipton": {
+      "name": "Benjamin Lipton"
+      , "web": "http://benjaminlipton.com"
+    }, "felt": {
+      "name": "Nicholas Felt"
+    }, "becca": {
+      "name": "Rebecca Roelofs"
+      , "web": "http://ww.eecs.berkeley.edu/~roelofs/"
+    }, "daniel-elia": {
+      "name": "Daniel-Elia Feist-Alexandrov"
+    }, "dini": {
+      "name": "Steve Dini"
+    }, "welkie": {
+      "name": "Allen Welkie"
+    }, "nina": {
+      "name": "Maria-Florina Balcan"
+      , "web": "https://www.cs.cmu.edu/~ninamf/"
+    }, "artur": {
+      "name": "Artur Dubrawski"
+      , "web": "https://www.autonlab.org/people/artur_dubrawski"
+    }, "jay": {
+      "name": "Jay Jin"
+    }, "kyle": {
+      "name": "Kyle Miller"
+    }, "labov": {
+      "name": "Simon Labov"
+      , "web": "http://people.llnl.gov/slabov"
+    }, "nelson": {
+      "name": "Karl Nelson"
+      , "web": "http://people.llnl.gov/nelson85"
+    }, "bodenhamer": {
+      "name": "Matthew Bodenhamer"
+    }, "palmer": {
+      "name": "Thomas Palmer"
+      , "web": "http://www.cs.ou.edu/~tjpalmer/"
+    }, "fagg": {
+      "name": "Andrew H. Fagg"
+      , "web": "http://www.cs.ou.edu/~fagg/"
+    }
+  }
+  , "venues": {
+      "preprint": {
+        "name": "Preprint"
+      , "type": "preprint"
+    }
+    , "tech-report": {
+        "name": "Technical report"
+      , "type": "tech-report"
+    }
+    , "iclr": {
+        "name": "International Conference on Learning Representations"
+      , "short": "ICLR"
+      , "type": "conference"
+      , "web_by_year": {
+          "2017": "http://www.iclr.cc/doku.php?id=iclr2017:main"
+      }
+    }
+    , "ApJ": {
+        "name": "The Astrophysical Journal"
+      , "short": "ApJ"
+      , "type": "journal"
+      , "web": "https://iopscience.iop.org/0004-637X/"
+    }
+    , "aaai": {
+        "name": "AAAI Conference on Artificial Intelligence"
+      , "short": "AAAI"
+      , "type": "conference"
+      , "web_by_year": {
+        "2016": "http://www.aaai.org/Conferences/AAAI/aaai16.php"
+      }
+    }
+    , "aistats": {
+        "name": "Artificial Intelligence and Statistics"
+      , "short": "AISTATS"
+      , "type": "conference"
+      , "web_by_year": {
+        "2015": "http://www.aistats.org/aistats2015/"
+      }
+    }
+    , "uai": {
+        "name": "Uncertainty in Artificial Intelligence"
+      , "short": "UAI"
+      , "type": "conference"
+      , "web_by_year": {
+        "2015": "http://auai.org/uai2015/"
+      }
+    }
+    , "kdd": {
+        "name": "Knowledge Discovery and Data Mining"
+      , "short": "KDD"
+      , "type": "conference"
+      , "web_by_year": {
+        "2013": "http://www.sigkdd.org/kdd2013"
+      }
+    }
+    , "cvpr": {
+        "name": "Computer Vision and Pattern Recognition"
+      , "short": "CVPR"
+      , "type": "conference"
+      , "web_by_year": {
+        "2012": "http://tab.computer.org/pamitc/archive/cvpr2012/"
+      }
+    }
+    , "lisa": {
+        "name": "Large Installation System Administration"
+      , "short": "LISA"
+      , "type": "conference"
+      , "web_by_year": {
+        "2012": "https://www.usenix.org/conference/lisa12"
+      }
+    }
+    , "feature-extraction": {
+        "name": "Feature Extraction: Modern Questions and Challenges"
+      , "web": "http://www.feature-extraction.org/"
+      , "type": "workshop"
+      , "conference": "nips"
+      , "year": "2015"
+    }
+    , "bayesopt-14": {
+        "name": "Bayesian Optimization"
+      , "short": "BayesOpt"
+      , "web": "https://bayesopt.github.io/past/2014.html"
+      , "type": "workshop"
+      , "conference": "nips"
+      , "year": "2014"
+    }
+    , "nips": {
+        "name": "Neural Information Processing Systems"
+      , "short": "NIPS"
+      , "type": "conference"
+      , "web_by_year": {
+          "2014": "https://nips.cc/Conferences/2014"
+        , "2015": "https://nips.cc/Conferences/2015"
+      }
+    }
+    , "csd": {
+        "name": "Computer Science Department, Carnegie Mellon University"
+      , "type": "phd-thesis"
+    }
+    , "swat": {
+        "name": "Computer Science Department, Swarthmore College"
+      , "type": "ba-thesis"
+    }
+    , "nss": {
+        "name": "IEEE Nuclear Science Symposium"
+      , "short": "IEEE NSS/MIC"
+      , "type": "workshop"
+    }
+    , "optimization-course": {
+        "name": "CMU 10-725 Optimization course project"
+      , "web": "https://www.cs.cmu.edu/~ggordon/10725-F12/"
+      , "type": "course-project"
+    }
+  }
+  , "sections": [
+      ["Preprints", ["preprint"]]
+    , ["Journal and Low-Acceptance-Rate Conference Papers", ["conference", "journal"]]
+    , ["Ph.D. thesis", ["phd-thesis"]]
+    , ["Technical Reports, Posters, etc.", ["tech-report", "poster", "workshop", "course-project", "ba-thesis"]]
+  ]
+  , "papers": [
+    {
+        "key": "kexpfam-nystroem"
+      , "title": "Efficient and principled score estimation"
+      , "authors": ["me*", "heiko*", "michael", "arthur"]
+      , "arXiv": "1705.08360"
+      , "venue": "preprint"
+    }
+    , {
+        "key": "bdr"
+      , "title": "Bayesian Distribution Regression"
+      , "authors": ["leon*", "me*", "dino", "seth"]
+      , "arXiv": "1705.04293"
+      , "venue": "preprint"
+    }
+    , {
+        "key": "caponnetto-fix"
+      , "title": "Fixing an error in Caponnetto and de Vito (2007)"
+      , "authors": ["me"]
+      , "arXiv": "1702.02982"
+      , "venue": "tech-report"
+      , "year": "2017"
+    }
+    , {
+        "key": "trump-clinton"
+      , "title": "Understanding the 2016 US Presidential Election using ecological inference and distribution regression with census microdata"
+      , "authors": ["seth", "me", "yu-xiang", "yee-whye"]
+      , "arXiv": "1611.03787"
+      , "related": [
+        ["code", "https://github.com/flaxter/us2016/"]
+        , ["microdata analysis package", "https://github.com/dougalsutherland/pummeler/"]
+      ]
+      , "venue": "preprint"
+    }
+    , {
+        "key": "opt-mmd"
+      , "title": "Generative Models and Model Criticism via Optimized Maximum Mean Discrepancy"
+      , "authors": ["me", "fish", "heiko", "rahul", "aadi", "smola"]
+      , "venue": "iclr"
+      , "year": "2017"
+      , "official": "http://openreview.net/forum?id=HJWHIKqgl"
+      , "arXiv": "1611.04488"
+      , "related": [
+          ["code", "https://github.com/dougalsutherland/opt-mmd/"]
+      ]
+    }
+    , {
+        "key": "thesis"
+      , "title": "Scalable, Flexible, and Active Learning on Distributions"
+      , "venue": "csd"
+      , "year": "2016"
+      , "committee": ["jeff", "barnabas", "nina", "arthur"]
+      , "official": "http://reports-archive.adm.cs.cmu.edu/anon/2016/abstracts/16-128.html"
+      , "related": [
+          ["pdf", "http://reports-archive.adm.cs.cmu.edu/anon/2016/CMU-CS-16-128.pdf"]
+        , ["slides", "https://cs.cmu.edu/~dsutherl/thesis-slides.pdf"]
+        , ["proposal (2015)", "https://cs.cmu.edu/~dsutherl/proposal.pdf"]
+        , ["proposal slides", "https://cs.cmu.edu/~dsutherl/proposal-slides.pdf"]
+      ]
+    }
+    , {
+        "key": "nss"
+      , "title": "List Mode Regression for Low Count Detection"
+      , "authors": ["jay", "kyle", "me", "labov", "nelson", "artur"]
+      , "venue": "nss"
+      , "year": "2016"
+    }
+    , {
+        "key": "deep-mean-maps"
+      , "title": "Deep Mean Maps"
+      , "authors": ["junier*", "me*", "barnabas", "jeff"]
+      , "venue": "tech-report"
+      , "arXiv": "1511.04150"
+      , "year": "2015"
+    }
+    , {
+        "key": "astro-interlopers"
+      , "title": "Dynamical Mass Measurements of Contaminated Galaxy Clusters Using Machine Learning"
+      , "authors": ["michelle", "hy", "me", "sebastian", "barnabas", "jeff"]
+      , "venue": "ApJ"
+      , "year": "2016"
+      , "venue_extra": {
+          "volume": 831
+        , "number": 2
+        , "pages": "135"
+      }
+      , "official": "https://dx.doi.org/10.3847/0004-637X/831/2/135"
+      , "arXiv": "1509.05409"
+    }
+    , {
+        "key": "hdd"
+      , "title": "Linear-time Learning on Distributions with Approximate Kernel Embeddings"
+      , "authors": ["me*", "junier*", "barnabas", "jeff"]
+      , "venue": "aaai"
+      , "year": "2016"
+      , "official": "http://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/download/12460/11844"
+      , "arXiv": "1509.07553"
+      , "related": [
+          ["poster", "https://cs.cmu.edu/~dsutherl/papers/hdd_aaai_poster.pdf"]
+      ]
+    }
+    , {
+        "key": "hdd-workshop"
+      , "title": "Linear-time Learning on Distributions with Approximate Kernel Embeddings"
+      , "authors": ["me*", "junier*", "barnabas", "jeff"]
+      , "venue": "feature-extraction"
+      , "year": "2015"
+      , "note": "Workshop version of <a href='#hdd'>this paper</a>."
+      , "related": [
+          ["pdf", "https://cs.cmu.edu/~dsutherl/papers/hdd_nips15ws.pdf"]
+        , ["poster", "https://cs.cmu.edu/~dsutherl/papers/hdd_nips15ws_poster.pdf"]
+      ]
+    }
+    , {
+        "key": "rff"
+      , "title": "On the Error of Random Fourier Features"
+      , "authors": ["me", "jeff"]
+      , "venue": "uai"
+      , "year": "2015"
+      , "note": "Chapter 3 / Section 4.1 of <a href='#thesis'>my thesis</a> supercedes this paper, fixing a few errors in constants and providing more results."
+      , "official": "http://auai.org/uai2015/proceedings/papers/168.pdf"
+      , "arXiv": "1506.02785"
+      , "related": [
+          ["poster", "https://cs.cmu.edu/~dsutherl/papers/rff_uai15_poster.pdf"]
+      ]
+    }
+    , {
+        "key": "apps"
+      , "title": "Active Pointillistic Pattern Search"
+      , "authors": ["yifei*", "me*", "roman", "jeff"]
+      , "venue": "aistats"
+      , "official": "http://jmlr.org/proceedings/papers/v38/ma15.html"
+      , "related": [
+          ["pdf", "https://cs.cmu.edu/~dsutherl/papers/apps_aistats15.pdf"]
+        , ["appendix", "https://cs.cmu.edu/~dsutherl/papers/apps_aistats15_appendix.pdf"]
+        , ["poster", "https://cs.cmu.edu/~dsutherl/papers/apps_aistats15_poster.pdf"]
+      ]
+    }
+    , {
+        "key": "apps-workshop"
+      , "title": "Active Pointillistic Pattern Search"
+      , "authors": ["yifei*", "me*", "roman", "jeff"]
+      , "venue": "bayesopt-14"
+      , "related": [
+          ["pdf", "https://cs.cmu.edu/~dsutherl/papers/apps_nips14ws.pdf"]
+        , ["poster", "https://cs.cmu.edu/~dsutherl/papers/apps_nips14ws_poster.pdf"]
+      ]
+      , "note": "Workshop version of <a href='#apps'>this paper."
+    }
+    , {
+        "key": "astro"
+      , "title": "A Machine Learning Approach for Dynamical Mass Measurements of Galaxy Clusters"
+      , "authors": ["michelle", "hy", "me", "battaglia", "barnabas", "jeff"]
+      , "venue": "ApJ"
+      , "year": "2015"
+      , "venue_extra": {
+          "volume": 803
+        , "number": 2
+        , "pages": 50
+      }
+      , "official": "https://dx.doi.org/10.1088/0004-637X/803/2/50"
+      , "arXiv": "1410.0686"
+    }
+    , {
+        "key": "active-mf"
+      , "title": "Active learning and search on low-rank matrices"
+      , "authors": ["me", "barnabas", "jeff"]
+      , "venue": "kdd"
+      , "year": "2013"
+      , "official": "https://dx.doi.org/10.1145/2487575.2487627"
+      , "related": [
+          ["pdf", "https://cs.cmu.edu/~dsutherl/papers/kdd-13.pdf"]
+        , ["poster", "https://cs.cmu.edu/~dsutherl/papers/kdd-13-poster.pdf"]
+        , ["slides", "https://cs.cmu.edu/~dsutherl/papers/kdd-13-slides.pdf"]
+        , ["code", "https://github.com/AutonlabCMU/active-matrix-factorization"]
+      ]
+    }
+    , {
+        "key": "sdm-arxiv"
+      , "title": "Kernels on Sample Sets via Nonparametric Divergence Estimates"
+      , "authors": ["me", "liang", "barnabas", "jeff"]
+      , "venue": "tech-report"
+      , "year": "2012"
+      , "arXiv": "1202.0302"
+    }
+    , {
+        "key": "sparse-modeling"
+      , "title": "Finding Representative Objects with Sparse Modeling"
+      , "authors": ["junier", "me", "yifei"]
+      , "venue": "optimization-course"
+      , "year": "2012"
+      , "note": "Best poster award."
+      , "related": [
+        ["pdf", "https://cs.cmu.edu/~dsutherl/papers/opt-project.pdf"]
+      ]
+    }
+    , {
+        "key": "sdm-cvpr"
+      , "title": "Nonparametric kernel estimators for image classification"
+      , "authors": ["barnabas", "liang", "me", "jeff"]
+      , "venue": "cvpr"
+      , "year": "2012"
+      , "official": "https://dx.doi.org/10.1109/CVPR.2012.6248028"
+      , "related": [
+          ["pdf", "https://cs.cmu.edu/~dsutherl/papers/cvpr-12.pdf"]
+        , ["poster", "https://cs.cmu.edu/~dsutherl/papers/cvpr-12-poster.pdf"]
+      ]
+    }
+    , {
+        "key": "guts"
+      , "title": "Managing User Requests with the Grand Unified Task System (GUTS)"
+      , "authors": ["stromme", "me", "burka", "lipton", "felt", "becca", "daniel-elia", "dini", "welkie"]
+      , "venue": "lisa"
+      , "year": "2012"
+      , "official": "https://www.usenix.org/conference/lisa12/technical-sessions/presentation/stromme"
+      , "related": [
+          ["pdf", "https://www.usenix.org/system/files/conference/lisa12/lisa12-final-4.pdf"]
+        , ["slides", "https://www.usenix.org/sites/default/files/conference/protected-files/alexandrov_lisa12_slides.pdf"]
+        , ["talk", "https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/lisa12/stromme.mp4"]
+      ]
+      , "note": "Work done as part of the <a href='http://www.sccs.swarthmore.edu'>Swarthmore College Computer Society</a>."
+    }
+    , {
+        "key": "smrf"
+      , "title": "Grounding Conceptual Knowledge with Spatio-Temporal Multi-Dimensional Relational Framework Trees"
+      , "authors": ["bodenhamer", "palmer", "me", "fagg"]
+      , "venue": "tech-report"
+      , "year": "2012"
+      , "related": [
+          ["pdf", "https://cs.cmu.edu/~dsutherl/papers/smrf-techreport.pdf"]
+      ]
+    }
+    , {
+        "key": "ba-thesis"
+      , "title": "Integrating Human Knowledge into a Relational Learning System"
+      , "authors": ["me"]
+      , "venue": "swat"
+      , "year": "2011"
+      , "related": [
+          ["pdf", "http://www.sccs.swarthmore.edu/users/11/dougal/work/thesis.pdf"]
+      ]
+      , "note": "B.A. thesis."
+    }
+  ]
+}

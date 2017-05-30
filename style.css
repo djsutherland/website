@@ -62,6 +62,9 @@ img#me {
 .paper .venue {
     display: block;
 }
+.paper .note {
+    font-style: italic;
+}
 .paper .workshop .venue {
     display: inline;
 }

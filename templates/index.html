@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dougal J. Sutherland</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta charset="utf-8">
+</head>
+<body>
+  <div id="content">
+    <h1>Dougal J. Sutherland</h1>
+
+    <img src="photo.jpg" id="me" />
+
+    <p>
+      I'm a postdoc at the <a href="http://www.gatsby.ucl.ac.uk/">Gatsby Computational Neuroscience Unit</a> at University College London, with <a href="http://www.gatsby.ucl.ac.uk/~gretton/">Arthur Gretton</a>.
+      Contact: <a class="email" href="mailto:dougal@gmail.com">dougal@gmail.com</a>.
+      <a href="https://orcid.org/0000-0002-1525-3532">ORCID</a>, <a href="https://scholar.google.com/citations?user=uO_NqicAAAAJ">Google Scholar</a>.
+    </p>
+
+    <p>
+      My research interests include:
+      <ul>
+        <li>Learning and testing on sets and distributions: two-sample tests, distribution regression/classification/outlier detection.</li>
+        <li>Approximate kernel embeddings, e.g. random Fourier features.</li>
+        <li>Active learning, especially in nonstandard settings like searching for large-scale patterns.</li>
+      </ul>
+    </p>
+
+    <p>
+      Before Gatsby,
+      I did my Ph.D. at Carnegie Mellon University,
+      working with <a href="https://cs.cmu.edu/~schneide/">Jeff Schneider</a>
+      on machine learning.
+      
+      See also:
+      various code <a href="https://github.com/dougalsutherland">on github</a>,
+      my <a href="https://stats.stackexchange.com/users/9964/dougal">crossvalidated</a>/<a href="http://stackoverflow.com/users/344821/dougal">stackoverflow</a> profiles,
+      and <a href="https://www.sccs.swarthmore.edu/users/11/dougal/">my Swarthmore page</a> older stuff from undergrad.
+    </p>
+
+    <h3>Publications</h3>
+    <p>
+      Below, <span class="equal">**</span> denotes equal contribution.
+    </p>
+
+    {% for sec_name, sec_types in sections %}
+      <h4>{{ sec_name }}</h4>
+      {% for paper in papers if venues[paper.venue].type in sec_types %}
+        <div class="paper" id="{{ paper.key }}">
+          <span class="title">{{ paper.title }}.</span>
+          <span class="authors">
+            {%- if paper.committee -%}
+              {%- set authors = paper.committee -%}
+              Committee:
+            {% else -%}
+              {%- set authors = paper.authors -%}
+            {%- endif -%}
+            {%- for author in authors -%}
+              {# get author info #}
+              {%- if author.endswith("*") -%}
+                {%- set equal = true -%}
+                {%- set author = author[:-1] -%}
+              {%- else %}
+                {%- set equal = false -%}
+              {%- endif -%}
+              {%- set auth = coauthors[author] -%}
+
+              {# content #}
+              {{ auth.name | maybe_link(auth.web) }}
+              {%- if equal %}<span class="equal">**</span>{%- endif -%}
+
+              {# list delimiters #}
+              {%- if loop.last -%}
+                .
+              {%- elif loop.length == 2 -%}
+                {%- if loop.first %} and {% endif -%}
+              {%- else -%}
+                {%- if loop.last -%}
+                  .
+                {%- elif loop.revindex == 2 -%}
+                  , and
+                {% else -%}
+                  ,
+                {% endif %}
+              {%- endif -%}
+            {%- endfor -%}
+          </span>
+
+          {% if paper.venue %}
+            {%- set venue = venues[paper.venue] -%}
+            {%- set href = venue|venue_url(paper.year) -%}
+            <span class="venue">
+              {%- if venue.short -%}
+                {{ venue.name }}
+                ({{ venue.short | maybe_link(href) }})
+              {%- else -%}
+                {{ venue.name | maybe_link(href) }}
+              {%- endif -%}
+              {%- if venue.conference -%}
+                {%- set conf = venues[venue.conference] -%}
+                {%- set conf_href = conf|venue_url(venue.year) -%}
+                , {{ conf.short|default(conf.name)|maybe_link(conf_href) }}
+              {%- elif paper.venue_extra %}
+                {{
+                  [paper.venue_extra.volume, paper.venue_extra.number, paper.venue_extra.pages] | reject("none") | join(", ")
+                }}.
+              {% endif %}
+              {{ paper.year }}.
+            </span>
+          {% endif %}
+
+          {% if paper.note %}
+          <span class="note">
+            {{ paper.note }}
+          </span>
+          {% endif %}
+
+          <div class="links">
+            {% if paper.official %}<span class="info">[<a href="{{ paper.official }}">official</a>]</span>{% endif %}
+            {% if paper.arXiv %}<span class="info">[<a href="https://arxiv.org/abs/{{ paper.arXiv }}">arXiv</a>]</span>{% endif %}
+            {% for name, link in paper.related %}
+              <span class="info">[<a href="{{ link }}">{{ name }}</a>]</span>
+            {% endfor %}
+          </div>
+        </div>
+      {% endfor %}
+    {% endfor %}
+  </div>
+</body>
+</html>
