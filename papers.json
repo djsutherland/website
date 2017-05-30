@@ -239,6 +239,7 @@
       , "authors": ["me*", "heiko*", "michael", "arthur"]
       , "arXiv": "1705.08360"
       , "venue": "preprint"
+      , "year": "2017"
     }
     , {
         "key": "bdr"
@@ -246,6 +247,7 @@
       , "authors": ["leon*", "me*", "dino", "seth"]
       , "arXiv": "1705.04293"
       , "venue": "preprint"
+      , "year": "2017"
     }
     , {
         "key": "caponnetto-fix"
@@ -265,6 +267,7 @@
         , ["microdata analysis package", "https://github.com/dougalsutherland/pummeler/"]
       ]
       , "venue": "preprint"
+      , "year": "2016"
     }
     , {
         "key": "opt-mmd"
