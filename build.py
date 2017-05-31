@@ -4,9 +4,11 @@ from __future__ import unicode_literals
 import argparse
 import io
 import json
+import re
 import os
 
 from staticjinja import make_site
+from unidecode import unidecode
 
 
 _dir = os.path.abspath(os.path.dirname(__file__))
@@ -37,6 +39,27 @@ def get_author(author, coauthors):
         author = author[:-1]
     return coauthors[author]
 
+translation_table = {}
+@filter
+def latex_escape(string):
+    "Turn unicode accented characters into LaTeX escapes."
+    # https://stackoverflow.com/a/4579006/344821
+    global translation_table
+
+    if not translation_table:
+        p = re.compile(r'%.*\DeclareUnicodeCharacter\{(\w+)\}\{(.*)\}')
+        with io.open('utf8ienc.dtx') as f:
+            for line in f:
+                m = p.match(line)
+                if m:
+                    codepoint, latex = m.groups()
+                    latex = latex.replace('@tabacckludge', '')
+                    translation_table[int(codepoint, 16)] = '{' + latex + '}'
+
+    return string.translate(translation_table)
+
+filters['unidecode'] = unidecode
+
 @filter
 def last_name(author_dict):
     if 'last_name' in author_dict:
@@ -46,7 +69,7 @@ def last_name(author_dict):
 @filter
 def bibtex_authors(authors, coauthors):
     return ' and '.join(
-        get_author(a, coauthors)['name'] for a in authors)
+        latex_escape(get_author(a, coauthors)['name']) for a in authors)
 
 @filter
 def author_equal(author):

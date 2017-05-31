@@ -12,7 +12,7 @@
         @misc
     {%- endif -%}
 {
-    {{- paper.authors[0] | get_author(coauthors) | last_name | lower }}:{{ paper.key }},
+    {{- paper.authors[0] | get_author(coauthors) | last_name | unidecode | lower }}:{{ paper.key }},
     author = { {{- paper.authors | bibtex_authors(coauthors) -}} },
     title = { {{- paper.bibtex_title | default(paper.title) -}} },
     year = { {{- paper.year -}} },
