@@ -7,7 +7,7 @@ import json
 import re
 import os
 
-from staticjinja import make_site
+import staticjinja
 from unidecode import unidecode
 
 
@@ -91,7 +91,7 @@ def maybe_link(content, url=None):
 
 
 def make_site():
-    site = make_site(
+    site = staticjinja.make_site(
         contexts=[('.*', paper_data)],
         filters=filters,
     )
