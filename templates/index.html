@@ -44,6 +44,12 @@
       Also available as <a href="biblio.bib">a .bib file</a>.
     </p>
 
+    {% set sections = [
+      ["Preprints", ["preprint"]],
+      ["Journal and Low-Acceptance-Rate Conference Papers", ["conference", "journal"]],
+      ["Ph.D. thesis", ["phd-thesis"]],
+      ["Technical Reports, Posters, etc.", ["tech-report", "poster", "workshop", "course-project", "ba-thesis"]],
+    ] %}
     {% for sec_name, sec_types in sections %}
       <h4>{{ sec_name }}</h4>
       {% for paper in papers if venues[paper.venue].type in sec_types %}

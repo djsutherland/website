@@ -230,12 +230,6 @@
       , "type": "course-project"
     }
   }
-  , "sections": [
-      ["Preprints", ["preprint"]]
-    , ["Journal and Low-Acceptance-Rate Conference Papers", ["conference", "journal"]]
-    , ["Ph.D. thesis", ["phd-thesis"]]
-    , ["Technical Reports, Posters, etc.", ["tech-report", "poster", "workshop", "course-project", "ba-thesis"]]
-  ]
   , "papers": [
     {
         "key": "kexpfam-nystroem"
