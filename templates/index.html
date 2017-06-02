@@ -49,8 +49,8 @@
     {% set sections = [
       ["Preprints", ["preprint"]],
       ["Journal and Low-Acceptance-Rate Conference Papers", ["conference", "journal"]],
-      ["Ph.D. thesis", ["phd-thesis"]],
-      ["Technical Reports, Posters, etc.", ["tech-report", "poster", "workshop", "course-project", "ba-thesis"]],
+      ["Dissertations", ["phd-thesis", "ba-thesis"]],
+      ["Technical Reports, Posters, etc.", ["tech-report", "poster", "workshop", "course-project"]],
     ] %}
     {% for sec_name, sec_types in sections %}
       <h4>{{ sec_name }}</h4>
