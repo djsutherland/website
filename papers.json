@@ -1,114 +1,154 @@
 {
   "coauthors": {
     "me": {
-      "name": "Dougal J. Sutherland"
+        "first": "Dougal J."
+      , "last": "Sutherland"
     }, "arthur": {
-      "name": "Arthur Gretton"
+        "first": "Arthur"
+      , "last": "Gretton"
       , "web": "http://www.gatsby.ucl.ac.uk/~gretton/"
     }, "heiko": {
-      "name": "Heiko Strathmann"
+        "first": "Heiko"
+      , "last": "Strathmann"
       , "web": "http://herrstrathmann.de/about/"
     }, "michael": {
-      "name": "Michael Arbel"
+      "first": "Michael"
+      , "last": "Arbel"
     }, "leon": {
-      "name": "Ho Chung Leon Law"
+        "first": "Ho Chung Leon"
+      , "last": "Law"
       , "web": "http://csml.stats.ox.ac.uk/people/law/"
     }, "dino": {
-      "name": "Dino Sejdinovic"
+        "first": "Dino"
+      , "last": "Sejdinovic"
       , "web": "http://www.stats.ox.ac.uk/~sejdinov/"
     }, "seth": {
-      "name": "Seth Flaxman"
+        "first": "Seth"
+      , "last": "Flaxman"
       , "web": "http://sethrf.com/"
     }, "yu-xiang": {
-      "name": "Yu-Xiang Wang"
+        "first": "Yu-Xiang"
+      , "last": "Wang"
       , "web": "https://www.cs.cmu.edu/~yuxiangw/"
     }, "yee-whye": {
-      "name": "Yee Whye Teh"
+        "first": "Yee Whye"
+      , "last": "Teh"
       , "web": "https://www.stats.ox.ac.uk/~teh/"
     }, "fish": {
-      "name": "Hsiao-Yu Tung"
+        "first": "Hsiao-Yu"
+      , "last": "Tung"
       , "web": "http://sfish0101.bitbucket.org"
     }, "rahul": {
-      "name": "Soumyajit De"
+      "first": "Soumyajit"
+      , "last": "De"
       , "web": "https://github.com/lambday/"
     }, "aadi": {
-      "name": "Aaditya Ramdas"
+      "first": "Aaditya"
+      , "last": "Ramdas"
       , "web": "https://people.eecs.berkeley.edu/~aramdas/"
     }, "smola": {
-      "name": "Alex Smola"
+      "first": "Alex"
+      , "last": "Smola"
       , "web": "https://alex.smola.org"
     }, "michelle": {
-      "name": "Michelle Ntampaka"
+      "first": "Michelle"
+      , "last": "Ntampaka"
       , "web": "http://www.andrew.cmu.edu/user/cmhicks/"
     }, "hy": {
-      "name": "Hy Trac"
+      "first": "Hy"
+      , "last": "Trac"
       , "web": "https://www.cmu.edu/physics/people/faculty/trac.html"
     }, "sebastian": {
-      "name": "Sebastian Fromenteau"
+      "first": "Sebastian"
+      , "last": "Fromenteau"
     }, "barnabas": {
-      "name": "Barnabás Póczos"
+      "first": "Barnabás"
+      , "last": "Póczos"
       , "web": "https://www.cs.cmu.edu/~bapoczos/"
     }, "jeff": {
-      "name": "Jeff Schneider"
+        "first": "Jeff"
+      , "last": "Schneider"
       , "web": "https://www.cs.cmu.edu/~schneide/"
     }, "junier": {
-      "name": "Junier B. Oliva"
+        "first": "Junier B."
+      , "last": "Oliva"
       , "web": "https://www.cs.cmu.edu/~joliva/"
     }, "yifei": {
-      "name": "Yifei Ma"
+        "first": "Yifei"
+      , "last": "Ma"
       , "web": "https://www.cs.cmu.edu/~yifeim/"
     }, "roman": {
-      "name": "Roman Garnett"
+        "first": "Roman"
+      , "last": "Garnett"
       , "web": "http://www.cse.wutsl.edu/~garnett/"
     }, "battaglia": {
-      "name": "Nicholas Battaglia"
+        "first": "Nicholas"
+      , "last": "Battaglia"
       , "web": "http://www.astro.utoronto.ca/~battaglia/Home.html" 
     }, "liang": {
-      "name": "Liang Xiong"
+        "first": "Liang"
+      , "last": "Xiong"
       , "web": "https://www.cs.cmu.edu/~lxiong/"
     }, "stromme": {
-      "name": "Andrew Stromme"
+        "first": "Andrew"
+      , "last": "Stromme"
       , "web": "http://andrewstromme.com"
     }, "burka": {
-      "name": "Alexander Burka"
+        "first": "Alexander"
+      , "last": "Burka"
       , "web": "http://alexburka.com"
     }, "lipton": {
-      "name": "Benjamin Lipton"
+        "first": "Benjamin"
+      , "last": "Lipton"
       , "web": "http://benjaminlipton.com"
     }, "felt": {
-      "name": "Nicholas Felt"
+        "first": "Nicholas"
+      , "last": "Felt"
     }, "becca": {
-      "name": "Rebecca Roelofs"
+        "first": "Rebecca"
+      , "last": "Roelofs"
       , "web": "http://ww.eecs.berkeley.edu/~roelofs/"
     }, "daniel-elia": {
-      "name": "Daniel-Elia Feist-Alexandrov"
+        "first": "Daniel-Elia"
+      , "last": "Feist-Alexandrov"
     }, "dini": {
-      "name": "Steve Dini"
+        "first": "Steve"
+      , "last": "Dini"
     }, "welkie": {
-      "name": "Allen Welkie"
+        "first": "Allen"
+      , "last": "Welkie"
     }, "nina": {
-      "name": "Maria-Florina Balcan"
+        "first": "Maria-Florina"
+      , "last": "Balcan"
       , "web": "https://www.cs.cmu.edu/~ninamf/"
     }, "artur": {
-      "name": "Artur Dubrawski"
+        "first": "Artur"
+      , "last": "Dubrawski"
       , "web": "https://www.autonlab.org/people/artur_dubrawski"
     }, "jay": {
-      "name": "Jay Jin"
+        "first": "Jay"
+      , "last": "Jin"
     }, "kyle": {
-      "name": "Kyle Miller"
+        "first": "Kyle"
+      , "last": "Miller"
     }, "labov": {
-      "name": "Simon Labov"
+        "first": "Simon"
+      , "last": "Labov"
       , "web": "http://people.llnl.gov/slabov"
     }, "nelson": {
-      "name": "Karl Nelson"
+        "first": "Karl"
+      , "last": "Nelson"
       , "web": "http://people.llnl.gov/nelson85"
     }, "bodenhamer": {
-      "name": "Matthew Bodenhamer"
+        "first": "Matthew"
+      , "last": "Bodenhamer"
     }, "palmer": {
-      "name": "Thomas Palmer"
+        "first": "Thomas"
+      , "last": "Palmer"
       , "web": "http://www.cs.ou.edu/~tjpalmer/"
     }, "fagg": {
-      "name": "Andrew H. Fagg"
+        "first": "Andrew H."
+      , "last": "Fagg"
       , "web": "http://www.cs.ou.edu/~fagg/"
     }
   }
@@ -272,7 +312,7 @@
     , {
         "key": "opt-mmd"
       , "title": "Generative Models and Model Criticism via Optimized Maximum Mean Discrepancy"
-      , "authors": ["me", "fish", "heiko", "rahul", "aadi", "smola"]
+      , "authors": ["me", "fish", "heiko", "rahul", "aadi", "smola", "arthur"]
       , "venue": "iclr"
       , "year": "2017"
       , "official": "http://openreview.net/forum?id=HJWHIKqgl"
@@ -366,6 +406,7 @@
       , "title": "Active Pointillistic Pattern Search"
       , "authors": ["yifei*", "me*", "roman", "jeff"]
       , "venue": "aistats"
+      , "year": "2015"
       , "official": "http://jmlr.org/proceedings/papers/v38/ma15.html"
       , "related": [
           ["pdf", "https://cs.cmu.edu/~dsutherl/papers/apps_aistats15.pdf"]
@@ -378,6 +419,7 @@
       , "title": "Active Pointillistic Pattern Search"
       , "authors": ["yifei*", "me*", "roman", "jeff"]
       , "venue": "bayesopt-14"
+      , "year": "2014"
       , "related": [
           ["pdf", "https://cs.cmu.edu/~dsutherl/papers/apps_nips14ws.pdf"]
         , ["poster", "https://cs.cmu.edu/~dsutherl/papers/apps_nips14ws_poster.pdf"]

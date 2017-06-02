@@ -14,7 +14,9 @@
     <p>
       I'm a postdoc at the <a href="http://www.gatsby.ucl.ac.uk/">Gatsby Computational Neuroscience Unit</a> at University College London, with <a href="http://www.gatsby.ucl.ac.uk/~gretton/">Arthur Gretton</a>.
       Contact: <a class="email" href="mailto:dougal@gmail.com">dougal@gmail.com</a>.
-      <a href="https://orcid.org/0000-0002-1525-3532">ORCID</a>, <a href="https://scholar.google.com/citations?user=uO_NqicAAAAJ">Google Scholar</a>.
+      <a href="https://orcid.org/0000-0002-1525-3532">ORCID</a>,
+      <a href="https://scholar.google.com/citations?user=uO_NqicAAAAJ">Google Scholar</a>,
+      <a href="cv.pdf">CV</a>.
     </p>
 
     <p>
@@ -35,7 +37,7 @@
       See also:
       various code <a href="https://github.com/dougalsutherland">on github</a>,
       my <a href="https://stats.stackexchange.com/users/9964/dougal">crossvalidated</a>/<a href="http://stackoverflow.com/users/344821/dougal">stackoverflow</a> profiles,
-      and <a href="https://www.sccs.swarthmore.edu/users/11/dougal/">my Swarthmore page</a> older stuff from undergrad.
+      and <a href="https://www.sccs.swarthmore.edu/users/11/dougal/">my Swarthmore page</a> for older stuff from undergrad.
     </p>
 
     <h3>Publications</h3>
@@ -63,20 +65,10 @@
               {%- set authors = paper.authors -%}
             {%- endif -%}
             {%- for author in authors -%}
-              {# get author info #}
-              {%- if author.endswith("*") -%}
-                {%- set equal = true -%}
-                {%- set author = author[:-1] -%}
-              {%- else %}
-                {%- set equal = false -%}
-              {%- endif -%}
-              {%- set auth = coauthors[author] -%}
+              {%- set auth = author | get_author(coauthors) -%}
+              {{ auth | full_name | maybe_link(auth.web) }}
+              {%- if auth.is_equal %}<span class="equal">**</span>{%- endif -%}
 
-              {# content #}
-              {{ auth.name | maybe_link(auth.web) }}
-              {%- if equal %}<span class="equal">**</span>{%- endif -%}
-
-              {# list delimiters #}
               {%- if loop.last -%}
                 .
               {%- elif loop.length == 2 -%}

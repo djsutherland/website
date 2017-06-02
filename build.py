@@ -2,10 +2,13 @@
 from __future__ import unicode_literals
 
 import argparse
+from copy import copy
+import datetime
 import io
 import json
 import re
 import os
+import subprocess
 
 import staticjinja
 from unidecode import unidecode
@@ -19,11 +22,11 @@ def paper_data():
         return json.load(f)
 
 
-
 filters = {}
 def filter(fn):
     filters[fn.__name__] = fn
     return fn
+
 
 @filter
 def venue_url(venue, year=None):
@@ -33,11 +36,16 @@ def venue_url(venue, year=None):
         return venue['web']
     return None
 
+
 @filter
 def get_author(author, coauthors):
-    if author.endswith('*'):
+    is_equal = author.endswith('*')
+    if is_equal:
         author = author[:-1]
-    return coauthors[author]
+    d = copy(coauthors[author])
+    d['is_equal'] = is_equal
+    return d
+
 
 translation_table = {}
 @filter
@@ -58,22 +66,50 @@ def latex_escape(string):
 
     return string.translate(translation_table)
 
+
 filters['unidecode'] = unidecode
+
+
+@filter
+def full_name(author_dict):
+    if 'full_name' in author_dict:
+        return author_dict['full_name']
+    return '{} {}'.format(author_dict['first'], author_dict['last'])
+
 
 @filter
 def last_name(author_dict):
-    if 'last_name' in author_dict:
-        return author_dict['last_name']
-    return author_dict['name'].split()[-1]
+    return author_dict['last']
+
 
 @filter
-def bibtex_authors(authors, coauthors):
-    return ' and '.join(
-        latex_escape(get_author(a, coauthors)['name']) for a in authors)
+def first_name(author_dict):
+    return author_dict['first']
+
 
 @filter
-def author_equal(author):
-    return author.endswith('*')
+def first_inits(author_dict):
+    def init(x):
+        return '-'.join(n[0] for n in x.split('-'))
+    return ' '.join(init(n) for n in author_dict['first'].split())
+
+
+@filter
+def bibtex_authors(authors, coauthors, mark_equal=''):
+    auths = []
+    for a in authors:
+        auth = get_author(a, coauthors)
+        name = latex_escape(full_name(auth))
+        auths.append(name + (mark_equal if auth['is_equal'] else ''))
+    return ' and '.join(auths)
+
+
+@filter
+def bibtex_key(paper, coauthors):
+    auth = get_author(paper['authors'][0], coauthors)
+    prefix = unidecode(last_name(auth)).lower()
+    return '{}:{}'.format(prefix, paper['key'])
+
 
 @filter
 def maybe_wrap(content, before, after):
@@ -82,12 +118,28 @@ def maybe_wrap(content, before, after):
     else:
         return ""
 
+
 @filter
 def maybe_link(content, url=None):
     if url:
         return "<a href={}>{}</a>".format(url, content)
     else:
         return content
+
+
+@filter
+def last_edit_dt(filenames):
+    # is the file currently edited in git?
+    fs = list(filenames)
+    try:
+        subprocess.check_output(
+            ['git', 'diff-index', '--quiet', 'HEAD'] + fs, cwd=_dir)
+    except subprocess.CalledProcessError:
+        return datetime.datetime.now()
+    else:
+        out = subprocess.check_output(
+            ['git', 'log', '-1', '--format=%ct'] + fs, cwd=_dir)
+        return datetime.datetime.fromtimestamp(int(out.strip()))
 
 
 def make_site():
@@ -113,5 +165,10 @@ if __name__ == "__main__":
     parser.add_argument('files', nargs='*')
     args = parser.parse_args()
 
-    site = make_site()
-    render(site, files=args.files, watch=args.watch)
+    try:
+        site = make_site()
+        render(site, files=args.files, watch=args.watch)
+    except:
+        raise
+        import pdb
+        pdb.post_mortem()

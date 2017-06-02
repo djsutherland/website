@@ -1,3 +1,13 @@
+{% raw -%}
+% This .bib uses \bibeqcon{} to mark equal contributions between authors.
+% Usually, you don't actually want that in your bibliography, so this line
+% makes that not render as anything. You could use e.g.
+%   \newcommand{\bibeqcon}{$^*$}
+% in your document's preable (before including this .bib) to actually show it.
+@preamble{"\providecommand{\bibeqcon}{}"}
+
+
+{% endraw %}
 {%- for paper in papers -%}
 {%- set venue = venues[paper.venue] -%}
     {%- if venue.type == "conference" or venue.type == "workshop" -%}
@@ -12,8 +22,8 @@
         @misc
     {%- endif -%}
 {
-    {{- paper.authors[0] | get_author(coauthors) | last_name | unidecode | lower }}:{{ paper.key }},
-    author = { {{- paper.authors | bibtex_authors(coauthors) -}} },
+    {{- paper | bibtex_key(coauthors) -}},
+    author = { {{- paper.authors | bibtex_authors(coauthors, '\\bibeqcon{}') -}} },
     title = { {{- paper.bibtex_title | default(paper.title) -}} },
     year = { {{- paper.year -}} },
     {%- if paper.arXiv %}
@@ -22,14 +32,16 @@
     eprint = { {{- paper.arXiv -}} },
     {%- endif %}
     {{- paper.doi | maybe_wrap("\n    doi = {", "},") -}}
-    {%- if venue.type == "conference" or venue.type == "workshop" %}
+    {%- if venue.conference is defined %}
+    booktitle = { {{- venue.name }} ({{ venues[venue.conference].short }} workshop)}
+    {%- elif venue.type == "conference" or venue.type == "workshop" %}
     booktitle = { {{- venue.name -}} {{- venue.short | maybe_wrap(" (", ")") -}} },
     {%- elif venue.type == "journal" %}
     journal = { {{- venue.name -}} },
     {%- elif venue.type == "phd-thesis" %}
-    type = {Ph.D.},
+    type = {Ph.D. thesis},
     {%- elif venue.type == "ba-thesis" %}
-    type = {B.A.},
+    type = {B.A. thesis},
     {%- endif %}
     {{- paper.volume | maybe_wrap("\n    volume = {", "},") -}}
     {{- paper.number | maybe_wrap("\n    number = {", "},") -}}
