@@ -49,6 +49,7 @@
     {{- venue.school | maybe_wrap("\n    school = {", "},") -}}
     {{- venue.department | maybe_wrap("\n    department = {", "},") -}}
     {{- venue.bib_type | maybe_wrap("\n    type = {", "},") -}}
+    {{- paper.official | maybe_wrap("\n    url = {", "},") -}}
 {# make sure there's a newline here #}
 }
 
