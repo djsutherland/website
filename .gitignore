@@ -5,3 +5,8 @@
 /biblio.bib
 /cv.tex
 /cv.pdf
+
+
+__pycache__/
+*.py[cod]
+*$py.class
