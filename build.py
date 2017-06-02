@@ -166,10 +166,5 @@ if __name__ == "__main__":
     parser.add_argument('files', nargs='*')
     args = parser.parse_args()
 
-    try:
-        site = make_site()
-        render(site, files=args.files, watch=args.watch)
-    except:
-        raise
-        import pdb
-        pdb.post_mortem()
+    site = make_site()
+    render(site, files=args.files, watch=args.watch)
