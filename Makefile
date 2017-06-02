@@ -8,6 +8,7 @@ all: index.html biblio.bib cv.pdf
 	python build.py $@
 
 cv.pdf: cv.tex biblio.bib
-	ln -f cv.tex cv-build/
-	cd cv-build && latexmk -pdf cv
-	ln -f cv-build/cv.pdf .
+	mkdir -p .cv-build
+	ln -f cv.tex .cv-build/
+	cd .cv-build && latexmk -pdf cv
+	ln -f .cv-build/cv.pdf .
