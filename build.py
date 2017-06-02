@@ -51,12 +51,12 @@ translation_table = {}
 @filter
 def latex_escape(string):
     "Turn unicode accented characters into LaTeX escapes."
-    # https://stackoverflow.com/a/4579006/344821
+    # based on https://stackoverflow.com/a/4579006/344821
     global translation_table
 
     if not translation_table:
-        p = re.compile(r'%.*\DeclareUnicodeCharacter\{(\w+)\}\{(.*)\}')
-        fn = subprocess.check_output(['kpsewhich', 'utf8ienc.dtx']).strip()
+        p = re.compile(r'%?.*\DeclareUnicodeCharacter\{(\w+)\}\{(.*)\}')
+        fn = subprocess.check_output(['kpsewhich', 'utf8enc.dfu']).strip()
         with io.open(fn) as f:
             for line in f:
                 m = p.match(line)
