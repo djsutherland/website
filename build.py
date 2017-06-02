@@ -56,7 +56,8 @@ def latex_escape(string):
 
     if not translation_table:
         p = re.compile(r'%.*\DeclareUnicodeCharacter\{(\w+)\}\{(.*)\}')
-        with io.open('utf8ienc.dtx') as f:
+        fn = subprocess.check_output(['kpsewhich', 'utf8ienc.dtx']).strip()
+        with io.open(fn) as f:
             for line in f:
                 m = p.match(line)
                 if m:
