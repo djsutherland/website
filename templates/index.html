@@ -47,7 +47,7 @@
     <h3>Invited Talks</h3>
     {% for talk in talks %}
       <div class="talk" id="talk-{{ talk.key }}">
-        <span class="title">{{ talk.title }}.</span>
+        {{ talk.title | maybe_wrap("<span class='title'>", ".</span>") }}
         <span class="venue">
           {{ "{:%B %Y}".format(talk.date | date) }}.
           {%  set venue = venues[talk.venue] -%}

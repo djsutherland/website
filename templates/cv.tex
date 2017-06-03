@@ -139,7 +139,7 @@ Below, \bibeqcon{} denotes equal contribution.
 \section{Invited Talks}
 \newcommand{\talk}[3]{% date, name, venue
   \item[#1]%
-    \textit{#2}. \\
+    \ifthenelse{\equal{#2}{}}{}{\textit{#2}. \\}
     #3
 }
 \begin{itemize}

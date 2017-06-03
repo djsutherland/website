@@ -247,6 +247,21 @@
         , "2015": "https://nips.cc/Conferences/2015"
       }
     }
+    , "icml": {
+        "name": "International Conference on Machine Learning"
+      , "short": "ICML"
+      , "type": "conference"
+      , "web_by_year": {
+          "2017": "https://2017.icml.cc/"
+      }
+    }
+    , "icml-implicit": {
+        "name": "Implicit Models"
+      , "web": "https://sites.google.com/view/implicitmodels/"
+      , "type": "workshop"
+      , "conference": "icml"
+      , "year": "2017"
+    }
     , "csd": {
         "name": "Computer Science Department, Carnegie Mellon University"
       , "school": "Carnegie Mellon University"
@@ -539,6 +554,11 @@
   ]
   , "talks": [
     {
+        "key": "icml-gan"
+      , "venue": "icml-implicit"
+      , "date": "2017-08-10"
+    }
+    , {
         "key": "dali-opt-mmd"
       , "title": "Two-Sample Tests, Integral Probability Metrics, and GAN Objectives"
       , "venue": "dali-gan-17"
