@@ -319,6 +319,7 @@
       , "arXiv": "1611.04488"
       , "related": [
           ["code", "https://github.com/dougalsutherland/opt-mmd/"]
+        , ["poster", "http://www.gatsby.ucl.ac.uk/~dougals/posters/iclr-opt-mmd.pdf"]
       ]
     }
     , {
