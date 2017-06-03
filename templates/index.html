@@ -12,17 +12,21 @@
     <img src="photo.jpg" id="me" />
 
     <p>
-      I'm a postdoc at the <a href="http://www.gatsby.ucl.ac.uk/">Gatsby Computational Neuroscience Unit</a> at University College London, with <a href="http://www.gatsby.ucl.ac.uk/~gretton/">Arthur Gretton</a>.
-      Contact: <a class="email" href="mailto:dougal@gmail.com">dougal@gmail.com</a>.
+      I'm a postdoc at the <a href="http://www.gatsby.ucl.ac.uk/">Gatsby Computational Neuroscience Unit</a>, University College London, working with <a href="http://www.gatsby.ucl.ac.uk/~gretton/">Arthur Gretton</a>.
+    </p>
+
+    <p>
+      The essentials:
+      <a class="email" href="mailto:dougal@gmail.com">dougal@gmail.com</a>,
       <a href="cv.pdf">CV</a>,
-      <a href="https://scholar.google.com/citations?user=uO_NqicAAAAJ">Google Scholar</a>,
-      <a href="https://orcid.org/0000-0002-1525-3532">ORCID</a>.
+      <a href="https://orcid.org/0000-0002-1525-3532">ORCID</a>,
+       <a href="https://keybase.io/dougalsutherland/key.asc">GPG key</a> / <a href="https://keybase.io/dougalsutherland">keybase</a>.
     </p>
 
     <p>
       My research interests include:
       <ul>
-        <li>Learning and testing on sets and distributions: two-sample tests, generative models, density estimation, distribution regression/classification/outlier detection.</li>
+        <li>Learning and testing on sets and distributions: two-sample tests, evaluating and training generative models, density estimation, distribution regression/classification/outlier detection.</li>
         <li>Approximate kernel embeddings, e.g. random Fourier features.</li>
         <li>Active learning, especially in nonstandard settings like searching for large-scale patterns.</li>
       </ul>
@@ -45,7 +49,7 @@
       <div class="talk" id="talk-{{ talk.key }}">
         <span class="title">{{ talk.title }}.</span>
         <span class="venue">
-          {{ "{:%-d %B, %Y}".format(talk.date | date) }}.
+          {{ "{:%B %Y}".format(talk.date | date) }}.
           {%  set venue = venues[talk.venue] -%}
           {%- set href = venue|venue_url("{:Y}".format(talk.date | date)) -%}
           {%- if venue.short -%}
@@ -86,7 +90,9 @@
     <h3>Publications</h3>
     <p>
       Below, <span class="equal">**</span> denotes equal contribution.
-      Also available as <a href="biblio.bib">a .bib file</a>.
+      Also available as <a href="biblio.bib">a .bib file</a>,
+      and most of these are on
+      <a href="https://scholar.google.com/citations?user=uO_NqicAAAAJ">Google Scholar</a>.
     </p>
 
     {% set sections = [
