@@ -45,7 +45,8 @@
       <div class="talk" id="talk-{{ talk.key }}">
         <span class="title">{{ talk.title }}.</span>
         <span class="venue">
-          {%- set venue = venues[talk.venue] -%}
+          {{ "{:%-d %B, %Y}".format(talk.date | date) }}.
+          {%  set venue = venues[talk.venue] -%}
           {%- set href = venue|venue_url("{:Y}".format(talk.date | date)) -%}
           {%- if venue.short -%}
             {{ venue.name }}
@@ -59,7 +60,6 @@
             , {{ conf.short|default(conf.name)|maybe_link(conf_href) }}
           {%- endif -%}
           .
-          {{ "{:%-d %B, %Y}".format(talk.date | date) }}.
         </span>
         {% if talk.papers %}
         <span class="note">
