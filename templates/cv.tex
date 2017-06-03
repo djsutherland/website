@@ -136,6 +136,32 @@ Below, \bibeqcon{} denotes equal contribution.
 {% endfor %}
 
 {% raw %}
+\section{Invited Talks}
+\newcommand{\talk}[3]{% date, name, venue
+  \item[#1]%
+    \textit{#2}. \\
+    #3
+}
+\begin{itemize}
+{% endraw %}
+
+{% for talk in talks %}
+\talk{ {{- "{:%b %Y}".format(talk.date | date) -}} }%
+     { {{- talk.title -}} }%
+     {
+        {%- set venue = venues[talk.venue] -%}
+        {{- venue.name -}}
+        {{- venue.short | maybe_wrap(" (", ")") -}}
+        {%- if venue.conference -%}
+          {%- set conf = venues[venue.conference] -%}
+          {{- "" }} ({{ conf.short | default(conf.name) }} workshop)
+        {%- endif -%}
+        .
+     }
+{% endfor %}
+
+{% raw %}
+\end{itemize}
 
 \section{Teaching Experience}
 \cventry{Spring 2014}{Teaching Assistant}{15-853 Algorithms in the Real World}{Carnegie Mellon University}{}{%

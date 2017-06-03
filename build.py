@@ -129,6 +129,11 @@ def maybe_link(content, url=None):
 
 
 @filter
+def date(date):
+    return datetime.datetime.strptime(date, "%Y-%m-%d")
+
+
+@filter
 def last_edit_dt(filenames):
     # is the file currently edited in git?
     fs = list(filenames)

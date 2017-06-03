@@ -269,6 +269,22 @@
       , "web": "https://www.cs.cmu.edu/~ggordon/10725-F12/"
       , "type": "course-project"
     }
+    , "oxford-csml": {
+        "name": "Computational Statistics and Machine Learning seminar, Oxford University"
+      , "kind": "seminar"
+    }
+    , "dali": {
+        "name": "Data Analysis, Learning, and Inference"
+      , "short": "DALI"
+      , "type": "conference"
+      , "web": "http://dalimeeting.org"
+    }
+    , "dali-gan-17": {
+        "name": "The Theory of Generative Adversarial Networks"
+      , "conference": "dali"
+      , "year": "2017"
+      , "web": "http://dalimeeting.org/dali2017/generative-adversarial-networks.html"
+    }
   }
   , "papers": [
     {
@@ -519,6 +535,25 @@
           ["pdf", "http://www.sccs.swarthmore.edu/users/11/dougal/work/thesis.pdf"]
       ]
       , "note": "B.A. thesis."
+    }
+  ]
+  , "talks": [
+    {
+        "key": "dali-opt-mmd"
+      , "title": "Two-Sample Tests, Integral Probability Metrics, and GAN Objectives"
+      , "venue": "dali-gan-17"
+      , "papers": ["opt-mmd"]
+      , "date": "2017-04-18"
+      , "slides": "http://www.gatsby.ucl.ac.uk/~dougals/slides/dali/"
+      , "video": "https://youtu.be/Xpd6DL02C7Q"
+    }
+    , {
+        "key": "oxford-opt-mmd"
+      , "title": "Generative Models and Model Criticism via Optimized Maximum Mean Discrepancy"
+      , "venue": "oxford-csml"
+      , "papers": ["opt-mmd"]
+      , "date": "2017-02-03"
+      , "slides": "http://www.gatsby.ucl.ac.uk/~dougals/slides/oxford-opt-mmd.pdf"
     }
   ]
 }

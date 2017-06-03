@@ -40,6 +40,49 @@
       and <a href="https://www.sccs.swarthmore.edu/users/11/dougal/">my Swarthmore page</a> for older stuff from undergrad.
     </p>
 
+    <h3>Invited Talks</h3>
+    {% for talk in talks %}
+      <div class="talk" id="talk-{{ talk.key }}">
+        <span class="title">{{ talk.title }}.</span>
+        <span class="venue">
+          {%- set venue = venues[talk.venue] -%}
+          {%- set href = venue|venue_url("{:Y}".format(talk.date | date)) -%}
+          {%- if venue.short -%}
+            {{ venue.name }}
+            ({{ venue.short | maybe_link(href) }})
+          {%- else -%}
+            {{ venue.name | maybe_link(href) }}
+          {%- endif -%}
+          {%- if venue.conference -%}
+            {%- set conf = venues[venue.conference] -%}
+            {%- set conf_href = conf|venue_url(venue.year) -%}
+            , {{ conf.short|default(conf.name)|maybe_link(conf_href) }}
+          {%- endif -%}
+          .
+          {{ "{:%-d %B, %Y}".format(talk.date | date) }}.
+        </span>
+        {% if talk.papers %}
+        <span class="note">
+          Based on
+          {% if talk.papers | length == 1 %}
+            <a href="#{{ talk.papers[0] }}">this paper</a>.
+          {% else %}
+            these papers:
+            {% for paper in talk.papers -%}
+              <a href="#{{ paper }}">{{ loop.index }}</a>
+              {%- if not loop.last %}, {% endif -%}
+            {%- endfor %}.
+          {% endif %}
+        </span>
+        {% endif %}
+
+        <div class="links">
+          {{ talk.video | maybe_wrap("<span class='info'>[<a href='", "'>video</a>]</span>") }}
+          {{ talk.slides | maybe_wrap("<span class='info'>[<a href='", "'>slides</a>]</span>") }}
+        </div>
+      </div>
+    {% endfor %}
+    
     <h3>Publications</h3>
     <p>
       Below, <span class="equal">**</span> denotes equal contribution.
@@ -124,6 +167,7 @@
         </div>
       {% endfor %}
     {% endfor %}
+
   </div>
 </body>
 </html>
