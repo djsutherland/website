@@ -555,6 +555,7 @@
   , "talks": [
     {
         "key": "icml-gan"
+      , "title": "Evaluating and Training Implicit Generative Models with Two-Sample Tests"
       , "venue": "icml-implicit"
       , "date": "2017-08-10"
     }
