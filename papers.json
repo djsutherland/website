@@ -426,7 +426,7 @@
       , "authors": ["me", "jeff"]
       , "venue": "uai"
       , "year": "2015"
-      , "note": "Chapter 3 / Section 4.1 of <a href='#thesis'>my thesis</a> supercedes this paper, fixing a few errors in constants and providing more results."
+      , "note": "Chapter 3 / Section 4.1 of <a href='#thesis'>my thesis</a> supersedes this paper, fixing a few errors in constants and providing more results."
       , "official": "http://auai.org/uai2015/proceedings/papers/168.pdf"
       , "arXiv": "1506.02785"
       , "related": [
