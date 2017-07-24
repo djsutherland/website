@@ -363,9 +363,9 @@
       , "official": "http://reports-archive.adm.cs.cmu.edu/anon/2016/abstracts/16-128.html"
       , "related": [
           ["pdf", "http://reports-archive.adm.cs.cmu.edu/anon/2016/CMU-CS-16-128.pdf"]
-        , ["slides", "https://cs.cmu.edu/~dsutherl/thesis-slides.pdf"]
-        , ["proposal (2015)", "https://cs.cmu.edu/~dsutherl/proposal.pdf"]
-        , ["proposal slides", "https://cs.cmu.edu/~dsutherl/proposal-slides.pdf"]
+        , ["slides", "http://www.gatsby.ucl.ac.uk/~dougals/slides/thesis.pdf"]
+        , ["proposal (2015)", "http://www.gatsby.ucl.ac.uk/~dougals/papers/proposal.pdf"]
+        , ["proposal slides", "http://www.gatsby.ucl.ac.uk/~dougals/slides/proposal.pdf"]
       ]
     }
     , {
@@ -404,7 +404,7 @@
       , "official": "http://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/download/12460/11844"
       , "arXiv": "1509.07553"
       , "related": [
-          ["poster", "https://cs.cmu.edu/~dsutherl/papers/hdd_aaai_poster.pdf"]
+          ["poster", "http://www.gatsby.ucl.ac.uk/~dougals/posters/hdd_aaai.pdf"]
       ]
     }
     , {
@@ -415,8 +415,8 @@
       , "year": "2015"
       , "note": "Workshop version of <a href='#hdd'>this paper</a>."
       , "related": [
-          ["pdf", "https://cs.cmu.edu/~dsutherl/papers/hdd_nips15ws.pdf"]
-        , ["poster", "https://cs.cmu.edu/~dsutherl/papers/hdd_nips15ws_poster.pdf"]
+          ["pdf", "http://www.gatsby.ucl.ac.uk/~dougals/papers/hdd_nips15ws.pdf"]
+        , ["poster", "http://www.gatsby.ucl.ac.uk/~dougals/posters/hdd_nips15ws.pdf"]
       ]
     }
     , {
@@ -430,7 +430,7 @@
       , "official": "http://auai.org/uai2015/proceedings/papers/168.pdf"
       , "arXiv": "1506.02785"
       , "related": [
-          ["poster", "https://cs.cmu.edu/~dsutherl/papers/rff_uai15_poster.pdf"]
+          ["poster", "http://www.gatsby.ucl.ac.uk/~dougals/posters/rff_uai15.pdf"]
       ]
     }
     , {
@@ -441,9 +441,9 @@
       , "year": "2015"
       , "official": "http://jmlr.org/proceedings/papers/v38/ma15.html"
       , "related": [
-          ["pdf", "https://cs.cmu.edu/~dsutherl/papers/apps_aistats15.pdf"]
-        , ["appendix", "https://cs.cmu.edu/~dsutherl/papers/apps_aistats15_appendix.pdf"]
-        , ["poster", "https://cs.cmu.edu/~dsutherl/papers/apps_aistats15_poster.pdf"]
+          ["pdf", "http://www.gatsby.ucl.ac.uk/~dougals/papers/apps_aistats15.pdf"]
+        , ["appendix", "http://www.gatsby.ucl.ac.uk/~dougals/papers/apps_aistats15_appendix.pdf"]
+        , ["poster", "http://www.gatsby.ucl.ac.uk/~dougals/posters/apps_aistats15.pdf"]
       ]
     }
     , {
@@ -453,8 +453,8 @@
       , "venue": "bayesopt-14"
       , "year": "2014"
       , "related": [
-          ["pdf", "https://cs.cmu.edu/~dsutherl/papers/apps_nips14ws.pdf"]
-        , ["poster", "https://cs.cmu.edu/~dsutherl/papers/apps_nips14ws_poster.pdf"]
+          ["pdf", "http://www.gatsby.ucl.ac.uk/~dougals/papers/apps_nips14ws.pdf"]
+        , ["poster", "http://www.gatsby.ucl.ac.uk/~dougals/posters/apps_nips14ws.pdf"]
       ]
       , "note": "Workshop version of <a href='#apps'>this paper."
     }
@@ -478,9 +478,9 @@
       , "year": "2013"
       , "doi": "10.1145/2487575.2487627"
       , "related": [
-          ["pdf", "https://cs.cmu.edu/~dsutherl/papers/kdd-13.pdf"]
-        , ["poster", "https://cs.cmu.edu/~dsutherl/papers/kdd-13-poster.pdf"]
-        , ["slides", "https://cs.cmu.edu/~dsutherl/papers/kdd-13-slides.pdf"]
+          ["pdf", "http://www.gatsby.ucl.ac.uk/~dougals/papers/kdd-13.pdf"]
+        , ["poster", "http://www.gatsby.ucl.ac.uk/~dougals/posters/kdd-13.pdf"]
+        , ["slides", "http://www.gatsby.ucl.ac.uk/~dougals/slides/kdd-13.pdf"]
         , ["code", "https://github.com/AutonlabCMU/active-matrix-factorization"]
       ]
     }
@@ -500,7 +500,7 @@
       , "year": "2012"
       , "note": "Best poster award."
       , "related": [
-        ["pdf", "https://cs.cmu.edu/~dsutherl/papers/opt-project.pdf"]
+        ["pdf", "http://www.gatsby.ucl.ac.uk/~dougals/papers/opt-project.pdf"]
       ]
     }
     , {
@@ -511,8 +511,8 @@
       , "year": "2012"
       , "doi": "10.1109/CVPR.2012.6248028"
       , "related": [
-          ["pdf", "https://cs.cmu.edu/~dsutherl/papers/cvpr-12.pdf"]
-        , ["poster", "https://cs.cmu.edu/~dsutherl/papers/cvpr-12-poster.pdf"]
+          ["pdf", "http://www.gatsby.ucl.ac.uk/~dougals/papers/cvpr-12.pdf"]
+        , ["poster", "http://www.gatsby.ucl.ac.uk/~dougals/posters/cvpr-12.pdf"]
       ]
     }
     , {
@@ -537,7 +537,7 @@
       , "venue": "tech-report"
       , "year": "2012"
       , "related": [
-          ["pdf", "https://cs.cmu.edu/~dsutherl/papers/smrf-techreport.pdf"]
+          ["pdf", "http://www.gatsby.ucl.ac.uk/~dougals/papers/smrf-techreport.pdf"]
       ]
     }
     , {
