@@ -557,7 +557,9 @@
         "key": "icml-gan"
       , "title": "Evaluating and Training Implicit Generative Models with Two-Sample Tests"
       , "venue": "icml-implicit"
+      , "papers": ["opt-mmd"]
       , "date": "2017-08-10"
+      , "slides": "http://www.gatsby.ucl.ac.uk/~dougals/slides/icml-igm/"
     }
     , {
         "key": "dali-opt-mmd"

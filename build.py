@@ -46,6 +46,9 @@ def get_author(author, coauthors):
     d['is_equal'] = is_equal
     return d
 
+@filter
+def get_paper(key, papers):
+    return next(paper for paper in papers if paper['key'] == key)
 
 translation_table = {}
 @filter
