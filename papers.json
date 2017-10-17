@@ -304,7 +304,7 @@
   , "papers": [
     {
         "key": "kexpfam-nystroem"
-      , "title": "Efficient and principled score estimation"
+      , "title": "Efficient and principled score estimation with Nyström kernel exponential families"
       , "authors": ["me*", "heiko*", "michael", "arthur"]
       , "arXiv": "1705.08360"
       , "venue": "preprint"
@@ -312,7 +312,7 @@
     }
     , {
         "key": "bdr"
-      , "title": "Bayesian Distribution Regression"
+      , "title": "Bayesian Approaches to Distribution Regression"
       , "authors": ["leon*", "me*", "dino", "seth"]
       , "arXiv": "1705.04293"
       , "venue": "preprint"
@@ -337,7 +337,7 @@
         ["code", "https://github.com/flaxter/us2016/"]
         , ["microdata analysis package", "https://github.com/dougalsutherland/pummeler/"]
       ]
-      , "venue": "preprint"
+      , "venue": "tech-report"
       , "year": "2016"
     }
     , {
