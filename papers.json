@@ -12,8 +12,9 @@
       , "last": "Strathmann"
       , "web": "http://herrstrathmann.de/about/"
     }, "michael": {
-      "first": "Michael"
+        "first": "Michael"
       , "last": "Arbel"
+      , "web": "https://michaelarbel.github.io/"
     }, "leon": {
         "first": "Ho Chung Leon"
       , "last": "Law"
