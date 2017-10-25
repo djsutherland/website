@@ -223,6 +223,13 @@
         "2012": "https://www.usenix.org/conference/lisa12"
       }
     }
+    , "nips-dfgg": {
+        "name": "Learning on Distributions, Functions, Graphs and Groups"
+      , "web": "https://sites.google.com/site/nips2017learningon/"
+      , "type": "workshop"
+      , "conference": "nips"
+      , "year": "2017"
+    }
     , "feature-extraction": {
         "name": "Feature Extraction: Modern Questions and Challenges"
       , "web": "http://www.feature-extraction.org/"
@@ -303,6 +310,14 @@
   }
   , "papers": [
     {
+        "key": "bdr-workshop"
+      , "title": "Bayesian Approaches to Distribution Regression"
+      , "authors": ["leon*", "me*", "dino", "seth"]
+      , "venue": "nips-dfgg"
+      , "year": "2017"
+      , "note": "Workshop version of <a href='#bdr'>this paper</a>."
+    }
+    , {
         "key": "kexpfam-nystroem"
       , "title": "Efficient and principled score estimation with Nyström kernel exponential families"
       , "authors": ["me*", "heiko*", "michael", "arthur"]
