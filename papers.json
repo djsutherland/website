@@ -585,7 +585,7 @@
   ]
   , "talks": [
     {
-        "key": "kexpfam-csml"
+        "key": "kexpfam-ati"
       , "title": "Efficient and principled score estimation with kernel exponential families"
       , "venue": "turing-highd"
       , "papers": ["kexpfam-nystroem"]
