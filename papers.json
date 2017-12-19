@@ -294,7 +294,7 @@
     }
     , "oxford-csml": {
         "name": "Computational Statistics and Machine Learning seminar, Oxford University"
-      , "kind": "seminar"
+      , "type": "seminar"
     }
     , "dali": {
         "name": "Data Analysis, Learning, and Inference"
@@ -307,6 +307,21 @@
       , "conference": "dali"
       , "year": "2017"
       , "web": "http://dalimeeting.org/dali2017/generative-adversarial-networks.html"
+    }
+    , "ucl-csml": {
+        "name": "Computational Statistics and Machine Learning seminar, University College London"
+      , "type": "seminar"
+    }
+    , "turing": {
+        "name": "Alan Turing Institute"
+      , "type": "conference"
+      , "web": "https://www.turing.ac.uk/events/"
+    }
+    , "turing-highd": {
+        "name": "Approximating high dimensional functions"
+      , "conference": "turing"
+      , "web": "https://www.turing.ac.uk/events/approximating-high-dimensional-functions/"
+      , "year": "2017"
     }
   }
   , "papers": [
@@ -570,6 +585,22 @@
   ]
   , "talks": [
     {
+        "key": "kexpfam-csml"
+      , "title": "Efficient and principled score estimation with kernel exponential families"
+      , "venue": "turing-highd"
+      , "papers": ["kexpfam-nystroem"]
+      , "date": "2017-12-19"
+      , "slides": "http://www.gatsby.ucl.ac.uk/~dougals/slides/highd-functions/"
+    }
+    , {
+        "key": "kexpfam-csml"
+      , "title": "Efficient and principled score estimation with kernel exponential families"
+      , "venue": "ucl-csml"
+      , "papers": ["kexpfam-nystroem"]
+      , "date": "2017-12-15"
+      , "slides": "http://www.gatsby.ucl.ac.uk/~dougals/slides/csml/kexpfam/"
+    }
+    , {
         "key": "icml-gan"
       , "title": "Evaluating and Training Implicit Generative Models with Two-Sample Tests"
       , "venue": "icml-implicit"
