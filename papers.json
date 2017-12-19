@@ -332,6 +332,9 @@
       , "venue": "nips-dfgg"
       , "year": "2017"
       , "note": "Workshop version of <a href='#bdr'>this paper</a>."
+      , "related": [
+         ["slides", "http://www.gatsby.ucl.ac.uk/~dougals/slides/bdr-nips/"]
+      ]
     }
     , {
         "key": "kexpfam-nystroem"
