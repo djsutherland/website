@@ -334,6 +334,7 @@
       , "note": "Workshop version of <a href='#bdr'>this paper</a>."
       , "related": [
          ["slides", "http://www.gatsby.ucl.ac.uk/~dougals/slides/bdr-nips/"]
+       , ["poster", "http://www.gatsby.ucl.ac.uk/~dougals/posters/bdr-nips17ws.pdf"]
       ]
     }
     , {
