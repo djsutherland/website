@@ -15,6 +15,9 @@
         "first": "Michael"
       , "last": "Arbel"
       , "web": "https://michaelarbel.github.io/"
+    }, "mikolaj": {
+        "first": "Mikołaj"
+      , "last": "Bińkowski"
     }, "leon": {
         "first": "Ho Chung Leon"
       , "last": "Law"
@@ -168,6 +171,7 @@
       , "type": "conference"
       , "web_by_year": {
           "2017": "http://www.iclr.cc/doku.php?id=iclr2017:main"
+        , "2018": "http://www.iclr.cc/doku.php?id=ICLR2018:main"
       }
     }
     , "ApJ": {
@@ -327,6 +331,16 @@
   }
   , "papers": [
     {
+        "key": "mmd-gans"
+      , "title": "Demystifying MMD GANs"
+      , "authors": ["mikolaj*", "me*", "michael", "arthur"]
+      , "venue": "preprint"
+      , "year": "2018"
+      , "related": [
+        ["ICLR-18 submission", "https://openreview.net/forum?id=r1lUOzWCW"]
+      ]
+    }
+    , {
         "key": "bdr-workshop"
       , "title": "Bayesian Approaches to Distribution Regression"
       , "authors": ["leon*", "me*", "dino", "seth"]
