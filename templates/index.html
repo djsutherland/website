@@ -49,9 +49,9 @@
       <div class="talk" id="talk-{{ talk.key }}">
         {{ talk.title | maybe_wrap("<span class='title'>", ".</span>") }}
         <span class="venue">
-          {{ "{:%B %Y}".format(talk.date | date) }}.
+          {{ "{:%B %Y}".format(talk.date) }}.
           {%  set venue = venues[talk.venue] -%}
-          {%- set href = venue|venue_url("{:Y}".format(talk.date | date)) -%}
+          {%- set href = venue|venue_url("{:Y}".format(talk.date)) -%}
           {%- if venue.short -%}
             {{ venue.name }}
             ({{ venue.short | maybe_link(href) }})
@@ -166,9 +166,11 @@
             {% if paper.official %}<span class="info">[<a href="{{ paper.official }}">official</a>]</span>{% endif %}
             {% if paper.doi %}<span class="info">[<a href="https://dx.doi.org/{{ paper.doi }}">doi</a>]</span>{% endif %}
             {% if paper.arXiv %}<span class="info">[<a href="https://arxiv.org/abs/{{ paper.arXiv }}">arXiv</a>]</span>{% endif %}
-            {% for name, link in paper.related %}
-              <span class="info">[<a href="{{ link }}">{{ name }}</a>]</span>
-            {% endfor %}
+            {% if paper.related %}
+              {% for name, link in paper.related.items() %}
+                <span class="info">[<a href="{{ link }}">{{ name }}</a>]</span>
+              {% endfor %}
+            {% endif %}
           </div>
         </div>
       {% endfor %}

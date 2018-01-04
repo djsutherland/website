@@ -146,7 +146,7 @@ Below, \bibeqcon{} denotes equal contribution.
 {% endraw %}
 
 {% for talk in talks %}
-\talk{ {{- "{:%b %Y}".format(talk.date | date) -}} }%
+\talk{ {{- "{:%b %Y}".format(talk.date) -}} }%
      { {{- talk.title -}} }%
      {
         {%- set venue = venues[talk.venue] -%}

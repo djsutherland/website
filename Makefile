@@ -5,7 +5,7 @@ MAKEFLAGS += --no-builtin-rules
 
 all: index.html biblio.bib cv.pdf
 
-%: papers.json build.py templates/%
+%: papers.yaml build.py templates/%
 	python build.py $@
 
 cv.pdf: cv.tex biblio.bib

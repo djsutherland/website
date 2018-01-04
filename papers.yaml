@@ -1,0 +1,671 @@
+---
+coauthors:
+  me:
+    first: Dougal J.
+    last: Sutherland
+  arthur:
+    first: Arthur
+    last: Gretton
+    web: http://www.gatsby.ucl.ac.uk/~gretton/
+  heiko:
+    first: Heiko
+    last: Strathmann
+    web: http://herrstrathmann.de/about/
+  michael:
+    first: Michael
+    last: Arbel
+    web: https://michaelarbel.github.io/
+  mikolaj:
+    first: Mikołaj
+    last: Bińkowski
+  leon:
+    first: Ho Chung Leon
+    last: Law
+    web: http://csml.stats.ox.ac.uk/people/law/
+  dino:
+    first: Dino
+    last: Sejdinovic
+    web: http://www.stats.ox.ac.uk/~sejdinov/
+  seth:
+    first: Seth
+    last: Flaxman
+    web: http://sethrf.com/
+  yu-xiang:
+    first: Yu-Xiang
+    last: Wang
+    web: https://www.cs.cmu.edu/~yuxiangw/
+  yee-whye:
+    first: Yee Whye
+    last: Teh
+    web: https://www.stats.ox.ac.uk/~teh/
+  fish:
+    first: Hsiao-Yu
+    last: Tung
+    web: https://sfish0101.bitbucket.io/
+  rahul:
+    first: Soumyajit
+    last: De
+    web: https://github.com/lambday/
+  aadi:
+    first: Aaditya
+    last: Ramdas
+    web: https://people.eecs.berkeley.edu/~aramdas/
+  smola:
+    first: Alex
+    last: Smola
+    web: https://alex.smola.org
+  michelle:
+    first: Michelle
+    last: Ntampaka
+    web: http://www.andrew.cmu.edu/user/cmhicks/
+  hy:
+    first: Hy
+    last: Trac
+    web: https://www.cmu.edu/physics/people/faculty/trac.html
+  sebastian:
+    first: Sebastian
+    last: Fromenteau
+  barnabas:
+    first: Barnabás
+    last: Póczos
+    web: https://www.cs.cmu.edu/~bapoczos/
+  jeff:
+    first: Jeff
+    last: Schneider
+    web: https://www.cs.cmu.edu/~schneide/
+  junier:
+    first: Junier B.
+    last: Oliva
+    web: https://www.cs.cmu.edu/~joliva/
+  yifei:
+    first: Yifei
+    last: Ma
+    web: https://www.cs.cmu.edu/~yifeim/
+  roman:
+    first: Roman
+    last: Garnett
+    web: http://www.cse.wutsl.edu/~garnett/
+  battaglia:
+    first: Nicholas
+    last: Battaglia
+    web: http://www.astro.utoronto.ca/~battaglia/Home.html
+  liang:
+    first: Liang
+    last: Xiong
+    web: https://www.cs.cmu.edu/~lxiong/
+  stromme:
+    first: Andrew
+    last: Stromme
+    web: http://andrewstromme.com
+  burka:
+    first: Alexander
+    last: Burka
+    web: http://alexburka.com
+  lipton:
+    first: Benjamin
+    last: Lipton
+    web: http://benjaminlipton.com
+  felt:
+    first: Nicholas
+    last: Felt
+  becca:
+    first: Rebecca
+    last: Roelofs
+    web: http://ww.eecs.berkeley.edu/~roelofs/
+  daniel-elia:
+    first: Daniel-Elia
+    last: Feist-Alexandrov
+  dini:
+    first: Steve
+    last: Dini
+  welkie:
+    first: Allen
+    last: Welkie
+  nina:
+    first: Maria-Florina
+    last: Balcan
+    web: https://www.cs.cmu.edu/~ninamf/
+  artur:
+    first: Artur
+    last: Dubrawski
+    web: https://www.autonlab.org/people/artur_dubrawski
+  jay:
+    first: Jay
+    last: Jin
+  kyle:
+    first: Kyle
+    last: Miller
+  labov:
+    first: Simon
+    last: Labov
+    web: http://people.llnl.gov/slabov
+  nelson:
+    first: Karl
+    last: Nelson
+    web: http://people.llnl.gov/nelson85
+  bodenhamer:
+    first: Matthew
+    last: Bodenhamer
+  palmer:
+    first: Thomas
+    last: Palmer
+    web: http://www.cs.ou.edu/~tjpalmer/
+  fagg:
+    first: Andrew H.
+    last: Fagg
+    web: http://www.cs.ou.edu/~fagg/
+
+venues:
+  preprint:
+    name: Preprint
+    type: preprint
+  tech-report:
+    name: Technical report
+    type: tech-report
+  iclr:
+    name: International Conference on Learning Representations
+    short: ICLR
+    type: conference
+    web_by_year:
+      2017: http://www.iclr.cc/doku.php?id=iclr2017:main
+      2018: http://www.iclr.cc/doku.php?id=ICLR2018:main
+  ApJ:
+    name: The Astrophysical Journal
+    short: ApJ
+    type: journal
+    web: https://iopscience.iop.org/0004-637X/
+  aaai:
+    name: AAAI Conference on Artificial Intelligence
+    short: AAAI
+    type: conference
+    web_by_year:
+      2016: http://www.aaai.org/Conferences/AAAI/aaai16.php
+  aistats:
+    name: Artificial Intelligence and Statistics
+    short: AISTATS
+    type: conference
+    web_by_year:
+      2015: http://www.aistats.org/aistats2015/
+      2018: http://www.aistats.org/
+  uai:
+    name: Uncertainty in Artificial Intelligence
+    short: UAI
+    type: conference
+    web_by_year:
+      2015: http://auai.org/uai2015/
+  kdd:
+    name: Knowledge Discovery and Data Mining
+    short: KDD
+    type: conference
+    web_by_year:
+      2013: http://www.sigkdd.org/kdd2013
+  cvpr:
+    name: Computer Vision and Pattern Recognition
+    short: CVPR
+    type: conference
+    web_by_year:
+      2012: http://tab.computer.org/pamitc/archive/cvpr2012/
+  lisa:
+    name: Large Installation System Administration
+    short: LISA
+    type: conference
+    web_by_year:
+      2012: https://www.usenix.org/conference/lisa12
+  nips-dfgg:
+    name: Learning on Distributions, Functions, Graphs and Groups
+    web: https://sites.google.com/site/nips2017learningon/
+    type: workshop
+    conference: nips
+    year: 2017
+  feature-extraction:
+    name: "Feature Extraction: Modern Questions and Challenges"
+    web: http://www.feature-extraction.org/
+    type: workshop
+    conference: nips
+    year: 2015
+  bayesopt-14:
+    name: Bayesian Optimization
+    short: BayesOpt
+    web: https://bayesopt.github.io/past/2014.html
+    type: workshop
+    conference: nips
+    year: 2014
+  nips:
+    name: Neural Information Processing Systems
+    short: NIPS
+    type: conference
+    web_by_year:
+      2014: https://nips.cc/Conferences/2014
+      2015: https://nips.cc/Conferences/2015
+  icml:
+    name: International Conference on Machine Learning
+    short: ICML
+    type: conference
+    web_by_year:
+      2017: https://2017.icml.cc/
+  icml-implicit:
+    name: Implicit Models
+    web: https://sites.google.com/view/implicitmodels/
+    type: workshop
+    conference: icml
+    year: 2017
+  csd:
+    name: Computer Science Department, Carnegie Mellon University
+    school: Carnegie Mellon University
+    department: Computer Science Department
+    type: phd-thesis
+  swat:
+    name: Computer Science Department, Swarthmore College
+    type: ba-thesis
+    school: Swarthmore College
+    department: Computer Science Department
+  nss:
+    name: IEEE Nuclear Science Symposium
+    short: IEEE NSS/MIC
+    type: workshop
+  optimization-course:
+    name: CMU 10-725 Optimization course project
+    web: https://www.cs.cmu.edu/~ggordon/10725-F12/
+    type: course-project
+  oxford-csml:
+    name: Computational Statistics and Machine Learning seminar, Oxford University
+    type: seminar
+  dali:
+    name: Data Analysis, Learning, and Inference
+    short: DALI
+    type: conference
+    web: http://dalimeeting.org
+  dali-gan-17:
+    name: The Theory of Generative Adversarial Networks
+    conference: dali
+    year: 2017
+    web: http://dalimeeting.org/dali2017/generative-adversarial-networks.html
+  ucl-csml:
+    name: Computational Statistics and Machine Learning seminar, University College London
+    type: seminar
+  turing:
+    name: Alan Turing Institute
+    type: conference
+    web: https://www.turing.ac.uk/events/
+  turing-highd:
+    name: Approximating high dimensional functions
+    conference: turing
+    web: https://www.turing.ac.uk/events/approximating-high-dimensional-functions/
+    year: 2017
+
+papers:
+  - key: mmd-gans
+    title: Demystifying MMD GANs
+    bibtex_title: Demystifying {MMD} {GAN}s
+    authors:
+      - mikolaj*
+      - me*
+      - michael
+      - arthur
+    venue: preprint
+    year: 2018
+    related: !!omap
+      - "ICLR-18 submission": https://openreview.net/forum?id=r1lUOzWCW
+
+  - key: bdr-workshop
+    title: Bayesian Approaches to Distribution Regression
+    authors:
+      - leon*
+      - me*
+      - dino
+      - seth
+    venue: nips-dfgg
+    year: 2017
+    note: Workshop version of <a href='#bdr'>this paper</a>.
+    related: !!omap
+      - slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/bdr-nips/
+      - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/bdr-nips17ws.pdf
+
+  - key: kexpfam-nystroem
+    title: Efficient and principled score estimation with Nyström kernel exponential families
+    authors:
+      - me*
+      - heiko*
+      - michael
+      - arthur
+    arXiv: 1705.08360
+    venue: aistats
+    year: 2018
+
+  - key: bdr
+    title: Bayesian Approaches to Distribution Regression
+    authors:
+      - leon*
+      - me*
+      - dino
+      - seth
+    arXiv: 1705.04293
+    venue: aistats
+    year: 2018
+
+  - key: caponnetto-fix
+    title: Fixing an error in Caponnetto and de Vito (2007)
+    bibtex_title: Fixing an error in {C}aponnetto and de {V}ito (2007)
+    authors:
+      - me
+    arXiv: 1702.02982
+    venue: tech-report
+    year: 2017
+
+  - key: trump-clinton
+    title: Understanding the 2016 US Presidential Election using ecological inference and distribution regression with census microdata
+    bibtex_title: Understanding the 2016 {US} Presidential Election using ecological inference and distribution regression with census microdata
+    authors:
+      - seth
+      - me
+      - yu-xiang
+      - yee-whye
+    arXiv: 1611.03787
+    related: !!omap
+      - code: https://github.com/flaxter/us2016/
+      - "microdata analysis package": https://github.com/dougalsutherland/pummeler/
+    venue: tech-report
+    year: 2016
+
+  - key: opt-mmd
+    title: Generative Models and Model Criticism via Optimized Maximum Mean Discrepancy
+    authors:
+      - me
+      - fish
+      - heiko
+      - rahul
+      - aadi
+      - smola
+      - arthur
+    venue: iclr
+    year: 2017
+    official: http://openreview.net/forum?id=HJWHIKqgl
+    arXiv: 1611.04488
+    related: !!omap
+      - code: https://github.com/dougalsutherland/opt-mmd/
+      - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/iclr-opt-mmd.pdf
+
+  - key: thesis
+    title: Scalable, Flexible, and Active Learning on Distributions
+    venue: csd
+    year: 2016
+    committee:
+      - jeff
+      - barnabas
+      - nina
+      - arthur
+    authors:
+      - me
+    official: http://reports-archive.adm.cs.cmu.edu/anon/2016/abstracts/16-128.html
+    related: !!omap
+      - pdf: http://reports-archive.adm.cs.cmu.edu/anon/2016/CMU-CS-16-128.pdf
+      - slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/thesis.pdf
+      - "proposal (2015)": http://www.gatsby.ucl.ac.uk/~dougals/papers/proposal.pdf
+      - "proposal slides": http://www.gatsby.ucl.ac.uk/~dougals/slides/proposal.pdf
+
+  - key: nss
+    title: List Mode Regression for Low Count Detection
+    authors:
+      - jay
+      - kyle
+      - me
+      - labov
+      - nelson
+      - artur
+    venue: nss
+    year: 2016
+
+  - key: deep-mean-maps
+    title: Deep Mean Maps
+    authors:
+      - junier*
+      - me*
+      - barnabas
+      - jeff
+    venue: tech-report
+    arXiv: 1511.04150
+    year: 2015
+
+  - key: astro-interlopers
+    title: Dynamical Mass Measurements of Contaminated Galaxy Clusters Using Machine Learning
+    authors:
+      - michelle
+      - hy
+      - me
+      - sebastian
+      - barnabas
+      - jeff
+    venue: ApJ
+    year: 2016
+    volume: 831
+    number: 2
+    pages: 135
+    doi: 10.3847/0004-637X/831/2/135
+    arXiv: 1509.05409
+
+  - key: hdd
+    title: Linear-time Learning on Distributions with Approximate Kernel Embeddings
+    authors:
+      - me*
+      - junier*
+      - barnabas
+      - jeff
+    venue: aaai
+    year: 2016
+    official: http://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/download/12460/11844
+    arXiv: 1509.07553
+    related: !!omap
+      - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/hdd_aaai.pdf
+
+  - key: hdd-workshop
+    title: Linear-time Learning on Distributions with Approximate Kernel Embeddings
+    authors:
+      - me*
+      - junier*
+      - barnabas
+      - jeff
+    venue: feature-extraction
+    year: 2015
+    note: Workshop version of <a href='#hdd'>this paper</a>.
+    related: !!omap
+      - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/hdd_nips15ws.pdf
+      - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/hdd_nips15ws.pdf
+
+  - key: rff
+    title: On the Error of Random Fourier Features
+    bibtex_title: On the Error of Random {F}ourier Features
+    authors:
+      - me
+      - jeff
+    venue: uai
+    year: 2015
+    note: Chapter 3 / Section 4.1 of <a href='#thesis'>my thesis</a> supersedes this paper, fixing a few errors in constants and providing more results.
+    official: http://auai.org/uai2015/proceedings/papers/168.pdf
+    arXiv: 1506.02785
+    related: !!omap
+      - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/rff_uai15.pdf
+
+  - key: apps
+    title: Active Pointillistic Pattern Search
+    authors:
+      - yifei*
+      - me*
+      - roman
+      - jeff
+    venue: aistats
+    year: 2015
+    official: http://jmlr.org/proceedings/papers/v38/ma15.html
+    related: !!omap
+      - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/apps_aistats15.pdf
+      - appendix: http://www.gatsby.ucl.ac.uk/~dougals/papers/apps_aistats15_appendix.pdf
+      - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/apps_aistats15.pdf
+
+  - key: apps-workshop
+    title: Active Pointillistic Pattern Search
+    authors:
+      - yifei*
+      - me*
+      - roman
+      - jeff
+    venue: bayesopt-14
+    year: 2014
+    related: !!omap
+      - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/apps_nips14ws.pdf
+      - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/apps_nips14ws.pdf
+    note: Workshop version of <a href='#apps'>this paper</a>.
+
+  - key: astro
+    title: A Machine Learning Approach for Dynamical Mass Measurements of Galaxy Clusters
+    authors:
+      - michelle
+      - hy
+      - me
+      - battaglia
+      - barnabas
+      - jeff
+    venue: ApJ
+    year: 2015
+    volume: 803
+    number: 2
+    pages: 50
+    doi: 10.1088/0004-637X/803/2/50
+    arXiv: 1410.0686
+
+  - key: active-mf
+    title: Active learning and search on low-rank matrices
+    authors:
+      - me
+      - barnabas
+      - jeff
+    venue: kdd
+    year: 2013
+    doi: 10.1145/2487575.2487627
+    related: !!omap
+      - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/kdd-13.pdf
+      - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/kdd-13.pdf
+      - slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/kdd-13.pdf
+      - code: https://github.com/AutonlabCMU/active-matrix-factorization
+
+  - key: sdm-arxiv
+    title: Kernels on Sample Sets via Nonparametric Divergence Estimates
+    authors:
+      - me
+      - liang
+      - barnabas
+      - jeff
+    venue: tech-report
+    year: 2012
+    arXiv: 1202.0302
+
+  - key: sparse-modeling
+    title: Finding Representative Objects with Sparse Modeling
+    authors:
+      - junier
+      - me
+      - yifei
+    venue: optimization-course
+    year: 2012
+    note: Best poster award.
+    related: !!omap
+      - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/opt-project.pdf
+
+  - key: sdm-cvpr
+    title: Nonparametric kernel estimators for image classification
+    authors:
+      - barnabas
+      - liang
+      - me
+      - jeff
+    venue: cvpr
+    year: 2012
+    doi: 10.1109/CVPR.2012.6248028
+    related: !!omap
+      - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/cvpr-12.pdf
+      - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/cvpr-12.pdf
+
+  - key: guts
+    title: Managing User Requests with the Grand Unified Task System (GUTS)
+    bibtex_title: Managing User Requests with the {G}rand {U}nified {T}ask {S}ystem ({GUTS})
+    authors:
+      - stromme
+      - me
+      - burka
+      - lipton
+      - felt
+      - becca
+      - daniel-elia
+      - dini
+      - welkie
+    venue: lisa
+    year: 2012
+    official: https://www.usenix.org/conference/lisa12/technical-sessions/presentation/stromme
+    related: !!omap
+      - pdf: https://www.usenix.org/system/files/conference/lisa12/lisa12-final-4.pdf
+      - slides: https://www.usenix.org/sites/default/files/conference/protected-files/alexandrov_lisa12_slides.pdf
+      - talk: https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/lisa12/stromme.mp4
+    note: Work done as part of the <a href='http://www.sccs.swarthmore.edu'>Swarthmore College Computer Society</a>.
+
+  - key: smrf
+    title: Grounding Conceptual Knowledge with Spatio-Temporal Multi-Dimensional Relational Framework Trees
+    authors:
+      - bodenhamer
+      - palmer
+      - me
+      - fagg
+    venue: tech-report
+    year: 2012
+    related: !!omap
+      - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/smrf-techreport.pdf
+
+  - key: ba-thesis
+    title: Integrating Human Knowledge into a Relational Learning System
+    authors:
+      - me
+    venue: swat
+    year: 2011
+    related: !!omap
+      - pdf: http://www.gatsby.ucl.ac.uk/~dougals/paper/ba-thesis.pdf
+    note: B.A. thesis.
+
+talks:
+  - key: kexpfam-ati
+    title: Efficient and principled score estimation with kernel exponential families
+    venue: turing-highd
+    papers:
+      - kexpfam-nystroem
+    date: 2017-12-19
+    slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/highd-functions/
+
+  - key: kexpfam-csml
+    title: Efficient and principled score estimation with kernel exponential families
+    venue: ucl-csml
+    papers:
+      - kexpfam-nystroem
+    date: 2017-12-15
+    slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/csml/kexpfam/
+
+  - key: icml-gan
+    title: Evaluating and Training Implicit Generative Models with Two-Sample Tests
+    venue: icml-implicit
+    papers:
+      - opt-mmd
+    date: 2017-08-10
+    slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/icml-igm/
+
+  - key: dali-opt-mmd
+    title: Two-Sample Tests, Integral Probability Metrics, and GAN Objectives
+    venue: dali-gan-17
+    papers:
+      - opt-mmd
+    date: 2017-04-18
+    slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/dali/
+    video: https://youtu.be/Xpd6DL02C7Q
+
+  - key: oxford-opt-mmd
+    title: Generative Models and Model Criticism via Optimized Maximum Mean Discrepancy
+    venue: oxford-csml
+    papers:
+      - opt-mmd
+    date: 2017-02-03
+    slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/oxford-opt-mmd.pdf
+

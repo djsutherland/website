@@ -1,2 +1,3 @@
 unidecode
 staticjinja
+ruamel.yaml

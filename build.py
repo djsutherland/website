@@ -5,11 +5,11 @@ import argparse
 from copy import copy
 import datetime
 import io
-import json
-import re
 import os
+import re
 import subprocess
 
+from ruamel.yaml import YAML
 import staticjinja
 from unidecode import unidecode
 
@@ -18,8 +18,8 @@ _dir = os.path.abspath(os.path.dirname(__file__))
 
 
 def paper_data():
-    with io.open(os.path.join(_dir, "papers.json")) as f:
-        return json.load(f)
+    with io.open(os.path.join(_dir, "papers.yaml")) as f:
+        return YAML().load(f)
 
 
 filters = {}
@@ -129,11 +129,6 @@ def maybe_link(content, url=None):
         return "<a href={}>{}</a>".format(url, content)
     else:
         return content
-
-
-@filter
-def date(date):
-    return datetime.datetime.strptime(date, "%Y-%m-%d")
 
 
 @filter
