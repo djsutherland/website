@@ -316,10 +316,10 @@ papers:
       - seth
     venue: nips-dfgg
     year: 2017
-    note: Workshop version of <a href='#bdr'>this paper</a>.
     related: !!omap
       - slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/bdr-nips/
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/bdr-nips17ws.pdf
+      - "AISTATS version": "#bdr"
 
   - key: kexpfam-nystroem
     title: Efficient and principled score estimation with Nyström kernel exponential families
@@ -342,6 +342,8 @@ papers:
     arXiv: 1705.04293
     venue: aistats
     year: 2018
+    related: !!omap
+      - "NIPS workshop version": "#bdr-workshop"
 
   - key: caponnetto-fix
     title: Fixing an error in Caponnetto and de Vito (2007)
@@ -456,6 +458,7 @@ papers:
     arXiv: 1509.07553
     related: !!omap
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/hdd_aaai.pdf
+      - "NIPS workshop version": "#hdd-workshop"
 
   - key: hdd-workshop
     title: Linear-time Learning on Distributions with Approximate Kernel Embeddings
@@ -466,10 +469,10 @@ papers:
       - jeff
     venue: feature-extraction
     year: 2015
-    note: Workshop version of <a href='#hdd'>this paper</a>.
     related: !!omap
       - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/hdd_nips15ws.pdf
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/hdd_nips15ws.pdf
+      - "AAAI version": "#hdd"
 
   - key: rff
     title: On the Error of Random Fourier Features
@@ -479,7 +482,9 @@ papers:
       - jeff
     venue: uai
     year: 2015
-    note: Chapter 3 / Section 4.1 of <a href='#thesis'>my thesis</a> supersedes this paper, fixing a few errors in constants and providing more results.
+    note: >
+      Chapter 3 / Section 4.1 of <a href='#thesis'>my thesis</a> supersedes
+      this paper, fixing a few errors in constants and providing more results.
     official: http://auai.org/uai2015/proceedings/papers/168.pdf
     arXiv: 1506.02785
     related: !!omap
@@ -499,6 +504,7 @@ papers:
       - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/apps_aistats15.pdf
       - appendix: http://www.gatsby.ucl.ac.uk/~dougals/papers/apps_aistats15_appendix.pdf
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/apps_aistats15.pdf
+      - "NIPS workshop version": "#apps-workshop"
 
   - key: apps-workshop
     title: Active Pointillistic Pattern Search
@@ -512,7 +518,7 @@ papers:
     related: !!omap
       - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/apps_nips14ws.pdf
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/apps_nips14ws.pdf
-    note: Workshop version of <a href='#apps'>this paper</a>.
+      - "AISTATS version": "#apps"
 
   - key: astro
     title: A Machine Learning Approach for Dynamical Mass Measurements of Galaxy Clusters
