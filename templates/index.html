@@ -2,8 +2,61 @@
 <html>
 <head>
   <title>Dougal J. Sutherland</title>
-  <link rel="stylesheet" type="text/css" href="style.css?cache_bust={{ (['style.css'] | last_edit_dt).timetuple() | map('string') | join('-') }}" />
   <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css?cache_bust={{ (['style.css'] | last_edit_dt).timetuple() | map('string') | join('-') }}" />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script type="text/javascript">
+    authorPapers = {};
+
+    function filterAuthors() {
+      $('.paper').hide();
+      var active = $('#coauthors li.active').map(function() { return $(this).data('key'); });
+      if (active.length) {
+        active.each(function() {
+          $(authorPapers[this]).each(function() {
+            $('.paper#' + this).show();
+          });
+        });
+      } else {
+        $('.paper').show();
+      }
+    }
+
+    $(function() {
+      // build authorPapers map
+      $('.paper').each(function() {
+        var obj = $(this);
+        var paperKey = obj.attr('id');
+        obj.find('.authors span').each(function() {
+          var auth = $(this).data('coauthor');
+          if (!(auth in authorPapers)) {
+            authorPapers[auth] = [];
+          }
+          authorPapers[auth].push(paperKey);
+        });
+      });
+
+      $('#coauthors-show').click(function() {
+        $('#coauthors-show').hide();
+        $('#coauthors-hide').show();
+        $('#coauthors ul').show();
+        return false;
+      });
+      $('#coauthors-hide').hide().click(function() {
+        $('#coauthors-show').show();
+        $('#coauthors-hide').hide();
+        $('#coauthors ul').hide().find('li').removeClass('active');
+        $('.paper').show();
+        return false;
+      });
+      $('#coauthors ul').hide();
+
+      $('#coauthors li').click(function() {
+        $(this).toggleClass('active');
+        filterAuthors();
+      });
+    });
+  </script>
 </head>
 <body>
   <div id="content">
@@ -54,6 +107,19 @@
       <a href="https://scholar.google.com/citations?user=uO_NqicAAAAJ">Google Scholar</a>.
     </p>
 
+    <div id="coauthors">
+      Coauthor filters:
+      <a href="#" id="coauthors-show">(show)</a>
+      <a href="#" id="coauthors-hide">(hide)</a>
+      <ul>
+      {% for key, coauthor, count in coauthor_count_sorted if key != "me" %}
+        <li id="coauthor-{{ key }}" data-key="{{ key }}">
+          {{ coauthor | full_name }} (<span class="count">{{ count }}</span>)
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+
     {% set sections = [
       ["Preprints", ["preprint"]],
       ["Journal and Low-Acceptance-Rate Conference Papers", ["conference", "journal"]],
@@ -63,7 +129,7 @@
     {% for sec_name, sec_types in sections %}
       {% for paper in papers if venues[paper.venue].type in sec_types %}
         {% if loop.first %}<h4>{{ sec_name }}</h4>{% endif %}
-        <div class="paper" id="{{ paper.key }}">
+        <div class="paper" id="{{ paper.key }}" data-topics='{{ paper.topics|tojson }}'>
           <span class="title">{{ paper.title }}.</span>
           <span class="authors">
             {%- if paper.committee -%}
@@ -74,9 +140,10 @@
             {%- endif -%}
             {%- for author in authors -%}
               {%- set auth = author | get_author(coauthors) -%}
-              {{ auth | full_name | maybe_link(auth.web) }}
-              {%- if auth.is_equal %}<span class="equal">**</span>{%- endif -%}
-
+              <span data-coauthor="{{ auth.key }}">
+                {{- auth | full_name | maybe_link(auth.web) -}}
+                {%- if auth.is_equal %}<span class="equal">**</span>{%- endif -%}
+              </span>
               {%- if loop.last -%}
                 .
               {%- elif loop.length == 2 -%}
@@ -135,6 +202,7 @@
       {% endfor %}
     {% endfor %}
 
+    <div style="clear: both;"></div>
     <h3 id="talks">Selected talks</h3>
     {% for talk in talks %}
       <div class="talk" id="talk-{{ talk.key }}">

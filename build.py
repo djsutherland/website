@@ -2,9 +2,12 @@
 from __future__ import unicode_literals
 
 import argparse
+import collections
 from copy import copy
 import datetime
 import io
+import itertools
+import json
 import os
 import re
 import subprocess
@@ -19,13 +22,35 @@ _dir = os.path.abspath(os.path.dirname(__file__))
 
 def paper_data():
     with io.open(os.path.join(_dir, "papers.yaml")) as f:
-        return YAML().load(f)
+        data = YAML().load(f)
+
+    data['topics'] = t = set()
+    for obj in itertools.chain(data['papers'], data['talks']):
+        t.update(obj.get('topics', []))
+
+    data['coauthor_count'] = c = collections.Counter()
+    for paper in data['papers']:
+        for key in itertools.chain(paper['authors'], paper.get('committee', [])):
+            if key.endswith('*'):
+                key = key[:-1]
+            c[key] += 1
+
+    data['coauthor_count_sorted'] = sorted(
+        ((key, data['coauthors'][key], count) for key, count in c.items()),
+        key=lambda kac: (kac[1]['last'], kac[1]['first']))
+
+    return data
 
 
 filters = {}
 def filter(fn):
     filters[fn.__name__] = fn
     return fn
+
+
+@filter
+def tojson(x):
+    return json.dumps(x)
 
 
 @filter
@@ -44,6 +69,7 @@ def get_author(author, coauthors):
         author = author[:-1]
     d = copy(coauthors[author])
     d['is_equal'] = is_equal
+    d['key'] = author
     return d
 
 @filter
