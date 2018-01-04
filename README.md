@@ -1,6 +1,6 @@
 My homepage.
 
-The only interesting bit is how it generates a website / bib file / CV with Jinja templates from a JSON file containing paper info. Feel free to steal ideas.
+The only interesting bit is how it generates a website / bib file / CV with Jinja templates from [a YAML file](papers.yaml) containing paper info. Feel free to steal ideas; this repository is under the Unlicense.
 
 Requirements:
 
