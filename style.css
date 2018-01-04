@@ -38,6 +38,9 @@ a.email {
     text-align: center;
 }
 
+:target {
+    background-color: #ffd;
+}
 
 /* home page */
 img#me {
@@ -51,6 +54,7 @@ img#me {
     margin-top: 1em;
     display: list-item;
     list-style-type: square;
+    padding: 5px;
 }
 .title {
     font-style: italic;
