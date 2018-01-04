@@ -8,7 +8,10 @@ all: index.html biblio.bib cv.pdf
 %: papers.yaml build.py templates/%
 	python build.py $@
 
-cv.pdf: cv.tex biblio.bib
+biblio.bib: biblio-eqcon.bib
+	tail -n '+9' $< | sed -e 's/\\bibeqcon{}//g' > $@
+
+cv.pdf: cv.tex biblio-eqcon.bib
 	mkdir -p .cv-build
 	ln -f cv.tex .cv-build/
 	cd .cv-build && latexmk -pdf cv
@@ -16,3 +19,6 @@ cv.pdf: cv.tex biblio.bib
 
 clean:
 	rm -rf .cv-build
+
+clean-all: clean
+	rm -f index.html biblio.bib biblio-eqcon.bib cv.pdf
