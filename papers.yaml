@@ -331,6 +331,9 @@ papers:
     arXiv: 1705.08360
     venue: aistats
     year: 2018
+    related: !!omap
+      - Turing talk: "#talk-kexpfam-ati"
+      - UCL talk: "#talk-kexpfam-csml"
 
   - key: bdr
     title: Bayesian Approaches to Distribution Regression
@@ -386,6 +389,9 @@ papers:
     related: !!omap
       - code: https://github.com/dougalsutherland/opt-mmd/
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/iclr-opt-mmd.pdf
+      - ICML workshop talk: "#talk-icml-gan"
+      - DALI talk: "#talk-dali-opt-mmd"
+      - Oxford talk: "#talk-oxford-opt-mmd"
 
   - key: thesis
     title: Scalable, Flexible, and Active Learning on Distributions

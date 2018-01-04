@@ -38,7 +38,7 @@ a.email {
     text-align: center;
 }
 
-:target {
+.paper:target, .talk:target {
     background-color: #ffd;
 }
 

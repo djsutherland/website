@@ -37,57 +37,16 @@
       I did my Ph.D. at Carnegie Mellon University,
       working with <a href="https://cs.cmu.edu/~schneide/">Jeff Schneider</a>
       on machine learning.
-      
+
       See also:
       various code <a href="https://github.com/dougalsutherland">on github</a>,
       my <a href="https://stats.stackexchange.com/users/9964/dougal">crossvalidated</a>/<a href="http://stackoverflow.com/users/344821/dougal">stackoverflow</a> profiles,
       and <a href="https://www.sccs.swarthmore.edu/users/11/dougal/">my Swarthmore page</a> for older stuff from undergrad.
     </p>
 
-    <h3>Invited Talks</h3>
-    {% for talk in talks %}
-      <div class="talk" id="talk-{{ talk.key }}">
-        {{ talk.title | maybe_wrap("<span class='title'>", ".</span>") }}
-        <span class="venue">
-          {{ "{:%B %Y}".format(talk.date) }}.
-          {%  set venue = venues[talk.venue] -%}
-          {%- set href = venue|venue_url("{:Y}".format(talk.date)) -%}
-          {%- if venue.short -%}
-            {{ venue.name }}
-            ({{ venue.short | maybe_link(href) }})
-          {%- else -%}
-            {{ venue.name | maybe_link(href) }}
-          {%- endif -%}
-          {%- if venue.conference -%}
-            {%- set conf = venues[venue.conference] -%}
-            {%- set conf_href = conf|venue_url(venue.year) -%}
-            , {{ conf.short|default(conf.name)|maybe_link(conf_href) }}
-          {%- endif -%}
-          .
-        </span>
-        {% if talk.papers %}
-        <span class="note">
-          Related papers:
-          {% if talk.papers | length == 1 %}
-            <a href="#{{ talk.papers[0] }}">{{ (talk.papers[0] | get_paper(papers)).title }}</a>.
-          {% else %}
-            these papers:
-            {% for paper in talk.papers -%}
-              <a href="#{{ paper }}">{{ (paper | get_paper(papers)).title }}</a>
-              {%- if not loop.last %}, {% endif -%}
-            {%- endfor %}.
-          {% endif %}
-        </span>
-        {% endif %}
+    <p><a href="#pubs">Publications</a> and selected <a href="#talks">talks</a> are listed below.</p>
 
-        <div class="links">
-          {{ talk.video | maybe_wrap("<span class='info'>[<a href='", "'>video</a>]</span>") }}
-          {{ talk.slides | maybe_wrap("<span class='info'>[<a href='", "'>slides</a>]</span>") }}
-        </div>
-      </div>
-    {% endfor %}
-    
-    <h3>Publications</h3>
+    <h3 id="pubs">Publications</h3>
     <p>
       Below, <span class="equal">**</span> denotes equal contribution.
       Also available as <a href="biblio.bib">a .bib file</a>,
@@ -174,6 +133,48 @@
           </div>
         </div>
       {% endfor %}
+    {% endfor %}
+
+    <h3 id="talks">Selected talks</h3>
+    {% for talk in talks %}
+      <div class="talk" id="talk-{{ talk.key }}">
+        {{ talk.title | maybe_wrap("<span class='title'>", ".</span>") }}
+        <span class="venue">
+          {{ "{:%B %Y}".format(talk.date) }}.
+          {%  set venue = venues[talk.venue] -%}
+          {%- set href = venue|venue_url("{:Y}".format(talk.date)) -%}
+          {%- if venue.short -%}
+            {{ venue.name }}
+            ({{ venue.short | maybe_link(href) }})
+          {%- else -%}
+            {{ venue.name | maybe_link(href) }}
+          {%- endif -%}
+          {%- if venue.conference -%}
+            {%- set conf = venues[venue.conference] -%}
+            {%- set conf_href = conf|venue_url(venue.year) -%}
+            , {{ conf.short|default(conf.name)|maybe_link(conf_href) }}
+          {%- endif -%}
+          .
+        </span>
+        {% if talk.papers %}
+        <span class="note">
+          Related papers:
+          {% if talk.papers | length == 1 %}
+            <a href="#{{ talk.papers[0] }}">{{ (talk.papers[0] | get_paper(papers)).title }}</a>.
+          {% else %}
+            {% for paper in talk.papers -%}
+              <a href="#{{ paper }}">{{ (paper | get_paper(papers)).title }}</a>
+              {%- if not loop.last %}, {% endif -%}
+            {%- endfor %}.
+          {% endif %}
+        </span>
+        {% endif %}
+
+        <div class="links">
+          {{ talk.video | maybe_wrap("<span class='info'>[<a href='", "'>video</a>]</span>") }}
+          {{ talk.slides | maybe_wrap("<span class='info'>[<a href='", "'>slides</a>]</span>") }}
+        </div>
+      </div>
     {% endfor %}
 
   </div>
