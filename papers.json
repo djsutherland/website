@@ -189,7 +189,8 @@
       , "short": "AISTATS"
       , "type": "conference"
       , "web_by_year": {
-        "2015": "http://www.aistats.org/aistats2015/"
+          "2015": "http://www.aistats.org/aistats2015/"
+        , "2018": "http://www.aistats.org/"
       }
     }
     , "uai": {
@@ -342,16 +343,16 @@
       , "title": "Efficient and principled score estimation with Nyström kernel exponential families"
       , "authors": ["me*", "heiko*", "michael", "arthur"]
       , "arXiv": "1705.08360"
-      , "venue": "preprint"
-      , "year": "2017"
+      , "venue": "aistats"
+      , "year": "2018"
     }
     , {
         "key": "bdr"
       , "title": "Bayesian Approaches to Distribution Regression"
       , "authors": ["leon*", "me*", "dino", "seth"]
       , "arXiv": "1705.04293"
-      , "venue": "preprint"
-      , "year": "2017"
+      , "venue": "aistats"
+      , "year": "2018"
     }
     , {
         "key": "caponnetto-fix"

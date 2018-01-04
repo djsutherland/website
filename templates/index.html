@@ -102,8 +102,8 @@
       ["Technical Reports, Posters, etc.", ["tech-report", "poster", "workshop", "course-project"]],
     ] %}
     {% for sec_name, sec_types in sections %}
-      <h4>{{ sec_name }}</h4>
       {% for paper in papers if venues[paper.venue].type in sec_types %}
+        {% if loop.first %}<h4>{{ sec_name }}</h4>{% endif %}
         <div class="paper" id="{{ paper.key }}">
           <span class="title">{{ paper.title }}.</span>
           <span class="authors">
