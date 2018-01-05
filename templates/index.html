@@ -17,7 +17,12 @@
             $('.paper#' + this).show();
           });
         });
-
+        $('.pub-group').show().each(function() {
+          var o = $(this);
+          if (o.find('.paper').filter(':visible').length == 0) {
+            o.hide();
+          }
+        });
       } else {
         $('.paper').show();
       }
@@ -48,6 +53,7 @@
         $('#coauthors-hide').hide();
         $('#coauthors ul').hide().find('li').removeClass('active');
         $('.paper').show();
+        $('.pub-group').show();
         return false;
       });
       $('#coauthors ul').hide();
@@ -130,7 +136,7 @@
     ] %}
     {% for sec_name, sec_types in sections %}
       {%- if venue_type_map[sec_types]|length > 0 -%}
-        <section>
+        <section class="pub-group">
           <h4>{{ sec_name }}</h4>
           {% for paper in venue_type_map[sec_types] %}
             <div class="paper" id="{{ paper.key }}" data-topics='{{ paper.topics|tojson }}'>
