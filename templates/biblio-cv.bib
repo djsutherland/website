@@ -33,7 +33,7 @@
     {%- endif %}
     {{- paper.doi | maybe_wrap("\n    doi = {", "},") -}}
     {%- if venue.conference is defined %}
-    booktitle = { {{- venue.name }} ({{ venues[venue.conference].short }} workshop)}
+    booktitle = { {{- venue.name }} ({{ venues[venue.conference].short }} workshop)},
     {%- elif venue.type == "conference" or venue.type == "workshop" %}
     booktitle = { {{- venue.name -}} {{- venue.short | maybe_wrap(" (", ")") -}} },
     {%- elif venue.type == "journal" %}
@@ -50,6 +50,8 @@
     {{- venue.department | maybe_wrap("\n    department = {", "},") -}}
     {{- venue.bib_type | maybe_wrap("\n    type = {", "},") -}}
     {{- paper.official | maybe_wrap("\n    url = {", "},") -}}
+    {%- set note = paper.cv_note if paper.cv_note is defined else paper.note -%}
+    {{- note | maybe_wrap("\n    addendum = {", "},") -}}
 {# make sure there's a newline here #}
 }
 

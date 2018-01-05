@@ -185,6 +185,10 @@
                     {%- set conf = venues[venue.conference] -%}
                     {%- set conf_href = conf|venue_url(venue.year) -%}
                     , {{ conf.short|default(conf.name)|maybe_link(conf_href) }}
+                  {%- elif venue.type == "phd-thesis" -%}
+                    . Ph.D. thesis,
+                  {%- elif venue.type == "ba-thesis" -%}
+                    . B.A. thesis,
                   {% endif %}
                   {{
                     [paper.volume, paper.number, paper.pages] | reject("falsey") | join(", ") | maybe_wrap("", ".")
@@ -193,10 +197,10 @@
                 </span>
               {% endif %}
 
-              {% if paper.note %}
-              <span class="note">
-                {{ paper.note }}
-              </span>
+              {% if paper.web_note %}
+                <span class="note">{{ paper.web_note }}</span>
+              {% elif paper.note %}
+                <span class="note">{{ paper.note }}</span>
               {% endif %}
 
               <div class="links">

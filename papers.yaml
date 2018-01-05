@@ -325,6 +325,7 @@ papers:
       - slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/bdr-nips/
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/bdr-nips17ws.pdf
       - "AISTATS version": "#bdr"
+    note: Selected for oral presentation.
     topics:
       ? distribution regression
       ? MMD
@@ -556,7 +557,7 @@ papers:
       - jeff
     venue: uai
     year: 2015
-    note: >
+    web_note: >
       Chapter 3 / Section 4.1 of <a href='#thesis'>my thesis</a> supersedes
       this paper, fixing a few errors in constants and providing more results.
     official: http://auai.org/uai2015/proceedings/papers/168.pdf
@@ -629,6 +630,7 @@ papers:
     venue: kdd
     year: 2013
     doi: 10.1145/2487575.2487627
+    note: Selected for oral presentation.
     related: !!omap
       - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/kdd-13.pdf
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/kdd-13.pdf
@@ -707,7 +709,7 @@ papers:
       - pdf: https://www.usenix.org/system/files/conference/lisa12/lisa12-final-4.pdf
       - slides: https://www.usenix.org/sites/default/files/conference/protected-files/alexandrov_lisa12_slides.pdf
       - talk: https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/lisa12/stromme.mp4
-    note: Work done as part of the <a href='http://www.sccs.swarthmore.edu'>Swarthmore College Computer Society</a>.
+    web_note: Work done as part of the <a href='http://www.sccs.swarthmore.edu'>Swarthmore College Computer Society</a>.
     topics:
       ? systems
 
@@ -732,8 +734,7 @@ papers:
     venue: swat
     year: 2011
     related: !!omap
-      - pdf: http://www.gatsby.ucl.ac.uk/~dougals/paper/ba-thesis.pdf
-    note: B.A. thesis.
+      - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/ba-thesis.pdf
     topics:
       ? relational learning
       ? interpretation
