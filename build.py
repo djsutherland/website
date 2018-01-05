@@ -46,8 +46,7 @@ def paper_data():
     data['coauthor_count'] = c = collections.Counter()
     data['venue_type_map'] = v = MergedSequencesLookup()
     for paper in data['papers']:
-        authors = itertools.chain(paper['authors'], paper.get('committee', []))
-        for key in authors:
+        for key in paper.get('authors', []):
             if key.endswith('*'):
                 key = key[:-1]
             c[key] += 1
