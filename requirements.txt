@@ -1,3 +1,4 @@
 unidecode
 staticjinja
 ruamel.yaml
+six

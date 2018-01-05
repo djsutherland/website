@@ -5,6 +5,7 @@ import argparse
 import collections
 from copy import copy
 import datetime
+import heapq
 import io
 import itertools
 import json
@@ -13,11 +14,25 @@ import re
 import subprocess
 
 from ruamel.yaml import YAML
+import six
 import staticjinja
 from unidecode import unidecode
 
 
 _dir = os.path.abspath(os.path.dirname(__file__))
+
+
+class MergedSequencesLookup(object):
+    def __init__(self):
+        self.seqs = collections.defaultdict(list)
+        self.counter = iter(itertools.count())
+
+    def __getitem__(self, keys):
+        assert not isinstance(keys, six.string_types)
+        return [v for k, v in heapq.merge(*(self.seqs[k] for k in keys))]
+
+    def add(self, key, item):
+        self.seqs[key].append((next(self.counter), item))
 
 
 def paper_data():
@@ -29,11 +44,16 @@ def paper_data():
         t.update(obj.get('topics', []))
 
     data['coauthor_count'] = c = collections.Counter()
+    data['venue_type_map'] = v = MergedSequencesLookup()
     for paper in data['papers']:
-        for key in itertools.chain(paper['authors'], paper.get('committee', [])):
+        authors = itertools.chain(paper['authors'], paper.get('committee', []))
+        for key in authors:
             if key.endswith('*'):
                 key = key[:-1]
             c[key] += 1
+
+        venue_type = data['venues'].get(paper['venue'], {}).get('type', None)
+        v.add(venue_type, paper)
 
     data['coauthor_count_sorted'] = sorted(
         ((key, data['coauthors'][key], count) for key, count in c.items()),

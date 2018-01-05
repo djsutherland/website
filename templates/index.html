@@ -17,6 +17,7 @@
             $('.paper#' + this).show();
           });
         });
+
       } else {
         $('.paper').show();
       }
@@ -128,79 +129,83 @@
       ["Technical Reports, Posters, etc.", ["tech-report", "poster", "workshop", "course-project"]],
     ] %}
     {% for sec_name, sec_types in sections %}
-      {% for paper in papers if venues[paper.venue].type in sec_types %}
-        {% if loop.first %}<h4>{{ sec_name }}</h4>{% endif %}
-        <div class="paper" id="{{ paper.key }}" data-topics='{{ paper.topics|tojson }}'>
-          <span class="title">{{ paper.title }}.</span>
-          <span class="authors">
-            {%- if paper.committee -%}
-              {%- set authors = paper.committee -%}
-              Committee:
-            {% else -%}
-              {%- set authors = paper.authors -%}
-            {%- endif -%}
-            {%- for author in authors -%}
-              {%- set auth = author | get_author(coauthors) -%}
-              <span data-coauthor="{{ auth.key }}">
-                {{- auth | full_name | maybe_link(auth.web) -}}
-                {%- if auth.is_equal %}<span class="equal">**</span>{%- endif -%}
-              </span>
-              {%- if loop.last -%}
-                .
-              {%- elif loop.length == 2 -%}
-                {%- if loop.first %} and {% endif -%}
-              {%- else -%}
-                {%- if loop.last -%}
-                  .
-                {%- elif loop.revindex == 2 -%}
-                  , and
+      {%- if venue_type_map[sec_types]|length > 0 -%}
+        <section>
+          <h4>{{ sec_name }}</h4>
+          {% for paper in venue_type_map[sec_types] %}
+            <div class="paper" id="{{ paper.key }}" data-topics='{{ paper.topics|tojson }}'>
+              <span class="title">{{ paper.title }}.</span>
+              <span class="authors">
+                {%- if paper.committee -%}
+                  {%- set authors = paper.committee -%}
+                  Committee:
                 {% else -%}
-                  ,
-                {% endif %}
-              {%- endif -%}
-            {%- endfor -%}
-          </span>
+                  {%- set authors = paper.authors -%}
+                {%- endif -%}
+                {%- for author in authors -%}
+                  {%- set auth = author | get_author(coauthors) -%}
+                  <span data-coauthor="{{ auth.key }}">
+                    {{- auth | full_name | maybe_link(auth.web) -}}
+                    {%- if auth.is_equal %}<span class="equal">**</span>{%- endif -%}
+                  </span>
+                  {%- if loop.last -%}
+                    .
+                  {%- elif loop.length == 2 -%}
+                    {%- if loop.first %} and {% endif -%}
+                  {%- else -%}
+                    {%- if loop.last -%}
+                      .
+                    {%- elif loop.revindex == 2 -%}
+                      , and
+                    {% else -%}
+                      ,
+                    {% endif %}
+                  {%- endif -%}
+                {%- endfor -%}
+              </span>
 
-          {% if paper.venue %}
-            {%- set venue = venues[paper.venue] -%}
-            {%- set href = venue|venue_url(paper.year) -%}
-            <span class="venue">
-              {%- if venue.short -%}
-                {{ venue.name }}
-                ({{ venue.short | maybe_link(href) }})
-              {%- else -%}
-                {{ venue.name | maybe_link(href) }}
-              {%- endif -%}
-              {%- if venue.conference -%}
-                {%- set conf = venues[venue.conference] -%}
-                {%- set conf_href = conf|venue_url(venue.year) -%}
-                , {{ conf.short|default(conf.name)|maybe_link(conf_href) }}
+              {% if paper.venue %}
+                {%- set venue = venues[paper.venue] -%}
+                {%- set href = venue|venue_url(paper.year) -%}
+                <span class="venue">
+                  {%- if venue.short -%}
+                    {{ venue.name }}
+                    ({{ venue.short | maybe_link(href) }})
+                  {%- else -%}
+                    {{ venue.name | maybe_link(href) }}
+                  {%- endif -%}
+                  {%- if venue.conference -%}
+                    {%- set conf = venues[venue.conference] -%}
+                    {%- set conf_href = conf|venue_url(venue.year) -%}
+                    , {{ conf.short|default(conf.name)|maybe_link(conf_href) }}
+                  {% endif %}
+                  {{
+                    [paper.volume, paper.number, paper.pages] | reject("falsey") | join(", ") | maybe_wrap("", ".")
+                  }}
+                  {{ paper.year }}.
+                </span>
               {% endif %}
-              {{
-                [paper.volume, paper.number, paper.pages] | reject("falsey") | join(", ") | maybe_wrap("", ".")
-              }}
-              {{ paper.year }}.
-            </span>
-          {% endif %}
 
-          {% if paper.note %}
-          <span class="note">
-            {{ paper.note }}
-          </span>
-          {% endif %}
+              {% if paper.note %}
+              <span class="note">
+                {{ paper.note }}
+              </span>
+              {% endif %}
 
-          <div class="links">
-            {% if paper.official %}<span class="info">[<a href="{{ paper.official }}">official</a>]</span>{% endif %}
-            {% if paper.doi %}<span class="info">[<a href="https://dx.doi.org/{{ paper.doi }}">doi</a>]</span>{% endif %}
-            {% if paper.arXiv %}<span class="info">[<a href="https://arxiv.org/abs/{{ paper.arXiv }}">arXiv</a>]</span>{% endif %}
-            {% if paper.related %}
-              {% for name, link in paper.related.items() %}
-                <span class="info">[<a href="{{ link }}">{{ name }}</a>]</span>
-              {% endfor %}
-            {% endif %}
-          </div>
-        </div>
-      {% endfor %}
+              <div class="links">
+                {% if paper.official %}<span class="info">[<a href="{{ paper.official }}">official</a>]</span>{% endif %}
+                {% if paper.doi %}<span class="info">[<a href="https://dx.doi.org/{{ paper.doi }}">doi</a>]</span>{% endif %}
+                {% if paper.arXiv %}<span class="info">[<a href="https://arxiv.org/abs/{{ paper.arXiv }}">arXiv</a>]</span>{% endif %}
+                {% if paper.related %}
+                  {% for name, link in paper.related.items() %}
+                    <span class="info">[<a href="{{ link }}">{{ name }}</a>]</span>
+                  {% endfor %}
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        </section>
+      {% endif %}
     {% endfor %}
 
     <div style="clear: both;"></div>
