@@ -40,7 +40,7 @@
 {% for sec_name, sec_types in sections %}
   \DeclareBibliographyCategory{sec{{ loop.index }}}
   \addtocategory{sec{{ loop.index -}} }{
-    {%- for paper in papers if venues[paper.venue].type in sec_types -%}
+    {%- for paper in venue_type_map[sec_types] -%}
       {{- paper | bibtex_key(coauthors) -}}
       {%- if not loop.last -%},{%- endif -%}
     {%- endfor -%}
