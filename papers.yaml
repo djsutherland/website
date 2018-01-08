@@ -302,6 +302,7 @@ papers:
       - me*
       - michael
       - arthur
+    arXiv: 1801.01401
     venue: preprint
     year: 2018
     related: !!omap
