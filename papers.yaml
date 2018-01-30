@@ -339,7 +339,7 @@ papers:
       - heiko*
       - michael
       - arthur
-    arXiv: 1705.08360
+    arXiv: '1705.08360'
     venue: aistats
     year: 2018
     related: !!omap
@@ -358,7 +358,7 @@ papers:
       - me*
       - dino
       - seth
-    arXiv: 1705.04293
+    arXiv: '1705.04293'
     venue: aistats
     year: 2018
     related: !!omap
@@ -374,7 +374,7 @@ papers:
     bibtex_title: Fixing an error in {C}aponnetto and de {V}ito (2007)
     authors:
       - me
-    arXiv: 1702.02982
+    arXiv: '1702.02982'
     venue: tech-report
     year: 2017
     topics:
@@ -390,7 +390,7 @@ papers:
       - me
       - yu-xiang
       - yee-whye
-    arXiv: 1611.03787
+    arXiv: '1611.03787'
     related: !!omap
       - code: https://github.com/flaxter/us2016/
       - "microdata analysis package": https://github.com/dougalsutherland/pummeler/
@@ -416,7 +416,7 @@ papers:
     venue: iclr
     year: 2017
     official: http://openreview.net/forum?id=HJWHIKqgl
-    arXiv: 1611.04488
+    arXiv: '1611.04488'
     related: !!omap
       - code: https://github.com/dougalsutherland/opt-mmd/
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/iclr-opt-mmd.pdf
@@ -482,7 +482,7 @@ papers:
       - barnabas
       - jeff
     venue: tech-report
-    arXiv: 1511.04150
+    arXiv: '1511.04150'
     year: 2015
     topics:
       ? applications
@@ -507,7 +507,7 @@ papers:
     number: 2
     pages: 135
     doi: 10.3847/0004-637X/831/2/135
-    arXiv: 1509.05409
+    arXiv: '1509.05409'
     topics: &astro-topics
       ? applications
       ? cosmology
@@ -524,7 +524,7 @@ papers:
     venue: aaai
     year: 2016
     official: http://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/download/12460/11844
-    arXiv: 1509.07553
+    arXiv: '1509.07553'
     related: !!omap
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/hdd_aaai.pdf
       - "NIPS workshop version": "#hdd-workshop"
@@ -561,7 +561,7 @@ papers:
       Chapter 3 / Section 4.1 of <a href='#thesis'>my thesis</a> supersedes
       this paper, fixing a few errors in constants and providing more results.
     official: http://auai.org/uai2015/proceedings/papers/168.pdf
-    arXiv: 1506.02785
+    arXiv: '1506.02785'
     related: !!omap
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/rff_uai15.pdf
     topics:
@@ -618,7 +618,7 @@ papers:
     number: 2
     pages: 50
     doi: 10.1088/0004-637X/803/2/50
-    arXiv: 1410.0686
+    arXiv: '1410.0686'
     topics: *astro-topics
 
   - key: active-mf
@@ -649,7 +649,7 @@ papers:
       - jeff
     venue: tech-report
     year: 2012
-    arXiv: 1202.0302
+    arXiv: '1202.0302'
     topics:
       ? distribution regression
       ? kernels
