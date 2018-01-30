@@ -302,10 +302,10 @@ papers:
       - me*
       - michael
       - arthur
-    venue: preprint
+    venue: iclr
     year: 2018
-    related: !!omap
-      - "ICLR-18 submission": https://openreview.net/forum?id=r1lUOzWCW
+    official: https://openreview.net/forum?id=r1lUOzWCW
+    arXiv: 1801.01401
     topics:
       ? generative models
       ? GANs
@@ -342,6 +342,7 @@ papers:
     arXiv: '1705.08360'
     venue: aistats
     year: 2018
+    note: Selected for oral presentation.
     related: !!omap
       - Turing talk: "#talk-kexpfam-ati"
       - UCL talk: "#talk-kexpfam-csml"
