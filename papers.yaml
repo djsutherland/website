@@ -305,7 +305,7 @@ papers:
     venue: iclr
     year: 2018
     official: https://openreview.net/forum?id=r1lUOzWCW
-    arXiv: 1801.01401
+    arXiv: '1801.01401'
     topics:
       ? generative models
       ? GANs
