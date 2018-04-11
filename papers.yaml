@@ -344,6 +344,8 @@ papers:
     year: 2018
     note: Selected for oral presentation.
     related: !!omap
+      - slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/aistats18/
+      - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/kexpfam-aistats18.pdf
       - Turing talk: "#talk-kexpfam-ati"
       - UCL talk: "#talk-kexpfam-csml"
     topics: &kexpfam-nys-topics
@@ -363,6 +365,7 @@ papers:
     venue: aistats
     year: 2018
     related: !!omap
+      - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/bdr-aistats18.pdf
       - "NIPS workshop version": "#bdr-workshop"
     topics:
       ? distribution regression
