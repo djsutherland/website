@@ -306,6 +306,8 @@ papers:
     year: 2018
     official: https://openreview.net/forum?id=r1lUOzWCW
     arXiv: '1801.01401'
+    related: !!omap
+      - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/iclr-mmd-gans.pdf
     topics:
       ? generative models
       ? GANs
@@ -321,6 +323,7 @@ papers:
       - seth
     venue: nips-dfgg
     year: 2017
+    official: https://sites.google.com/site/nips2017learningon/11_paper.pdf
     related: !!omap
       - slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/bdr-nips/
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/bdr-nips17ws.pdf
@@ -339,6 +342,7 @@ papers:
       - heiko*
       - michael
       - arthur
+    official: "http://proceedings.mlr.press/v84/sutherland18a.html"
     arXiv: '1705.08360'
     venue: aistats
     year: 2018
@@ -361,6 +365,7 @@ papers:
       - me*
       - dino
       - seth
+    official: "http://proceedings.mlr.press/v84/law18a.html"
     arXiv: '1705.04293'
     venue: aistats
     year: 2018
