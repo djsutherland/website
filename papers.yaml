@@ -294,6 +294,23 @@ venues:
     year: 2017
 
 papers:
+  - key: smmd
+    title: On gradient regularizers for MMD GANs
+    bibtex_title: On gradient regularizers for {MMD} {GAN}s
+    authors:
+      - michael
+      - me
+      - mikolaj
+      - arthur
+    venue: preprint
+    year: 2018
+    arXiv: '1805.11565'
+    topics:
+      ? generative models
+      ? GANs
+      ? MMD
+      ? kernels
+
   - key: mmd-gans
     title: Demystifying MMD GANs
     bibtex_title: Demystifying {MMD} {GAN}s
