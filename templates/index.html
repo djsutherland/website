@@ -258,6 +258,11 @@
         <div class="links">
           {{ talk.video | maybe_wrap("<span class='info'>[<a href='", "'>video</a>]</span>") }}
           {{ talk.slides | maybe_wrap("<span class='info'>[<a href='", "'>slides</a>]</span>") }}
+          {% if talk.related %}
+            {% for name, link in talk.related.items() %}
+              <span class="info">[<a href="{{ link }}">{{ name }}</a>]</span>
+            {% endfor %}
+          {% endif %}
         </div>
       </div>
     {% endfor %}
