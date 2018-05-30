@@ -270,6 +270,10 @@ venues:
   oxford-csml:
     name: Computational Statistics and Machine Learning seminar, Oxford University
     type: seminar
+  sheffield-mlnet:
+    name: Machine Learning Seminar, University of Sheffield
+    type: seminar
+    web: https://sheffieldmlnet.github.io/tags/seminar/
   dali:
     name: Data Analysis, Learning, and Inference
     short: DALI
@@ -305,6 +309,8 @@ papers:
     venue: preprint
     year: 2018
     arXiv: '1805.11565'
+    related: !!omap
+      - Sheffield talk: "#talk-mmd-gans-sheffield"
     topics:
       ? generative models
       ? GANs
@@ -325,6 +331,7 @@ papers:
     arXiv: '1801.01401'
     related: !!omap
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/iclr-mmd-gans.pdf
+      - Sheffield talk: "#talk-mmd-gans-sheffield"
     topics:
       ? generative models
       ? GANs
@@ -766,6 +773,17 @@ papers:
       ? interpretation
 
 talks:
+  - key: mmd-gans-sheffield
+    title: Advances in GANs based on the MMD
+    venue: sheffield-mlnet
+    papers:
+      - mmd-gans
+      - smmd
+    date: 2018-05-30
+    slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/mmd-gans-sheffield/
+    related: !!omap
+      - abstract: https://sheffieldmlnet.github.io/talk/seminar-dougal-sutherland/
+
   - key: kexpfam-ati
     title: Efficient and principled score estimation with kernel exponential families
     venue: turing-highd
