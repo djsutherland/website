@@ -302,6 +302,11 @@ venues:
     conference: turing
     web: https://www.turing.ac.uk/events/approximating-high-dimensional-functions/
     year: 2017
+  gatsby-tricenter:
+    name: Gatsby Tri-Center Meeting
+    type: meeting
+    web: https://ctn.zuckermaninstitute.columbia.edu/gatsby2018
+    year: 2018
 
 papers:
   - key: smmd
@@ -779,6 +784,14 @@ papers:
       ? interpretation
 
 talks:
+  - key: kexpfam-tricenter
+    title: Efficiently Estimating Densities and Scores with Kernel Exponential Families
+    venue: gatsby-tricenter
+    papers:
+      - kexpfam-nystroem
+    date: 2018-06-19
+    slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/kexpfam-tricenter/
+
   - key: mmd-gans-google
     title: Better GANs by using the MMD
     venue: google-ml-ny
@@ -798,7 +811,7 @@ talks:
     web_note: |
       No slides actually used at the talk because of a projector mishap,
       but they would have been the same as
-      <a href="#mmd-gans-google">the Google talk</a>.
+      <a href="#talk-mmd-gans-google">the Google talk</a>.
 
   - key: mmd-gans-sheffield
     title: Advances in GANs based on the MMD
