@@ -42,6 +42,8 @@
     type = {Ph.D. thesis},
     {%- elif venue.type == "ba-thesis" %}
     type = {B.A. thesis},
+    {%- elif venue.type == "course-project" %}
+    howpublished = { {{- venue.name -}} },
     {%- endif %}
     {{- paper.volume | maybe_wrap("\n    volume = {", "},") -}}
     {{- paper.number | maybe_wrap("\n    number = {", "},") -}}
