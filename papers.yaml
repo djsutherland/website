@@ -280,6 +280,9 @@ venues:
   columbia-ml:
     name: Machine Learning reading group, Columbia University
     type: seminar
+  fair-ny:
+    name: Facebook AI Research New York
+    type: seminar
   dali:
     name: Data Analysis, Learning, and Inference
     short: DALI
@@ -784,6 +787,14 @@ papers:
       ? interpretation
 
 talks:
+  - key: mmd-gans-fair
+    title: Better GANs by using the MMD
+    venue: fair-ny
+    papers:
+      - mmd-gans
+      - smmd
+    date: 2018-06-21
+
   - key: kexpfam-tricenter
     title: Efficiently Estimating Densities and Scores with Kernel Exponential Families
     venue: gatsby-tricenter
