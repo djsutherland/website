@@ -67,6 +67,7 @@ img#me {
     display: block;
 }
 .note {
+    display: block;
     font-style: italic;
 }
 .paper a, .talk a {

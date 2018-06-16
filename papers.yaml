@@ -274,6 +274,12 @@ venues:
     name: Machine Learning Seminar, University of Sheffield
     type: seminar
     web: https://sheffieldmlnet.github.io/tags/seminar/
+  google-ml-ny:
+    name: Machine Learning reading group, Google New York
+    type: seminar
+  columbia-ml:
+    name: Machine Learning reading group, Columbia University
+    type: seminar
   dali:
     name: Data Analysis, Learning, and Inference
     short: DALI
@@ -773,6 +779,27 @@ papers:
       ? interpretation
 
 talks:
+  - key: mmd-gans-google
+    title: Better GANs by using the MMD
+    venue: google-ml-ny
+    papers:
+      - mmd-gans
+      - smmd
+    date: 2018-06-14
+    slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/mmd-gans-google/
+
+  - key: mmd-gans-google
+    title: Better GANs by using the MMD
+    venue: columbia-ml
+    papers:
+      - mmd-gans
+      - smmd
+    date: 2018-06-12
+    web_note: |
+      No slides actually used at the talk because of a projector mishap,
+      but they would have been the same as
+      <a href="#mmd-gans-google">the Google talk</a>.
+
   - key: mmd-gans-sheffield
     title: Advances in GANs based on the MMD
     venue: sheffield-mlnet

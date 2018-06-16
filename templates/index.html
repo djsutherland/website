@@ -255,6 +255,12 @@
         </span>
         {% endif %}
 
+        {% if talk.web_note %}
+          <span class="note">{{ talk.web_note }}</span>
+        {% elif talk.note %}
+          <span class="note">{{ talk.note }}</span>
+        {% endif %}
+
         <div class="links">
           {{ talk.video | maybe_wrap("<span class='info'>[<a href='", "'>video</a>]</span>") }}
           {{ talk.slides | maybe_wrap("<span class='info'>[<a href='", "'>slides</a>]</span>") }}
