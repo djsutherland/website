@@ -153,7 +153,7 @@ Below, \bibeqcon{} denotes equal contribution.
         {{- venue.short | maybe_wrap(" (", ")") -}}
         {%- if venue.conference -%}
           {%- set conf = venues[venue.conference] -%}
-          {{- "" }} ({{ conf.short | default(conf.name) }} workshop)
+          {{- "" }} (workshop at {{ conf.long_article | maybe_wrap("", " ") -}} {{- conf.name -}} {{- conf.short | maybe_wrap(", ", "") }})
         {%- endif -%}
         .
      }
@@ -185,7 +185,7 @@ Below, \bibeqcon{} denotes equal contribution.
 % \cventry{2009 -- 2011}{IT Associate}{Swarthmore College IT Services}{}{}{}
 
 \section{Service}
-\cventry{2015 --}{Program committee or equivalent}{NIPS, ICML, ICLR, AAAI}{}{}{ICML 2018: Outstanding Reviewer.}
+\cventry{2015 --}{Program committee or equivalent}{NIPS, ICML, ICLR, AISTATS, AAAI}{}{}{NIPS 2018: top 218 reviewers. ICML 2018: Outstanding Reviewer.}
 \cventry{2014 --}{Reviewer}{JMLR, IEEE TSP, IEEE T-PAMI, Springer MLJ, COLT, SoCG, IJCAI, ECML-PKDD}{}{}{}
 \cventry{2017}{Session chair}{ICML}{}{}{}
 \cventry{2016 --}{External seminar organizer}{Gatsby}{}{}{}

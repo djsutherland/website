@@ -243,6 +243,7 @@ venues:
   icml:
     name: International Conference on Machine Learning
     short: ICML
+    long_article: the
     type: conference
     web_by_year:
       2017: https://2017.icml.cc/
@@ -302,6 +303,7 @@ venues:
   turing:
     name: Alan Turing Institute
     type: conference
+    long_article: the
     web: https://www.turing.ac.uk/events/
   turing-highd:
     name: Approximating high dimensional functions
@@ -316,6 +318,7 @@ venues:
   gpss:
     name: Gaussian Process and Uncertainty Quantification Summer School
     short: GPSS
+    long_article: the
     type: conference
     web_by_year:
       2018: http://gpss.cc/gpss18/
