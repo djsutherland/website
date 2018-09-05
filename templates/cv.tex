@@ -48,7 +48,7 @@
 {% endfor %}
 
 {% raw %}
-\newcommand{\bibeqcon}{\footnotemark[1]}
+\newcommand{\bibeqcon}{\textcolor{blue}{\footnotemark[1]}}
 \addbibresource{../biblio-cv.bib}
 
 \newcommand{\httpurl}[1]{\href{http://#1}{\nolinkurl{#1}}}
@@ -125,7 +125,8 @@ London, UK $\quad$ W1T 4JG &
 
 
 \section{Publications}
-\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}\fnsymbol{footnote}}
+\setlength\bibitemsep{0.5\baselineskip}
 Below, \bibeqcon{} denotes equal contribution.
 \nocite{*}
 {% endraw %}
