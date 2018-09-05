@@ -18,6 +18,7 @@ coauthors:
   mikolaj:
     first: Mikołaj
     last: Bińkowski
+    web: https://github.com/mbinkowski
   leon:
     first: Ho Chung Leon
     last: Law
@@ -237,6 +238,8 @@ venues:
     web_by_year:
       2014: https://nips.cc/Conferences/2014
       2015: https://nips.cc/Conferences/2015
+      2017: https://nips.cc/Conferences/2017
+      2018: https://nips.cc/Conferences/2018
   icml:
     name: International Conference on Machine Learning
     short: ICML
@@ -310,6 +313,18 @@ venues:
     type: meeting
     web: https://ctn.zuckermaninstitute.columbia.edu/gatsby2018
     year: 2018
+  gpss:
+    name: Gaussian Process and Uncertainty Quantification Summer School
+    short: GPSS
+    type: conference
+    web_by_year:
+      2018: http://gpss.cc/gpss18/
+  gpss-workshop:
+    name: Advances in Kernel Methods
+    type: workshop
+    conference: gpss
+    year: 2018
+    web: http://gpss.cc/gpss18/workshop.html
 
 papers:
   - key: smmd
@@ -320,7 +335,7 @@ papers:
       - me
       - mikolaj
       - arthur
-    venue: preprint
+    venue: nips
     year: 2018
     arXiv: '1805.11565'
     related: !!omap
@@ -787,6 +802,14 @@ papers:
       ? interpretation
 
 talks:
+  - key: mmd-gans-gpss
+    title: Kernel Distances for Better Deep Generative Models
+    venue: gpss-workshop
+    papers:
+      - mmd-gans
+      - smmd
+    date: 2018-09-06
+
   - key: mmd-gans-fair
     title: Better GANs by using the MMD
     venue: fair-ny
