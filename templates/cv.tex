@@ -33,9 +33,9 @@
   ["Preprints", ["preprint"]],
   ["Journal and low-acceptance-rate conference papers", ["conference", "journal"]],
   ["Peer-reviewed workshop and high-acceptance-rate conference contributions", ["workshop", "poster"]],
-  ["Dissertations", ["phd-thesis", "ba-thesis"]],
   ["Technical reports", ["tech-report", "course-project"]],
 ] -%}
+  % ["Dissertations", ["phd-thesis", "ba-thesis"]],
 
 {% for sec_name, sec_types in sections %}
   \DeclareBibliographyCategory{sec{{ loop.index }}}
@@ -84,7 +84,8 @@ London, UK $\quad$ W1T 4JG &
 }
 \cventry{2015}{M.S., Computer Science}{Carnegie Mellon University}{}{}{}
 \cventry{2011}{B.A., Computer Science}{Swarthmore College}{}{with high honors}{%
-    Minors in Linguistics (with high honors) and Mathematics \& Statistics. GPA: 3.92.
+    Minors in Linguistics (with high honors) and Mathematics \& Statistics. GPA: 3.92. \\
+    \emph{Thesis Title}: Integrating Human Knowledge into a Relational Learning System.
 }
 
 
@@ -126,7 +127,7 @@ London, UK $\quad$ W1T 4JG &
 
 \section{Publications}
 \renewcommand{\thefootnote}{\fnsymbol{footnote}\fnsymbol{footnote}}
-\setlength\bibitemsep{0.5\baselineskip}
+\setlength\bibitemsep{0.3\baselineskip}
 Below, \bibeqcon{} denotes equal contribution.
 \nocite{*}
 {% endraw %}
@@ -186,8 +187,8 @@ Below, \bibeqcon{} denotes equal contribution.
 % \cventry{2009 -- 2011}{IT Associate}{Swarthmore College IT Services}{}{}{}
 
 \section{Service}
-\cventry{2015 --}{Program committee or equivalent}{NIPS, ICML, ICLR, AISTATS, AAAI}{}{}{NIPS 2018: top 218 reviewers. ICML 2018: Outstanding Reviewer.}
-\cventry{2014 --}{Reviewer}{JMLR, IEEE TSP, IEEE T-PAMI, Springer MLJ, COLT, SoCG, IJCAI, ECML-PKDD}{}{}{}
+\cventry{2015 --}{Program committee or equivalent}{NIPS, ICML, ICLR, AISTATS, AAAI}{}{}{NIPS 2018: top 218 (of about 3,000) reviewers. ICML 2018: Outstanding Reviewer.}
+\cventry{2014 --}{Reviewer}{JMLR, IEEE TSP, IEEE T-PAMI, MLJ, COLT, SoCG, IJCAI, ECML-PKDD}{}{}{}
 \cventry{2017}{Session chair}{ICML}{}{}{}
 \cventry{2016 --}{External seminar organizer}{Gatsby}{}{}{}
 \cventry{2013}{Immigration Course organizer}{CMU}{}{}{}

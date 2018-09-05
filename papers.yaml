@@ -316,7 +316,8 @@ venues:
     web: https://ctn.zuckermaninstitute.columbia.edu/gatsby2018
     year: 2018
   gpss:
-    name: Gaussian Process and Uncertainty Quantification Summer School
+    # name: Gaussian Process and Uncertainty Quantification Summer School
+    name: Gaussian Process Summer School
     short: GPSS
     long_article: the
     type: conference
