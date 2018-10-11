@@ -144,11 +144,13 @@ def first_inits(author_dict):
 
 
 @filter
-def bibtex_authors(authors, coauthors, mark_equal=''):
+def bibtex_authors(authors, coauthors, mark_equal='', wrap_me=''):
     auths = []
     for a in authors:
         auth = get_author(a, coauthors)
         name = latex_escape(full_name(auth))
+        if wrap_me and auth.get('is_me'):
+            name = wrap_me + '{' + name + '}'
         auths.append(name + (mark_equal if auth['is_equal'] else ''))
     return ' and '.join(auths)
 

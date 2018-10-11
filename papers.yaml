@@ -3,6 +3,7 @@ coauthors:
   me:
     first: Dougal J.
     last: Sutherland
+    is_me: true
   arthur:
     first: Arthur
     last: Gretton
