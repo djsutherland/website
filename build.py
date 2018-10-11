@@ -156,10 +156,13 @@ def bibtex_author_an(authors, coauthors):
     anns = []
     for i, a in enumerate(authors, 1):
         info = get_author(a, coauthors)
+        auth_anns = []
         if info.get('is_equal'):
-            anns.append('{}=equal'.format(i))
+            auth_anns.append('equal')
         if info.get('is_me'):
-            anns.append('{}=me'.format(i))
+            auth_anns.append('me')
+        if auth_anns:
+            anns.append('{}={}'.format(i, ','.join(auth_anns)))
     return '; '.join(anns)
 
 
