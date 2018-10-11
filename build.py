@@ -91,9 +91,11 @@ def get_author(author, coauthors):
     d['key'] = author
     return d
 
+
 @filter
 def get_paper(key, papers):
     return next(paper for paper in papers if paper['key'] == key)
+
 
 translation_table = {}
 @filter
@@ -144,15 +146,21 @@ def first_inits(author_dict):
 
 
 @filter
-def bibtex_authors(authors, coauthors, mark_equal='', wrap_me=''):
-    auths = []
-    for a in authors:
-        auth = get_author(a, coauthors)
-        name = latex_escape(full_name(auth))
-        if wrap_me and auth.get('is_me'):
-            name = wrap_me + '{' + name + '}'
-        auths.append(name + (mark_equal if auth['is_equal'] else ''))
-    return ' and '.join(auths)
+def bibtex_authors(authors, coauthors):
+    return ' and '.join(latex_escape(full_name(get_author(a, coauthors)))
+                        for a in authors)
+
+
+@filter
+def bibtex_author_an(authors, coauthors):
+    anns = []
+    for i, a in enumerate(authors, 1):
+        info = get_author(a, coauthors)
+        if info.get('is_equal'):
+            anns.append('{}=equal'.format(i))
+        if info.get('is_me'):
+            anns.append('{}=me'.format(i))
+    return '; '.join(anns)
 
 
 @filter

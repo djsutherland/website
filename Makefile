@@ -9,9 +9,7 @@ all: index.html biblio.bib cv.pdf
 	python build.py $@
 
 biblio.bib: biblio-cv.bib
-	# This sed command wouldn't work if the \bibme argument has {}s in it,
-	# e.g. because of an accent. Luckily my name doesn't...
-	tail -n '+10' $< | sed -e 's/\\bibeqcon{}//g; s/\\bibme{\([^}]*\)}/\1/g; /addendum = /d' > $@
+	sed -e '/author+an = /d; /addendum = /d' < $< > $@
 
 cv.pdf: cv.tex biblio-cv.bib
 	mkdir -p .cv-build
