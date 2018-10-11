@@ -809,6 +809,7 @@ talks:
   - key: mmd-gans-gpss
     title: Kernel Distances for Better Deep Generative Models
     venue: gpss-workshop
+    slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/mmd-gans-gpss/
     papers:
       - mmd-gans
       - smmd
