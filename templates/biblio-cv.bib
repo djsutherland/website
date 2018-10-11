@@ -1,13 +1,3 @@
-{% raw -%}
-% This .bib uses \bibeqcon{} to mark equal contributions between authors.
-% Usually, you don't actually want that in your bibliography, so this line
-% makes that not render as anything. You could use e.g.
-%   \newcommand{\bibeqcon}{$^*$}
-% in your document's preable (before including this .bib) to actually show it.
-@preamble{"\providecommand{\bibeqcon}{}"}
-{% endraw %}
-
-{# NOTE: remember to change Makefile if number of lines above is changed! #}
 {%- for paper in papers -%}
 {%- set venue = venues[paper.venue] -%}
     {%- if venue.type == "conference" or venue.type == "workshop" -%}
@@ -23,7 +13,8 @@
     {%- endif -%}
 {
     {{- paper | bibtex_key(coauthors) -}},
-    author = { {{- paper.authors | bibtex_authors(coauthors, '\\bibeqcon{}') -}} },
+    author = { {{- paper.authors | bibtex_authors(coauthors) -}} },
+    {{ paper.authors | bibtex_author_an(coauthors) | maybe_wrap("author+an = {", "},\n    ") -}}
     title = { {{- paper.bibtex_title | default(paper.title) -}} },
     year = { {{- paper.year -}} },
     {%- if paper.arXiv %}

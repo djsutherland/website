@@ -3,6 +3,7 @@ coauthors:
   me:
     first: Dougal J.
     last: Sutherland
+    is_me: true
   arthur:
     first: Arthur
     last: Gretton
@@ -19,6 +20,10 @@ coauthors:
     first: Mikołaj
     last: Bińkowski
     web: https://github.com/mbinkowski
+  kevin:
+    first: Li  # how he wants it...
+    last: Wenliang
+    web: https://kevin-w-li.github.io/
   leon:
     first: Ho Chung Leon
     last: Law
@@ -349,6 +354,7 @@ papers:
       ? GANs
       ? MMD
       ? kernels
+      ? deep kernels
 
   - key: mmd-gans
     title: Demystifying MMD GANs
@@ -370,6 +376,7 @@ papers:
       ? GANs
       ? MMD
       ? kernels
+      ? deep kernels
 
   - key: bdr-workshop
     title: Bayesian Approaches to Distribution Regression
@@ -391,6 +398,7 @@ papers:
       ? MMD
       ? bayesian
       ? kernels
+      ? deep kernels
 
   - key: kexpfam-nystroem
     title: Efficient and principled score estimation with Nyström kernel exponential families
@@ -414,6 +422,7 @@ papers:
       ? kernels
       ? kernel approximation
       ? statistical theory
+      ? kernel exponential families
 
   - key: bdr
     title: Bayesian Approaches to Distribution Regression
@@ -434,6 +443,7 @@ papers:
       ? MMD
       ? bayesian
       ? kernels
+      ? deep kernels
 
   - key: caponnetto-fix
     title: Fixing an error in Caponnetto and de Vito (2007)
@@ -495,6 +505,7 @@ papers:
       ? MMD
       ? kernels
       ? kernel choice
+      ? deep kernels
       ? interpretation
 
   - key: thesis
@@ -519,6 +530,7 @@ papers:
       ? kernels
       ? kernel approximation
       ? MMD
+      ? deep kernels
       ? kernel choice
       ? active learning 
 
