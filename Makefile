@@ -3,10 +3,13 @@ MAKEFLAGS += --no-builtin-rules
 .SUFFIXES:
 .PHONY: all clean clean-all
 
+LATEXMK ?= latexmk
+PYTHON ?= python
+
 all: index.html biblio.bib cv.pdf
 
 %: papers.yaml build.py templates/%
-	python build.py $@
+	$(PYTHON) build.py $@
 
 biblio.bib: biblio-cv.bib
 	sed -e '/author+an = /d; /addendum = /d' < $< > $@
@@ -14,7 +17,7 @@ biblio.bib: biblio-cv.bib
 cv.pdf: cv.tex biblio-cv.bib
 	mkdir -p .cv-build
 	ln -f cv.tex .cv-build/
-	cd .cv-build && latexmk -pdf cv
+	cd .cv-build && $(LATEXMK) -pdf cv
 	ln -f .cv-build/cv.pdf .
 
 clean:
