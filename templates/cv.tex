@@ -28,6 +28,9 @@
 \usepackage[maxbibnames=9,doi=false,url=false,sorting=none,style=authortitle,dashed=false]{biblatex}
 \DeclareNameAlias{author}{first-last}
 
+\DeclareFieldFormat[misc]{title}{\mkbibquote{#1\isdot}}
+\renewbibmacro{in:}{}
+
 \newcommand{\bibeqcon}{\textcolor{blue}{\footnotemark[1]}}
 \renewcommand*{\mkbibnamegiven}[1]{%
   \ifitemannotation{me}
@@ -90,15 +93,25 @@ University College London  & \textit{web}: \httpurl{www.gatsby.ucl.ac.uk/~dougal
 London, UK $\quad$ W1T 4JG & 
 \end{tabular}
 
+\section{Research interests}
+Machine learning,
+particularly kernel methods and their integration with deep learning.
+Problems including
+generative models, two-sample testing, density estimation,
+and distribution regression and classification.
+Active and human-in-the-loop learning.
+Nonparametric statistics, statistical learning theory.
+
 \section{Academic Positions and Education}
-\cventry{2016--}{Research Associate}{Gatsby Computational Neuroscience Unit, University College London}{}{}{Postdoctoral position with Arthur Gretton.}
-\cventry{2016}{Ph.D., Computer Science}{Carnegie Mellon University}{}{}{%
+\cventry{2016 --}{Research Associate}{Gatsby Computational Neuroscience Unit, University College London}{}{}{Postdoctoral position with Arthur Gretton.}
+\cventry{2011 -- 2016}{Ph.D., Computer Science}{Carnegie Mellon University}{}{}{%
   \emph{Thesis Title}: Scalable, Flexible, and Active Learning on Distributions. \\
-  \emph{Committee}: Jeff Schneider (chair), Barnab\'as P\'oczos, Maria-Florina Balcan, Arthur Gretton.
+  \emph{Committee}: Jeff Schneider (chair), Barnab\'as P\'oczos, Maria-Florina Balcan, Arthur Gretton.\\
+  Included an M.S.\ obtained in 2015. Unofficial GPA: 3.96 / 4.
 }
-\cventry{2015}{M.S., Computer Science}{Carnegie Mellon University}{}{}{}
+% \cventry{2015}{M.S., Computer Science}{Carnegie Mellon University}{}{}{}
 \cventry{2011}{B.A., Computer Science}{Swarthmore College}{}{with high honors}{%
-    Minors in Linguistics (with high honors) and Mathematics \& Statistics. GPA: 3.92. \\
+    Minors in Linguistics (with high honors) and Mathematics \& Statistics. GPA: 3.93 / 4. \\
     \emph{Thesis Title}: Integrating Human Knowledge into a Relational Learning System.
 }
 
@@ -120,21 +133,21 @@ London, UK $\quad$ W1T 4JG &
     Led a small team of CMU participants and managed collaborations.
 }
 \cventry{2011 -- 2016}{Ph.D.\ research}{Carnegie Mellon University}{}{}{%
-    Research in machine learning with Jeff Schneider; frequent collaboration with Barnab\'as P\'oczos.
+    Research in machine learning with Jeff Schneider. %; frequent collaboration with Barnab\'as P\'oczos.
     Particular focus on machine learning on samples from distributions and on active learning problems.
-    In addition to work represented by the publications below,
-    I did unpublished empirical work related to learning on distributions in the analysis of financial anomalies, fusion reactor behavior, web browsing traffic, shipping behavior, terrorist activities, and Twitter language use.
+    % In addition to work represented by the publications below,
+    Additional unpublished empirical work related to learning on distributions in the analysis of financial anomalies, fusion reactor behavior, web browsing traffic, shipping behavior, terrorist activities, and Twitter language use.
 }
-\cventry{Spring 2011}{Linguistics senior honors study}{Swarthmore College}{}{}{%
-    Analyzed the phonotactics of Chaha, including computational approaches, for Colleen Fitzgerald.
+\cventry{2011}{Linguistics senior honors study}{Swarthmore College}{}{}{%
+    Studied the phonotactics of Chaha, including computational approaches, for Colleen Fitzgerald.
 }
-\cventry{Summer 2010}{REU in machine learning}{University of Oklahoma}{}{}{%
-    Worked on a relational concept learning system with Andrew Fagg.
+\cventry{2010}{REU in machine learning}{University of Oklahoma}{}{}{%
+    Improved and added human interaction to a relational concept learning system with Andrew Fagg.
 }
-\cventry{Summer 2009}{Howard Hughes Medical Institute fellowship}{Swarthmore College}{}{}{%
+\cventry{2009}{Howard Hughes Medical Institute fellowship}{Swarthmore College}{}{}{%
     Worked on natural language processing and medical information extraction with Rich Wicentowski.
 }
-\cventry{Spring 2009}{Directed independent study project}{Pitzer in Nepal}{}{}{%
+\cventry{2009}{Directed independent study project}{Pitzer in Nepal}{}{}{%
     Examined the interaction of language use and pedagogical techniques in rural Nepali schools.
 }
 
@@ -210,18 +223,18 @@ Below, \bibeqcon{} denotes equal contribution.
 \cventry{2018 --}{Core member}{}{\httpsurl{conda-forge.org}}{scientific software packaging ecosystem}{}
 
 
-\section{Graduate Coursework}
-\begin{tabular}{l@{\hskip .1in}l@{\hskip .1in}l@{\hskip .2in}l@{\hskip .2in}l}
-  CMU & F2013 \hfill & Deep Learning  \hfill & B Raj \hfill     & A   \\
-  CMU & S2013 & Optimizing Compilers for Modern Architectures & T Mowry & A \\
-  CMU & F2012 & Optimization            & G Gordon, R Tibshirani & A+  \\
-  CMU & F2012 & Intermediate Statistics & L Wasserman            & A+  \\
-  CMU & S2012 & Graduate Algorithms     & M Blum                 & A--  \\
-  CMU & S2012 & Semantics of Programming Languages & S Brookes   & A   \\
-  CMU & F2011 & Machine Learning        & E Xing                 & A+  \\
-  CMU & F2011 & Computational Models of Neural Systems & D Touretzky & A \\
-  UPenn & S2010 & Software Foundations  & B Pierce               & A+
-\end{tabular}
+% \section{Graduate Coursework}
+% \begin{tabular}{l@{\hskip .1in}l@{\hskip .1in}l@{\hskip .2in}l@{\hskip .2in}l}
+%   CMU & F2013 \hfill & Deep Learning  \hfill & B Raj \hfill     & A   \\
+%   CMU & S2013 & Optimizing Compilers for Modern Architectures & T Mowry & A \\
+%   CMU & F2012 & Optimization            & G Gordon, R Tibshirani & A+  \\
+%   CMU & F2012 & Intermediate Statistics & L Wasserman            & A+  \\
+%   CMU & S2012 & Graduate Algorithms     & M Blum                 & A--  \\
+%   CMU & S2012 & Semantics of Programming Languages & S Brookes   & A   \\
+%   CMU & F2011 & Machine Learning        & E Xing                 & A+  \\
+%   CMU & F2011 & Computational Models of Neural Systems & D Touretzky & A \\
+%   UPenn & S2010 & Software Foundations  & B Pierce               & A+
+% \end{tabular}
 
 \section{Other}
 \cvline{Programming}{Thorough knowledge of standard Python scientific and deep learning libraries. Experienced with C/C++, Matlab, and web languages.}% Have extended scikit-learn, Caffe, Django, LLVM, Postgres, and others.}

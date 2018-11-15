@@ -336,6 +336,21 @@ venues:
     web: http://gpss.cc/gpss18/workshop.html
 
 papers:
+  - key: dkef
+    title: Learning deep kernels for exponential family densities
+    authors:
+      - kevin
+      - me
+      - heiko
+      - arthur
+    venue: preprint
+    year: 2018
+    topics:
+      ? kernels
+      ? deep kernels
+      ? density estimation
+      ? kernel exponential families
+
   - key: smmd
     title: On gradient regularizers for MMD GANs
     bibtex_title: On gradient regularizers for {MMD} {GAN}s
