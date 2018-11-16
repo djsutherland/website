@@ -220,7 +220,8 @@
     {% endfor %}
 
     <div style="clear: both;"></div>
-    <h3 id="talks">Selected talks</h3>
+    <h3 id="talks">Invited talks</h3>
+    <p>Slides for conference and workshop talks directly for a paper are linked next to the paper above.</p>
     {% for talk in talks %}
       <div class="talk" id="talk-{{ talk.key }}">
         {{ talk.title | maybe_wrap("<span class='title'>", ".</span>") }}

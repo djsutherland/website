@@ -363,7 +363,12 @@ papers:
     year: 2018
     arXiv: '1805.11565'
     related: !!omap
+      - code: https://github.com/MichaelArbel/Scaled-MMD-GAN
       - Sheffield talk: "#talk-mmd-gans-sheffield"
+      - Columbia talk: "#talk-mmd-gans-columbia"
+      - Google talk: "#talk-mmd-gans-google"
+      - FAIR talk: "#talk-mmd-gans-fair"
+      - GPSS talk: "#talk-mmd-gans-gpss"
     topics:
       ? generative models
       ? GANs
@@ -385,7 +390,12 @@ papers:
     arXiv: '1801.01401'
     related: !!omap
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/iclr-mmd-gans.pdf
+      - code: https://github.com/mbinkowski/MMD-GAN
       - Sheffield talk: "#talk-mmd-gans-sheffield"
+      - Columbia talk: "#talk-mmd-gans-columbia"
+      - Google talk: "#talk-mmd-gans-google"
+      - FAIR talk: "#talk-mmd-gans-fair"
+      - GPSS talk: "#talk-mmd-gans-gpss"
     topics:
       ? generative models
       ? GANs
@@ -430,8 +440,10 @@ papers:
     related: !!omap
       - slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/aistats18/
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/kexpfam-aistats18.pdf
+      - code: https://github.com/karlnapf/shogun/tree/feature/kernel_exp_family
       - Turing talk: "#talk-kexpfam-ati"
       - UCL talk: "#talk-kexpfam-csml"
+      - 'Gatsby Tri-Center talk': '#talk-kexpfam-tricenter'
     topics: &kexpfam-nys-topics
       ? density estimation
       ? kernels
@@ -452,6 +464,7 @@ papers:
     year: 2018
     related: !!omap
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/bdr-aistats18.pdf
+      - code: https://github.com/hcllaw/bdr
       - "NIPS workshop version": "#bdr-workshop"
     topics:
       ? distribution regression
@@ -849,6 +862,7 @@ talks:
       - mmd-gans
       - smmd
     date: 2018-06-21
+    slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/mmd-gans-fair/
 
   - key: kexpfam-tricenter
     title: Efficiently Estimating Densities and Scores with Kernel Exponential Families
