@@ -217,34 +217,35 @@ venues:
     type: conference
     web_by_year:
       2012: https://www.usenix.org/conference/lisa12
-  nips-dfgg:
+  neurips-dfgg:
     name: Learning on Distributions, Functions, Graphs and Groups
     web: https://sites.google.com/site/nips2017learningon/
     type: workshop
-    conference: nips
+    conference: neurips
     year: 2017
   feature-extraction:
     name: "Feature Extraction: Modern Questions and Challenges"
     web: http://www.feature-extraction.org/
     type: workshop
-    conference: nips
+    conference: neurips
     year: 2015
   bayesopt-14:
     name: Bayesian Optimization
     short: BayesOpt
     web: https://bayesopt.github.io/past/2014.html
     type: workshop
-    conference: nips
+    conference: neurips
     year: 2014
-  nips:
+  neurips:
     name: Neural Information Processing Systems
-    short: NIPS
+    short: NeurIPS
     type: conference
     web_by_year:
-      2014: https://nips.cc/Conferences/2014
-      2015: https://nips.cc/Conferences/2015
-      2017: https://nips.cc/Conferences/2017
-      2018: https://nips.cc/Conferences/2018
+      2014: https://neurips.cc/Conferences/2014
+      2015: https://neurips.cc/Conferences/2015
+      2016: https://neurips.cc/Conferences/2016
+      2017: https://neurips.cc/Conferences/2017
+      2018: https://neurips.cc/Conferences/2018
   icml:
     name: International Conference on Machine Learning
     short: ICML
@@ -359,7 +360,7 @@ papers:
       - me
       - mikolaj
       - arthur
-    venue: nips
+    venue: neurips
     year: 2018
     arXiv: '1805.11565'
     related: !!omap
@@ -410,7 +411,7 @@ papers:
       - me*
       - dino
       - seth
-    venue: nips-dfgg
+    venue: neurips-dfgg
     year: 2017
     official: https://sites.google.com/site/nips2017learningon/11_paper.pdf
     related: !!omap
@@ -465,7 +466,7 @@ papers:
     related: !!omap
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/bdr-aistats18.pdf
       - code: https://github.com/hcllaw/bdr
-      - "NIPS workshop version": "#bdr-workshop"
+      - "NeurIPS workshop version": "#bdr-workshop"
     topics:
       ? distribution regression
       ? MMD
@@ -633,7 +634,7 @@ papers:
     arXiv: '1509.07553'
     related: !!omap
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/hdd_aaai.pdf
-      - "NIPS workshop version": "#hdd-workshop"
+      - "NeurIPS workshop version": "#hdd-workshop"
     topics: &hdd-topics
       ? distribution regression
       ? kernels
@@ -689,7 +690,7 @@ papers:
       - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/apps_aistats15.pdf
       - appendix: http://www.gatsby.ucl.ac.uk/~dougals/papers/apps_aistats15_appendix.pdf
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/apps_aistats15.pdf
-      - "NIPS workshop version": "#apps-workshop"
+      - "NeurIPS workshop version": "#apps-workshop"
     topics: &apps-topics
       ? active learning
       ? Gaussian processes
