@@ -340,12 +340,13 @@ papers:
   - key: dkef
     title: Learning deep kernels for exponential family densities
     authors:
-      - kevin
-      - me
+      - kevin*
+      - me*
       - heiko
       - arthur
     venue: preprint
     year: 2018
+    arXiv: '1811.08357'
     topics:
       ? kernels
       ? deep kernels
@@ -356,8 +357,8 @@ papers:
     title: On gradient regularizers for MMD GANs
     bibtex_title: On gradient regularizers for {MMD} {GAN}s
     authors:
-      - michael
-      - me
+      - michael*
+      - me*
       - mikolaj
       - arthur
     venue: neurips
