@@ -4,11 +4,14 @@
 /slides
 
 /.cv-build
+/.publist-build
 /index.html
 /biblio.bib
 /biblio-cv.bib
 /cv.tex
 /cv.pdf
+/pub-list.tex
+/pub-list.pdf
 
 
 __pycache__/
