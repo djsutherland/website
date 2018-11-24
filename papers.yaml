@@ -365,6 +365,7 @@ papers:
     year: 2018
     arXiv: '1805.11565'
     related: !!omap
+      - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/smmd-neurips18.pdf
       - code: https://github.com/MichaelArbel/Scaled-MMD-GAN
       - Sheffield talk: "#talk-mmd-gans-sheffield"
       - Columbia talk: "#talk-mmd-gans-columbia"
