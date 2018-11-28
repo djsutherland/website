@@ -21,13 +21,13 @@ cv.pdf: cv.tex biblio-cv.bib
 	ln -f .cv-build/cv.pdf .
 
 pub-list.pdf: pub-list.tex biblio-cv.bib
-	mkdir -p .publist-build
-	ln -f pub-list.tex .publist-build/
-	cd .publist-build && $(LATEXMK) -pdf pub-list
-	ln -f .publist-build/pub-list.pdf .
+	mkdir -p .pub-list-build
+	ln -f pub-list.tex .pub-list-build/
+	cd .pub-list-build && $(LATEXMK) -pdf pub-list
+	ln -f .pub-list-build/pub-list.pdf .
 
 clean:
-	rm -rf .cv-build .publist-build
+	rm -rf .cv-build .pub-list-build
 
 clean-all: clean
 	rm -f index.html biblio.bib biblio-cv.bib cv.pdf pub-list.pdf
