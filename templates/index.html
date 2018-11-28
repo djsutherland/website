@@ -3,6 +3,7 @@
 <head>
   <title>Dougal J. Sutherland</title>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css?cache_bust={{ (['style.css'] | last_edit_dt).timetuple() | map('string') | join('-') }}" />
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script type="text/javascript">
@@ -70,10 +71,20 @@
   <div id="content">
     <h1>Dougal J. Sutherland</h1>
 
-    <img src="photo.jpg" id="me" />
+    <!-- <img src="photo.jpg" id="me" /> -->
+    <section id="intro" style="width: 75%; margin: 0 auto;">
 
     <p>
       I'm a postdoc at the <a href="http://www.gatsby.ucl.ac.uk/">Gatsby Computational Neuroscience Unit</a>, University College London, working with <a href="http://www.gatsby.ucl.ac.uk/~gretton/">Arthur Gretton</a>.
+    </p>
+
+    <p style="border: 2px dashed #a33; padding: 3px;">
+      <span style="color: #a33; font-weight: bold;">I'm on the job market!</span>
+      Here are my
+      <a href="tmp/research-statement.pdf" rel="nofollow">research</a> and
+      <a href="tmp/teaching-statement.pdf" rel="nofollow">teaching</a> statements,
+      and my <a href="cv.pdf">CV</a>.
+      I'll be at NeurIPS in Montreal if you want to chat.
     </p>
 
     <p>
@@ -87,9 +98,10 @@
     <p>
       My research interests include:
       <ul>
-        <li>Learning and testing on sets and distributions: two-sample tests, evaluating and training generative models, density estimation, distribution regression/classification/outlier detection.</li>
-        <li>Implicit generative models, particularly GANs.</li>
+        <li>Learning and testing on sets and distributions: two-sample tests, evaluating and training generative models, density estimation, distribution regression.</li>
+        <li>Evaluating and training implicit generative models, particularly GANs.</li>
         <li>Approximate kernel embeddings, e.g. random Fourier features and the Nyström approximation.</li>
+        <li>Kernels defined by deep networks.</li>
         <li>Active learning, especially in nonstandard settings like searching for large-scale patterns.</li>
       </ul>
     </p>
@@ -100,14 +112,15 @@
       working with <a href="https://cs.cmu.edu/~schneide/">Jeff Schneider</a>
       on machine learning.
 
-      See also:
+      See also
       various code <a href="https://github.com/dougalsutherland">on github</a>,
-      my <a href="https://stats.stackexchange.com/users/9964/dougal">crossvalidated</a>/<a href="http://stackoverflow.com/users/344821/dougal">stackoverflow</a> profiles,
-      and <a href="https://www.sccs.swarthmore.edu/users/11/dougal/">my Swarthmore page</a> for older stuff from undergrad.
+      or my <a href="https://stats.stackexchange.com/users/9964/dougal">crossvalidated</a>/<a href="http://stackoverflow.com/users/344821/dougal">stackoverflow</a> profiles.
     </p>
 
     <p><a href="#pubs">Publications</a> and selected <a href="#talks">talks</a> are listed below.</p>
+    </section>
 
+    <section id="pubs-sec">
     <h3 id="pubs">Publications</h3>
     <p>
       Below, <span class="equal">**</span> denotes equal contribution.
@@ -218,8 +231,10 @@
         </section>
       {% endif %}
     {% endfor %}
+    </section>
 
     <div style="clear: both;"></div>
+    <section id="talks-sec">
     <h3 id="talks">Invited talks</h3>
     <p>Slides for conference and workshop talks directly for a paper are linked next to the paper above.</p>
     {% for talk in talks %}
@@ -273,6 +288,7 @@
         </div>
       </div>
     {% endfor %}
+    </section>
 
   </div>
 </body>
