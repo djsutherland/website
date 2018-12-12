@@ -299,7 +299,7 @@ venues:
     type: conference
     web: http://dalimeeting.org
   dali-gan-17:
-    name: The Theory of Generative Adversarial Networks
+    name: Theory of Generative Adversarial Networks
     conference: dali
     year: 2017
     web: http://dalimeeting.org/dali2017/generative-adversarial-networks.html
