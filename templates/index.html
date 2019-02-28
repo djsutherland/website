@@ -134,7 +134,7 @@
       <a href="#" id="coauthors-show">(show)</a>
       <a href="#" id="coauthors-hide">(hide)</a>
       <ul>
-      {% for key, coauthor, count in coauthor_count_sorted if key != "me" %}
+      {% for key, coauthor, count in coauthor_count_sorted if key != "me" and count > 1 %}
         <li id="coauthor-{{ key }}" data-key="{{ key }}">
           {{ coauthor | full_name }} (<span class="count">{{ count }}</span>)
         </li>

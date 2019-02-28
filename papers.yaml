@@ -160,6 +160,86 @@ coauthors:
     first: Andrew H.
     last: Fagg
     web: http://www.cs.ou.edu/~fagg/
+  avestruz:
+    first: Camille
+    last: Avestruz
+  boada:
+    first: Steven
+    last: Boada
+  caldeira:
+    first: João
+    last: Caldeira
+  cisewski:
+    first: Jessi
+    last: Cisewski-Kehe
+  distefano:
+    first: Rosanne
+    last: Di Stefano
+  dvorkin:
+    first: Cora
+    last: Dvorkin
+  evrard:
+    first: August E.
+    last: Evrard
+  farahi:
+    first: Arya
+    last: Farahi
+  finkbeiner:
+    first: Doug
+    last: Finkbeiner
+  genel:
+    first: Shy
+    last: Genel
+  goodman:
+    first: Alyssa
+    last: Goodman
+  goulding:
+    first: Andy
+    last: Goulding
+  shirley:
+    first: Shirley
+    last: Ho
+  kosowsky:
+    first: Arthur
+    last: Kosowsky
+  laplante:
+    first: Paul
+    last: La Plante
+  lanusse:
+    first: François
+    last: Lanusse
+  lochner:
+    first: Michelle
+    last: Lochner
+  rachel:
+    first: Rachel
+    last: Mandelbaum
+    web: 
+  nagai:
+    first: Daisuke
+    last: Nagai
+  newman:
+    first: Jeffrey A.
+    last: Newman
+  nord:
+    first: Brian
+    last: Nord
+  peek:
+    first: J. E. G.
+    last: Peek
+  peel:
+    first: Austin
+    last: Peel
+  rau:
+    first: Markus Michael
+    last: Rau
+  siemiginowska:
+    first: Aneta
+    last: Siemiginowska
+  wandelt:
+    first: Benjamin
+    last: Wandelt
+
 
 venues:
   preprint:
@@ -167,6 +247,9 @@ venues:
     type: preprint
   tech-report:
     name: Technical report
+    type: tech-report
+  white-paper:
+    name: White paper
     type: tech-report
   iclr:
     name: International Conference on Learning Representations
@@ -337,6 +420,46 @@ venues:
     web: http://gpss.cc/gpss18/workshop.html
 
 papers:
+  - key: cosmo-ml
+    title: The Role of Machine Learning in the Next Decade of Cosmology
+    authors:
+      - michelle
+      - avestruz
+      - boada
+      - caldeira
+      - cisewski
+      - distefano
+      - dvorkin
+      - evrard
+      - farahi
+      - finkbeiner
+      - genel
+      - goodman
+      - goulding
+      - shirley
+      - kosowsky
+      - laplante
+      - lanusse
+      - lochner
+      - rachel
+      - nagai
+      - newman
+      - nord
+      - peek
+      - peel
+      - barnabas
+      - rau
+      - siemiginowska
+      - me
+      - hy
+      - wandelt
+    venue: white-paper
+    arXiv: 1902.10159
+    year: 2019
+    topics:
+      ? applications
+      ? cosmology
+
   - key: dkef
     title: Learning deep kernels for exponential family densities
     authors:
