@@ -467,8 +467,8 @@ papers:
       - me*
       - heiko
       - arthur
-    venue: preprint
-    year: 2018
+    venue: icml
+    year: 2019
     arXiv: '1811.08357'
     topics:
       ? kernels
