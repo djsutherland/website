@@ -205,7 +205,7 @@ def last_edit_dt(filenames):
 
 
 def make_site():
-    site = staticjinja.make_site(
+    site = staticjinja.Site.make_site(
         contexts=[('.*', paper_data)],
         filters=filters,
     )
