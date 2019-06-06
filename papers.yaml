@@ -420,6 +420,15 @@ venues:
     web: http://gpss.cc/gpss18/workshop.html
 
 papers:
+  - key: unbiased-mmd-variance
+    title: Unbiased estimators for the variance of MMD estimators
+    bibtex_title: Unbiased estimators for the variance of {MMD} estimators
+    authors:
+      - me
+    venue: tech-report
+    arXiv: 1906.02104
+    year: 2019
+
   - key: cosmo-ml
     title: The Role of Machine Learning in the Next Decade of Cosmology
     authors:
