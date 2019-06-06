@@ -6,7 +6,7 @@ MAKEFLAGS += --no-builtin-rules
 LATEXMK ?= latexmk
 PYTHON ?= python
 
-all: index.html biblio.bib cv.pdf pub-list.pdf
+all: index.html biblio.bib cv.pdf
 
 %: papers.yaml build.py templates/%
 	$(PYTHON) build.py $@
@@ -20,14 +20,8 @@ cv.pdf: cv.tex biblio-cv.bib
 	cd .cv-build && $(LATEXMK) -pdf cv
 	ln -f .cv-build/cv.pdf .
 
-pub-list.pdf: pub-list.tex biblio-cv.bib
-	mkdir -p .pub-list-build
-	ln -f pub-list.tex .pub-list-build/
-	cd .pub-list-build && $(LATEXMK) -pdf pub-list
-	ln -f .pub-list-build/pub-list.pdf .
-
 clean:
-	rm -rf .cv-build .pub-list-build
+	rm -rf .cv-build
 
 clean-all: clean
-	rm -f index.html biblio.bib biblio-cv.bib cv.pdf pub-list.pdf
+	rm -f index.html biblio.bib biblio-cv.bib cv.pdf
