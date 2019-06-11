@@ -1046,6 +1046,7 @@ talks:
       - kexpfam-nystroem
     date: 2017-12-19
     slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/highd-functions/
+    video: https://www.youtube.com/watch?v=sbNI_k9P-Y4&list=PLuD_SqLtxSdW1ZC0mfLXiXXGRaL3jnud-&index=8
     topics: *kexpfam-nys-topics
 
   - key: kexpfam-csml
