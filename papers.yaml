@@ -479,6 +479,9 @@ papers:
     venue: icml
     year: 2019
     arXiv: '1811.08357'
+    related: !!omap
+      - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/dkef-icml19.pdf
+      - slides: https://icml.cc/media/Slides/icml/2019/101(11-14-00)-11-14-20-4709-learning_deep_k.pdf
     topics:
       ? kernels
       ? deep kernels
