@@ -74,6 +74,8 @@ def tojson(x):
 
 @filter
 def venue_url(venue, year=None):
+    if year is not None:
+        year = int(year)
     if 'web_by_year' in venue and year in venue['web_by_year']:
         return venue['web_by_year'][year]
     elif 'web' in venue:

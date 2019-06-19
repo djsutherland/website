@@ -335,7 +335,8 @@ venues:
     long_article: the
     type: conference
     web_by_year:
-      2017: https://2017.icml.cc/
+      2017: https://icml.cc/Conferences/2017
+      2019: https://icml.cc/Conferences/2019
   icml-implicit:
     name: Implicit Models
     web: https://sites.google.com/view/implicitmodels/
@@ -418,6 +419,13 @@ venues:
     conference: gpss
     year: 2018
     web: http://gpss.cc/gpss18/workshop.html
+  mlcc:
+    name: Machine Learning Crash Course
+    short: MLCC
+    long_article: the
+    type: conference
+    web_by_year:
+      2019: http://lcsl.mit.edu/courses/mlcc/mlcc2019/
 
 papers:
   - key: unbiased-mmd-variance
@@ -984,6 +992,12 @@ papers:
       ? interpretation
 
 talks:
+  - key: mlcc-gans
+    title: Introduction to Generative Adversarial Networks
+    venue: mlcc
+    slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/gans-mlcc/
+    date: 2019-06-19
+
   - key: mmd-gans-gpss
     title: Kernel Distances for Better Deep Generative Models
     venue: gpss-workshop

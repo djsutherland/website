@@ -234,7 +234,7 @@
         <span class="venue">
           {{ "{:%B %Y}".format(talk.date) }}.
           {%  set venue = venues[talk.venue] -%}
-          {%- set href = venue|venue_url("{:Y}".format(talk.date)) -%}
+          {%- set href = venue|venue_url("{:%Y}".format(talk.date)) -%}
           {%- if venue.short -%}
             {{ venue.name }}
             ({{ venue.short | maybe_link(href) }})
