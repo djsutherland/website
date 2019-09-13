@@ -2,6 +2,7 @@
 /papers
 /posters
 /slides
+/venv
 
 /.cv-build
 /.pub-list-build
