@@ -423,7 +423,7 @@ venues:
     name: Machine Learning Crash Course
     short: MLCC
     long_article: the
-    type: conference
+    type: summerschool
     web_by_year:
       2019: http://lcsl.mit.edu/courses/mlcc/mlcc2019/
 
