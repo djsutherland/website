@@ -1,6 +1,6 @@
 My homepage.
 
-The main interesting bit is how it generates a website / bib file / CV with Jinja templates from [a YAML file](papers.yaml) containing paper info. Feel free to steal ideas; this repository, _except for `photo.jpg`_,  is public domain under the Unlicense.
+The main interesting bit is how it generates a website / bib file / CV with Jinja templates from [a YAML file](papers.yaml) containing paper info. Feel free to steal ideas; this repository, _except for `photo.jpg` and `cv.tex`_,  is public domain under the Unlicense.
 
 Requirements:
 
