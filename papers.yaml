@@ -239,7 +239,21 @@ coauthors:
   wandelt:
     first: Benjamin
     last: Wandelt
-
+  feng:
+    first: Feng
+    last: Liu
+    web: https://fengliu90.github.io/
+  wenkai:
+    first: Wenkai
+    last: Xu
+  jie-lu:
+    first: Jie
+    last: Lu
+    web: https://www.uts.edu.au/staff/jie.lu
+  guangquan-zhang:
+    first: Guangquan
+    last: Zhang
+    web: https://www.uts.edu.au/staff/guangquan.zhang
 
 venues:
   preprint:
@@ -329,6 +343,7 @@ venues:
       2016: https://neurips.cc/Conferences/2016
       2017: https://neurips.cc/Conferences/2017
       2018: https://neurips.cc/Conferences/2018
+      2019: https://neurips.cc/Conferences/2019
   icml:
     name: International Conference on Machine Learning
     short: ICML
@@ -428,13 +443,26 @@ venues:
       2019: http://lcsl.mit.edu/courses/mlcc/mlcc2019/
 
 papers:
+  - key: deep-testing
+    title: Learning Deep Kernels for Non-Parametric Two-Sample Tests
+    arXiv: '2002.09116'
+    authors:
+      - feng*
+      - wenkai*
+      - jie-lu
+      - guangquan-zhang
+      - arthur
+      - me
+    venue: preprint
+    year: 2020
+
   - key: unbiased-mmd-variance
     title: Unbiased estimators for the variance of MMD estimators
     bibtex_title: Unbiased estimators for the variance of {MMD} estimators
     authors:
       - me
     venue: tech-report
-    arXiv: 1906.02104
+    arXiv: '1906.02104'
     year: 2019
 
   - key: cosmo-ml
@@ -471,7 +499,7 @@ papers:
       - hy
       - wandelt
     venue: white-paper
-    arXiv: 1902.10159
+    arXiv: '1902.10159'
     year: 2019
     topics:
       ? applications
@@ -992,6 +1020,21 @@ papers:
       ? interpretation
 
 talks:
+  - key: neurips-tutorial
+    title: "Tutorial: Interpretable Comparison of Distributions and Models"
+    date: 2019-12-09
+    venue: neurips
+    video: https://slideslive.com/38923184/interpretable-comparison-of-distributions-and-models
+    note: With Arthur Gretton and Wittawat Jitkrittum.
+    papers:
+      - deep-testing
+      - opt-mmd
+    related: !!omap
+      - "slides 1": http://www.gatsby.ucl.ac.uk/~gretton/papers/neurips19_1.pdf
+      - "slides 2": http://www.gatsby.ucl.ac.uk/~gretton/papers/neurips19_2.pdf
+      - "slides 3": http://www.gatsby.ucl.ac.uk/~gretton/papers/neurips19_3.pdf
+
+
   - key: mlcc-gans
     title: Introduction to Generative Adversarial Networks
     venue: mlcc

@@ -186,6 +186,7 @@ Below, \bibeqcon{} denotes equal contribution.
           {{- "" }} (workshop at {{ conf.long_article | maybe_wrap("", " ") -}} {{- conf.name -}} {{- conf.short | maybe_wrap(", ", "") }})
         {%- endif -%}
         .
+        {{- talk.note | maybe_wrap(" ", "") -}}
      }
 {% endfor %}
 
