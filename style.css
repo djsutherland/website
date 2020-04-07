@@ -21,7 +21,7 @@ h1 {
 li {
     margin-bottom: 5px;
 }
-a.email {
+.eml {
     font-family: Consolas, "Liberation Mono", Courier, monospace;
     color: #444;
 }
