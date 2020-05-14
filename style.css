@@ -18,6 +18,10 @@ h1 {
     text-align: center;
     border-bottom: 2px solid black;
 }
+#intro {
+    width: 85%;
+    margin: 0 auto;
+}
 li {
     margin-bottom: 5px;
 }
