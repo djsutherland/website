@@ -453,7 +453,7 @@ papers:
       - guangquan-zhang
       - arthur
       - me
-    venue: preprint
+    venue: icml
     year: 2020
 
   - key: unbiased-mmd-variance
