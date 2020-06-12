@@ -254,6 +254,13 @@ coauthors:
     first: Guangquan
     last: Zhang
     web: https://www.uts.edu.au/staff/guangquan.zhang
+  lijia:
+    first: Lijia
+    last: Zhou
+  nati:
+    first: Nathan
+    last: Srebro
+    web: https://ttic.edu/srebro
 
 venues:
   preprint:
@@ -443,6 +450,16 @@ venues:
       2019: http://lcsl.mit.edu/courses/mlcc/mlcc2019/
 
 papers:
+  - key: uniform-interpolation
+    title: On Uniform Convergence and Low-Norm Interpolation Learning
+    arXiv: '2006.05942'
+    authors:
+      - lijia
+      - me
+      - nati
+    venue: preprint
+    year: 2020
+
   - key: deep-testing
     title: Learning Deep Kernels for Non-Parametric Two-Sample Tests
     arXiv: '2002.09116'
