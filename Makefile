@@ -6,7 +6,7 @@ MAKEFLAGS += --no-builtin-rules
 LATEXMK ?= latexmk
 PYTHON ?= python
 
-all: index.html biblio.bib cv.pdf
+all: index.html biblio.bib cv.pdf ccv-info.txt
 
 %: papers.yaml build.py templates/%
 	$(PYTHON) build.py $@

@@ -1,0 +1,54 @@
+{%- set sections = [
+  ["Journal Papers", ["journal"]],
+  ["Conference Papers", ["conference", "workshop"]],
+  ["Dissertations", ["phd-thesis", "ba-thesis"]],
+  ["Working Papers", ["preprint", "tech-report"]],
+] -%}
+{%- for sec_name, sec_types in sections %}
+  {%- if venue_type_map[sec_types]|length > 0 %}
+
+{{ sec_name }}:
+{%- for paper in venue_type_map[sec_types]
+    if not venues[paper.venue].conference == "neurips" %}
+
+{{ paper.title }}
+{% for a in paper.authors -%}{%- set author = a | get_author(coauthors) -%}
+{%- set k = author.key -%}
+{{ author.last }} {{ author.first[0] }}{% if
+    (k == "me" and paper.year <= 2016 and paper.key != "trump-clinton")
+    or (k == "heiko" and paper.year <= 2018)
+    or (k == "michael" and paper.year <= 2020)
+    or (k == "mikolaj" and paper.year <= 2020)
+    or (k == "kevin" and paper.year <= 2020) 
+    or (k == "leon" and paper.year <= 2020)
+    or (k == "yu-xiang" and paper.year <= 2016)
+    or (k == "fish" and paper.year <= 2020)
+    or (k == "rahul") 
+    or (k == "michelle" and paper.year <= 2017)
+    or (k == "junier" and paper.year <= 2018)
+    or (k == "yifei" and paper.year <= 2017)
+    or (k == "liang" and paper.year <= 2015)
+    or (k == "stromme")
+    or (k == "burka")
+    or (k == "lipton")
+    or (k == "felt")
+    or (k == "becca")
+    or (k == "daniel-elia")
+    or (k == "dini")
+    or (k == "welkie")
+    or (k == "jay")
+    or (k == "bodenhamer")
+    or (k == "palmer")
+    or (k == "feng" and paper.year <= 2022)
+    or (k == "wenkai" and paper.year <= 2022)
+    or (k == "lijia" and paper.year <= 2023)
+%}*{% endif %}
+{%- if not loop.last %}, {% endif -%}
+
+{% endfor %}
+{%- set venue = venues[paper.venue] %}
+{{ venue.name }}{{ venue.short | maybe_wrap(" (", ")")}}
+{{ paper.year }}
+  {%- endfor -%}
+  {%- endif -%}
+{%- endfor -%}
