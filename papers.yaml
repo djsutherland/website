@@ -385,6 +385,9 @@ venues:
   oxford-csml:
     name: Computational Statistics and Machine Learning seminar, Oxford University
     type: seminar
+  umass:
+    name: University of Massachusetts Amherst, College of Information and Computer Sciences
+    type: seminar
   sheffield-mlnet:
     name: Machine Learning Seminar, University of Sheffield
     type: seminar
@@ -1050,6 +1053,14 @@ talks:
       - "slides 2": http://www.gatsby.ucl.ac.uk/~gretton/papers/neurips19_2.pdf
       - "slides 3": http://www.gatsby.ucl.ac.uk/~gretton/papers/neurips19_3.pdf
 
+  - key: umass-gans
+    title: Better GANs by Using Kernels
+    date: 2019-10-01
+    venue: umass
+    slides: https://djsutherland.ml/slides/smmd-umass/
+    papers:
+      - mmd-gans
+      - smmd
 
   - key: mlcc-gans
     title: Introduction to Generative Adversarial Networks
