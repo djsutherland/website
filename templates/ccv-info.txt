@@ -5,9 +5,11 @@
   ["Working Papers", ["preprint", "tech-report"]],
 ] -%}
 {%- for sec_name, sec_types in sections %}
-  {%- if venue_type_map[sec_types]|length > 0 %}
+  {%- if venue_type_map[sec_types]|length > 0 %}{% if not loop.first %}
 
-{{ sec_name }}:
+
+
+{% endif %}{{ sec_name }}:
 {%- for paper in venue_type_map[sec_types]
     if not venues[paper.venue].conference == "neurips" %}
 
