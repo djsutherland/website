@@ -388,6 +388,9 @@ venues:
   umass:
     name: University of Massachusetts Amherst, College of Information and Computer Sciences
     type: seminar
+  penn-state-stat:
+    name: Penn State, Statistics colloquium
+    type: seminar
   sheffield-mlnet:
     name: Machine Learning Seminar, University of Sheffield
     type: seminar
@@ -459,8 +462,10 @@ papers:
       - lijia
       - me
       - nati
-    venue: preprint
+    venue: neurips
     year: 2020
+    related: !!omap
+      - "Penn State talk": "#talk-pennstate-interpolation"
 
   - key: deep-testing
     title: Learning Deep Kernels for Non-Parametric Two-Sample Tests
@@ -1039,6 +1044,16 @@ papers:
       ? interpretation
 
 talks:
+  - key: pennstate-interpolation
+    title: Can Uniform Convergence Explain Interpolation Learning?
+    date: 2020-10-08
+    venue: penn-state-stat
+    slides: https://djsutherland.ml/slides/pennstate-uniform/
+    papers:
+      - uniform-interpolation
+    related: !!omap
+      - "slides (pdf)": https://djsutherland.ml/slides/pennstate-uniform.pdf
+
   - key: neurips-tutorial
     title: "Tutorial: Interpretable Comparison of Distributions and Models"
     date: 2019-12-09
