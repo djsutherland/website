@@ -478,6 +478,7 @@ papers:
       - arthur
       - me
     venue: icml
+    official: https://proceedings.icml.cc/paper/2020/hash/0c8ce55163055c4da50a81e0a273468c
     year: 2020
 
   - key: unbiased-mmd-variance
@@ -539,6 +540,7 @@ papers:
     venue: icml
     year: 2019
     arXiv: '1811.08357'
+    official: http://proceedings.mlr.press/v97/wenliang19a.html
     related: !!omap
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/dkef-icml19.pdf
       - slides: https://icml.cc/media/Slides/icml/2019/101(11-14-00)-11-14-20-4709-learning_deep_k.pdf
@@ -559,14 +561,11 @@ papers:
     venue: neurips
     year: 2018
     arXiv: '1805.11565'
+    official: http://papers.nips.cc/paper/7904-on-gradient-regularizers-for-mmd-gans
     related: !!omap
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/smmd-neurips18.pdf
       - code: https://github.com/MichaelArbel/Scaled-MMD-GAN
-      - Sheffield talk: "#talk-mmd-gans-sheffield"
-      - Columbia talk: "#talk-mmd-gans-columbia"
-      - Google talk: "#talk-mmd-gans-google"
-      - FAIR talk: "#talk-mmd-gans-fair"
-      - GPSS talk: "#talk-mmd-gans-gpss"
+      - UMass talk: "#talk-umass-gans"
     topics:
       ? generative models
       ? GANs
@@ -589,11 +588,7 @@ papers:
     related: !!omap
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/iclr-mmd-gans.pdf
       - code: https://github.com/mbinkowski/MMD-GAN
-      - Sheffield talk: "#talk-mmd-gans-sheffield"
-      - Columbia talk: "#talk-mmd-gans-columbia"
-      - Google talk: "#talk-mmd-gans-google"
-      - FAIR talk: "#talk-mmd-gans-fair"
-      - GPSS talk: "#talk-mmd-gans-gpss"
+      - UMass talk: "#talk-umass-gans"
     topics:
       ? generative models
       ? GANs
