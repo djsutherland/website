@@ -17,7 +17,7 @@ biblio.bib: biblio-cv.bib
 cv.pdf: cv.tex biblio-cv.bib
 	mkdir -p .cv-build
 	ln -f cv.tex biblio-cv.bib .cv-build/
-	cd .cv-build && $(LATEXMK) -pdf cv
+	cd .cv-build && $(LATEXMK) -pdf -silent cv
 	ln -f .cv-build/cv.pdf .
 
 clean:
