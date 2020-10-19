@@ -350,6 +350,7 @@ venues:
       2017: https://neurips.cc/Conferences/2017
       2018: https://neurips.cc/Conferences/2018
       2019: https://neurips.cc/Conferences/2019
+      2020: https://neurips.cc/Conferences/2020
   icml:
     name: International Conference on Machine Learning
     short: ICML
@@ -358,6 +359,7 @@ venues:
     web_by_year:
       2017: https://icml.cc/Conferences/2017
       2019: https://icml.cc/Conferences/2019
+      2020: https://icml.cc/Conferences/2020
   icml-implicit:
     name: Implicit Models
     web: https://sites.google.com/view/implicitmodels/
