@@ -295,7 +295,7 @@ venues:
     type: conference
     web_by_year:
       2015: http://www.aistats.org/aistats2015/
-      2018: http://www.aistats.org/  # /aistats2018/ doesn't work yet...
+      2018: http://aistats.org/aistats2018/
   uai:
     name: Uncertainty in Artificial Intelligence
     short: UAI
