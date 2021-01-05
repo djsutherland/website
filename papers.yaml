@@ -260,6 +260,13 @@ coauthors:
     first: Nathan
     last: Srebro
     web: https://ttic.edu/srebro
+  akilesh:
+    first: Akilesh
+    last: Tangella
+  pritish:
+    first: Pritish
+    last: Kamath
+    web: https://pritishkamath.github.io/
 
 venues:
   preprint:
@@ -457,6 +464,18 @@ venues:
       2019: http://lcsl.mit.edu/courses/mlcc/mlcc2019/
 
 papers:
+  - key: irm
+    title: Does Invariant Risk Minimization Capture Invariance?
+    bibtex_title: Does {I}nvariant {R}isk {M}inimization Capture Invariance?
+    authors:
+      - pritish
+      - akilesh
+      - me
+      - nati
+    arXiv: '2101.01134'
+    year: 2021
+    venue: preprint
+
   - key: uniform-interpolation
     title: On Uniform Convergence and Low-Norm Interpolation Learning
     arXiv: '2006.05942'
