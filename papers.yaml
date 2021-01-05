@@ -501,8 +501,10 @@ papers:
       - arthur
       - me
     venue: icml
-    official: https://proceedings.icml.cc/paper/2020/hash/0c8ce55163055c4da50a81e0a273468c
+    official: http://proceedings.mlr.press/v119/liu20m.html
     year: 2020
+    related: !!omap
+      - "video and slides": "https://icml.cc/virtual/2020/poster/5999"
 
   - key: unbiased-mmd-variance
     title: Unbiased estimators for the variance of MMD estimators
