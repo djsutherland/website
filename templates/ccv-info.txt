@@ -17,33 +17,8 @@
 {% for a in paper.authors -%}{%- set author = a | get_author(coauthors) -%}
 {%- set k = author.key -%}
 {{ author.last }} {{ author.first[0] }}{% if
-    (k == "me" and paper.year <= 2016 and paper.key != "trump-clinton")
-    or (k == "heiko" and paper.year <= 2018)
-    or (k == "michael" and paper.year <= 2020)
-    or (k == "mikolaj" and paper.year <= 2020)
-    or (k == "kevin" and paper.year <= 2020) 
-    or (k == "leon" and paper.year <= 2020)
-    or (k == "yu-xiang" and paper.year <= 2016)
-    or (k == "fish" and paper.year <= 2020)
-    or (k == "rahul") 
-    or (k == "michelle" and paper.year <= 2017)
-    or (k == "junier" and paper.year <= 2018)
-    or (k == "yifei" and paper.year <= 2017)
-    or (k == "liang" and paper.year <= 2015)
-    or (k == "stromme")
-    or (k == "burka")
-    or (k == "lipton")
-    or (k == "felt")
-    or (k == "becca")
-    or (k == "daniel-elia")
-    or (k == "dini")
-    or (k == "welkie")
-    or (k == "jay")
-    or (k == "bodenhamer")
-    or (k == "palmer")
-    or (k == "feng" and paper.year <= 2022)
-    or (k == "wenkai" and paper.year <= 2022)
-    or (k == "lijia" and paper.year <= 2023)
+    (k == "lijia" and paper.year <= 2023)
+    or (k == "akilesh" and paper.year <= 2023)
 %}*{% endif %}
 {%- if not loop.last %}, {% endif -%}
 

@@ -1,7 +1,7 @@
 ---
 coauthors:
   me:
-    first: D. J.
+    first: Danica J.
     last: Sutherland
     is_me: true
   arthur:
@@ -478,12 +478,14 @@ papers:
 
   - key: uniform-interpolation
     title: On Uniform Convergence and Low-Norm Interpolation Learning
+    official: https://proceedings.neurips.cc/paper/2020/hash/4cc5400e63624c44fadeda99f57588a6-Abstract.html
     arXiv: '2006.05942'
     authors:
       - lijia
       - me
       - nati
     venue: neurips
+    note: Selected for spotlight presentation.
     year: 2020
     related: !!omap
       - "Penn State talk": "#talk-pennstate-interpolation"

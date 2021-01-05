@@ -18,6 +18,18 @@ h1 {
     text-align: center;
     border-bottom: 2px solid black;
 }
+#pronouns {
+    font-weight: normal;
+    font-size: medium;
+}
+#pronouns::before { content: "("; }
+#pronouns::after { content: ")"; }
+
+#info {
+    text-align: center;
+    margin-top: -10px;
+}
+
 #intro {
     width: 85%;
     margin: 0 auto;
@@ -42,7 +54,7 @@ li {
     text-align: center;
 }
 
-.paper:target, .talk:target {
+.paper:target, .talk:target, #name-note:target {
     background-color: #ffd;
 }
 
