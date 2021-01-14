@@ -904,8 +904,8 @@ papers:
     year: 2015
     official: http://jmlr.org/proceedings/papers/v38/ma15.html
     related: !!omap
-      - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/apps_aistats15.pdf
-      - appendix: http://www.gatsby.ucl.ac.uk/~dougals/papers/apps_aistats15_appendix.pdf
+      - pdf: http://proceedings.mlr.press/v38/ma15.pdf
+      - appendix: http://proceedings.mlr.press/v38/ma15-supp.pdf
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/apps_aistats15.pdf
       - "NeurIPS workshop version": "#apps-workshop"
     topics: &apps-topics
