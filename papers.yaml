@@ -847,7 +847,7 @@ papers:
       - jeff
     venue: aaai
     year: 2016
-    official: http://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/download/12460/11844
+    official: https://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/view/12460
     arXiv: '1509.07553'
     related: !!omap
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/hdd_aaai.pdf
@@ -884,7 +884,7 @@ papers:
     web_note: >
       Chapter 3 / Section 4.1 of <a href='#thesis'>my thesis</a> supersedes
       this paper, fixing a few errors in constants and providing more results.
-    official: http://auai.org/uai2015/proceedings/papers/168.pdf
+    official: http://auai.org/uai2015/proceedings/supp/168_supp.pdf
     arXiv: '1506.02785'
     related: !!omap
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/rff_uai15.pdf
