@@ -462,6 +462,19 @@ venues:
     type: summerschool
     web_by_year:
       2019: http://lcsl.mit.edu/courses/mlcc/mlcc2019/
+  iciam:
+    name: International Congress on Industrial and Applied Mathematics
+    short: ICIAM
+    long_article: the
+    type: conference
+    web_by_year:
+      2019: https://iciam.org/event/iciam-2019-%E2%80%93-valencia
+  iciam-distances:
+    name: Distance Metrics and Mass Transfer Between High Dimensional Point Clouds
+    type: workshop
+    conference: iciam
+    year: 2019
+    web: https://www.math.ucdavis.edu/~saito/confs/ICIAM19/
 
 papers:
   - key: irm
@@ -1093,6 +1106,15 @@ talks:
     date: 2019-10-01
     venue: umass
     slides: https://djsutherland.ml/slides/smmd-umass/
+    papers:
+      - mmd-gans
+      - smmd
+
+  - key: iciam-kerndists
+    title: Kernel distances between distributions for generative models
+    date: 2019-07-17
+    venue: iciam-distances
+    slides: https://www.math.ucdavis.edu/~saito/confs/ICIAM19/sutherland.pdf
     papers:
       - mmd-gans
       - smmd
