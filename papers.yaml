@@ -475,6 +475,18 @@ venues:
     conference: iciam
     year: 2019
     web: https://www.math.ucdavis.edu/~saito/confs/ICIAM19/
+  pihot:
+    name: Pacific Interdisciplinary Hub on Optimal Transport
+    long_article: the
+    type: conference
+    web: https://www.pims.math.ca/collaborative-research-groups/pihot
+  pihot-kickoff:
+    name: Kickoff Workshop
+    type: workshop
+    conference: pihot
+    web: https://kantorovich.org/post/kickoff/
+    year: 2021
+
 
 papers:
   - key: irm
@@ -1077,6 +1089,14 @@ papers:
       ? interpretation
 
 talks:
+  - key: pihot-kickoff
+    title: Deep kernel-based distances between distributions
+    date: 2021-01-30
+    venue: pihot-kickoff
+    slides: https://djsutherland.ml/slides/pihot/
+    related: !!omap
+      - "slides (pdf)": https://djsutherland.ml/slides/pihot.pdf
+
   - key: pennstate-interpolation
     title: Can Uniform Convergence Explain Interpolation Learning?
     date: 2020-10-08
