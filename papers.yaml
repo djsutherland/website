@@ -303,6 +303,7 @@ venues:
     web_by_year:
       2015: http://www.aistats.org/aistats2015/
       2018: http://aistats.org/aistats2018/
+      2019: http://aistats.org/aistats2019/
   uai:
     name: Uncertainty in Artificial Intelligence
     short: UAI
@@ -499,7 +500,8 @@ papers:
       - nati
     arXiv: '2101.01134'
     year: 2021
-    venue: preprint
+    venue: aistats
+    note: Selected for oral presentation.
 
   - key: uniform-interpolation
     title: On Uniform Convergence and Low-Norm Interpolation Learning
