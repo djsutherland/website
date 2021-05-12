@@ -267,6 +267,71 @@ coauthors:
     first: Pritish
     last: Kamath
     web: https://pritishkamath.github.io/
+  flamary:
+    first: Rémi
+    last: Flamary
+  courty:
+    first: Nicolas
+    last: Courty
+  gramfort:
+    first: Alexandre
+    last: Gramfort
+  alaya:
+    first: Mokhtar Z.
+    last: Alaya
+  boisbunon:
+    first: Aurélie
+    last: Boisbunon
+  chambon:
+    first: Stanislas
+    last: Chambon
+  chapel:
+    first: Laetitia
+    last: Chapel
+  corenflos:
+    first: Adrien
+    last: Corenflos
+  fatras:
+    first: Kilian
+    last: Fatras
+  fournier:
+    first: Nemo
+    last: Fournier
+  gautheron:
+    first: Léo
+    last: Gautheron
+  gayraud:
+    first: Nathalie T.H.
+    last: Gayraud
+  janati:
+    first: Hicham
+    last: Janati
+  rakotomamonjy:
+    first: Alain
+    last: Rakotomamonjy
+  redko:
+    first: Ievgen
+    last: Redko
+  rolet:
+    first: Antoine
+    last: Rolet
+  schutz:
+    first: Antony
+    last: Schutz
+  seguy:
+    first: Vivien
+    last: Seguy
+  tavenard:
+    first: Romain
+    last: Tavenard
+  tong:
+    first: Alexander
+    last: Tong
+  vayer:
+    first: Titouan
+    last: Vayer
+
+
 
 venues:
   preprint:
@@ -487,9 +552,45 @@ venues:
     conference: pihot
     web: https://kantorovich.org/post/kickoff/
     year: 2021
+  jmlr:
+    name: Journal of Machine Learning Research
+    short: JMLR
+    type: journal
+    web: https://jmlr.org
 
 
 papers:
+  - key: pot
+    title: "POT: Python Optimal Transport"
+    bibtex_title: "{POT}: {P}ython {O}ptimal {T}ransport"
+    authors:
+      - flamary
+      - courty
+      - gramfort
+      - alaya
+      - boisbunon
+      - chambon
+      - chapel
+      - corenflos
+      - fatras
+      - fournier
+      - gautheron
+      - gayraud
+      - janati
+      - rakotomamonjy
+      - redko
+      - rolet
+      - schutz
+      - seguy
+      - me
+      - tavenard
+      - tong
+      - vayer
+    year: 2021
+    venue: jmlr
+    note: Machine Learning Open Source Software Paper.
+    official: https://jmlr.org/papers/v22/20-451.html
+
   - key: irm
     title: Does Invariant Risk Minimization Capture Invariance?
     bibtex_title: Does {I}nvariant {R}isk {M}inimization Capture Invariance?
@@ -499,6 +600,7 @@ papers:
       - me
       - nati
     arXiv: '2101.01134'
+    official: http://proceedings.mlr.press/v130/kamath21a.html
     year: 2021
     venue: aistats
     note: Selected for oral presentation.
