@@ -66,6 +66,11 @@ img#me {
 }
 
 
+#group-members li {
+    display: inline-block;
+    width: 15em;
+}
+
 .paper, .talk {
     margin-top: 1em;
     display: list-item;
