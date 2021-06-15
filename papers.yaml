@@ -87,7 +87,7 @@ coauthors:
     first: Yifei
     last: Ma
     web: https://www.cs.cmu.edu/~yifeim/
-  roman:
+  roman-g:
     first: Roman
     last: Garnett
     web: http://www.cse.wutsl.edu/~garnett/
@@ -330,8 +330,28 @@ coauthors:
   vayer:
     first: Titouan
     last: Vayer
-
-
+  wonho:
+    first: Wonho
+    last: Bae
+    web: https://won-bae.github.io/
+  milad:
+    first: Milad
+    last: Jalali
+  june:
+    first: Jyunhug
+    last: Noh
+    web: https://junhyug.github.io/
+  frederic:
+    first: Frederic
+    last: Koehler
+    web: https://math.mit.edu/~fkoehler/
+  yazhe:
+    first: Yazhe
+    last: Li
+  roman-p:
+    first: Roman
+    last: Pogodin
+    web: https://roman-pogodin.com/
 
 venues:
   preprint:
@@ -561,6 +581,47 @@ venues:
 
 
 papers:
+  # - key: gaussian-interpolators
+  #   title: "Uniform Convergence of Interpolators: Gaussian Width, Norm Bounds and Benign Overfitting"
+  #   authors:
+  #     - frederic
+  #     - lijia
+  #     - me
+  #     - nati
+  #   year: 2021
+  #   venue: preprint
+
+  # - key: prediction-filtering
+  #   title: "One Weird Trick to Improve Your Semi-Weakly Supervised Semantic Segmentation Model"
+  #   authors:
+  #     - wonho
+  #     - milad
+  #     - june
+  #     - me
+  #   year: 2021
+  #   venue: preprint
+
+  # - key: ssl-hsic
+  #   title: "Self-Supervised Learning with Kernel Dependence Maximization"
+  #   authors:
+  #     - yazhe*
+  #     - roman-p*
+  #     - me
+  #     - arthur
+  #   year: 2021
+  #   venue: preprint
+
+  - key: meta-2st
+    title: "Meta Two-Sample Testing: Learning Kernels for Testing with Limited Data"
+    authors:
+      - feng*
+      - wenkai*
+      - jie-lu
+      - me
+    year: 2021
+    venue: preprint
+    arXiv: '2106.07636'
+
   - key: pot
     title: "POT: Python Optimal Transport"
     bibtex_title: "{POT}: {P}ython {O}ptimal {T}ransport"
@@ -1028,7 +1089,7 @@ papers:
     authors:
       - yifei*
       - me*
-      - roman
+      - roman-g
       - jeff
     venue: aistats
     year: 2015
@@ -1047,7 +1108,7 @@ papers:
     authors:
       - yifei*
       - me*
-      - roman
+      - roman-g
       - jeff
     venue: bayesopt-14
     year: 2014
