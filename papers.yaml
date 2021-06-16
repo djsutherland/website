@@ -601,15 +601,16 @@ papers:
   #   year: 2021
   #   venue: preprint
 
-  # - key: ssl-hsic
-  #   title: "Self-Supervised Learning with Kernel Dependence Maximization"
-  #   authors:
-  #     - yazhe*
-  #     - roman-p*
-  #     - me
-  #     - arthur
-  #   year: 2021
-  #   venue: preprint
+  - key: ssl-hsic
+    title: "Self-Supervised Learning with Kernel Dependence Maximization"
+    authors:
+      - yazhe*
+      - roman-p*
+      - me
+      - arthur
+    year: 2021
+    venue: preprint
+    arXiv: '2106.08320'
 
   - key: meta-2st
     title: "Meta Two-Sample Testing: Learning Kernels for Testing with Limited Data"
