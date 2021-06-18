@@ -581,16 +581,6 @@ venues:
 
 
 papers:
-  # - key: gaussian-interpolators
-  #   title: "Uniform Convergence of Interpolators: Gaussian Width, Norm Bounds and Benign Overfitting"
-  #   authors:
-  #     - frederic
-  #     - lijia
-  #     - me
-  #     - nati
-  #   year: 2021
-  #   venue: preprint
-
   # - key: prediction-filtering
   #   title: "One Weird Trick to Improve Your Semi-Weakly Supervised Semantic Segmentation Model"
   #   authors:
@@ -600,6 +590,17 @@ papers:
   #     - me
   #   year: 2021
   #   venue: preprint
+
+  - key: gaussian-interpolators
+    title: "Uniform Convergence of Interpolators: Gaussian Width, Norm Bounds and Benign Overfitting"
+    authors:
+      - frederic*
+      - lijia*
+      - me
+      - nati
+    year: 2021
+    venue: preprint
+    arXiv: '2106.09276'
 
   - key: ssl-hsic
     title: "Self-Supervised Learning with Kernel Dependence Maximization"
