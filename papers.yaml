@@ -352,6 +352,28 @@ coauthors:
     first: Roman
     last: Pogodin
     web: https://roman-pogodin.com/
+  queerinai:
+    first: Organizers of
+    last: QueerInAI
+    web: https://queerinai.org
+  pranav:
+    first: A
+    last: Pranav
+  marylena:
+    first: MaryLena
+    last: Bleile
+  arjun:
+    first: Arjun
+    last: Subramonian
+  luca:
+    first: Luca
+    last: Soldaini
+  sabine:
+    first: Sabine
+    last: Weber
+  pan:
+    first: Pan
+    last: Xu
 
 venues:
   preprint:
@@ -578,7 +600,19 @@ venues:
     short: JMLR
     type: journal
     web: https://jmlr.org
-
+  emnlp:
+    name: Conference on Empirical Methods in Natural Language Processing
+    short: EMNLP
+    long_article: the
+    type: conference
+    web_by_year:
+      2021: https://2021.emnlp.org
+  winlp-21:
+    name: Workshop on Widening NLP
+    type: workshop
+    conference: emnlp
+    web: http://www.winlp.org/winlp-2021-workshop/
+    year: 2021
 
 papers:
   # - key: prediction-filtering
@@ -590,6 +624,22 @@ papers:
   #     - me
   #   year: 2021
   #   venue: preprint
+
+  - key: queerinai-dni
+    title: "How to Make Virtual Conferences Queer-Friendly: A Guide"
+    authors:
+      - queerinai
+      - pranav
+      - marylena
+      - arjun
+      - luca
+      - me
+      - sabine
+      - pan
+    venue: winlp-21
+    related: !!omap
+      - web: https://queerinai.org/diversity-guide
+    year: 2021
 
   - key: gaussian-interpolators
     title: "Uniform Convergence of Interpolators: Gaussian Width, Norm Bounds and Benign Overfitting"
