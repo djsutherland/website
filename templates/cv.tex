@@ -33,13 +33,13 @@
 
 \newcommand{\bibeqcon}{\textcolor{blue}{\footnotemark[1]}}
 \renewcommand*{\mkbibnamegiven}[1]{%
-  \ifitemannotation{me}
-    {#1}%{\textbf{#1}}
-    {#1}}
+  \ifitemannotation{me}%
+    {#1}%{\textbf{#1}}%
+    {\ifitemannotation{mystudent}{#1}{#1}}}
 \renewcommand*{\mkbibnamefamily}[1]{%
-  \ifitemannotation{me}
-    {#1}%{\textbf{#1}}
-    {#1}%
+  \ifitemannotation{me}%
+    {#1}%{\textbf{#1}}%
+    {\ifitemannotation{mystudent}{#1}{#1}}%
   \ifitemannotation{equal}
     {\bibeqcon}
     {}%

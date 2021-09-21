@@ -84,13 +84,20 @@ def venue_url(venue, year=None):
 
 
 @filter
-def get_author(author, coauthors):
+def get_author(author, coauthors, year=None):
     is_equal = author.endswith('*')
     if is_equal:
         author = author[:-1]
     d = copy(coauthors[author])
     d['is_equal'] = is_equal
     d['key'] = author
+    if 'student_years' in d:
+        if not year:
+            d['my_student'] = True
+        else:
+            first, last = d['student_years']
+            if first <= year <= last:
+                d['my_student'] = True
     return d
 
 
@@ -148,29 +155,33 @@ def first_inits(author_dict):
 
 
 @filter
-def bibtex_authors(authors, coauthors):
-    return ' and '.join(latex_escape(full_name(get_author(a, coauthors)))
-                        for a in authors)
+def bibtex_authors(authors, coauthors, year=None):
+    return ' and '.join(
+        latex_escape(full_name(get_author(a, coauthors, year=year)))
+        for a in authors
+    )
 
 
 @filter
-def bibtex_author_an(authors, coauthors):
+def bibtex_author_an(authors, coauthors, year=None):
     anns = []
     for i, a in enumerate(authors, 1):
-        info = get_author(a, coauthors)
+        info = get_author(a, coauthors, year=year)
         auth_anns = []
         if info.get('is_equal'):
             auth_anns.append('equal')
         if info.get('is_me'):
             auth_anns.append('me')
+        if info.get('my_student'):
+            auth_anns.append('mystudent')
         if auth_anns:
             anns.append('{}={}'.format(i, ','.join(auth_anns)))
     return '; '.join(anns)
 
 
 @filter
-def bibtex_key(paper, coauthors):
-    auth = get_author(paper['authors'][0], coauthors)
+def bibtex_key(paper, coauthors, year=None):
+    auth = get_author(paper['authors'][0], coauthors, year=year)
     prefix = unidecode(last_name(auth)).lower()
     return '{}:{}'.format(prefix, paper['key'])
 

@@ -334,9 +334,11 @@ coauthors:
     first: Wonho
     last: Bae
     web: https://won-bae.github.io/
+    student_years: [2020, 3000]
   milad:
     first: Milad
     last: Jalali
+    student_years: [2020, 3000]
   june:
     first: Jyunhug
     last: Noh
