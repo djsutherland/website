@@ -20,6 +20,7 @@ from unidecode import unidecode
 
 
 _dir = os.path.abspath(os.path.dirname(__file__))
+this_year = datetime.date.today().year
 
 
 class MergedSequencesLookup(object):
@@ -184,6 +185,10 @@ def bibtex_key(paper, coauthors, year=None):
     auth = get_author(paper['authors'][0], coauthors, year=year)
     prefix = unidecode(last_name(auth)).lower()
     return '{}:{}'.format(prefix, paper['key'])
+
+@filter
+def in_last_years(paper, n):
+    return paper['year'] >= this_year - n
 
 
 @filter

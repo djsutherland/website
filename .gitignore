@@ -4,15 +4,11 @@
 /slides
 /venv
 
-/.cv-build
-/.pub-list-build
+/.build/
 /index.html
-/biblio.bib
-/biblio-cv.bib
-/cv.tex
-/cv.pdf
-/pub-list.tex
-/pub-list.pdf
+/*.bib
+/*.tex
+/*.pdf
 /ccv-info.txt
 
 

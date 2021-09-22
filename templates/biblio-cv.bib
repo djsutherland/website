@@ -2,7 +2,7 @@
 {%- set venue = venues[paper.venue] -%}
     {%- if venue.type == "conference" or venue.type == "workshop" -%}
         @inproceedings
-    {%- elif venue.type == "journal" -%} 
+    {%- elif venue.type == "journal" -%}
         @article
     {%- elif venue.type == "phd-thesis" -%}
         @phdthesis
