@@ -2,7 +2,7 @@
 {%- set venue = venues[paper.venue] -%}
     {%- if venue.type == "conference" or venue.type == "workshop" -%}
         @inproceedings
-    {%- elif venue.type == "journal" -%} 
+    {%- elif venue.type == "journal" -%}
         @article
     {%- elif venue.type == "phd-thesis" -%}
         @phdthesis
@@ -13,8 +13,8 @@
     {%- endif -%}
 {
     {{- paper | bibtex_key(coauthors) -}},
-    author = { {{- paper.authors | bibtex_authors(coauthors) -}} },
-    {{ paper.authors | bibtex_author_an(coauthors) | maybe_wrap("author+an = {", "},\n    ") -}}
+    author = { {{- paper.authors | bibtex_authors(coauthors, year=paper.year) -}} },
+    {{ paper.authors | bibtex_author_an(coauthors, year=paper.year) | maybe_wrap("author+an = {", "},\n    ") -}}
     title = { {{- paper.bibtex_title | default(paper.title) -}} },
     year = { {{- paper.year -}} },
     {%- if paper.arXiv %}

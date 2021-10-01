@@ -184,7 +184,7 @@
                   {%- set authors = paper.authors -%}
                 {%- endif -%}
                 {%- for author in authors -%}
-                  {%- set auth = author | get_author(coauthors) -%}
+                  {%- set auth = author | get_author(coauthors, year=paper.year) -%}
                   <span {% if not paper.committee %}data-coauthor="{{ auth.key }}"{% endif %}>
                     {{- auth | full_name | maybe_link(auth.web) -}}
                     {%- if auth.is_equal %}<span class="equal">**</span>{%- endif -%}

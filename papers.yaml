@@ -334,9 +334,11 @@ coauthors:
     first: Wonho
     last: Bae
     web: https://won-bae.github.io/
+    student_years: [2020, 3000]
   milad:
     first: Milad
     last: Jalali
+    student_years: [2020, 3000]
   june:
     first: Jyunhug
     last: Noh
@@ -879,6 +881,7 @@ papers:
       - slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/bdr-nips/
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/bdr-nips17ws.pdf
       - "AISTATS version": "#bdr"
+    full_version: bdr
     note: Selected for oral presentation.
     topics:
       ? distribution regression
@@ -1022,7 +1025,7 @@ papers:
       ? MMD
       ? deep kernels
       ? kernel choice
-      ? active learning 
+      ? active learning
 
   - key: nss
     title: List Mode Regression for Low Count Detection
@@ -1111,6 +1114,7 @@ papers:
       - jeff
     venue: feature-extraction
     year: 2015
+    full_version: hdd
     related: !!omap
       - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/hdd_nips15ws.pdf
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/hdd_nips15ws.pdf
@@ -1169,6 +1173,7 @@ papers:
       - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/apps_nips14ws.pdf
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/apps_nips14ws.pdf
       - "AISTATS version": "#apps"
+    full_version: apps
     topics: *apps-topics
 
   - key: astro
@@ -1468,4 +1473,3 @@ talks:
     date: 2017-02-03
     slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/oxford-opt-mmd.pdf
     topics: *opt-mmd-topics
-
