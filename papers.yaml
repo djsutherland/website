@@ -649,7 +649,8 @@ papers:
       - me
       - nati
     year: 2021
-    venue: preprint
+    venue: neurips
+    note: Selected for oral presentation.
     arXiv: '2106.09276'
 
   - key: ssl-hsic
@@ -660,7 +661,7 @@ papers:
       - me
       - arthur
     year: 2021
-    venue: preprint
+    venue: neurips
     arXiv: '2106.08320'
 
   - key: meta-2st
@@ -671,7 +672,7 @@ papers:
       - jie-lu
       - me
     year: 2021
-    venue: preprint
+    venue: neurips
     arXiv: '2106.07636'
 
   - key: pot
