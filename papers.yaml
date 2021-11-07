@@ -82,11 +82,11 @@ coauthors:
   junier:
     first: Junier B.
     last: Oliva
-    web: https://www.cs.cmu.edu/~joliva/
+    web: https://cs.unc.edu/person/junier-oliva/
   yifei:
     first: Yifei
     last: Ma
-    web: https://www.cs.cmu.edu/~yifeim/
+    web: http://yma.io/
   roman-g:
     first: Roman
     last: Garnett
@@ -98,7 +98,7 @@ coauthors:
   liang:
     first: Liang
     last: Xiong
-    web: https://www.cs.cmu.edu/~lxiong/
+    web: https://ai.facebook.com/people/liang-xiong/
   stromme:
     first: Andrew
     last: Stromme
@@ -257,6 +257,7 @@ coauthors:
   lijia:
     first: Lijia
     last: Zhou
+    web: https://zhoulijia.github.io/
   nati:
     first: Nathan
     last: Srebro
