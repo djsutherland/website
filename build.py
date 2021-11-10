@@ -40,29 +40,32 @@ def paper_data():
     with io.open(os.path.join(_dir, "papers.yaml")) as f:
         data = YAML().load(f)
 
-    data['topics'] = t = set()
-    for obj in itertools.chain(data['papers'], data['talks']):
-        t.update(obj.get('topics', []))
+    data["topics"] = t = set()
+    for obj in itertools.chain(data["papers"], data["talks"]):
+        t.update(obj.get("topics", []))
 
-    data['coauthor_count'] = c = collections.Counter()
-    data['venue_type_map'] = v = MergedSequencesLookup()
-    for paper in data['papers']:
-        for key in paper.get('authors', []):
-            if key.endswith('*'):
+    data["coauthor_count"] = c = collections.Counter()
+    data["venue_type_map"] = v = MergedSequencesLookup()
+    for paper in data["papers"]:
+        for key in paper.get("authors", []):
+            if key.endswith("*"):
                 key = key[:-1]
             c[key] += 1
 
-        venue_type = data['venues'].get(paper['venue'], {}).get('type', None)
+        venue_type = data["venues"].get(paper["venue"], {}).get("type", None)
         v.add(venue_type, paper)
 
-    data['coauthor_count_sorted'] = sorted(
-        ((key, data['coauthors'][key], count) for key, count in c.items()),
-        key=lambda kac: (kac[1]['last'], kac[1]['first']))
+    data["coauthor_count_sorted"] = sorted(
+        ((key, data["coauthors"][key], count) for key, count in c.items()),
+        key=lambda kac: (kac[1]["last"], kac[1]["first"]),
+    )
 
     return data
 
 
 filters = {}
+
+
 def filter(fn):
     filters[fn.__name__] = fn
     return fn
@@ -77,37 +80,39 @@ def tojson(x):
 def venue_url(venue, year=None):
     if year is not None:
         year = int(year)
-    if 'web_by_year' in venue and year in venue['web_by_year']:
-        return venue['web_by_year'][year]
-    elif 'web' in venue:
-        return venue['web']
+    if "web_by_year" in venue and year in venue["web_by_year"]:
+        return venue["web_by_year"][year]
+    elif "web" in venue:
+        return venue["web"]
     return None
 
 
 @filter
 def get_author(author, coauthors, year=None):
-    is_equal = author.endswith('*')
+    is_equal = author.endswith("*")
     if is_equal:
         author = author[:-1]
     d = copy(coauthors[author])
-    d['is_equal'] = is_equal
-    d['key'] = author
-    if 'student_years' in d:
+    d["is_equal"] = is_equal
+    d["key"] = author
+    if "student_years" in d:
         if not year:
-            d['my_student'] = True
+            d["my_student"] = True
         else:
-            first, last = d['student_years']
+            first, last = d["student_years"]
             if first <= year <= last:
-                d['my_student'] = True
+                d["my_student"] = True
     return d
 
 
 @filter
 def get_paper(key, papers):
-    return next(paper for paper in papers if paper['key'] == key)
+    return next(paper for paper in papers if paper["key"] == key)
 
 
 translation_table = {}
+
+
 @filter
 def latex_escape(string):
     "Turn unicode accented characters into LaTeX escapes."
@@ -115,51 +120,51 @@ def latex_escape(string):
     global translation_table
 
     if not translation_table:
-        p = re.compile(r'%?.*\DeclareUnicodeCharacter\{(\w+)\}\{(.*)\}')
-        fn = subprocess.check_output(['kpsewhich', 'utf8enc.dfu']).strip()
+        p = re.compile(r"%?.*\DeclareUnicodeCharacter\{(\w+)\}\{(.*)\}")
+        fn = subprocess.check_output(["kpsewhich", "utf8enc.dfu"]).strip()
         with io.open(fn) as f:
             for line in f:
                 m = p.match(line)
                 if m:
                     codepoint, latex = m.groups()
-                    latex = latex.replace('@tabacckludge', '')
-                    translation_table[int(codepoint, 16)] = '{' + latex + '}'
+                    latex = latex.replace("@tabacckludge", "")
+                    translation_table[int(codepoint, 16)] = "{" + latex + "}"
 
     return string.translate(translation_table)
 
 
-filters['unidecode'] = unidecode
+filters["unidecode"] = unidecode
 
 
 @filter
 def full_name(author_dict):
-    if 'full_name' in author_dict:
-        return author_dict['full_name']
-    return '{} {}'.format(author_dict['first'], author_dict['last'])
+    if "full_name" in author_dict:
+        return author_dict["full_name"]
+    return "{} {}".format(author_dict["first"], author_dict["last"])
 
 
 @filter
 def last_name(author_dict):
-    return author_dict['last']
+    return author_dict["last"]
 
 
 @filter
 def first_name(author_dict):
-    return author_dict['first']
+    return author_dict["first"]
 
 
 @filter
 def first_inits(author_dict):
     def init(x):
-        return '-'.join(n[0] for n in x.split('-'))
-    return ' '.join(init(n) for n in author_dict['first'].split())
+        return "-".join(n[0] for n in x.split("-"))
+
+    return " ".join(init(n) for n in author_dict["first"].split())
 
 
 @filter
 def bibtex_authors(authors, coauthors, year=None):
-    return ' and '.join(
-        latex_escape(full_name(get_author(a, coauthors, year=year)))
-        for a in authors
+    return " and ".join(
+        latex_escape(full_name(get_author(a, coauthors, year=year))) for a in authors
     )
 
 
@@ -169,26 +174,27 @@ def bibtex_author_an(authors, coauthors, year=None):
     for i, a in enumerate(authors, 1):
         info = get_author(a, coauthors, year=year)
         auth_anns = []
-        if info.get('is_equal'):
-            auth_anns.append('equal')
-        if info.get('is_me'):
-            auth_anns.append('me')
-        if info.get('my_student'):
-            auth_anns.append('mystudent')
+        if info.get("is_equal"):
+            auth_anns.append("equal")
+        if info.get("is_me"):
+            auth_anns.append("me")
+        if info.get("my_student"):
+            auth_anns.append("mystudent")
         if auth_anns:
-            anns.append('{}={}'.format(i, ','.join(auth_anns)))
-    return '; '.join(anns)
+            anns.append("{}={}".format(i, ",".join(auth_anns)))
+    return "; ".join(anns)
 
 
 @filter
 def bibtex_key(paper, coauthors, year=None):
-    auth = get_author(paper['authors'][0], coauthors, year=year)
+    auth = get_author(paper["authors"][0], coauthors, year=year)
     prefix = unidecode(last_name(auth)).lower()
-    return '{}:{}'.format(prefix, paper['key'])
+    return "{}:{}".format(prefix, paper["key"])
+
 
 @filter
 def in_last_years(paper, n):
-    return paper['year'] >= this_year - n
+    return paper["year"] >= this_year - n
 
 
 @filter
@@ -212,22 +218,22 @@ def last_edit_dt(filenames):
     # is the file currently edited in git?
     fs = list(filenames)
     try:
-        subprocess.check_output(
-            ['git', 'diff-index', '--quiet', 'HEAD'] + fs, cwd=_dir)
+        subprocess.check_output(["git", "diff-index", "--quiet", "HEAD"] + fs, cwd=_dir)
     except subprocess.CalledProcessError:
         return datetime.datetime.now()
     else:
         out = subprocess.check_output(
-            ['git', 'log', '-1', '--format=%ct'] + fs, cwd=_dir)
+            ["git", "log", "-1", "--format=%ct"] + fs, cwd=_dir
+        )
         return datetime.datetime.fromtimestamp(int(out.strip()))
 
 
 def make_site():
     site = staticjinja.Site.make_site(
-        contexts=[('.*', paper_data)],
+        contexts=[(".*", paper_data)],
         filters=filters,
     )
-    site._env.tests['falsey'] = lambda x: not x
+    site._env.tests["falsey"] = lambda x: not x
     return site
 
 
@@ -241,8 +247,8 @@ def render(site, files=None, watch=False):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--watch', action='store_true', default=False)
-    parser.add_argument('files', nargs='*')
+    parser.add_argument("--watch", action="store_true", default=False)
+    parser.add_argument("files", nargs="*")
     args = parser.parse_args()
 
     site = make_site()
