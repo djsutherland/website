@@ -196,7 +196,7 @@ Below, \bibeqcon{} denotes equal contribution.
 \section{Invited Talks}
 \newcommand{\talk}[3]{% date, name, venue
   \item[#1]%
-    \ifthenelse{\equal{#2}{}}{}{\textit{#2}. \\}
+    \ifthenelse{\equal{#2}{}}{}{\textit{#2}\\}
     #3
 }
 \begin{itemize}
@@ -204,7 +204,7 @@ Below, \bibeqcon{} denotes equal contribution.
 
     {% for talk in talks if venues[talk.venue].type != "summerschool" %}
 \talk{ {{- "{:%b %Y}".format(talk.date) -}} }%
-     { {{- talk.title -}} }%
+     { {{- talk.title | maybe_punc(".") -}} }%
      {
         {%- set venue = venues[talk.venue] -%}
         {{- venue.name -}}

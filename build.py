@@ -206,6 +206,14 @@ def maybe_wrap(content, before, after):
 
 
 @filter
+def maybe_punc(content, after="."):
+    if content and content[-1] not in ".?!:-–":
+        return content + after
+    else:
+        return content
+
+
+@filter
 def maybe_link(content, url=None):
     if url:
         return "<a href={}>{}</a>".format(url, content)

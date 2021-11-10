@@ -188,7 +188,7 @@
           <h4>{{ sec_name }}</h4>
           {% for paper in venue_type_map[sec_types] %}
             <div class="paper" id="{{ paper.key }}" data-topics='{{ paper.get('topics', []) | tojson }}'>
-              <span class="title">{{ paper.title }}.</span>
+              <span class="title">{{ paper.title | maybe_punc(".") }}</span>
               <span class="authors">
                 {%- if paper.committee -%}
                   {%- set authors = paper.committee -%}
@@ -273,7 +273,7 @@
     <p>Slides for conference and workshop talks directly for a paper are linked next to the paper above.</p>
     {% for talk in talks %}
       <div class="talk" id="talk-{{ talk.key }}">
-        {{ talk.title | maybe_wrap("<span class='title'>", ".</span>") }}
+        {{ talk.title | maybe_punc(".") | maybe_wrap("<span class='title'>", "</span>") }}
         <span class="venue">
           {{ "{:%B %Y}".format(talk.date) }}.
           {%  set venue = venues[talk.venue] -%}
