@@ -513,6 +513,10 @@ venues:
   penn-state-stat:
     name: Penn State, Statistics colloquium
     type: seminar
+  nyu-cds:
+    name: NYU Center for Data Science Lunch Seminar Series
+    type: seminar
+    web: https://cds.nyu.edu/data-science-lunch-seminar-series/
   sheffield-mlnet:
     name: Machine Learning Seminar, University of Sheffield
     type: seminar
@@ -656,6 +660,8 @@ papers:
     venue: neurips
     note: Selected for oral presentation.
     arXiv: '2106.09276'
+    related: !!omap
+      - "NYU talk": "#talk-nyu-interpolation"
 
   - key: ssl-hsic
     title: "Self-Supervised Learning with Kernel Dependence Maximization"
@@ -737,6 +743,7 @@ papers:
     year: 2020
     related: !!omap
       - "Penn State talk": "#talk-pennstate-interpolation"
+      - "NYU talk": "#talk-nyu-interpolation"
 
   - key: deep-testing
     title: Learning Deep Kernels for Non-Parametric Two-Sample Tests
@@ -1315,6 +1322,17 @@ papers:
       ? interpretation
 
 talks:
+  - key: nyu-interpolation
+    title: Can Uniform Convergence Explain Interpolation Learning?
+    date: 2021-11-10
+    venue: nyu-cds
+    slides: https://djsutherland.ml/slides/nyu-uniform/
+    papers:
+      - uniform-interpolation
+      - gaussian-interpolators
+    related: !!omap
+      - "slides (pdf)": https://djsutherland.ml/slides/nyu-uniform.pdf
+
   - key: pihot-kickoff
     title: Deep kernel-based distances between distributions
     date: 2021-01-30
