@@ -662,6 +662,7 @@ papers:
 
   - key: gaussian-interpolators
     title: "Uniform Convergence of Interpolators: Gaussian Width, Norm Bounds and Benign Overfitting"
+    official: https://proceedings.neurips.cc/paper/2021/hash/ac9815bef801f58de83804bce86984ad-Abstract.html
     authors:
       - frederic*
       - lijia*
@@ -676,6 +677,7 @@ papers:
 
   - key: ssl-hsic
     title: "Self-Supervised Learning with Kernel Dependence Maximization"
+    official: https://proceedings.neurips.cc/paper/2021/hash/83004190b1793d7aa15f8d0d49a13eba-Abstract.html
     authors:
       - yazhe*
       - roman-p*
@@ -687,6 +689,7 @@ papers:
 
   - key: meta-2st
     title: "Meta Two-Sample Testing: Learning Kernels for Testing with Limited Data"
+    official: https://proceedings.neurips.cc/paper/2021/hash/2e6d9c6052e99fcdfa61d9b9da273ca2-Abstract.html
     authors:
       - feng*
       - wenkai*
