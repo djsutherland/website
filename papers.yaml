@@ -617,10 +617,21 @@ venues:
       2021: https://2021.emnlp.org
   winlp-21:
     name: Workshop on Widening NLP
+    short: WiNLP
     type: workshop
     conference: emnlp
     web: http://www.winlp.org/winlp-2021-workshop/
     year: 2021
+  ubern:
+    name: University of Bern
+    long_article: the
+    type: conference
+  like22:
+    name: Lifting Inference with Kernel Embeddings
+    short: LIKE22
+    conference: ubern
+    web: https://like22-bern.github.io/
+    year: 2022
 
 papers:
   # - key: prediction-filtering
@@ -1336,6 +1347,17 @@ papers:
       ? interpretation
 
 talks:
+  - key: like-deep-kernels
+    title: Better deep learning (sometimes) by learning kernel mean embeddings
+    date: 2022-01-12
+    venue: like22
+    slides: https://djsutherland.ml/slides/like22/
+    papers:
+      - meta-2st
+      - ssl-hsic
+    related: !!omap
+      - "slides (pdf)": https://djsutherland.ml/slides/like22.pdf
+
   - key: nyu-interpolation
     title: Can Uniform Convergence Explain Interpolation Learning?
     date: 2021-11-10
