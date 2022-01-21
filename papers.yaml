@@ -378,6 +378,12 @@ coauthors:
   pan:
     first: Pan
     last: Xu
+  joshua:
+    first: Yi
+    last: Ren
+  shangmin:
+    first: Shangmin
+    last: Guo
 
 venues:
   preprint:
@@ -396,6 +402,7 @@ venues:
     web_by_year:
       2017: http://www.iclr.cc/doku.php?id=iclr2017:main
       2018: http://www.iclr.cc/doku.php?id=ICLR2018:main
+      2022: https://iclr.cc/Conferences/2022/
   ApJ:
     name: The Astrophysical Journal
     short: ApJ
@@ -634,6 +641,16 @@ venues:
     year: 2022
 
 papers:
+  - key: learning-path
+    title: Better Supervisory Signals by Observing Learning Paths
+    authors:
+      - joshua
+      - shangmin
+      - me
+    year: 2022
+    venue: iclr
+    official: https://openreview.net/forum?id=Iog0djAdbHj
+
   # - key: prediction-filtering
   #   title: "One Weird Trick to Improve Your Semi-Weakly Supervised Semantic Segmentation Model"
   #   authors:
