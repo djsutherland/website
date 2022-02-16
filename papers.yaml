@@ -1392,6 +1392,11 @@ talks:
     date: 2021-01-30
     venue: pihot-kickoff
     slides: https://djsutherland.ml/slides/pihot/
+    papers:
+      - deep-testing
+      - opt-mmd
+      - smmd
+      - mmd-gans
     related: !!omap
       - "slides (pdf)": https://djsutherland.ml/slides/pihot.pdf
 

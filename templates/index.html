@@ -298,10 +298,10 @@
         <span class="note">
           Related papers:
           {% if talk.papers | length == 1 %}
-            <a href="#{{ talk.papers[0] }}">{{ (talk.papers[0] | get_paper(papers)).title }}</a>.
+            <a href="#{{ talk.papers[0] }}">{{ talk.papers[0] | get_paper(papers) | paper_short_venue(venues) }}</a>.
           {% else %}
             {% for paper in talk.papers -%}
-              <a href="#{{ paper }}">{{ (paper | get_paper(papers)).title }}</a>
+              <a href="#{{ paper }}">{{ paper | get_paper(papers) | paper_short_venue(venues) }}</a>
               {%- if not loop.last %}, {% endif -%}
             {%- endfor %}.
           {% endif %}

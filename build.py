@@ -110,6 +110,17 @@ def get_paper(key, papers):
     return next(paper for paper in papers if paper["key"] == key)
 
 
+@filter
+def paper_short_venue(paper, venues):
+    if "venue" not in paper:
+        return paper["title"]
+    venue = venues[paper["venue"]]
+    if venue.get("short"):
+        return venue["short"] + "-" + str(paper["year"])[2:]
+    else:
+        return venue["name"] + " " + paper["year"]
+
+
 translation_table = {}
 
 
