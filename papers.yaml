@@ -640,6 +640,10 @@ venues:
     conference: ubern
     web: https://like22-bern.github.io/
     year: 2022
+  trustml:
+    name: TrustML Young Scientist Seminars
+    type: seminar
+    web: https://trustmlresearch.github.io
 
 papers:
   - key: learning-path
@@ -1365,6 +1369,18 @@ papers:
       ? interpretation
 
 talks:
+  - key: trustml-testing
+    title: Are These Datasets The Same? Learning Kernels for Efficient and Fair Two-sample Tests
+    date: 2022-02-15
+    venue: trustml
+    slides: https://djsutherland.ml/slides/trustml-testing
+    papers:
+      - meta-2st
+      - deep-testing
+      - opt-mmd
+    related: !!omap
+      - "slides (pdf)": https://djsutherland.ml/slides/trustml-testing.pdf
+
   - key: like-deep-kernels
     title: Better deep learning (sometimes) by learning kernel mean embeddings
     date: 2022-01-12
