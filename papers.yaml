@@ -1374,6 +1374,7 @@ talks:
     date: 2022-02-15
     venue: trustml
     slides: https://djsutherland.ml/slides/trustml-testing
+    video: https://www.youtube.com/watch?v=C24b-dg56eY
     papers:
       - meta-2st
       - deep-testing
