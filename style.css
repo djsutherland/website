@@ -21,6 +21,10 @@ h1 {
 #pronouns {
     font-weight: normal;
     font-size: medium;
+    display: inline-block;
+    width: 0px;
+    overflow: visible;
+    margin-left: 0.25em;
 }
 #pronouns::before { content: "("; }
 #pronouns::after { content: ")"; }
