@@ -21,13 +21,22 @@ h1 {
 #pronouns {
     font-weight: normal;
     font-size: medium;
+}
+#pronouns::before { content: "("; }
+#pronouns::after { content: ")"; }
+@media only screen and (max-width: 500px) {
+  #pronouns {
+    display: block;
+  }
+}
+@media only screen and (min-width: 500px) {
+  #pronouns {
     display: inline-block;
     width: 0px;
     overflow: visible;
     margin-left: 0.25em;
+  }
 }
-#pronouns::before { content: "("; }
-#pronouns::after { content: ")"; }
 
 #info {
     text-align: center;
@@ -36,7 +45,7 @@ h1 {
 }
 
 #intro {
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
 }
 li {
@@ -45,6 +54,17 @@ li {
 .eml {
     font-family: Consolas, "Liberation Mono", Courier, monospace;
     color: #444;
+    display: inline-block;
+}
+.bio-links > a:not(:first-of-type) {
+    margin-left: 0.4em;
+}
+.bio-links > a:not(:last-of-type) {
+    margin-right: 0.4em;
+}
+.spacer {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 .code {
     font-family: Consolas, "Liberation Mono", Courier, monospace;
