@@ -4,174 +4,114 @@ coauthors:
     first: Danica J.
     last: Sutherland
     is_me: true
-  arthur:
-    first: Arthur
-    last: Gretton
-    web: http://www.gatsby.ucl.ac.uk/~gretton/
-  heiko:
-    first: Heiko
-    last: Strathmann
-    web: http://herrstrathmann.de/about/
-  michael:
-    first: Michael
-    last: Arbel
-    web: https://michaelarbel.github.io/
-  mikolaj:
-    first: Mikołaj
-    last: Bińkowski
-    web: https://github.com/mbinkowski
-  kevin:
-    first: Li  # how he wants it...
-    last: Wenliang
-    web: https://kevin-w-li.github.io/
-  leon:
-    first: Ho Chung Leon
-    last: Law
-    web: http://csml.stats.ox.ac.uk/people/law/
-  dino:
-    first: Dino
-    last: Sejdinovic
-    web: http://www.stats.ox.ac.uk/~sejdinov/
-  seth:
-    first: Seth
-    last: Flaxman
-    web: http://sethrf.com/
-  yu-xiang:
-    first: Yu-Xiang
-    last: Wang
-    web: https://www.cs.cmu.edu/~yuxiangw/
-  yee-whye:
-    first: Yee Whye
-    last: Teh
-    web: https://www.stats.ox.ac.uk/~teh/
-  fish:
-    first: Hsiao-Yu
-    last: Tung
-    web: https://sfish0101.bitbucket.io/
-  rahul:
-    first: Soumyajit
-    last: De
-    web: https://github.com/lambday/
+
+  amin:
+    first: Mohamad Amin
+    last: Mohamadi
+    web: https://mohamad-amin.github.io/
+    student_years: [2021, 3000]
+  hamed:
+    first: Hamed
+    last: Shirzad
+    web: https://sites.google.com/view/hamedshirzad/home
+    student_years: [2021, 3000]
+  joshua:
+    first: Yi
+    last: Ren
+    web: https://joshua-ren.github.io/
+    student_years: [2020, 3000]
+  milad:
+    first: Milad
+    last: Jalali
+    student_years: [2020, 3000]
+  namrata:
+    first: Namrata
+    last: Deka
+    web: https://namratadeka.github.io/
+    student_years: [2020, 3000]
+  won:
+    first: Wonho
+    last: Bae
+    web: https://won-bae.github.io/
+    student_years: [2020, 3000]
+
   aadi:
     first: Aaditya
     last: Ramdas
     web: https://people.eecs.berkeley.edu/~aramdas/
-  smola:
-    first: Alex
-    last: Smola
-    web: https://alex.smola.org
-  michelle:
-    first: Michelle
-    last: Ntampaka
-    web: https://www.cfa.harvard.edu/~mntampaka/
-  hy:
-    first: Hy
-    last: Trac
-    web: https://www.cmu.edu/physics/people/faculty/trac.html
-  sebastian:
-    first: Sebastian
-    last: Fromenteau
+  akilesh:
+    first: Akilesh
+    last: Tangella
+  alaya:
+    first: Mokhtar Z.
+    last: Alaya
+  arjun:
+    first: Arjun
+    last: Subramonian
+  arthur:
+    first: Arthur
+    last: Gretton
+    web: http://www.gatsby.ucl.ac.uk/~gretton/
+  artur:
+    first: Artur
+    last: Dubrawski
+    web: https://www.autonlab.org/people/artur_dubrawski
+  avestruz:
+    first: Camille
+    last: Avestruz
   barnabas:
     first: Barnabás
     last: Póczos
     web: https://www.cs.cmu.edu/~bapoczos/
-  jeff:
-    first: Jeff
-    last: Schneider
-    web: https://www.cs.cmu.edu/~schneide/
-  junier:
-    first: Junier B.
-    last: Oliva
-    web: https://cs.unc.edu/person/junier-oliva/
-  yifei:
-    first: Yifei
-    last: Ma
-    web: http://yma.io/
-  roman-g:
-    first: Roman
-    last: Garnett
-    web: http://www.cse.wutsl.edu/~garnett/
   battaglia:
     first: Nicholas
     last: Battaglia
     web: http://www.astro.utoronto.ca/~battaglia/Home.html
-  liang:
-    first: Liang
-    last: Xiong
-    web: https://ai.facebook.com/people/liang-xiong/
-  stromme:
-    first: Andrew
-    last: Stromme
-    web: http://andrewstromme.com
-  burka:
-    first: Alexander
-    last: Burka
-    web: http://alexburka.com
-  lipton:
-    first: Benjamin
-    last: Lipton
-    web: http://benjaminlipton.com
-  felt:
-    first: Nicholas
-    last: Felt
   becca:
     first: Rebecca
     last: Roelofs
     web: http://ww.eecs.berkeley.edu/~roelofs/
+  boada:
+    first: Steven
+    last: Boada
+  bodenhamer:
+    first: Matthew
+    last: Bodenhamer
+  boisbunon:
+    first: Aurélie
+    last: Boisbunon
+  burka:
+    first: Alexander
+    last: Burka
+    web: http://alexburka.com
+  caldeira:
+    first: João
+    last: Caldeira
+  chambon:
+    first: Stanislas
+    last: Chambon
+  chapel:
+    first: Laetitia
+    last: Chapel
+  cisewski:
+    first: Jessi
+    last: Cisewski-Kehe
+  corenflos:
+    first: Adrien
+    last: Corenflos
+  courty:
+    first: Nicolas
+    last: Courty
   daniel-elia:
     first: Daniel-Elia
     last: Feist-Alexandrov
   dini:
     first: Steve
     last: Dini
-  welkie:
-    first: Allen
-    last: Welkie
-  nina:
-    first: Maria-Florina
-    last: Balcan
-    web: https://www.cs.cmu.edu/~ninamf/
-  artur:
-    first: Artur
-    last: Dubrawski
-    web: https://www.autonlab.org/people/artur_dubrawski
-  jay:
-    first: Jay
-    last: Jin
-  kyle:
-    first: Kyle
-    last: Miller
-  labov:
-    first: Simon
-    last: Labov
-    web: http://people.llnl.gov/slabov
-  nelson:
-    first: Karl
-    last: Nelson
-    web: http://people.llnl.gov/nelson85
-  bodenhamer:
-    first: Matthew
-    last: Bodenhamer
-  palmer:
-    first: Thomas
-    last: Palmer
-    web: http://www.cs.ou.edu/~tjpalmer/
-  fagg:
-    first: Andrew H.
-    last: Fagg
-    web: http://www.cs.ou.edu/~fagg/
-  avestruz:
-    first: Camille
-    last: Avestruz
-  boada:
-    first: Steven
-    last: Boada
-  caldeira:
-    first: João
-    last: Caldeira
-  cisewski:
-    first: Jessi
-    last: Cisewski-Kehe
+  dino:
+    first: Dino
+    last: Sejdinovic
+    web: http://www.stats.ox.ac.uk/~sejdinov/
   distefano:
     first: Rosanne
     last: Di Stefano
@@ -181,12 +121,39 @@ coauthors:
   evrard:
     first: August E.
     last: Evrard
+  fagg:
+    first: Andrew H.
+    last: Fagg
+    web: http://www.cs.ou.edu/~fagg/
   farahi:
     first: Arya
     last: Farahi
+  fatras:
+    first: Kilian
+    last: Fatras
+  feng:
+    first: Feng
+    last: Liu
+    web: https://fengliu90.github.io/
   finkbeiner:
     first: Doug
     last: Finkbeiner
+  flamary:
+    first: Rémi
+    last: Flamary
+  fournier:
+    first: Nemo
+    last: Fournier
+  frederic:
+    first: Frederic
+    last: Koehler
+    web: https://math.mit.edu/~fkoehler/
+  gautheron:
+    first: Léo
+    last: Gautheron
+  gayraud:
+    first: Nathalie T.H.
+    last: Gayraud
   genel:
     first: Shy
     last: Genel
@@ -196,133 +163,212 @@ coauthors:
   goulding:
     first: Andy
     last: Goulding
-  shirley:
-    first: Shirley
-    last: Ho
+  gramfort:
+    first: Alexandre
+    last: Gramfort
+  guangquan-zhang:
+    first: Guangquan
+    last: Zhang
+    web: https://www.uts.edu.au/staff/guangquan.zhang
+  heiko:
+    first: Heiko
+    last: Strathmann
+    web: http://herrstrathmann.de/about/
+  hy:
+    first: Hy
+    last: Trac
+    web: https://www.cmu.edu/physics/people/faculty/trac.html
+  janati:
+    first: Hicham
+    last: Janati
+  jie-lu:
+    first: Jie
+    last: Lu
+    web: https://www.uts.edu.au/staff/jie.lu
+  jeff:
+    first: Jeff
+    last: Schneider
+    web: https://www.cs.cmu.edu/~schneide/
+  junier:
+    first: Junier B.
+    last: Oliva
+    web: https://cs.unc.edu/person/junier-oliva/
+  felt:
+    first: Nicholas
+    last: Felt
+  fish:
+    first: Hsiao-Yu
+    last: Tung
+    web: https://sfish0101.bitbucket.io/
+  jay:
+    first: Jay
+    last: Jin
+  june:
+    first: Jyunhug
+    last: Noh
+    web: https://junhyug.github.io/
+  kevin:
+    first: Li  # how he wants it...
+    last: Wenliang
+    web: https://kevin-w-li.github.io/
   kosowsky:
     first: Arthur
     last: Kosowsky
+  kyle:
+    first: Kyle
+    last: Miller
+  labov:
+    first: Simon
+    last: Labov
+    web: http://people.llnl.gov/slabov
   laplante:
     first: Paul
     last: La Plante
   lanusse:
     first: François
     last: Lanusse
-  lochner:
-    first: Michelle
-    last: Lochner
-  rachel:
-    first: Rachel
-    last: Mandelbaum
-  nagai:
-    first: Daisuke
-    last: Nagai
-  newman:
-    first: Jeffrey A.
-    last: Newman
-  nord:
-    first: Brian
-    last: Nord
-  peek:
-    first: J. E. G.
-    last: Peek
-  peel:
-    first: Austin
-    last: Peel
-  rau:
-    first: Markus Michael
-    last: Rau
-  siemiginowska:
-    first: Aneta
-    last: Siemiginowska
-  wandelt:
-    first: Benjamin
-    last: Wandelt
-  feng:
-    first: Feng
-    last: Liu
-    web: https://fengliu90.github.io/
-  wenkai:
-    first: Wenkai
-    last: Xu
-    web: http://www.stats.ox.ac.uk/~wxu/
-  jie-lu:
-    first: Jie
-    last: Lu
-    web: https://www.uts.edu.au/staff/jie.lu
-  guangquan-zhang:
-    first: Guangquan
-    last: Zhang
-    web: https://www.uts.edu.au/staff/guangquan.zhang
   lijia:
     first: Lijia
     last: Zhou
     web: https://zhoulijia.github.io/
+  leon:
+    first: Ho Chung Leon
+    last: Law
+    web: http://csml.stats.ox.ac.uk/people/law/
+  liang:
+    first: Liang
+    last: Xiong
+    web: https://ai.facebook.com/people/liang-xiong/
+  lipton:
+    first: Benjamin
+    last: Lipton
+    web: http://benjaminlipton.com
+  lochner:
+    first: Michelle
+    last: Lochner
+  luca:
+    first: Luca
+    last: Soldaini
+  marylena:
+    first: MaryLena
+    last: Bleile
+  michael:
+    first: Michael
+    last: Arbel
+    web: https://michaelarbel.github.io/
+  michelle:
+    first: Michelle
+    last: Ntampaka
+    web: https://www.cfa.harvard.edu/~mntampaka/
+  mikolaj:
+    first: Mikołaj
+    last: Bińkowski
+    web: https://github.com/mbinkowski
+  nagai:
+    first: Daisuke
+    last: Nagai
   nati:
     first: Nathan
     last: Srebro
     web: https://ttic.edu/srebro
-  akilesh:
-    first: Akilesh
-    last: Tangella
+  nelson:
+    first: Karl
+    last: Nelson
+    web: http://people.llnl.gov/nelson85
+  newman:
+    first: Jeffrey A.
+    last: Newman
+  nina:
+    first: Maria-Florina
+    last: Balcan
+    web: https://www.cs.cmu.edu/~ninamf/
+  nord:
+    first: Brian
+    last: Nord
+  palmer:
+    first: Thomas
+    last: Palmer
+    web: http://www.cs.ou.edu/~tjpalmer/
+  pan:
+    first: Pan
+    last: Xu
+  peel:
+    first: Austin
+    last: Peel
+  peek:
+    first: J. E. G.
+    last: Peek
+  pranav:
+    first: A
+    last: Pranav
   pritish:
     first: Pritish
     last: Kamath
     web: https://pritishkamath.github.io/
-  flamary:
-    first: Rémi
-    last: Flamary
-  courty:
-    first: Nicolas
-    last: Courty
-  gramfort:
-    first: Alexandre
-    last: Gramfort
-  alaya:
-    first: Mokhtar Z.
-    last: Alaya
-  boisbunon:
-    first: Aurélie
-    last: Boisbunon
-  chambon:
-    first: Stanislas
-    last: Chambon
-  chapel:
-    first: Laetitia
-    last: Chapel
-  corenflos:
-    first: Adrien
-    last: Corenflos
-  fatras:
-    first: Kilian
-    last: Fatras
-  fournier:
-    first: Nemo
-    last: Fournier
-  gautheron:
-    first: Léo
-    last: Gautheron
-  gayraud:
-    first: Nathalie T.H.
-    last: Gayraud
-  janati:
-    first: Hicham
-    last: Janati
+  queerinai:
+    first: Organizers of
+    last: QueerInAI
+    web: https://queerinai.org
+  rachel:
+    first: Rachel
+    last: Mandelbaum
   rakotomamonjy:
     first: Alain
     last: Rakotomamonjy
+  rahul:
+    first: Soumyajit
+    last: De
+    web: https://github.com/lambday/
+  rau:
+    first: Markus Michael
+    last: Rau
   redko:
     first: Ievgen
     last: Redko
   rolet:
     first: Antoine
     last: Rolet
+  roman-g:
+    first: Roman
+    last: Garnett
+    web: http://www.cse.wutsl.edu/~garnett/
+  roman-p:
+    first: Roman
+    last: Pogodin
+    web: https://roman-pogodin.com/
+  sabine:
+    first: Sabine
+    last: Weber
   schutz:
     first: Antony
     last: Schutz
+  sebastian:
+    first: Sebastian
+    last: Fromenteau
   seguy:
     first: Vivien
     last: Seguy
+  seth:
+    first: Seth
+    last: Flaxman
+    web: http://sethrf.com/
+  shangmin:
+    first: Shangmin
+    last: Guo
+  shirley:
+    first: Shirley
+    last: Ho
+  siemiginowska:
+    first: Aneta
+    last: Siemiginowska
+  smola:
+    first: Alex
+    last: Smola
+    web: https://alex.smola.org
+  stromme:
+    first: Andrew
+    last: Stromme
+    web: http://andrewstromme.com
   tavenard:
     first: Romain
     last: Tavenard
@@ -332,59 +378,36 @@ coauthors:
   vayer:
     first: Titouan
     last: Vayer
-  wonho:
-    first: Wonho
-    last: Bae
-    web: https://won-bae.github.io/
-    student_years: [2020, 3000]
-  milad:
-    first: Milad
-    last: Jalali
-    student_years: [2020, 3000]
-  june:
-    first: Jyunhug
-    last: Noh
-    web: https://junhyug.github.io/
-  frederic:
-    first: Frederic
-    last: Koehler
-    web: https://math.mit.edu/~fkoehler/
+  wandelt:
+    first: Benjamin
+    last: Wandelt
+  welkie:
+    first: Allen
+    last: Welkie
+  wenkai:
+    first: Wenkai
+    last: Xu
+    web: http://www.stats.ox.ac.uk/~wxu/
   yazhe:
     first: Yazhe
     last: Li
-  roman-p:
-    first: Roman
-    last: Pogodin
-    web: https://roman-pogodin.com/
-  queerinai:
-    first: Organizers of
-    last: QueerInAI
-    web: https://queerinai.org
-  pranav:
-    first: A
-    last: Pranav
-  marylena:
-    first: MaryLena
-    last: Bleile
-  arjun:
-    first: Arjun
-    last: Subramonian
-  luca:
-    first: Luca
-    last: Soldaini
-  sabine:
-    first: Sabine
-    last: Weber
-  pan:
-    first: Pan
-    last: Xu
-  joshua:
-    first: Yi
-    last: Ren
-    web: https://joshua-ren.github.io/
-  shangmin:
-    first: Shangmin
-    last: Guo
+  yee-whye:
+    first: Yee Whye
+    last: Teh
+    web: https://www.stats.ox.ac.uk/~teh/
+  yifei:
+    first: Yifei
+    last: Ma
+    web: http://yma.io/
+  yu-xiang:
+    first: Yu-Xiang
+    last: Wang
+    web: https://www.cs.cmu.edu/~yuxiangw/
+
+
+################################################################################
+################################################################################
+################################################################################
 
 venues:
   preprint:
@@ -396,77 +419,9 @@ venues:
   white-paper:
     name: White paper
     type: tech-report
-  iclr:
-    name: International Conference on Learning Representations
-    short: ICLR
-    type: conference
-    web_by_year:
-      2017: http://www.iclr.cc/doku.php?id=iclr2017:main
-      2018: http://www.iclr.cc/doku.php?id=ICLR2018:main
-      2022: https://iclr.cc/Conferences/2022/
-  ApJ:
-    name: The Astrophysical Journal
-    short: ApJ
-    type: journal
-    web: https://iopscience.iop.org/0004-637X/
-  aaai:
-    name: AAAI Conference on Artificial Intelligence
-    short: AAAI
-    type: conference
-    web_by_year:
-      2016: http://www.aaai.org/Conferences/AAAI/aaai16.php
-  aistats:
-    name: Artificial Intelligence and Statistics
-    short: AISTATS
-    type: conference
-    web_by_year:
-      2015: http://www.aistats.org/aistats2015/
-      2018: http://aistats.org/aistats2018/
-      2019: http://aistats.org/aistats2019/
-      2021: http://aistats.org/aistats2021/
-  uai:
-    name: Uncertainty in Artificial Intelligence
-    short: UAI
-    type: conference
-    web_by_year:
-      2015: http://auai.org/uai2015/
-  kdd:
-    name: Knowledge Discovery and Data Mining
-    short: KDD
-    type: conference
-    web_by_year:
-      2013: http://www.sigkdd.org/kdd2013
-  cvpr:
-    name: Computer Vision and Pattern Recognition
-    short: CVPR
-    type: conference
-    web_by_year:
-      2012: http://tab.computer.org/pamitc/archive/cvpr2012/
-  lisa:
-    name: Large Installation System Administration
-    short: LISA
-    type: conference
-    web_by_year:
-      2012: https://www.usenix.org/conference/lisa12
-  neurips-dfgg:
-    name: Learning on Distributions, Functions, Graphs and Groups
-    web: https://sites.google.com/site/nips2017learningon/
-    type: workshop
-    conference: neurips
-    year: 2017
-  feature-extraction:
-    name: "Feature Extraction: Modern Questions and Challenges"
-    web: http://www.feature-extraction.org/
-    type: workshop
-    conference: neurips
-    year: 2015
-  bayesopt-14:
-    name: Bayesian Optimization
-    short: BayesOpt
-    web: https://bayesopt.github.io/past/2014.html
-    type: workshop
-    conference: neurips
-    year: 2014
+
+  ############################################################################
+  # Conferences with publications
   neurips:
     name: Neural Information Processing Systems
     short: NeurIPS
@@ -479,6 +434,8 @@ venues:
       2018: https://neurips.cc/Conferences/2018
       2019: https://neurips.cc/Conferences/2019
       2020: https://neurips.cc/Conferences/2020
+      2021: https://neurips.cc/Conferences/2021
+
   icml:
     name: International Conference on Machine Learning
     short: ICML
@@ -488,56 +445,130 @@ venues:
       2017: https://icml.cc/Conferences/2017
       2019: https://icml.cc/Conferences/2019
       2020: https://icml.cc/Conferences/2020
+
+  iclr:
+    name: International Conference on Learning Representations
+    short: ICLR
+    type: conference
+    web_by_year:
+      2017: http://www.iclr.cc/doku.php?id=iclr2017:main
+      2018: http://www.iclr.cc/doku.php?id=ICLR2018:main
+      2022: https://iclr.cc/Conferences/2022/
+
+  aistats:
+    name: Artificial Intelligence and Statistics
+    short: AISTATS
+    type: conference
+    web_by_year:
+      2015: http://www.aistats.org/aistats2015/
+      2018: http://aistats.org/aistats2018/
+      2019: http://aistats.org/aistats2019/
+      2021: http://aistats.org/aistats2021/
+
+  uai:
+    name: Uncertainty in Artificial Intelligence
+    short: UAI
+    type: conference
+    web_by_year:
+      2015: http://auai.org/uai2015/
+
+  aaai:
+    name: AAAI Conference on Artificial Intelligence
+    short: AAAI
+    type: conference
+    web_by_year:
+      2016: http://www.aaai.org/Conferences/AAAI/aaai16.php
+
+  kdd:
+    name: Knowledge Discovery and Data Mining
+    short: KDD
+    type: conference
+    web_by_year:
+      2013: http://www.sigkdd.org/kdd2013
+
+  cvpr:
+    name: Computer Vision and Pattern Recognition
+    short: CVPR
+    type: conference
+    web_by_year:
+      2012: http://tab.computer.org/pamitc/archive/cvpr2012/
+
+  emnlp:
+    name: Conference on Empirical Methods in Natural Language Processing
+    short: EMNLP
+    long_article: the
+    type: conference
+    web_by_year:
+      2021: https://2021.emnlp.org
+
+  lisa:
+    name: Large Installation System Administration
+    short: LISA
+    type: conference
+    web_by_year:
+      2012: https://www.usenix.org/conference/lisa12
+
+  ############################################################################
+  # Journals
+
+  jmlr:
+    name: Journal of Machine Learning Research
+    short: JMLR
+    type: journal
+    web: https://jmlr.org
+
+  ApJ:
+    name: The Astrophysical Journal
+    short: ApJ
+    type: journal
+    web: https://iopscience.iop.org/0004-637X/
+
+  ############################################################################
+  # Workshops with publications
+  neurips-dfgg:
+    name: Learning on Distributions, Functions, Graphs and Groups
+    web: https://sites.google.com/site/nips2017learningon/
+    type: workshop
+    conference: neurips
+    year: 2017
+
+  feature-extraction:
+    name: "Feature Extraction: Modern Questions and Challenges"
+    web: http://www.feature-extraction.org/
+    type: workshop
+    conference: neurips
+    year: 2015
+
+  bayesopt-14:
+    name: Bayesian Optimization
+    short: BayesOpt
+    web: https://bayesopt.github.io/past/2014.html
+    type: workshop
+    conference: neurips
+    year: 2014
+
   icml-implicit:
     name: Implicit Models
     web: https://sites.google.com/view/implicitmodels/
     type: workshop
     conference: icml
     year: 2017
-  csd:
-    name: Computer Science Department, Carnegie Mellon University
-    school: Carnegie Mellon University
-    department: Computer Science Department
-    type: phd-thesis
-  swat:
-    name: Computer Science Department, Swarthmore College
-    type: ba-thesis
-    school: Swarthmore College
-    department: Computer Science Department
+
   nss:
     name: IEEE Nuclear Science Symposium
     short: IEEE NSS/MIC
     type: workshop
-  optimization-course:
-    name: CMU 10-725 Optimization course project
-    web: https://www.cs.cmu.edu/~ggordon/10725-F12/
-    type: course-project
-  oxford-csml:
-    name: Computational Statistics and Machine Learning seminar, Oxford University
-    type: seminar
-  umass:
-    name: University of Massachusetts Amherst, College of Information and Computer Sciences
-    type: seminar
-  penn-state-stat:
-    name: Penn State, Statistics colloquium
-    type: seminar
-  nyu-cds:
-    name: NYU Center for Data Science Lunch Seminar Series
-    type: seminar
-    web: https://cds.nyu.edu/data-science-lunch-seminar-series/
-  sheffield-mlnet:
-    name: Machine Learning Seminar, University of Sheffield
-    type: seminar
-    web: https://sheffieldmlnet.github.io/tags/seminar/
-  google-ml-ny:
-    name: Machine Learning reading group, Google New York
-    type: seminar
-  columbia-ml:
-    name: Machine Learning reading group, Columbia University
-    type: seminar
-  fair-ny:
-    name: Facebook AI Research New York
-    type: seminar
+
+  winlp-21:
+    name: Workshop on Widening NLP
+    short: WiNLP
+    type: workshop
+    conference: emnlp
+    web: http://www.winlp.org/winlp-2021-workshop/
+    year: 2021
+
+  ############################################################################
+  # Conferences/workshops that just have talks
   dali:
     name: Data Analysis, Learning, and Inference
     short: DALI
@@ -548,9 +579,7 @@ venues:
     conference: dali
     year: 2017
     web: http://dalimeeting.org/dali2017/generative-adversarial-networks.html
-  ucl-csml:
-    name: Computational Statistics and Machine Learning seminar, University College London
-    type: seminar
+
   turing:
     name: Alan Turing Institute
     type: conference
@@ -561,11 +590,13 @@ venues:
     conference: turing
     web: https://www.turing.ac.uk/events/approximating-high-dimensional-functions/
     year: 2017
+
   gatsby-tricenter:
     name: Gatsby Tri-Center Meeting
     type: meeting
     web: https://ctn.zuckermaninstitute.columbia.edu/gatsby2018
     year: 2018
+
   gpss:
     # name: Gaussian Process and Uncertainty Quantification Summer School
     name: Gaussian Process Summer School
@@ -580,13 +611,7 @@ venues:
     conference: gpss
     year: 2018
     web: http://gpss.cc/gpss18/workshop.html
-  mlcc:
-    name: Machine Learning Crash Course
-    short: MLCC
-    long_article: the
-    type: summerschool
-    web_by_year:
-      2019: http://lcsl.mit.edu/courses/mlcc/mlcc2019/
+
   iciam:
     name: International Congress on Industrial and Applied Mathematics
     short: ICIAM
@@ -600,6 +625,7 @@ venues:
     conference: iciam
     year: 2019
     web: https://www.math.ucdavis.edu/~saito/confs/ICIAM19/
+
   pihot:
     name: Pacific Interdisciplinary Hub on Optimal Transport
     long_article: the
@@ -611,25 +637,7 @@ venues:
     conference: pihot
     web: https://kantorovich.org/post/kickoff/
     year: 2021
-  jmlr:
-    name: Journal of Machine Learning Research
-    short: JMLR
-    type: journal
-    web: https://jmlr.org
-  emnlp:
-    name: Conference on Empirical Methods in Natural Language Processing
-    short: EMNLP
-    long_article: the
-    type: conference
-    web_by_year:
-      2021: https://2021.emnlp.org
-  winlp-21:
-    name: Workshop on Widening NLP
-    short: WiNLP
-    type: workshop
-    conference: emnlp
-    web: http://www.winlp.org/winlp-2021-workshop/
-    year: 2021
+
   ubern:
     name: University of Bern
     long_article: the
@@ -640,10 +648,85 @@ venues:
     conference: ubern
     web: https://like22-bern.github.io/
     year: 2022
+
+  ##############################################################################
+  # Summer schools
+
+  mlcc:
+    name: Machine Learning Crash Course
+    short: MLCC
+    long_article: the
+    type: summerschool
+    web_by_year:
+      2019: http://lcsl.mit.edu/courses/mlcc/mlcc2019/
+
+  ############################################################################
+  # School departments / etc
+  csd:
+    name: Computer Science Department, Carnegie Mellon University
+    school: Carnegie Mellon University
+    department: Computer Science Department
+    type: phd-thesis
+  swat:
+    name: Computer Science Department, Swarthmore College
+    type: ba-thesis
+    school: Swarthmore College
+    department: Computer Science Department
+
+  optimization-course:
+    name: CMU 10-725 Optimization course project
+    web: https://www.cs.cmu.edu/~ggordon/10725-F12/
+    type: course-project
+
+  ############################################################################
+  # Seminar series
+  columbia-ml:
+    name: Machine Learning reading group, Columbia University
+    type: seminar
+
+  fair-ny:
+    name: Facebook AI Research New York
+    type: seminar
+
+  google-ml-ny:
+    name: Machine Learning reading group, Google New York
+    type: seminar
+
+  nyu-cds:
+    name: NYU Center for Data Science Lunch Seminar Series
+    type: seminar
+    web: https://cds.nyu.edu/data-science-lunch-seminar-series/
+
+  oxford-csml:
+    name: Computational Statistics and Machine Learning seminar, Oxford University
+    type: seminar
+
+  penn-state-stat:
+    name: Penn State, Statistics colloquium
+    type: seminar
+
+  ucl-csml:
+    name: Computational Statistics and Machine Learning seminar, University College London
+    type: seminar
+
+  sheffield-mlnet:
+    name: Machine Learning Seminar, University of Sheffield
+    type: seminar
+    web: https://sheffieldmlnet.github.io/tags/seminar/
+
   trustml:
     name: TrustML Young Scientist Seminars
     type: seminar
     web: https://trustmlresearch.github.io
+
+  umass:
+    name: University of Massachusetts Amherst, College of Information and Computer Sciences
+    type: seminar
+
+
+################################################################################
+################################################################################
+################################################################################
 
 papers:
   - key: learning-path
@@ -660,7 +743,7 @@ papers:
   # - key: prediction-filtering
   #   title: "One Weird Trick to Improve Your Semi-Weakly Supervised Semantic Segmentation Model"
   #   authors:
-  #     - wonho
+  #     - won
   #     - milad
   #     - june
   #     - me
@@ -1368,6 +1451,10 @@ papers:
     topics:
       ? relational learning
       ? interpretation
+
+################################################################################
+################################################################################
+################################################################################
 
 talks:
   - key: trustml-testing
