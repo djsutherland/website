@@ -20,8 +20,8 @@ biblio.bib: biblio-cv.bib
 	cd .build/$</ && $(LATEXMK) -pdf -silent $<
 	ln -f .build/$</$@ .
 
-clean:
+tidy:
 	rm -rf .build/
 
-clean-all: clean
+clean: tidy
 	rm -f index.html biblio.bib biblio-cv.bib cv.tex cv.pdf ccv-info.txt
