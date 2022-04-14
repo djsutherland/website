@@ -79,6 +79,18 @@ li {
     text-align: center;
 }
 
+#alert {
+    background-color: #ffd3d3;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#alert > p:first-of-type {
+    padding-top: 10px;
+}
+#alert > p:last-of-type {
+    padding-bottom: 10px;
+}
+
 .paper:target, .talk:target, #name-note:target {
     background-color: #ffd;
 }
