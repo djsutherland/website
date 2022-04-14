@@ -56,10 +56,10 @@ li {
     color: #444;
     display: inline-block;
 }
-.bio-links > a:not(:first-of-type) {
+.bio-links > :not(:first-child) {
     margin-left: 0.4em;
 }
-.bio-links > a:not(:last-of-type) {
+.bio-links > :not(:last-child) {
     margin-right: 0.4em;
 }
 .spacer {
