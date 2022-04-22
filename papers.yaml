@@ -435,6 +435,22 @@ venues:
       2019: https://neurips.cc/Conferences/2019
       2020: https://neurips.cc/Conferences/2020
       2021: https://neurips.cc/Conferences/2021
+    accepts:
+      2018: !!omap
+        oral: 30
+        spotlight: 168
+        unspecial: 813
+        submitted: 4856
+      2020: !!omap
+        oral: 105
+        spotlight: 280
+        unspecial: 1515
+        submitted: 9454
+      2021: !!omap
+        oral: 55
+        spotlight: 260
+        unspecial: 2029
+        submitted: 9122
 
   icml:
     name: International Conference on Machine Learning
@@ -445,6 +461,13 @@ venues:
       2017: https://icml.cc/Conferences/2017
       2019: https://icml.cc/Conferences/2019
       2020: https://icml.cc/Conferences/2020
+    accepts:
+      2019: !!omap
+        unspecial: 773
+        submitted: 3424
+      2020: !!omap
+        unspecial: 1088
+        submitted: 4990
 
   iclr:
     name: International Conference on Learning Representations
@@ -454,6 +477,20 @@ venues:
       2017: http://www.iclr.cc/doku.php?id=iclr2017:main
       2018: http://www.iclr.cc/doku.php?id=ICLR2018:main
       2022: https://iclr.cc/Conferences/2022/
+    accepts:
+      2017: !!omap
+        oral: 15
+        unspecial: 183
+        submitted: 507
+      2018: !!omap
+        oral: 23
+        unspecial: 291
+        submitted: 981
+      2022: !!omap
+        oral: 54
+        spotlight: 176
+        unspecial: 865
+        submitted: 3328
 
   aistats:
     name: Artificial Intelligence and Statistics
@@ -464,6 +501,18 @@ venues:
       2018: http://aistats.org/aistats2018/
       2019: http://aistats.org/aistats2019/
       2021: http://aistats.org/aistats2021/
+    accepts:
+      2015: !!omap
+        unspecial: 127
+        submitted: 442
+      2018: !!omap
+        oral: 31
+        unspecial: 183
+        submitted: 645
+      2021: !!omap
+        oral: 48
+        unspecial: 407
+        submitted: 1527
 
   uai:
     name: Uncertainty in Artificial Intelligence
@@ -471,6 +520,10 @@ venues:
     type: conference
     web_by_year:
       2015: http://auai.org/uai2015/
+    accepts:
+      2015: !!omap
+        unspecial: 99
+        submitted: 291
 
   aaai:
     name: AAAI Conference on Artificial Intelligence
@@ -478,6 +531,21 @@ venues:
     type: conference
     web_by_year:
       2016: http://www.aaai.org/Conferences/AAAI/aaai16.php
+    accepts:
+      2016: !!omap
+        unspecial: 549
+        submitted: 2132
+
+  ijcai:
+    name: International Joint Conference on Artificial Intelligence
+    short: IJCAI
+    type: conference
+    web_by_year:
+      2022: https://ijcai-22.org/
+    accepts:
+      2022: !!omap
+        unspecial: 680  # tentative number
+        submitted: 4535
 
   kdd:
     name: Knowledge Discovery and Data Mining
@@ -485,6 +553,11 @@ venues:
     type: conference
     web_by_year:
       2013: http://www.sigkdd.org/kdd2013
+    accepts:
+      2013: !!omap
+        oral: 66
+        unspecial: 59
+        submitted: 726
 
   cvpr:
     name: Computer Vision and Pattern Recognition
@@ -492,6 +565,10 @@ venues:
     type: conference
     web_by_year:
       2012: http://tab.computer.org/pamitc/archive/cvpr2012/
+    accepts:
+      2012: !!omap
+        unspecial: 465
+        submitted: 1776
 
   emnlp:
     name: Conference on Empirical Methods in Natural Language Processing
@@ -729,6 +806,16 @@ venues:
 ################################################################################
 
 papers:
+  - key: prediction-filtering
+    title: "One Weird Trick to Improve Your Semi-Weakly Supervised Semantic Segmentation Model"
+    authors:
+      - won
+      - june
+      - milad
+      - me
+    year: 2022
+    venue: ijcai
+
   - key: learning-path
     title: Better Supervisory Signals by Observing Learning Paths
     authors:
@@ -739,16 +826,6 @@ papers:
     venue: iclr
     official: https://openreview.net/forum?id=Iog0djAdbHj
     arXiv: '2203.02485'
-
-  # - key: prediction-filtering
-  #   title: "One Weird Trick to Improve Your Semi-Weakly Supervised Semantic Segmentation Model"
-  #   authors:
-  #     - won
-  #     - milad
-  #     - june
-  #     - me
-  #   year: 2021
-  #   venue: preprint
 
   - key: optimistic-rates
     title: "Optimistic Rates: A Unifying Theory for Interpolation Learning and Regularization in Linear Regression"
