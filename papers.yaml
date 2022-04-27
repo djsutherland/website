@@ -715,6 +715,12 @@ venues:
     web: https://kantorovich.org/post/kickoff/
     year: 2021
 
+  twds:
+    name: Toronto Womxn in Data Science Conference
+    type: conference
+    web_by_year:
+      2022: https://www.womxndsto.com/events-1/5th-annual-toronto-womxn-in-data-science-conference-and-awards-1
+
   ubern:
     name: University of Bern
     long_article: the
@@ -1534,6 +1540,18 @@ papers:
 ################################################################################
 
 talks:
+  - key: twds-testing
+    title: Are These Datasets The Same? Learning Kernels for Efficient and Fair Two-sample Tests
+    date: 2022-04-27
+    venue: twds
+    slides: https://djsutherland.ml/slides/twds-testing
+    papers:
+      - meta-2st
+      - deep-testing
+      - opt-mmd
+    related: !!omap
+      - "slides (pdf)": https://djsutherland.ml/slides/trustml-testing.pdf
+
   - key: trustml-testing
     title: Are These Datasets The Same? Learning Kernels for Efficient and Fair Two-sample Tests
     date: 2022-02-15
