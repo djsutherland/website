@@ -30,15 +30,17 @@
 \DeclareFieldFormat[misc]{title}{\mkbibquote{#1\isdot}}
 \renewbibmacro{in:}{}
 
+\definecolor{student}{RGB}{200,100,0}
+
 \newcommand{\bibeqcon}{\textcolor{blue}{\footnotemark[1]}}
 \renewcommand*{\mkbibnamegiven}[1]{%
   \ifitemannotation{me}%
     {#1}%{\textbf{#1}}%
-    {\ifitemannotation{mystudent}{#1}{#1}}}
+    {\ifitemannotation{mystudent}{\textcolor{student}{#1}}{#1}}}
 \renewcommand*{\mkbibnamefamily}[1]{%
   \ifitemannotation{me}%
     {#1}%{\textbf{#1}}%
-    {\ifitemannotation{mystudent}{#1}{#1}}%
+    {\ifitemannotation{mystudent}{\textcolor{student}{#1}}{#1}}%
   \ifitemannotation{equal}
     {\bibeqcon}
     {}%
@@ -87,7 +89,7 @@
 \newcommand{\phoneno}[3]{#1$\,\cdot\,$#2$\,\cdot\,$#3}
 \begin{tabular}{@{}p{3.13in}p{4in}}
 Computer Science  & \textit{email}: \texttt{dsuth@cs.ubc.ca} \\
-Vancouver Campus  & \textit{web}: \httpurl{djsutherland.ml} \\
+Vancouver Campus  & \textit{web}: \httpsurl{cs.ubc.ca/~dsuth/} \\
 ICICS/CS Building 201-2366 Main Mall &\\
 Vancouver, BC Canada $\;\;$ V6T 1Z4 &
 \end{tabular}
@@ -182,8 +184,8 @@ Nonparametric statistics, statistical learning theory.
 \section{Publications}
 \renewcommand{\thefootnote}{\fnsymbol{footnote}\fnsymbol{footnote}}
 \setlength\bibitemsep{0.3\baselineskip}
-Official versions of some of these papers still use an outdated version of my name; {\href{https://tesstanenbaum.medium.com/towards-a-trans-inclusive-publishing-landscape-893339b9868d}{\color{blue} please use this one}}.
-Below, \bibeqcon{} denotes equal contribution.
+Below, \bibeqcon{} denotes equal contribution,
+and \textcolor{student}{this colour} denotes one of my formal advisees.
 \nocite{*}
 {% endraw %}
 
@@ -224,9 +226,9 @@ Below, \bibeqcon{} denotes equal contribution.
 % \clearpage % TEMP
 \section{Teaching Experience}
 
-\cventry{Spring 2022}{Instructor}{CPSC 532S Topics in AI: Modern Statistical Learning Theory}{UBC}{}{Graduate-level overview of statistical learning theory; \textasciitilde{}25 students.}
+\cventry{Spring 2022}{Instructor}{CPSC 532S Topics in AI: Modern Statistical Learning Theory}{UBC}{}{Graduate-level overview of statistical learning theory; 23 students.}
 
-\cventry{Fall 2021}{Instructor}{CPSC 340 Machine Learning and Data Mining}{UBC}{}{Third-year undergraduate introduction to machine learning; \textasciitilde{}230 students between two sections, co-taught with Mike Gelbart.}
+\cventry{Fall 2021}{Instructor}{CPSC 340 Machine Learning and Data Mining}{UBC}{}{Third-year undergraduate introduction to machine learning; 228 students between two sections, co-taught with Mike Gelbart.}
 
 \cventry{}{Guest lectures, one-day courses, and similar}{}{}{}{%
   \begin{compactitem}
@@ -289,9 +291,9 @@ Below, \bibeqcon{} denotes equal contribution.
 
 \section{Service}
 \subsection{Scholarly activities}
-\cventry{2019 --}{Area chair or equivalent}{NeurIPS 2020--22, ICML 2022, AISTATS 2020--22, AAAI 2020--21}{}{}{}
+\cventry{2019 --}{Area chair or equivalent}{NeurIPS 2020--22, ICML 2022, AISTATS 2020--22, AAAI 2021--22}{}{}{}
 \cventry{2015 --}{Program committee or equivalent}{ICML 2016--21; NeurIPS 2015, 2017--19; ICLR 2018--20; AISTATS 2019; AAAI 2018}{}{}{NeurIPS 2018: top 216 (of 3,045) reviewers. NeurIPS 2019: Top Reviewer. ICML 2018: Outstanding Reviewer. ICML 2019: Best Reviewer.}
-\cventry{2014 --}{Reviewer}{JMLR, IEEE TSP, IEEE T-PAMI, Bernoulli, IEEE T-IT, MLJ, COLT, SoCG, IJCAI, ECML-PKDD, Comptes rendus}{}{}{}
+\cventry{2014 --}{Reviewer}{JMLR, IEEE TSP, IEEE T-PAMI, Bernoulli, IEEE T-IT, MLJ, COLT, SoCG, IJCAI, ECML-PKDD, UAI, Comptes rendus}{}{}{}
 % \cventry{2017}{Session chair}{ICML}{}{}{}
 
 \subsection{Departmental service}
@@ -301,7 +303,7 @@ Below, \bibeqcon{} denotes equal contribution.
 \cventry{2013}{Immigration Course organizer}{CMU}{}{}{}
 
 \subsection{Other}
-\cventry{2018 --}{Volunteer organizer}{Queer in AI}{}{}{Activities including D\&I advocacy to conferences, co-organizing AAAI 2022 social and mentoring activities, serving on a hiring committee, initiating a program of informal feedback and mentoring for faculty candidates, and more. Core organizer since 2022.}
+\cventry{2018 --}{Volunteer organizer}{Queer in AI}{}{}{Core organizer since 2022. Activities including D\&I advocacy to conferences, co-organizing AAAI 2022 social and mentoring activities, serving on a hiring committee, initiating a program of informal feedback and mentoring for faculty candidates, and more.}
 \cventry{2015 --}{Top 100 all-time contributor}{Cross Validated}{\nolinkurl{stats.stackexchange.com}}{}{}
 \cventry{2018 -- 2020}{Core member}{}{\httpsurl{conda-forge.org}}{scientific software packaging ecosystem}{(Emeritus since 2020.)}
 
