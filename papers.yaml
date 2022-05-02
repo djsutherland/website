@@ -859,6 +859,7 @@ papers:
     related: !!omap
       - web: https://queerinai.org/diversity-guide
     year: 2021
+    my_talk: true
 
   - key: gaussian-interpolators
     title: "Uniform Convergence of Interpolators: Gaussian Width, Norm Bounds and Benign Overfitting"
@@ -1043,6 +1044,7 @@ papers:
       ? deep kernels
       ? density estimation
       ? kernel exponential families
+    my_talk: true
 
   - key: smmd
     title: On gradient regularizers for MMD GANs
@@ -1112,6 +1114,7 @@ papers:
       ? bayesian
       ? kernels
       ? deep kernels
+    my_talk: true
 
   - key: kexpfam-nystroem
     title: Efficient and principled score estimation with Nyström kernel exponential families
@@ -1138,6 +1141,7 @@ papers:
       ? kernel approximation
       ? statistical theory
       ? kernel exponential families
+    my_talk: true
 
   - key: bdr
     title: Bayesian Approaches to Distribution Regression
@@ -1435,6 +1439,7 @@ papers:
     topics:
       ? active learning
       ? matrix factorization
+    my_talk: true
 
   - key: sdm-arxiv
     title: Kernels on Sample Sets via Nonparametric Divergence Estimates
@@ -1450,22 +1455,22 @@ papers:
       ? distribution regression
       ? kernels
 
-  - key: sparse-modeling
-    title: Finding Representative Objects with Sparse Modeling
-    authors:
-      - junier
-      - me
-      - yifei
-    venue: optimization-course
-    year: 2012
-    note: Best poster award.
-    related: !!omap
-      - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/opt-project.pdf
-    topics:
-      ? sparse modeling
-      ? interpretation
-      ? kernels
-      ? optimization
+   # - key: sparse-modeling
+   #   title: Finding Representative Objects with Sparse Modeling
+   #   authors:
+   #     - junier
+   #     - me
+   #     - yifei
+   #   venue: optimization-course
+   #   year: 2012
+   #   note: Best poster award.
+   #   related: !!omap
+   #     - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/opt-project.pdf
+   #   topics:
+   #     ? sparse modeling
+   #     ? interpretation
+   #     ? kernels
+   #     ? optimization
 
   - key: sdm-cvpr
     title: Nonparametric kernel estimators for image classification
@@ -1551,6 +1556,7 @@ talks:
       - opt-mmd
     related: !!omap
       - "slides (pdf)": https://djsutherland.ml/slides/trustml-testing.pdf
+    type: virtual
 
   - key: trustml-testing
     title: Are These Datasets The Same? Learning Kernels for Efficient and Fair Two-sample Tests
@@ -1564,6 +1570,8 @@ talks:
       - opt-mmd
     related: !!omap
       - "slides (pdf)": https://djsutherland.ml/slides/trustml-testing.pdf
+    type: virtual
+    funded: true
 
   - key: like-deep-kernels
     title: Better deep learning (sometimes) by learning kernel mean embeddings
@@ -1575,6 +1583,7 @@ talks:
       - ssl-hsic
     related: !!omap
       - "slides (pdf)": https://djsutherland.ml/slides/like22.pdf
+    type: virtual
 
   - key: nyu-interpolation
     title: Can Uniform Convergence Explain Interpolation Learning?
@@ -1586,6 +1595,7 @@ talks:
       - gaussian-interpolators
     related: !!omap
       - "slides (pdf)": https://djsutherland.ml/slides/nyu-uniform.pdf
+    type: virtual
 
   - key: pihot-kickoff
     title: Deep kernel-based distances between distributions
@@ -1599,6 +1609,7 @@ talks:
       - mmd-gans
     related: !!omap
       - "slides (pdf)": https://djsutherland.ml/slides/pihot.pdf
+    type: virtual
 
   - key: pennstate-interpolation
     title: Can Uniform Convergence Explain Interpolation Learning?
@@ -1609,6 +1620,7 @@ talks:
       - uniform-interpolation
     related: !!omap
       - "slides (pdf)": https://djsutherland.ml/slides/pennstate-uniform.pdf
+    type: virtual
 
   - key: neurips-tutorial
     title: "Tutorial: Interpretable Comparison of Distributions and Models"
@@ -1623,6 +1635,9 @@ talks:
       - "slides 1": http://www.gatsby.ucl.ac.uk/~gretton/papers/neurips19_1.pdf
       - "slides 2": http://www.gatsby.ucl.ac.uk/~gretton/papers/neurips19_2.pdf
       - "slides 3": http://www.gatsby.ucl.ac.uk/~gretton/papers/neurips19_3.pdf
+    type: international
+    funded: true
+    teaching: true
 
   - key: umass-gans
     title: Better GANs by Using Kernels
@@ -1632,6 +1647,8 @@ talks:
     papers:
       - mmd-gans
       - smmd
+    type: national
+    funded: true
 
   - key: iciam-kerndists
     title: Kernel distances between distributions for generative models
@@ -1641,12 +1658,16 @@ talks:
     papers:
       - mmd-gans
       - smmd
+    type: international
 
   - key: mlcc-gans
     title: Introduction to Generative Adversarial Networks
     venue: mlcc
     slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/gans-mlcc/
     date: 2019-06-19
+    type: international
+    funded: true
+    teaching: true
 
   - key: mmd-gans-gpss
     title: Kernel Distances for Better Deep Generative Models
@@ -1656,6 +1677,8 @@ talks:
       - mmd-gans
       - smmd
     date: 2018-09-06
+    type: national
+    funded: true
 
   - key: mmd-gans-fair
     title: Better GANs by using the MMD
@@ -1665,6 +1688,7 @@ talks:
       - smmd
     date: 2018-06-21
     slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/mmd-gans-fair/
+    type: international
 
   - key: kexpfam-tricenter
     title: Efficiently Estimating Densities and Scores with Kernel Exponential Families
@@ -1673,6 +1697,8 @@ talks:
       - kexpfam-nystroem
     date: 2018-06-19
     slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/kexpfam-tricenter/
+    type: international
+    funded: true
 
   - key: mmd-gans-google
     title: Better GANs by using the MMD
@@ -1682,6 +1708,7 @@ talks:
       - smmd
     date: 2018-06-14
     slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/mmd-gans-google/
+    type: international
 
   - key: mmd-gans-google
     title: Better GANs by using the MMD
@@ -1694,6 +1721,7 @@ talks:
       No slides actually used at the talk because of a projector mishap,
       but they would have been the same as
       <a href="#talk-mmd-gans-google">the Google talk</a>.
+    type: international
 
   - key: mmd-gans-sheffield
     title: Advances in GANs based on the MMD
@@ -1705,6 +1733,8 @@ talks:
     slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/mmd-gans-sheffield/
     related: !!omap
       - abstract: https://sheffieldmlnet.github.io/talk/seminar-dougal-sutherland/
+    type: national
+    funded: true
 
   - key: kexpfam-ati
     title: Efficient and principled score estimation with kernel exponential families
@@ -1715,6 +1745,7 @@ talks:
     slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/highd-functions/
     video: https://www.youtube.com/watch?v=sbNI_k9P-Y4&list=PLuD_SqLtxSdW1ZC0mfLXiXXGRaL3jnud-&index=8
     topics: *kexpfam-nys-topics
+    type: local
 
   - key: kexpfam-csml
     title: Efficient and principled score estimation with kernel exponential families
@@ -1724,6 +1755,7 @@ talks:
     date: 2017-12-15
     slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/csml/kexpfam/
     topics: *kexpfam-nys-topics
+    type: local
 
   - key: icml-gan
     title: Evaluating and Training Implicit Generative Models with Two-Sample Tests
@@ -1733,6 +1765,7 @@ talks:
     date: 2017-08-10
     slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/icml-igm/
     topics: *opt-mmd-topics
+    type: international
 
   - key: dali-opt-mmd
     title: Two-Sample Tests, Integral Probability Metrics, and GAN Objectives
@@ -1743,6 +1776,7 @@ talks:
     slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/dali/
     video: https://youtu.be/Xpd6DL02C7Q
     topics: *opt-mmd-topics
+    type: international
 
   - key: oxford-opt-mmd
     title: Generative Models and Model Criticism via Optimized Maximum Mean Discrepancy
@@ -1752,3 +1786,5 @@ talks:
     date: 2017-02-03
     slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/oxford-opt-mmd.pdf
     topics: *opt-mmd-topics
+    funded: true
+    type: national

@@ -1,12 +1,13 @@
 # make is byzantine and obnoxious: https://stackoverflow.com/q/4122831/344821
 MAKEFLAGS += --no-builtin-rules
 .SUFFIXES:
-.PHONY: all clean clean-all
+.PHONY: all ubc-cv clean clean-all
 
 LATEXMK ?= latexmk
 PYTHON ?= python
 
-all: index.html biblio.bib cv.tex cv.pdf ccv-info.txt
+all: index.html biblio.bib cv.tex cv.pdf ccv-info.txt ubc-cv
+ubc-cv: ubc-cv-invited-talks.tex ubc-cv-contributed-talks.tex
 
 %: papers.yaml build.py templates/%
 	$(PYTHON) build.py $@

@@ -1,0 +1,15 @@
+{% for paper in papers if paper.my_talk -%}
+{%- set venue = venues[paper.venue] %}
+
+\item[ {{- paper.year -}} ]
+  {% if paper|in_last_year(month=5) %}\new{ {%- endif -%}
+  {{- venue.name -}}
+  {{- venue.short | maybe_wrap(" (", ")") -}}
+  {%- if venue.conference -%}
+    {%- set conf = venues[venue.conference] -%}
+    {{- "" }} (workshop at {{ conf.long_article | maybe_wrap("", " ") -}} {{- conf.name -}} {{- conf.short | maybe_wrap(", ", "") }})
+  {%- endif -%}
+  .
+  \remark{\emph{  {{- paper.title | maybe_punc(".") -}}  }}
+  {%- if paper|in_last_year(month=5) -%} } {%- endif -%}
+{% endfor %}

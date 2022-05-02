@@ -1,0 +1,19 @@
+{% for talk in talks if not talk.teaching -%}
+{%- set venue = venues[talk.venue] %}
+
+\item[ {{- "{:%b %Y}".format(talk.date) -}} ]
+  {% if talk|in_last_year(month=5) %}\new{ {%- endif -%}
+  {{- venue.name -}}
+  {{- venue.short | maybe_wrap(" (", ")") -}}
+  {%- if venue.conference -%}
+    {%- set conf = venues[venue.conference] -%}
+    {{- "" }} (workshop at {{ conf.long_article | maybe_wrap("", " ") -}} {{- conf.name -}} {{- conf.short | maybe_wrap(", ", "") }})
+  {%- endif -%}
+  {{- talk.type | maybe_wrap(" -- ", "") -}}
+  .{% if talk.funded %}\paid{}{% endif %}
+  \remark{ {{- "" -}}
+    \emph{ {{- talk.title | maybe_punc(".") -}} }
+    {{- talk.note | maybe_wrap(" ", "") -}}
+  }
+  {%- if talk|in_last_year(month=5) -%} } {%- endif -%}
+{% endfor %}
