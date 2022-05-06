@@ -46,6 +46,7 @@
     {%- set note = paper.cv_note if paper.cv_note is defined else paper.note -%}
     {{- note | maybe_wrap("\n    addendum = {", "},") -}}
 {# make sure there's a newline here #}
+    keywords = { {{- venue.type -}} },
 }
 
 {% endfor -%}

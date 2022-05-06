@@ -13,7 +13,7 @@ ubc-cv: ubc-cv-invited-talks.tex ubc-cv-contributed-talks.tex
 	$(PYTHON) build.py $@
 
 biblio.bib: biblio-cv.bib
-	sed -e '/author+an = /d; /addendum = /d' < $< > $@
+	sed -e '/author+an = /d; /addendum = /d; /keywords = /d;' < $< > $@
 
 %.pdf: %.tex biblio-cv.bib
 	mkdir -p .build/$</

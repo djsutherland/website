@@ -57,11 +57,10 @@
   % ["Dissertations", ["phd-thesis", "ba-thesis"]],
 
 {% for sec_name, sec_types in sections %}
-  \DeclareBibliographyCategory{sec{{ loop.index }}}
-  \addtocategory{sec{{ loop.index -}} }{
-    {%- for paper in venue_type_map[sec_types] -%}
-      {{- paper | bibtex_key(coauthors) -}}
-      {%- if not loop.last -%},{%- endif -%}
+  \defbibfilter{sec{{ loop.index -}} }{
+    {%- for sec in sec_types -%}
+      keyword={{ sec }}
+      {%- if not loop.last %} or {% endif -%}
     {%- endfor -%}
   }
 {% endfor %}
@@ -190,7 +189,7 @@ and \textcolor{student}{this colour} denotes one of my formal advisees.
 {% endraw %}
 
 {% for sec_name, sec_types in sections %}
-\printbibliography[category=sec{{ loop.index }},title={ {{- sec_name -}} },heading=subbibnumbered]{}
+\printbibliography[filter=sec{{ loop.index }},title={ {{- sec_name -}} },heading=subbibnumbered]{}
 {% endfor %}
 
 {% raw %}
