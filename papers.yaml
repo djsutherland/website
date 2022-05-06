@@ -821,6 +821,7 @@ papers:
       - me
     year: 2022
     venue: ijcai
+    arXiv: '2205.01233'
 
   - key: learning-path
     title: Better Supervisory Signals by Observing Learning Paths
