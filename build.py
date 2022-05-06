@@ -20,7 +20,8 @@ from unidecode import unidecode
 
 
 _dir = os.path.abspath(os.path.dirname(__file__))
-this_year = datetime.date.today().year
+today = datetime.date.today()
+this_year = today.year
 
 
 class MergedSequencesLookup(object):
@@ -60,6 +61,8 @@ def paper_data():
         key=lambda kac: (kac[1]["last"], kac[1]["first"]),
     )
 
+    data["today"] = today
+
     return data
 
 
@@ -85,6 +88,48 @@ def venue_url(venue, year=None):
     elif "web" in venue:
         return venue["web"]
     return None
+
+
+def _rate_str(got_in, out_of):
+    rate = got_in / out_of
+    if rate >= 0.01:
+        return f"{got_in:,}/{out_of:,} = {rate :.0%}"
+    elif rate >= 0.001:
+        return f"{got_in:,}/{out_of:,} = {rate :.1%}"
+    else:
+        return f"{got_in:,}/{out_of:,} < 0.1%"
+
+
+@filter
+def ar_info(paper, venue):
+    if "accepts" not in venue or paper["year"] not in venue["accepts"]:
+        return None
+    info = venue["accepts"][paper["year"]]
+
+    this_kind = paper.get("accept-kind", "unspecial")
+
+    to_this_yet = False
+    this_or_better = 0
+    any_accept = 0
+    for kind, num in info.items():
+        if not to_this_yet:
+            this_or_better += num
+        if kind == this_kind:
+            to_this_yet = True
+
+        if kind == "submitted":
+            submitted = num
+            break
+        else:
+            any_accept += num
+
+    if this_kind == "unspecial":
+        return _rate_str(this_or_better, info["submitted"])
+    else:
+        return (
+            f"{this_kind}: {_rate_str(this_or_better, submitted)}; "
+            f"overall: {_rate_str(any_accept, submitted)}"
+        )
 
 
 @filter
@@ -130,6 +175,9 @@ def latex_escape(string):
     # based on https://stackoverflow.com/a/4579006/344821
     global translation_table
 
+    if not string:
+        return string
+
     if not translation_table:
         p = re.compile(r"%?.*\DeclareUnicodeCharacter\{(\w+)\}\{(.*)\}")
         fn = subprocess.check_output(["kpsewhich", "utf8enc.dfu"]).strip()
@@ -142,6 +190,17 @@ def latex_escape(string):
                     translation_table[int(codepoint, 16)] = "{" + latex + "}"
 
     return string.translate(translation_table)
+
+
+@filter
+def bibtex_escape(string):
+    if not string:
+        return string
+    string = latex_escape(string)
+    string = string.replace("%", r"\%")
+    string = string.replace("<", r"$<$")
+    string = string.replace(">", r"$>$")
+    return string
 
 
 filters["unidecode"] = unidecode

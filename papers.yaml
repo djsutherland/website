@@ -594,6 +594,11 @@ venues:
     type: journal
     web: https://jmlr.org
 
+  jds:
+    name: ACM/IMS Journal of Data Science
+    short: JDS
+    type: journal
+
   ApJ:
     name: The Astrophysical Journal
     short: ApJ
@@ -820,6 +825,7 @@ papers:
       - milad
       - me
     year: 2022
+    date: 2022-07-23
     venue: ijcai
     arXiv: '2205.01233'
 
@@ -830,6 +836,7 @@ papers:
       - shangmin
       - me
     year: 2022
+    date: 2022-04-25
     venue: iclr
     official: https://openreview.net/forum?id=Iog0djAdbHj
     arXiv: '2203.02485'
@@ -860,6 +867,7 @@ papers:
     related: !!omap
       - web: https://queerinai.org/diversity-guide
     year: 2021
+    date: 2021-11-11
     my_talk: true
 
   - key: gaussian-interpolators
@@ -871,11 +879,14 @@ papers:
       - me
       - nati
     year: 2021
+    date: 2021-12-06
     venue: neurips
     note: Selected for oral presentation.
+    accept-kind: oral
     arXiv: '2106.09276'
     related: !!omap
       - "NYU talk": "#talk-nyu-interpolation"
+    cites_thresh: 10
 
   - key: ssl-hsic
     title: "Self-Supervised Learning with Kernel Dependence Maximization"
@@ -886,6 +897,7 @@ papers:
       - me
       - arthur
     year: 2021
+    date: 2021-12-06
     venue: neurips
     arXiv: '2106.08320'
 
@@ -898,6 +910,7 @@ papers:
       - jie-lu
       - me
     year: 2021
+    date: 2021-12-06
     venue: neurips
     arXiv: '2106.07636'
 
@@ -928,9 +941,11 @@ papers:
       - tong
       - vayer
     year: 2021
+    date: 2021-04-15
     venue: jmlr
     note: Machine Learning Open Source Software Paper.
     official: https://jmlr.org/papers/v22/20-451.html
+    cites_thresh: 100
 
   - key: irm
     title: Does Invariant Risk Minimization Capture Invariance?
@@ -943,8 +958,11 @@ papers:
     arXiv: '2101.01134'
     official: http://proceedings.mlr.press/v130/kamath21a.html
     year: 2021
+    date: 2021-04-13
     venue: aistats
     note: Selected for oral presentation.
+    accept-kind: oral
+    cites_thresh: 10
 
   - key: uniform-interpolation
     title: On Uniform Convergence and Low-Norm Interpolation Learning
@@ -956,10 +974,12 @@ papers:
       - nati
     venue: neurips
     note: Selected for spotlight presentation.
+    accept-kind: spotlight
     year: 2020
     related: !!omap
       - "Penn State talk": "#talk-pennstate-interpolation"
       - "NYU talk": "#talk-nyu-interpolation"
+    cites_thresh: 10
 
   - key: deep-testing
     title: Learning Deep Kernels for Non-Parametric Two-Sample Tests
@@ -976,6 +996,7 @@ papers:
     year: 2020
     related: !!omap
       - "video and slides": "https://icml.cc/virtual/2020/poster/5999"
+    cites_thresh: 10
 
   - key: unbiased-mmd-variance
     title: Unbiased estimators for the variance of MMD estimators
@@ -985,6 +1006,7 @@ papers:
     venue: tech-report
     arXiv: '1906.02104'
     year: 2019
+    cites_thresh: 10
 
   - key: cosmo-ml
     title: The Role of Machine Learning in the Next Decade of Cosmology
@@ -1025,6 +1047,7 @@ papers:
     topics:
       ? applications
       ? cosmology
+    cites_thresh: 10
 
   - key: dkef
     title: Learning deep kernels for exponential family densities
@@ -1046,6 +1069,7 @@ papers:
       ? density estimation
       ? kernel exponential families
     my_talk: true
+    cites_thresh: 10
 
   - key: smmd
     title: On gradient regularizers for MMD GANs
@@ -1069,6 +1093,7 @@ papers:
       ? MMD
       ? kernels
       ? deep kernels
+    cites_thresh: 10
 
   - key: mmd-gans
     title: Demystifying MMD GANs
@@ -1092,6 +1117,7 @@ papers:
       ? MMD
       ? kernels
       ? deep kernels
+    cites_thresh: 100
 
   - key: bdr-workshop
     title: Bayesian Approaches to Distribution Regression
@@ -1109,6 +1135,7 @@ papers:
       - "AISTATS version": "#bdr"
     full_version: bdr
     note: Selected for oral presentation.
+    accept-kind: oral
     topics:
       ? distribution regression
       ? MMD
@@ -1129,6 +1156,7 @@ papers:
     venue: aistats
     year: 2018
     note: Selected for oral presentation.
+    accept-kind: oral
     related: !!omap
       - slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/aistats18/
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/kexpfam-aistats18.pdf
@@ -1143,6 +1171,7 @@ papers:
       ? statistical theory
       ? kernel exponential families
     my_talk: true
+    cites_thresh: 10
 
   - key: bdr
     title: Bayesian Approaches to Distribution Regression
@@ -1165,6 +1194,7 @@ papers:
       ? bayesian
       ? kernels
       ? deep kernels
+    cites_thresh: 10
 
   - key: caponnetto-fix
     title: Fixing an error in Caponnetto and de Vito (2007)
@@ -1199,6 +1229,7 @@ papers:
       ? MMD
       ? kernels
       ? distribution regression
+    cites_thresh: 10
 
   - key: opt-mmd
     title: Generative Models and Model Criticism via Optimized Maximum Mean Discrepancy
@@ -1228,6 +1259,7 @@ papers:
       ? kernel choice
       ? deep kernels
       ? interpretation
+    cites_thresh: 100
 
   - key: thesis
     title: Scalable, Flexible, and Active Learning on Distributions
@@ -1254,6 +1286,7 @@ papers:
       ? deep kernels
       ? kernel choice
       ? active learning
+    cites_thresh: 10
 
   - key: nss
     title: List Mode Regression for Low Count Detection
@@ -1312,6 +1345,7 @@ papers:
       ? cosmology
       ? distribution regression
       ? kernels
+    cites_thresh: 10
 
   - key: hdd
     title: Linear-time Learning on Distributions with Approximate Kernel Embeddings
@@ -1332,6 +1366,7 @@ papers:
       ? kernels
       ? kernel approximation
       ? computer vision
+    cites_thresh: 10
 
   - key: hdd-workshop
     title: Linear-time Learning on Distributions with Approximate Kernel Embeddings
@@ -1368,6 +1403,7 @@ papers:
       ? kernels
       ? kernel approximation
       ? MMD
+    cites_thresh: 100
 
   - key: apps
     title: Active Pointillistic Pattern Search
@@ -1387,6 +1423,7 @@ papers:
     topics: &apps-topics
       ? active learning
       ? Gaussian processes
+    cites_thresh: 10
 
   - key: apps-workshop
     title: Active Pointillistic Pattern Search
@@ -1421,6 +1458,7 @@ papers:
     doi: 10.1088/0004-637X/803/2/50
     arXiv: '1410.0686'
     topics: *astro-topics
+    cites_thresh: 10
 
   - key: active-mf
     title: Active learning and search on low-rank matrices
@@ -1432,6 +1470,7 @@ papers:
     year: 2013
     doi: 10.1145/2487575.2487627
     note: Selected for oral presentation.
+    accept-kind: oral
     related: !!omap
       - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/kdd-13.pdf
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/kdd-13.pdf
@@ -1441,6 +1480,7 @@ papers:
       ? active learning
       ? matrix factorization
     my_talk: true
+    cites_thresh: 10
 
   - key: sdm-arxiv
     title: Kernels on Sample Sets via Nonparametric Divergence Estimates
@@ -1455,6 +1495,7 @@ papers:
     topics:
       ? distribution regression
       ? kernels
+    cites_thresh: 10
 
    # - key: sparse-modeling
    #   title: Finding Representative Objects with Sparse Modeling
@@ -1490,6 +1531,7 @@ papers:
       ? computer vision
       ? kernels
       ? distribution regression
+    cites_thresh: 10
 
   - key: guts
     title: Managing User Requests with the Grand Unified Task System (GUTS)

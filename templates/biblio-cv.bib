@@ -45,8 +45,14 @@
     {{- paper.official | maybe_wrap("\n    url = {", "},") -}}
     {%- set note = paper.cv_note if paper.cv_note is defined else paper.note -%}
     {{- note | maybe_wrap("\n    addendum = {", "},") -}}
+    {{- paper | ar_info(venue) | bibtex_escape | maybe_wrap("\n    arinfo = {", "},") -}}
 {# make sure there's a newline here #}
-    keywords = { {{- venue.type -}} },
+    keywords = {
+      {{- venue.type -}}
+      {%- if paper | in_last_year(month=5) -%}, new{%- endif -%}
+      {%- if paper.date and paper.date > today -%}, toappear{%- endif -%}
+      {{- paper.cites_thresh | maybe_wrap(", cites", "") -}}
+    },
 }
 
 {% endfor -%}
