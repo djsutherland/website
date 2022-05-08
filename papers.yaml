@@ -649,6 +649,14 @@ venues:
     web: http://www.winlp.org/winlp-2021-workshop/
     year: 2021
 
+  ppai-22:
+    name: Privacy-Preserving Artificial Intelligence
+    short: PPAI-22
+    type: workshop
+    conference: aaai
+    web: https://aaai-ppai22.github.io/
+    year: 2022
+
   ############################################################################
   # Conferences/workshops that just have talks
   dali:
@@ -840,6 +848,14 @@ papers:
     venue: iclr
     official: https://openreview.net/forum?id=Iog0djAdbHj
     arXiv: '2203.02485'
+
+  - key: private-mmd
+    title: Learning Privacy-Preserving Deep Kernels with Known Demographics
+    authors:
+      - namrata
+      - me
+    year: 2022
+    venue: ppai-22
 
   - key: optimistic-rates
     title: "Optimistic Rates: A Unifying Theory for Interpolation Learning and Regularization in Linear Regression"
