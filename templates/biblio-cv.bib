@@ -45,6 +45,9 @@
     {{- paper.official | maybe_wrap("\n    url = {", "},") -}}
     {%- set note = paper.cv_note if paper.cv_note is defined else paper.note -%}
     {{- note | maybe_wrap("\n    addendum = {", "},") -}}
+    {%- if paper.date and paper.date > today %}
+    pubstate = {toappear},
+    {%- endif -%}
     {{- paper | ar_info(venue) | bibtex_escape | maybe_wrap("\n    arinfo = {", "},") -}}
 {# make sure there's a newline here #}
     keywords = {

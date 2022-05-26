@@ -35,13 +35,20 @@ coauthors:
     web: https://won-bae.github.io/
     student_years: [2020, 3000]
 
+  akilesh:
+    first: Akilesh
+    last: Tangella
+      #student_years: [2020, 2021]
+  lijia:
+    first: Lijia
+    last: Zhou
+    web: https://zhoulijia.github.io/
+      #student_years: [2020, 3000]
+
   aadi:
     first: Aaditya
     last: Ramdas
     web: https://people.eecs.berkeley.edu/~aramdas/
-  akilesh:
-    first: Akilesh
-    last: Tangella
   alaya:
     first: Mokhtar Z.
     last: Alaya
@@ -227,10 +234,6 @@ coauthors:
   lanusse:
     first: François
     last: Lanusse
-  lijia:
-    first: Lijia
-    last: Zhou
-    web: https://zhoulijia.github.io/
   leon:
     first: Ho Chung Leon
     last: Law
