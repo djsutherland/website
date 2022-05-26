@@ -186,7 +186,8 @@
     <section id="pubs-sec">
     <h3 id="pubs">Publications</h3>
     <p>
-      Below, <span class="equal">**</span> denotes equal contribution.
+      Below, <span class="equal">**</span> denotes equal contribution,
+      and <span class="my-student">this colour</span> one of my students.
       Also available as <a href="biblio.bib">a .bib file</a>,
       and most of these are on
       <a href="https://www.semanticscholar.org/author/Danica-J.-Sutherland/36326783">Semantic Scholar</a>.
@@ -229,7 +230,7 @@
                 {%- endif -%}
                 {%- for author in authors -%}
                   {%- set auth = author | get_author(coauthors, year=paper.year) -%}
-                  <span {% if not paper.committee %}data-coauthor="{{ auth.key }}"{% endif %}>
+                  <span {% if auth.my_student %}class="my-student"{% endif %} {% if not paper.committee %}data-coauthor="{{ auth.key }}"{% endif %}>
                     {{- auth | full_name | maybe_link(auth.web) -}}
                     {%- if auth.is_equal %}<span class="equal">**</span>{%- endif -%}
                   </span>

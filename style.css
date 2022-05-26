@@ -121,6 +121,9 @@ img#me {
 .authors {
     display: block;
 }
+.my-student, .paper .my-student a {
+    color: RGB(200, 100, 0);
+}
 .venue {
     display: block;
 }
