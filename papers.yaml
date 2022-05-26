@@ -22,7 +22,7 @@ coauthors:
     student_years: [2020, 3000]
   milad:
     first: Milad
-    last: Jalali
+    last: Jalali Asadabadi
     student_years: [2020, 3000]
   namrata:
     first: Namrata
@@ -147,7 +147,11 @@ coauthors:
   frederic:
     first: Frederic
     last: Koehler
-    web: https://math.mit.edu/~fkoehler/
+    web: https://frkoehle.github.io
+  frederik:
+    first: Frederik
+    last: Harder
+    web: https://is.mpg.de/person/fharder
   gautheron:
     first: Léo
     last: Gautheron
@@ -260,6 +264,10 @@ coauthors:
     first: Michelle
     last: Ntampaka
     web: https://www.cfa.harvard.edu/~mntampaka/
+  mijung:
+    first: Mijung
+    last: Park
+    web: https://privacy-preserving-machine-learning.github.io/people.html
   mikolaj:
     first: Mikołaj
     last: Bińkowski
@@ -817,6 +825,18 @@ venues:
 ################################################################################
 
 papers:
+  - key: dp-mepf
+    title: Differentially Private Data Generation Needs Better Features
+    authors:
+      - frederik
+      - milad
+      - me
+      - mijung
+    year: 2022
+    date: 2022-05-25
+    venue: preprint
+    arXiv: '2205.12900'
+
   - key: prediction-filtering
     title: "One Weird Trick to Improve Your Semi-Weakly Supervised Semantic Segmentation Model"
     authors:
