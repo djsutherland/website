@@ -109,6 +109,10 @@ coauthors:
   courty:
     first: Nicolas
     last: Courty
+  daijin-kim:
+    first: Daijin
+    last: Kim
+    web: http://imlab.postech.ac.kr/members_d.htm
   daniel-elia:
     first: Daniel-Elia
     last: Feist-Alexandrov
@@ -196,6 +200,9 @@ coauthors:
     first: Jie
     last: Lu
     web: https://www.uts.edu.au/staff/jie.lu
+  jinhwan:
+    first: Jinhwan
+    last: Seo
   jeff:
     first: Jeff
     last: Schneider
@@ -218,6 +225,10 @@ coauthors:
     first: Jyunhug
     last: Noh
     web: https://junhyug.github.io/
+  kaveh:
+    first: Kaveh
+    last: Hassani
+    web: https://www.autodesk.com/research/people/kaveh-hassani
   kevin:
     first: Li  # how he wants it...
     last: Wenliang
@@ -581,6 +592,18 @@ venues:
         - unspecial: 465
         - submitted: 1776
 
+  eccv:
+    name: European Conference on Computer Vision
+    short: ECCV
+    long_article: the
+    type: conference
+    web_by_year:
+      2022: https://eccv2022.ecva.net/
+    accepts:
+      2022: !!omap
+        - unspecial: 1650
+        - submitted: 5803
+
   emnlp:
     name: Conference on Empirical Methods in Natural Language Processing
     short: EMNLP
@@ -836,6 +859,50 @@ venues:
 ################################################################################
 
 papers:
+  - key: pseudo-ntk
+    title: A Fast, Well-Founded Approximation to the Empirical Neural Tangent Kernel
+    authors:
+      - amin
+      - me
+    venue: preprint
+    year: 2022
+    date: 2022-06-25
+    arXiv: '2206.12543'
+
+  - key: active-ntk
+    title: Making Look-Ahead Active Learning Strategies Feasible with Neural Tangent Kernels
+    authors:
+      - amin*
+      - won*
+      - me
+    venue: preprint
+    year: 2022
+    date: 2022-06-25
+    arXiv: '2206.12569'
+
+  - key: contrastive-graph-eval
+    title: Evaluating Graph Generative Models with Contrastively Learned Features
+    authors:
+      - hamed
+      - kaveh
+      - me
+    venue: preprint
+    year: 2022
+    date: 2022-06-13
+    arXiv: '2206.06234'
+
+  - key: contrastive-wsod
+    title: Object Discovery via Contrastive Learning for Weakly Supervised Object Detection
+    authors:
+      - jinhwan
+      - won
+      - me
+      - june
+      - daijin-kim
+    year: 2022
+    date: 2022-10-23
+    venue: eccv
+
   - key: dp-mepf
     title: Differentially Private Data Generation Needs Better Features
     authors:
