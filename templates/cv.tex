@@ -46,6 +46,15 @@
     {}%
 }
 
+% ignore pubstate
+\DeclareSourcemap{
+    \maps[datatype=bibtex]{
+        \map[overwrite]{
+            \step[fieldset=pubstate,fieldvalue={}]
+        }
+    }
+}
+
 {% endraw %}
 
 {%- set sections = [
