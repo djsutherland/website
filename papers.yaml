@@ -902,6 +902,8 @@ papers:
     year: 2022
     date: 2022-10-23
     venue: eccv
+    related: !!omap
+      - code: https://github.com/jinhseo/OD-WSCL
 
   - key: dp-mepf
     title: Differentially Private Data Generation Needs Better Features
