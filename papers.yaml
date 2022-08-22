@@ -902,7 +902,7 @@ papers:
     year: 2022
     date: 2022-10-23
     venue: eccv
-    arxiv: '2208.07576'
+    arXiv: '2208.07576'
     related: !!omap
       - code: https://github.com/jinhseo/OD-WSCL
 
