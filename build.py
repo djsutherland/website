@@ -321,7 +321,8 @@ def make_site(outpath="."):
         filters=filters,
         outpath=outpath,
     )
-    site._env.tests["falsey"] = lambda x: not x
+    env = site.env if hasattr(site, 'env') else site._env
+    env.tests["falsey"] = lambda x: not x
     return site
 
 
