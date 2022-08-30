@@ -9,7 +9,7 @@ OUTDIR ?= built
 
 STATIC := $(notdir $(wildcard static/*))
 TEMPLATE := $(notdir $(wildcard templates/*))
-TEX := cv
+TEX := cv form100-contributions
 OTHER := biblio.bib
 
 STATIC_TARGETS := $(addprefix ${OUTDIR}/,${STATIC})

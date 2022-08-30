@@ -1,0 +1,164 @@
+{% raw -%}
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[american]{babel}
+\usepackage{csquotes}
+
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[margin=0.75in,headheight=13.6pt]{geometry}
+\usepackage{times}
+\usepackage[compact]{titlesec}
+
+\usepackage{hyperref}
+
+
+\usepackage[maxbibnames=100,doi=false,url=false,sorting=none,style=authortitle,giveninits=true,eprint=false,uniquelist=false]{biblatex}
+\DeclareNameAlias{author}{given-family}
+
+% \DeclareFieldFormat[unpublished,misc]{title}{\mkbibquote{#1\isdot}}
+% \DeclareFieldFormat[unpublished,misc]{labeltitle}{\mkbibquote{#1}}
+\renewbibmacro{in:}{}
+
+% cite by title only
+\renewbibmacro{cite}{\usebibmacro{cite:title}}
+
+\newcommand{\bibeqcon}{{\footnotemark[1]}}
+
+% bold student names in bib
+\renewcommand*{\mkbibnamegiven}[1]{%
+  \ifitemannotation{me}%
+    {#1}%{\textbf{#1}}%
+    {\ifitemannotation{mystudent}{\textbf{#1}}{#1}}}
+\renewcommand*{\mkbibnamefamily}[1]{%
+  \ifitemannotation{me}%
+    {#1}%{\textbf{#1}}%
+    {\ifitemannotation{mystudent}{\textbf{#1}}{#1}}%
+  \ifitemannotation{equal}
+    {\bibeqcon}
+    {}%
+}
+
+{% endraw %}
+
+{%- set sections = [
+  ["Journal papers", ["journal"]],
+  ["Low-acceptance-rate conference papers", ["conference"]],
+  ["Papers under submission to low-acceptance-rate conferences", ["preprint"]],
+  ["High-acceptance-rate and non-refereed contributions", ["workshop", "poster", "tech-report"]],
+] -%}
+
+{% for sec_name, sec_types in sections %}
+  \DeclareBibliographyCategory{sec{{ loop.index }}}
+  \addtocategory{sec{{ loop.index -}} }{
+    {%- for paper in venue_type_map[sec_types]
+        if paper|in_last_years(6) and not paper.full_version
+    -%}
+      {{- paper | bibtex_key(coauthors) -}}
+      {%- if not loop.last -%},{%- endif -%}
+    {%- endfor -%}
+  }
+{% endfor %}
+
+{% raw %}
+\addbibresource{biblio-cv.bib}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\scshape Danica Sutherland -- 590329}
+\cfoot{\thepage}
+
+\begin{document}
+
+[First, a brief note: I have unfortunately not yet been able to carry out a legal name change, due to immigration-related restrictions, but use the name Danica in all academic contexts. Both first names will thus appear in various parts of this application.]
+
+
+\section{Most significant contributions to research}
+
+\subsection{GAN evaluation}
+
+As a part of \cite{binkowski:mmd-gans}, I – and this part of the paper was almost entirely my personal contribution – contributed significantly to the state of evaluation of generative models. First, I pointed out that the standard evaluation metric for GANs, the Fréchet Inception Distance (FID), has an estimator with very unusual properties: it is strongly biased but has a very small variance. Practitioners, used to unbiased estimators, would then frequently think "oh, I see almost no variance with a small sample size, it must be basically the true value" – but I demonstrated that it is very easy to find examples where model A looks far superior to model B with a moderate sample size, while under the true population criterion model B is actually much better. Although FID has remained mostly standard, practitioners at least mostly use large and consistent sample sizes for comparison now.
+
+I also proposed a similar metric with an unbiased, asymptotically normal estimator, the Kernel Inception Distance (KID). The KID is now included in the standard TensorFlow GAN toolkit, is included in some new significant evaluation efforts such as the HYPE benchmark, and received the endorsement of Ian Goodfellow, the inventor of GANs.
+
+
+
+\subsection{Optimized kernels for two-sample tests}
+
+In \cite{sutherland:opt-mmd}, we proposed a method to find the most powerful kernel for a two-sample test. (I was the lead author on this work.) This problem is extremely widespread, and to my knowledge this method is in general domains still essentially the best-performing method known for this task today. We recently revisited the method in \cite{liu:deep-testing}, suggesting some tweaks to the estimator which allowed for more scalable learning of deep kernels as well as providing theoretical proofs that the method works. (I was the last author on this paper, but also wrote most of the proofs.) Our current follow-up \cite{liu:meta-2st} builds off this scheme to more efficiently handle situations where several related testing problems are available. (I played the ``advisor'' role and was last author on this project.)
+
+Our tutorial at NeurIPS 2019, which was popular enough that we were upgraded to a larger room the morning of the tutorial, helped spread these and related ideas to a large audience. For instance, we've been told that a top Formula 1 company is using methods learned from our tutorial to help design new cars.
+
+
+\subsection{Theory of Invariant Risk Minimization}
+The paper ``Invariant Risk Minimization'' of Arjovsky et al.\ caused quite a splash when it came out, proposing a new paradigm of learning with the promise to be far more robust to ``spurious correlations,'' along with a reasonably-practical approximate algorithm. Yet, when practitioners tried out the algorithm on various problems, results were mostly disappointing. We initially began the project that became \cite{kamath:irm} with the aim of a different approximation to the IRM framework, but eventually realized that there were many pressing questions about whether the framework itself even worked. This paper (where I both served as the ``week-to-week advisor'' and proved some of the theorems) addressed several core questions about what the IRM framework can and cannot do. It received an oral presentation at AISTATS 2021, substantially clarified what is possible in the IRM framework, and (in my opinion) fairly conclusively showed that the particular algorithm ``IRMv1'' is fundamentally flawed even in surprisingly simple situations.
+
+
+\subsection{Uniform convergence of interpolators}
+In 2019, Nagarajan and Kolter brought considerable doubt as to whether the standard workhorse of statistical learning theory, uniform convergence, is capable of explaining learning in certain high-dimensional regimes. Separately, several other researchers, in particular Mikhail Belkin, were advocating a point of view that ``there are no'' uniform convergence bounds capable of explaining modern interpolating machine learning methods, ``and no reason they should exist.''
+
+In \cite{zhou:uniform-interpolation}, we suggested an alternative to simply throwing out the vast majority of thirty years of research in the field: considering uniform convergence of predictors with zero training error. We showed that in one particular high-dimensional linear regression setting, this style of analysis can appropriately show consistency of the minimal-norm linear interpolator, and in fact can analyze the behavior of larger-norm interpolators as well. (I joined this project after it began, but played the ``week-to-week advisor'' role as well as writing some of the proofs myself.) This paper spawned one direct sequel from an unrelated research group (``Exact Gap between Generalization Error and Uniform Convergence in Random Feature Models'' by Yang et al.) and has already been cited in major recent review papers and an online textbook on deep learning theory.
+
+In our current submission \cite{koehler:gaussian-interpolators}, we extended the proof technique of the previous paper from a single particular learning problem to any Gaussian linear regression problem, matching previous conditions for consistency of the minimal-norm linear interpolator and confirming a bound speculated by the earlier paper for larger-norm interpolators. (On this project, I played the ``week-to-week advisor'' role.)
+
+
+\subsection{MMD GANs}
+
+In \cite{binkowski:mmd-gans} and \cite{arbel:smmd}, we significantly advanced the understanding and practice of MMD-based GAN models. We began writing ``Demystifying'' because the prior simultaneous approaches to MMD GANs had made some misleading theoretical claims and some suboptimal practical choices. Our paper ``demystified'' the situation, relating both approaches to the overall GAN framework and proposing an updated regularization scheme based on WGAN-GPs as well as various other practical fixes that yielded substantially improved models.
+(For ``Demystifying,'' I was co-first author; I led the work on evaluation methods described above as well as parts of the theoretical analysis, and played a more advisory role on the experiments.)
+
+\cite{arbel:smmd} further improved the situation of MMD GANs by identifying a foundational issue with theory, demonstrating that they failed too often even on trivial toy problems, then defining a new notion of a distance that solved the failure theoretically, then found that it significantly improved real models. Although the model hasn't taken off to the extent that I might have hoped for, the theory-to-practice takeaway of this paper was deeply satisfying to me, and it remains a competitive GAN variant today. (On this paper I was again co-first author; I led on aspects of the theoretical analysis and positioning relative to other work, including experiments investigating the behaviour of less-practical variants of our proposal, and played an advisory role for the main experiments.)
+
+
+
+\section{Research Contributions}
+\renewcommand{\bibeqcon}{{\footnotemark[1]}}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}  %\fnsymbol{footnote}}
+In machine learning, the most valued publications are those at the top conferences -- NeurIPS and ICML, followed closely by the more specialized and smaller conferences ICLR, AISTATS, UAI, and COLT, each of which typically has an acceptance rate around 20-30\%; at NeurIPS and AISTATS, around 10\% of submissions receive spotlight presentations, and single-digit percentages for oral presentations.
+Journal publications are for the most part considered far less important.
+\nocite{*}
+
+Author order is typically meaningful,
+roughly with students and postdocs first sorted by decreasing amount of contribution,
+then professors in increasing order of some combination of seniority and amount contribution,
+such that the most prestigious positions are first and last.
+Shared first authorships, ordered arbitrarily and denoted below by \bibeqcon{}, are also common.
+{% endraw %}
+
+{% for sec_name, sec_types in sections %}
+\printbibliography[category=sec{{ loop.index }},title={ {{- sec_name -}} },heading=subbibnumbered]{}
+{% endfor %}
+
+{% raw %}
+
+\section{Contributions to the Training of Highly Qualified Personnel}
+
+I began at UBC in January 2021, but I admitted and began advising four UBC students (two MSc, two PhD) in September 2020. Another MSc student switched to my supervision in January 2021, and another PhD began in September 2021.
+
+Yi Ren, one of the PhD students, came in with experience in and excitement for neural iterated learning frameworks. Eventually, seeing many connections to knowledge distillation, we decided to first focus on this ``sub-problem.'' We are currently preparing a manuscript for submission to ICLR in a few weeks, about a novel perspective which also leads to a new algorithm.
+
+Wonho Bae, another PhD student, joined with expertise in weakly-supervised object localization. We built off of this and my interest in representation learning to submit one paper on semi-weakly supervised semantic segmentation. Recently, we've been investigating options for active learning in this space, and are currently exploring an idea about exploiting neural tangent kernels to make powerful active learning criteria more efficient.
+
+Mohamad Amin Mohamadi is the MSc student who switched to my supervision in January. He is currently working on theoretical aspects of the active learning with neural tangent kernels project, taking a break from a project investigating the capabilities of variants of the Invariant Risk Minimization framework. In both areas, he had a lot of missing background material to catch up on, but he's performed admirably at that; it was inspiring to see him go from having very little background knowledge to meaningfully absorbing and criticizing cutting-edge, difficult theoretical papers in a few months.
+
+Namrata Deka, an MSc student, has been working on interactive, interpretable, controllable representation learning for distinguishing distributions, and also recently completed a summer internship in computer vision with Amir Zamir at EPFL. We've run into more difficult spots in this project than expected, but we hope to have a submittable paper for this project -- as well as for her internship project -- by later this year.
+
+Milad Jalali, the other MSc student, has been investigating selective inference for kernel learning in two-sample testing, which allows us to avoid data splitting that would otherwise be necessary to conduct valid tests; there was a lot of statistical background for him to learn, but I'm hopeful that this will yield a good result in the near future. He also contributed some theoretical insights to the semi-weakly supervised semantic segmentation project.
+
+Overall, I've been very happy with my students, though the pandemic has made many things much more difficult than they would have been otherwise. Within the next few weeks, five of my six students will finally be able to meet in person, and the lab will be able to start developing a closer group environment.
+
+At TTI-Chicago, I also had semi-formal advising relationships with two students. Both are advised by Nati Srebro, who reached out to me in March 2020 when due to new childcare responsibilities he could no longer do as much active weekly advising. With each, I took over week-to-week advising duties with only occasional joint meetings; this is still the case for Lijia.
+
+Both of these relationships resulted in papers discussed in my ``most valuable contributions'' section.
+Lijia Zhou, a then-second-year PhD student from UChicago Statistics, is still studying the relationship between uniform convergence and interpolation learning with me, as well as some other theoretical projects. Akilesh Tangella, a second-year TTI-Chicago PhD student, worked on Invariant Risk Minimization; we were later joined by Nati's postdoc Pritish Kamath.
+
+Akilesh ended up deciding to leave his PhD for industry after this project. I had many conversations with him about this decision and the factors that led to it. I hope I helped him navigate his career path more smoothly; when I asked for consent to mention his name in NSERC applications, he replied, ``Of course!!! You have helped me a lot in life.''
+
+This kind of graduate student support is one important aspect of building a fair, effective, and humane environment for students. Another has been made clear in my involvement in departmental graduate admissions for two years now. The applicant pool is, of course, vast majority white or Asian, mostly men, and heavily weighted towards students with more economic privilege than most in their respective countries; the ways we identify top candidates from the enormous pool introduce their own biases on top of that. For one student I admitted, who went to a relatively unknown undergraduate institution, I had to provide additional justification to the university -- an indication that even that level of diversity in admissions is fairly rare. I will of course continue to actively work towards identifying excellent applicants who may not seem to be the most enormously qualified ``on paper.''
+
+I have also been working to fight another EDI challenge closer to my own experience. As a student, like many who eventually became academics, I identified strongly with my academic and intellectual pursuits. Unlike most such students, though, I was also struggling to come to terms with my own transgender identity. Not seeing any signs around me that it was possible for trans or even gay people to have a career in this field, it felt impossible to explore this more without abandoning my life path. For those less able to ignore or hide their ``competing'' identities, it is extremely easy for me to see how they could be driven out of the field even if no one is intentionally antagonistic. I've been volunteering with the cross-institution Queer in AI organization in various capacities, and also recently spoke at an event run by UBC's Queer Coded student group; both approaches hopefully help queer students see that computer science and machine learning are options for them too.
+
+
+\end{document}
+{%- endraw -%}
