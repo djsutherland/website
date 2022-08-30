@@ -315,10 +315,11 @@ def last_edit_dt(filenames):
         return datetime.datetime.fromtimestamp(int(out.strip()))
 
 
-def make_site():
+def make_site(outpath="."):
     site = staticjinja.Site.make_site(
         contexts=[(".*", paper_data)],
         filters=filters,
+        outpath=outpath,
     )
     site._env.tests["falsey"] = lambda x: not x
     return site
@@ -329,14 +330,15 @@ def render(site, files=None, watch=False):
         for file in files:
             site.render_template(site.get_template(file))
     else:
-        site.render(use_reloader=watch)
+        site.render(use_reloader=watch, outpath=outpath)
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--watch", action="store_true", default=False)
+    parser.add_argument("--output-path", "-o", default="built")
     parser.add_argument("files", nargs="*")
     args = parser.parse_args()
 
-    site = make_site()
+    site = make_site(outpath=args.output_path)
     render(site, files=args.files, watch=args.watch)
