@@ -1,7 +1,7 @@
 # make is byzantine and obnoxious: https://stackoverflow.com/q/4122831/344821
 MAKEFLAGS += --no-builtin-rules
 .SUFFIXES:
-.PHONY: all static build ubc-cv tidy clean
+.PHONY: all tidy clean
 
 LATEXMK ?= latexmk
 PYTHON ?= python

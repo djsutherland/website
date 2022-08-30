@@ -1,17 +1,11 @@
-/built
 /tmp
 /papers
 /posters
 /slides
 /venv
 
+/built
 /.build/
-/index.html
-/*.bib
-/*.tex
-/*.pdf
-/ccv-info.txt
-
 
 __pycache__/
 *.py[cod]
