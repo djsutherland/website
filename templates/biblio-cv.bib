@@ -45,13 +45,12 @@
     {%- set note = paper.cv_note if paper.cv_note is defined else paper.note -%}
     {{- note | maybe_wrap("\n    addendum = {", "},") -}}
     {%- if paper.date and paper.date > today %}
-    pubstate = {toappear},
+    pubstate = {To appear.},
     {%- elif show_submission and paper.submitted %}
     pubstate = {In submission.},
     {%- endif -%}
 
     {{- paper | ar_info(venue) | bibtex_escape | maybe_wrap("\n    arinfo = {", "},") -}}
-
 {# make sure there's a newline here #}
     keywords = {
       {{- venue.type -}}
