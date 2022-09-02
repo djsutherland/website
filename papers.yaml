@@ -320,6 +320,10 @@ coauthors:
   peek:
     first: J. E. G.
     last: Peek
+  pragya:
+    first: Pragya
+    last: Sur
+    web: https://sites.harvard.edu/prs499/
   pranav:
     first: A
     last: Pranav
@@ -435,6 +439,9 @@ venues:
   preprint:
     name: Preprint
     type: preprint
+  private-sub:
+    name: Submitted
+    type: private
   tech-report:
     name: Technical report
     type: tech-report
@@ -859,6 +866,29 @@ venues:
 ################################################################################
 
 papers:
+  - key: moreau
+    title: A Non-Asymptotic Moreau Envelope Theory for High-Dimensional Generalized Linear Models
+    authors:
+      - lijia*
+      - frederic*
+      - pragya
+      - me
+      - nati
+    venue: private-sub
+    submitted: neurips
+    year: 2022
+    date: 2022-06-01
+
+  - key: mmd-bfair
+    title: Kernel Two-Sample Block Tests for Fair Representation Learning
+    authors:
+      - namrata
+      - me
+    venue: private-sub
+    submitted: neurips
+    year: 2022
+    date: 2022-06-01
+
   - key: pseudo-ntk
     title: A Fast, Well-Founded Approximation to the Empirical Neural Tangent Kernel
     authors:
@@ -876,6 +906,7 @@ papers:
       - won*
       - me
     venue: preprint
+    submitted: neurips
     year: 2022
     date: 2022-06-25
     arXiv: '2206.12569'
@@ -887,6 +918,7 @@ papers:
       - kaveh
       - me
     venue: preprint
+    submitted: neurips
     year: 2022
     date: 2022-06-13
     arXiv: '2206.06234'
@@ -916,6 +948,7 @@ papers:
     year: 2022
     date: 2022-05-25
     venue: preprint
+    submitted: neurips
     arXiv: '2205.12900'
 
   - key: prediction-filtering
@@ -960,6 +993,7 @@ papers:
     year: 2021
     arXiv: '2112.04470'
     venue: preprint
+    submitted: jds
 
   - key: queerinai-dni
     title: "How to Make Virtual Conferences Queer-Friendly: A Guide"

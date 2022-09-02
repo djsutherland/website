@@ -28,14 +28,16 @@ ${TEMPLATE_TARGETS}: ${OUTDIR}/%: templates/% papers.yaml
 	@mkdir -p ${OUTDIR}
 	$(PYTHON) build.py --output-path ${OUTDIR} $(notdir $@)
 
-${TEX_TARGETS}: ${OUTDIR}/%.pdf: ${OUTDIR}/%.tex ${OUTDIR}/biblio-cv.bib
+${OUTDIR}/cv.pdf: ${OUTDIR}/biblio-cv.bib
+${OUTDIR}/form100-contributions.pdf: ${OUTDIR}/biblio-cv-subs.bib
+${TEX_TARGETS}: ${OUTDIR}/%.pdf: ${OUTDIR}/%.tex
 	mkdir -p .build/$(notdir $<)/
 	ln -f $+ .build/$(notdir $<)/
 	cd .build/$(notdir $<)/ && $(LATEXMK) -pdf -silent $(notdir $<)
 	ln -f .build/$(notdir $<)/$(notdir $@) $@
 
 ${OUTDIR}/biblio.bib: ${OUTDIR}/biblio-cv.bib
-	sed -e '/author+an = /d; /addendum = /d; /keywords = /d; /pubstate =/d;' < $< > $@
+	sed -e '/author+an = /d; /addendum = /d; /keywords = /d; /pubstate =/d; /arinfo =/d;' < $< > $@
 
 
 tidy:

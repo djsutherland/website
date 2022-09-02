@@ -12,6 +12,7 @@
 \usepackage[compact]{titlesec}
 
 \usepackage{hyperref}
+\usepackage{todonotes}
 
 
 \usepackage[maxbibnames=100,doi=false,url=false,sorting=none,style=authortitle,giveninits=true,eprint=false,uniquelist=false]{biblatex}
@@ -43,17 +44,18 @@
 {% endraw %}
 
 {%- set sections = [
-  ["Journal papers", ["journal"]],
-  ["Low-acceptance-rate conference papers", ["conference"]],
-  ["Papers under submission to low-acceptance-rate conferences", ["preprint"]],
-  ["High-acceptance-rate and non-refereed contributions", ["workshop", "poster", "tech-report"]],
+  ["Journal papers", ["journal"], False],
+  ["Low-acceptance-rate conference papers", ["conference"], False],
+  ["Papers under submission to journals and low-acceptance-rate conferences", ["preprint", "private"], True],
+  ["High-acceptance-rate and non-refereed contributions", ["workshop", "poster", "tech-report"], False],
 ] -%}
 
-{% for sec_name, sec_types in sections %}
+{% for sec_name, sec_types, submitted_only in sections %}
   \DeclareBibliographyCategory{sec{{ loop.index }}}
   \addtocategory{sec{{ loop.index -}} }{
     {%- for paper in venue_type_map[sec_types]
         if paper|in_last_years(6) and not paper.full_version
+           and (not submitted_only or paper.submitted)
     -%}
       {{- paper | bibtex_key(coauthors) -}}
       {%- if not loop.last -%},{%- endif -%}
@@ -62,7 +64,18 @@
 {% endfor %}
 
 {% raw %}
-\addbibresource{biblio-cv.bib}
+
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map[overwrite]{
+      \step[fieldsource=kind+sub, fieldvalue=inproceedings, final]
+      \step[typetarget=inproceedings]
+      \step[fieldsource=booktitle+sub, fieldset=booktitle, origfieldval]
+    }
+  }
+}
+
+\addbibresource{biblio-cv-subs.bib}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -71,10 +84,17 @@
 
 \begin{document}
 
-[First, a brief note: I have unfortunately not yet been able to carry out a legal name change, due to immigration-related restrictions, but use the name Danica in all academic contexts. Both first names will thus appear in various parts of this application.]
-
-
 \section{Most significant contributions to research}
+
+\todo[inline]{Add NTK active learning?}
+
+\subsection{Optimized kernels for two-sample tests}
+
+In \cite{sutherland:opt-mmd}, we proposed a method to find the most powerful kernel for a two-sample test. (I was the lead author on this work.) This problem is extremely widespread, and to my knowledge this method is in general domains still essentially the best-performing method known for this task today. We recently revisited the method in \cite{liu:deep-testing}, suggesting some tweaks to the estimator which allowed for more scalable learning of deep kernels as well as providing theoretical proofs that the method works. (I was the last author on this paper, but also wrote most of the proofs.) Our current follow-up \cite{liu:meta-2st} builds off this scheme to more efficiently handle situations where several related testing problems are available. (I played the ``advisor'' role and was last author on this project.)
+
+Our tutorial at NeurIPS 2019, which was popular enough that we were upgraded to a larger room the morning of the tutorial, helped spread these and related ideas to a large audience. For instance, we've been told that a top Formula 1 company is using methods learned from our tutorial to help design new cars.
+\todo{fix meta-testing, add Namrata's stuff}
+
 
 \subsection{GAN evaluation}
 
@@ -83,24 +103,16 @@ As a part of \cite{binkowski:mmd-gans}, I – and this part of the paper was alm
 I also proposed a similar metric with an unbiased, asymptotically normal estimator, the Kernel Inception Distance (KID). The KID is now included in the standard TensorFlow GAN toolkit, is included in some new significant evaluation efforts such as the HYPE benchmark, and received the endorsement of Ian Goodfellow, the inventor of GANs.
 
 
-
-\subsection{Optimized kernels for two-sample tests}
-
-In \cite{sutherland:opt-mmd}, we proposed a method to find the most powerful kernel for a two-sample test. (I was the lead author on this work.) This problem is extremely widespread, and to my knowledge this method is in general domains still essentially the best-performing method known for this task today. We recently revisited the method in \cite{liu:deep-testing}, suggesting some tweaks to the estimator which allowed for more scalable learning of deep kernels as well as providing theoretical proofs that the method works. (I was the last author on this paper, but also wrote most of the proofs.) Our current follow-up \cite{liu:meta-2st} builds off this scheme to more efficiently handle situations where several related testing problems are available. (I played the ``advisor'' role and was last author on this project.)
-
-Our tutorial at NeurIPS 2019, which was popular enough that we were upgraded to a larger room the morning of the tutorial, helped spread these and related ideas to a large audience. For instance, we've been told that a top Formula 1 company is using methods learned from our tutorial to help design new cars.
-
-
-\subsection{Theory of Invariant Risk Minimization}
-The paper ``Invariant Risk Minimization'' of Arjovsky et al.\ caused quite a splash when it came out, proposing a new paradigm of learning with the promise to be far more robust to ``spurious correlations,'' along with a reasonably-practical approximate algorithm. Yet, when practitioners tried out the algorithm on various problems, results were mostly disappointing. We initially began the project that became \cite{kamath:irm} with the aim of a different approximation to the IRM framework, but eventually realized that there were many pressing questions about whether the framework itself even worked. This paper (where I both served as the ``week-to-week advisor'' and proved some of the theorems) addressed several core questions about what the IRM framework can and cannot do. It received an oral presentation at AISTATS 2021, substantially clarified what is possible in the IRM framework, and (in my opinion) fairly conclusively showed that the particular algorithm ``IRMv1'' is fundamentally flawed even in surprisingly simple situations.
-
-
 \subsection{Uniform convergence of interpolators}
 In 2019, Nagarajan and Kolter brought considerable doubt as to whether the standard workhorse of statistical learning theory, uniform convergence, is capable of explaining learning in certain high-dimensional regimes. Separately, several other researchers, in particular Mikhail Belkin, were advocating a point of view that ``there are no'' uniform convergence bounds capable of explaining modern interpolating machine learning methods, ``and no reason they should exist.''
 
 In \cite{zhou:uniform-interpolation}, we suggested an alternative to simply throwing out the vast majority of thirty years of research in the field: considering uniform convergence of predictors with zero training error. We showed that in one particular high-dimensional linear regression setting, this style of analysis can appropriately show consistency of the minimal-norm linear interpolator, and in fact can analyze the behavior of larger-norm interpolators as well. (I joined this project after it began, but played the ``week-to-week advisor'' role as well as writing some of the proofs myself.) This paper spawned one direct sequel from an unrelated research group (``Exact Gap between Generalization Error and Uniform Convergence in Random Feature Models'' by Yang et al.) and has already been cited in major recent review papers and an online textbook on deep learning theory.
 
 In our current submission \cite{koehler:gaussian-interpolators}, we extended the proof technique of the previous paper from a single particular learning problem to any Gaussian linear regression problem, matching previous conditions for consistency of the minimal-norm linear interpolator and confirming a bound speculated by the earlier paper for larger-norm interpolators. (On this project, I played the ``week-to-week advisor'' role.)
+\todo{add last couple papers}
+
+\subsection{Theory of Invariant Risk Minimization}
+The paper ``Invariant Risk Minimization'' of Arjovsky et al.\ caused quite a splash when it came out, proposing a new paradigm of learning with the promise to be far more robust to ``spurious correlations,'' along with a reasonably-practical approximate algorithm. Yet, when practitioners tried out the algorithm on various problems, results were mostly disappointing. We initially began the project that became \cite{kamath:irm} with the aim of a different approximation to the IRM framework, but eventually realized that there were many pressing questions about whether the framework itself even worked. This paper (where I both served as the ``week-to-week advisor'' and proved some of the theorems) addressed several core questions about what the IRM framework can and cannot do. It received an oral presentation at AISTATS 2021, substantially clarified what is possible in the IRM framework, and (in my opinion) fairly conclusively showed that the particular algorithm ``IRMv1'' is fundamentally flawed even in surprisingly simple situations.
 
 
 \subsection{MMD GANs}
@@ -126,7 +138,7 @@ such that the most prestigious positions are first and last.
 Shared first authorships, ordered arbitrarily and denoted below by \bibeqcon{}, are also common.
 {% endraw %}
 
-{% for sec_name, sec_types in sections %}
+{% for sec_name, sec_types, submitted_only in sections %}
 \printbibliography[category=sec{{ loop.index }},title={ {{- sec_name -}} },heading=subbibnumbered]{}
 {% endfor %}
 

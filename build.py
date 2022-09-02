@@ -101,6 +101,20 @@ def _rate_str(got_in, out_of):
 
 
 @filter
+def bibtex_type(paper, venue):
+    if venue["type"] in {"conference", "workshop"}:
+        return "inproceedings"
+    elif venue["type"] == "journal":
+        return "article"
+    elif venue["type"] == "phd-thesis":
+        return "phdthesis"
+    elif venue["type"] == "ba-thesis":
+        return "thesis"
+    else:
+        return "misc"
+
+
+@filter
 def ar_info(paper, venue):
     if "accepts" not in venue or paper["year"] not in venue["accepts"]:
         return None
@@ -321,7 +335,7 @@ def make_site(outpath="."):
         filters=filters,
         outpath=outpath,
     )
-    env = site.env if hasattr(site, 'env') else site._env
+    env = site.env if hasattr(site, "env") else site._env
     env.tests["falsey"] = lambda x: not x
     return site
 

@@ -1,17 +1,14 @@
-{%- for paper in papers -%}
-{%- set venue = venues[paper.venue] -%}
-    {%- if venue.type == "conference" or venue.type == "workshop" -%}
-        @inproceedings
-    {%- elif venue.type == "journal" -%}
-        @article
-    {%- elif venue.type == "phd-thesis" -%}
-        @phdthesis
-    {%- elif venue.type == "ba-thesis" -%}
-        @thesis
-    {%- else -%}
-        @misc
-    {%- endif -%}
-{
+{%- for paper in papers
+    if (show_submission or venues[paper.venue].type != "private")
+-%}
+
+{%- if show_submission and paper.submitted -%}
+  {%- set venue = venues[paper.submitted] -%}
+{%- else -%}
+  {%- set venue = venues[paper.venue] -%}
+{%- endif -%}
+
+@{{ paper | bibtex_type(venue) }}{
     {{- paper | bibtex_key(coauthors) -}},
     author = { {{- paper.authors | bibtex_authors(coauthors, year=paper.year) -}} },
     {{ paper.authors | bibtex_author_an(coauthors, year=paper.year) | maybe_wrap("author+an = {", "},\n    ") -}}
@@ -23,6 +20,7 @@
     eprint = { {{- paper.arXiv -}} },
     {%- endif %}
     {{- paper.doi | maybe_wrap("\n    doi = {", "},") -}}
+
     {%- if venue.conference is defined %}
     booktitle = { {{- venue.name }} ({{ venues[venue.conference].short }} workshop)},
     {%- elif venue.type == "conference" or venue.type == "workshop" %}
@@ -35,7 +33,8 @@
     type = {B.A. thesis},
     {%- elif venue.type == "course-project" %}
     howpublished = { {{- venue.name -}} },
-    {%- endif %}
+    {%- endif -%}
+
     {{- paper.volume | maybe_wrap("\n    volume = {", "},") -}}
     {{- paper.number | maybe_wrap("\n    number = {", "},") -}}
     {{- paper.pages | maybe_wrap("\n    pages = {", "},") -}}
@@ -47,8 +46,12 @@
     {{- note | maybe_wrap("\n    addendum = {", "},") -}}
     {%- if paper.date and paper.date > today %}
     pubstate = {toappear},
+    {%- elif show_submission and paper.submitted %}
+    pubstate = {In submission.},
     {%- endif -%}
+
     {{- paper | ar_info(venue) | bibtex_escape | maybe_wrap("\n    arinfo = {", "},") -}}
+
 {# make sure there's a newline here #}
     keywords = {
       {{- venue.type -}}
