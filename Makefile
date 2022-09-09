@@ -9,7 +9,7 @@ OUTDIR ?= built
 
 STATIC := $(notdir $(wildcard static/*))
 TEMPLATE := $(notdir $(wildcard templates/*))
-TEX := cv form100-contributions
+TEX := cv form100-contributions form100a-contributions frqnt-contributions
 OTHER := biblio.bib
 
 STATIC_TARGETS := $(addprefix ${OUTDIR}/,${STATIC})
@@ -31,6 +31,8 @@ ${TEMPLATE_TARGETS}: ${OUTDIR}/%: templates/% papers.yaml
 
 ${OUTDIR}/cv.pdf: ${OUTDIR}/biblio-cv.bib
 ${OUTDIR}/form100-contributions.pdf: ${OUTDIR}/biblio-cv-subs.bib
+${OUTDIR}/form100a-contributions.pdf: ${OUTDIR}/biblio-cv-subs.bib
+${OUTDIR}/frqnt-contributions.pdf: ${OUTDIR}/biblio-cv-subs.bib
 ${TEX_TARGETS}: ${OUTDIR}/%.pdf: ${OUTDIR}/%.tex
 	mkdir -p .build/$(notdir $<)/
 	ln -f $+ .build/$(notdir $<)/
