@@ -884,7 +884,7 @@ papers:
       - nati
     venue: neurips
     year: 2022
-    date: 2022-06-01
+    date: 2022-11-29
 
   - key: mmd-bfair
     title: Kernel Two-Sample Block Tests for Fair Representation Learning
@@ -913,7 +913,7 @@ papers:
       - me
     venue: neurips
     year: 2022
-    date: 2022-06-25
+    date: 2022-11-29
     arXiv: '2206.12569'
 
   - key: contrastive-graph-eval
@@ -924,7 +924,7 @@ papers:
       - me
     venue: neurips
     year: 2022
-    date: 2022-06-13
+    date: 2022-11-29
     arXiv: '2206.06234'
 
   - key: contrastive-wsod
@@ -952,7 +952,6 @@ papers:
     year: 2022
     date: 2022-05-25
     venue: preprint
-    submitted: neurips
     arXiv: '2205.12900'
 
   - key: prediction-filtering
@@ -998,6 +997,7 @@ papers:
     arXiv: '2112.04470'
     venue: preprint
     submitted: jds
+    submitted-date: 2022-02-25
 
   - key: queerinai-dni
     title: "How to Make Virtual Conferences Queer-Friendly: A Guide"

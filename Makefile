@@ -1,7 +1,7 @@
 # make is byzantine and obnoxious: https://stackoverflow.com/q/4122831/344821
 MAKEFLAGS += --no-builtin-rules
 .SUFFIXES:
-.PHONY: all tidy clean
+.PHONY: all tidy clean FORCE_MAKE
 
 LATEXMK ?= latexmk
 PYTHON ?= python
@@ -10,7 +10,7 @@ OUTDIR ?= built
 STATIC := $(notdir $(wildcard static/*))
 TEMPLATE := $(notdir $(wildcard templates/*))
 TEX := cv form100-contributions form100a-contributions
-OTHER := biblio.bib
+OTHER := biblio.bib ubc-cv.pdf
 
 STATIC_TARGETS := $(addprefix ${OUTDIR}/,${STATIC})
 TEMPLATE_TARGETS := $(addprefix ${OUTDIR}/,${TEMPLATE})
@@ -38,12 +38,19 @@ ${TEX_TARGETS}: ${OUTDIR}/%.pdf: ${OUTDIR}/%.tex
 	cd .build/$(notdir $<)/ && $(LATEXMK) -pdf -silent $(notdir $<)
 	ln -f .build/$(notdir $<)/$(notdir $@) $@
 
+ubc-cv/ubc-cv.pdf: ${OUTDIR}/ubc-cv-contributed-talks.tex ${OUTDIR}/ubc-cv-invited-talks.tex ${OUTDIR}/biblio-cv.bib FORCE_MAKE
+	ln -sf ../${OUTDIR}/ubc-cv-{contributed,invited}-talks.tex ../${OUTDIR}/biblio-cv.bib ubc-cv/
+	cd ubc-cv && $(LATEXMK) -pdf -silent ubc-cv
+${OUTDIR}/ubc-cv.pdf: ubc-cv/ubc-cv.pdf
+	ln -f $< $@
+
 ${OUTDIR}/biblio.bib: ${OUTDIR}/biblio-cv.bib
 	sed -e '/author+an = /d; /addendum = /d; /keywords = /d; /pubstate =/d; /arinfo =/d;' < $< > $@
 
-
 tidy:
 	rm -rf .build/
+	cd ubc-cv && $(LATEXMK) -silent -c ubc-cv
+	rm -f ubc-cv/ubc-cv-{contributed,invited}-talks.tex ubc-cv/biblio-cv.bib
 
 clean: tidy
-	rm -f ${ALL_TARGETS}
+	rm -f ${ALL_TARGETS} ubc-cv/ubc-cv.pdf

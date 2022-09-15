@@ -46,6 +46,8 @@
     {{- note | maybe_wrap("\n    addendum = {", "},") -}}
     {%- if paper.date and paper.date > today %}
     pubstate = {To appear.},
+    {%- elif show_submission and paper['submitted-date'] %}
+    pubstate = {In submission ({{ paper['submitted-date'].strftime("%B %Y") }}).},
     {%- elif show_submission and paper.submitted %}
     pubstate = {In submission.},
     {%- endif -%}
@@ -53,7 +55,7 @@
     {{- paper | ar_info(venue) | bibtex_escape | maybe_wrap("\n    arinfo = {", "},") -}}
 {# make sure there's a newline here #}
     keywords = {
-      {{- venue.type -}}
+	  {%- if show_submission and paper.submitted -%} submission {%- else -%} {{- venue.type -}} {%- endif -%}
       {%- if paper | in_last_year(month=5) -%}, new{%- endif -%}
       {%- if paper.date and paper.date > today -%}, toappear{%- endif -%}
       {{- paper.cites_thresh | maybe_wrap(", cites", "") -}}
