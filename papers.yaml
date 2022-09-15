@@ -442,6 +442,9 @@ venues:
   private-sub:
     name: Submitted
     type: private
+  in-prep:
+    name: In preparation
+    type: private
   tech-report:
     name: Technical report
     type: tech-report
@@ -464,6 +467,7 @@ venues:
       2019: https://neurips.cc/Conferences/2019
       2020: https://neurips.cc/Conferences/2020
       2021: https://neurips.cc/Conferences/2021
+      2022: https://neurips.cc/Conferences/2022
     accepts:
       2018: !!omap
         - oral: 30
@@ -480,6 +484,10 @@ venues:
         - spotlight: 260
         - unspecial: 2029
         - submitted: 9122
+      2022: !!omap
+        # TODO: oral/spotlight numbers if relevant
+        - unspecial: 2665
+        - submitted: 10411
 
   icml:
     name: International Conference on Machine Learning
@@ -874,8 +882,7 @@ papers:
       - pragya
       - me
       - nati
-    venue: private-sub
-    submitted: neurips
+    venue: neurips
     year: 2022
     date: 2022-06-01
 
@@ -884,8 +891,7 @@ papers:
     authors:
       - namrata
       - me
-    venue: private-sub
-    submitted: neurips
+    venue: in-prep
     year: 2022
     date: 2022-06-01
 
@@ -905,8 +911,7 @@ papers:
       - amin*
       - won*
       - me
-    venue: preprint
-    submitted: neurips
+    venue: neurips
     year: 2022
     date: 2022-06-25
     arXiv: '2206.12569'
@@ -917,8 +922,7 @@ papers:
       - hamed
       - kaveh
       - me
-    venue: preprint
-    submitted: neurips
+    venue: neurips
     year: 2022
     date: 2022-06-13
     arXiv: '2206.06234'
