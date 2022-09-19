@@ -428,14 +428,15 @@
   toappear = {to appear},
 }
 
-\renewbibmacro*{in:}{%
-  \iffieldundef{pubstate}
-    {}
-    {\printfield{pubstate}%
-     \setunit{\addspace}%
-     \clearfield{pubstate}}%
-  \printtext{%
-    \bibstring{in}\intitlepunct}}
+\renewbibmacro*{in:}{}
+%\renewbibmacro*{in:}{%
+%  \iffieldundef{pubstate}
+%    {}
+%    {\printfield{pubstate}%
+%     \setunit{\addspace}%
+%     \clearfield{pubstate}}%
+%  \printtext{%
+%    \bibstring{in}\intitlepunct}}
 
 % handle author annotations: equal, mystudent
 \newcommand{\bibeqcon}{\ensuremath{^\star}}
