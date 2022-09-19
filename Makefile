@@ -39,7 +39,7 @@ ${TEX_TARGETS}: ${OUTDIR}/%.pdf: ${OUTDIR}/%.tex
 	ln -f .build/$(notdir $<)/$(notdir $@) $@
 
 ubc-cv/ubc-cv.pdf: ${OUTDIR}/ubc-cv-contributed-talks.tex ${OUTDIR}/ubc-cv-invited-talks.tex ${OUTDIR}/biblio-cv.bib FORCE_MAKE
-	ln -sf ../${OUTDIR}/ubc-cv-{contributed,invited}-talks.tex ../${OUTDIR}/biblio-cv.bib ubc-cv/
+	ln -f ${OUTDIR}/ubc-cv-contributed-talks.tex ${OUTDIR}/ubc-cv-invited-talks.tex ${OUTDIR}/biblio-cv.bib ubc-cv/
 	cd ubc-cv && $(LATEXMK) -pdf -silent ubc-cv
 ${OUTDIR}/ubc-cv.pdf: ubc-cv/ubc-cv.pdf
 	ln -f $< $@
@@ -50,7 +50,7 @@ ${OUTDIR}/biblio.bib: ${OUTDIR}/biblio-cv.bib
 tidy:
 	rm -rf .build/
 	cd ubc-cv && $(LATEXMK) -silent -c ubc-cv
-	rm -f ubc-cv/ubc-cv-{contributed,invited}-talks.tex ubc-cv/biblio-cv.bib
+	rm -f ubc-cv/ubc-cv-contributed-talks.tex ubc-cv/ubc-cv-invited-talks.tex ubc-cv/biblio-cv.bib
 
 clean: tidy
 	rm -f ${ALL_TARGETS} ubc-cv/ubc-cv.pdf
