@@ -221,10 +221,13 @@ filters["unidecode"] = unidecode
 
 
 @filter
-def full_name(author_dict):
+def full_name(author_dict, bibtex=True):
+    if "bibtex_name" in author_dict:
+        return author_dict["bibtex_name"]
     if "full_name" in author_dict:
         return author_dict["full_name"]
-    return "{} {}".format(author_dict["first"], author_dict["last"])
+    s = "{} {{{}}}" if bibtex and " " in author_dict["last"] else "{} {}"
+    return s.format(author_dict["first"], author_dict["last"])
 
 
 @filter
