@@ -207,7 +207,7 @@
       <ul>
       {% for key, coauthor, count in coauthor_count_sorted if key != "me" and count > 1 %}
         <li id="coauthor-{{ key }}" data-key="{{ key }}">
-          {{ coauthor | full_name }} (<span class="count">{{ count }}</span>)
+          {{ coauthor | full_name(bibtex=False) }} (<span class="count">{{ count }}</span>)
         </li>
       {% endfor %}
       </ul>
@@ -236,7 +236,7 @@
                 {%- for author in authors -%}
                   {%- set auth = author | get_author(coauthors, year=paper.year) -%}
                   <span {% if auth.my_student %}class="my-student"{% endif %} {% if not paper.committee %}data-coauthor="{{ auth.key }}"{% endif %}>
-                    {{- auth | full_name | maybe_link(auth.web) -}}
+                    {{- auth | full_name(bibtex=False) | maybe_link(auth.web) -}}
                     {%- if auth.is_equal %}<span class="equal">**</span>{%- endif -%}
                   </span>
                   {%- if loop.last -%}

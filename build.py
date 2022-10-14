@@ -222,7 +222,7 @@ filters["unidecode"] = unidecode
 
 @filter
 def full_name(author_dict, bibtex=True):
-    if "bibtex_name" in author_dict:
+    if "bibtex_name" in author_dict and bibtex:
         return author_dict["bibtex_name"]
     if "full_name" in author_dict:
         return author_dict["full_name"]
