@@ -885,6 +885,7 @@ papers:
     venue: neurips
     year: 2022
     date: 2022-11-29
+    arXiv: '2210.12082'
 
   - key: mmd-bfair
     title: Kernel Two-Sample Block Tests for Fair Representation Learning
