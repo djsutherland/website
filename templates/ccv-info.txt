@@ -14,12 +14,10 @@
     if not venues[paper.venue].conference == "neurips" %}
 
 {{ paper.title }}
-{% for a in paper.authors -%}{%- set author = a | get_author(coauthors) -%}
+{% for a in paper.authors -%}{%- set author = a | get_author(coauthors, year=paper.year) -%}
 {%- set k = author.key -%}
-{{ author.last }} {{ author.first[0] }}{% if
-    (k == "lijia" and paper.year <= 2023)
-    or (k == "akilesh" and paper.year <= 2023)
-%}*{% endif %}
+{{ author.last }} {{ author.first[0] }}
+{%- if author.my_student %}*{% endif -%}
 {%- if not loop.last %}, {% endif -%}
 
 {% endfor %}
