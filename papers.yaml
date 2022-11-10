@@ -52,6 +52,13 @@ coauthors:
   alaya:
     first: Mokhtar Z.
     last: Alaya
+  ali:
+    first: Ali Kemal
+    last: Sinop
+  ameya:
+    first: Ameya
+    last: Velingker
+    web: https://www.ameyavelingker.com/
   arjun:
     first: Arjun
     last: Subramonian
@@ -66,6 +73,9 @@ coauthors:
   avestruz:
     first: Camille
     last: Avestruz
+  balaji:
+    first: Balaji
+    last: Venkatachalam
   barnabas:
     first: Barnabás
     last: Póczos
@@ -404,6 +414,10 @@ coauthors:
   vayer:
     first: Titouan
     last: Vayer
+  victor:
+    first: Victor
+    last: Veitch
+    web: http://victorveitch.com/
   wandelt:
     first: Benjamin
     last: Wandelt
@@ -874,6 +888,42 @@ venues:
 ################################################################################
 
 papers:
+  - key: finetuning
+    title: How to prepare your task head for finetuning
+    authors:
+      - joshua
+      - shangmin
+      - won
+      - me
+    venue: private-sub
+    year: 2022
+    url: https://openreview.net/forum?id=gVOXZproe-e
+
+  - key: circe
+    title: Efficient Conditionally Invariant Representation Learning
+    authors:
+      - roman-p*
+      - namrata*
+      - yazhe*
+      - me
+      - victor
+      - arthur
+    venue: private-sub
+    year: 2022
+    url: https://openreview.net/forum?id=dJruFeSRym1
+
+  - key: exphormer
+    title: "Exphormer: Scaling Graph Transformers with Expander Graphs"
+    authors:
+      - hamed*
+      - ameya*
+      - balaji*
+      - me
+      - ali
+    venue: private-sub
+    year: 2022
+    url: https://openreview.net/forum?id=8Tr3v4ueNd7
+
   - key: moreau
     title: A Non-Asymptotic Moreau Envelope Theory for High-Dimensional Generalized Linear Models
     authors:
