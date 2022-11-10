@@ -48,13 +48,14 @@ def paper_data():
     data["coauthor_count"] = c = collections.Counter()
     data["venue_type_map"] = v = MergedSequencesLookup()
     for paper in data["papers"]:
-        for key in paper.get("authors", []):
-            if key.endswith("*"):
-                key = key[:-1]
-            c[key] += 1
-
         venue_type = data["venues"].get(paper["venue"], {}).get("type", None)
         v.add(venue_type, paper)
+
+        if venue_type != "private":
+            for key in paper.get("authors", []):
+                if key.endswith("*"):
+                    key = key[:-1]
+                c[key] += 1
 
     data["coauthor_count_sorted"] = sorted(
         ((key, data["coauthors"][key], count) for key, count in c.items()),
