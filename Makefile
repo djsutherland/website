@@ -25,7 +25,7 @@ ${STATIC_TARGETS}: ${OUTDIR}/%: static/%
 	cp $< $@
 
 ${OUTDIR}/biblio-cv-subs.bib: templates/biblio-cv.bib
-${TEMPLATE_TARGETS}: ${OUTDIR}/%: templates/% papers.yaml
+${TEMPLATE_TARGETS}: ${OUTDIR}/%: templates/% papers.yaml build.py
 	@mkdir -p ${OUTDIR}
 	$(PYTHON) build.py --output-path ${OUTDIR} $(notdir $@)
 
