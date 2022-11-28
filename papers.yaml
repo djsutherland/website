@@ -28,7 +28,7 @@ coauthors:
     first: Namrata
     last: Deka
     web: https://namratadeka.github.io/
-    student_years: [2020, 3000]
+    student_years: [2019, 3000]  # fudge for the unbiased est paper
   won:
     first: Wonho
     last: Bae
@@ -895,6 +895,16 @@ venues:
 ################################################################################
 
 papers:
+  - key: mmd-bfair
+    title: "MMD-B-Fair: Learning Fair Representations with Statistical Testing"
+    authors:
+      - namrata
+      - me
+    venue: preprint
+    arXiv: '2211.07907'
+    year: 2022
+    date: 2022-11-15
+
   - key: finetuning
     title: How to prepare your task head for finetuning
     authors:
@@ -943,15 +953,6 @@ papers:
     year: 2022
     date: 2022-11-29
     arXiv: '2210.12082'
-
-  - key: mmd-bfair
-    title: Kernel Two-Sample Block Tests for Fair Representation Learning
-    authors:
-      - namrata
-      - me
-    venue: in-prep
-    year: 2022
-    date: 2022-06-01
 
   - key: pseudo-ntk
     title: A Fast, Well-Founded Approximation to the Empirical Neural Tangent Kernel
@@ -1208,6 +1209,7 @@ papers:
     bibtex_title: Unbiased estimators for the variance of {MMD} estimators
     authors:
       - me
+      - namrata
     venue: tech-report
     arXiv: '1906.02104'
     year: 2019
