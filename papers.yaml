@@ -791,6 +791,13 @@ venues:
     web: https://kantorovich.org/post/kickoff/
     year: 2021
 
+  qai-neurips-22:
+    name: Queer in AI Workshop
+    type: workshop
+    conference: neurips
+    web: https://www.queerinai.com/neurips-2022
+    year: 2022
+
   twds:
     name: Toronto Womxn in Data Science Conference
     type: conference
@@ -1786,6 +1793,15 @@ papers:
 ################################################################################
 
 talks:
+  - key: name-change
+    title: "Name Change Policies: A Brief (Personal) Tour"
+    date: 2022-11-28
+    venue: qai-neurips-22
+    slides: https://djsutherland.ml/slides/qai-name-change
+    related: !!omap
+      - "slides (pdf)": https://djsutherland.ml/slides/qai-name-change.pdf
+    type: international
+
   - key: twds-testing
     title: Are These Datasets The Same? Learning Kernels for Efficient and Fair Two-sample Tests
     date: 2022-04-27
