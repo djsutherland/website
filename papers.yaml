@@ -895,6 +895,21 @@ venues:
 ################################################################################
 
 papers:
+  - key: circe
+    title: Efficient Conditionally Invariant Representation Learning
+    authors:
+      - roman-p*
+      - namrata*
+      - yazhe*
+      - me
+      - victor
+      - arthur
+    venue: preprint
+    year: 2022
+    arXiv: '2212.08645'
+    date: 2022-12-18
+    # url: https://openreview.net/forum?id=dJruFeSRym1
+
   - key: mmd-bfair
     title: "MMD-B-Fair: Learning Fair Representations with Statistical Testing"
     authors:
@@ -915,19 +930,6 @@ papers:
     venue: private-sub
     year: 2022
     url: https://openreview.net/forum?id=gVOXZproe-e
-
-  - key: circe
-    title: Efficient Conditionally Invariant Representation Learning
-    authors:
-      - roman-p*
-      - namrata*
-      - yazhe*
-      - me
-      - victor
-      - arthur
-    venue: private-sub
-    year: 2022
-    url: https://openreview.net/forum?id=dJruFeSRym1
 
   - key: exphormer
     title: "Exphormer: Scaling Graph Transformers with Expander Graphs"
