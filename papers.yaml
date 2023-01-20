@@ -552,6 +552,7 @@ venues:
       2018: http://aistats.org/aistats2018/
       2019: http://aistats.org/aistats2019/
       2021: http://aistats.org/aistats2021/
+      2023: http://aistats.org/aistats2023/
     accepts:
       2015: !!omap
         - unspecial: 127
@@ -564,6 +565,9 @@ venues:
         - oral: 48
         - unspecial: 407
         - submitted: 1527
+      2023: !!omap
+        - unspecial: 490
+        - submitted: 1689
 
   uai:
     name: Uncertainty in Artificial Intelligence
@@ -915,10 +919,10 @@ papers:
     authors:
       - namrata
       - me
-    venue: preprint
+    venue: aistats
     arXiv: '2211.07907'
-    year: 2022
-    date: 2022-11-15
+    year: 2023
+    date: 2023-04-25
 
   - key: finetuning
     title: How to prepare your task head for finetuning
