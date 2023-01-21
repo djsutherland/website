@@ -43,7 +43,7 @@
     {{- venue.bib_type | maybe_wrap("\n    type = {", "},") -}}
     {{- paper.official | maybe_wrap("\n    url = {", "},") -}}
     {%- set note = paper.cv_note if paper.cv_note is defined else paper.note -%}
-    {{- note | maybe_wrap("\n    addendum = {", "},") -}}
+    {{- note | latex_escape | maybe_wrap("\n    addendum = {", "},") -}}
     {%- if paper.date and paper.date > today %}
     pubstate = {To appear.},
     {%- elif show_submission and paper['submitted-date'] %}

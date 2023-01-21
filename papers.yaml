@@ -499,7 +499,6 @@ venues:
         - unspecial: 2029
         - submitted: 9122
       2022: !!omap
-        # TODO: oral/spotlight numbers if relevant
         - unspecial: 2665
         - submitted: 10411
 
@@ -528,6 +527,7 @@ venues:
       2017: http://www.iclr.cc/doku.php?id=iclr2017:main
       2018: http://www.iclr.cc/doku.php?id=ICLR2018:main
       2022: https://iclr.cc/Conferences/2022/
+      2023: https://iclr.cc/Conferences/2023/
     accepts:
       2017: !!omap
         - oral: 15
@@ -542,6 +542,7 @@ venues:
         - spotlight: 176
         - unspecial: 865
         - submitted: 3328
+      # TODO: acceptance stats, including "notable-top-5%"
 
   aistats:
     name: Artificial Intelligence and Statistics
@@ -908,21 +909,13 @@ papers:
       - me
       - victor
       - arthur
-    venue: preprint
-    year: 2022
-    arXiv: '2212.08645'
-    date: 2022-12-18
-    # url: https://openreview.net/forum?id=dJruFeSRym1
-
-  - key: mmd-bfair
-    title: "MMD-B-Fair: Learning Fair Representations with Statistical Testing"
-    authors:
-      - namrata
-      - me
-    venue: aistats
-    arXiv: '2211.07907'
+    venue: iclr
     year: 2023
-    date: 2023-04-25
+    arXiv: '2212.08645'
+    accept-kind: "Notable (top 5%)"
+    note: 'Selected as "notable (top 5 percent)", i.e. as an oral.'
+    date: 2023-05-01
+    official: https://openreview.net/forum?id=dJruFeSRym1
 
   - key: finetuning
     title: How to prepare your task head for finetuning
@@ -931,9 +924,10 @@ papers:
       - shangmin
       - won
       - me
-    venue: private-sub
-    year: 2022
-    url: https://openreview.net/forum?id=gVOXZproe-e
+    venue: iclr
+    year: 2023
+    date: 2023-05-01
+    official: https://openreview.net/forum?id=gVOXZproe-e
 
   - key: exphormer
     title: "Exphormer: Scaling Graph Transformers with Expander Graphs"
@@ -945,7 +939,17 @@ papers:
       - ali
     venue: private-sub
     year: 2022
-    url: https://openreview.net/forum?id=8Tr3v4ueNd7
+    # url: https://openreview.net/forum?id=8Tr3v4ueNd7
+
+  - key: mmd-bfair
+    title: "MMD-B-Fair: Learning Fair Representations with Statistical Testing"
+    authors:
+      - namrata
+      - me
+    venue: aistats
+    arXiv: '2211.07907'
+    year: 2023
+    date: 2023-04-25
 
   - key: moreau
     title: A Non-Asymptotic Moreau Envelope Theory for High-Dimensional Generalized Linear Models
