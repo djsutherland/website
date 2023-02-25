@@ -1,6 +1,5 @@
 /biblio-cv.bib
-/ubc-cv-contributed-talks.tex
-/ubc-cv-invited-talks.tex
+/ubc-cv-*.tex
 /*.pdf
 
 ## Core latex/pdflatex auxiliary files:

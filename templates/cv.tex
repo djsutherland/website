@@ -215,7 +215,7 @@ and \textcolor{student}{this colour} denotes one of my formal advisees.
 \begin{itemize}
 {% endraw %}
 
-    {% for talk in talks if venues[talk.venue].type != "summerschool" %}
+    {% for talk in talks if not talk.teaching %}
 \talk{ {{- "{:%b %Y}".format(talk.date) -}} }%
      { {{- talk.title | maybe_punc(".") -}} }%
      {
@@ -243,50 +243,70 @@ and \textcolor{student}{this colour} denotes one of my formal advisees.
 
 \cventry{Fall 2021}{Instructor}{CPSC 340 Machine Learning and Data Mining}{UBC}{}{Third-year undergraduate introduction to machine learning; 228 students between two sections, co-taught with Mike Gelbart.}
 
-\cventry{}{Guest lectures, one-day courses, and similar}{}{}{}{%
+\cventry{}{Short courses}{}{}{}{%
   \begin{compactitem}
-  \item
-      ``Modern Kernel Methods in Machine Learning.''
-      October 2022.\\
-      ETICS summer school, Corsica.
-      (6 hours, c.\ 55 students.)
-    \item
-      ``Kernel Methods: From Basics to Modern Applications.''
-      January 2021.\\
-      Data Science Summer School,
-      \'Ecole Polytechnique, Paris.
-      (3 hours, twice, c.\ 12 students each.)
-    \item
-      ``Learning With Positive Definite Kernels: Theory, Algorithms, and Applications.''
-      June 2019.\\
-      With Bharath Sriperumbudur.
-      Data Science Summer School,
-      \'Ecole Polytechnique, Paris.
-      \\(6 hours, twice, c.\ 25 students each.)
-    \item
-      ``Generative Adversarial Networks.''
-      June 2019.\\
-      Machine Learning Crash Course,
-      University of Genova, Italy.
-      (1.5 hours, c.\ 100 students.)
-    \item
-      ``New Kernel Distances for Better Deep Generative Models.''
-      December 2018.\\
-      Advanced Topics in Machine Learning,
-      University College London.
-      (1 hour, c.\ 20 students.)
-    \item
-      ``What Is Machine Learning?''
-      April 2016.\\
-      Capstone Course,
-      Jackson Institute for Global Affairs, Yale University.
-      (1 hour, c.\ 15 students.)
-    \item
-      ``What Is Machine Learning?''
-      December 2014.\\
-      Capstone Course,
-      Jackson Institute for Global Affairs, Yale University.
-      (1 hour, c.\ 15 students.)
+{%- endraw -%}
+{#
+%  \item
+%      ``Modern Kernel Methods in Machine Learning.''
+%      October 2022.\\
+%      ETICS summer school, Corsica.
+%      (6 hours, c.\ 55 students.)
+%    \item
+%      ``Kernel Methods: From Basics to Modern Applications.''
+%      January 2021.\\
+%      Data Science Summer School,
+%      \'Ecole Polytechnique, Paris.
+%      (3 hours, twice, c.\ 12 students each.)
+%    \item
+%      ``Learning With Positive Definite Kernels: Theory, Algorithms, and Applications.''
+%      June 2019.\\
+%      With Bharath Sriperumbudur.
+%      Data Science Summer School,
+%      \'Ecole Polytechnique, Paris.
+%      \\(6 hours, twice, c.\ 25 students each.)
+%    \item
+%      ``Generative Adversarial Networks.''
+%      June 2019.\\
+%      Machine Learning Crash Course,
+%      University of Genova, Italy.
+%      (1.5 hours, c.\ 100 students.)
+%    \item
+%      ``New Kernel Distances for Better Deep Generative Models.''
+%      December 2018.\\
+%      Advanced Topics in Machine Learning,
+%      University College London.
+%      (1 hour, c.\ 20 students.)
+%    \item
+%      ``What Is Machine Learning?''
+%      April 2016.\\
+%      Capstone Course,
+%      Jackson Institute for Global Affairs, Yale University.
+%      (1 hour, c.\ 15 students.)
+%    \item
+%      ``What Is Machine Learning?''
+%      December 2014.\\
+%      Capstone Course,
+%      Jackson Institute for Global Affairs, Yale University.
+%      (1 hour, c.\ 15 students.)
+-#}
+    {%- for talk in talks if talk.teaching %}
+\item
+     {{ talk.talkmeta | maybe_wrap("", ": ") -}}
+     {{- talk.title | maybe_punc(".") }}
+     \\
+     {{ "{:%B %Y}. ".format(talk.date) -}}
+     {%- set venue = venues[talk.venue] -%}
+     {{- venue.name -}}
+     {{- venue.short | maybe_wrap(" (", ")") -}}
+     {%- if venue.conference -%}
+       {%- set conf = venues[venue.conference] -%}
+       {{- "" }} at {{ conf.long_article | maybe_wrap("", " ") -}} {{- conf.name -}} {{- conf.short | maybe_wrap(", ", "") }}
+     {%- endif -%}
+     .
+     {{- talk.note | maybe_wrap("\\\\", "") -}}
+    {%- endfor %}
+{% raw -%}
   \end{compactitem}
 }
 

@@ -823,13 +823,50 @@ venues:
   ##############################################################################
   # Summer schools
 
+  genoa:
+    name: University of Genoa
+    type: conference
+    long_article: the
   mlcc:
     name: Machine Learning Crash Course
     short: MLCC
     long_article: the
     type: summerschool
+    conference: genoa
     web_by_year:
       2019: http://lcsl.mit.edu/courses/mlcc/mlcc2019/
+
+  polytechnique:
+    name: École Polytechnique, Paris
+    type: conference
+  ds3:
+    name: Data Science Summer School
+    short: DS3
+    long_article: the
+    type: summerschool
+    conference: polytechnique
+    web_by_year:
+      2019: https://2019.ds3-datascience-polytechnique.fr
+      2021: https://www.ds3-datascience-polytechnique.fr
+
+  etics:
+    name: Research School on Uncertainty in Scientific Computing, Corsica
+    short: ETICS
+    long_article: the
+    type: summerschool
+    web: https://www.gdr-mascotnum.fr/etics.html
+    year: 2022
+
+  isi:
+    name: Indian Statistical Institute
+    long_article: the
+    type: conference
+  wsdl:
+    name: Winter School on Deep Learning
+    type: summerschool
+    conference: isi
+    web: https://sites.google.com/view/wsdl2023
+    year: 2023
 
   ############################################################################
   # School departments / etc
@@ -1062,11 +1099,11 @@ papers:
       - frederic*
       - me
       - nati
-    year: 2021
     arXiv: '2112.04470'
-    venue: preprint
-    submitted: jds
+    venue: jds
     submitted-date: 2022-02-25
+    year: 2023
+    date: 2023-04-01
 
   - key: queerinai-dni
     title: "How to Make Virtual Conferences Queer-Friendly: A Guide"
@@ -1805,6 +1842,15 @@ papers:
 ################################################################################
 
 talks:
+  - key: wsdl-ntks
+    title: "Neural Tangent Kernels, Finite and Infinite"
+    date: 2023-02-24
+    venue: wsdl
+    slides: https://djsutherland.ml/slides/ntk-wsdl.pdf
+    type: international
+    teaching: true
+    note: Two hour course, about 300 participants (not all present live).
+
   - key: name-change
     title: "Name Change Policies: A Brief (Personal) Tour"
     date: 2022-11-28
@@ -1813,6 +1859,20 @@ talks:
     related: !!omap
       - "slides (pdf)": https://djsutherland.ml/slides/qai-name-change.pdf
     type: international
+
+  - key: etics
+    title: "Modern Kernel Methods in Machine Learning"
+    date: 2022-10-02
+    venue: etics
+    related: !!omap
+      - "slides 1": https://djsutherland.ml/slides/etics-22/
+      - "slides 1 (pdf)": https://djsutherland.ml/slides/etics-22.pdf
+      - "slides 2": https://djsutherland.ml/slides/etics-22/part2.html
+      - "slides 2 (pdf)": https://djsutherland.ml/slides/etics-22-2.pdf
+      - "practical materials": https://github.com/djsutherland/etics-kernels-22
+    funded: true
+    teaching: true
+    note: Six hour course, about 55 students.
 
   - key: twds-testing
     title: Are These Datasets The Same? Learning Kernels for Efficient and Fair Two-sample Tests
@@ -1880,6 +1940,20 @@ talks:
       - "slides (pdf)": https://djsutherland.ml/slides/pihot.pdf
     type: virtual
 
+
+  - key: ds3-21
+    title: "Kernel Methods: From Basics to Modern Applications"
+    date: 2021-01-04
+    venue: ds3
+    slides: https://djsutherland.ml/slides/ds3-21/
+    related: !!omap
+      - "slides (pdf)": https://djsutherland.ml/slides/ds3-21.pdf
+      - "practical materials": https://github.com/djsutherland/ds3-kernels-21
+    type: international
+    funded: true
+    teaching: true
+    note: Three hour course, repeated twice, about 12 students each.
+
   - key: pennstate-interpolation
     title: Can Uniform Convergence Explain Interpolation Learning?
     date: 2020-10-08
@@ -1892,7 +1966,7 @@ talks:
     type: virtual
 
   - key: neurips-tutorial
-    title: "Tutorial: Interpretable Comparison of Distributions and Models"
+    title: "Interpretable Comparison of Distributions and Models"
     date: 2019-12-09
     venue: neurips
     video: https://slideslive.com/38923184/interpretable-comparison-of-distributions-and-models
@@ -1907,6 +1981,8 @@ talks:
     type: international
     funded: true
     teaching: true
+    competitive: true
+    talkmeta: Tutorial
 
   - key: umass-gans
     title: Better GANs by Using Kernels
@@ -1929,6 +2005,17 @@ talks:
       - smmd
     type: international
 
+  - key: ds3-19
+    title: "Learning with Positive Definite Kernels: Theory, Algorithms and Applications"
+    date: 2019-06-27
+    venue: ds3
+    related: !!omap
+      - materials: https://github.com/djsutherland/ds3-kernels
+    type: international
+    funded: true
+    teaching: true
+    note: With Bharath Sriperumbudur; six hour course, repeated twice, about 25 students each.
+
   - key: mlcc-gans
     title: Introduction to Generative Adversarial Networks
     venue: mlcc
@@ -1937,6 +2024,7 @@ talks:
     type: international
     funded: true
     teaching: true
+    note: 1.5 hour course, about 100 students.
 
   - key: mmd-gans-gpss
     title: Kernel Distances for Better Deep Generative Models

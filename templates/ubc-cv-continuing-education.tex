@@ -1,0 +1,42 @@
+{%- for talk in talks if talk.teaching -%}
+{%- set venue = venues[talk.venue] -%}
+
+{%- if not loop.previtem or (talk.date.year != loop.previtem.date.year) %}
+\item[\textbf{ {{- talk.date.year -}} }]
+{% else -%}
+\\
+{% endif -%}
+  {% if talk|in_last_year(month=5) -%} \new{ {%- endif -%}
+    \textbf{ {{- talk.talkmeta or "Instructor" -}} },
+      {{ venue.name -}}
+      {{- venue.short | maybe_wrap(" (", ")") -}}
+      {%- if venue.conference -%}
+        {%- set conf = venues[venue.conference] -%}
+        {{- "" }} (at {{ conf.long_article | maybe_wrap("", " ") -}} {{- conf.name -}} {{- conf.short | maybe_wrap(", ", "") }})
+      {%- endif -%}
+      .
+      {%- if talk.funded -%} \paid{} {%- endif -%}
+      {%- if talk.competitive -%} \competitive{} {%- endif %}
+      \remark{\emph{ {{- talk.title -}} }. {{ talk.note -}} }
+
+  
+  {%- if talk|in_last_year(month=5) -%} } {%- endif -%}
+{%- endfor -%}
+
+{# 
+{% for paper in papers if paper.my_talk -%}
+{%- set venue = venues[paper.venue] %}
+
+\item[ {{- paper.year -}} ]
+  {% if paper|in_last_year(month=5) %}\new{ {%- endif -%}
+  {{- venue.name -}}
+  {{- venue.short | maybe_wrap(" (", ")") -}}
+  {%- if venue.conference -%}
+    {%- set conf = venues[venue.conference] -%}
+    {{- "" }} (workshop at {{ conf.long_article | maybe_wrap("", " ") -}} {{- conf.name -}} {{- conf.short | maybe_wrap(", ", "") }})
+  {%- endif -%}
+  .
+  \remark{\emph{  {{- paper.title | maybe_punc(".") -}}  }}
+  {%- if paper|in_last_year(month=5) -%} } {%- endif -%}
+{% endfor %}
+#}

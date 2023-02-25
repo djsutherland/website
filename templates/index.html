@@ -323,7 +323,8 @@
     <p>Slides for conference and workshop talks directly for a paper are linked next to the paper above.</p>
     {% for talk in talks %}
       <div class="talk" id="talk-{{ talk.key }}">
-        {{ talk.title | maybe_punc(".") | maybe_wrap("<span class='title'>", "</span>") }}
+        {{ ( (talk.talkmeta or ("Lecture" if talk.teaching else "")) | maybe_wrap("<span class='meta'>[", "]</span> ") + talk.title)
+           | maybe_punc(".") | maybe_wrap("<span class='title'>", "</span>") }}
         <span class="venue">
           {{ "{:%B %Y}".format(talk.date) }}.
           {%  set venue = venues[talk.venue] -%}
@@ -336,7 +337,7 @@
           {%- endif -%}
           {%- if venue.conference -%}
             {%- set conf = venues[venue.conference] -%}
-            {%- set conf_href = conf|venue_url(venue.year) -%}
+            {%- set conf_href = conf|venue_url(venue.get('year')) -%}
             , {{ conf.short|default(conf.name)|maybe_link(conf_href) }}
           {%- endif -%}
           .

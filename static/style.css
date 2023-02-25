@@ -122,6 +122,9 @@ img#me {
     font-style: italic;
     display: block;
 }
+.title .meta {
+    font-style: normal;
+}
 .authors {
     display: block;
 }
