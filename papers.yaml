@@ -2046,7 +2046,8 @@ talks:
     type: international
     funded: true
     teaching: true
-    cv_note: With Bharath Sriperumbudur; six hour course, repeated twice, about 25 students each.
+    note: With Bharath Sriperumbudur.
+    cv_note: Six hour course, repeated twice, about 25 students each.
 
   - key: mlcc-gans
     title: Introduction to Generative Adversarial Networks
