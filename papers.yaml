@@ -1891,6 +1891,7 @@ talks:
     related: !!omap
       - "slides (pdf)": https://djsutherland.ml/slides/qai-name-change.pdf
     type: international
+    funded: true
 
   - key: etics
     title: "Modern Kernel Methods in Machine Learning"
