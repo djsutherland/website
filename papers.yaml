@@ -221,6 +221,10 @@ coauthors:
     first: Junier B.
     last: Oliva
     web: https://cs.unc.edu/person/junier-oliva/
+  justin:
+    first: Yilin
+    last: Yang
+    web: https://freddieneverleft.github.io/
   felt:
     first: Nicholas
     last: Felt
@@ -235,6 +239,9 @@ coauthors:
     first: Jyunhug
     last: Noh
     web: https://junhyug.github.io/
+  kamil:
+    first: Kamil
+    last: Adamczewski
   kaveh:
     first: Kaveh
     last: Hassani
@@ -291,7 +298,7 @@ coauthors:
   mijung:
     first: Mijung
     last: Park
-    web: https://privacy-preserving-machine-learning.github.io/people.html
+    web: https://www.cs.ubc.ca/~mijungp/
   mikolaj:
     first: Mikołaj
     last: Bińkowski
@@ -428,6 +435,10 @@ coauthors:
     first: Wenkai
     last: Xu
     web: http://www.stats.ox.ac.uk/~wxu/
+  xiaoxiao:
+    first: Xiaoxiao
+    last: Li
+    web: https://xxlya.github.io/xiaoxiao/
   yazhe:
     first: Yazhe
     last: Li
@@ -941,6 +952,19 @@ venues:
 ################################################################################
 
 papers:
+  - key: dp-ntk
+    title: Differentially Private Neural Tangent Kernels for Privacy-Preserving Data Generation
+    authors:
+      - justin
+      - kamil
+      - me
+      - xiaoxiao
+      - mijung
+    year: 2023
+    date: 2023-03-03
+    venue: preprint
+    arXiv: 2303.01687
+
   - key: circe
     title: Efficient Conditionally Invariant Representation Learning
     authors:
