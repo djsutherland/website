@@ -36,17 +36,15 @@ ${OUTDIR}/form100a-contributions.pdf: ${OUTDIR}/biblio-cv-subs.bib
 ${TEX_TARGETS}: ${OUTDIR}/%.pdf: ${OUTDIR}/%.tex
 	mkdir -p .build/$(notdir $<)/
 	ln -f $+ .build/$(notdir $<)/
-	cd .build/$(notdir $<)/ && $(LATEXMK) -pdf -silent $(notdir $<)
+	$(LATEXMK) -cd -pdf -silent $<
 	ln -f .build/$(notdir $<)/$(notdir $@) $@
 
 $(addprefix ubc-cv/,${UBC_CV_PARTS}): ubc-cv/%.tex: ${OUTDIR}/%.tex
 	ln -f $< $@
 ubc-cv/biblio-cv.bib: ${OUTDIR}/biblio-cv.bib
 	ln -f $< $@
-
-ubc-cv/ubc-cv.pdf: $(addprefix ${OUTDIR}/,${UBC_CV_PARTS}) ${OUTDIR}/biblio-cv.bib FORCE_MAKE
-	@# ln -f $(addprefix ${OUTDIR}/,${UBC_CV_PARTS}) ${OUTDIR}/biblio-cv.bib ubc-cv/
-	cd ubc-cv && $(LATEXMK) -pdf -silent ubc-cv
+ubc-cv/ubc-cv.pdf: ubc-cv/ubc-cv.tex $(addprefix ubc-cv/,${UBC_CV_PARTS}) ubc-cv/biblio-cv.bib FORCE_MAKE
+	$(LATEXMK) -cd -pdf -silent $<
 ${OUTDIR}/ubc-cv.pdf: ubc-cv/ubc-cv.pdf
 	ln -f $< $@
 
@@ -55,7 +53,7 @@ ${OUTDIR}/biblio.bib: ${OUTDIR}/biblio-cv.bib
 
 tidy:
 	rm -rf .build/
-	cd ubc-cv && $(LATEXMK) -silent -c ubc-cv
+	$(LATEXMK) -cd -silent -c ubc-cv/ubc-cv.tex
 	rm -f $(addprefix ${OUTDIR}/,${UBC_CV_PARTS}) ubc-cv/biblio-cv.bib
 
 clean: tidy
