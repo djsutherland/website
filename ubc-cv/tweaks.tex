@@ -388,7 +388,7 @@
 
 %% --------------------
 %% Bib related
-\usepackage[backend=biber,sorting=none,style=numeric,citestyle=numeric,maxbibnames=9999,giveninits=true,defernumbers=true,doi=false,url=false]{biblatex}
+\usepackage[backend=biber,sorting=none,style=numeric,citestyle=numeric,maxbibnames=9999,giveninits=false,defernumbers=true,doi=false,url=false]{biblatex}
 
 % Reduce spacing between references
 \setlength\bibitemsep{.2\baselineskip}
@@ -583,15 +583,15 @@
 
 \usepackage[many]{tcolorbox} % shaded boxes
 \newcommand{\rightsymb}[1]{{% set up
-      \parfillskip=0pt % so \par doesnt push \square to left
-      \widowpenalty=10000 % so we dont break the page before \square
+      \parfillskip=0pt % so \par doesn't push \square to left
+      \widowpenalty=10000 % so we don't break the page before \square
       \displaywidowpenalty=10000 % ditto
       \finalhyphendemerits=0 % TeXbook exercise 14.32
       %
       % horizontal
       \leavevmode % \nobreak means lines not pages
       \unskip % remove previous space or glue
-      \nobreak % don?t break lines
+      \nobreak % don't break lines
       \hfil % ragged right if we spill over
       \penalty50 % discouragement to do so
       \hskip.2em % ensure some space
@@ -605,12 +605,17 @@
 \colorlet{ARdarkcolor}{black!35!white}
 \colorlet{ARlightcolor}{white!96!black}
 \colorlet{ARtextcolor}{black!60!white}
-\newtcbox{\ARbox}{enhanced,nobeforeafter,tcbox raise base, boxrule=0.4pt, top=-0.4mm, bottom=-0.8mm, right=0mm, left=3.5mm,arc=1pt,boxsep=2pt,before upper={\vphantom{dlg}},   colframe=ARdarkcolor,coltext=ARtextcolor,colback=ARlightcolor,
-  overlay={\begin{tcbclipinterior}\fill[ARdarkcolor] (frame.south west) rectangle node[text=white,font=\sffamily\bfseries\tiny,rotate=90]{AR} ([xshift=3.3mm]frame.north west);\end{tcbclipinterior}}}
+
+\newtcbox{\ARbox}{enhanced,nobeforeafter,tcbox raise base, boxrule=0.4pt, top=-0.4mm, bottom=-0.8mm, right=0mm, left=3.5mm,arc=1pt,boxsep=2pt,before upper={\vphantom{dlg}},   colframe=ARdarkcolor,coltext=ARtextcolor,colback=ARlightcolor, overlay={\begin{tcbclipinterior}\fill[ARdarkcolor] (frame.south west) rectangle node[text=white,font=\sffamily\bfseries\tiny,rotate=90]{AR} ([xshift=3.3mm]frame.north west);\end{tcbclipinterior}}}
+
 \newcommand{\ARtext}[1]{%
   \colorlet{saved}{.}\colorlet{ARdarkcolor}{saved!35!white}\colorlet{ARlightcolor}{white!96!saved}\colorlet{ARtextcolor}{saved!60!white}
   \ARbox{\sffamily\footnotesize\textcolor{ARtextcolor}{#1}}}
 \newcommand{\AR}[1]{\rightsymb{\ARtext{#1}}}
+
+\newtcbox{\citesbox}{enhanced,nobeforeafter,tcbox raise base, boxrule=0.4pt, top=-0.4mm, bottom=-0.8mm, right=0mm, left=3.5mm,arc=1pt,boxsep=2pt,before upper={\vphantom{dlg}},   colframe=ARdarkcolor,coltext=ARtextcolor,colback=ARlightcolor, overlay={\begin{tcbclipinterior}\fill[ARdarkcolor] (frame.south west) rectangle node[text=white,font=\sffamily\bfseries\tiny,rotate=90]{\scalebox{.8}{cites}} ([xshift=3.3mm]frame.north west);\end{tcbclipinterior}}}
+\newcommand{\citestext}[1]{%
+  \colorlet{saved}{.}\colorlet{ARdarkcolor}{saved!35!white}\colorlet{ARlightcolor}{white!96!saved}\colorlet{ARtextcolor}{saved!60!white} \citesbox{\sffamily\footnotesize\textcolor{ARtextcolor}{#1}}}
 
 \DeclareSourcemap{
   \maps[datatype=bibtex]{
@@ -632,11 +637,16 @@
 % }
 
 \AtEveryBibitem{%
-  \ifkeyword{cites1000}{\includegraphics[height=9pt]{figs/1000-cites.pdf}}{}%
-  \ifkeyword{cites100}{\includegraphics[height=9pt]{figs/100-cites.pdf}}{}%
-  \ifkeyword{cites10}{\includegraphics[height=9pt]{figs/10-cites.pdf}}{}%
   \csappto{blx@bbx@\thefield{entrytype}}{% put at end of entry
-    \iffieldundef{usera}{\space}{\space\printfield{usera}}
+    \rightsymb{%
+      \iffieldundef{usera}{\space}{\space\printfield{usera}}%
+      \ifkeyword{cites1000}{\citestext{$\ge 1\,000$}}{}%
+      \ifkeyword{cites100}{\citestext{$\ge 100$}}{}%
+      \ifkeyword{cites10}{\citestext{$\ge 10$}}{}%
+      % \ifkeyword{cites1000}{$\;$\includegraphics[height=9pt]{figs/1000-cites.pdf}}{}%
+      % \ifkeyword{cites100}{$\;$\includegraphics[height=9pt]{figs/100-cites.pdf}}{}%
+      % \ifkeyword{cites10}{$\;$\includegraphics[height=9pt]{figs/10-cites.pdf}}{}%
+    }
   }
 }
 
