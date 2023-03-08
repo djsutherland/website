@@ -36,7 +36,7 @@ ${OUTDIR}/form100a-contributions.pdf: ${OUTDIR}/biblio-cv-subs.bib
 ${TEX_TARGETS}: ${OUTDIR}/%.pdf: ${OUTDIR}/%.tex
 	mkdir -p .build/$(notdir $<)/
 	ln -f $+ .build/$(notdir $<)/
-	$(LATEXMK) -cd -pdf -silent $<
+	$(LATEXMK) -cd -pdf -silent .build/$(notdir $<)/$(notdir $<)
 	ln -f .build/$(notdir $<)/$(notdir $@) $@
 
 $(addprefix ubc-cv/,${UBC_CV_PARTS}): ubc-cv/%.tex: ${OUTDIR}/%.tex
