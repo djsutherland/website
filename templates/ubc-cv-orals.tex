@@ -1,0 +1,17 @@
+{%- for paper in papers if paper["accept-kind"] and venues[paper.venue].type == "conference" -%}
+{%- set venue = venues[paper.venue] %}
+
+\item[
+  {%- if not loop.previtem or (paper.year != loop.previtem.year) -%}
+    {{- paper.year -}}
+  {%- endif -%}
+]
+  {% if paper|in_last_year(month=5) -%} \new{ {%- endif -%}
+  \cite{ {{- paper | bibtex_key(coauthors) -}} }:
+%
+  {{ venue.short or venue.name }}
+  {{ paper["accept-kind"] | bibtex_escape }}:
+  {{ paper | ar_info(venue, verbose=True, first_only=True) | bibtex_escape }}
+  {% if paper|in_last_year(month=5) -%} } {%- endif -%}
+
+{%- endfor -%}

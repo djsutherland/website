@@ -17,7 +17,9 @@
       .
       {%- if talk.funded -%} \paid{} {%- endif -%}
       {%- if talk.competitive -%} \competitive{} {%- endif %}
-      \remark{\emph{ {{- talk.title -}} }. {{ talk.note -}} }
+      \remark{\emph{ {{- talk.title -}} }.
+              {{- talk.note | maybe_wrap(" ", "") -}}
+              {{- talk.cv_note | maybe_wrap(" ", "") -}} }
 
   
   {%- if talk|in_last_year(month=5) -%} } {%- endif -%}

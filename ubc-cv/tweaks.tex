@@ -388,13 +388,14 @@
 
 %% --------------------
 %% Bib related
-\usepackage[backend=biber,sorting=none,style=numeric,citestyle=alphabetic,maxbibnames=9999,giveninits=true,defernumbers=true,doi=false,url=false]{biblatex}
+\usepackage[backend=biber,sorting=none,style=numeric,citestyle=numeric,maxbibnames=9999,giveninits=true,defernumbers=true,doi=false,url=false]{biblatex}
 
 % Reduce spacing between references
-\setlength\bibitemsep{.1\baselineskip}
+\setlength\bibitemsep{.2\baselineskip}
 %% Show abstract
 \DeclareFieldFormat{abstract}{\par\small#1}
 \renewbibmacro*{finentry}{\printfield{abstract}\finentry}
+
 %% Bibtex filters
 \defbibfilter{journal}{
   keyword=journal and not keyword=noreview and not keyword=submission
@@ -454,127 +455,110 @@
 }
 
 
-%% \defbibenvironment{bibliography}
-%% {\list
-%% {\printtext[labelnumberwidth]{%
-%% \printfield{prefixnumber}%
-%% \printfield{labelnumber}}}
-%% {
-%% \setlength{\labelwidth}{\labelnumberwidth}%
-%% \setlength{\leftmargin}{\labelwidth}%
-%% \setlength{\labelsep}{\biblabelsep}%
-%% % \addtolength{\leftmargin}{\labelsep}%
-%% \addtolength{\leftmargin}{-\labelsep}% <-- changed
-%%       %% \setlength{\itemsep}{\bibitemsep}%
-%%       %% \setlength{\parsep}{\bibparsep}}%
-%% }
-%%   \renewcommand*{\makelabel}[1]{\hss##1}}
-%%   {\endlist}
-%%   {\item}
-
-
-% START: weird kwang stuff to modify the bib file??
-% \makeatletter
-% \def\nhblx@bibfile@name{\jobname -nhblx.bib}
-% \newwrite\nhblx@bibfile
-% \immediate\openout\nhblx@bibfile=\nhblx@bibfile@name
-%
-% \immediate\write\nhblx@bibfile{%
-%   @comment{Auto-generated file}\blx@nl}
-%
-% \newcounter{nhblx@name}
-% \setcounter{nhblx@name}{0}
-%
-% \newcommand*{\nhblx@writenametobib}[1]{%
-%   \stepcounter{nhblx@name}%
-%   \edef\nhblx@tmp@nocite{%
-%     \noexpand\AfterPreamble{%
-%       \noexpand\setbox0\noexpand\vbox{%
-%         \noexpand\nhblx@getmethehash{nhblx@name@\the\value{nhblx@name}}}}%
-%   }%
-%   \nhblx@tmp@nocite
-%   \immediate\write\nhblx@bibfile{%
-%     @misc{nhblx@name@\the\value{nhblx@name}, author = {\unexpanded{#1}}, %
-%       options = {dataonly=true},}%
-%   }%
-% }
-%
-% \AtEndDocument{%
-%   \closeout\nhblx@bibfile}
-%
-% \addbibresource{\nhblx@bibfile@name}
-%
-% \newcommand*{\nhblx@boldhashes}{}
-% \DeclareNameFormat{nhblx@hashextract}{%
-%   \xifinlist{\thefield{hash}}{\nhblx@boldhashes}
-%   {}
-%   {\listxadd{\nhblx@boldhashes}{\thefield{hash}}}}
-%
-% \DeclareCiteCommand{\nhblx@getmethehash}
-% {}
-% {\printnames[nhblx@hashextract][1-999]{author}}
-% {}
-% {}
-%
-% \newcommand*{\addboldnames}{\forcsvlist\nhblx@writenametobib}
-% \newcommand*{\resetboldnames}{\def\nhblx@boldhashes{}}
-%
-% \newcommand*{\mkboldifhashinlist}[1]{%
-%   \xifinlist{\thefield{hash}}{\nhblx@boldhashes}
-%   {\mkbibbold{#1}}
-%   {#1}}
-% \makeatother
-%
-% \DeclareNameWrapperFormat{boldifhashinlist}{%
-%   \renewcommand*{\mkbibcompletename}{\mkboldifhashinlist}%
-%   #1}
-%
-% \DeclareNameWrapperAlias{sortname}{default}
-% \DeclareNameWrapperAlias{default}{boldifhashinlist}
-% end weird kwang stuff
-
 %%
 %% For reverse ordering of references
-%% https://tex.stackexchange.com/questions/97622/reverse-numbering-in-biblatex-bibliography-with-different-categories
+%% https://tex.stackexchange.com/a/625292/9019
 
-% TODO: assumes prefix "NC", should use actual one
 \makeatletter
-\patchcmd{\blx@printbibliography}
-{\blx@bibliography\blx@tempa}
-{\setcounter{bibitemtotal}{0}%
-  \setlength{\labelnumberwidth}{0pt}%
-  \begingroup%
-  \def\do##1{\stepcounter{bibitemtotal}}%
-  \dolistloop{\blx@tempa}%
-  \endgroup%
-  \blx@setlabwidth{\labelnumberwidth}{%
-    \csuse{abx@ffd@*@labelnumberwidth}{NC\arabic{bibitemtotal}}}%
-  \blx@bibliography\blx@tempa}{}{}
+\newcounter{bibenvcounter}
+\newcounter{bibitemcounter}[bibenvcounter]
+
+\newcommand*{\auxkacz@envmax}[2]{%
+  \csgdef{blxkacz@envmax@#1}{#2}}
+
+\def\blx@thelabelnumber{%
+  \begingroup
+  \nottoggle{blx@skiplab}
+    {\iftoggle{blx@labelnumber}
+       {\ifundef\abx@field@shorthand
+         % Need to know if we set any localnumber from .aux file, not
+         % just current item. Otherwise, we may just write new
+         % localnumbers but not existing ones
+         % Also, don't want to regenerate localnumber for any key in a
+         % refsection which we've already seen because this has the nasty
+         % side-effect of incrementing the localnum counter
+         % Also, have to create localnumber again if \nocite{*} as items
+         % could have been added to the .bib file without changing the cite
+         % information in the .tex
+         {\ifboolexpr { (not togl {blx@localnumber}
+                         or
+                         test {\ifinlist{*}\blx@nocites})
+                         and
+                         not test {\ifcsdef{blx@defer@\the\c@refsection @\blx@refcontext@context @\abx@field@entrykey}} }
+            {\iftoggle{blx@omitnumbers}
+               {\let\abx@field@localnumber\@empty}
+               {\ifcsundef{blxkacz@envmax@\the\value{bibenvcounter}}
+                  {\blx@rerun@latex
+                   \csdef{blxkacz@envmax@\the\value{bibenvcounter}}{0}}
+                  {\csnumgdef{blx@labelnumber@\the\c@refsection}{%
+                   \csuse{blxkacz@envmax@\the\value{bibenvcounter}}%
+                      -\value{bibitemcounter}}%
+                   \edef\abx@field@localnumber{%
+                    \csuse{blx@labelnumber@\the\c@refsection}}%
+                  \blx@bbl@addentryfield{\abx@field@entrykey}{\the\c@refsection}%
+                  {localnumber}{\blx@refcontext@context}{\abx@field@localnumber}}}}
+            {}%
+          % Issue re-run message if there was no localnumber in the .aux and
+          % \nocite{*} was used because this means that an entry was added to the .bib
+          % and was not yet recorded in the .aux. We will have generated a localnumber
+          % for such a case above and now we need to re-run to make sure it's in the .aux
+          % for the next run
+          \ifboolexpr { test {\ifinlist{*}\blx@nocites}
+                        and
+                        not test {\ifcsdef{blx@localnumber@\the\c@refsection @\abx@field@entrykey}} }
+            {\blx@rerun@latex}
+            {}%
+          % If localnumbers were already in the .aux, add them
+          % again from the .aux. This prevents some cycling
+          % problems where pagebreaks change after localnumber
+          % settles down and then we need another run which then
+          % regenerates localnumber requiring another run but then
+          % the pagebreaks change back again ... etc.
+          \ifcsundef{blx@defer@\the\c@refsection @\blx@refcontext@context @\abx@field@entrykey}
+            {\ifundef\abx@field@localnumber
+               {}
+               {\listxadd\blx@localnumaux{%
+                  \string\abx@aux@number%
+                     {\the\c@instcount}%
+                     {\abx@field@entrykey}%
+                     {\the\c@refsection}%
+                     {\blx@refcontext@context}%
+                     {\abx@field@localnumber}}%
+                   % record that we have already generated and output localnum
+                   % for this key in this refsection/refcontext
+                   \global\cslet{blx@defer@\the\c@refsection @\blx@refcontext@context @\abx@field@entrykey}\@empty}}
+           {}}
+         {}}%
+       {}}
+    {}%
+  \endgroup}
+
+\defbibenvironment{bibliography}
+  {\stepcounter{bibenvcounter}%
+   \list
+     {\stepcounter{bibitemcounter}%
+      \printtext[labelnumberwidth]{%
+        \printfield{labelprefix}%
+        \printfield{labelnumber}}}
+     {\setlength{\labelwidth}{\labelnumberwidth}%
+      \setlength{\leftmargin}{\labelwidth}%
+      \setlength{\labelsep}{\biblabelsep}%
+      \addtolength{\leftmargin}{\labelsep}%
+      \setlength{\itemsep}{\bibitemsep}%
+      \setlength{\parsep}{\bibparsep}}%
+      \renewcommand*{\makelabel}[1]{\hss##1}}
+  {\endlist
+   \blx@auxwrite\@mainaux{}{%
+     \string\auxkacz@envmax
+       {\the\value{bibenvcounter}}
+       {\the\value{bibitemcounter}}}}
+  {\item}
 \makeatother
-
-\newcounter{bibitemtotal}
-\newrobustcmd*{\mkbibdesc}[1]{%
-  \number\numexpr\value{bibitemtotal}+1-#1\relax}
-\DeclareFieldFormat{labelnumber}{\mkbibdesc{#1}}
-\DeclareFieldFormat{labelnumberwidth}{\mkbibbrackets{#1}}
-
-\defbibenvironment{bibliography}%
-{\list
-  {\printtext[labelnumberwidth]{\printfield{labelprefix}\printfield{labelnumber}}}
-  {\setlength{\labelwidth}{\labelnumberwidth}%
-    \setlength{\leftmargin}{\labelwidth}%
-    \setlength{\labelsep}{\biblabelsep}%
-    \addtolength{\leftmargin}{\labelsep}%
-    \setlength{\itemsep}{\bibitemsep}%
-    \setlength{\parsep}{\bibparsep}}%
-  \renewcommand*{\makelabel}[1]{\hss##1}}%
-{\endlist}%
-{\item}
 
 
 
 %%
-%% Adding Markup to new bib entries (use keword new)
+%% Adding Markup to new bib entries (use keyword new)
 %%
 %% Adapted from here: https://tex.stackexchange.com/questions/411043/biblatex-add-an-image-in-a-bib-entry
 \renewbibmacro*{begentry}{%
@@ -656,7 +640,8 @@
   }
 }
 
-
-\newcommand{\remark}[1]{\fontsize{8}{9}\selectfont#1\fontsize{11}{12}\selectfont}
-\newcommand{\remarkk}[1]{\fontsize{8}{9}\selectfont#1\par\fontsize{11}{12}\selectfont} % paragraph break so that the paragraph ends with the small font; causes the whole paragraph's baseline to be the small font's baseline
+% \newcommand{\remark}[1]{\fontsize{8}{9}\selectfont#1\fontsize{11}{12}\selectfont}
+\newcommand{\remark}[1]{{\footnotesize#1}}
+\newcommand{\remarkk}[1]{{\footnotesize\par}} % paragraph break so that the paragraph ends with the small font; causes the whole paragraph's baseline to be the small font's baseline
+% \newcommand{\remarkk}[1]{\fontsize{8}{9}\selectfont#1\par\fontsize{11}{12}\selectfont} % paragraph break so that the paragraph ends with the small font; causes the whole paragraph's baseline to be the small font's baseline
 \newcommand{\tremark}[1]{\vspace{-2em}\par\noindent{\small#1}}

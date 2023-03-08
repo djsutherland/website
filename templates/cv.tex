@@ -228,6 +228,7 @@ and \textcolor{student}{this colour} denotes one of my formal advisees.
         {%- endif -%}
         .
         {{- talk.note | maybe_wrap(" ", "") -}}
+        {{- talk.cv_note | maybe_wrap(" ", "") -}}
      }
 {% endfor %}
 
@@ -304,7 +305,9 @@ and \textcolor{student}{this colour} denotes one of my formal advisees.
        {{- "" }} at {{ conf.long_article | maybe_wrap("", " ") -}} {{- conf.name -}} {{- conf.short | maybe_wrap(", ", "") }}
      {%- endif -%}
      .
-     {{- talk.note | maybe_wrap("\\\\", "") -}}
+     {% if talk.note or talk.cv_note %}\\{% endif %}
+     {{- talk.note | maybe_wrap(" ", "") -}}
+     {{- talk.cv_note | maybe_wrap(" ", "") -}}
     {%- endfor %}
 {% raw -%}
   \end{compactitem}

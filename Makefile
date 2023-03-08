@@ -39,8 +39,13 @@ ${TEX_TARGETS}: ${OUTDIR}/%.pdf: ${OUTDIR}/%.tex
 	cd .build/$(notdir $<)/ && $(LATEXMK) -pdf -silent $(notdir $<)
 	ln -f .build/$(notdir $<)/$(notdir $@) $@
 
+$(addprefix ubc-cv/,${UBC_CV_PARTS}): ubc-cv/%.tex: ${OUTDIR}/%.tex
+	ln -f $< $@
+ubc-cv/biblio-cv.bib: ${OUTDIR}/biblio-cv.bib
+	ln -f $< $@
+
 ubc-cv/ubc-cv.pdf: $(addprefix ${OUTDIR}/,${UBC_CV_PARTS}) ${OUTDIR}/biblio-cv.bib FORCE_MAKE
-	ln -f $(addprefix ${OUTDIR}/,${UBC_CV_PARTS}) ${OUTDIR}/biblio-cv.bib ubc-cv/
+	@# ln -f $(addprefix ${OUTDIR}/,${UBC_CV_PARTS}) ${OUTDIR}/biblio-cv.bib ubc-cv/
 	cd ubc-cv && $(LATEXMK) -pdf -silent ubc-cv
 ${OUTDIR}/ubc-cv.pdf: ubc-cv/ubc-cv.pdf
 	ln -f $< $@

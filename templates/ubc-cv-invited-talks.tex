@@ -14,6 +14,7 @@
   \remark{ {{- "" -}}
     \emph{ {{- talk.title | maybe_punc(".") -}} }
     {{- talk.note | maybe_wrap(" ", "") -}}
+    {{- talk.cv_note | maybe_wrap(" ", "") -}}
   }
   {%- if talk|in_last_year(month=5) -%} } {%- endif -%}
 {% endfor %}

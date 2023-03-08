@@ -91,14 +91,24 @@ def venue_url(venue, year=None):
     return None
 
 
-def _rate_str(got_in, out_of):
+def _rate_str(got_in, out_of, verbose=False):
+
     rate = got_in / out_of
     if rate >= 0.01:
-        return f"{got_in:,}/{out_of:,} = {rate :.0%}"
+        pct = f"{rate :.0%}"
+        op = "="
     elif rate >= 0.001:
-        return f"{got_in:,}/{out_of:,} = {rate :.1%}"
+        pct = f"{rate :.1%}"
+        op = "="
     else:
-        return f"{got_in:,}/{out_of:,} < 0.1%"
+        pct = f"0.1%"
+        op = "<"
+
+    if verbose:
+        pct_str = pct if op == "=" else f"{op} {pct}"
+        return f"{got_in:,} of {out_of:,} submissions ({pct_str})"
+    else:
+        return f"{got_in:,}/{out_of:,} {op} {pct}"
 
 
 @filter
@@ -116,7 +126,7 @@ def bibtex_type(paper, venue):
 
 
 @filter
-def ar_info(paper, venue):
+def ar_info(paper, venue, verbose=False, first_only=False):
     if "accepts" not in venue or paper["year"] not in venue["accepts"]:
         return None
     info = venue["accepts"][paper["year"]]
@@ -138,12 +148,12 @@ def ar_info(paper, venue):
         else:
             any_accept += num
 
-    if this_kind == "unspecial":
-        return _rate_str(this_or_better, info["submitted"])
+    if this_kind == "unspecial" or first_only:
+        return _rate_str(this_or_better, info["submitted"], verbose=verbose)
     else:
         return (
-            f"{this_kind}: {_rate_str(this_or_better, submitted)}; "
-            f"overall: {_rate_str(any_accept, submitted)}"
+            f"{this_kind}: {_rate_str(this_or_better, submitted, verbose=verbose)}; "
+            f"overall: {_rate_str(any_accept, submitted, verbose=verbose)}"
         )
 
 
@@ -298,6 +308,9 @@ def in_last_years(obj, n, month=1, day=1):
 def in_last_year(obj, **kwargs):
     return in_last_years(obj, 1, **kwargs)
 
+@filter
+def maybe_join(parts, between=" "):
+    return between.join(p for p in parts if p)
 
 @filter
 def maybe_wrap(content, before, after):

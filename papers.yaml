@@ -554,8 +554,8 @@ venues:
         - unspecial: 865
         - submitted: 3328
       2023: !!omap
-        - "Notable (top 5%)": 90
-        - "Notable (top 25%)": 281
+        - "notable (top 5%)": 90
+        - "notable (top 25%)": 281
         - unspecial: 1277
         - submitted: 5039  # 2268 rejects, 1123 withdrawn
 
@@ -977,8 +977,8 @@ papers:
     venue: iclr
     year: 2023
     arXiv: '2212.08645'
-    accept-kind: "Notable (top 5%)"
-    note: 'Selected as "notable (top 5 percent)", i.e. as an oral.'
+    accept-kind: "notable (top 5%)"
+    note: 'Selected as "notable (top 5%)", i.e. as an oral.'
     date: 2023-05-01
     official: https://openreview.net/forum?id=dJruFeSRym1
 
@@ -1880,7 +1880,7 @@ talks:
     slides: https://djsutherland.ml/slides/ntk-wsdl.pdf
     type: international
     teaching: true
-    note: Two hour course, about 300 participants (not all present live).
+    cv_note: Two hour course, about 300 participants (not all present live).
 
   - key: name-change
     title: "Name Change Policies: A Brief (Personal) Tour"
@@ -1903,7 +1903,7 @@ talks:
       - "practical materials": https://github.com/djsutherland/etics-kernels-22
     funded: true
     teaching: true
-    note: Six hour course, about 55 students.
+    cv_note: Six hour course, about 55 students.
 
   - key: twds-testing
     title: Are These Datasets The Same? Learning Kernels for Efficient and Fair Two-sample Tests
@@ -1983,7 +1983,7 @@ talks:
     type: international
     funded: true
     teaching: true
-    note: Three hour course, repeated twice, about 12 students each.
+    cv_note: Three hour course, repeated twice, about 12 students each.
 
   - key: pennstate-interpolation
     title: Can Uniform Convergence Explain Interpolation Learning?
@@ -2002,6 +2002,7 @@ talks:
     venue: neurips
     video: https://slideslive.com/38923184/interpretable-comparison-of-distributions-and-models
     note: With Arthur Gretton and Wittawat Jitkrittum.
+    cv_note: Two hour tutorial; thousands of attendees.
     papers:
       - deep-testing
       - opt-mmd
@@ -2045,7 +2046,7 @@ talks:
     type: international
     funded: true
     teaching: true
-    note: With Bharath Sriperumbudur; six hour course, repeated twice, about 25 students each.
+    cv_note: With Bharath Sriperumbudur; six hour course, repeated twice, about 25 students each.
 
   - key: mlcc-gans
     title: Introduction to Generative Adversarial Networks
@@ -2055,7 +2056,7 @@ talks:
     type: international
     funded: true
     teaching: true
-    note: 1.5 hour course, about 100 students.
+    cv_note: 1.5 hour course, about 100 students.
 
   - key: mmd-gans-gpss
     title: Kernel Distances for Better Deep Generative Models
