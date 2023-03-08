@@ -282,11 +282,16 @@ def bibtex_key(paper, coauthors, year=None):
 
 @filter
 def in_last_years(obj, n, month=1, day=1):
-    if "date" in obj:
-        old = datetime.date(year=this_year - n, month=month, day=day)
-        return obj["date"] >= old
+    if isinstance(obj, datetime.date):
+        date = obj
+    elif "date" in obj:
+        date = obj["date"]
     else:
+        # only have a year, different logic
         return obj["year"] >= this_year - n
+
+    old = datetime.date(year=this_year - n, month=month, day=day)
+    return date >= old
 
 
 @filter

@@ -56,7 +56,13 @@
 {# make sure there's a newline here #}
     keywords = {
 	  {%- if show_submission and paper.submitted -%} submission {%- else -%} {{- venue.type -}} {%- endif -%}
-      {%- if paper | in_last_year(month=5) -%}, new{%- endif -%}
+      {%- if paper | in_last_year(month=5) -%}
+        {%- if paper["accept-date"] and not paper["accept-date"] | in_last_year(month=5) -%}
+          , changed  {#- was "to appear" last year -#}
+        {%- else -%}
+          , new
+        {%- endif -%}
+      {%- endif -%}
       {%- if paper.date and paper.date > today -%}, toappear{%- endif -%}
       {{- paper.cites_thresh | maybe_wrap(", cites", "") -}}
     },

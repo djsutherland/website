@@ -542,7 +542,11 @@ venues:
         - spotlight: 176
         - unspecial: 865
         - submitted: 3328
-      # TODO: acceptance stats, including "notable-top-5%"
+      2023: !!omap
+        - "Notable (top 5%)": 90
+        - "Notable (top 25%)": 281
+        - unspecial: 1277
+        - submitted: 5039  # 2268 rejects, 1123 withdrawn
 
   aistats:
     name: Artificial Intelligence and Statistics
@@ -980,6 +984,7 @@ papers:
 
   - key: mmd-bfair
     title: "MMD-B-Fair: Learning Fair Representations with Statistical Testing"
+    bibtex_title: "{MMD-B-Fair}: Learning Fair Representations with Statistical Testing"
     authors:
       - namrata
       - me
@@ -1042,6 +1047,7 @@ papers:
       - june
       - daijin-kim
     year: 2022
+    accept-date: 2022-07-08
     date: 2022-10-23
     venue: eccv
     arXiv: '2208.07576'
@@ -1068,6 +1074,7 @@ papers:
       - milad
       - me
     year: 2022
+    accept-date: 2022-04-20
     date: 2022-07-23
     venue: ijcai
     arXiv: '2205.01233'
