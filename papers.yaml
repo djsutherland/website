@@ -952,6 +952,19 @@ venues:
 ################################################################################
 
 papers:
+  - key: exphormer
+    title: "Exphormer: Scaling Graph Transformers with Expander Graphs"
+    authors:
+      - hamed*
+      - ameya*
+      - balaji*
+      - me
+      - ali
+    venue: preprint
+    arXiv: '2303.06147'
+    year: 2023
+    # url: https://openreview.net/forum?id=8Tr3v4ueNd7
+
   - key: dp-ntk
     title: Differentially Private Neural Tangent Kernels for Privacy-Preserving Data Generation
     authors:
@@ -993,18 +1006,6 @@ papers:
     year: 2023
     date: 2023-05-01
     official: https://openreview.net/forum?id=gVOXZproe-e
-
-  - key: exphormer
-    title: "Exphormer: Scaling Graph Transformers with Expander Graphs"
-    authors:
-      - hamed*
-      - ameya*
-      - balaji*
-      - me
-      - ali
-    venue: private-sub
-    year: 2022
-    # url: https://openreview.net/forum?id=8Tr3v4ueNd7
 
   - key: mmd-bfair
     title: "MMD-B-Fair: Learning Fair Representations with Statistical Testing"
