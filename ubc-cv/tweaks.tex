@@ -19,15 +19,11 @@
 \usepackage{helvet}
 \renewcommand{\familydefault}{\sfdefault}
 
-% Cool underline
-% https://tex.stackexchange.com/questions/443439/underline-width
-\usepackage{soul}
-\newcommand\dunderline[3][-1pt]{
-  {%
-      \sbox0{#3}%
-      \ooalign{\copy0\cr\rule[\dimexpr#1-#2\relax]{\wd0}{#2}}
-    }
-}
+% https://tex.stackexchange.com/a/443445/9019
+\newcommand{\ulsection}[2][-1pt]{\section{\texorpdfstring{\dunderline[#1]{1pt}{#2}}{#2}}}
+\newcommand\dunderline[3][-1pt]{{%
+  \sbox0{#3}%
+  \ooalign{\copy0\cr\rule[\dimexpr#1-#2\relax]{\wd0}{#2}}}}
 
 %%
 %% Logo / Header
