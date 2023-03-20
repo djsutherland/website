@@ -1006,6 +1006,7 @@ papers:
     year: 2023
     date: 2023-05-01
     official: https://openreview.net/forum?id=gVOXZproe-e
+    arXiv: '2302.05779'
 
   - key: mmd-bfair
     title: "MMD-B-Fair: Learning Fair Representations with Statistical Testing"
