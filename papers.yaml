@@ -1036,6 +1036,7 @@ papers:
     title: A Fast, Well-Founded Approximation to the Empirical Neural Tangent Kernel
     authors:
       - amin
+      - won
       - me
     venue: preprint
     year: 2022
