@@ -915,6 +915,10 @@ venues:
     name: Machine Learning reading group, Google New York
     type: seminar
 
+  msr-montreal:
+    name: Microsoft Research Montréal
+    type: seminar
+
   nyu-cds:
     name: NYU Center for Data Science Lunch Seminar Series
     type: seminar
@@ -1877,6 +1881,15 @@ papers:
 ################################################################################
 
 talks:
+  - key: msr-entk
+    title: "A Defence of (Empirical) Neural Tangent Kernels"
+    date: 2023-03-21
+    venue: msr-montreal
+    type: national
+    slides: https://djsutherland.ml/slides/entk-msr
+    related: !!omap
+      - "slides (pdf)": https://djsutherland.ml/slides/entk-msr.pdf
+
   - key: wsdl-ntks
     title: "Neural Tangent Kernels, Finite and Infinite"
     date: 2023-02-24
