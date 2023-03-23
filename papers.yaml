@@ -1889,7 +1889,7 @@ papers:
 
 talks:
   - key: umich-entk
-    title: "In Defense of (Empirical) Neural Tangent Kernels"
+    title: "A Defense of (Empirical) Neural Tangent Kernels"
     date: 2023-03-23
     venue: umich-ai
     type: international
