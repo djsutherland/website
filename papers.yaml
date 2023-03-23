@@ -936,6 +936,13 @@ venues:
     name: Computational Statistics and Machine Learning seminar, University College London
     type: seminar
 
+  umich-ai:
+    name: AI Seminar, University of Michigan
+    type: seminar
+  umich-rdei:
+    name: Robotics DEI Seminar, University of Michigan
+    type: seminar
+
   sheffield-mlnet:
     name: Machine Learning Seminar, University of Sheffield
     type: seminar
@@ -1881,8 +1888,26 @@ papers:
 ################################################################################
 
 talks:
+  - key: umich-entk
+    title: "In Defence of (Empirical) Neural Tangent Kernels"
+    date: 2023-03-23
+    venue: umich-ai
+    type: international
+    slides: https://djsutherland.ml/slides/entk-umich
+    related: !!omap
+      - "slides (pdf)": https://djsutherland.ml/slides/entk-umich.pdf
+
+  - key: umich-namechange
+    title: "Post-Publication Name Change Policies, Why they Matter, and Whether they Work"
+    date: 2023-03-23
+    venue: umich-rdei
+    type: international
+    # slides: https://djsutherland.ml/slides/entk-umich
+    # related: !!omap
+    #   - "slides (pdf)": https://djsutherland.ml/slides/entk-umich.pdf
+
   - key: msr-entk
-    title: "A Defence of (Empirical) Neural Tangent Kernels"
+    title: "In Defence of (Empirical) Neural Tangent Kernels"
     date: 2023-03-21
     venue: msr-montreal
     type: national
