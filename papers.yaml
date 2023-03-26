@@ -1903,6 +1903,7 @@ talks:
     venue: umich-rdei
     type: international
     slides: https://djsutherland.ml/slides/umich-name-change
+    paid: true
     related: !!omap
       - "slides (pdf)": https://djsutherland.ml/slides/umich-name-change.pdf
 
