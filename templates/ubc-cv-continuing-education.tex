@@ -16,7 +16,8 @@
       {%- endif -%}
       .
       {%- if talk.funded -%} \paid{} {%- endif -%}
-      {%- if talk.competitive -%} \competitive{} {%- endif %}
+      {%- if talk.competitive -%} \competitive{} {%- endif -%}
+      {%- if talk.virtual -%} \virtual{} {%- endif %}
       \remark{\emph{ {{- talk.title -}} }.
               {{- talk.note | maybe_wrap(" ", "") -}}
               {{- talk.cv_note | maybe_wrap(" ", "") -}} }

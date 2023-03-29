@@ -10,7 +10,9 @@
     {{- "" }} (workshop at {{ conf.long_article | maybe_wrap("", " ") -}} {{- conf.name -}} {{- conf.short | maybe_wrap(", ", "") }})
   {%- endif -%}
   {{- talk.type | maybe_wrap(" -- ", "") -}}
-  .{% if talk.funded %}\paid{}{% endif %}
+  .
+  {%- if talk.funded %}\paid{}{% endif -%}
+  {%- if talk.virtual %}\virtual{}{% endif %}
   \remark{ {{- "" -}}
     \emph{ {{- talk.title | maybe_punc(".") -}} }
     {{- talk.note | maybe_wrap(" ", "") -}}

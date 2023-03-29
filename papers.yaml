@@ -1912,6 +1912,7 @@ talks:
     date: 2023-03-21
     venue: msr-montreal
     type: national
+    virtual: true
     slides: https://djsutherland.ml/slides/entk-msr
     related: !!omap
       - "slides (pdf)": https://djsutherland.ml/slides/entk-msr.pdf
@@ -1922,6 +1923,7 @@ talks:
     venue: wsdl
     slides: https://djsutherland.ml/slides/ntk-wsdl.pdf
     type: international
+    virtual: true
     teaching: true
     cv_note: Two hour course, about 300 participants (not all present live).
 
@@ -1947,6 +1949,7 @@ talks:
       - "practical materials": https://github.com/djsutherland/etics-kernels-22
     funded: true
     teaching: true
+    type: international
     cv_note: Six hour course, about 55 students.
 
   - key: twds-testing
@@ -1960,7 +1963,8 @@ talks:
       - opt-mmd
     related: !!omap
       - "slides (pdf)": https://djsutherland.ml/slides/trustml-testing.pdf
-    type: virtual
+    type: national
+    virtual: true
 
   - key: trustml-testing
     title: Are These Datasets The Same? Learning Kernels for Efficient and Fair Two-sample Tests
@@ -1974,7 +1978,8 @@ talks:
       - opt-mmd
     related: !!omap
       - "slides (pdf)": https://djsutherland.ml/slides/trustml-testing.pdf
-    type: virtual
+    type: international
+    virtual: true
     funded: true
 
   - key: like-deep-kernels
@@ -1987,7 +1992,8 @@ talks:
       - ssl-hsic
     related: !!omap
       - "slides (pdf)": https://djsutherland.ml/slides/like22.pdf
-    type: virtual
+    virtual: true
+    type: international
 
   - key: nyu-interpolation
     title: Can Uniform Convergence Explain Interpolation Learning?
@@ -1999,7 +2005,8 @@ talks:
       - gaussian-interpolators
     related: !!omap
       - "slides (pdf)": https://djsutherland.ml/slides/nyu-uniform.pdf
-    type: virtual
+    virtual: true
+    type: national
 
   - key: pihot-kickoff
     title: Deep kernel-based distances between distributions
@@ -2013,7 +2020,8 @@ talks:
       - mmd-gans
     related: !!omap
       - "slides (pdf)": https://djsutherland.ml/slides/pihot.pdf
-    type: virtual
+    type: local
+    virtual: true
 
 
   - key: ds3-21
@@ -2025,6 +2033,7 @@ talks:
       - "slides (pdf)": https://djsutherland.ml/slides/ds3-21.pdf
       - "practical materials": https://github.com/djsutherland/ds3-kernels-21
     type: international
+    virtual: true
     funded: true
     teaching: true
     cv_note: Three hour course, repeated twice, about 12 students each.
@@ -2038,7 +2047,8 @@ talks:
       - uniform-interpolation
     related: !!omap
       - "slides (pdf)": https://djsutherland.ml/slides/pennstate-uniform.pdf
-    type: virtual
+    type: national
+    virtual: true
 
   - key: neurips-tutorial
     title: "Interpretable Comparison of Distributions and Models"
