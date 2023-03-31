@@ -21,8 +21,11 @@ if True:
 
     data["cite_meta"]["last_cite_update"] = "{:%Y-%m-%d}".format(date.today())
     data["cite_meta"]["total"] = me["citedby"]
+    data["cite_meta"]["total_5y"] = me["citedby5y"]
     data["cite_meta"]["h_index"] = me["hindex"]
+    data["cite_meta"]["h_index_5y"] = me["hindex5y"]
     data["cite_meta"]["i10_index"] = me["i10index"]
+    data["cite_meta"]["i10_index_5y"] = me["i10index5y"]
 
     touched = set()
 

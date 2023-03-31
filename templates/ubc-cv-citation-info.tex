@@ -1,12 +1,22 @@
 \newcommand{\citeupdatedate}{ {{- "{:%B %Y}".format(cite_meta.last_cite_update) -}} }
+
 \newcommand{\totalcites}{
-  {%- set total_cites = cite_meta.total -%}
-  {%- set total_cites_h = (total_cites // 100) * 100 -%}
-  {%- if total_cites > total_cites_h -%}over {% endif -%}
-  {{- "{:,}".format(total_cites_h) -}}
+  {%- set total_h = (cite_meta.total // 100) * 100 -%}
+  {%- if cite_meta.total > total_h -%}over {% endif -%}
+  {{- "{:,}".format(total_h) -}}
 }
+
+\newcommand{\totalcitesrec}{
+  {%- set total_5y_h = (cite_meta.total_5y // 100) * 100 -%}
+  {%- if cite_meta.total_5y > total_5y_h -%}over {% endif -%}
+  {{- "{:,}".format(total_5y_h) -}}
+}
+
 \newcommand{\hindex}{ {{- cite_meta.h_index -}} }
+\newcommand{\hindexrec}{ {{- cite_meta.h_index_5y -}} }
+
 \newcommand{\itenindex}{ {{- cite_meta.i10_index -}} }
+\newcommand{\itenindexrec}{ {{- cite_meta.i10_index_5y -}} }
 
 \newcommand{\hfiveinfo}{
   {%- for venue in venues | top_h5_venues -%}

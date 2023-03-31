@@ -965,10 +965,16 @@ venues:
 ################################################################################
 
 cite_meta:
-  last_cite_update: '2023-03-30'
+  last_cite_update: '2023-03-31'
+
   total: 2607
+  total_5y: 2385
+
   h_index: 21
+  h_index_5y: 19
+
   i10_index: 24
+  i10_index_5y: 24
 
 papers:
   - key: exphormer
@@ -1867,7 +1873,7 @@ papers:
       - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/ba-thesis.pdf
     ss_id: a1123aeb0ac2b3376e46239293a94f1f35340821
     gs_id: 4272928804990587728
-    citations: 0
+    citations: 1
 
 
 ################################################################################
