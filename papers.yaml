@@ -511,6 +511,7 @@ venues:
       2022: !!omap
         - unspecial: 2665
         - submitted: 10411
+    h5_rank: 10
 
   icml:
     name: International Conference on Machine Learning
@@ -528,6 +529,7 @@ venues:
       2020: !!omap
         - unspecial: 1088
         - submitted: 4990
+    h5_rank: 19
 
   iclr:
     name: International Conference on Learning Representations
@@ -557,6 +559,7 @@ venues:
         - notable (top 25%): 281
         - unspecial: 1277
         - submitted: 5039  # 2268 rejects, 1123 withdrawn
+    h5_rank: 9
 
   aistats:
     name: Artificial Intelligence and Statistics

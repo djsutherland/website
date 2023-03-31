@@ -335,6 +335,14 @@ def maybe_link(content, url=None):
 
 
 @filter
+def top_h5_venues(venues, cutoff=30):
+    return sorted(
+        (v for v in venues.values() if v.get("h5_rank", float("inf")) <= cutoff),
+        key=lambda v: v['h5_rank'],
+    )
+
+
+@filter
 def last_edit_dt(filenames):
     # is the file currently edited in git?
     fs = list(filenames)

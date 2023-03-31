@@ -7,3 +7,11 @@
 }
 \newcommand{\hindex}{ {{- cite_meta.h_index -}} }
 \newcommand{\itenindex}{ {{- cite_meta.i10_index -}} }
+
+\newcommand{\hfiveinfo}{
+  {%- for venue in venues | top_h5_venues -%}
+    {%- if loop.last and not loop.first %} and {% endif -%}
+    {{ venue.short }} as \#{{ venue.h5_rank }}
+    {%- if not loop.last %}, {% endif -%}
+  {%- endfor -%}
+}
