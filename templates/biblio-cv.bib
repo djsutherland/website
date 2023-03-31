@@ -63,15 +63,16 @@
         {%- endif -%}
       {%- endif -%}
       {%- if paper.date and paper.date > today -%}, toappear{%- endif -%}
-      {%- if paper.citations >= 1000 -%}
+      {%- set cites = paper.get('citations', 0) -%}
+      {%- if cites >= 1000 -%}
         , cites1000
-      {%- elif paper.citations >= 500 -%}
+      {%- elif cites >= 500 -%}
         , cites500
-      {%- elif paper.citations >= 100 -%}
+      {%- elif cites >= 100 -%}
         , cites100
-      {%- elif paper.citations >= 50 -%}
+      {%- elif cites >= 50 -%}
         , cites50
-      {%- elif paper.citations >= 10 -%}
+      {%- elif cites >= 10 -%}
         , cites10
       {%- endif -%}
     },
