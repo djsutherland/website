@@ -9,14 +9,17 @@
     {%- set conf = venues[venue.conference] -%}
     {{- "" }} (workshop at {{ conf.long_article | maybe_wrap("", " ") -}} {{- conf.name -}} {{- conf.short | maybe_wrap(", ", "") }})
   {%- endif -%}
-  {{- talk.type | maybe_wrap(" -- ", "") -}}
   .
+  {#- talk.type | maybe_wrap("$^\\text{", "}$ ") -#}
+  {{- talk.type | maybe_wrap("\\", "{}") -}}
   {%- if talk.funded %}\paid{}{% endif -%}
-  {%- if talk.virtual %}\virtual{}{% endif %}
-  \remark{ {{- "" -}}
+  {%- if talk.virtual %}\virtual{}{% endif -%}
+  {{- " " -}}\remark{
+    {{- "" -}}
     \emph{ {{- talk.title | maybe_punc(".") -}} }
     {{- talk.note | maybe_wrap(" ", "") -}}
     {{- talk.cv_note | maybe_wrap(" ", "") -}}
+    {#- talk.type | capitalize | maybe_punc(".") -#}
   }
   {%- if talk|in_last_year(month=5) -%} } {%- endif -%}
 {% endfor %}
