@@ -641,7 +641,9 @@
     \rightsymb{%
       \iffieldundef{usera}{\space}{\space\printfield{usera}}%
       \ifkeyword{cites1000}{\citestext{$\ge 1\,000$}}{}%
+      \ifkeyword{cites500}{\citestext{$\ge 500$}}{}%
       \ifkeyword{cites100}{\citestext{$\ge 100$}}{}%
+      \ifkeyword{cites50}{\citestext{$\ge 50$}}{}%
       \ifkeyword{cites10}{\citestext{$\ge 10$}}{}%
       % \ifkeyword{cites1000}{$\;$\includegraphics[height=9pt]{figs/1000-cites.pdf}}{}%
       % \ifkeyword{cites100}{$\;$\includegraphics[height=9pt]{figs/100-cites.pdf}}{}%

@@ -1,15 +1,13 @@
 #!/usr/bin/env python
-from __future__ import unicode_literals
-
 import argparse
 import collections
 from copy import copy
 import datetime
 import heapq
-import io
 import itertools
 import json
 import os
+from pathlib import Path
 import re
 import subprocess
 
@@ -19,7 +17,7 @@ import staticjinja
 from unidecode import unidecode
 
 
-_dir = os.path.abspath(os.path.dirname(__file__))
+_dir = Path(__file__).parent.resolve()
 today = datetime.date.today()
 this_year = today.year
 
@@ -38,12 +36,7 @@ class MergedSequencesLookup(object):
 
 
 def paper_data():
-    with io.open(os.path.join(_dir, "papers.yaml")) as f:
-        data = YAML().load(f)
-
-    data["topics"] = t = set()
-    for obj in itertools.chain(data["papers"], data["talks"]):
-        t.update(obj.get("topics", []))
+    data = YAML().load(_dir / "papers.yaml")
 
     data["coauthor_count"] = c = collections.Counter()
     data["venue_type_map"] = v = MergedSequencesLookup()
@@ -63,6 +56,9 @@ def paper_data():
     )
 
     data["today"] = today
+    data["cite_meta"]["last_cite_update"] = datetime.date(
+        *(int(x) for x in data["cite_meta"]["last_cite_update"].split("-"))
+    )
 
     return data
 
@@ -206,7 +202,7 @@ def latex_escape(string):
     if not translation_table:
         p = re.compile(r"%?.*\DeclareUnicodeCharacter\{(\w+)\}\{(.*)\}")
         fn = subprocess.check_output(["kpsewhich", "utf8enc.dfu"]).strip()
-        with io.open(fn) as f:
+        with open(fn) as f:
             for line in f:
                 m = p.match(line)
                 if m:
@@ -308,9 +304,11 @@ def in_last_years(obj, n, month=1, day=1):
 def in_last_year(obj, **kwargs):
     return in_last_years(obj, 1, **kwargs)
 
+
 @filter
 def maybe_join(parts, between=" "):
     return between.join(p for p in parts if p)
+
 
 @filter
 def maybe_wrap(content, before, after):

@@ -63,7 +63,17 @@
         {%- endif -%}
       {%- endif -%}
       {%- if paper.date and paper.date > today -%}, toappear{%- endif -%}
-      {{- paper.cites_thresh | maybe_wrap(", cites", "") -}}
+      {%- if paper.citations >= 1000 -%}
+        , cites1000
+      {%- elif paper.citations >= 500 -%}
+        , cites500
+      {%- elif paper.citations >= 100 -%}
+        , cites100
+      {%- elif paper.citations >= 50 -%}
+        , cites50
+      {%- elif paper.citations >= 10 -%}
+        , cites10
+      {%- endif -%}
     },
 }
 

@@ -1,0 +1,9 @@
+\newcommand{\citeupdatedate}{ {{- "{:%B %Y}".format(cite_meta.last_cite_update) -}} }
+\newcommand{\totalcites}{
+  {%- set total_cites = cite_meta.total -%}
+  {%- set total_cites_h = (total_cites // 100) * 100 -%}
+  {%- if total_cites > total_cites_h -%}over {% endif -%}
+  {{- "{:,}".format(total_cites_h) -}}
+}
+\newcommand{\hindex}{ {{- cite_meta.h_index -}} }
+\newcommand{\itenindex}{ {{- cite_meta.i10_index -}} }
