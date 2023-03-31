@@ -1,4 +1,3 @@
----
 coauthors:
   me:
     first: Danica J.
@@ -554,8 +553,8 @@ venues:
         - unspecial: 865
         - submitted: 3328
       2023: !!omap
-        - "notable (top 5%)": 90
-        - "notable (top 25%)": 281
+        - notable (top 5%): 90
+        - notable (top 25%): 281
         - unspecial: 1277
         - submitted: 5039  # 2268 rejects, 1123 withdrawn
 
@@ -698,7 +697,7 @@ venues:
     year: 2017
 
   feature-extraction:
-    name: "Feature Extraction: Modern Questions and Challenges"
+    name: 'Feature Extraction: Modern Questions and Challenges'
     web: http://www.feature-extraction.org/
     type: workshop
     conference: neurips
@@ -962,9 +961,11 @@ venues:
 ################################################################################
 ################################################################################
 
+last_cite_update: 2023-03-01
+
 papers:
   - key: exphormer
-    title: "Exphormer: Scaling Graph Transformers with Expander Graphs"
+    title: 'Exphormer: Scaling Graph Transformers with Expander Graphs'
     authors:
       - hamed*
       - ameya*
@@ -973,6 +974,7 @@ papers:
       - ali
     venue: preprint
     arXiv: '2303.06147'
+    ss_id: a2476ba27b1f97fd94484ec0ec49bceda101100b
     year: 2023
     # url: https://openreview.net/forum?id=8Tr3v4ueNd7
 
@@ -987,7 +989,8 @@ papers:
     year: 2023
     date: 2023-03-03
     venue: preprint
-    arXiv: 2303.01687
+    ss_id: 9fdc5d89eda1b6d8437757792286471465add203
+    arXiv: '2303.01687'
 
   - key: circe
     title: Efficient Conditionally Invariant Representation Learning
@@ -1001,9 +1004,10 @@ papers:
     venue: iclr
     year: 2023
     arXiv: '2212.08645'
-    accept-kind: "notable (top 5%)"
-    note: 'Selected as notable (top 5%), i.e. as an oral.'
+    accept-kind: notable (top 5%)
+    note: Selected as notable (top 5%), i.e. as an oral.
     date: 2023-05-01
+    ss_id: 422b68799bfc5cae91febc5c33d59e28b067a368
     official: https://openreview.net/forum?id=dJruFeSRym1
 
   - key: finetuning
@@ -1017,17 +1021,19 @@ papers:
     year: 2023
     date: 2023-05-01
     official: https://openreview.net/forum?id=gVOXZproe-e
+    ss_id: 75852ed23746bb8fceebeef8c5ae2d228b83dd24
     arXiv: '2302.05779'
 
   - key: mmd-bfair
-    title: "MMD-B-Fair: Learning Fair Representations with Statistical Testing"
-    bibtex_title: "{MMD-B-Fair}: Learning Fair Representations with Statistical Testing"
+    title: 'MMD-B-Fair: Learning Fair Representations with Statistical Testing'
+    bibtex_title: '{MMD-B-Fair}: Learning Fair Representations with Statistical Testing'
     authors:
       - namrata
       - me
     venue: aistats
     arXiv: '2211.07907'
     year: 2023
+    ss_id: 244833b8e577d73c1a3552e6f41e0afcd8fc87a1
     date: 2023-04-25
 
   - key: moreau
@@ -1041,6 +1047,7 @@ papers:
     venue: neurips
     year: 2022
     date: 2022-11-29
+    ss_id: f8b29bc83e9d84ff4283811faa2bb31b650c6d10
     arXiv: '2210.12082'
 
   - key: pseudo-ntk
@@ -1052,6 +1059,7 @@ papers:
     venue: preprint
     year: 2022
     date: 2022-06-25
+    ss_id: 923f93d2ae0c73c3934e4b56b063c6dc00bfb978
     arXiv: '2206.12543'
 
   - key: active-ntk
@@ -1063,6 +1071,7 @@ papers:
     venue: neurips
     year: 2022
     date: 2022-11-29
+    ss_id: 7fe95ccdc3cfe8acd2c4975b6cbdc419f7e62b85
     arXiv: '2206.12569'
 
   - key: contrastive-graph-eval
@@ -1074,6 +1083,7 @@ papers:
     venue: neurips
     year: 2022
     date: 2022-11-29
+    ss_id: 28f8c4826c1af49b176009c6be39c7a0251764e4
     arXiv: '2206.06234'
 
   - key: contrastive-wsod
@@ -1089,6 +1099,7 @@ papers:
     date: 2022-10-23
     venue: eccv
     arXiv: '2208.07576'
+    ss_id: 5a532512593f9a3d31d13d936bd2b2bdff938cc2
     related: !!omap
       - code: https://github.com/jinhseo/OD-WSCL
 
@@ -1102,10 +1113,11 @@ papers:
     year: 2022
     date: 2022-05-25
     venue: preprint
+    ss_id: 8cb6555517575be141174a17f1e0dcf48739aaf4
     arXiv: '2205.12900'
 
   - key: prediction-filtering
-    title: "One Weird Trick to Improve Your Semi-Weakly Supervised Semantic Segmentation Model"
+    title: One Weird Trick to Improve Your Semi-Weakly Supervised Semantic Segmentation Model
     authors:
       - won
       - june
@@ -1115,6 +1127,7 @@ papers:
     accept-date: 2022-04-20
     date: 2022-07-23
     venue: ijcai
+    ss_id: a583fba699112c88dae067f549f937c876a6ab6e
     arXiv: '2205.01233'
 
   - key: learning-path
@@ -1127,6 +1140,7 @@ papers:
     date: 2022-04-25
     venue: iclr
     official: https://openreview.net/forum?id=Iog0djAdbHj
+    ss_id: 91db2f1dae977f2cf139ce194173487133b1ad67
     arXiv: '2203.02485'
 
   - key: private-mmd
@@ -1139,7 +1153,7 @@ papers:
     venue: ppai-22
 
   - key: optimistic-rates
-    title: "Optimistic Rates: A Unifying Theory for Interpolation Learning and Regularization in Linear Regression"
+    title: 'Optimistic Rates: A Unifying Theory for Interpolation Learning and Regularization in Linear Regression'
     authors:
       - lijia*
       - frederic*
@@ -1149,10 +1163,11 @@ papers:
     venue: jds
     submitted-date: 2022-02-25
     year: 2023
+    ss_id: d050f2f50a490fd90a06e5bcc7ed22079a28e404
     date: 2023-04-01
 
   - key: queerinai-dni
-    title: "How to Make Virtual Conferences Queer-Friendly: A Guide"
+    title: 'How to Make Virtual Conferences Queer-Friendly: A Guide'
     authors:
       - queerinai
       - pranav
@@ -1170,7 +1185,7 @@ papers:
     my_talk: true
 
   - key: gaussian-interpolators
-    title: "Uniform Convergence of Interpolators: Gaussian Width, Norm Bounds and Benign Overfitting"
+    title: 'Uniform Convergence of Interpolators: Gaussian Width, Norm Bounds and Benign Overfitting'
     official: https://proceedings.neurips.cc/paper/2021/hash/ac9815bef801f58de83804bce86984ad-Abstract.html
     authors:
       - frederic*
@@ -1184,11 +1199,12 @@ papers:
     accept-kind: oral
     arXiv: '2106.09276'
     related: !!omap
-      - "NYU talk": "#talk-nyu-interpolation"
+      - NYU talk: '#talk-nyu-interpolation'
+    ss_id: 24721e44b5510bfda275ddb023c2f107c9526870
     cites_thresh: 10
 
   - key: ssl-hsic
-    title: "Self-Supervised Learning with Kernel Dependence Maximization"
+    title: Self-Supervised Learning with Kernel Dependence Maximization
     official: https://proceedings.neurips.cc/paper/2021/hash/83004190b1793d7aa15f8d0d49a13eba-Abstract.html
     authors:
       - yazhe*
@@ -1198,10 +1214,11 @@ papers:
     year: 2021
     date: 2021-12-06
     venue: neurips
+    ss_id: 1a3d5d6cec457f8f3b088cb3636a1a197bd248f6
     arXiv: '2106.08320'
 
   - key: meta-2st
-    title: "Meta Two-Sample Testing: Learning Kernels for Testing with Limited Data"
+    title: 'Meta Two-Sample Testing: Learning Kernels for Testing with Limited Data'
     official: https://proceedings.neurips.cc/paper/2021/hash/2e6d9c6052e99fcdfa61d9b9da273ca2-Abstract.html
     authors:
       - feng*
@@ -1211,11 +1228,12 @@ papers:
     year: 2021
     date: 2021-12-06
     venue: neurips
+    ss_id: 6b32180f7849dcd5a9f79d7cd0f58a2068d81c32
     arXiv: '2106.07636'
 
   - key: pot
-    title: "POT: Python Optimal Transport"
-    bibtex_title: "{POT}: {P}ython {O}ptimal {T}ransport"
+    title: 'POT: Python Optimal Transport'
+    bibtex_title: '{POT}: {P}ython {O}ptimal {T}ransport'
     authors:
       - flamary
       - courty
@@ -1244,6 +1262,7 @@ papers:
     venue: jmlr
     note: Machine Learning Open Source Software Paper.
     official: https://jmlr.org/papers/v22/20-451.html
+    ss_id: 2be40f5336afa68b49fef41e009b7172c2c9fdeb
     cites_thresh: 100
 
   - key: irm
@@ -1261,6 +1280,7 @@ papers:
     venue: aistats
     note: Selected for oral presentation.
     accept-kind: oral
+    ss_id: 1fc4470c1766aea4c435015f5ef873b066f50121
     cites_thresh: 10
 
   - key: uniform-interpolation
@@ -1276,8 +1296,9 @@ papers:
     accept-kind: spotlight
     year: 2020
     related: !!omap
-      - "Penn State talk": "#talk-pennstate-interpolation"
-      - "NYU talk": "#talk-nyu-interpolation"
+      - Penn State talk: '#talk-pennstate-interpolation'
+      - NYU talk: '#talk-nyu-interpolation'
+    ss_id: 65a2da57b52942cf486cd06682db0a4c53eaae34
     cites_thresh: 10
 
   - key: deep-testing
@@ -1294,7 +1315,8 @@ papers:
     official: http://proceedings.mlr.press/v119/liu20m.html
     year: 2020
     related: !!omap
-      - "video and slides": "https://icml.cc/virtual/2020/poster/5999"
+      - video and slides: https://icml.cc/virtual/2020/poster/5999
+    ss_id: cce73b08abf1554c1c730c0333b0b29dadc03c19
     cites_thresh: 10
 
   - key: unbiased-mmd-variance
@@ -1306,6 +1328,7 @@ papers:
     venue: tech-report
     arXiv: '1906.02104'
     year: 2019
+    ss_id: cf8365023bf88bbd3c18ebb71591c7b60492497d
     cites_thresh: 10
 
   - key: cosmo-ml
@@ -1344,9 +1367,7 @@ papers:
     venue: white-paper
     arXiv: '1902.10159'
     year: 2019
-    topics:
-      ? applications
-      ? cosmology
+    ss_id: 333ddc46a211ab1eb6ceb1f4b7c4952eadce8015
     cites_thresh: 10
 
   - key: dkef
@@ -1363,12 +1384,8 @@ papers:
     related: !!omap
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/dkef-icml19.pdf
       - slides: https://icml.cc/media/Slides/icml/2019/101(11-14-00)-11-14-20-4709-learning_deep_k.pdf
-    topics:
-      ? kernels
-      ? deep kernels
-      ? density estimation
-      ? kernel exponential families
     my_talk: true
+    ss_id: fbc0863a25d99ef3895f174c7c2ee01c4f19df21
     cites_thresh: 10
 
   - key: smmd
@@ -1386,13 +1403,8 @@ papers:
     related: !!omap
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/smmd-neurips18.pdf
       - code: https://github.com/MichaelArbel/Scaled-MMD-GAN
-      - UMass talk: "#talk-umass-gans"
-    topics:
-      ? generative models
-      ? GANs
-      ? MMD
-      ? kernels
-      ? deep kernels
+      - UMass talk: '#talk-umass-gans'
+    ss_id: 3d597e16ef56119bb6e6d78e3f379623862f0752
     cites_thresh: 10
 
   - key: mmd-gans
@@ -1410,13 +1422,8 @@ papers:
     related: !!omap
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/iclr-mmd-gans.pdf
       - code: https://github.com/mbinkowski/MMD-GAN
-      - UMass talk: "#talk-umass-gans"
-    topics:
-      ? generative models
-      ? GANs
-      ? MMD
-      ? kernels
-      ? deep kernels
+      - UMass talk: '#talk-umass-gans'
+    ss_id: 9723066a5587e6267d8abfd7feefd0637a5a211c
     cites_thresh: 100
 
   - key: bdr-workshop
@@ -1432,16 +1439,10 @@ papers:
     related: !!omap
       - slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/bdr-nips/
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/bdr-nips17ws.pdf
-      - "AISTATS version": "#bdr"
+      - AISTATS version: '#bdr'
     full_version: bdr
     note: Selected for oral presentation.
     accept-kind: oral
-    topics:
-      ? distribution regression
-      ? MMD
-      ? bayesian
-      ? kernels
-      ? deep kernels
     my_talk: true
 
   - key: kexpfam-nystroem
@@ -1451,7 +1452,7 @@ papers:
       - heiko*
       - michael
       - arthur
-    official: "http://proceedings.mlr.press/v84/sutherland18a.html"
+    official: http://proceedings.mlr.press/v84/sutherland18a.html
     arXiv: '1705.08360'
     venue: aistats
     year: 2018
@@ -1461,16 +1462,11 @@ papers:
       - slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/aistats18/
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/kexpfam-aistats18.pdf
       - code: https://github.com/karlnapf/shogun/tree/feature/kernel_exp_family
-      - Turing talk: "#talk-kexpfam-ati"
-      - UCL talk: "#talk-kexpfam-csml"
-      - 'Gatsby Tri-Center talk': '#talk-kexpfam-tricenter'
-    topics: &kexpfam-nys-topics
-      ? density estimation
-      ? kernels
-      ? kernel approximation
-      ? statistical theory
-      ? kernel exponential families
+      - Turing talk: '#talk-kexpfam-ati'
+      - UCL talk: '#talk-kexpfam-csml'
+      - Gatsby Tri-Center talk: '#talk-kexpfam-tricenter'
     my_talk: true
+    ss_id: 63ca8b71d2e2e755140ff09d157de0521de3d5c0
     cites_thresh: 10
 
   - key: bdr
@@ -1480,20 +1476,15 @@ papers:
       - me*
       - dino
       - seth
-    official: "http://proceedings.mlr.press/v84/law18a.html"
+    official: http://proceedings.mlr.press/v84/law18a.html
     arXiv: '1705.04293'
     venue: aistats
     year: 2018
     related: !!omap
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/bdr-aistats18.pdf
       - code: https://github.com/hcllaw/bdr
-      - "NeurIPS workshop version": "#bdr-workshop"
-    topics:
-      ? distribution regression
-      ? MMD
-      ? bayesian
-      ? kernels
-      ? deep kernels
+      - NeurIPS workshop version: '#bdr-workshop'
+    ss_id: f35f56b7048a74244ab0530e4bc705cc71125862
     cites_thresh: 10
 
   - key: caponnetto-fix
@@ -1503,11 +1494,8 @@ papers:
       - me
     arXiv: '1702.02982'
     venue: tech-report
+    ss_id: e0db806c329fbc0d1172ad403f0938fc128dfa66
     year: 2017
-    topics:
-      ? learning theory
-      ? kernels
-      ? statistical theory
 
   - key: trump-clinton
     title: Understanding the 2016 US Presidential Election using ecological inference and distribution regression with census microdata
@@ -1520,15 +1508,10 @@ papers:
     arXiv: '1611.03787'
     related: !!omap
       - code: https://github.com/flaxter/us2016/
-      - "microdata analysis package": https://github.com/dougalsutherland/pummeler/
+      - microdata analysis package: https://github.com/djsutherland/pummeler/
     venue: tech-report
     year: 2016
-    topics:
-      ? applications
-      ? politics
-      ? MMD
-      ? kernels
-      ? distribution regression
+    ss_id: 3962dfb23f150b25307bb50112dbad67636f28ec
     cites_thresh: 10
 
   - key: opt-mmd
@@ -1546,19 +1529,12 @@ papers:
     official: http://openreview.net/forum?id=HJWHIKqgl
     arXiv: '1611.04488'
     related: !!omap
-      - code: https://github.com/dougalsutherland/opt-mmd/
+      - code: https://github.com/djsutherland/opt-mmd/
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/iclr-opt-mmd.pdf
-      - ICML workshop talk: "#talk-icml-gan"
-      - DALI talk: "#talk-dali-opt-mmd"
-      - Oxford talk: "#talk-oxford-opt-mmd"
-    topics: &opt-mmd-topics
-      ? GANs
-      ? generative models
-      ? MMD
-      ? kernels
-      ? kernel choice
-      ? deep kernels
-      ? interpretation
+      - ICML workshop talk: '#talk-icml-gan'
+      - DALI talk: '#talk-dali-opt-mmd'
+      - Oxford talk: '#talk-oxford-opt-mmd'
+    ss_id: d772a21f2f687985b41bec2dc47bc2760c57ed2f
     cites_thresh: 100
 
   - key: thesis
@@ -1578,15 +1554,8 @@ papers:
         # - slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/thesis.pdf
         # - "proposal (2015)": http://www.gatsby.ucl.ac.uk/~dougals/papers/proposal.pdf
         # - "proposal slides": http://www.gatsby.ucl.ac.uk/~dougals/slides/proposal.pdf
-    topics:
-      ? distribution regression
-      ? kernels
-      ? kernel approximation
-      ? MMD
-      ? deep kernels
-      ? kernel choice
-      ? active learning
     cites_thresh: 10
+    ss_id: 950a01addf2c7e84b070769984d27c13b45b05b5
 
   - key: nss
     title: List Mode Regression for Low Count Detection
@@ -1599,12 +1568,6 @@ papers:
       - artur
     venue: nss
     year: 2016
-    topics:
-      ? applications
-      ? distribution regression
-      ? MMD
-      ? kernels
-      ? kernel approximation
 
   - key: deep-mean-maps
     title: Deep Mean Maps
@@ -1615,14 +1578,8 @@ papers:
       - jeff
     venue: tech-report
     arXiv: '1511.04150'
+    ss_id: f922efb0fa28b83be2d085d427185a85d931eac0
     year: 2015
-    topics:
-      ? applications
-      ? deep learning
-      ? MMD
-      ? kernels
-      ? kernel approximation
-      ? computer vision
 
   - key: astro-interlopers
     title: Dynamical Mass Measurements of Contaminated Galaxy Clusters Using Machine Learning
@@ -1640,11 +1597,7 @@ papers:
     pages: 135
     doi: 10.3847/0004-637X/831/2/135
     arXiv: '1509.05409'
-    topics: &astro-topics
-      ? applications
-      ? cosmology
-      ? distribution regression
-      ? kernels
+    ss_id: 45c0b51a6543f0fdfbf504838059f7acdfc0e409
     cites_thresh: 10
 
   - key: hdd
@@ -1660,12 +1613,8 @@ papers:
     arXiv: '1509.07553'
     related: !!omap
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/hdd_aaai.pdf
-      - "NeurIPS workshop version": "#hdd-workshop"
-    topics: &hdd-topics
-      ? distribution regression
-      ? kernels
-      ? kernel approximation
-      ? computer vision
+      - NeurIPS workshop version: '#hdd-workshop'
+    ss_id: 7016a32cf825e7c4a65ef51f75844839f8e99b46
     cites_thresh: 10
 
   - key: hdd-workshop
@@ -1681,8 +1630,7 @@ papers:
     related: !!omap
       - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/hdd_nips15ws.pdf
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/hdd_nips15ws.pdf
-      - "AAAI version": "#hdd"
-    topics: *hdd-topics
+      - AAAI version: '#hdd'
 
   - key: rff
     title: On the Error of Random Fourier Features
@@ -1699,10 +1647,7 @@ papers:
     arXiv: '1506.02785'
     related: !!omap
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/rff_uai15.pdf
-    topics:
-      ? kernels
-      ? kernel approximation
-      ? MMD
+    ss_id: 78e95099ec2ac3cb087eb47ba7c87ddb01a19405
     cites_thresh: 100
 
   - key: apps
@@ -1719,10 +1664,8 @@ papers:
       - pdf: http://proceedings.mlr.press/v38/ma15.pdf
       - appendix: http://proceedings.mlr.press/v38/ma15-supp.pdf
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/apps_aistats15.pdf
-      - "NeurIPS workshop version": "#apps-workshop"
-    topics: &apps-topics
-      ? active learning
-      ? Gaussian processes
+      - NeurIPS workshop version: '#apps-workshop'
+    ss_id: 902baaacad5b5e9b4fa7cd5c5b911c90f3f0e98e
     cites_thresh: 10
 
   - key: apps-workshop
@@ -1737,9 +1680,8 @@ papers:
     related: !!omap
       - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/apps_nips14ws.pdf
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/apps_nips14ws.pdf
-      - "AISTATS version": "#apps"
+      - AISTATS version: '#apps'
     full_version: apps
-    topics: *apps-topics
 
   - key: astro
     title: A Machine Learning Approach for Dynamical Mass Measurements of Galaxy Clusters
@@ -1757,7 +1699,7 @@ papers:
     pages: 50
     doi: 10.1088/0004-637X/803/2/50
     arXiv: '1410.0686'
-    topics: *astro-topics
+    ss_id: f5b6eb5c3fa7eb7a569d6c2af0a43f7123034bd0
     cites_thresh: 10
 
   - key: active-mf
@@ -1776,11 +1718,9 @@ papers:
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/kdd-13.pdf
       - slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/kdd-13.pdf
       - code: https://github.com/AutonlabCMU/active-matrix-factorization
-    topics:
-      ? active learning
-      ? matrix factorization
     my_talk: true
     cites_thresh: 10
+    ss_id: 2bf7e7fb156466546428dc6d25702d32514ef41d
 
   - key: sdm-arxiv
     title: Kernels on Sample Sets via Nonparametric Divergence Estimates
@@ -1792,9 +1732,7 @@ papers:
     venue: tech-report
     year: 2012
     arXiv: '1202.0302'
-    topics:
-      ? distribution regression
-      ? kernels
+    ss_id: a87ba84a66b769fd58aea07a0bba749b1426c934
     cites_thresh: 10
 
    # - key: sparse-modeling
@@ -1808,11 +1746,6 @@ papers:
    #   note: Best poster award.
    #   related: !!omap
    #     - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/opt-project.pdf
-   #   topics:
-   #     ? sparse modeling
-   #     ? interpretation
-   #     ? kernels
-   #     ? optimization
 
   - key: sdm-cvpr
     title: Nonparametric kernel estimators for image classification
@@ -1827,10 +1760,7 @@ papers:
     related: !!omap
       - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/cvpr-12.pdf
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/cvpr-12.pdf
-    topics:
-      ? computer vision
-      ? kernels
-      ? distribution regression
+    ss_id: 76710cce6eb7f6cab032f8ec0832b47a474fd285
     cites_thresh: 10
 
   - key: guts
@@ -1854,8 +1784,7 @@ papers:
       - slides: https://www.usenix.org/sites/default/files/conference/protected-files/alexandrov_lisa12_slides.pdf
       - talk: https://2459d6dc103cb5933875-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/lisa12/stromme.mp4
     web_note: Work done as part of the <a href='http://www.sccs.swarthmore.edu'>Swarthmore College Computer Society</a>.
-    topics:
-      ? systems
+    ss_id: 7bd11dfb2effc8ab7c47f427f3478d96bf8e54b0
 
   - key: smrf
     title: Grounding Conceptual Knowledge with Spatio-Temporal Multi-Dimensional Relational Framework Trees
@@ -1868,8 +1797,7 @@ papers:
     year: 2012
     related: !!omap
       - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/smrf-techreport.pdf
-    topics:
-      ? relational learning
+    ss_id: c6534ed94a29fd127b0a692d3243d7de451e7547
 
   - key: ba-thesis
     title: Integrating Human Knowledge into a Relational Learning System
@@ -1879,9 +1807,8 @@ papers:
     year: 2011
     related: !!omap
       - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/ba-thesis.pdf
-    topics:
-      ? relational learning
-      ? interpretation
+    ss_id: a1123aeb0ac2b3376e46239293a94f1f35340821
+
 
 ################################################################################
 ################################################################################
@@ -1889,36 +1816,36 @@ papers:
 
 talks:
   - key: umich-entk
-    title: "A Defense of (Empirical) Neural Tangent Kernels"
+    title: A Defense of (Empirical) Neural Tangent Kernels
     date: 2023-03-23
     venue: umich-ai
     type: international
     slides: https://djsutherland.ml/slides/entk-umich
     related: !!omap
-      - "slides (pdf)": https://djsutherland.ml/slides/entk-umich.pdf
+      - slides (pdf): https://djsutherland.ml/slides/entk-umich.pdf
 
   - key: umich-namechange
-    title: "Post-Publication Name Change Policies, Why they Matter, and Whether they Work"
+    title: Post-Publication Name Change Policies, Why they Matter, and Whether they Work
     date: 2023-03-23
     venue: umich-rdei
     type: international
     slides: https://djsutherland.ml/slides/umich-name-change
     funded: true
     related: !!omap
-      - "slides (pdf)": https://djsutherland.ml/slides/umich-name-change.pdf
+      - slides (pdf): https://djsutherland.ml/slides/umich-name-change.pdf
 
   - key: msr-entk
-    title: "In Defence of (Empirical) Neural Tangent Kernels"
+    title: In Defence of (Empirical) Neural Tangent Kernels
     date: 2023-03-21
     venue: msr-montreal
     type: national
     virtual: true
     slides: https://djsutherland.ml/slides/entk-msr
     related: !!omap
-      - "slides (pdf)": https://djsutherland.ml/slides/entk-msr.pdf
+      - slides (pdf): https://djsutherland.ml/slides/entk-msr.pdf
 
   - key: wsdl-ntks
-    title: "Neural Tangent Kernels, Finite and Infinite"
+    title: Neural Tangent Kernels, Finite and Infinite
     date: 2023-02-24
     venue: wsdl
     slides: https://djsutherland.ml/slides/ntk-wsdl.pdf
@@ -1928,25 +1855,25 @@ talks:
     cv_note: Two hour course, about 300 participants (not all present live).
 
   - key: name-change
-    title: "Name Change Policies: A Brief (Personal) Tour"
+    title: 'Name Change Policies: A Brief (Personal) Tour'
     date: 2022-11-28
     venue: qai-neurips-22
     slides: https://djsutherland.ml/slides/qai-name-change
     related: !!omap
-      - "slides (pdf)": https://djsutherland.ml/slides/qai-name-change.pdf
+      - slides (pdf): https://djsutherland.ml/slides/qai-name-change.pdf
     type: international
     funded: true
 
   - key: etics
-    title: "Modern Kernel Methods in Machine Learning"
+    title: Modern Kernel Methods in Machine Learning
     date: 2022-10-02
     venue: etics
     related: !!omap
-      - "slides 1": https://djsutherland.ml/slides/etics-22/
-      - "slides 1 (pdf)": https://djsutherland.ml/slides/etics-22.pdf
-      - "slides 2": https://djsutherland.ml/slides/etics-22/part2.html
-      - "slides 2 (pdf)": https://djsutherland.ml/slides/etics-22-2.pdf
-      - "practical materials": https://github.com/djsutherland/etics-kernels-22
+      - slides 1: https://djsutherland.ml/slides/etics-22/
+      - slides 1 (pdf): https://djsutherland.ml/slides/etics-22.pdf
+      - slides 2: https://djsutherland.ml/slides/etics-22/part2.html
+      - slides 2 (pdf): https://djsutherland.ml/slides/etics-22-2.pdf
+      - practical materials: https://github.com/djsutherland/etics-kernels-22
     funded: true
     teaching: true
     type: international
@@ -1962,7 +1889,7 @@ talks:
       - deep-testing
       - opt-mmd
     related: !!omap
-      - "slides (pdf)": https://djsutherland.ml/slides/trustml-testing.pdf
+      - slides (pdf): https://djsutherland.ml/slides/trustml-testing.pdf
     type: national
     virtual: true
 
@@ -1977,7 +1904,7 @@ talks:
       - deep-testing
       - opt-mmd
     related: !!omap
-      - "slides (pdf)": https://djsutherland.ml/slides/trustml-testing.pdf
+      - slides (pdf): https://djsutherland.ml/slides/trustml-testing.pdf
     type: international
     virtual: true
     funded: true
@@ -1991,7 +1918,7 @@ talks:
       - meta-2st
       - ssl-hsic
     related: !!omap
-      - "slides (pdf)": https://djsutherland.ml/slides/like22.pdf
+      - slides (pdf): https://djsutherland.ml/slides/like22.pdf
     virtual: true
     type: international
 
@@ -2004,7 +1931,7 @@ talks:
       - uniform-interpolation
       - gaussian-interpolators
     related: !!omap
-      - "slides (pdf)": https://djsutherland.ml/slides/nyu-uniform.pdf
+      - slides (pdf): https://djsutherland.ml/slides/nyu-uniform.pdf
     virtual: true
     type: national
 
@@ -2019,19 +1946,19 @@ talks:
       - smmd
       - mmd-gans
     related: !!omap
-      - "slides (pdf)": https://djsutherland.ml/slides/pihot.pdf
+      - slides (pdf): https://djsutherland.ml/slides/pihot.pdf
     type: local
     virtual: true
 
 
   - key: ds3-21
-    title: "Kernel Methods: From Basics to Modern Applications"
+    title: 'Kernel Methods: From Basics to Modern Applications'
     date: 2021-01-04
     venue: ds3
     slides: https://djsutherland.ml/slides/ds3-21/
     related: !!omap
-      - "slides (pdf)": https://djsutherland.ml/slides/ds3-21.pdf
-      - "practical materials": https://github.com/djsutherland/ds3-kernels-21
+      - slides (pdf): https://djsutherland.ml/slides/ds3-21.pdf
+      - practical materials: https://github.com/djsutherland/ds3-kernels-21
     type: international
     virtual: true
     funded: true
@@ -2046,12 +1973,12 @@ talks:
     papers:
       - uniform-interpolation
     related: !!omap
-      - "slides (pdf)": https://djsutherland.ml/slides/pennstate-uniform.pdf
+      - slides (pdf): https://djsutherland.ml/slides/pennstate-uniform.pdf
     type: national
     virtual: true
 
   - key: neurips-tutorial
-    title: "Interpretable Comparison of Distributions and Models"
+    title: Interpretable Comparison of Distributions and Models
     date: 2019-12-09
     venue: neurips
     video: https://slideslive.com/38923184/interpretable-comparison-of-distributions-and-models
@@ -2061,9 +1988,9 @@ talks:
       - deep-testing
       - opt-mmd
     related: !!omap
-      - "slides 1": http://www.gatsby.ucl.ac.uk/~gretton/papers/neurips19_1.pdf
-      - "slides 2": http://www.gatsby.ucl.ac.uk/~gretton/papers/neurips19_2.pdf
-      - "slides 3": http://www.gatsby.ucl.ac.uk/~gretton/papers/neurips19_3.pdf
+      - slides 1: http://www.gatsby.ucl.ac.uk/~gretton/papers/neurips19_1.pdf
+      - slides 2: http://www.gatsby.ucl.ac.uk/~gretton/papers/neurips19_2.pdf
+      - slides 3: http://www.gatsby.ucl.ac.uk/~gretton/papers/neurips19_3.pdf
     type: international
     funded: true
     teaching: true
@@ -2092,7 +2019,7 @@ talks:
     type: international
 
   - key: ds3-19
-    title: "Learning with Positive Definite Kernels: Theory, Algorithms and Applications"
+    title: 'Learning with Positive Definite Kernels: Theory, Algorithms and Applications'
     date: 2019-06-27
     venue: ds3
     related: !!omap
@@ -2188,7 +2115,6 @@ talks:
     date: 2017-12-19
     slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/highd-functions/
     video: https://www.youtube.com/watch?v=sbNI_k9P-Y4&list=PLuD_SqLtxSdW1ZC0mfLXiXXGRaL3jnud-&index=8
-    topics: *kexpfam-nys-topics
     type: local
 
   - key: kexpfam-csml
@@ -2198,7 +2124,6 @@ talks:
       - kexpfam-nystroem
     date: 2017-12-15
     slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/csml/kexpfam/
-    topics: *kexpfam-nys-topics
     type: local
 
   - key: icml-gan
@@ -2208,7 +2133,6 @@ talks:
       - opt-mmd
     date: 2017-08-10
     slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/icml-igm/
-    topics: *opt-mmd-topics
     type: international
 
   - key: dali-opt-mmd
@@ -2219,7 +2143,6 @@ talks:
     date: 2017-04-18
     slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/dali/
     video: https://youtu.be/Xpd6DL02C7Q
-    topics: *opt-mmd-topics
     type: international
 
   - key: oxford-opt-mmd
@@ -2229,6 +2152,5 @@ talks:
       - opt-mmd
     date: 2017-02-03
     slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/oxford-opt-mmd.pdf
-    topics: *opt-mmd-topics
     funded: true
     type: national
