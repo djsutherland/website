@@ -396,6 +396,10 @@
 \DeclareFieldFormat{abstract}{\par\small#1}
 \renewbibmacro*{finentry}{\printfield{abstract}\finentry}
 
+
+% TODO: would be nice to link to the article a la % https://tex.stackexchange.com/a/48506/9019
+% except incorporating eprint links...which seems nontrivial?
+
 %% Bibtex filters
 \defbibfilter{journal}{
   keyword=journal and not keyword=noreview and not keyword=submission
@@ -613,9 +617,9 @@
   \ARbox{\sffamily\footnotesize\textcolor{ARtextcolor}{#1}}}
 \newcommand{\AR}[1]{\rightsymb{\ARtext{#1}}}
 
-\newtcbox{\citesbox}{enhanced,nobeforeafter,tcbox raise base, boxrule=0.4pt, top=-0.4mm, bottom=-0.8mm, right=0mm, left=3.5mm,arc=1pt,boxsep=2pt,before upper={\vphantom{dlg}},   colframe=ARdarkcolor,coltext=ARtextcolor,colback=ARlightcolor, overlay={\begin{tcbclipinterior}\fill[ARdarkcolor] (frame.south west) rectangle node[text=white,font=\sffamily\bfseries\tiny,rotate=90]{\scalebox{.8}{cites}} ([xshift=3.3mm]frame.north west);\end{tcbclipinterior}}}
+\newtcbox{\citesbox}{enhanced,nobeforeafter,tcbox raise base, boxrule=0.4pt, top=-0.4mm, bottom=-0.4mm, right=0mm, left=0mm,arc=1pt,boxsep=2pt,before upper={\vphantom{dlg}}, colframe=ARdarkcolor,coltext=ARtextcolor,colback=ARlightcolor}
 \newcommand{\citestext}[1]{%
-  \colorlet{saved}{.}\colorlet{ARdarkcolor}{saved!35!white}\colorlet{ARlightcolor}{white!96!saved}\colorlet{ARtextcolor}{saved!60!white} \citesbox{\sffamily\footnotesize\textcolor{ARtextcolor}{#1}}}
+  \colorlet{saved}{.}\colorlet{ARdarkcolor}{saved!35!white}\colorlet{ARlightcolor}{white!83!saved}\colorlet{ARtextcolor}{saved!60!white} \citesbox{\sffamily\footnotesize\textcolor{ARtextcolor}{#1 cites}}}
 
 \DeclareSourcemap{
   \maps[datatype=bibtex]{
