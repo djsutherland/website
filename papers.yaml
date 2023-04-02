@@ -801,6 +801,14 @@ venues:
     year: 2019
     web: https://www.math.ucdavis.edu/~saito/confs/ICIAM19/
 
+  pca:
+    name: Pacific Conference on Artificial Intelligence
+    long_article: the
+    short: PCA
+    type: conference
+    web_by_year:
+      2023: https://pca2023.com/
+
   pihot:
     name: Pacific Interdisciplinary Hub on Optimal Transport
     long_article: the
@@ -1881,6 +1889,15 @@ papers:
 ################################################################################
 
 talks:
+  - key: pca-testing
+    title: Are these datasets different? Two-sample testing for data scientists
+    date: 2023-04-02
+    venue: pca
+    type: local
+    slides: https://djsutherland.ml/slides/pca-testing
+    related: !!omap
+      - slides (pdf): https://djsutherland.ml/slides/pca-testing.pdf
+
   - key: umich-entk
     title: A Defense of (Empirical) Neural Tangent Kernels
     date: 2023-03-23
