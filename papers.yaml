@@ -58,6 +58,9 @@ coauthors:
     first: Ameya
     last: Velingker
     web: https://www.ameyavelingker.com/
+  anaelia:
+    first: Analeia
+    last: Ovalle
   arjun:
     first: Arjun
     last: Subramonian
@@ -69,6 +72,9 @@ coauthors:
     first: Artur
     last: Dubrawski
     web: https://www.autonlab.org/people/artur_dubrawski
+  ashwin:
+    first: Ashwin
+    last: Singh
   avestruz:
     first: Camille
     last: Avestruz
@@ -83,10 +89,16 @@ coauthors:
     first: Nicholas
     last: Battaglia
     web: http://www.astro.utoronto.ca/~battaglia/Home.html
+  baylor:
+    first: Emi
+    last: Baylor
   becca:
     first: Rebecca
     last: Roelofs
     web: http://ww.eecs.berkeley.edu/~roelofs/
+  bilenko:
+    first: Natalia Y.
+    last: Bilenko
   boada:
     first: Steven
     last: Boada
@@ -96,6 +108,9 @@ coauthors:
   boisbunon:
     first: Aurélie
     last: Boisbunon
+  breznik:
+    first: Eva
+    last: Breznik
   burka:
     first: Alexander
     last: Burka
@@ -112,6 +127,9 @@ coauthors:
   cisewski:
     first: Jessi
     last: Cisewski-Kehe
+  claas:
+    first: Claas
+    last: Voelcker
   corenflos:
     first: Adrien
     last: Corenflos
@@ -125,6 +143,9 @@ coauthors:
   daniel-elia:
     first: Daniel-Elia
     last: Feist-Alexandrov
+  dennler:
+    first: Nathaniel
+    last: Dennler
   dini:
     first: Steve
     last: Dini
@@ -141,6 +162,9 @@ coauthors:
   evrard:
     first: August E.
     last: Evrard
+  evyn:
+    first: Evyn
+    last: Dǒng
   fagg:
     first: Andrew H.
     last: Fagg
@@ -181,6 +205,9 @@ coauthors:
   genel:
     first: Shy
     last: Genel
+  ghosh:
+    first: Avijit
+    last: Ghosh
   goodman:
     first: Alyssa
     last: Goodman
@@ -194,14 +221,26 @@ coauthors:
     first: Guangquan
     last: Zhang
     web: https://www.uts.edu.au/staff/guangquan.zhang
+  hang:
+    first: Hang
+    last: Yuan
   heiko:
     first: Heiko
     last: Strathmann
     web: http://herrstrathmann.de/about/
+  hetvi:
+    first: Hetvi
+    last: J
+  huan:
+    first: Huan
+    last: Zhang
   hy:
     first: Hy
     last: Trac
     web: https://www.cmu.edu/physics/people/faculty/trac.html
+  jaidev:
+    first: Jaidev
+    last: Shriram
   janati:
     first: Hicham
     last: Janati
@@ -216,6 +255,9 @@ coauthors:
     first: Jeff
     last: Schneider
     web: https://www.cs.cmu.edu/~schneide/
+  joshi:
+    first: Aditya
+    last: Joshi
   junier:
     first: Junier B.
     last: Oliva
@@ -245,13 +287,22 @@ coauthors:
     first: Kaveh
     last: Hassani
     web: https://www.autodesk.com/research/people/kaveh-hassani
+  kay:
+    first: Jackie
+    last: Kay
   kevin:
     first: Li  # how he wants it...
     last: Wenliang
     web: https://kevin-w-li.github.io/
+  klubicka:
+    first: Filip
+    last: Klubička
   kosowsky:
     first: Arthur
     last: Kosowsky
+  kruno:
+    first: Kruno
+    last: Lehamn
   kyle:
     first: Kyle
     last: Miller
@@ -277,15 +328,39 @@ coauthors:
     first: Benjamin
     last: Lipton
     web: http://benjaminlipton.com
+  locatelli:
+    first: Davide
+    last: Locatelli
   lochner:
     first: Michelle
     last: Lochner
   luca:
     first: Luca
     last: Soldaini
+  maarten:
+    first: Maarten
+    last: Sap
+  marc:
+    first: Marc Peter
+    last: Deisenroth
+  markham:
+    first: Alex
+    last: Markham
+  maria-r:
+    first: Maria
+    last: Ryskina
+  martin-mundt:
+    first: Martin
+    last: Mundt
   marylena:
     first: MaryLena
     last: Bleile
+  mcnamara:
+    first: Andrew
+    last: McNamara
+  melvin:
+    first: Melvin Selim
+    last: Atay
   michael:
     first: Michael
     last: Arbel
@@ -302,6 +377,12 @@ coauthors:
     first: Mikołaj
     last: Bińkowski
     web: https://github.com/mbinkowski
+  milind:
+    first: Milind
+    last: Agarwal
+  ml-p:
+    first: Maria Leonor
+    last: Pacheco
   nagai:
     first: Daisuke
     last: Nagai
@@ -323,6 +404,12 @@ coauthors:
   nord:
     first: Brian
     last: Nord
+  noseworthy:
+    first: Michael
+    last: Noseworthy
+  nyx:
+    first: Nyx
+    last: McLean
   palmer:
     first: Thomas
     last: Palmer
@@ -354,6 +441,12 @@ coauthors:
   rachel:
     first: Rachel
     last: Mandelbaum
+  rafa:
+    first: Raphael
+    last: Gontijo-Lopes
+  raj-k:
+    first: Raj
+    last: Korpan
   rakotomamonjy:
     first: Alain
     last: Rakotomamonjy
@@ -378,9 +471,21 @@ coauthors:
     first: Roman
     last: Pogodin
     web: https://roman-pogodin.com/
+  ruchira:
+    first: Ruchira
+    last: Ray
   sabine:
     first: Sabine
     last: Weber
+  sarah-mathew:
+    first: Sarah
+    last: Mathew
+  saraswat:
+    first: Manu
+    last: Saraswat
+  sarthak:
+    first: Sarthak
+    last: Arora
   schutz:
     first: Antony
     last: Schutz
@@ -397,6 +502,9 @@ coauthors:
   shangmin:
     first: Shangmin
     last: Guo
+  sharvani:
+    first: Sharvani
+    last: Jha
   shirley:
     first: Shirley
     last: Ho
@@ -407,13 +515,25 @@ coauthors:
     first: Alex
     last: Smola
     web: https://alex.smola.org
+  stark:
+    first: Luke
+    last: Stark
   stromme:
     first: Andrew
     last: Stromme
     web: http://andrewstromme.com
+  talat:
+    first: Zeerak
+    last: Talat
+  tanvi:
+    first: Tanvi
+    last: Anand
   tavenard:
     first: Romain
     last: Tavenard
+  ti:
+    first: ST
+    last: John
   tong:
     first: Alexander
     last: Tong
@@ -424,6 +544,12 @@ coauthors:
     first: Victor
     last: Veitch
     web: http://victorveitch.com/
+  vishakha:
+    first: Vishakha
+    last: Agrawal
+  vytla:
+    first: Nikhil
+    last: Vytla
   wandelt:
     first: Benjamin
     last: Wandelt
@@ -434,10 +560,16 @@ coauthors:
     first: Wenkai
     last: Xu
     web: http://www.stats.ox.ac.uk/~wxu/
+  willie:
+    first: Willie
+    last: Agnew
   xiaoxiao:
     first: Xiaoxiao
     last: Li
     web: https://xxlya.github.io/xiaoxiao/
+  yanan:
+    first: Yanan
+    last: Long
   yazhe:
     first: Yazhe
     last: Li
@@ -449,10 +581,16 @@ coauthors:
     first: Yifei
     last: Ma
     web: http://yma.io/
+  yuan:
+    first: Hang
+    last: Yuan
   yu-xiang:
     first: Yu-Xiang
     last: Wang
     web: https://www.cs.cmu.edu/~yuxiangw/
+  zijie:
+    first: Zijie J.
+    last: Wang
 
 
 ################################################################################
@@ -985,6 +1123,65 @@ cite_meta:
   i10_index_5y: 24
 
 papers:
+  - key: qai
+    title: 'Queer in AI: A Case Study in Community-Led Participatory AI'
+    venue: preprint
+    arXiv: '2303.16972'
+    year: 2023
+    authors:
+      - queerinai
+      - anaelia
+      - arjun
+      - ashwin
+      - claas
+      - me
+      - locatelli
+      - breznik
+      - klubicka
+      - hang
+      - hetvi
+      - huan
+      - huan
+      - jaidev
+      - kruno
+      - luca
+      - maarten
+      - marc
+      - ml-p
+      - maria-r
+      - martin-mundt
+      - melvin
+      - milind
+      - nyx
+      - pan
+      - pranav
+      - raj-k
+      - ruchira
+      - sarah-mathew
+      - sarthak
+      - ti
+      - tanvi
+      - vishakha
+      - willie
+      - yanan
+      - zijie
+      - talat
+      - ghosh
+      - dennler
+      - noseworthy
+      - sharvani
+      - baylor
+      - joshi
+      - bilenko
+      - mcnamara
+      - rafa
+      - markham
+      - evyn
+      - kay
+      - saraswat
+      - vytla
+      - stark
+
   - key: exphormer
     title: 'Exphormer: Scaling Graph Transformers with Expander Graphs'
     authors:
