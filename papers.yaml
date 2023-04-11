@@ -685,6 +685,18 @@ venues:
     web_by_year:
       2021: https://2021.emnlp.org
 
+  facct:
+    name: ACM Conference on Fairness, Accountability, and Transparency
+    short: FAccT
+    long_article: the
+    type: conference
+    web_by_year:
+      2023: https://facctconference.org/2023/
+    # accepts:
+    #   2023: !!omap
+    #     - unspecial: ?
+    #     - submitted: 608
+
   iclr:
     name: International Conference on Learning Representations
     short: ICLR
@@ -1126,9 +1138,10 @@ cite_meta:
 papers:
   - key: qai
     title: 'Queer in AI: A Case Study in Community-Led Participatory AI'
-    venue: preprint
+    venue: facct
     arXiv: '2303.16972'
     year: 2023
+    date: 2023-06-12
     authors:
       - queerinai
       - anaelia
