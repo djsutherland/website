@@ -616,6 +616,153 @@ venues:
 
   ############################################################################
   # Conferences with publications
+
+  aaai:
+    name: AAAI Conference on Artificial Intelligence
+    short: AAAI
+    type: conference
+    web_by_year:
+      2016: http://www.aaai.org/Conferences/AAAI/aaai16.php
+    accepts:
+      2016: !!omap
+        - unspecial: 549
+        - submitted: 2132
+
+  aistats:
+    name: Artificial Intelligence and Statistics
+    short: AISTATS
+    type: conference
+    web_by_year:
+      2015: http://www.aistats.org/aistats2015/
+      2018: http://aistats.org/aistats2018/
+      2019: http://aistats.org/aistats2019/
+      2021: http://aistats.org/aistats2021/
+      2023: http://aistats.org/aistats2023/
+    accepts:
+      2015: !!omap
+        - unspecial: 127
+        - submitted: 442
+      2018: !!omap
+        - oral: 31
+        - unspecial: 183
+        - submitted: 645
+      2021: !!omap
+        - oral: 48
+        - unspecial: 407
+        - submitted: 1527
+      2023: !!omap
+        - unspecial: 490
+        - submitted: 1689
+
+  cvpr:
+    name: Computer Vision and Pattern Recognition
+    short: CVPR
+    type: conference
+    web_by_year:
+      2012: http://tab.computer.org/pamitc/archive/cvpr2012/
+    accepts:
+      2012: !!omap
+        - unspecial: 465
+        - submitted: 1776
+
+  eccv:
+    name: European Conference on Computer Vision
+    short: ECCV
+    long_article: the
+    type: conference
+    web_by_year:
+      2022: https://eccv2022.ecva.net/
+    accepts:
+      2022: !!omap
+        - unspecial: 1650
+        - submitted: 5803
+
+  emnlp:
+    name: Conference on Empirical Methods in Natural Language Processing
+    short: EMNLP
+    long_article: the
+    type: conference
+    web_by_year:
+      2021: https://2021.emnlp.org
+
+  iclr:
+    name: International Conference on Learning Representations
+    short: ICLR
+    type: conference
+    web_by_year:
+      2017: http://www.iclr.cc/doku.php?id=iclr2017:main
+      2018: http://www.iclr.cc/doku.php?id=ICLR2018:main
+      2022: https://iclr.cc/Conferences/2022/
+      2023: https://iclr.cc/Conferences/2023/
+    accepts:
+      2017: !!omap
+        - oral: 15
+        - unspecial: 183
+        - submitted: 507
+      2018: !!omap
+        - oral: 23
+        - unspecial: 291
+        - submitted: 981
+      2022: !!omap
+        - oral: 54
+        - spotlight: 176
+        - unspecial: 865
+        - submitted: 3328
+      2023: !!omap
+        - notable (top 5%): 90
+        - notable (top 25%): 281
+        - unspecial: 1277
+        - submitted: 5039  # 2268 rejects, 1123 withdrawn
+    h5_rank: 9
+
+  icml:
+    name: International Conference on Machine Learning
+    short: ICML
+    long_article: the
+    type: conference
+    web_by_year:
+      2017: https://icml.cc/Conferences/2017
+      2019: https://icml.cc/Conferences/2019
+      2020: https://icml.cc/Conferences/2020
+    accepts:
+      2019: !!omap
+        - unspecial: 773
+        - submitted: 3424
+      2020: !!omap
+        - unspecial: 1088
+        - submitted: 4990
+    h5_rank: 19
+
+  ijcai:
+    name: International Joint Conference on Artificial Intelligence
+    short: IJCAI
+    type: conference
+    web_by_year:
+      2022: https://ijcai-22.org/
+    accepts:
+      2022: !!omap
+        - unspecial: 680  # tentative number
+        - submitted: 4535
+
+  kdd:
+    name: Knowledge Discovery and Data Mining
+    short: KDD
+    type: conference
+    web_by_year:
+      2013: http://www.sigkdd.org/kdd2013
+    accepts:
+      2013: !!omap
+        - oral: 66
+        - unspecial: 59
+        - submitted: 726
+
+  lisa:
+    name: Large Installation System Administration
+    short: LISA
+    type: conference
+    web_by_year:
+      2012: https://www.usenix.org/conference/lisa12
+
   neurips:
     name: Neural Information Processing Systems
     short: NeurIPS
@@ -651,80 +798,6 @@ venues:
         - submitted: 10411
     h5_rank: 10
 
-  icml:
-    name: International Conference on Machine Learning
-    short: ICML
-    long_article: the
-    type: conference
-    web_by_year:
-      2017: https://icml.cc/Conferences/2017
-      2019: https://icml.cc/Conferences/2019
-      2020: https://icml.cc/Conferences/2020
-    accepts:
-      2019: !!omap
-        - unspecial: 773
-        - submitted: 3424
-      2020: !!omap
-        - unspecial: 1088
-        - submitted: 4990
-    h5_rank: 19
-
-  iclr:
-    name: International Conference on Learning Representations
-    short: ICLR
-    type: conference
-    web_by_year:
-      2017: http://www.iclr.cc/doku.php?id=iclr2017:main
-      2018: http://www.iclr.cc/doku.php?id=ICLR2018:main
-      2022: https://iclr.cc/Conferences/2022/
-      2023: https://iclr.cc/Conferences/2023/
-    accepts:
-      2017: !!omap
-        - oral: 15
-        - unspecial: 183
-        - submitted: 507
-      2018: !!omap
-        - oral: 23
-        - unspecial: 291
-        - submitted: 981
-      2022: !!omap
-        - oral: 54
-        - spotlight: 176
-        - unspecial: 865
-        - submitted: 3328
-      2023: !!omap
-        - notable (top 5%): 90
-        - notable (top 25%): 281
-        - unspecial: 1277
-        - submitted: 5039  # 2268 rejects, 1123 withdrawn
-    h5_rank: 9
-
-  aistats:
-    name: Artificial Intelligence and Statistics
-    short: AISTATS
-    type: conference
-    web_by_year:
-      2015: http://www.aistats.org/aistats2015/
-      2018: http://aistats.org/aistats2018/
-      2019: http://aistats.org/aistats2019/
-      2021: http://aistats.org/aistats2021/
-      2023: http://aistats.org/aistats2023/
-    accepts:
-      2015: !!omap
-        - unspecial: 127
-        - submitted: 442
-      2018: !!omap
-        - oral: 31
-        - unspecial: 183
-        - submitted: 645
-      2021: !!omap
-        - oral: 48
-        - unspecial: 407
-        - submitted: 1527
-      2023: !!omap
-        - unspecial: 490
-        - submitted: 1689
-
   uai:
     name: Uncertainty in Artificial Intelligence
     short: UAI
@@ -736,80 +809,14 @@ venues:
         - unspecial: 99
         - submitted: 291
 
-  aaai:
-    name: AAAI Conference on Artificial Intelligence
-    short: AAAI
-    type: conference
-    web_by_year:
-      2016: http://www.aaai.org/Conferences/AAAI/aaai16.php
-    accepts:
-      2016: !!omap
-        - unspecial: 549
-        - submitted: 2132
-
-  ijcai:
-    name: International Joint Conference on Artificial Intelligence
-    short: IJCAI
-    type: conference
-    web_by_year:
-      2022: https://ijcai-22.org/
-    accepts:
-      2022: !!omap
-        - unspecial: 680  # tentative number
-        - submitted: 4535
-
-  kdd:
-    name: Knowledge Discovery and Data Mining
-    short: KDD
-    type: conference
-    web_by_year:
-      2013: http://www.sigkdd.org/kdd2013
-    accepts:
-      2013: !!omap
-        - oral: 66
-        - unspecial: 59
-        - submitted: 726
-
-  cvpr:
-    name: Computer Vision and Pattern Recognition
-    short: CVPR
-    type: conference
-    web_by_year:
-      2012: http://tab.computer.org/pamitc/archive/cvpr2012/
-    accepts:
-      2012: !!omap
-        - unspecial: 465
-        - submitted: 1776
-
-  eccv:
-    name: European Conference on Computer Vision
-    short: ECCV
-    long_article: the
-    type: conference
-    web_by_year:
-      2022: https://eccv2022.ecva.net/
-    accepts:
-      2022: !!omap
-        - unspecial: 1650
-        - submitted: 5803
-
-  emnlp:
-    name: Conference on Empirical Methods in Natural Language Processing
-    short: EMNLP
-    long_article: the
-    type: conference
-    web_by_year:
-      2021: https://2021.emnlp.org
-
-  lisa:
-    name: Large Installation System Administration
-    short: LISA
-    type: conference
-    web_by_year:
-      2012: https://www.usenix.org/conference/lisa12
-
   ############################################################################
   # Journals
+
+  ApJ:
+    name: The Astrophysical Journal
+    short: ApJ
+    type: journal
+    web: https://iopscience.iop.org/0004-637X/
 
   jmlr:
     name: Journal of Machine Learning Research
@@ -822,27 +829,8 @@ venues:
     short: JDS
     type: journal
 
-  ApJ:
-    name: The Astrophysical Journal
-    short: ApJ
-    type: journal
-    web: https://iopscience.iop.org/0004-637X/
-
   ############################################################################
   # Workshops with publications
-  neurips-dfgg:
-    name: Learning on Distributions, Functions, Graphs and Groups
-    web: https://sites.google.com/site/nips2017learningon/
-    type: workshop
-    conference: neurips
-    year: 2017
-
-  feature-extraction:
-    name: 'Feature Extraction: Modern Questions and Challenges'
-    web: http://www.feature-extraction.org/
-    type: workshop
-    conference: neurips
-    year: 2015
 
   bayesopt-14:
     name: Bayesian Optimization
@@ -852,6 +840,13 @@ venues:
     conference: neurips
     year: 2014
 
+  feature-extraction:
+    name: 'Feature Extraction: Modern Questions and Challenges'
+    web: http://www.feature-extraction.org/
+    type: workshop
+    conference: neurips
+    year: 2015
+
   icml-implicit:
     name: Implicit Models
     web: https://sites.google.com/view/implicitmodels/
@@ -859,18 +854,17 @@ venues:
     conference: icml
     year: 2017
 
+  neurips-dfgg:
+    name: Learning on Distributions, Functions, Graphs and Groups
+    web: https://sites.google.com/site/nips2017learningon/
+    type: workshop
+    conference: neurips
+    year: 2017
+
   nss:
     name: IEEE Nuclear Science Symposium
     short: IEEE NSS/MIC
     type: workshop
-
-  winlp-21:
-    name: Workshop on Widening NLP
-    short: WiNLP
-    type: workshop
-    conference: emnlp
-    web: http://www.winlp.org/winlp-2021-workshop/
-    year: 2021
 
   ppai-22:
     name: Privacy-Preserving Artificial Intelligence
@@ -879,6 +873,14 @@ venues:
     conference: aaai
     web: https://aaai-ppai22.github.io/
     year: 2022
+
+  winlp-21:
+    name: Workshop on Widening NLP
+    short: WiNLP
+    type: workshop
+    conference: emnlp
+    web: http://www.winlp.org/winlp-2021-workshop/
+    year: 2021
 
   ############################################################################
   # Conferences/workshops that just have talks
@@ -892,17 +894,6 @@ venues:
     conference: dali
     year: 2017
     web: http://dalimeeting.org/dali2017/generative-adversarial-networks.html
-
-  turing:
-    name: Alan Turing Institute
-    type: conference
-    long_article: the
-    web: https://www.turing.ac.uk/events/
-  turing-highd:
-    name: Approximating high dimensional functions
-    conference: turing
-    web: https://www.turing.ac.uk/events/approximating-high-dimensional-functions/
-    year: 2017
 
   gatsby-tricenter:
     name: Gatsby Tri-Center Meeting
@@ -966,6 +957,17 @@ venues:
     web: https://www.queerinai.com/neurips-2022
     year: 2022
 
+  turing:
+    name: Alan Turing Institute
+    type: conference
+    long_article: the
+    web: https://www.turing.ac.uk/events/
+  turing-highd:
+    name: Approximating high dimensional functions
+    conference: turing
+    web: https://www.turing.ac.uk/events/approximating-high-dimensional-functions/
+    year: 2017
+
   twds:
     name: Toronto Womxn in Data Science Conference
     type: conference
@@ -985,6 +987,14 @@ venues:
 
   ##############################################################################
   # Summer schools
+
+  etics:
+    name: Research School on Uncertainty in Scientific Computing, Corsica
+    short: ETICS
+    long_article: the
+    type: summerschool
+    web: https://www.gdr-mascotnum.fr/etics.html
+    year: 2022
 
   genoa:
     name: University of Genoa
@@ -1011,14 +1021,6 @@ venues:
     web_by_year:
       2019: https://2019.ds3-datascience-polytechnique.fr
       2021: https://www.ds3-datascience-polytechnique.fr
-
-  etics:
-    name: Research School on Uncertainty in Scientific Computing, Corsica
-    short: ETICS
-    long_article: the
-    type: summerschool
-    web: https://www.gdr-mascotnum.fr/etics.html
-    year: 2022
 
   isi:
     name: Indian Statistical Institute
@@ -1084,6 +1086,10 @@ venues:
     name: Computational Statistics and Machine Learning seminar, University College London
     type: seminar
 
+  umass:
+    name: University of Massachusetts Amherst, College of Information and Computer Sciences
+    type: seminar
+
   umich-ai:
     name: AI Seminar, University of Michigan
     type: seminar
@@ -1100,11 +1106,6 @@ venues:
     name: TrustML Young Scientist Seminars
     type: seminar
     web: https://trustmlresearch.github.io
-
-  umass:
-    name: University of Massachusetts Amherst, College of Information and Computer Sciences
-    type: seminar
-
 
 ################################################################################
 ################################################################################
