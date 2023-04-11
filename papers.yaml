@@ -1439,8 +1439,8 @@ papers:
     year: 2021
     date: 2021-11-11
     my_talk: true
-
     citations: 0
+
   - key: gaussian-interpolators
     title: 'Uniform Convergence of Interpolators: Gaussian Width, Norm Bounds and Benign Overfitting'
     official: https://proceedings.neurips.cc/paper/2021/hash/ac9815bef801f58de83804bce86984ad-Abstract.html
@@ -1847,8 +1847,8 @@ papers:
       - artur
     venue: nss
     year: 2016
-
     citations: 0
+
   - key: deep-mean-maps
     title: Deep Mean Maps
     authors:
@@ -1969,8 +1969,8 @@ papers:
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/apps_nips14ws.pdf
       - AISTATS version: '#apps'
     full_version: apps
-
     citations: 0
+
   - key: astro
     title: A Machine Learning Approach for Dynamical Mass Measurements of Galaxy Clusters
     authors:
