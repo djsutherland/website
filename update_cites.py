@@ -57,7 +57,7 @@ if True:
     untouched = [
         p["key"]
         for p in data["papers"]
-        if p["key"] not in touched and p.get("citations") > 0
+        if p["key"] not in touched and p.get("citations", 0) > 0
     ]
     if untouched:
         raise ValueError(

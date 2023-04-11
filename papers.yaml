@@ -1124,10 +1124,10 @@ venues:
 ################################################################################
 
 cite_meta:
-  last_cite_update: '2023-03-31'
+  last_cite_update: '2023-04-11'
 
-  total: 2607
-  total_5y: 2385
+  total: 2640
+  total_5y: 2418
 
   h_index: 21
   h_index_5y: 19
@@ -1420,7 +1420,7 @@ papers:
     ss_id: d050f2f50a490fd90a06e5bcc7ed22079a28e404
     gs_id: 3078534230907333706
     date: 2023-04-01
-    citations: 6
+    citations: 7
 
   - key: queerinai-dni
     title: 'How to Make Virtual Conferences Queer-Friendly: A Guide'
@@ -1459,7 +1459,7 @@ papers:
       - NYU talk: '#talk-nyu-interpolation'
     ss_id: 24721e44b5510bfda275ddb023c2f107c9526870
     gs_id: 14582780933724089324
-    citations: 29
+    citations: 30
 
   - key: ssl-hsic
     title: Self-Supervised Learning with Kernel Dependence Maximization
@@ -1491,7 +1491,7 @@ papers:
     ss_id: 6b32180f7849dcd5a9f79d7cd0f58a2068d81c32
     gs_id: 3537368320170973148
     arXiv: '2106.07636'
-    citations: 7
+    citations: 8
 
   - key: pot
     title: 'POT: Python Optimal Transport'
@@ -1526,7 +1526,7 @@ papers:
     official: https://jmlr.org/papers/v22/20-451.html
     ss_id: 2be40f5336afa68b49fef41e009b7172c2c9fdeb
     gs_id: 3559273292438013868
-    citations: 403
+    citations: 411
 
   - key: irm
     title: Does Invariant Risk Minimization Capture Invariance?
@@ -1545,7 +1545,7 @@ papers:
     accept-kind: oral
     ss_id: 1fc4470c1766aea4c435015f5ef873b066f50121
     gs_id: 12319413802596970196
-    citations: 65
+    citations: 66
 
   - key: uniform-interpolation
     title: On Uniform Convergence and Low-Norm Interpolation Learning
@@ -1564,7 +1564,7 @@ papers:
       - NYU talk: '#talk-nyu-interpolation'
     ss_id: 65a2da57b52942cf486cd06682db0a4c53eaae34
     gs_id: 11067119780138908286
-    citations: 22
+    citations: 23
 
   - key: deep-testing
     title: Learning Deep Kernels for Non-Parametric Two-Sample Tests
@@ -1583,7 +1583,7 @@ papers:
       - video and slides: https://icml.cc/virtual/2020/poster/5999
     ss_id: cce73b08abf1554c1c730c0333b0b29dadc03c19
     gs_id: 11419051350787047758
-    citations: 114
+    citations: 116
 
   - key: unbiased-mmd-variance
     title: Unbiased estimators for the variance of MMD estimators
@@ -1655,7 +1655,7 @@ papers:
     my_talk: true
     ss_id: fbc0863a25d99ef3895f174c7c2ee01c4f19df21
     gs_id: 18438114656627425154
-    citations: 64
+    citations: 65
 
   - key: smmd
     title: On gradient regularizers for MMD GANs
@@ -1675,7 +1675,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 3d597e16ef56119bb6e6d78e3f379623862f0752
     gs_id: 12044208657387141906
-    citations: 93
+    citations: 92
 
   - key: mmd-gans
     title: Demystifying MMD GANs
@@ -1695,7 +1695,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 9723066a5587e6267d8abfd7feefd0637a5a211c
     gs_id: 10236052458128513824
-    citations: 781
+    citations: 795
 
   - key: bdr-workshop
     title: Bayesian Approaches to Distribution Regression
@@ -1813,7 +1813,7 @@ papers:
       - Oxford talk: '#talk-oxford-opt-mmd'
     ss_id: d772a21f2f687985b41bec2dc47bc2760c57ed2f
     gs_id: 14039271793330969441 11531994075904943226
-    citations: 262
+    citations: 263
 
   - key: thesis
     title: Scalable, Flexible, and Active Learning on Distributions
@@ -1934,7 +1934,7 @@ papers:
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/rff_uai15.pdf
     ss_id: 78e95099ec2ac3cb087eb47ba7c87ddb01a19405
     gs_id: 2736757817032849196
-    citations: 181
+    citations: 182
 
   - key: apps
     title: Active Pointillistic Pattern Search
@@ -1989,7 +1989,7 @@ papers:
     arXiv: '1410.0686'
     ss_id: f5b6eb5c3fa7eb7a569d6c2af0a43f7123034bd0
     gs_id: 15766717484171055980
-    citations: 93
+    citations: 94
 
   - key: active-mf
     title: Active learning and search on low-rank matrices
@@ -2041,7 +2041,7 @@ papers:
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/cvpr-12.pdf
     ss_id: 76710cce6eb7f6cab032f8ec0832b47a474fd285
     gs_id: 5009114706015842197
-    citations: 59
+    citations: 60
 
   - key: guts
     title: Managing User Requests with the Grand Unified Task System (GUTS)
