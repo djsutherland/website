@@ -25,3 +25,10 @@
     {%- if not loop.last %}, {% endif -%}
   {%- endfor -%}
 }
+
+\newcommand{\lotsoauths}{\parencite{
+  {%- for paper in papers if paper.authors|length > 12 -%}
+    {{- paper | bibtex_key(coauthors) -}}
+    {%- if not loop.last -%},{%- endif -%}
+  {%- endfor -%}
+}}
