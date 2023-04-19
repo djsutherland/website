@@ -841,6 +841,12 @@ venues:
     short: JDS
     type: journal
 
+  tmlr:
+    name: Transactions on Machine Learning Research
+    short: TMLR
+    type: journal
+    web: https://www.jmlr.org/tmlr/
+
   ############################################################################
   # Workshops with publications
 
@@ -1226,6 +1232,23 @@ papers:
     arXiv: '2303.01687'
     citations: 0
 
+  - key: dp-mepf
+    title: Pre-trained Perceptual Features Improve Differentially Private Image Generation
+    authors:
+      - frederik
+      - milad
+      - me
+      - mijung
+    year: 2023
+    date: 2023-04-19
+    venue: tmlr
+    web: https://openreview.net/forum?id=R6W7zkMz0P
+    ss_id: 8cb6555517575be141174a17f1e0dcf48739aaf4
+    gs_id: 854611520534599253
+    arXiv: '2205.12900'
+    citations: 5
+
+
   - key: circe
     title: Efficient Conditionally Invariant Representation Learning
     authors:
@@ -1350,21 +1373,6 @@ papers:
     related: !!omap
       - code: https://github.com/jinhseo/OD-WSCL
     citations: 2
-
-  - key: dp-mepf
-    title: Differentially Private Data Generation Needs Better Features
-    authors:
-      - frederik
-      - milad
-      - me
-      - mijung
-    year: 2022
-    date: 2022-05-25
-    venue: preprint
-    ss_id: 8cb6555517575be141174a17f1e0dcf48739aaf4
-    gs_id: 854611520534599253
-    arXiv: '2205.12900'
-    citations: 5
 
   - key: prediction-filtering
     title: One Weird Trick to Improve Your Semi-Weakly Supervised Semantic Segmentation Model
