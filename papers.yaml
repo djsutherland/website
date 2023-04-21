@@ -1130,10 +1130,10 @@ venues:
 ################################################################################
 
 cite_meta:
-  last_cite_update: '2023-04-11'
+  last_cite_update: '2023-04-21'
 
-  total: 2640
-  total_5y: 2418
+  total: 2659
+  total_5y: 2436
 
   h_index: 21
   h_index_5y: 19
@@ -1534,7 +1534,7 @@ papers:
     official: https://jmlr.org/papers/v22/20-451.html
     ss_id: 2be40f5336afa68b49fef41e009b7172c2c9fdeb
     gs_id: 3559273292438013868
-    citations: 411
+    citations: 418
 
   - key: irm
     title: Does Invariant Risk Minimization Capture Invariance?
@@ -1591,7 +1591,7 @@ papers:
       - video and slides: https://icml.cc/virtual/2020/poster/5999
     ss_id: cce73b08abf1554c1c730c0333b0b29dadc03c19
     gs_id: 11419051350787047758
-    citations: 116
+    citations: 117
 
   - key: unbiased-mmd-variance
     title: Unbiased estimators for the variance of MMD estimators
@@ -1683,7 +1683,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 3d597e16ef56119bb6e6d78e3f379623862f0752
     gs_id: 12044208657387141906
-    citations: 92
+    citations: 93
 
   - key: mmd-gans
     title: Demystifying MMD GANs
@@ -1703,7 +1703,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 9723066a5587e6267d8abfd7feefd0637a5a211c
     gs_id: 10236052458128513824
-    citations: 795
+    citations: 803
 
   - key: bdr-workshop
     title: Bayesian Approaches to Distribution Regression
@@ -1821,7 +1821,7 @@ papers:
       - Oxford talk: '#talk-oxford-opt-mmd'
     ss_id: d772a21f2f687985b41bec2dc47bc2760c57ed2f
     gs_id: 14039271793330969441 11531994075904943226
-    citations: 263
+    citations: 264
 
   - key: thesis
     title: Scalable, Flexible, and Active Learning on Distributions
@@ -1889,7 +1889,7 @@ papers:
     arXiv: '1509.05409'
     ss_id: 45c0b51a6543f0fdfbf504838059f7acdfc0e409
     gs_id: 5213844651993496360
-    citations: 71
+    citations: 72
 
   - key: hdd
     title: Linear-time Learning on Distributions with Approximate Kernel Embeddings
