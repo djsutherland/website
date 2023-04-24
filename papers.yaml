@@ -1130,10 +1130,10 @@ venues:
 ################################################################################
 
 cite_meta:
-  last_cite_update: '2023-04-21'
+  last_cite_update: '2023-04-23'
 
-  total: 2659
-  total_5y: 2436
+  total: 2671
+  total_5y: 2448
 
   h_index: 21
   h_index_5y: 19
@@ -1352,8 +1352,9 @@ papers:
     year: 2022
     date: 2022-11-29
     ss_id: 28f8c4826c1af49b176009c6be39c7a0251764e4
+    gs_id: 11402654840281713194
     arXiv: '2206.06234'
-    citations: 0
+    citations: 1
 
   - key: contrastive-wsod
     title: Object Discovery via Contrastive Learning for Weakly Supervised Object Detection
@@ -1483,7 +1484,7 @@ papers:
     ss_id: 1a3d5d6cec457f8f3b088cb3636a1a197bd248f6
     gs_id: 13912402342615870661
     arXiv: '2106.08320'
-    citations: 29
+    citations: 30
 
   - key: meta-2st
     title: 'Meta Two-Sample Testing: Learning Kernels for Testing with Limited Data'
@@ -1534,7 +1535,7 @@ papers:
     official: https://jmlr.org/papers/v22/20-451.html
     ss_id: 2be40f5336afa68b49fef41e009b7172c2c9fdeb
     gs_id: 3559273292438013868
-    citations: 418
+    citations: 422
 
   - key: irm
     title: Does Invariant Risk Minimization Capture Invariance?
@@ -1703,7 +1704,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 9723066a5587e6267d8abfd7feefd0637a5a211c
     gs_id: 10236052458128513824
-    citations: 803
+    citations: 807
 
   - key: bdr-workshop
     title: Bayesian Approaches to Distribution Regression
@@ -1942,7 +1943,7 @@ papers:
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/rff_uai15.pdf
     ss_id: 78e95099ec2ac3cb087eb47ba7c87ddb01a19405
     gs_id: 2736757817032849196
-    citations: 182
+    citations: 183
 
   - key: apps
     title: Active Pointillistic Pattern Search
@@ -1997,7 +1998,7 @@ papers:
     arXiv: '1410.0686'
     ss_id: f5b6eb5c3fa7eb7a569d6c2af0a43f7123034bd0
     gs_id: 15766717484171055980
-    citations: 94
+    citations: 95
 
   - key: active-mf
     title: Active learning and search on low-rank matrices
