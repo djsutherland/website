@@ -35,26 +35,59 @@
 %\newcommand{\UBCheader}[1]{\begin{center} \begin{minipage}{.1\textwidth}\bigUBClogo\end{minipage}~~\begin{minipage}{.5\textwidth}\centering{\bf THE UNIVERSITY OF BRITISH COLUMBIA} \\{\bf\it #1}\end{minipage}~~\begin{minipage}{.1\textwidth}~\end{minipage}\end{center}}
 
 
-% here's how to use fixed footnotes with symbol fonts!  https://tex.stackexchange.com/questions/68703/fixfoot-sty-with-symbols
-\usepackage[symbol*,perpage,bottom,para]{footmisc}
-\usepackage{fixfoot}
-\usepackage{etoolbox}% provides \patchcmd
-\makeatletter
-\patchcmd\@fixed@footnote
-{\protected@xdef\@thefnmark{\csname @#1@fftn@footnote\endcsname}}% search
-{\protected@xdef\@thefnmark{%
-		\expandafter\@fnsymbol\csname @#1@fftn@footnote\endcsname}}% replace
-{}{}% success/failure
-\makeatother
+%%% Footnote stuff.
+\usepackage[bottom,para]{footmisc}
 
-\DeclareFixedFootnote{\switched}{Switched to my supervision at this point.}
-\DeclareFixedFootnote{\paid}{Expenses paid.}
-\DeclareFixedFootnote{\competitive}{Competitively selected.}
-\DeclareFixedFootnote{\virtual}{Presented virtually.}
-\DeclareFixedFootnote{\compequiv}{Estimated equivalent cost for computational resources.}
-\DeclareFixedFootnote{\international}{International venue.}
-\DeclareFixedFootnote{\national}{National venue.}
-\DeclareFixedFootnote{\local}{Local venue.}
+% https://tex.stackexchange.com/a/683741/9019
+\usepackage{perpage}
+\newcounter{switched}\MakePerPage{switched}\newcommand{\switched}{\stepcounter{switched}\footnotemark[1000]\ifnum \value{switched}=1 \footnotetext[1000]{Switched to my supervision at this point.}\fi}
+\newcounter{paid}\MakePerPage{paid}\newcommand{\paid}{\stepcounter{paid}\footnotemark[1001]\ifnum \value{paid}=1 \footnotetext[1001]{Expenses paid.}\fi}
+\newcounter{competitive}\MakePerPage{competitive}\newcommand{\competitive}{\stepcounter{competitive}\footnotemark[1002]\ifnum \value{competitive}=1 \footnotetext[1002]{Competitively selected.}\fi}
+\newcounter{compequiv}\MakePerPage{compequiv}\newcommand{\compequiv}{\stepcounter{compequiv}\footnotemark[1003]\ifnum \value{compequiv}=1 \footnotetext[1003]{Estimated equivalent cost for computational resources.}\fi}
+\newcounter{virtual}\MakePerPage{virtual}\newcommand{\virtual}{\stepcounter{virtual}\footnotemark[1004]\ifnum \value{virtual}=1 \footnotetext[1004]{Presented virtually.}\fi}
+\newcounter{international}\MakePerPage{international}\newcommand{\international}{\stepcounter{international}\footnotemark[1005]\ifnum \value{international}=1 \footnotetext[1005]{International venue.}\fi}
+\newcounter{national}\MakePerPage{national}\newcommand{\national}{\stepcounter{national}\footnotemark[1006]\ifnum \value{national}=1 \footnotetext[1006]{National venue.}\fi}
+\newcounter{local}\MakePerPage{local}\newcommand{\local}{\stepcounter{local}\footnotemark[1007]\ifnum \value{local}=1 \footnotetext[1007]{Local venue.}\fi}
+
+\renewcommand{\thefootnote}{%
+    \ifnum \value{footnote}<10 \fnsymbol{footnote}%
+    \else \ifnum \value{footnote}=1000 \textit{s}%
+    \else \ifnum \value{footnote}=1001 \textit{\$}%
+    \else \ifnum \value{footnote}=1002 \textit{c}%
+    \else \ifnum \value{footnote}=1003 $\approx$%
+    \else \ifnum \value{footnote}=1004 \textit{v}%
+    \else \ifnum \value{footnote}=1005 \textit{i}%
+    \else \ifnum \value{footnote}=1006 \textit{n}%
+    \else \ifnum \value{footnote}=1007 \textit{l}%
+    \else \arabic{footnote}%
+    \fi\fi\fi\fi\fi\fi\fi\fi\fi%
+}
+
+
+
+% % here's how to use fixed footnotes with symbol fonts!  https://tex.stackexchange.com/questions/68703/fixfoot-sty-with-symbols
+% \usepackage[symbol*,perpage,bottom,para]{footmisc}
+% \usepackage{fixfoot}
+% \usepackage{etoolbox}% provides \patchcmd
+% \makeatletter
+% \patchcmd\@fixed@footnote
+% {\protected@xdef\@thefnmark{\csname @#1@fftn@footnote\endcsname}}% search
+% {\protected@xdef\@thefnmark{%
+% 		\expandafter\@fnsymbol\csname @#1@fftn@footnote\endcsname}}% replace
+% {}{}% success/failure
+% \makeatother
+
+% \DeclareFixedFootnote{\switched}{Switched to my supervision at this point.}
+% \DeclareFixedFootnote{\paid}{Expenses paid.}
+% \DeclareFixedFootnote{\competitive}{Competitively selected.}
+% \DeclareFixedFootnote{\virtual}{Presented virtually.}
+% \DeclareFixedFootnote{\compequiv}{Estimated equivalent cost for computational resources.}
+% \DeclareFixedFootnote{\international}{International venue.}
+% \DeclareFixedFootnote{\national}{National venue.}
+% \DeclareFixedFootnote{\local}{Local venue.}
+
+
+
 
 
 %%
