@@ -736,6 +736,7 @@ venues:
       2017: https://icml.cc/Conferences/2017
       2019: https://icml.cc/Conferences/2019
       2020: https://icml.cc/Conferences/2020
+      2023: https://icml.cc/Conferences/2023
     accepts:
       2019: !!omap
         - unspecial: 773
@@ -743,6 +744,9 @@ venues:
       2020: !!omap
         - unspecial: 1088
         - submitted: 4990
+      2023: !!omap
+        - unspecial: 1827
+        - submitted: 6538
     h5_rank: 19
 
   ijcai:
@@ -1142,6 +1146,35 @@ cite_meta:
   i10_index_5y: 24
 
 papers:
+  - key: exphormer
+    title: 'Exphormer: Scaling Graph Transformers with Expander Graphs'
+    authors:
+      - hamed*
+      - ameya*
+      - balaji*
+      - me
+      - ali
+    venue: icml
+    arXiv: '2303.06147'
+    ss_id: a2476ba27b1f97fd94484ec0ec49bceda101100b
+    year: 2023
+    date: 2023-07-23
+    citations: 0
+
+  - key: pseudo-ntk
+    title: A Fast, Well-Founded Approximation to the Empirical Neural Tangent Kernel
+    authors:
+      - amin
+      - won
+      - me
+    venue: icml
+    year: 2023
+    date: 2023-07-23
+    ss_id: 923f93d2ae0c73c3934e4b56b063c6dc00bfb978
+    gs_id: 11950864840897886877
+    arXiv: '2206.12543'
+    citations: 3
+
   - key: qai
     title: 'Queer in AI: A Case Study in Community-Led Participatory AI'
     venue: facct
@@ -1201,21 +1234,6 @@ papers:
       - saraswat
       - vytla
       - stark
-
-  - key: exphormer
-    title: 'Exphormer: Scaling Graph Transformers with Expander Graphs'
-    authors:
-      - hamed*
-      - ameya*
-      - balaji*
-      - me
-      - ali
-    venue: preprint
-    arXiv: '2303.06147'
-    ss_id: a2476ba27b1f97fd94484ec0ec49bceda101100b
-    year: 2023
-    # url: https://openreview.net/forum?id=8Tr3v4ueNd7
-    citations: 0
 
   - key: dp-ntk
     title: Differentially Private Neural Tangent Kernels for Privacy-Preserving Data Generation
@@ -1312,20 +1330,6 @@ papers:
     ss_id: f8b29bc83e9d84ff4283811faa2bb31b650c6d10
     gs_id: 2093430636599193484
     arXiv: '2210.12082'
-    citations: 3
-
-  - key: pseudo-ntk
-    title: A Fast, Well-Founded Approximation to the Empirical Neural Tangent Kernel
-    authors:
-      - amin
-      - won
-      - me
-    venue: preprint
-    year: 2022
-    date: 2022-06-25
-    ss_id: 923f93d2ae0c73c3934e4b56b063c6dc00bfb978
-    gs_id: 11950864840897886877
-    arXiv: '2206.12543'
     citations: 3
 
   - key: active-ntk
