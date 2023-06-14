@@ -692,10 +692,11 @@ venues:
     type: conference
     web_by_year:
       2023: https://facctconference.org/2023/
-    # accepts:
-    #   2023: !!omap
-    #     - unspecial: ?
-    #     - submitted: 608
+    accepts:
+      2023: !!omap
+        - best paper: 6
+        - unspecial: 147
+        - submitted: 608
 
   iclr:
     name: International Conference on Learning Representations
@@ -1134,15 +1135,15 @@ venues:
 ################################################################################
 
 cite_meta:
-  last_cite_update: '2023-04-23'
+  last_cite_update: '2023-06-12'
 
-  total: 2671
-  total_5y: 2448
+  total: 2842
+  total_5y: 2620
 
   h_index: 21
   h_index_5y: 19
 
-  i10_index: 24
+  i10_index: 25
   i10_index_5y: 24
 
 papers:
@@ -1157,9 +1158,10 @@ papers:
     venue: icml
     arXiv: '2303.06147'
     ss_id: a2476ba27b1f97fd94484ec0ec49bceda101100b
+    gs_id: 7161387838783241803
     year: 2023
     date: 2023-07-23
-    citations: 0
+    citations: 1
 
   - key: pseudo-ntk
     title: A Fast, Well-Founded Approximation to the Empirical Neural Tangent Kernel
@@ -1173,7 +1175,7 @@ papers:
     ss_id: 923f93d2ae0c73c3934e4b56b063c6dc00bfb978
     gs_id: 11950864840897886877
     arXiv: '2206.12543'
-    citations: 3
+    citations: 4
 
   - key: qai
     title: 'Queer in AI: A Case Study in Community-Led Participatory AI'
@@ -1181,6 +1183,8 @@ papers:
     arXiv: '2303.16972'
     year: 2023
     date: 2023-06-12
+    accept-kind: best paper
+    note: Best Paper award.
     authors:
       - queerinai
       - anaelia
@@ -1234,6 +1238,7 @@ papers:
       - saraswat
       - vytla
       - stark
+    citations: 0
 
   - key: dp-ntk
     title: Differentially Private Neural Tangent Kernels for Privacy-Preserving Data Generation
@@ -1262,10 +1267,9 @@ papers:
     venue: tmlr
     official: https://openreview.net/forum?id=R6W7zkMz0P
     ss_id: 8cb6555517575be141174a17f1e0dcf48739aaf4
-    gs_id: 854611520534599253
+    gs_id: 854611520534599253 10298606910796508333
     arXiv: '2205.12900'
-    citations: 5
-
+    citations: 8
 
   - key: circe
     title: Efficient Conditionally Invariant Representation Learning
@@ -1299,8 +1303,9 @@ papers:
     date: 2023-05-01
     official: https://openreview.net/forum?id=gVOXZproe-e
     ss_id: 75852ed23746bb8fceebeef8c5ae2d228b83dd24
+    gs_id: 15928265510615609906
     arXiv: '2302.05779'
-    citations: 0
+    citations: 1
 
   - key: mmd-bfair
     title: 'MMD-B-Fair: Learning Fair Representations with Statistical Testing'
@@ -1344,7 +1349,7 @@ papers:
     ss_id: 7fe95ccdc3cfe8acd2c4975b6cbdc419f7e62b85
     gs_id: 15930502597666827182
     arXiv: '2206.12569'
-    citations: 2
+    citations: 6
 
   - key: contrastive-graph-eval
     title: Evaluating Graph Generative Models with Contrastively Learned Features
@@ -1358,7 +1363,7 @@ papers:
     ss_id: 28f8c4826c1af49b176009c6be39c7a0251764e4
     gs_id: 11402654840281713194
     arXiv: '2206.06234'
-    citations: 1
+    citations: 3
 
   - key: contrastive-wsod
     title: Object Discovery via Contrastive Learning for Weakly Supervised Object Detection
@@ -1377,7 +1382,7 @@ papers:
     gs_id: 4274032166116217116
     related: !!omap
       - code: https://github.com/jinhseo/OD-WSCL
-    citations: 2
+    citations: 4
 
   - key: prediction-filtering
     title: One Weird Trick to Improve Your Semi-Weakly Supervised Semantic Segmentation Model
@@ -1391,8 +1396,9 @@ papers:
     date: 2022-07-23
     venue: ijcai
     ss_id: a583fba699112c88dae067f549f937c876a6ab6e
+    gs_id: 3556369794481610751
     arXiv: '2205.01233'
-    citations: 0
+    citations: 3
 
   - key: learning-path
     title: Better Supervisory Signals by Observing Learning Paths
@@ -1407,7 +1413,7 @@ papers:
     ss_id: 91db2f1dae977f2cf139ce194173487133b1ad67
     gs_id: 4997668798655366002
     arXiv: '2203.02485'
-    citations: 6
+    citations: 9
 
   - key: private-mmd
     title: Learning Privacy-Preserving Deep Kernels with Known Demographics
@@ -1433,7 +1439,7 @@ papers:
     ss_id: d050f2f50a490fd90a06e5bcc7ed22079a28e404
     gs_id: 3078534230907333706
     date: 2023-05-01
-    citations: 7
+    citations: 9
 
   - key: queerinai-dni
     title: 'How to Make Virtual Conferences Queer-Friendly: A Guide'
@@ -1472,7 +1478,7 @@ papers:
       - NYU talk: '#talk-nyu-interpolation'
     ss_id: 24721e44b5510bfda275ddb023c2f107c9526870
     gs_id: 14582780933724089324
-    citations: 30
+    citations: 34
 
   - key: ssl-hsic
     title: Self-Supervised Learning with Kernel Dependence Maximization
@@ -1488,7 +1494,7 @@ papers:
     ss_id: 1a3d5d6cec457f8f3b088cb3636a1a197bd248f6
     gs_id: 13912402342615870661
     arXiv: '2106.08320'
-    citations: 30
+    citations: 35
 
   - key: meta-2st
     title: 'Meta Two-Sample Testing: Learning Kernels for Testing with Limited Data'
@@ -1504,7 +1510,7 @@ papers:
     ss_id: 6b32180f7849dcd5a9f79d7cd0f58a2068d81c32
     gs_id: 3537368320170973148
     arXiv: '2106.07636'
-    citations: 8
+    citations: 9
 
   - key: pot
     title: 'POT: Python Optimal Transport'
@@ -1539,7 +1545,7 @@ papers:
     official: https://jmlr.org/papers/v22/20-451.html
     ss_id: 2be40f5336afa68b49fef41e009b7172c2c9fdeb
     gs_id: 3559273292438013868
-    citations: 422
+    citations: 463
 
   - key: irm
     title: Does Invariant Risk Minimization Capture Invariance?
@@ -1558,7 +1564,7 @@ papers:
     accept-kind: oral
     ss_id: 1fc4470c1766aea4c435015f5ef873b066f50121
     gs_id: 12319413802596970196
-    citations: 66
+    citations: 74
 
   - key: uniform-interpolation
     title: On Uniform Convergence and Low-Norm Interpolation Learning
@@ -1596,7 +1602,7 @@ papers:
       - video and slides: https://icml.cc/virtual/2020/poster/5999
     ss_id: cce73b08abf1554c1c730c0333b0b29dadc03c19
     gs_id: 11419051350787047758
-    citations: 117
+    citations: 124
 
   - key: unbiased-mmd-variance
     title: Unbiased estimators for the variance of MMD estimators
@@ -1668,7 +1674,7 @@ papers:
     my_talk: true
     ss_id: fbc0863a25d99ef3895f174c7c2ee01c4f19df21
     gs_id: 18438114656627425154
-    citations: 65
+    citations: 70
 
   - key: smmd
     title: On gradient regularizers for MMD GANs
@@ -1688,7 +1694,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 3d597e16ef56119bb6e6d78e3f379623862f0752
     gs_id: 12044208657387141906
-    citations: 93
+    citations: 94
 
   - key: mmd-gans
     title: Demystifying MMD GANs
@@ -1708,7 +1714,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 9723066a5587e6267d8abfd7feefd0637a5a211c
     gs_id: 10236052458128513824
-    citations: 807
+    citations: 868
 
   - key: bdr-workshop
     title: Bayesian Approaches to Distribution Regression
@@ -1753,7 +1759,7 @@ papers:
     my_talk: true
     ss_id: 63ca8b71d2e2e755140ff09d157de0521de3d5c0
     gs_id: 9035704111500533087 12599253809303872014 15731144284682630817
-    citations: 35
+    citations: 37
 
   - key: bdr
     title: Bayesian Approaches to Distribution Regression
@@ -1772,7 +1778,7 @@ papers:
       - NeurIPS workshop version: '#bdr-workshop'
     ss_id: f35f56b7048a74244ab0530e4bc705cc71125862
     gs_id: 18333796385560193193 16793725927913159067
-    citations: 35
+    citations: 36
 
   - key: caponnetto-fix
     title: Fixing an error in Caponnetto and de Vito (2007)
@@ -1826,7 +1832,7 @@ papers:
       - Oxford talk: '#talk-oxford-opt-mmd'
     ss_id: d772a21f2f687985b41bec2dc47bc2760c57ed2f
     gs_id: 14039271793330969441 11531994075904943226
-    citations: 264
+    citations: 269
 
   - key: thesis
     title: Scalable, Flexible, and Active Learning on Distributions
@@ -1874,7 +1880,7 @@ papers:
     arXiv: '1511.04150'
     ss_id: f922efb0fa28b83be2d085d427185a85d931eac0
     gs_id: 15807355818931749768
-    citations: 9
+    citations: 10
 
   - key: astro-interlopers
     title: Dynamical Mass Measurements of Contaminated Galaxy Clusters Using Machine Learning
@@ -1912,7 +1918,7 @@ papers:
       - NeurIPS workshop version: '#hdd-workshop'
     ss_id: 7016a32cf825e7c4a65ef51f75844839f8e99b46
     gs_id: 16915902998020531010
-    citations: 17
+    citations: 18
 
   - key: hdd-workshop
     title: Linear-time Learning on Distributions with Approximate Kernel Embeddings
@@ -1947,7 +1953,7 @@ papers:
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/rff_uai15.pdf
     ss_id: 78e95099ec2ac3cb087eb47ba7c87ddb01a19405
     gs_id: 2736757817032849196
-    citations: 183
+    citations: 187
 
   - key: apps
     title: Active Pointillistic Pattern Search
@@ -2002,7 +2008,7 @@ papers:
     arXiv: '1410.0686'
     ss_id: f5b6eb5c3fa7eb7a569d6c2af0a43f7123034bd0
     gs_id: 15766717484171055980
-    citations: 95
+    citations: 96
 
   - key: active-mf
     title: Active learning and search on low-rank matrices
@@ -2054,7 +2060,7 @@ papers:
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/cvpr-12.pdf
     ss_id: 76710cce6eb7f6cab032f8ec0832b47a474fd285
     gs_id: 5009114706015842197
-    citations: 60
+    citations: 61
 
   - key: guts
     title: Managing User Requests with the Grand Unified Task System (GUTS)

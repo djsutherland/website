@@ -90,7 +90,7 @@ def venue_url(venue, year=None):
 def _rate_str(got_in, out_of, verbose=False):
 
     rate = got_in / out_of
-    if rate >= 0.01:
+    if rate >= 0.0095:
         pct = f"{rate :.0%}"
         op = "="
     elif rate >= 0.001:

@@ -51,8 +51,12 @@ if True:
             )
         (p,) = matches
 
-        p["citations"] = pub["num_citations"]
-        touched.add(p["key"])
+        if p["key"] in touched:
+            print(f"Warning: hitting paper {pub['key']} more than once, consider merging on GS profile")
+            p["citations"] += pub["num_citations"]
+        else:
+            p["citations"] = pub["num_citations"]
+            touched.add(p["key"])
 
     untouched = [
         p["key"]
