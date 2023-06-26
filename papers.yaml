@@ -918,6 +918,10 @@ venues:
     year: 2017
     web: http://dalimeeting.org/dali2017/generative-adversarial-networks.html
 
+  gatsby-25:
+    name: Gatsby25
+    type: meeting
+    year: 2023
   gatsby-tricenter:
     name: Gatsby Tri-Center Meeting
     type: meeting
@@ -1007,6 +1011,12 @@ venues:
     conference: ubern
     web: https://like22-bern.github.io/
     year: 2022
+  like23:
+    name: Lifting Inference with Kernel Embeddings
+    short: LIKE23
+    conference: ubern
+    web: https://like23-bern.github.io/
+    year: 2023
 
   ##############################################################################
   # Summer schools
@@ -2119,6 +2129,27 @@ papers:
 ################################################################################
 
 talks:
+  - key: like-teaching
+    title: (Deep) Kernel Mean Embeddings for Representing and Learning on Distributions
+    date: 2023-06-26
+    venue: like23
+    teaching: true
+    type: international
+    paid: true
+    slides: https://djsutherland.ml/slides/like23
+    cv_note: Seventy-five minute lecture.
+    related: !!omap
+      - slides (pdf): https://djsutherland.ml/slides/like23.pdf
+
+  - key: circe-gatsby
+    title: Learning conditionally independent representations with kernel regularizers
+    date: 2023-06-17
+    venue: gatsby-25
+    type: international
+    slides: https://djsutherland.ml/slides/circe-gatsby25.pdf
+    papers:
+      - circe
+
   - key: pca-testing
     title: Are these datasets different? Two-sample testing for data scientists
     date: 2023-04-02
@@ -2127,6 +2158,11 @@ talks:
     slides: https://djsutherland.ml/slides/pca-testing
     related: !!omap
       - slides (pdf): https://djsutherland.ml/slides/pca-testing.pdf
+    papers:
+      - mmd-bfair
+      - meta-2st
+      - deep-testing
+      - opt-mmd
 
   - key: umich-entk
     title: A Defense of (Empirical) Neural Tangent Kernels
@@ -2136,6 +2172,11 @@ talks:
     slides: https://djsutherland.ml/slides/entk-umich
     related: !!omap
       - slides (pdf): https://djsutherland.ml/slides/entk-umich.pdf
+    papers:
+      - learning-path
+      - finetuning
+      - active-ntk
+      - pseudo-ntk
 
   - key: umich-namechange
     title: Post-Publication Name Change Policies, Why they Matter, and Whether they Work
@@ -2156,6 +2197,11 @@ talks:
     slides: https://djsutherland.ml/slides/entk-msr
     related: !!omap
       - slides (pdf): https://djsutherland.ml/slides/entk-msr.pdf
+    papers:
+      - learning-path
+      - finetuning
+      - active-ntk
+      - pseudo-ntk
 
   - key: wsdl-ntks
     title: Neural Tangent Kernels, Finite and Infinite
