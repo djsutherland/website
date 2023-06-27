@@ -2137,7 +2137,7 @@ talks:
     type: international
     paid: true
     slides: https://djsutherland.ml/slides/like23
-    cv_note: Seventy-five minute lecture.
+    cv_note: Seventy-five minute lecture, about 40 participants.
     related: !!omap
       - slides (pdf): https://djsutherland.ml/slides/like23.pdf
 
