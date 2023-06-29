@@ -2129,6 +2129,16 @@ papers:
 ################################################################################
 
 talks:
+  - key: circe-like
+    title: Learning conditionally independent representations with kernel regularizers
+    date: 2023-06-30
+    venue: like23
+    type: international
+    paid: true  # hotel but not travel...eh
+    slides: https://djsutherland.ml/slides/circe-like23.pdf
+    papers:
+      - circe
+
   - key: like-teaching
     title: (Deep) Kernel Mean Embeddings for Representing and Learning on Distributions
     date: 2023-06-26
