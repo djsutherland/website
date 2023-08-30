@@ -52,7 +52,7 @@ if True:
         (p,) = matches
 
         if p["key"] in touched:
-            print(f"Warning: hitting paper {pub['key']} more than once, consider merging on GS profile")
+            print(f"Warning: hitting paper {p['key']} more than once, consider merging on GS profile")
             p["citations"] += pub["num_citations"]
         else:
             p["citations"] = pub["num_citations"]
@@ -66,7 +66,7 @@ if True:
     if untouched:
         raise ValueError(
             "uh-oh: these papers didn't show up but I think they have cites!"
-            "\n{' '.join(untouched)}"
+            f"\n{' '.join(untouched)}"
         )
 
 # semantic scholar code...nicer but numbers are so much lower tho
