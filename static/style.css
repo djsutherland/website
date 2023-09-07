@@ -107,7 +107,7 @@ img#me {
 }
 
 
-#group-members li {
+.group-members li {
     display: inline-block;
     width: 19em;
 }
