@@ -1145,16 +1145,16 @@ venues:
 ################################################################################
 
 cite_meta:
-  last_cite_update: '2023-08-30'
+  last_cite_update: '2023-09-14'
 
-  total: 3071
-  total_5y: 2844
+  total: 3109
+  total_5y: 2882
 
   h_index: 21
   h_index_5y: 19
 
-  i10_index: 28
-  i10_index_5y: 27
+  i10_index: 30
+  i10_index_5y: 29
 
 papers:
   - key: exphormer
@@ -1171,7 +1171,7 @@ papers:
     gs_id: 7161387838783241803
     year: 2023
     date: 2023-07-23
-    citations: 3
+    citations: 4
 
   - key: pseudo-ntk
     title: A Fast, Well-Founded Approximation to the Empirical Neural Tangent Kernel
@@ -1280,7 +1280,7 @@ papers:
     ss_id: 8cb6555517575be141174a17f1e0dcf48739aaf4
     gs_id: 854611520534599253 10298606910796508333
     arXiv: '2205.12900'
-    citations: 9
+    citations: 10
 
   - key: circe
     title: Efficient Conditionally Invariant Representation Learning
@@ -1346,7 +1346,7 @@ papers:
     ss_id: f8b29bc83e9d84ff4283811faa2bb31b650c6d10
     gs_id: 2093430636599193484
     arXiv: '2210.12082'
-    citations: 9
+    citations: 10
 
   - key: active-ntk
     title: Making Look-Ahead Active Learning Strategies Feasible with Neural Tangent Kernels
@@ -1360,7 +1360,7 @@ papers:
     ss_id: 7fe95ccdc3cfe8acd2c4975b6cbdc419f7e62b85
     gs_id: 15930502597666827182
     arXiv: '2206.12569'
-    citations: 6
+    citations: 7
 
   - key: contrastive-graph-eval
     title: Evaluating Graph Generative Models with Contrastively Learned Features
@@ -1393,7 +1393,7 @@ papers:
     gs_id: 4274032166116217116
     related: !!omap
       - code: https://github.com/jinhseo/OD-WSCL
-    citations: 5
+    citations: 6
 
   - key: prediction-filtering
     title: One Weird Trick to Improve Your Semi-Weakly Supervised Semantic Segmentation Model
@@ -1489,7 +1489,7 @@ papers:
       - NYU talk: '#talk-nyu-interpolation'
     ss_id: 24721e44b5510bfda275ddb023c2f107c9526870
     gs_id: 14582780933724089324
-    citations: 40
+    citations: 41
 
   - key: ssl-hsic
     title: Self-Supervised Learning with Kernel Dependence Maximization
@@ -1556,7 +1556,7 @@ papers:
     official: https://jmlr.org/papers/v22/20-451.html
     ss_id: 2be40f5336afa68b49fef41e009b7172c2c9fdeb
     gs_id: 3559273292438013868
-    citations: 519
+    citations: 528
 
   - key: irm
     title: Does Invariant Risk Minimization Capture Invariance?
@@ -1575,7 +1575,7 @@ papers:
     accept-kind: oral
     ss_id: 1fc4470c1766aea4c435015f5ef873b066f50121
     gs_id: 12319413802596970196
-    citations: 78
+    citations: 80
 
   - key: uniform-interpolation
     title: On Uniform Convergence and Low-Norm Interpolation Learning
@@ -1666,7 +1666,7 @@ papers:
     year: 2019
     ss_id: 333ddc46a211ab1eb6ceb1f4b7c4952eadce8015
     gs_id: 12908060365392151722
-    citations: 60
+    citations: 61
 
   - key: dkef
     title: Learning deep kernels for exponential family densities
@@ -1705,7 +1705,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 3d597e16ef56119bb6e6d78e3f379623862f0752
     gs_id: 12044208657387141906
-    citations: 97
+    citations: 98
 
   - key: mmd-gans
     title: Demystifying MMD GANs
@@ -1725,7 +1725,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 9723066a5587e6267d8abfd7feefd0637a5a211c
     gs_id: 10236052458128513824
-    citations: 934
+    citations: 948
 
   - key: bdr-workshop
     title: Bayesian Approaches to Distribution Regression
@@ -1819,7 +1819,7 @@ papers:
     year: 2016
     ss_id: 3962dfb23f150b25307bb50112dbad67636f28ec
     gs_id: 10764238927160739355
-    citations: 26
+    citations: 27
 
   - key: opt-mmd
     title: Generative Models and Model Criticism via Optimized Maximum Mean Discrepancy
@@ -1843,7 +1843,7 @@ papers:
       - Oxford talk: '#talk-oxford-opt-mmd'
     ss_id: d772a21f2f687985b41bec2dc47bc2760c57ed2f
     gs_id: 14039271793330969441 11531994075904943226
-    citations: 280
+    citations: 282
 
   - key: thesis
     title: Scalable, Flexible, and Active Learning on Distributions
@@ -1911,7 +1911,7 @@ papers:
     arXiv: '1509.05409'
     ss_id: 45c0b51a6543f0fdfbf504838059f7acdfc0e409
     gs_id: 5213844651993496360
-    citations: 77
+    citations: 78
 
   - key: hdd
     title: Linear-time Learning on Distributions with Approximate Kernel Embeddings
@@ -2019,7 +2019,7 @@ papers:
     arXiv: '1410.0686'
     ss_id: f5b6eb5c3fa7eb7a569d6c2af0a43f7123034bd0
     gs_id: 15766717484171055980
-    citations: 99
+    citations: 100
 
   - key: active-mf
     title: Active learning and search on low-rank matrices
