@@ -21,6 +21,9 @@
 \vspace*{-\headsep}\vspace*{-\headheight}
 \UBCheader{Curriculum Vitae for Faculty Members}
 \vskip 10pt \bigskip\rule{3.416in}{0mm}
+
+\iftoggle{ubcformat}
+{
 %%
 %% Basic info
 %%
@@ -130,10 +133,37 @@
   \clearpage
 }%
 
+}{
+    \begin{center}
+    \textbf{Danica J.\ Sutherland}
+    \end{center}
+
+\section{Academic Positions and Education}
+\begin{table}[h!]
+  % \bf
+  \begin{tabular}{ p{0.36\textwidth} p{0.40\textwidth} p{0.13\textwidth} }
+    \toprule
+    %\multicolumn{1}{c}{\bf Rank or Title} & \multicolumn{1}{c}{\bf Dates} \\
+    %\midrule
+    Assistant Professor, Computer Science & University of British Columbia  & 2020 --         \\
+    Canada CIFAR AI Chair & Alberta Machine Intelligence Institute & 2021 --  \\
+    \midrule
+    Research Assistant Professor & Toyota Technological Institute at Chicago & 2019 -- 2020 \\
+    Research Associate & University College London & 2016 -- 2019 \\
+    Ph.D., Computer Science & Carnegie Mellon University & 2011 -- 2016 \\
+    B.A., Computer Science & Swarthmore College & 2007 -- 2011 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+}
+
 %%
 %% 8. TEACHING
 %%
 \ulsection{TEACHING} \label{sec:teaching}
+
+\iftoggle{ubcformat}
+{
 \subsection{Areas of special interest and accomplishments}
 % UBC rules: 150 words max
 
@@ -142,7 +172,7 @@
   This graduate course (in a mostly lecture-oriented format, due to the quantity of necessary content) focuses on
   giving students the broad background in learning theory
   required for mathematical understanding of machine learning methods.
-  I combined materials from two textbooks, one set of online lecture notes, and significant extra material from current research papers to not only cover traditional topics developed in the 70s and 80s, but also bring them up to speed on current developments, with multiple lectures devoted almost exclusively to papers published since 2018.
+  I combined materials from several textbooks and sets of lecture notes with significant extra material from current research papers to not only cover traditional topics developed in the 70s and 80s, but also bring them up to speed on current developments, with multiple lectures devoted almost exclusively to papers published since 2018.
   \changed{In the second offering this year, I significantly further developed the course, including a format change (from slides to board with lecture notes) and changes to the presentation and included material.}
 
   \paragraph{CPSC 440/540: Advanced Machine Learning}
@@ -157,14 +187,33 @@
 %    This is a mature course whose materials I mostly only tweaked,
 %    although I modernized some aspects of the assignments in particular,
 %    and planned for some more substantial changes in my next offering.
+}{
+}
 
 \subsection{Courses Taught at UBC}
 
+\iftoggle{ubcformat}{}{
+    ~\vspace*{-3ex}
+
+    CPSC 532D: Modern Statistical Learning Theory
+    is a graduate course giving students the broad background in learning theory
+    required for mathematical understanding of machine learning theory.
+
+    CPSC 440/540: Advanced Machine Learning
+    is a second course in machine learning,
+    covering a variety of topics with a probabilistic bent,
+    intended for advanced undergraduates or beginning graduate students.
+
+    CPSC 340: Machine Learning and Data Science
+    is an introductory course in machine learning.
+}
+
 \begin{coursetable}
-  \newtable 22-23 W2  & CPSC 440+540 & 3 & 70+30 & 3/week  & 0 & 0 & 1h/week office hours \\
-  \newtable 22-23 W1  & CPSC 532D & 3 & 23 & 3/week  & 0 & 0 & 1h/week office hours \\
-            21-22 W2  & CPSC 532S & 3 & 23 & 3/week  & 0 & 0 & 2h/week office hours \\
-            21-22 W1  & CPSC 340  & 3 & 89\textit{\small +139} & 3/week  & 0 & 0 & 1h/week office hours \\
+  \newtable 23-24 W1  & CPSC 532D    & 3 & 17            & 3/week  & 2h/week office hours \\
+            22-23 W2  & CPSC 440+540 & 3 & 70+30         & 3/week  & 1h/week office hours \\
+            22-23 W1  & CPSC 532D    & 3 & 23            & 3/week  & 1h/week office hours \\
+            21-22 W2  & CPSC 532S    & 3 & 23            & 3/week  & 2h/week office hours \\
+            21-22 W1  & CPSC 340     & 3 & 89\textit{\small +139} & 3/week  & 1h/week office hours \\
 \end{coursetable}
 \tremark{%
 CPSC 440 and 540 are undergraduate and graduate cross-listings of one course.\\
@@ -199,19 +248,24 @@ CPSC 340 in 2021-22 W1 was run jointly with another section taught by Mike Gelba
   \continuingtable Hamed Shirzad & PhD, UBC CS & 2021/09 & ongoing & Supervisor \\
   \continuingtable Wonho Bae     & PhD, UBC CS & 2020/09 & ongoing & Supervisor \\
   \continuingtable Yi Joshua Ren & PhD, UBC CS & 2020/09 & ongoing & Supervisor \\
+  \newtable        Nathaniel Xu  & PhD, UBC CS & 2023/09 & ongoing & Supervisor \\
+  \newtable        Zheng He      & PhD-track, UBC CS & 2023/09 & ongoing & Supervisor \\
 %\end{suptable}
 %
 %\paragraph{MSc Thesis Supervision}
 %\begin{suptable}
-  \continuingtable Mohamad Amin Mohamadi & MSc, UBC CS & 2021/05\switched{} & ongoing & Supervisor  \\
-  \continuingtable Namrata Deka          & MSc, UBC CS & 2020/09 & ongoing & Supervisor    \\
-  \continuingtable Milad Jalali          & MSc, UBC CS & 2020/09 & ongoing & Supervisor    \\
+  \changedtable Mohamad Amin Mohamadi & MSc, UBC CS & 2021/05\switched{} & 2023/04 & Supervisor  \\
+  \newtable                           & Researcher  & 2023/05 & ongoing & Supervisor  \\
+  \changedtable Namrata Deka          & MSc, UBC CS & 2020/09 & 2023/04 & Supervisor    \\
+  \newtable                           & Researcher  & 2023/05 & 2023/08 & Supervisor  \\
+  \changedtable Milad Jalali          & MSc, UBC CS & 2020/09 & 2023/08 & Supervisor    \\
 \end{suptable}
 \tremark{%
-  Mohamad Amin, Namrata, and Milad all expect to finish in the immediate future,
-  with Namrata going on to a PhD at Carnegie Mellon,
-  Mohamad Amin deciding between a PhD here and at TTI-Chicago,
-  and Milad still deciding on future plans.
+  Mohamad Amin and Namrata, after graduating,
+  continued briefly in non-student research positions with me.
+  Namrata then went on to begin a PhD at Carnegie Mellon,
+  while Mohamad Amin continues to work while waiting on a visa to begin his PhD at TTI-Chicago.
+  Milad is currently finalizing his graduation and applying for jobs.
 }
 %  \hdashline
 %  \continuingtable \textit{Lijia Zhou} & \textit{PhD, UChicago Stat} & \textit{2020/03} & \textit{ongoing} & \textit{Informal co-supervisor}
@@ -226,10 +280,16 @@ CPSC 340 in 2021-22 W1 was run jointly with another section taught by Mike Gelba
 
 \paragraph{Graduate Supervisory Committee Memberships}
 \begin{supcommtable}
-  \newtable Victor Portella        & PhD, UBC CS       & 2023/01 & ongoing & PhD committee member \\
-  \newtable Amrutha Ramesh         & PhD, UBC CS       & 2022/09 & 2022/11 & RPE committee member \\
-  \newtable Melika Farahani        & MSc, UBC CS       & 2022/06 & 2022/08 & MSc committee member \\
+  \continuingtable Victor Portella        & PhD, UBC CS       & 2023/01 & ongoing & PhD committee member \\
+  \newtable        Chen Fan               & PhD, UBC CS       & 2023/05 & 2023/07 & RPE committee member \\
+  \newtable        Saiyue Lyu             & PhD, UBC CS       & 2023/05 & 2023/07 & RPE committee member \\
+  \newtable        Qiaoyue Tang           & PhD, UBC CS       & 2023/04 & 2023/06 & RPE committee member \\
+                   Amrutha Ramesh         & PhD, UBC CS       & 2022/09 & 2022/11 & RPE committee member \\
+                   Melika Farahani        & MSc, UBC CS       & 2022/06 & 2022/08 & MSc committee member \\
 \end{supcommtable}
+\tremark{%
+  The RPE, ``research proficiency exam,'' is a step in the degree for PhD students at UBC CS roughly corresponding to a qualifying exam.
+}
 
 
 \subsection{Graduate Program Supervision}
@@ -284,6 +344,7 @@ CPSC 340 in 2021-22 W1 was run jointly with another section taught by Mike Gelba
 %% 9. SCHOLARLY AND PROFESSIONAL ACTIVITIES
 %%
 \ulsection{SCHOLARLY AND PROFESSIONAL ACTIVITIES}
+\iftoggle{ubcformat}{
 \subsection{Areas of special interest and accomplishments} % UBC rules: 150 words max
 
 Work accepted in the last year focuses on two areas:
@@ -307,6 +368,7 @@ methods to enforce conditional invariance constraints
 in both continuous \parencite{pogodin:circe} and more traditional discrete \parencite{deka:mmd-bfair} settings.
 % as well as improved methods for evaluating graph generative models \parencite{shirzad:contrastive-graph-eval}.
 }
+}{}
 
 
 \subsection{Research or equivalent grants}
@@ -396,8 +458,8 @@ Invited tutorials and summer school lectures are listed instead in section 8\ref
 Reviewing-based roles are in section 11 \ref{sec:reviewer}; tutorials are in section 8 \ref{sub:continuing-ed}.
 
 \begin{itemize}[leftmargin=5em]
-  \item[2020-23] \changed{Area Chair, Conference on Neural Information Processing Systems (NeurIPS).}
   \item[2020-23] \changed{Area Chair, Conference on Artificial Intelligence and Statistics (AISTATS).}
+  \item[2020-22] \changed{Area Chair, Conference on Neural Information Processing Systems (NeurIPS).}
   \item[2022] {Panel Moderator, \emph{Faculty and Queerness}, Queer in AI NeurIPS workshop.}
   \item[2022] {Area Chair, International Conference on Machine Learning (ICML).}
   \item[2022] {D\&I event organizer (Queer in AI), AAAI Conference on Artificial Intelligence (AAAI).}
@@ -455,10 +517,11 @@ In 2020-21, I helped streamline processes (including writing code) for coordinat
 \subsection{Memberships on committees} % including offices held and dates
 
 \begin{itemize}[leftmargin=5em]
-  \item[2023] \new{Faculty recruiting committee: spousal hire.}
+  \item[2023--24] \new{Faculty recruiting committee: Artificial Intelligence Methods for Scientific Impact.}
+  \item[2023] \new{Faculty recruiting committee for a spousal hire.}
   \item[2023] AIM-SI Steering Committee (temporary position as a leave replacement).
-  \item[2023] Graduate Recruiting and Admissions Committee, Computer Science Department.
-  \item[2022] Faculty recruiting committee: CRC Tier 2 in Quantum Computing, Computer Science Department.
+  \item[2022--23] Graduate Recruiting and Admissions Committee, Computer Science Department.
+  \item[2022--23] Faculty recruiting committee: CRC Tier 2 in Quantum Computing, Computer Science Department.
   \item[2021] Graduate Recruiting and Admissions Committee, Computer Science Department.
 \end{itemize}
 
@@ -466,7 +529,8 @@ In 2020-21, I helped streamline processes (including writing code) for coordinat
 \subsection{Other service} % including dates
 
 \begin{itemize}[leftmargin=5em]
-  \item[2023] {UBC Women in Science mentorship program}, occasionally meeting two first-year undergraduates.
+  \item[2023--] \new{Recruitment Chair, Advanced Machine Learning Training Network.}
+  \item[2023] {UBC Women in Science mentorship program}, occasionally meeting first-year undergraduates.
   \item[2023] Chair of thesis proposal exam: Christian Weilbach, \new{Shih-Yang Su}.
   \item[2022] Chair of thesis proposal exam: Vaden Masrani.
 \end{itemize}
@@ -481,8 +545,8 @@ In 2020-21, I helped streamline processes (including writing code) for coordinat
 % \subsection{Service undertaken to advance the inclusion of all those who have been historically excluded based on gender, race, religion, sexuality, age, disability, or economic circumstance}
 
 \nasubsection{
-\subsection{Memberships on scholarly societies, including offices held
-  and dates}
+\subsection{Memberships on scholarly societies %, including offices held and dates%
+           }
 \begin{itemize}[leftmargin=5em]
   % \item[2018/10--Now] Adjunct Member, Astronomy Research Centre (University of Victoria)
 \end{itemize}
@@ -541,7 +605,8 @@ In 2020-21, I helped streamline processes (including writing code) for coordinat
 Area chair / meta-reviewer roles are listed under section 9 \ref{sec:conference-participation}.
 
 \begin{itemize}[leftmargin=5em]
-  \item[2023] Conference reviewing: {ICLR}.
+  \item[2023] Journal reviewing: {JRSS-A}.
+  \item[    ] Conference reviewing: {ICLR, NeurIPS}.
   \item[2022] Journal reviewing: {JMLR}.
   \item[    ] Conference reviewing: {UAI}, {ICML}.
   \item[2021] Journal reviewing: {JMLR}, {Bernoulli}.
@@ -651,6 +716,8 @@ which might be thought of as comparable to best paper awards at a smaller venue:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \UBCheader{Publication Record}\bigskip\rule{3.5in}{0mm}
+\iftoggle{ubcformat}
+{
 \parbox[t]{2in}{{\bf Date:} \today}\parbox[t]{1in}{Initials: D.J.S.} \\
 \noindent\parbox[t]{.5in}{\mbox{}}\parbox[t]{3.04in}{{\bf SURNAME:}
   Sutherland}\parbox[t]{3.2in}{{\bf FIRST NAME:} Danica}
@@ -658,6 +725,7 @@ which might be thought of as comparable to best paper awards at a smaller venue:
 \\[5mm]
 \setcounter{section}{0}
 \vspace{12pt}
+}{}
 
 % now included in header because it includes an \AtEveryBibitem
 %\input{ubc-cv-citation-info.tex}
