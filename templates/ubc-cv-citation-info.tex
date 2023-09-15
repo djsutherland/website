@@ -5,7 +5,6 @@
   {%- if cite_meta.total > total_h -%}over {% endif -%}
   {{- "{:,}".format(total_h) -}}
 }
-
 \newcommand{\totalcitesrec}{
   {%- set total_5y_h = (cite_meta.total_5y // 100) * 100 -%}
   {%- if cite_meta.total_5y > total_5y_h -%}over {% endif -%}
@@ -32,3 +31,21 @@
     {%- if not loop.last -%},{%- endif -%}
   {%- endfor -%}
 }}
+
+\newcommand{\citethreshes}{
+  {%- for thresh in cite_threshes|sort -%}
+    {{- thresh -}}
+    {% if not loop.last -%}, {% endif -%}
+  {%- endfor -%}
+}
+
+\AtEveryBibitem{ {{- "" -}} %
+  \csappto{blx@bbx@\thefield{entrytype}}{ {{- "" -}} % put at end of entry
+    \rightsymb{ {{- "" -}} %
+      \iffieldundef{usera}{\space}{\space\printfield{usera}}%
+      {% for thresh in cite_threshes -%}
+      \ifkeyword{cites {{- thresh -}} }{\citestext{$\ge {{ "{:,}".format(thresh) }} $}}{}%
+      {% endfor -%}
+    }
+  }
+}

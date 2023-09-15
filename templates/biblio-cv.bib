@@ -64,17 +64,11 @@
       {%- endif -%}
       {%- if paper.date and paper.date > today -%}, toappear{%- endif -%}
       {%- set cites = paper.get('citations', 0) -%}
-      {%- if cites >= 1000 -%}
-        , cites1000
-      {%- elif cites >= 500 -%}
-        , cites500
-      {%- elif cites >= 100 -%}
-        , cites100
-      {%- elif cites >= 50 -%}
-        , cites50
-      {%- elif cites >= 10 -%}
-        , cites10
-      {%- endif -%}
+      {%- for thresh in cite_threshes if cites >= thresh -%}
+        {%- if loop.first -%}
+           , cites{{thresh}}
+        {%- endif -%}
+      {%- endfor -%}
     },
 }
 

@@ -59,6 +59,7 @@ def paper_data():
     data["cite_meta"]["last_cite_update"] = datetime.date(
         *(int(x) for x in data["cite_meta"]["last_cite_update"].split("-"))
     )
+    data["cite_threshes"] = sorted([10, 50, 100, 500], reverse=True)
 
     return data
 
