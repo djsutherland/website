@@ -4,6 +4,32 @@
 
 \documentclass[10pt]{article}
 
+
+% set up toggles for format that we use early
+\usepackage{etoolbox}
+\newtoggle{ubcformat}
+\newtoggle{annualReview}
+
+% https://texfaq.org/FAQ-compjobnam
+\def\StripPrefix#1>{}
+\def\jobis#1{FF\fi
+  \def\predicate{#1}%
+  \edef\predicate{\expandafter\StripPrefix\meaning\predicate}%
+  \edef\job{\jobname}%
+  \ifx\job\predicate
+}
+
+\if\jobis{ubc-cv}%
+  \toggletrue{ubcformat}%
+  \toggletrue{annualReview}%
+\else
+    \if\jobis{ubc-cv-plain}%
+        \toggletrue{ubcformat}%
+    \else
+    \fi
+\fi
+
+
 \input{tweaks.tex}
 
 \addbibresource{biblio-cv.bib}
@@ -587,7 +613,7 @@ In 2020-21, I helped streamline processes (including writing code) for coordinat
 }%
 
 %\nasubsection{%
-\subsection{Memberships on other committees, including offices held and dates}
+\subsection{Memberships on other committees} %, including offices held and dates}
 \begin{itemize}[leftmargin=5em]
 \item[2022-23] {CIFAR Pan-Canadian AI Strategy's National Program Committee, member.}
 \end{itemize}
@@ -609,6 +635,7 @@ Area chair / meta-reviewer roles are listed under section 9 \ref{sec:conference-
   \item[    ] Conference reviewing: {ICLR, NeurIPS}.
   \item[2022] Journal reviewing: {JMLR}.
   \item[    ] Conference reviewing: {UAI}, {ICML}.
+  \item[    ] Grant reviewing: NSERC Discovery Grant.
   \item[2021] Journal reviewing: {JMLR}, {Bernoulli}.
   \item[] Conference reviewing: ICML.
   \item[2014--20] Conference reviewing: NeurIPS, ICML, ICLR, AISTATS, AAAI, COLT, SoCG, IJCAI, ECML-PKDD.
