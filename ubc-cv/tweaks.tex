@@ -14,6 +14,7 @@
 \usepackage{multirow} % Better looking multi-row table headers
 \usepackage{enumitem} % Better list control
 \usepackage{lipsum} % Lipsum
+\usepackage{titlesec}
 
 % Font to arial
 \usepackage{helvet}
@@ -393,25 +394,29 @@
 \newcommand{\denselist}{\itemsep-3pt\topsep-6pt\partopsep-6pt}
 \newcommand{\tailspace}{}
 
-% change sections and subsections: taken from article.cls -- KLB
-\makeatletter
-\renewcommand\thesection{\@arabic\c@section.\hspace{.19in}}
-\renewcommand\thesubsection{\@arabic\c@section.\@arabic\c@subsection.\hspace{.19in}}
-\renewcommand\section{\@startsection {section}{1}{\z@}%
-  {-3.5ex \@plus -1ex \@minus -.2ex}%
-  {2.3ex \@plus.2ex}%
-  %                                   {\normalfont\Large\bfseries}}
-  {\normalfont\bfseries}}
-\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
-  {-3.25ex\@plus -1ex \@minus -.2ex}%
-  {1.5ex \@plus .2ex}%
-  %                                     {\normalfont\large\bfseries}}
-  {\normalfont\itshape}}
-\makeatother
-% TODO: better would be something like https://tex.stackexchange.com/a/234223/9019
 
-% number subsections alphabetically
-\renewcommand\thesubsection{(\alph{subsection})}
+% DJS way, instead of KLB way, to change section layout
+\titleformat{\section}{\normalfont\bfseries}{\arabic{section}.}{.29in}{}
+\titleformat{\subsection}{\normalfont\itshape}{(\alph{subsection})}{.19in}{}
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection(\alph{subsection})}
+
+% % change sections and subsections: taken from article.cls -- KLB
+% \makeatletter
+% \renewcommand\thesection{\@arabic\c@section.\hspace{.19in}}
+% \renewcommand\thesubsection{\@arabic\c@section.\@arabic\c@subsection.\hspace{.19in}}
+% \renewcommand\section{\@startsection {section}{1}{\z@}%
+%   {-3.5ex \@plus -1ex \@minus -.2ex}%
+%   {2.3ex \@plus.2ex}%
+%   %                                   {\normalfont\Large\bfseries}}
+%   {\normalfont\bfseries}}
+% \renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+%   {-3.25ex\@plus -1ex \@minus -.2ex}%
+%   {1.5ex \@plus .2ex}%
+%   %                                     {\normalfont\large\bfseries}}
+%   {\normalfont\itshape}}
+% \makeatother
+% % TODO: better would be something like https://tex.stackexchange.com/a/234223/9019
 
 % Make "C++" look good
 \newcommand{\Cpp}{C\kern-0.05em\texttt{+\kern-0.03em+}}

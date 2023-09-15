@@ -10,6 +10,7 @@
 \newtoggle{ubcformat}
 \newtoggle{annualReview}
 
+% set them based on jobname (e.g. latexmk -jobname=cv ubc-cv.tex)
 % https://texfaq.org/FAQ-compjobnam
 \def\StripPrefix#1>{}
 \def\jobis#1{FF\fi
@@ -161,10 +162,12 @@
 
 }{
     \begin{center}
-    \textbf{Danica J.\ Sutherland}
+    \textbf{\Large Danica J.\ Sutherland}
+    \\
+    \footnotesize{\textit{Version as of \today.}}
     \end{center}
 
-\section{Academic Positions and Education}
+\ulsection{ACADEMIC POSITIONS AND EDUCATION}
 \begin{table}[h!]
   % \bf
   \begin{tabular}{ p{0.36\textwidth} p{0.40\textwidth} p{0.13\textwidth} }
@@ -456,7 +459,7 @@ in both continuous \parencite{pogodin:circe} and more traditional discrete \pare
 
 \subsection{Invited Presentations} % (Identify whether International/National/Local)}
 
-Invited tutorials and summer school lectures are listed instead in section 8\ref{sub:continuing-ed}.
+Invited tutorials and summer school lectures are listed instead in section \ref{sub:continuing-ed}.
 % TODO: footnote symbols getting kinda silly; figure out 
 {\color{white} \international\national\local\virtual\paid}
 
@@ -481,7 +484,7 @@ Invited tutorials and summer school lectures are listed instead in section 8\ref
 \subsection{Conference Participation} % (Organizer, Keynote Speaker, etc.)
 \label{sec:conference-participation}
 
-Reviewing-based roles are in section 11 \ref{sec:reviewer}; tutorials are in section 8 \ref{sub:continuing-ed}.
+Reviewing-based roles are in section \ref{sec:reviewer}; tutorials are in section \ref{sub:continuing-ed}.
 
 \begin{itemize}[leftmargin=5em]
   \item[2020-23] \changed{Area Chair, Conference on Artificial Intelligence and Statistics (AISTATS).}
