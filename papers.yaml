@@ -48,6 +48,10 @@ coauthors:
     first: Aaditya
     last: Ramdas
     web: https://people.eecs.berkeley.edu/~aramdas/
+  aaron-c:
+    first: Aaron
+    last: Courville
+    web: https://mila.quebec/en/person/aaron-courville/
   alaya:
     first: Mokhtar Z.
     last: Alaya
@@ -373,6 +377,10 @@ coauthors:
     first: Mijung
     last: Park
     web: https://www.cs.ubc.ca/~mijungp/
+  mikhail-galkin:
+    first: Mikhail
+    last: Galkin
+    web: https://migalkin.github.io/
   mikolaj:
     first: Mikołaj
     last: Bińkowski
@@ -477,6 +485,9 @@ coauthors:
   sabine:
     first: Sabine
     last: Weber
+  sam-lavoie:
+    first: Samuel
+    last: Lavoie
   sarah-mathew:
     first: Sarah
     last: Mathew
@@ -794,6 +805,7 @@ venues:
       2020: https://neurips.cc/Conferences/2020
       2021: https://neurips.cc/Conferences/2021
       2022: https://neurips.cc/Conferences/2022
+      2023: https://neurips.cc/Conferences/2023
     accepts:
       2018: !!omap
         - oral: 30
@@ -813,6 +825,9 @@ venues:
       2022: !!omap
         - unspecial: 2665
         - submitted: 10411
+      2023: !!omap
+        - unspecial: 3224 # might be off by a couple, they said 26.1%
+        - submitted: 12343
     h5_rank: 9
 
   uai:
@@ -1157,6 +1172,18 @@ cite_meta:
   i10_index_5y: 29
 
 papers:
+  - key: sem-il
+    title: Improving Compositional Generalization using Iterated Learning and Simplicial Embeddings
+    authors:
+      - joshua
+      - sam-lavoie
+      - mikhail-galkin
+      - me
+      - aaron-c
+    venue: neurips
+    year: 2023
+    date: 2023-12-11
+
   - key: exphormer
     title: 'Exphormer: Scaling Graph Transformers with Expander Graphs'
     authors:
