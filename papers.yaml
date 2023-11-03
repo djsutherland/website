@@ -1183,6 +1183,7 @@ papers:
     venue: neurips
     year: 2023
     date: 2023-12-11
+    arXiv: '2310.18777'
 
   - key: exphormer
     title: 'Exphormer: Scaling Graph Transformers with Expander Graphs'
