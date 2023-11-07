@@ -147,6 +147,10 @@ coauthors:
   daniel-elia:
     first: Daniel-Elia
     last: Feist-Alexandrov
+  david-woodruff:
+    first: David
+    last: Woodruff
+    web: https://www.cs.cmu.edu/~dwoodruf/
   dennler:
     first: Nathaniel
     last: Dennler
@@ -320,6 +324,10 @@ coauthors:
   lanusse:
     first: François
     last: Lanusse
+  lei-wu:
+    first: Lei
+    last: Wu
+    web: https://leiwu0.github.io/
   leon:
     first: Ho Chung Leon
     last: Law
@@ -599,6 +607,10 @@ coauthors:
     first: Yu-Xiang
     last: Wang
     web: https://www.cs.cmu.edu/~yuxiangw/
+  zhiyuan:
+    first: Zhiyuan
+    last: Li
+    web: https://zhiyuanli.ttic.edu/
   zijie:
     first: Zijie J.
     last: Wang
@@ -885,12 +897,26 @@ venues:
     conference: neurips
     year: 2015
 
+  glfrontiers-23:
+    name: New Frontiers in Graph Learning
+    web: https://glfrontiers.github.io/
+    type: workshop
+    conference: neurips
+    year: 2023
+
   icml-implicit:
     name: Implicit Models
     web: https://sites.google.com/view/implicitmodels/
     type: workshop
     conference: icml
     year: 2017
+
+  m3l-23:
+    name: Mathematics of Modern Machine Learning
+    web: https://sites.google.com/view/m3l-2023/home
+    type: workshop
+    conference: neurips
+    year: 2023
 
   neurips-dfgg:
     name: Learning on Distributions, Functions, Graphs and Groups
@@ -1172,6 +1198,29 @@ cite_meta:
   i10_index_5y: 29
 
 papers:
+  - key: sparsifying-exphormer
+    title: Low-Width Approximations and Sparsification for Scaling Graph Transformers
+    authors:
+      - hamed
+      - balaji
+      - ameya
+      - me
+      - david-woodruff
+    venue: glfrontiers-23
+    year: 2023
+    date: 2023-12-15
+
+  - key: grokking
+    title: Grokking modular arithmetic can be explained by margin maximization
+    authors:
+      - amin
+      - zhiyuan
+      - lei-wu
+      - me
+    venue: m3l-23
+    year: 2023
+    date: 2023-12-15
+
   - key: sem-il
     title: Improving Compositional Generalization using Iterated Learning and Simplicial Embeddings
     authors:
