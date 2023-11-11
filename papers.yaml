@@ -65,9 +65,11 @@ coauthors:
   anaelia:
     first: Analeia
     last: Ovalle
+    web: https://anaeliaovalle.github.io/
   arjun:
     first: Arjun
     last: Subramonian
+    web: https://arjunsubramonian.github.io/
   arthur:
     first: Arthur
     last: Gretton
@@ -134,6 +136,7 @@ coauthors:
   claas:
     first: Claas
     last: Voelcker
+    web: https://cvoelcker.de/
   corenflos:
     first: Adrien
     last: Corenflos
@@ -366,12 +369,14 @@ coauthors:
   marc:
     first: Marc Peter
     last: Deisenroth
+    web: https://www.deisenroth.cc/
   markham:
     first: Alex
     last: Markham
   maria-r:
     first: Maria
     last: Ryskina
+    web: https://ryskina.github.io/
   martin-mundt:
     first: Martin
     last: Mundt
@@ -410,6 +415,7 @@ coauthors:
   ml-p:
     first: Maria Leonor
     last: Pacheco
+    web: https://mlpacheco.github.io/
   mohamad-osama-ahmed:
     first: Mohamad Osama
     last: Ahmed
@@ -447,6 +453,7 @@ coauthors:
   pan:
     first: Pan
     last: Xu
+    web: https://panxulab.github.io/
   peel:
     first: Austin
     last: Peel
@@ -477,6 +484,7 @@ coauthors:
   raj-k:
     first: Raj
     last: Korpan
+    web: https://tierlab.commons.gc.cuny.edu/
   rakotomamonjy:
     first: Alain
     last: Rakotomamonjy
@@ -551,6 +559,7 @@ coauthors:
   stark:
     first: Luke
     last: Stark
+    web: https://starkcontrast.co/
   stromme:
     first: Andrew
     last: Stromme
@@ -567,6 +576,7 @@ coauthors:
   ti:
     first: ST
     last: John
+    web: http://www.infinitecuriosity.org/about/
   tong:
     first: Alexander
     last: Tong
@@ -594,8 +604,9 @@ coauthors:
     last: Xu
     web: http://www.stats.ox.ac.uk/~wxu/
   willie:
-    first: Willie
+    first: William
     last: Agnew
+    web: http://william-agnew.com
   xiaoxiao:
     first: Xiaoxiao
     last: Li
