@@ -200,10 +200,17 @@ coauthors:
     first: Frederic
     last: Koehler
     web: https://frkoehle.github.io
+  frederick-tung:
+    first: Frederick
+    last: Tung
   frederik:
     first: Frederik
     last: Harder
     web: https://is.mpg.de/person/fharder
+  gabriel-oliveira:
+    first: Gabriel
+    last: Oliveira
+    web: https://sites.google.com/view/gabriel-leivas-oliveira/home
   gautheron:
     first: Léo
     last: Gautheron
@@ -252,17 +259,21 @@ coauthors:
   janati:
     first: Hicham
     last: Janati
-  jie-lu:
-    first: Jie
-    last: Lu
-    web: https://www.uts.edu.au/staff/jie.lu
-  jinhwan:
-    first: Jinhwan
-    last: Seo
   jeff:
     first: Jeff
     last: Schneider
     web: https://www.cs.cmu.edu/~schneide/
+  jie-lu:
+    first: Jie
+    last: Lu
+    web: https://www.uts.edu.au/staff/jie.lu
+  jing-wang:
+    first: Jing
+    last: Wang
+    web: https://sites.google.com/view/jingwang18/home
+  jinhwan:
+    first: Jinhwan
+    last: Seo
   joshi:
     first: Aditya
     last: Joshi
@@ -399,6 +410,9 @@ coauthors:
   ml-p:
     first: Maria Leonor
     last: Pacheco
+  mohamad-osama-ahmed:
+    first: Mohamad Osama
+    last: Ahmed
   nagai:
     first: Daisuke
     last: Nagai
@@ -1198,6 +1212,31 @@ cite_meta:
   i10_index_5y: 32
 
 papers:
+  - key: active-meta
+    title: "Exploring Active Learning in Meta-Learning: Enhancing Context Set Labeling"
+    authors:
+      - won
+      - jing-wang
+      - me
+    venue: preprint
+    arXiv: '2311.02879'
+    date: 2023-11-06
+    year: 2023
+
+  - key: adaflood
+    title: "AdaFlood: Adaptive Flood Regularization"
+    authors:
+      - won
+      - joshua
+      - mohamad-osama-ahmed
+      - frederick-tung
+      - me
+      - gabriel-oliveira
+    venue: preprint
+    arXiv: '2311.02891'
+    date: 2023-11-06
+    year: 2023
+
   - key: sparsifying-exphormer
     title: Low-Width Approximations and Sparsification for Scaling Graph Transformers
     authors:
