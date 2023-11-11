@@ -1211,10 +1211,10 @@ venues:
 ################################################################################
 
 cite_meta:
-  last_cite_update: '2023-11-07'
+  last_cite_update: '2023-11-11'
 
-  total: 3284
-  total_5y: 3057
+  total: 3313
+  total_5y: 3086
 
   h_index: 21
   h_index_5y: 19
@@ -1224,7 +1224,7 @@ cite_meta:
 
 papers:
   - key: active-meta
-    title: "Exploring Active Learning in Meta-Learning: Enhancing Context Set Labeling"
+    title: 'Exploring Active Learning in Meta-Learning: Enhancing Context Set Labeling'
     authors:
       - won
       - jing-wang
@@ -1235,7 +1235,7 @@ papers:
     year: 2023
 
   - key: adaflood
-    title: "AdaFlood: Adaptive Flood Regularization"
+    title: 'AdaFlood: Adaptive Flood Regularization'
     authors:
       - won
       - joshua
@@ -1298,7 +1298,7 @@ papers:
     gs_id: 7161387838783241803
     year: 2023
     date: 2023-07-23
-    citations: 10
+    citations: 11
 
   - key: pseudo-ntk
     title: A Fast, Well-Founded Approximation to the Empirical Neural Tangent Kernel
@@ -1312,7 +1312,7 @@ papers:
     ss_id: 923f93d2ae0c73c3934e4b56b063c6dc00bfb978
     gs_id: 11950864840897886877
     arXiv: '2206.12543'
-    citations: 5
+    citations: 6
 
   - key: qai
     title: 'Queer in AI: A Case Study in Community-Led Participatory AI'
@@ -1374,7 +1374,7 @@ papers:
       - saraswat
       - vytla
       - stark
-    citations: 5
+    citations: 6
     gs_id: 18334777895960251368
 
   - key: dp-ntk
@@ -1427,7 +1427,7 @@ papers:
     ss_id: 422b68799bfc5cae91febc5c33d59e28b067a368
     gs_id: 7462248955033708193
     official: https://openreview.net/forum?id=dJruFeSRym1
-    citations: 3
+    citations: 4
 
   - key: finetuning
     title: How to prepare your task head for finetuning
@@ -1487,7 +1487,7 @@ papers:
     ss_id: 7fe95ccdc3cfe8acd2c4975b6cbdc419f7e62b85
     gs_id: 15930502597666827182
     arXiv: '2206.12569'
-    citations: 10
+    citations: 11
 
   - key: contrastive-graph-eval
     title: Evaluating Graph Generative Models with Contrastively Learned Features
@@ -1551,7 +1551,7 @@ papers:
     ss_id: 91db2f1dae977f2cf139ce194173487133b1ad67
     gs_id: 4997668798655366002
     arXiv: '2203.02485'
-    citations: 11
+    citations: 13
 
   - key: private-mmd
     title: Learning Privacy-Preserving Deep Kernels with Known Demographics
@@ -1683,7 +1683,7 @@ papers:
     official: https://jmlr.org/papers/v22/20-451.html
     ss_id: 2be40f5336afa68b49fef41e009b7172c2c9fdeb
     gs_id: 3559273292438013868
-    citations: 558
+    citations: 565
 
   - key: irm
     title: Does Invariant Risk Minimization Capture Invariance?
@@ -1702,7 +1702,7 @@ papers:
     accept-kind: oral
     ss_id: 1fc4470c1766aea4c435015f5ef873b066f50121
     gs_id: 12319413802596970196
-    citations: 88
+    citations: 90
 
   - key: uniform-interpolation
     title: On Uniform Convergence and Low-Norm Interpolation Learning
@@ -1740,7 +1740,7 @@ papers:
       - video and slides: https://icml.cc/virtual/2020/poster/5999
     ss_id: cce73b08abf1554c1c730c0333b0b29dadc03c19
     gs_id: 11419051350787047758
-    citations: 143
+    citations: 145
 
   - key: unbiased-mmd-variance
     title: Unbiased estimators for the variance of MMD estimators
@@ -1812,7 +1812,7 @@ papers:
     my_talk: true
     ss_id: fbc0863a25d99ef3895f174c7c2ee01c4f19df21
     gs_id: 18438114656627425154
-    citations: 72
+    citations: 73
 
   - key: smmd
     title: On gradient regularizers for MMD GANs
@@ -1852,7 +1852,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 9723066a5587e6267d8abfd7feefd0637a5a211c
     gs_id: 10236052458128513824
-    citations: 1011
+    citations: 1018
 
   - key: bdr-workshop
     title: Bayesian Approaches to Distribution Regression
@@ -1970,7 +1970,7 @@ papers:
       - Oxford talk: '#talk-oxford-opt-mmd'
     ss_id: d772a21f2f687985b41bec2dc47bc2760c57ed2f
     gs_id: 14039271793330969441 11531994075904943226
-    citations: 287
+    citations: 290
 
   - key: thesis
     title: Scalable, Flexible, and Active Learning on Distributions
