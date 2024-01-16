@@ -1219,10 +1219,10 @@ venues:
 ################################################################################
 
 cite_meta:
-  last_cite_update: '2024-01-11'
+  last_cite_update: '2024-01-16'
 
-  total: 3476
-  total_5y: 3085
+  total: 3477
+  total_5y: 3087
 
   h_index: 21
   h_index_5y: 18
@@ -1691,7 +1691,7 @@ papers:
     official: https://jmlr.org/papers/v22/20-451.html
     ss_id: 2be40f5336afa68b49fef41e009b7172c2c9fdeb
     gs_id: 3559273292438013868
-    citations: 605
+    citations: 604
 
   - key: irm
     title: Does Invariant Risk Minimization Capture Invariance?
@@ -1860,7 +1860,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 9723066a5587e6267d8abfd7feefd0637a5a211c
     gs_id: 10236052458128513824
-    citations: 1081
+    citations: 1083
 
   - key: bdr-workshop
     title: Bayesian Approaches to Distribution Regression
