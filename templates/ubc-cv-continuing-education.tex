@@ -4,7 +4,7 @@
 {%- if not loop.previtem or (talk.date.year != loop.previtem.date.year) %}
 \item[\textbf{ {{- talk.date.year -}} }]
 {% else -%}
-\\
+\\[1.3ex]
 {% endif -%}
   {% if talk|in_last_year(month=5) -%} \new{ {%- endif -%}
     \textbf{ {{- talk.talkmeta or "Instructor" -}} },

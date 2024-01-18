@@ -11,7 +11,7 @@ STATIC := $(notdir $(wildcard static/*))
 TEMPLATE := $(notdir $(wildcard templates/*))
 TEX := form100-contributions form100a-contributions
 UBC_CV_PARTS := $(notdir $(wildcard templates/ubc-cv-*.tex))
-OTHER := biblio.bib ubc-cv.pdf ubc-cv-plain.pdf cv.pdf
+OTHER := biblio.bib ubc-cv.pdf ubc-cv-anno.pdf cv.pdf
 
 STATIC_TARGETS := $(addprefix ${OUTDIR}/,${STATIC})
 TEMPLATE_TARGETS := $(addprefix ${OUTDIR}/,${TEMPLATE})
@@ -42,9 +42,9 @@ $(addprefix ubc-cv/,${UBC_CV_PARTS}): ubc-cv/%.tex: ${OUTDIR}/%.tex
 	ln -f $< $@
 ubc-cv/biblio-cv.bib: ${OUTDIR}/biblio-cv.bib
 	ln -f $< $@
-ubc-cv/ubc-cv.pdf ubc-cv/ubc-cv-plain.pdf ubc-cv/cv.pdf: ubc-cv/ubc-cv.tex $(addprefix ubc-cv/,${UBC_CV_PARTS}) ubc-cv/biblio-cv.bib FORCE_MAKE
+ubc-cv/ubc-cv.pdf ubc-cv/ubc-cv-anno.pdf ubc-cv/cv.pdf: ubc-cv/ubc-cv.tex $(addprefix ubc-cv/,${UBC_CV_PARTS}) ubc-cv/biblio-cv.bib FORCE_MAKE
 	$(LATEXMK) -cd -pdf -silent -jobname=$(basename $(notdir $@)) $<
-${OUTDIR}/ubc-cv.pdf ${OUTDIR}/ubc-cv-plain.pdf ${OUTDIR}/cv.pdf: ${OUTDIR}/%.pdf: ubc-cv/%.pdf
+${OUTDIR}/ubc-cv.pdf ${OUTDIR}/ubc-cv-anno.pdf ${OUTDIR}/cv.pdf: ${OUTDIR}/%.pdf: ubc-cv/%.pdf
 	ln -f $< $@
 
 ${OUTDIR}/biblio.bib: ${OUTDIR}/biblio-cv.bib
@@ -53,9 +53,9 @@ ${OUTDIR}/biblio.bib: ${OUTDIR}/biblio-cv.bib
 tidy:
 	rm -rf .build/
 	$(LATEXMK) -cd -silent -jobname=ubc-cv -c ubc-cv/ubc-cv.tex
-	$(LATEXMK) -cd -silent -jobname=ubc-cv-plain -c ubc-cv/ubc-cv.tex
+	$(LATEXMK) -cd -silent -jobname=ubc-cv-anno -c ubc-cv/ubc-cv.tex
 	$(LATEXMK) -cd -silent -jobname=cv -c ubc-cv/ubc-cv.tex
 	rm -f $(addprefix ${OUTDIR}/,${UBC_CV_PARTS}) ubc-cv/biblio-cv.bib ubc-cv/*.bbl ubc-cv/*.run.xml ubc-cv/*.synctex*
 
 clean: tidy
-	rm -f ${ALL_TARGETS} ubc-cv/ubc-cv.pdf ubc-cv/ubc-cv-plain.pdf ubc-cv/cv.pdf
+	rm -f ${ALL_TARGETS} ubc-cv/ubc-cv.pdf ubc-cv/ubc-cv-anno.pdf ubc-cv/cv.pdf

@@ -981,6 +981,16 @@ venues:
 
   ############################################################################
   # Conferences/workshops that just have talks
+  birs:
+    name: Banff International Research Station
+    long_article: the
+  birs-stattrust:
+    name: Statistical Aspects of Trustworthy Machine Learning
+    type: workshop
+    conference: birs
+    web: https://workshops.birs.ca/events/24w5284
+    year: 2024
+
   dali:
     name: Data Analysis, Learning, and Inference
     short: DALI
@@ -1219,10 +1229,10 @@ venues:
 ################################################################################
 
 cite_meta:
-  last_cite_update: '2024-01-16'
+  last_cite_update: '2024-01-18'
 
-  total: 3477
-  total_5y: 3087
+  total: 3480
+  total_5y: 3090
 
   h_index: 21
   h_index_5y: 18
@@ -1322,7 +1332,7 @@ papers:
     gs_id: 7161387838783241803
     year: 2023
     date: 2023-07-23
-    citations: 13
+    citations: 14
 
   - key: pseudo-ntk
     title: A Fast, Well-Founded Approximation to the Empirical Neural Tangent Kernel
@@ -1860,7 +1870,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 9723066a5587e6267d8abfd7feefd0637a5a211c
     gs_id: 10236052458128513824
-    citations: 1083
+    citations: 1085
 
   - key: bdr-workshop
     title: Bayesian Approaches to Distribution Regression
@@ -2265,6 +2275,14 @@ papers:
 ################################################################################
 
 talks:
+  - key: circe-at-banff
+    title: Conditional independence measures for fairer, more reliable models
+    date: 2024-02-13
+    venue: birs-stattrust
+    type: national
+    papers:
+      - circe
+
   - key: circe-like
     title: Learning conditionally independent representations with kernel regularizers
     date: 2023-06-30

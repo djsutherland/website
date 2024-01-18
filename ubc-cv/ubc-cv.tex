@@ -1,5 +1,5 @@
 % Danica's UBC CV
-% Adapted from Kwang's and Kevin-Leyton-Brown's CVs,
+% Adapted from Kwang Moo Yi's and Kevin-Leyton-Brown's CVs,
 % which had influences from Ron Garcia's and Helge Rhodin's
 
 \documentclass[10pt]{article}
@@ -22,10 +22,10 @@
 
 \if\jobis{ubc-cv}%
   \toggletrue{ubcformat}%
-  \toggletrue{annualReview}%
 \else
-    \if\jobis{ubc-cv-plain}%
+    \if\jobis{ubc-cv-anno}%
         \toggletrue{ubcformat}%
+        \toggletrue{annualReview}%
     \else
     \fi
 \fi
@@ -54,15 +54,22 @@
 %%
 %% Basic info
 %%
-\parbox[t]{2in}{{\bf Date:} \today}\parbox[t]{1in}{Initials: DJS}\\[5mm]
-\noindent\parbox[t]{.44in}{{\bf 1.}\hfill\mbox{}}\parbox[t]{3in}{{\bf SURNAME:}
-  Sutherland}\parbox[t]{3.2in}{{\bf FIRST NAME:} Danica}%
-\\\rule{3.45in}{0mm}\parbox[t]{3.45in}{{\bf MIDDLE NAME:} Jane}
+\noindent
+\rule{3.44in}{0mm}%
+\parbox[t]{2in}{{\bf Date:} \today}%
+\parbox[t]{1in}{Initials: DJS}%
+\\[5mm]
+\noindent\parbox[t]{.44in}{{\bf 1.}\hfill\mbox{}}%
+\parbox[t]{3in}{{\bf SURNAME:} Sutherland}%
+\parbox[t]{3.2in}{{\bf FIRST NAME:} Danica}%
+\\%
+\rule{3.44in}{0mm}%
+\parbox[t]{3.45in}{{\bf MIDDLE NAME:} Jane}
 \\[5mm]
 \parbox[t]{.44in}{{\bf 2.}\hfill\mbox{}}\parbox[t]{6in}{{\bf DEPARTMENT/SCHOOL:} Computer Science}\\[5mm]
 \parbox[t]{.44in}{{\bf 3.}\hfill\mbox{}}\parbox[t]{6in}{{\bf FACULTY:} Science} \\[5mm]
 \parbox[t]{.44in}{{\bf 4.}\hfill\mbox{}}\parbox[t]{3in}{{\bf PRESENT RANK:}
-  Assistant Professor}\parbox[t]{3in}{{\bf SINCE:} December 26, 2020} \\[5mm]
+  Assistant Professor}\parbox[t]{3in}{{\bf SINCE:} December 2020} \\[5mm]
 \setcounter{section}{4}
 
 %%
@@ -135,24 +142,20 @@
   \subsection{Date of granting of tenure at U.B.C.: \textmd{N/A}}
 }%
 
-% Nothing yet for Dani!
-\nasection{%
+{%\nasection{%
   %
   % 7. LEAVES OF ABSENCE
   %
   \ulsection{LEAVES OF ABSENCE}
   \noindent\vspace{-2em}
   \begin{table}[h!]
-    \bf
-    % \begin{tabular}{||p{0.4\textwidth}||>{\centering\let\newline                                  \\\arraybackslash\hspace{0pt}}p{0.1\textwidth}||>{\centering\let\newline                                  \\\arraybackslash\hspace{0pt}}p{0.2\textwidth}||>{\centering\let\newline                                  \\\arraybackslash\hspace{0pt}}p{0.2\textwidth}||}
-    % \hhline{#=#=#=#=#}
-    % University or Institution                  & Degree & Subject Area     & Dates \\
-    % \hhline{#=#=#=#=#}
-    \begin{tabular}{ p{0.5\textwidth} p{0.25\textwidth} p{0.20\textwidth} }
+    \begin{tabular}{ p{0.45\textwidth} p{0.25\textwidth} p{0.20\textwidth} }
       \toprule
-      \multicolumn{1}{c}{\parbox[c][][c]{0.45\textwidth}{\centering University, Company or Organization \\ at which Leave was taken}} & \multicolumn{1}{c}{Type of Leave} & \multicolumn{1}{c}{Dates} \\
+      \multicolumn{1}{c}{\parbox[c][][c]{0.45\textwidth}{\centering\bf University, Company or Organization \\ at which Leave was taken}} &
+      \multicolumn{1}{c}{\bf Type of Leave}
+      & \multicolumn{1}{c}{\bf Dates} \\
       \midrule
-      N/A &  &                                                                                          \\
+      University of British Columbia &  Medical & 2022/06 -- 2022/08 \\
       \bottomrule
     \end{tabular}
   \end{table}
@@ -169,7 +172,6 @@
 
 \ulsection{ACADEMIC POSITIONS AND EDUCATION}
 \begin{table}[h!]
-  % \bf
   \begin{tabular}{ p{0.36\textwidth} p{0.40\textwidth} p{0.13\textwidth} }
     \toprule
     %\multicolumn{1}{c}{\bf Rank or Title} & \multicolumn{1}{c}{\bf Dates} \\
@@ -196,19 +198,24 @@
 \subsection{Areas of special interest and accomplishments}
 % UBC rules: 150 words max
 
-  \paragraph{CPSC 532D: Modern Statistical Learning Theory.}
+  \paragraph{Design of CPSC 532D: Modern Statistical Learning Theory.}
   \continuing{}
-  This graduate course (in a mostly lecture-oriented format, due to the quantity of necessary content) focuses on
+  This graduate course
+  %(in a mostly lecture-oriented format, due to the quantity of necessary content) focuses on
   giving students the broad background in learning theory
   required for mathematical understanding of machine learning methods.
-  I combined materials from several textbooks and sets of lecture notes with significant extra material from current research papers to not only cover traditional topics developed in the 70s and 80s, but also bring them up to speed on current developments, with multiple lectures devoted almost exclusively to papers published since 2018.
-  \changed{In the second offering this year, I significantly further developed the course, including a format change (from slides to board with lecture notes) and changes to the presentation and included material.}
+  The course integrates material from several textbooks and other courses
+  with multiple lectures of material from research papers published in the last five years.
+  %I combined materials from several textbooks and notes sets with significant extra material from current research papers to not only cover traditional topics developed in the 70s and 80s, but also bring them up to speed on current developments, with multiple lectures devoted almost exclusively to papers published since 2018.
+  %\changed{In the second offering this year, I significantly further developed the course, including a format change (from slides to board with lecture notes) and changes to the presentation and included material.}
+  My lecture notes, much-appreciated by the students,
+  cover these varied topics in a way that strives to be accessible while also correcting mistakes in the literature.
 
-  \paragraph{CPSC 440/540: Advanced Machine Learning}
-  \new{I am the first person other than Mark Schmidt to teach the current form of this course.
-  Changes this year include adding several very recent topics of research in the area
-  and moving assignments to use Python (more standard in the field and more popular with students),
-  as well as moderate changes to the material throughout.}
+  \paragraph{Update of CPSC 440/550: Advanced Machine Learning}
+  \changed{I am the first person other than Mark Schmidt to teach the current form of this course.
+  I have continued to modernize the topics covered in the course and the assignments
+  (switching to further integrated use of modern standard tools),
+  as well as pedagogical changes such as introducing biweekly quizzes with the Computer-Based Testing Facility (I believe the first AI course to do so).}
 
 %  \paragraph{CPSC 340: Machine Learning and Data Mining.}
 %    I also \new{taught CPSC 340 for the first time this year}
@@ -238,14 +245,15 @@
 }
 
 \begin{coursetable}
-  \newtable 23-24 W1  & CPSC 532D    & 3 & 17            & 3/week  & 2h/week office hours \\
+  \newtable 23-24 W2  & CPSC 440+550 & 3 & 105+25        & 3/week  & 1h/week office hours \\
+  \newtable 23-24 W1  & CPSC 532D    & 3 & 15            & 3/week  & 2h/week office hours \\
             22-23 W2  & CPSC 440+540 & 3 & 70+30         & 3/week  & 1h/week office hours \\
             22-23 W1  & CPSC 532D    & 3 & 23            & 3/week  & 1h/week office hours \\
             21-22 W2  & CPSC 532S    & 3 & 23            & 3/week  & 2h/week office hours \\
             21-22 W1  & CPSC 340     & 3 & 89\textit{\small +139} & 3/week  & 1h/week office hours \\
 \end{coursetable}
 \tremark{%
-CPSC 440 and 540 are undergraduate and graduate cross-listings of one course.\\
+CPSC 440 and 550 (previously 540) are undergraduate and graduate cross-listings of one course; sizes show the enrolment in each listing.\\
 CPSC 532D was formerly known as 532S.\\
 CPSC 340 in 2021-22 W1 was run jointly with another section taught by Mike Gelbart with an enrolment of 139, for a total of 228 students across the two sections.\\
 }
@@ -274,27 +282,29 @@ CPSC 340 in 2021-22 W1 was run jointly with another section taught by Mike Gelba
 %\paragraph{PhD Supervision}
 \paragraph{Supervision}\footnotetext[1000]{Switched to my supervision at this point.}% XXX idk why this is necessary, blegh
 \begin{suptable}
+  \newtable        Bingshan Hu   & Postdoc, UBC CS & 2023/11 & ongoing & Primary supervisor \\
+  \newtable        Nathaniel Xu  & PhD, UBC CS & 2023/09 & ongoing & Supervisor \\
+  \newtable        Zheng He      & PhD-track, UBC CS & 2023/09 & ongoing & Supervisor \\
   \continuingtable Hamed Shirzad & PhD, UBC CS & 2021/09 & ongoing & Supervisor \\
   \continuingtable Wonho Bae     & PhD, UBC CS & 2020/09 & ongoing & Supervisor \\
   \continuingtable Yi Joshua Ren & PhD, UBC CS & 2020/09 & ongoing & Supervisor \\
-  \newtable        Nathaniel Xu  & PhD, UBC CS & 2023/09 & ongoing & Supervisor \\
-  \newtable        Zheng He      & PhD-track, UBC CS & 2023/09 & ongoing & Supervisor \\
 %\end{suptable}
 %
 %\paragraph{MSc Thesis Supervision}
 %\begin{suptable}
   \changedtable Mohamad Amin Mohamadi & MSc, UBC CS & 2021/05\switched{} & 2023/04 & Supervisor  \\
-  \newtable                           & Researcher  & 2023/05 & ongoing & Supervisor  \\
+  \newtable                           & Researcher  & 2023/05 & 2024/01 & Supervisor  \\
   \changedtable Namrata Deka          & MSc, UBC CS & 2020/09 & 2023/04 & Supervisor    \\
   \newtable                           & Researcher  & 2023/05 & 2023/08 & Supervisor  \\
   \changedtable Milad Jalali          & MSc, UBC CS & 2020/09 & 2023/08 & Supervisor    \\
 \end{suptable}
 \tremark{%
+  Bingshan is co-supervised with Mathias Lécuyer and Trevor Campbell; I provide the majority of her funding.
   Mohamad Amin and Namrata, after graduating,
-  continued briefly in non-student research positions with me.
-  Namrata then went on to begin a PhD at Carnegie Mellon,
-  while Mohamad Amin continues to work while waiting on a visa to begin his PhD at TTI-Chicago.
-  Milad is currently finalizing his graduation and applying for jobs.
+  continued for some time in non-student research positions,
+  before beginning their PhDs at
+  TTI-Chicago and Carnegie Mellon, respectively.
+  Milad is currently seeking an industry job.
 }
 %  \hdashline
 %  \continuingtable \textit{Lijia Zhou} & \textit{PhD, UChicago Stat} & \textit{2020/03} & \textit{ongoing} & \textit{Informal co-supervisor}
@@ -306,7 +316,7 @@ CPSC 340 in 2021-22 W1 was run jointly with another section taught by Mike Gelba
 %   Akilesh moved on to a Research Engineer position at Webb.
 % }
 
-
+\clearpage % XXX TEMP
 \paragraph{Graduate Supervisory Committee Memberships}
 \begin{supcommtable}
   \continuingtable Victor Portella        & PhD, UBC CS       & 2023/01 & ongoing & PhD committee member \\
@@ -323,36 +333,18 @@ CPSC 340 in 2021-22 W1 was run jointly with another section taught by Mike Gelba
 
 \subsection{Graduate Program Supervision}
 \begin{suptable}
-  \newtable Arsh Jhah     & MSc (essay), UBC CS & 2022/06\switched{} & ongoing & Supervisor \\
   \newtable Anubhav Garg  & MSc (essay), UBC CS & 2022/10\switched{} & ongoing & Supervisor \\
+  \newtable Arsh Jhah     & MSc (essay), UBC CS & 2022/06\switched{} & 2023/10 & Supervisor \\
 \end{suptable} \label{sec:other-sup}
 \tremark{%
-  Arsh and Anubhav both came to me as essay-option students (rather than switching from a research program under my supervision);
-  both plan to graduate this year.
+  Arsh and Anubhav both came to me as essay-option students, switching from other advisors, rather than switching from a research program under my supervision. {\color{white} \switched}
 }
 
 
 \subsection{Continuing Education Activities} \label{sub:continuing-ed}
 
 \begin{itemize}
-        \input{ubc-cv-continuing-education.tex}
-%  \item[\textbf{2022}]
-%    \new{\textbf{Summer School Instructor}, ETICS 2022 annual research school, Corsica, France.\paid{}
-%    \remark{A six-hour course, \emph{Modern Kernel Methods in Machine Learning}.}}
-%
-%  \item[\textbf{2021}]
-%    \textbf{Summer School Instructor}, Data Science Summer School, École Polytechnique, France (virtual).\paid{}
-%    \remark{A three-hour course, \emph{Kernel Methods: From Basics to Modern Applications}; taught to two sections.}
-%
-%  \item[\textbf{2019}]
-%    \textbf{Tutorial Speaker}, Conference on Neural Information Processing Systems (NeurIPS), Vancouver, BC.\paid{}\competitive{}
-%    \remark{A two-hour tutorial, \emph{Interpretable Comparison of Distributions and Models}, with Arthur Gretton and Wittawat Jitkrittum.}
-%    \\
-%    \textbf{Summer School Instructor}, Data Science Summer School, École Polytechnique, France.\paid{}
-%    \remark{A three-hour course, \emph{Learing with Positive Definite Kernels: Theory, Algorithms, and Applications}, with Bharath Sriperumbudur (I developed and ran the interactive half of the course); taught to two sections.}
-%    \\
-%    \textbf{Summer School Instructor}, Machine Learning Crash Course, University of Genova, Italy.\paid{}
-%    \remark{A 90-minute lesson, \emph{Generative Adversarial Networks}.}
+    \input{ubc-cv-continuing-education.tex}
 \end{itemize}
 
 
@@ -376,33 +368,46 @@ CPSC 340 in 2021-22 W1 was run jointly with another section taught by Mike Gelba
 \iftoggle{ubcformat}{
 \subsection{Areas of special interest and accomplishments} % UBC rules: 150 words max
 
-Work accepted in the last year focuses on two areas:
+% My lab's work broadly spans representation learning, statistical testing, learning theory, and understanding probability distributions. A few recent focus areas:
 
+%Work accepted in the last year focuses on two areas:
+%
 \paragraph{Understanding modern machine learning.}
 \continuing{
-One trend in my lab's recent work is new applications of neural tangent kernel theory  for practical improvements in deep learning: \cite{ren:finetuning,mohamadi:active-ntk}, in addition to ongoing work and last year's \cite{ren:learning-path}.
-Work also continued on the foundations of learning theory for high-dimensional regimes,
-particularly in understanding variants of uniform convergence for high-dimensional linear models on Gaussian data
-\parencite{zhou:moreau,zhou:optimistic-rates}.
+Many aspects of my lab's work are based on improving understanding of how modern deep learning methods work.
+One particular trend is in new uses for neural tangent kernels,
+including improved tools for their empirical study \parencite{mohamadi:pseudo-ntk},
+applications to theoretical analysis \parencite{ren:finetuning,ren:learning-path},
+and practical uses \parencite{mohamadi:active-ntk}.
+Work with related tools has also contributed to understanding the grokking phenomenon (a hotly-studied problem in learning theory) \parencite{mohamadi:grokking},
+and to deepen foundational understanding of learning theory in high-dimensional regimes
+\parencite{zhou:moreau,zhou:optimistic-rates,koehler:gaussian-interpolators}.
 }
 
-\paragraph{Kernels for improved deep learning.}
-\continuing{
-Integrating kernel methods into deep learning models
-has provided significant benefits across a range of machine learning contexts,
-and helps various attractive and theoretically grounded kernel models work well in practice.
-Recent progress includes
-methods to enforce conditional invariance constraints
-(highly applicable to fairness and out-of-distribution generalization settings),
-in both continuous \parencite{pogodin:circe} and more traditional discrete \parencite{deka:mmd-bfair} settings.
-% as well as improved methods for evaluating graph generative models \parencite{shirzad:contrastive-graph-eval}.
-}
+\paragraph{Improved techniques based on theoretical insights.}
+Our theoretical insights have also led to improved models for
+learning on graph data (such as molecular graphs and citation networks) \parencite{shirzad:exphormer,shirzad:sparsifying-exphormer},
+private generative models \parencite{harder:dp-mepf,yang:dp-ntk},
+weakly-supervised semantic segmentation \parencite{bae:prediction-filtering},
+and the closely related problems of improving out-of-distribution generalization and fairness \parencite{ren:sem-il,pogodin:circe,deka:mmd-bfair}.
+
+%
+%\paragraph{Kernels for improved deep learning.}
+%\continuing{
+%Integrating kernel methods into deep learning models
+%has provided significant benefits across a range of machine learning contexts,
+%and helps various attractive and theoretically grounded kernel models work well in practice.
+%Recent progress includes
+%methods to enforce conditional invariance constraints
+%(highly applicable to fairness and out-of-distribution generalization settings),
+%in both continuous \parencite{pogodin:circe} and more traditional discrete \parencite{deka:mmd-bfair} settings.
+%% as well as improved methods for evaluating graph generative models \parencite{shirzad:contrastive-graph-eval}.
+%}
 }{}
 
 
 \subsection{Research or equivalent grants}
 
-  Under the header ``Comp'', C refers to competitive grants and NC to non-competitive.
 % \paragraph{Since joining UBC}
 % \vspace{-0.5em}
 % \begin{itemize}
@@ -413,40 +418,57 @@ in both continuous \parencite{pogodin:circe} and more traditional discrete \pare
 % \end{itemize}
 
 \begin{granttable}
+\iftoggle{ubcformat}{
+  \newtable NFRF
+  & Automated Scanning Probe Microscopy for Investigating Surface Chemistry (Application under review)
+  & \$125,000 & 2024--25 &
+  S.~Burke; \textit{J.~Hein}; \textit{A.~Schiffrin}; \textit{D.~J.~Sutherland}
+  \\ \midrule
+  \newtable NSERC, CSE
+  & URGENCY: foUndations foR scalinG ai sEcurity aNd privaCY (Application under review)
+  & $\!\!\!\!\!$\$1,400,000 & 2024-28 &
+  F.~Kirschbaum; \textit{U.~Aivodji}; \textit{N.~Asokan}; \textit{W.~Chen}; \textit{C.~Clarke}; \textit{S.~Gambs}; \textit{A.~Gurfinkel}; \textit{X.~He}; \textit{G.~C.~Kamath}; \textit{M.~Lécuyer}; \textit{M.~Smucker}; \textit{V.~Shwartz}; \textit{D.~J.~Sutherland}; \textit{T.~Vidal}; \textit{Y.~Yu}
+  \\ \midrule\midrule
+}{}
   \continuingtable
   NSERC, CREATE
-  & Advanced Machine Learning Training Network
-  & C & $\!\!\!\!\!\!\!$\$1,075,650\footnote{Includes contributions from various UBC departments and partners; NSERC amount is on average \$275,000/year.} & 2023-29
+  & Advanced Machine Learning Training Network\competitive %&C
+  & $\!\!\!\!\!$\$1,075,650\footnote{Includes contributions from various UBC departments and partners; NSERC amount is on average \$275,000/year.} & 2023-29
   & F.~Wood; \textit{{A.~Bouchard-Côté;} {B.~Bloem-Reddy;} {T.~Campbell;} {K.~Leyton-Brown;} {M.~van de Panne;} {D.~Poole;} {M.~Schmidt;} {L.~Sigal;} {D.~J.~Sutherland}; {K.~M.~Yi}}
   \\ \midrule
   \continuingtable
   NSERC + FRQNT, NOVA
-  & Towards Improved Understanding and Efficient Utilization of Depthwise Computation in Modern Neural Networks
-  & C & \$75,000 & 2023--26
+  & Towards Improved Understanding and Efficient Utilization of Depthwise Computation in Modern Neural Networks\competitive{} %& C
+  & \$75,000 & 2023--26
   & G.~Wolf; \textit{E.~Belilovsky; D.~J.~Sutherland; J.~Tian}
   \\ \midrule
   %\newtable
   UBC Data Science Institute, Postdoctoral Matching Fund
-  & Anytime-Valid PAC-Bayes for Industrial Applications
-  & C & \$40,000 & 2023--24
+  & Anytime-Valid PAC-Bayes for Industrial Applications\competitive{} %& C
+  & \$40,000 & 2023--24
   &  T.~Campbell; \mbox{D.~J.~Sutherland}
   \\ \midrule
   %\newtable
   DRAC, Resources for Research Groups
-  & Empirically Understanding Deep Learning with Theory
-  & C & \$28,737\compequiv & 2023--24
+  & Empirically Understanding Deep Learning with Theory\competitive{} %&C
+  & \$28,737\compequiv & 2023--24
   & D.~J.~Sutherland
   \\ \midrule
   \continuingtable
-  CIFAR  & Canada CIFAR AI Chair, Amii & C & \$78,333 & 2021--26 & D.~J.~Sutherland
+  CIFAR  & Canada CIFAR AI Chair, Amii\competitive{} % & C
+  & \$78,333 & 2021--26 & D.~J.~Sutherland
   \\ \midrule
   \continuingtable
-  NSERC Discovery & Learning Better Representations with Kernels & C & \$29,000 & 2021--26 & D.~J.~Sutherland
+  NSERC Discovery & Learning Better Representations with Kernels\competitive{} % & C
+  & \$29,000 & 2021--26 & D.~J.~Sutherland
   \\ \midrule
-  NSERC Discovery & Launch Supplement & NC & \$12,500 & 2021 & D.~J.~Sutherland
+  NSERC Discovery & Launch Supplement % & NC
+  & \$12,500 & 2021 & D.~J.~Sutherland
   \\ \midrule
-  UBC  & Startup Fund & NC  & \$200,000 & 2020  & D.~J.~Sutherland \\
+  UBC  & Startup Fund %& NC 
+  & \$200,000 & 2020  & D.~J.~Sutherland \\
 \end{granttable}
+%\tremark{Under the header ``Comp'', C refers to competitive grants and NC to non-competitive.}
 
 \nasubsection{%
   \subsection{Research or equivalent contracts}
@@ -461,7 +483,7 @@ in both continuous \parencite{pogodin:circe} and more traditional discrete \pare
 
 Invited tutorials and summer school lectures are listed instead in section \ref{sub:continuing-ed}.
 % TODO: footnote symbols getting kinda silly; figure out 
-{\color{white} \international\national\local\virtual\paid}
+{\color{white} \competitive\international\national\local\virtual\paid}
 
 \begin{itemize}[leftmargin=5em]
 \input{ubc-cv-invited-talks.tex}
@@ -487,7 +509,7 @@ Invited tutorials and summer school lectures are listed instead in section \ref{
 Reviewing-based roles are in section \ref{sec:reviewer}; tutorials are in section \ref{sub:continuing-ed}.
 
 \begin{itemize}[leftmargin=5em]
-  \item[2020-23] \changed{Area Chair, Conference on Artificial Intelligence and Statistics (AISTATS).}
+  \item[2020-24] \changed{Area Chair, Conference on Artificial Intelligence and Statistics (AISTATS).}
   \item[2020-22] \changed{Area Chair, Conference on Neural Information Processing Systems (NeurIPS).}
   \item[2022] {Panel Moderator, \emph{Faculty and Queerness}, Queer in AI NeurIPS workshop.}
   \item[2022] {Area Chair, International Conference on Machine Learning (ICML).}
@@ -547,10 +569,10 @@ In 2020-21, I helped streamline processes (including writing code) for coordinat
 
 \begin{itemize}[leftmargin=5em]
   \item[2023--24] \new{Faculty recruiting committee: Artificial Intelligence Methods for Scientific Impact.}
-  \item[2023] \new{Faculty recruiting committee for a spousal hire.}
+  \item[2023] \new{Ad-hoc faculty recruiting committee (single candidate).}
   \item[2023] AIM-SI Steering Committee (temporary position as a leave replacement).
   \item[2022--23] Graduate Recruiting and Admissions Committee, Computer Science Department.
-  \item[2022--23] Faculty recruiting committee: CRC Tier 2 in Quantum Computing, Computer Science Department.
+  \item[2021--22] Faculty recruiting committee: CRC Tier 2 in Quantum Computing, Computer Science Department.
   \item[2021] Graduate Recruiting and Admissions Committee, Computer Science Department.
 \end{itemize}
 
@@ -560,7 +582,9 @@ In 2020-21, I helped streamline processes (including writing code) for coordinat
 \begin{itemize}[leftmargin=5em]
   \item[2023--] \new{Recruitment Chair, Advanced Machine Learning Training Network.}
   \item[2023] {UBC Women in Science mentorship program}, occasionally meeting first-year undergraduates.
-  \item[2023] Chair of thesis proposal exam: Christian Weilbach, \new{Shih-Yang Su}.
+  \item[2024] Chair of thesis proposal exam: \new{William Harvey}.
+  \item[2023] Chair of thesis proposal exam: Christian Weilbach, Shih-Yang Su.
+  \item[] Chair of thesis defense: Andreas Munk.
   \item[2022] Chair of thesis proposal exam: Vaden Masrani.
 \end{itemize}
 %}%
@@ -634,8 +658,11 @@ In 2020-21, I helped streamline processes (including writing code) for coordinat
 Area chair / meta-reviewer roles are listed under section \ref{sec:conference-participation}.
 
 \begin{itemize}[leftmargin=5em]
+  \item[2024] Conference reviewing: ICML.
+  \item[] Grant reviewing: CIFAR AI Catalyst grant.
   \item[2023] Journal reviewing: {JRSS-A}.
   \item[    ] Conference reviewing: {ICLR, NeurIPS}.
+  \item[] Grant reviewing: NSERC Discovery Grant.
   \item[2022] Journal reviewing: {JMLR}.
   \item[    ] Conference reviewing: {UAI}, {ICML}.
   \item[    ] Grant reviewing: NSERC Discovery Grant.
@@ -646,7 +673,7 @@ Area chair / meta-reviewer roles are listed under section \ref{sec:conference-pa
 \end{itemize}
 
 
-
+\clearpage % XXX TEMP
 \subsection{External examiner} % (indicate university and dates)}
 
 \begin{extcomtable}

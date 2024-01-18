@@ -190,7 +190,7 @@
 
 \newenvironment{suptable}{
   \begin{center}
-    \begin{longtable}[h!]{ p{0.26\textwidth} p{0.25\textwidth} p{0.07\textwidth} p{0.07\textwidth} p{0.27\textwidth} }
+    \begin{longtable}{ p{0.26\textwidth} p{0.25\textwidth} p{0.07\textwidth} p{0.07\textwidth} p{0.27\textwidth} }
       %% The header for the top of the table
       \toprule
       \multicolumn{1}{c}{\bf Student} & \multicolumn{1}{c}{\bf Program} & \multicolumn{1}{c}{\bf Start} & \multicolumn{1}{c}{\bf Finish}  & \multicolumn{1}{c}{\bf Supervisory Role}                                                                                            \\
@@ -207,7 +207,7 @@
       \bottomrule \endlastfoot
       %% Footer for the continued pages
       \bottomrule \footnotesize{\emph{(continued\ldots)}} \endfoot
-      }{
+}{
     \end{longtable}
   \end{center}
 }
@@ -260,8 +260,8 @@
     \small
     \begin{longtable}[h!]{
         p{0.17\textwidth}
-        p{0.35\textwidth}
-        >{\RaggedLeft\arraybackslash}p{0.03\textwidth}
+        p{0.38\textwidth}
+        %>{\RaggedLeft\arraybackslash}p{0.03\textwidth}
         >{\RaggedLeft\arraybackslash}p{0.065\textwidth}
         p{0.075\textwidth}
         >{\RaggedRight\arraybackslash}p{0.21\textwidth}
@@ -270,7 +270,7 @@
       \toprule
       \textbf{Agency, Program} &
       \textbf{Title} &
-      \textbf{Comp} &
+      %\textbf{Comp} &
       \textbf{\$/year} &
       \textbf{Year(s)} &
       \textbf{PI \emph{\small{(Co-PIs in italics)}}} \\
@@ -279,7 +279,7 @@
       \toprule
       \textbf{Agency, Program} &
       \textbf{Title} &
-      \textbf{Comp} &
+      %\textbf{Comp} &
       \textbf{\$/year} &
       \textbf{Year(s)} &
       \textbf{PI \emph{\small{(Co-PIs in italics)}}} \\
