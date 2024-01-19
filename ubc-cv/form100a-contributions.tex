@@ -1,4 +1,3 @@
-{% raw -%}
 \documentclass[12pt]{article}
 
 \usepackage[utf8]{inputenc}
@@ -41,30 +40,6 @@
     {\bibeqcon}
     {}%
 }
-
-{% endraw %}
-
-{%- set sections = [
-  ["Journal papers", ["journal"], None],
-  ["Low-acceptance-rate conference papers", ["conference"], None],
-  ["Papers under submission to journals and low-acceptance-rate conferences", ["preprint", "private"], True],
-  ["High-acceptance-rate and non-refereed contributions", ["workshop", "poster", "tech-report", "preprint"], False],
-] -%}
-
-{% for sec_name, sec_types, submitted_only in sections %}
-  \DeclareBibliographyCategory{sec{{ loop.index }}}
-  \addtocategory{sec{{ loop.index -}} }{
-    {%- for paper in venue_type_map[sec_types]
-        if paper|in_last_years(6) and not paper.full_version
-           and (submitted_only is none or (paper.submitted and submitted_only or not paper.submitted and not submitted_only))
-    -%}
-      {{- paper | bibtex_key(coauthors) -}}
-      {%- if not loop.last -%},{%- endif -%}
-    {%- endfor -%}
-  }
-{% endfor %}
-
-{% raw %}
 
 \DeclareSourcemap{
   \maps[datatype=bibtex]{
@@ -281,4 +256,3 @@ For those less able to ignore or hide their ``competing'' identities, it is extr
 I've worked towards fighting this as a core organizer of Queer in AI, and through involvement with UBC's Queer Coded student group; both approaches hopefully help queer students see that computer science and machine learning are options for them too.
 
 \end{document}
-{%- endraw -%}
