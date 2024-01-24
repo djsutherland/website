@@ -1333,6 +1333,8 @@ papers:
     year: 2023
     date: 2023-07-23
     citations: 14
+    related: !!omap
+      - "blog post": https://blog.research.google/2024/01/exphormer-scaling-transformers-for.html
 
   - key: pseudo-ntk
     title: A Fast, Well-Founded Approximation to the Empirical Neural Tangent Kernel
