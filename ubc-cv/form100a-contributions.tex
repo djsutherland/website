@@ -15,7 +15,7 @@
 
 \usepackage[capitalize,noabbrev]{cleveref}
 
-\usepackage[maxbibnames=20,doi=false,url=false,sorting=ydnt,style=authortitle,giveninits=true,eprint=false,uniquelist=false,dashed=false]{biblatex}
+\usepackage[maxbibnames=20,doi=false,url=false,sorting=ydnt,style=authortitle,giveninits=true,eprint=false,uniquename=init,dashed=false]{biblatex}
 \DeclareNameAlias{author}{given-family}
 
 % \DeclareFieldFormat[unpublished,misc]{title}{\mkbibquote{#1\isdot}}
@@ -74,15 +74,15 @@
 
 \subsection{Optimized kernels for understanding of distributions} \label{sec:testing}
 
-A line of my work since my postdoc has focused on kernel methods for understanding distributions.
+A major theme of my work for the past six years has been on kernel methods for understanding distributions.
 One major area is two-sample testing,
 where we attempt to tell whether two datasets are significantly different from each other,
 or might have been produced from the same underlying distribution and differ only by chance.
 This problem is extremely widespread,
 and the $t$-tests or Kolmogorov-Smirnov tests solving simple variants of this problem
 are among the most common tools used by scientists.
-In \cite{sutherland:opt-mmd} (where I was lead author)
-and then followed up in \cite{liu:deep-testing} (where I was last author and did most of the theoretical analysis),
+%In \cite{sutherland:opt-mmd} (where I was lead author) and then followed up 
+In \cite{liu:deep-testing} (where I was last author and did most of the theoretical analysis),
 we proposed a method to expand the applicability to far more complex domains,
 such as directly comparing distributions of natural images.
 We later built off this scheme to more efficiently handle situations where several related testing problems are available (\cite{liu:meta-2st}; I was the last-author ``advisor'').
@@ -96,29 +96,30 @@ finding features or predictions which are conditionally independent of a (discre
 This is highly relevant for intersectional fairness settings where the number of discrete attributes is too large to handle with discrete approaches,
 or e.g.\ being fair with respect to an image of a loan applicant.
 It is also used for settings such as out-of-domain generalization,
-e.g.\ finding visual features which do not depend on the time of day.
+such as finding visual features which do not depend on the time of day.
 (I played an ``advisor'' role in all of these projects.)
 
-Our tutorial at NeurIPS 2019, which was popular enough that we were upgraded to a larger room the morning of the tutorial, helped spread these and related ideas to a large audience. For instance, we've been told that a top Formula 1 company is using methods learned from our tutorial to help design new cars.
+Our tutorial at NeurIPS 2019, which was popular enough that we were upgraded to a larger room the morning of the tutorial, helped spread the earliest of these and related ideas to a large audience. We've been told that a top Formula 1 company used methods learned from our tutorial to help design new cars.
 
 \subsection{Scalable graph transformers} \label{sec:exphormers}
 Transformers have been the breakout success story in machine learning over the past five years,
 but their application to graph neural networks has lagged applications in sequence and image modeling,
 in part because their quadratic dependence on the number of nodes in the graph
 is infeasible for large graphs.
-Our paper \cite{shirzad:exphormer} %(a collaboration of my student and myself with researchers at Google)
-used the theoretical construct known as expander graphs
+\cite{shirzad:exphormer} (a collaboration of my student and myself with researchers at Google)
+used the theoretical construct known as \emph{expander graphs}
 to efficiently handle larger graphs.
 This approach, in addition to its theoretical justification,
 has excellent empirical performance,
 setting a new state of the art for several well-studied datasets.
 Our work was highlighted in several blog posts on recent progress in graph networks.
-We are currently extending the approach to scale to even larger graphs.
+Current work (initial results in \cite{shirzad:sparsifying-exphormer})
+scales to even larger graphs.
 
 \subsection{Uniform convergence of interpolators} \label{sec:interpolators}
 In 2019, Nagarajan and Kolter brought considerable doubt as to whether the standard workhorse of statistical learning theory, uniform convergence, is capable of explaining learning in certain high-dimensional regimes. Separately, several other researchers, in particular Mikhail Belkin, were advocating a point of view that ``there are no'' uniform convergence bounds capable of explaining modern interpolating machine learning methods, ``and no reason they should exist.''
 
-In \cite{zhou:uniform-interpolation}, we suggested an alternative to simply throwing out the vast majority of thirty years of research in the field: considering uniform convergence of predictors with zero training error. We showed that in one particular high-dimensional linear regression setting, this style of analysis can appropriately show consistency of the minimal-norm linear interpolator, and in fact can analyze the behaviour of larger-norm interpolators as well. (I joined this project after it began, but played the ``week-to-week advisor'' role as well as writing some of the proofs myself.) This paper spawned a very direct sequel from an unrelated research group (``Exact Gap between Generalization Error and Uniform Convergence in Random Feature Models'' by Yang et al.) and has been cited in major recent review papers and an online textbook on deep learning theory.
+In \cite{zhou:uniform-interpolation}, we suggested an alternative to simply throwing out the vast majority of thirty years of research in the field: considering uniform convergence of predictors with zero training error. We showed that in one particular high-dimensional linear regression setting, this style of analysis can appropriately show consistency of the minimal-norm linear interpolator, and in fact can analyze the behaviour of larger-norm interpolators as well. (I played the ``week-to-week advisor'' role as well as writing some of the proofs myself.) This paper spawned a very direct sequel from an unrelated research group (``Exact Gap between Generalization Error and Uniform Convergence in Random Feature Models'' by Yang et al.) and has been cited in major recent review papers and an online textbook on deep learning theory.
 
 Our follow-up \cite{koehler:gaussian-interpolators} extended the results of the previous paper from a single particular learning problem to any Gaussian linear regression problem, matching previous conditions for consistency of the minimal-norm linear interpolator and confirming a bound speculated by the earlier paper for larger-norm interpolators.
 (It was one of under 1\% of submissions to receive a prestigious oral presentation at NeurIPS.)
@@ -139,7 +140,7 @@ which has been included in several standard GAN toolkits
 %. The KID is now included in the standard TensorFlow GAN toolkit, is included in some new significant evaluation efforts such as the HYPE benchmark,
 and received the endorsement of Ian Goodfellow, the inventor of GANs.
 
-Our paper \cite{shirzad:contrastive-graph-eval} develops a closely related technique for evaluating graph generative models, which have some very different characteristics than generating natural images. This work, done by my student and an outside collaborator with my supervision, improves the features used to evaluate graph models.
+Work with my student, \cite{shirzad:contrastive-graph-eval}, develops a closely related technique for evaluating graph generative models, which have some very different characteristics than generating natural images. This work, done by my student and an outside collaborator with my supervision, improves the features used to evaluate graph models.
 
 
 \subsection{Theory of Invariant Risk Minimization} \label{sec:irm}
@@ -165,7 +166,8 @@ Author order is typically meaningful,
 roughly with students and postdocs first sorted by decreasing contribution,
 then professors in increasing order of seniority and contribution,
 such that the most prestigious positions are first and last.
-Several of my students' papers use this marker.
+Shared first authorships, marked with a star, are also common;
+several of my papers use this marker, although it is not used in the CCV formatting.
 In my collaborations with other researchers where I am not listed last,
 this has sometimes been because we played similar roles in the work and they came last out of seniority,
 and sometimes because my overall contribution to the work was smaller than theirs.
@@ -175,26 +177,28 @@ An exception to these general rules is on very-large authorship lists,
 particularly \cite{flamary:pot} and \cite{queerinai:qai};
 here ordering outside of the first author was essentially arbitrary.
 
-Shared first authorships, marked with a star, are also common.
-As a student or postdoc, I shared co-first authorship on six papers.
-%\begin{itemize}[nosep]
-%\item Junier Oliva: \cite{sutherland:hdd}, AAAI 2016
-%\item Ho Chung Leon Law: \cite{law:bdr}, AISTATS 2018
-%\item Heiko Strathmann: \cite{sutherland:kexpfam-nystroem}, AISTATS 2018
-%\item Mikołaj Bińkowski: \cite{binkowski:mmd-gans}, ICLR 2018
-%\item Michael Arbel: \cite{arbel:smmd}, NeurIPS 2018
-%\item Li Wenliang: \cite{wenliang:dkef}, ICML 2019
-%\end{itemize}
-For two (with J Oliva [AAAI 2016] and HCL Law [AISTATS 2018]),
-the work was truly equally split.
-For another four (with H Strathmann [AISTATS 2018], M Bińkowski [ICLR 2018], M Arbel [NeurIPS 2018], and L Wenliang [ICML 2019]),
-I mostly took a more advisory role on the implementation, but a more primary role in the theoretical development and writing components.
+% As a student or postdoc, I shared co-first authorship on six papers.
+% %\begin{itemize}[nosep]
+% %\item Junier Oliva: \cite{sutherland:hdd}, AAAI 2016
+% %\item Ho Chung Leon Law: \cite{law:bdr}, AISTATS 2018
+% %\item Heiko Strathmann: \cite{sutherland:kexpfam-nystroem}, AISTATS 2018
+% %\item Mikołaj Bińkowski: \cite{binkowski:mmd-gans}, ICLR 2018
+% %\item Michael Arbel: \cite{arbel:smmd}, NeurIPS 2018
+% %\item Li Wenliang: \cite{wenliang:dkef}, ICML 2019
+% %\end{itemize}
+% For two (with J Oliva [AAAI 2016] and HCL Law [AISTATS 2018]),
+% the work was truly equally split.
+% For another four (with H Strathmann [AISTATS 2018], M Bińkowski [ICLR 2018], M Arbel [NeurIPS 2018], and L Wenliang [ICML 2019]),
+% I mostly took a more advisory role on the implementation, but a more primary role in the theoretical development and writing components.
 
 In addition to research and regular service as an Area Chair or reviewer at many top venues in my and related fields,
 I have also helped advance research through my involvement with
 Queer in AI (mentoring and removing barriers for other queer researchers)
 and the Name Change Policy Working Group (improving the state of academic publishing for other trans researchers).
 % I have also spent a significant amount of time over the past several years in peer review, including repeated time serving as a reviewer for conferences including NeurIPS and ICML (each of which have awarded me Best Reviewer-type awards), ICLR, AISTATS, AAAI, COLT, and SoCG, as well as serving as a meta-reviewer (Area Chair or Senior Program Committee) repeatedly for NeurIPS, ICML, AISTATS, and AAAI. I have also done many journal reviews for JMLR, Springer MLJ, Bernoulli, IEEE T-PAMI, IEEE TSP, and Comptes rendus, and served on thesis committees for a University of Cambridge MPhil and a Ghent University PhD as well as a UBC MSc.
+We reflected on academic and participatory design aspects of Queer in AI, of which I am a core organizer,
+in the paper \cite{queerinai:qai},
+which received a Best Paper award at FAccT 2023 (the premiere venue for work in AI ethics and related areas).
 
 \clearpage
 \section{Contributions to the Training of Highly Qualified Personnel}
@@ -203,10 +207,11 @@ I have four current PhD students at UBC
 (fourth years: Yi Ren, Wonho Bae, third: Hamed Shirzad, first: Nathaniel Xu),
 as well as one MSc student on the ``PhD track'' (first year: Zheng He).
 The senior students each have two or three top-tier (co-)first-author publications from their time here.
+In addition, I co-supervise a postdoc (Bingshan Hu), but began working with her only recently.
 
 I have previously graduated three MSc students.
-Namrata Deka has since begun a PhD program in the Machine Learning Department at Carnegie Mellon;
-Mohamad Amin Mohamadi is waiting on a visa but will soon begin a PhD at the Toyota Technological Institute at Chicago;
+Namrata Deka has since begun her PhD program in the Machine Learning Department at Carnegie Mellon,
+and Mohamad Amin Mohamadi his at the Toyota Technological Institute at Chicago;
 Milad Jalali Asadabadi just graduated and is applying for industry jobs.
 Each had two publications in their degrees.
 %(Namrata and Mohamad Amin top-tier venues as [co-]first authors, Milad as middle author at respected venues),
@@ -231,7 +236,8 @@ Some projects do, of course, spark from one of my suggestions;
 even so, I tried to regularly emphasize asking them about the big picture,
 in addition to asking questions about details of things they'd tried and immediate next steps.
 Some projects also came out of discussions with students on their interests,
-often combining students' suggestions with my ideas in a way yielding something neither of us would have done on their own.
+often %combining students' suggestions with my ideas in a way
+yielding something neither of us would have done on their own.
 For instance, Yi Ren came in with an excitement for neural iterated learning frameworks,
 an idea about which I was relatively skeptical;
 my confusion about why this approach worked
@@ -240,7 +246,7 @@ led to us improving basic understanding of ``component parts'' of the framework
 before moving on to his most recent work on exploiting iterated learning for ``compositional'' generalization.
 In all of these processes,
 there have of course been difficult times and the occasional abandoned project,
-but I try hard to guide them through it smoothly
+but I try to guide them through it smoothly
 and give them enough time both to learn foundations and explore things I suspect might turn out to be dead ends,
 since navigating this is one of the most important things to learn in research.
 (One student characterized one of my main roles in advising meetings as ``convincing me things are worthwhile when I'm depressed'' about some aspect of an ongoing project.)
@@ -253,6 +259,6 @@ As a student, like many who eventually became academics, I identified strongly w
 Unlike most such students, though, I was also struggling to come to terms with my own trans identity.
 Not seeing any signs around me that it was possible for trans or even gay people to have a career in this field, it felt impossible to explore without abandoning my life path.
 For those less able to ignore or hide their ``competing'' identities, it is extremely easy to see how they could be driven out of the field even without anyone being intentionally antagonistic.
-I've worked towards fighting this as a core organizer of Queer in AI, and through involvement with UBC's Queer Coded student group; both approaches hopefully help queer students see that computer science and machine learning are options for them too.
+I've worked towards fighting this as a core organizer of Queer in AI, and through regular informal involvement with queer students at UBC; both approaches hopefully help queer students see that computer science and machine learning are options for them too.
 
 \end{document}
