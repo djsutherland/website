@@ -2214,8 +2214,8 @@ papers:
     year: 2012
     doi: 10.1109/CVPR.2012.6248028
     related: !!omap
-      - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/cvpr-12.pdf
-      - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/cvpr-12.pdf
+      - pdf: http://djsutherland.ml/papers/cvpr-12.pdf
+        # - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/cvpr-12.pdf
     ss_id: 76710cce6eb7f6cab032f8ec0832b47a474fd285
     gs_id: 5009114706015842197
     citations: 65
