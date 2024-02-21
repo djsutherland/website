@@ -183,9 +183,9 @@ def paper_short_venue(paper, venues):
         return paper["title"]
     venue = venues[paper["venue"]]
     if venue.get("short"):
-        return venue["short"] + "-" + str(paper["year"])[2:]
+        return f"{venue['short']}-{str(paper['year'])[2:]}"
     else:
-        return venue["name"] + " " + paper["year"]
+        return f"{venue['name']} {paper['year']}"
 
 
 translation_table = {}
@@ -339,7 +339,7 @@ def maybe_link(content, url=None):
 def top_h5_venues(venues, cutoff=30):
     return sorted(
         (v for v in venues.values() if v.get("h5_rank", float("inf")) <= cutoff),
-        key=lambda v: v['h5_rank'],
+        key=lambda v: v["h5_rank"],
     )
 
 

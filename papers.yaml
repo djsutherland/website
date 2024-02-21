@@ -66,6 +66,10 @@ coauthors:
     first: Analeia
     last: Ovalle
     web: https://anaeliaovalle.github.io/
+  antonin:
+    first: Antonin
+    last: Schrab
+    web: https://antoninschrab.github.io/
   arjun:
     first: Arjun
     last: Subramonian
@@ -1241,6 +1245,19 @@ cite_meta:
   i10_index_5y: 29
 
 papers:
+  - key: split-kci
+    title: "Practical Kernel Tests of Conditional Independence"
+    authors:
+      - roman-p
+      - antonin
+      - yazhe
+      - me
+      - arthur
+    venue: preprint
+    date: 2024-02-20
+    year: 2024
+    arXiv: "2402.13196"
+
   - key: active-meta
     title: 'Exploring Active Learning in Meta-Learning: Enhancing Context Set Labeling'
     authors:
@@ -2285,6 +2302,7 @@ talks:
     paid: true  # hotel, not travel
     papers:
       - circe
+      - split-kci
     slides: https://djsutherland.ml/slides/circe-birs.pdf
     video: https://www.birs.ca/events/2024/5-day-workshops/24w5284/videos/watch/202402131603-Sutherland.html
 
