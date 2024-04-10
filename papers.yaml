@@ -88,6 +88,9 @@ coauthors:
   avestruz:
     first: Camille
     last: Avestruz
+  bailin-wang:
+    first: Bailin
+    last: Wang
   balaji:
     first: Balaji
     last: Venkatachalam
@@ -354,6 +357,9 @@ coauthors:
     first: Liang
     last: Xiong
     web: https://ai.facebook.com/people/liang-xiong/
+  linlu-qiu:
+    first: Linlu
+    last: Qiu
   lipton:
     first: Benjamin
     last: Lipton
@@ -1245,6 +1251,19 @@ cite_meta:
   i10_index_5y: 29
 
 papers:
+  - key: il-icl
+    title: "Language Model Evolution: An Iterated Learning Perspective"
+    authors:
+      - joshua
+      - shangmin
+      - linlu-qiu
+      - bailin-wang
+      - me
+    venue: preprint
+    date: 2024-04-04
+    year: 2024
+    arXiv: "2404.04286"
+
   - key: split-kci
     title: "Practical Kernel Tests of Conditional Independence"
     authors:
