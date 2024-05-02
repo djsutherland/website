@@ -796,6 +796,7 @@ venues:
       2019: https://icml.cc/Conferences/2019
       2020: https://icml.cc/Conferences/2020
       2023: https://icml.cc/Conferences/2023
+      2024: https://icml.cc/Conferences/2024
     accepts:
       2019: !!omap
         - unspecial: 773
@@ -1239,20 +1240,31 @@ venues:
 ################################################################################
 
 cite_meta:
-  last_cite_update: '2024-01-18'
+  last_cite_update: '2024-04-23'
 
-  total: 3480
-  total_5y: 3090
+  total: 3885
+  total_5y: 3502
 
-  h_index: 21
-  h_index_5y: 18
+  h_index: 22
+  h_index_5y: 20
 
-  i10_index: 33
-  i10_index_5y: 29
+  i10_index: 36
+  i10_index_5y: 32
 
 papers:
+  - key: grokking
+    title: "Why Do You Grok? A Theoretical Analysis on Grokking Modular Addition"
+    authors:
+      - amin
+      - zhiyuan
+      - lei-wu
+      - me
+    venue: icml
+    year: 2024
+    date: 2024-07-21
+
   - key: il-icl
-    title: "Language Model Evolution: An Iterated Learning Perspective"
+    title: 'Language Model Evolution: An Iterated Learning Perspective'
     authors:
       - joshua
       - shangmin
@@ -1262,10 +1274,10 @@ papers:
     venue: preprint
     date: 2024-04-04
     year: 2024
-    arXiv: "2404.04286"
+    arXiv: '2404.04286'
 
   - key: split-kci
-    title: "Practical Kernel Tests of Conditional Independence"
+    title: Practical Kernel Tests of Conditional Independence
     authors:
       - roman-p
       - antonin
@@ -1275,7 +1287,7 @@ papers:
     venue: preprint
     date: 2024-02-20
     year: 2024
-    arXiv: "2402.13196"
+    arXiv: '2402.13196'
 
   - key: active-meta
     title: 'Exploring Active Learning in Meta-Learning: Enhancing Context Set Labeling'
@@ -1316,7 +1328,7 @@ papers:
     ss_id: 9fdc5d89eda1b6d8437757792286471465add203
     gs_id: 6645133680438219650
     arXiv: '2303.01687'
-    citations: 4
+    citations: 7
 
   - key: sparsifying-exphormer
     title: Low-Width Approximations and Sparsification for Scaling Graph Transformers
@@ -1330,7 +1342,7 @@ papers:
     year: 2023
     date: 2023-12-15
 
-  - key: grokking
+  - key: grokking-workshop
     title: Grokking modular arithmetic can be explained by margin maximization
     authors:
       - amin
@@ -1340,6 +1352,10 @@ papers:
     venue: m3l-23
     year: 2023
     date: 2023-12-15
+    gs_id: 16561363804118007192
+    citations: 1
+    related: !!omap
+      - "ICML version": '#grokking'
 
   - key: sem-il
     title: Improving Compositional Generalization using Iterated Learning and Simplicial Embeddings
@@ -1352,7 +1368,9 @@ papers:
     venue: neurips
     year: 2023
     date: 2023-12-11
+    gs_id: 4645152097706396762
     arXiv: '2310.18777'
+    citations: 1
 
   - key: exphormer
     title: 'Exphormer: Scaling Graph Transformers with Expander Graphs'
@@ -1368,9 +1386,9 @@ papers:
     gs_id: 7161387838783241803
     year: 2023
     date: 2023-07-23
-    citations: 14
+    citations: 38
     related: !!omap
-      - "blog post": https://blog.research.google/2024/01/exphormer-scaling-transformers-for.html
+      - blog post: https://blog.research.google/2024/01/exphormer-scaling-transformers-for.html
 
   - key: pseudo-ntk
     title: A Fast, Well-Founded Approximation to the Empirical Neural Tangent Kernel
@@ -1382,9 +1400,9 @@ papers:
     year: 2023
     date: 2023-07-23
     ss_id: 923f93d2ae0c73c3934e4b56b063c6dc00bfb978
-    gs_id: 11950864840897886877
+    gs_id: 4580998787359405017
     arXiv: '2206.12543'
-    citations: 9
+    citations: 11
 
   - key: qai
     title: 'Queer in AI: A Case Study in Community-Led Participatory AI'
@@ -1446,7 +1464,7 @@ papers:
       - saraswat
       - vytla
       - stark
-    citations: 7
+    citations: 10
     gs_id: 18334777895960251368
 
   - key: dp-mepf
@@ -1463,7 +1481,7 @@ papers:
     ss_id: 8cb6555517575be141174a17f1e0dcf48739aaf4
     gs_id: 854611520534599253 10298606910796508333
     arXiv: '2205.12900'
-    citations: 17
+    citations: 20
 
   - key: circe
     title: Efficient Conditionally Invariant Representation Learning
@@ -1483,7 +1501,7 @@ papers:
     ss_id: 422b68799bfc5cae91febc5c33d59e28b067a368
     gs_id: 7462248955033708193
     official: https://openreview.net/forum?id=dJruFeSRym1
-    citations: 5
+    citations: 10
 
   - key: finetuning
     title: How to prepare your task head for finetuning
@@ -1499,7 +1517,7 @@ papers:
     ss_id: 75852ed23746bb8fceebeef8c5ae2d228b83dd24
     gs_id: 15928265510615609906
     arXiv: '2302.05779'
-    citations: 4
+    citations: 9
 
   - key: mmd-bfair
     title: 'MMD-B-Fair: Learning Fair Representations with Statistical Testing'
@@ -1513,7 +1531,7 @@ papers:
     ss_id: 244833b8e577d73c1a3552e6f41e0afcd8fc87a1
     gs_id: 8937404985150107657 7310171816056904535
     date: 2023-04-25
-    citations: 2
+    citations: 3
 
   - key: moreau
     title: A Non-Asymptotic Moreau Envelope Theory for High-Dimensional Generalized Linear Models
@@ -1529,7 +1547,7 @@ papers:
     ss_id: f8b29bc83e9d84ff4283811faa2bb31b650c6d10
     gs_id: 2093430636599193484
     arXiv: '2210.12082'
-    citations: 14
+    citations: 16
 
   - key: active-ntk
     title: Making Look-Ahead Active Learning Strategies Feasible with Neural Tangent Kernels
@@ -1543,7 +1561,7 @@ papers:
     ss_id: 7fe95ccdc3cfe8acd2c4975b6cbdc419f7e62b85
     gs_id: 15930502597666827182
     arXiv: '2206.12569'
-    citations: 13
+    citations: 17
 
   - key: contrastive-graph-eval
     title: Evaluating Graph Generative Models with Contrastively Learned Features
@@ -1557,7 +1575,7 @@ papers:
     ss_id: 28f8c4826c1af49b176009c6be39c7a0251764e4
     gs_id: 11402654840281713194
     arXiv: '2206.06234'
-    citations: 5
+    citations: 7
 
   - key: contrastive-wsod
     title: Object Discovery via Contrastive Learning for Weakly Supervised Object Detection
@@ -1576,7 +1594,7 @@ papers:
     gs_id: 4274032166116217116
     related: !!omap
       - code: https://github.com/jinhseo/OD-WSCL
-    citations: 14
+    citations: 18
 
   - key: prediction-filtering
     title: One Weird Trick to Improve Your Semi-Weakly Supervised Semantic Segmentation Model
@@ -1607,7 +1625,7 @@ papers:
     ss_id: 91db2f1dae977f2cf139ce194173487133b1ad67
     gs_id: 4997668798655366002
     arXiv: '2203.02485'
-    citations: 14
+    citations: 22
 
   - key: private-mmd
     title: Learning Privacy-Preserving Deep Kernels with Known Demographics
@@ -1618,6 +1636,8 @@ papers:
     date: 2022-02-28
     venue: ppai-22
     citations: 0
+    related: !!omap
+      - "AISTATS version": '#mmd-bfair'
 
   - key: optimistic-rates
     title: 'Optimistic Rates: A Unifying Theory for Interpolation Learning and Regularization in Linear Regression'
@@ -1631,9 +1651,9 @@ papers:
     submitted-date: 2022-02-25
     year: 2023
     ss_id: d050f2f50a490fd90a06e5bcc7ed22079a28e404
-    gs_id: 3078534230907333706
+    gs_id: 15758026682745631426
     date: 2023-05-01
-    citations: 19
+    citations: 22
 
   - key: queerinai-dni
     title: 'How to Make Virtual Conferences Queer-Friendly: A Guide'
@@ -1672,7 +1692,7 @@ papers:
       - NYU talk: '#talk-nyu-interpolation'
     ss_id: 24721e44b5510bfda275ddb023c2f107c9526870
     gs_id: 14582780933724089324
-    citations: 48
+    citations: 56
 
   - key: ssl-hsic
     title: Self-Supervised Learning with Kernel Dependence Maximization
@@ -1688,7 +1708,7 @@ papers:
     ss_id: 1a3d5d6cec457f8f3b088cb3636a1a197bd248f6
     gs_id: 13912402342615870661
     arXiv: '2106.08320'
-    citations: 52
+    citations: 57
 
   - key: meta-2st
     title: 'Meta Two-Sample Testing: Learning Kernels for Testing with Limited Data'
@@ -1704,7 +1724,7 @@ papers:
     ss_id: 6b32180f7849dcd5a9f79d7cd0f58a2068d81c32
     gs_id: 3537368320170973148
     arXiv: '2106.07636'
-    citations: 16
+    citations: 17
 
   - key: pot
     title: 'POT: Python Optimal Transport'
@@ -1739,7 +1759,7 @@ papers:
     official: https://jmlr.org/papers/v22/20-451.html
     ss_id: 2be40f5336afa68b49fef41e009b7172c2c9fdeb
     gs_id: 3559273292438013868
-    citations: 604
+    citations: 709
 
   - key: irm
     title: Does Invariant Risk Minimization Capture Invariance?
@@ -1758,7 +1778,7 @@ papers:
     accept-kind: oral
     ss_id: 1fc4470c1766aea4c435015f5ef873b066f50121
     gs_id: 12319413802596970196
-    citations: 97
+    citations: 112
 
   - key: uniform-interpolation
     title: On Uniform Convergence and Low-Norm Interpolation Learning
@@ -1777,7 +1797,7 @@ papers:
       - NYU talk: '#talk-nyu-interpolation'
     ss_id: 65a2da57b52942cf486cd06682db0a4c53eaae34
     gs_id: 11067119780138908286
-    citations: 31
+    citations: 33
 
   - key: deep-testing
     title: Learning Deep Kernels for Non-Parametric Two-Sample Tests
@@ -1796,7 +1816,7 @@ papers:
       - video and slides: https://icml.cc/virtual/2020/poster/5999
     ss_id: cce73b08abf1554c1c730c0333b0b29dadc03c19
     gs_id: 11419051350787047758
-    citations: 153
+    citations: 164
 
   - key: unbiased-mmd-variance
     title: Unbiased estimators for the variance of MMD estimators
@@ -1809,7 +1829,7 @@ papers:
     year: 2019
     ss_id: cf8365023bf88bbd3c18ebb71591c7b60492497d
     gs_id: 11678116865040215413
-    citations: 13
+    citations: 12
 
   - key: cosmo-ml
     title: The Role of Machine Learning in the Next Decade of Cosmology
@@ -1849,7 +1869,7 @@ papers:
     year: 2019
     ss_id: 333ddc46a211ab1eb6ceb1f4b7c4952eadce8015
     gs_id: 12908060365392151722
-    citations: 62
+    citations: 64
 
   - key: dkef
     title: Learning deep kernels for exponential family densities
@@ -1868,7 +1888,7 @@ papers:
     my_talk: true
     ss_id: fbc0863a25d99ef3895f174c7c2ee01c4f19df21
     gs_id: 18438114656627425154
-    citations: 73
+    citations: 76
 
   - key: smmd
     title: On gradient regularizers for MMD GANs
@@ -1888,7 +1908,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 3d597e16ef56119bb6e6d78e3f379623862f0752
     gs_id: 12044208657387141906
-    citations: 99
+    citations: 98
 
   - key: mmd-gans
     title: Demystifying MMD GANs
@@ -1908,7 +1928,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 9723066a5587e6267d8abfd7feefd0637a5a211c
     gs_id: 10236052458128513824
-    citations: 1085
+    citations: 1235
 
   - key: bdr-workshop
     title: Bayesian Approaches to Distribution Regression
@@ -1953,7 +1973,7 @@ papers:
     my_talk: true
     ss_id: 63ca8b71d2e2e755140ff09d157de0521de3d5c0
     gs_id: 9035704111500533087 12599253809303872014 15731144284682630817
-    citations: 37
+    citations: 41
 
   - key: bdr
     title: Bayesian Approaches to Distribution Regression
@@ -1972,7 +1992,7 @@ papers:
       - NeurIPS workshop version: '#bdr-workshop'
     ss_id: f35f56b7048a74244ab0530e4bc705cc71125862
     gs_id: 18333796385560193193 16793725927913159067
-    citations: 40
+    citations: 42
 
   - key: caponnetto-fix
     title: Fixing an error in Caponnetto and de Vito (2007)
@@ -2026,7 +2046,7 @@ papers:
       - Oxford talk: '#talk-oxford-opt-mmd'
     ss_id: d772a21f2f687985b41bec2dc47bc2760c57ed2f
     gs_id: 14039271793330969441 11531994075904943226
-    citations: 297
+    citations: 307
 
   - key: thesis
     title: Scalable, Flexible, and Active Learning on Distributions
@@ -2094,7 +2114,7 @@ papers:
     arXiv: '1509.05409'
     ss_id: 45c0b51a6543f0fdfbf504838059f7acdfc0e409
     gs_id: 5213844651993496360
-    citations: 80
+    citations: 82
 
   - key: hdd
     title: Linear-time Learning on Distributions with Approximate Kernel Embeddings
@@ -2112,7 +2132,7 @@ papers:
       - NeurIPS workshop version: '#hdd-workshop'
     ss_id: 7016a32cf825e7c4a65ef51f75844839f8e99b46
     gs_id: 16915902998020531010
-    citations: 18
+    citations: 19
 
   - key: hdd-workshop
     title: Linear-time Learning on Distributions with Approximate Kernel Embeddings
@@ -2147,7 +2167,7 @@ papers:
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/rff_uai15.pdf
     ss_id: 78e95099ec2ac3cb087eb47ba7c87ddb01a19405
     gs_id: 2736757817032849196
-    citations: 201
+    citations: 208
 
   - key: apps
     title: Active Pointillistic Pattern Search
@@ -2202,7 +2222,7 @@ papers:
     arXiv: '1410.0686'
     ss_id: f5b6eb5c3fa7eb7a569d6c2af0a43f7123034bd0
     gs_id: 15766717484171055980
-    citations: 102
+    citations: 109
 
   - key: active-mf
     title: Active learning and search on low-rank matrices
@@ -2223,7 +2243,7 @@ papers:
     my_talk: true
     ss_id: 2bf7e7fb156466546428dc6d25702d32514ef41d
     gs_id: 6061284565694240919
-    citations: 45
+    citations: 46
 
   - key: sdm-arxiv
     title: Kernels on Sample Sets via Nonparametric Divergence Estimates
