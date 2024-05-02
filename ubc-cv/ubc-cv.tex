@@ -198,11 +198,17 @@
 \subsection{Areas of special interest and accomplishments}
 % UBC rules: 150 words max
 
+  \paragraph{Update of CPSC 440/550: Advanced Machine Learning}
+  \changed{I am the first person other than Mark Schmidt to teach this course.
+  I have continued to modernize the topics covered in the course and the assignments
+  (switching to further integrated use of modern standard tools),
+  as well as pedagogical changes such as introducing biweekly quizzes with the Computer-Based Testing Facility (I believe the first AI course to do so).}
+
   \paragraph{Design of CPSC 532D: Modern Statistical Learning Theory.}
   \continuing{}
   This graduate course
   %(in a mostly lecture-oriented format, due to the quantity of necessary content) focuses on
-  giving students the broad background in learning theory
+  gives students the broad background in learning theory
   required for mathematical understanding of machine learning methods.
   The course integrates material from several textbooks and other courses
   with multiple lectures of material from research papers published in the last five years.
@@ -210,12 +216,6 @@
   %\changed{In the second offering this year, I significantly further developed the course, including a format change (from slides to board with lecture notes) and changes to the presentation and included material.}
   My lecture notes, much-appreciated by the students,
   cover these varied topics in a way that strives to be accessible while also correcting mistakes in the literature.
-
-  \paragraph{Update of CPSC 440/550: Advanced Machine Learning}
-  \changed{I am the first person other than Mark Schmidt to teach the current form of this course.
-  I have continued to modernize the topics covered in the course and the assignments
-  (switching to further integrated use of modern standard tools),
-  as well as pedagogical changes such as introducing biweekly quizzes with the Computer-Based Testing Facility (I believe the first AI course to do so).}
 
 %  \paragraph{CPSC 340: Machine Learning and Data Mining.}
 %    I also \new{taught CPSC 340 for the first time this year}
@@ -245,10 +245,10 @@
 }
 
 \begin{coursetable}
-  \newtable 23-24 W2  & CPSC 440+550 & 3 & 105+25        & 3/week  & 1h/week office hours \\
+  \newtable 23-24 W2  & CPSC 440+550 & 3 & 96+16        & 3/week  & 1h/week office hours \\
   \newtable 23-24 W1  & CPSC 532D    & 3 & 15            & 3/week  & 2h/week office hours \\
-            22-23 W2  & CPSC 440+540 & 3 & 70+30         & 3/week  & 1h/week office hours \\
-            22-23 W1  & CPSC 532D    & 3 & 23            & 3/week  & 1h/week office hours \\
+            22-23 W2  & CPSC 440+540 & 3 & 69+30         & 3/week  & 1h/week office hours \\
+            22-23 W1  & CPSC 532D    & 3 & 22            & 3/week  & 1h/week office hours \\
             21-22 W2  & CPSC 532S    & 3 & 23            & 3/week  & 2h/week office hours \\
             21-22 W1  & CPSC 340     & 3 & 89\textit{\small +139} & 3/week  & 1h/week office hours \\
 \end{coursetable}
@@ -320,6 +320,9 @@ CPSC 340 in 2021-22 W1 was run jointly with another section taught by Mike Gelba
 \paragraph{Graduate Supervisory Committee Memberships}
 \begin{supcommtable}
   \continuingtable Victor Portella        & PhD, UBC CS       & 2023/01 & ongoing & PhD committee member \\
+  \newtable        Shadab Shaikh          & MSc, UBC CS       & 2024/03 & 2024/04 & MSc committee member \\
+  \newtable        Yilin (Justin) Yang    & MSc, UBC CS       & 2024/02 & 2024/04 & MSc committee member \\
+  \newtable        Matthew Niedoba        & PhD, UBC CS       & 2024/01 & 2024/02 & RPE committee member \\
   \newtable        Chen Fan               & PhD, UBC CS       & 2023/05 & 2023/07 & RPE committee member \\
   \newtable        Saiyue Lyu             & PhD, UBC CS       & 2023/05 & 2023/07 & RPE committee member \\
   \newtable        Qiaoyue Tang           & PhD, UBC CS       & 2023/04 & 2023/06 & RPE committee member \\
@@ -333,8 +336,8 @@ CPSC 340 in 2021-22 W1 was run jointly with another section taught by Mike Gelba
 
 \subsection{Graduate Program Supervision}
 \begin{suptable}
-  \newtable Anubhav Garg  & MSc (essay), UBC CS & 2022/10\switched{} & ongoing & Supervisor \\
-  \newtable Arsh Jhah     & MSc (essay), UBC CS & 2022/06\switched{} & 2023/10 & Supervisor \\
+  \changedtable Anubhav Garg  & MSc (essay), UBC CS & 2022/10\switched{} & 2024/04 & Supervisor \\
+  \changedtable Arsh Jhah     & MSc (essay), UBC CS & 2022/06\switched{} & 2023/10 & Supervisor \\
 \end{suptable} \label{sec:other-sup}
 \tremark{%
   Arsh and Anubhav both came to me as essay-option students, switching from other advisors, rather than switching from a research program under my supervision. {\color{white} \switched}
@@ -373,23 +376,21 @@ CPSC 340 in 2021-22 W1 was run jointly with another section taught by Mike Gelba
 %Work accepted in the last year focuses on two areas:
 %
 \paragraph{Understanding modern machine learning.}
-\continuing{
 Many aspects of my lab's work are based on improving understanding of how modern deep learning methods work.
 One particular trend is in new uses for neural tangent kernels,
-including improved tools for their empirical study \parencite{mohamadi:pseudo-ntk},
+including improved tools for their empirical study \new{\parencite{mohamadi:pseudo-ntk}},
 applications to theoretical analysis \parencite{ren:finetuning,ren:learning-path},
 and practical uses \parencite{mohamadi:active-ntk}.
-Work with related tools has also contributed to understanding the grokking phenomenon (a hotly-studied problem in learning theory) \parencite{mohamadi:grokking},
+Work with related tools has also contributed to understanding the grokking phenomenon (a hotly-studied problem in learning theory) \new{\parencite{mohamadi:grokking}},
 and to deepen foundational understanding of learning theory in high-dimensional regimes
-\parencite{zhou:moreau,zhou:optimistic-rates,koehler:gaussian-interpolators}.
-}
+\changed{\parencite{zhou:optimistic-rates}} \parencite{zhou:moreau,koehler:gaussian-interpolators}.
 
 \paragraph{Improved techniques based on theoretical insights.}
 Our theoretical insights have also led to improved models for
-learning on graph data (such as molecular graphs and citation networks) \parencite{shirzad:exphormer,shirzad:sparsifying-exphormer},
-private generative models \parencite{harder:dp-mepf,yang:dp-ntk},
+learning on graph data (such as molecular graphs and citation networks) \new{\parencite{shirzad:exphormer,shirzad:sparsifying-exphormer}},
+private generative models \new{\parencite{harder:dp-mepf,yang:dp-ntk}},
 weakly-supervised semantic segmentation \parencite{bae:prediction-filtering},
-and the closely related problems of improving out-of-distribution generalization and fairness \parencite{ren:sem-il,pogodin:circe,deka:mmd-bfair}.
+and the closely related problems of improving out-of-distribution generalization and fairness \new{\parencite{ren:sem-il}} \parencite{pogodin:circe,deka:mmd-bfair}.
 
 %
 %\paragraph{Kernels for improved deep learning.}
@@ -419,15 +420,15 @@ and the closely related problems of improving out-of-distribution generalization
 
 \begin{granttable}
 \iftoggle{ubcformat}{
-  \newtable NFRF
-  & Automated Scanning Probe Microscopy for Investigating Surface Chemistry (Application under review)
-  & \$125,000 & 2024--26 &
-  S.~Burke; \textit{J.~Hein}; \textit{A.~Schiffrin}; \textit{D.~J.~Sutherland}
-  \\ \midrule
   \newtable NSERC, CSE
   & URGENCY: foUndations foR scalinG ai sEcurity aNd privaCY (Application under review)
   & $\!\!\!\!\!$\$1,400,000 & 2024-28 &
   F.~Kirschbaum; \textit{U.~Aivodji}; \textit{N.~Asokan}; \textit{W.~Chen}; \textit{C.~Clarke}; \textit{S.~Gambs}; \textit{A.~Gurfinkel}; \textit{X.~He}; \textit{G.~C.~Kamath}; \textit{M.~Lécuyer}; \textit{M.~Smucker}; \textit{V.~Shwartz}; \textit{D.~J.~Sutherland}; \textit{T.~Vidal}; \textit{Y.~Yu}
+  \\ \midrule
+  \newtable NFRF
+  & Automated Scanning Probe Microscopy for Investigating Surface Chemistry (Application not accepted)
+  & \$125,000 & 2024--26 &
+  S.~Burke; \textit{J.~Hein}; \textit{A.~Schiffrin}; \textit{D.~J.~Sutherland}
   \\ \midrule\midrule
 }{}
   \newtable
@@ -448,7 +449,7 @@ and the closely related problems of improving out-of-distribution generalization
   & \$75,000 & 2023--26
   & G.~Wolf; \textit{E.~Belilovsky; D.~J.~Sutherland; J.~Tian}
   \\ \midrule
-  %\newtable
+  \continuingtable
   UBC Data Science Institute, Postdoctoral Matching Fund
   & Anytime-Valid PAC-Bayes for Industrial Applications\competitive{} %& C
   & \$40,000 & 2023--24
@@ -515,8 +516,8 @@ Invited tutorials and summer school lectures are listed instead in section \ref{
 Reviewing-based roles are in section \ref{sec:reviewer}; tutorials are in section \ref{sub:continuing-ed}.
 
 \begin{itemize}[leftmargin=5em]
-  \item[2020-24] \changed{Area Chair, Conference on Artificial Intelligence and Statistics (AISTATS).}
-  \item[2020-22] \changed{Area Chair, Conference on Neural Information Processing Systems (NeurIPS).}
+  \item[2020-24] \continuing{Area Chair, Conference on Artificial Intelligence and Statistics (AISTATS).}
+  \item[2020-22] Area Chair, Conference on Neural Information Processing Systems (NeurIPS).
   \item[2022] {Panel Moderator, \emph{Faculty and Queerness}, Queer in AI NeurIPS workshop.}
   \item[2022] {Area Chair, International Conference on Machine Learning (ICML).}
   \item[2022] {D\&I event organizer (Queer in AI), AAAI Conference on Artificial Intelligence (AAAI).}
@@ -541,12 +542,6 @@ Reviewing-based roles are in section \ref{sec:reviewer}; tutorials are in sectio
 
 
 \subsection{Areas of special interest and accomplishments}
-
-% \paragraph{Beyond deep learning.}
-% \new{%
-% I am involved in efforts led by Frank Wood to form an industrial consortium.
-% }
-
 
 % \subsection{Areas of service undertaken to advance the inclusion of all those who have been historically excluded based on gender, race, religion, sexuality, age, disability, or economic circumstance}
 
@@ -576,7 +571,7 @@ In 2020-21, I helped streamline processes (including writing code) for coordinat
 \begin{itemize}[leftmargin=5em]
   \item[2023--24] \new{Faculty recruiting committee: Artificial Intelligence Methods for Scientific Impact.}
   \item[2023] \new{Ad-hoc faculty recruiting committee (single candidate).}
-  \item[2023] AIM-SI Steering Committee (temporary position as a leave replacement).
+  \item[2023--24] \continuing{AIM-SI Steering Committee (temporary position as a leave replacement).}
   \item[2022--23] Graduate Recruiting and Admissions Committee, Computer Science Department.
   \item[2021--22] Faculty recruiting committee: CRC Tier 2 in Quantum Computing, Computer Science Department.
   \item[2021] Graduate Recruiting and Admissions Committee, Computer Science Department.
@@ -587,10 +582,11 @@ In 2020-21, I helped streamline processes (including writing code) for coordinat
 
 \begin{itemize}[leftmargin=5em]
   \item[2023--] \new{Recruitment Chair, Advanced Machine Learning Training Network.}
-  \item[2023] {UBC Women in Science mentorship program}, occasionally meeting first-year undergraduates.
+  \item[2023--24] \new{Assistance with the AIM-SI recruiting committee in Statistics, to help avoid conflicts of interest.}
   \item[2024] Chair of thesis proposal exam: \new{William Harvey}.
-  \item[2023] Chair of thesis proposal exam: Christian Weilbach, Shih-Yang Su.
-  \item[] Chair of thesis defense: Andreas Munk.
+  \item[2023] Chair of thesis proposal exam: Christian Weilbach, \new{Shih-Yang Su}.
+  \item[] Chair of thesis defense: \new{Andreas Munk}.
+  \item[] UBC Women in Science mentorship program, occasionally meeting first-year undergraduates.
   \item[2022] Chair of thesis proposal exam: Vaden Masrani.
 \end{itemize}
 %}%
@@ -664,7 +660,7 @@ In 2020-21, I helped streamline processes (including writing code) for coordinat
 Area chair / meta-reviewer roles are listed under section \ref{sec:conference-participation}.
 
 \begin{itemize}[leftmargin=5em]
-  \item[2024] Conference reviewing: ICML.
+  \item[2024] Conference reviewing: \continuing{ICML, ICLR}.
   \item[] Grant reviewing: CIFAR AI Catalyst grant.
   \item[2023] Journal reviewing: {JRSS-A}.
   \item[    ] Conference reviewing: {ICLR, NeurIPS}.
