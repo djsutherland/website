@@ -807,6 +807,9 @@ venues:
       2023: !!omap
         - unspecial: 1827
         - submitted: 6538
+      2024: !!omap
+        - unspecial: 2609
+        - submitted: 9473
     h5_rank: 17
 
   ijcai:
