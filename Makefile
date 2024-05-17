@@ -58,6 +58,7 @@ tidy:
 	$(LATEXMK) -cd -silent -jobname=ubc-cv -c ubc-cv/ubc-cv.tex
 	$(LATEXMK) -cd -silent -jobname=ubc-cv-anno -c ubc-cv/ubc-cv.tex
 	$(LATEXMK) -cd -silent -jobname=cv -c ubc-cv/ubc-cv.tex
+	$(LATEXMK) -cd -silent -c ubc-cv/form100a-contributions.tex
 	rm -f $(addprefix ${OUTDIR}/,${UBC_CV_PARTS}) ubc-cv/biblio-cv.bib ubc-cv/*.bbl ubc-cv/*.run.xml ubc-cv/*.synctex*
 
 clean: tidy
