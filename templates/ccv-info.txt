@@ -2,7 +2,7 @@
   ["Journal Papers", ["journal"]],
   ["Conference Papers", ["conference", "workshop"]],
   ["Dissertations", ["phd-thesis", "ba-thesis"]],
-  ["Working Papers", ["preprint", "tech-report"]],
+  ["Working Papers", ["preprint", "tech-report", "private-sub", "private"]],
 ] -%}
 {%- for sec_name, sec_types in sections %}
   {%- if venue_type_map[sec_types]|length > 0 %}{% if not loop.first %}
@@ -10,8 +10,7 @@
 
 
 {% endif %}{{ sec_name }}:
-{%- for paper in venue_type_map[sec_types]
-    if not venues[paper.venue].conference == "neurips" %}
+{%- for paper in venue_type_map[sec_types] %}
 
 {{ paper.title }}
 {% for a in paper.authors -%}{%- set author = a | get_author(coauthors, year=paper.year) -%}

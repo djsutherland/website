@@ -8,7 +8,7 @@ coauthors:
     first: Mohamad Amin
     last: Mohamadi
     web: https://mohamad-amin.github.io/
-    student_years: [2021, 3000]
+    student_years: [2021, 2024]
   hamed:
     first: Hamed
     last: Shirzad
@@ -22,12 +22,16 @@ coauthors:
   milad:
     first: Milad
     last: Jalali Asadabadi
-    student_years: [2020, 3000]
+    student_years: [2020, 2024]
   namrata:
     first: Namrata
     last: Deka
     web: https://namratadeka.github.io/
-    student_years: [2019, 3000]  # fudge for the unbiased est paper
+    student_years: [2019, 2024]  # fudge for the unbiased est paper
+  nate:
+    first: Nathaniel
+    last: Xu
+    student_years: [2023, 3000]
   won:
     first: Wonho
     last: Bae
@@ -256,6 +260,10 @@ coauthors:
   hetvi:
     first: Hetvi
     last: J
+  honghao:
+    first: Honghao
+    last: Lin
+    web: https://honghlin.github.io/
   huan:
     first: Huan
     last: Zhang
@@ -1255,6 +1263,48 @@ cite_meta:
   i10_index_5y: 32
 
 papers:
+  - key: llm-dynamics
+    title: Learning Dynamics of LLM Finetuning
+    authors:
+      - joshua
+      - me
+    venue: private-sub
+    year: 2024
+    date: 2024-12-01
+
+  - key: hsic-d
+    title: Learning Deep Kernels for Non-Parametric Independence Testing
+    authors:
+      - nate
+      - feng
+      - me
+    venue: private-sub
+    year: 2024
+    date: 2024-12-01
+
+  - key: spexphormer
+    title: Even Sparser Graph Transformers
+    authors:
+      - hamed
+      - honghao
+      - balaji
+      - ameya
+      - david-woodruff
+      - me
+    venue: private-sub
+    year: 2024
+    date: 2024-12-01
+
+  - key: maxherding
+    title: Generalized Coverage for More Robust Low-Budget Active Learning
+    authors:
+      - won
+      - june
+      - me
+    venue: private-sub
+    year: 2024
+    date: 2024-12-01
+
   - key: grokking
     title: Why Do You Grok? A Theoretical Analysis on Grokking Modular Addition
     authors:
