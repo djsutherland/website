@@ -1221,6 +1221,10 @@ venues:
     name: Penn State, Statistics colloquium
     type: seminar
 
+  sfu-ml:
+    name: Simon Fraser University, AI seminar
+    type: seminar
+
   ucl-csml:
     name: Computational Statistics and Machine Learning seminar, University College London
     type: seminar
@@ -2386,6 +2390,15 @@ papers:
 ################################################################################
 
 talks:
+  - key: exphormer-sfu
+    title: Scaling Graph Transformers with Expander Graphs
+    date: 2024-06-28
+    venue: sfu-ml
+    type: local
+    papers:
+      - exphormer
+    slides: https://djsutherland.ml/slides/exphormer-sfu.pdf
+
   - key: circe-at-banff
     title: Conditional independence measures for fairer, more reliable models
     date: 2024-02-13
