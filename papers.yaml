@@ -738,10 +738,13 @@ venues:
     type: conference
     web_by_year:
       2022: https://eccv2022.ecva.net/
+      2024: https://eccv.ecva.net/Conferences/2024
     accepts:
       2022: !!omap
         - unspecial: 1650
         - submitted: 5803
+      2024: !!omap
+        - unspecial: 2395
 
   emnlp:
     name: Conference on Empirical Methods in Natural Language Processing
@@ -1305,9 +1308,20 @@ papers:
       - won
       - june
       - me
-    venue: private-sub
+    venue: eccv
     year: 2024
-    date: 2024-12-01
+    date: 2024-09-29
+
+  - key: active-meta
+    title: 'Exploring Active Learning in Meta-Learning: Enhancing Context Set Labeling'
+    authors:
+      - won
+      - jing-wang
+      - me
+    venue: eccv
+    arXiv: '2311.02879'
+    date: 2024-09-29
+    year: 2024
 
   - key: grokking
     title: Why Do You Grok? A Theoretical Analysis on Grokking Modular Addition
@@ -1345,17 +1359,6 @@ papers:
     date: 2024-02-20
     year: 2024
     arXiv: '2402.13196'
-
-  - key: active-meta
-    title: 'Exploring Active Learning in Meta-Learning: Enhancing Context Set Labeling'
-    authors:
-      - won
-      - jing-wang
-      - me
-    venue: preprint
-    arXiv: '2311.02879'
-    date: 2023-11-06
-    year: 2023
 
   - key: adaflood
     title: 'AdaFlood: Adaptive Flood Regularization'
