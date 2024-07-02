@@ -743,8 +743,8 @@ venues:
       2022: !!omap
         - unspecial: 1650
         - submitted: 5803
-      2024: !!omap
-        - unspecial: 2395
+          # 2024: !!omap
+          #   - unspecial: 2395
 
   emnlp:
     name: Conference on Empirical Methods in Natural Language Processing
