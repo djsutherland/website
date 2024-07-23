@@ -1279,7 +1279,7 @@ papers:
     venue: preprint
     year: 2024
     date: 2024-12-01
-    arXiv: 2407.10490
+    arXiv: '2407.10490'
 
   - key: hsic-d
     title: Learning Deep Kernels for Non-Parametric Independence Testing
