@@ -1313,6 +1313,7 @@ papers:
     venue: eccv
     year: 2024
     date: 2024-09-29
+    arXiv: '2407.12212'
 
   - key: active-meta
     title: 'Exploring Active Learning in Meta-Learning: Enhancing Context Set Labeling'
