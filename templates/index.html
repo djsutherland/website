@@ -69,7 +69,7 @@
 </head>
 <body>
   <div id="content">
-    <h1>Danica J. Sutherland<span id="pronouns"><a href="http://pronoun.is/she">she</a></span></h1>
+    <h1>Danica J. Sutherland<span id="pronouns">she</span></h1>
 
     <!-- <img src="photo.jpg" id="me" /> -->
     <section id="intro">
@@ -195,6 +195,7 @@
     <ul>
         <li>CPSC 440/550 Advanced Machine Learning: <a href="https://www.cs.ubc.ca/~dsuth/440/23w2/">Spring 24</a>, <a href="https://www.cs.ubc.ca/~dsuth/440/22w2/">Spring 23</a> (as 440/540)</li>
         <li>CPSC 532D Modern Statistical Learning Theory:
+            <a href="https://www.cs.ubc.ca/~dsuth/532D/24w1/">Fall 24</a>,
             <a href="https://www.cs.ubc.ca/~dsuth/532D/23w1/">Fall 23</a>,
             <a href="https://www.cs.ubc.ca/~dsuth/532D/22w1/">Fall 22</a>,
             <a href="https://www.cs.ubc.ca/~dsuth/532S/22/">Spring 22</a> (as 532S)
@@ -238,7 +239,7 @@
       {%- if venue_type_map[sec_types]|length > 0 -%}
         <section class="pub-group">
           <h4>{{ sec_name }}</h4>
-          {% for paper in venue_type_map[sec_types] %}
+          {% for paper in venue_type_map[sec_types]|sort(attribute="date", reverse=True) %}
             <div class="paper" id="{{ paper.key }}" data-topics='{{ paper.get('topics', []) | tojson }}'>
               <span class="title">{{ paper.title | maybe_punc(".") }}</span>
               <span class="authors">

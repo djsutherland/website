@@ -1373,10 +1373,11 @@ papers:
       - frederick-tung
       - me
       - gabriel-oliveira
-    venue: preprint
+    venue: tmlr
     arXiv: '2311.02891'
-    date: 2023-11-06
-    year: 2023
+    official: https://openreview.net/forum?id=2s5YU6CSEz
+    date: 2024-08-30
+    year: 2024
 
   - key: dp-ntk
     title: Differentially Private Neural Tangent Kernels for Privacy-Preserving Data Generation
@@ -1856,6 +1857,7 @@ papers:
     note: Selected for spotlight presentation.
     accept-kind: spotlight
     year: 2020
+    date: 2020-12-06
     related: !!omap
       - Penn State talk: '#talk-pennstate-interpolation'
       - NYU talk: '#talk-nyu-interpolation'
@@ -1876,6 +1878,7 @@ papers:
     venue: icml
     official: http://proceedings.mlr.press/v119/liu20m.html
     year: 2020
+    date: 2020-07-12
     related: !!omap
       - video and slides: https://icml.cc/virtual/2020/poster/5999
     ss_id: cce73b08abf1554c1c730c0333b0b29dadc03c19
@@ -1891,6 +1894,7 @@ papers:
     venue: tech-report
     arXiv: '1906.02104'
     year: 2019
+    date: 2019-06-05
     ss_id: cf8365023bf88bbd3c18ebb71591c7b60492497d
     gs_id: 11678116865040215413
     citations: 12
@@ -1931,6 +1935,7 @@ papers:
     venue: white-paper
     arXiv: '1902.10159'
     year: 2019
+    date: 2019-02-26
     ss_id: 333ddc46a211ab1eb6ceb1f4b7c4952eadce8015
     gs_id: 12908060365392151722
     citations: 67
@@ -1944,6 +1949,7 @@ papers:
       - arthur
     venue: icml
     year: 2019
+    date: 2019-06-10
     arXiv: '1811.08357'
     official: http://proceedings.mlr.press/v97/wenliang19a.html
     related: !!omap
@@ -1964,6 +1970,7 @@ papers:
       - arthur
     venue: neurips
     year: 2018
+    date: 2018-12-03
     arXiv: '1805.11565'
     official: http://papers.nips.cc/paper/7904-on-gradient-regularizers-for-mmd-gans
     related: !!omap
@@ -1984,6 +1991,7 @@ papers:
       - arthur
     venue: iclr
     year: 2018
+    date: 2018-04-30
     official: https://openreview.net/forum?id=r1lUOzWCW
     arXiv: '1801.01401'
     related: !!omap
@@ -2003,6 +2011,7 @@ papers:
       - seth
     venue: neurips-dfgg
     year: 2017
+    date: 2017-12-10
     official: https://sites.google.com/site/nips2017learningon/11_paper.pdf
     related: !!omap
       - slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/bdr-nips/
@@ -2025,6 +2034,7 @@ papers:
     arXiv: '1705.08360'
     venue: aistats
     year: 2018
+    date: 2018-04-09
     note: Selected for oral presentation.
     accept-kind: oral
     related: !!omap
@@ -2050,6 +2060,7 @@ papers:
     arXiv: '1705.04293'
     venue: aistats
     year: 2018
+    date: 2018-04-09
     related: !!omap
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/bdr-aistats18.pdf
       - code: https://github.com/hcllaw/bdr
@@ -2068,6 +2079,7 @@ papers:
     ss_id: e0db806c329fbc0d1172ad403f0938fc128dfa66
     gs_id: 9179369638374246622
     year: 2017
+    date: 2017-02-09
     citations: 4
 
   - key: trump-clinton
@@ -2084,6 +2096,7 @@ papers:
       - microdata analysis package: https://github.com/djsutherland/pummeler/
     venue: tech-report
     year: 2016
+    date: 2016-11-11
     ss_id: 3962dfb23f150b25307bb50112dbad67636f28ec
     gs_id: 10764238927160739355
     citations: 27
@@ -2100,6 +2113,7 @@ papers:
       - arthur
     venue: iclr
     year: 2017
+    date: 2017-04-24
     official: http://openreview.net/forum?id=HJWHIKqgl
     arXiv: '1611.04488'
     related: !!omap
@@ -2116,6 +2130,7 @@ papers:
     title: Scalable, Flexible, and Active Learning on Distributions
     venue: csd
     year: 2016
+    date: 2016-09-30
     committee:
       - jeff
       - barnabas
@@ -2144,6 +2159,7 @@ papers:
       - artur
     venue: nss
     year: 2016
+    date: 2016-10-29
     citations: 0
 
   - key: deep-mean-maps
@@ -2155,6 +2171,7 @@ papers:
       - jeff
     venue: tech-report
     year: 2015
+    date: 2015-11-13
     arXiv: '1511.04150'
     ss_id: f922efb0fa28b83be2d085d427185a85d931eac0
     gs_id: 15807355818931749768
@@ -2171,6 +2188,7 @@ papers:
       - jeff
     venue: ApJ
     year: 2016
+    date: 2016-11-03
     volume: 831
     number: 2
     pages: 135
@@ -2189,6 +2207,7 @@ papers:
       - jeff
     venue: aaai
     year: 2016
+    date: 2016-02-12
     official: https://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/view/12460
     arXiv: '1509.07553'
     related: !!omap
@@ -2207,13 +2226,14 @@ papers:
       - jeff
     venue: feature-extraction
     year: 2015
+    date: 2015-12-01
     full_version: hdd
     related: !!omap
       - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/hdd_nips15ws.pdf
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/hdd_nips15ws.pdf
       - AAAI version: '#hdd'
-
     citations: 0
+
   - key: rff
     title: On the Error of Random Fourier Features
     bibtex_title: On the Error of Random {F}ourier Features
@@ -2222,6 +2242,7 @@ papers:
       - jeff
     venue: uai
     year: 2015
+    date: 2015-07-13
     web_note: >
       Chapter 3 / Section 4.1 of <a href='#thesis'>my thesis</a> supersedes
       this paper, fixing a few errors in constants and providing more results.
@@ -2242,6 +2263,7 @@ papers:
       - jeff
     venue: aistats
     year: 2015
+    date: 2015-05-09
     official: http://jmlr.org/proceedings/papers/v38/ma15.html
     related: !!omap
       - pdf: http://proceedings.mlr.press/v38/ma15.pdf
@@ -2261,6 +2283,7 @@ papers:
       - jeff
     venue: bayesopt-14
     year: 2014
+    date: 2014-12-08
     related: !!omap
       - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/apps_nips14ws.pdf
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/apps_nips14ws.pdf
@@ -2279,6 +2302,7 @@ papers:
       - jeff
     venue: ApJ
     year: 2015
+    date: 2015-04-14
     volume: 803
     number: 2
     pages: 50
@@ -2296,6 +2320,7 @@ papers:
       - jeff
     venue: kdd
     year: 2013
+    date: 2013-08-11
     doi: 10.1145/2487575.2487627
     note: Selected for oral presentation.
     accept-kind: oral
@@ -2318,6 +2343,7 @@ papers:
       - jeff
     venue: tech-report
     year: 2012
+    date: 2012-02-01
     arXiv: '1202.0302'
     ss_id: a87ba84a66b769fd58aea07a0bba749b1426c934
     gs_id: 18253015138965857725 2233414225380654183
@@ -2332,6 +2358,7 @@ papers:
       - jeff
     venue: cvpr
     year: 2012
+    date: 2012-06-16
     doi: 10.1109/CVPR.2012.6248028
     related: !!omap
       - pdf: http://djsutherland.ml/papers/cvpr-12.pdf
@@ -2355,6 +2382,7 @@ papers:
       - welkie
     venue: lisa
     year: 2012
+    date: 2012-01-01  # not really, was in dec, but want to sort first
     official: https://www.usenix.org/conference/lisa12/technical-sessions/presentation/stromme
     related: !!omap
       - pdf: https://www.usenix.org/system/files/conference/lisa12/lisa12-final-4.pdf
@@ -2373,6 +2401,7 @@ papers:
       - fagg
     venue: tech-report
     year: 2012
+    date: 2012-01-01
     related: !!omap
       - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/smrf-techreport.pdf
     ss_id: c6534ed94a29fd127b0a692d3243d7de451e7547
@@ -2385,6 +2414,7 @@ papers:
       - me
     venue: swat
     year: 2011
+    date: 2011-05-01
     related: !!omap
       - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/ba-thesis.pdf
     ss_id: a1123aeb0ac2b3376e46239293a94f1f35340821

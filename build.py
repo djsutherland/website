@@ -41,6 +41,9 @@ def paper_data():
     data["coauthor_count"] = c = collections.Counter()
     data["venue_type_map"] = v = MergedSequencesLookup()
     for paper in data["papers"]:
+        if "date" not in paper:
+            print(paper)
+
         venue_type = data["venues"].get(paper["venue"], {}).get("type", None)
         v.add(venue_type, paper)
 
