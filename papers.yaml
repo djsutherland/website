@@ -913,6 +913,12 @@ venues:
     type: journal
     web: https://iopscience.iop.org/0004-637X/
 
+  jair:
+    name: Journal of Artifical Intelligence Research
+    short: JAIR
+    type: journal
+    web: https://www.jair.org/index.php/jair
+
   jmlr:
     name: Journal of Machine Learning Research
     short: JMLR
@@ -923,6 +929,7 @@ venues:
     name: ACM/IMS Journal of Data Science
     short: JDS
     type: journal
+    web: https://jds.acm.org/
 
   tmlr:
     name: Transactions on Machine Learning Research
@@ -1288,10 +1295,11 @@ papers:
       - nate
       - feng
       - me
-    venue: private-sub
+    venue: preprint
     year: 2024
-    date: 2024-12-01
+    date: 2024-09-11
     citations: 0
+    arXiv: '2409.06890'
 
   - key: spexphormer
     title: Even Sparser Graph Transformers
@@ -1392,6 +1400,22 @@ papers:
     year: 2024
 
   - key: dp-ntk
+    title: Differentially Private Neural Tangent Kernels (DP-NTK) for Privacy-Preserving Data Generation
+    authors:
+      - justin
+      - kamil
+      - xiaoxiao
+      - me
+      - mijung
+    year: 2024
+    date: 2024-09-10
+    venue: jair
+    arXiv: '2303.01687'
+    ss_id: 9fdc5d89eda1b6d8437757792286471465add203
+    gs_id: 6645133680438219650
+    citations: 9
+
+  - key: dp-ntk-workshop
     title: Differentially Private Neural Tangent Kernels for Privacy-Preserving Data Generation
     authors:
       - justin
@@ -1402,10 +1426,8 @@ papers:
     year: 2024
     date: 2024-02-26
     venue: ppai-24
-    ss_id: 9fdc5d89eda1b6d8437757792286471465add203
-    gs_id: 6645133680438219650
-    arXiv: '2303.01687'
-    citations: 9
+    related: !!omap
+      - JAIR version: "#dp-ntk"
 
   - key: sparsifying-exphormer
     title: Low-Width Approximations and Sparsification for Scaling Graph Transformers
