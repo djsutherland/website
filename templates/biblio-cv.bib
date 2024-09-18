@@ -1,4 +1,4 @@
-{%- for paper in papers
+{%- for paper in papers|sort(attribute="date", reverse=True)
     if (show_submission or venues[paper.venue].type != "private")
 -%}
 
