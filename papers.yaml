@@ -1266,10 +1266,10 @@ venues:
 ################################################################################
 
 cite_meta:
-  last_cite_update: '2024-09-04'
+  last_cite_update: '2024-09-18'
 
-  total: 4275
-  total_5y: 3919
+  total: 4329
+  total_5y: 3975
 
   h_index: 24
   h_index_5y: 22
@@ -1287,7 +1287,8 @@ papers:
     year: 2024
     date: 2024-12-01
     arXiv: '2407.10490'
-    citations: 0
+    gs_id: 12299741007955922
+    citations: 1
 
   - key: hsic-d
     title: Learning Deep Kernels for Non-Parametric Independence Testing
@@ -1427,7 +1428,7 @@ papers:
     date: 2024-02-26
     venue: ppai-24
     related: !!omap
-      - JAIR version: "#dp-ntk"
+      - JAIR version: '#dp-ntk'
 
   - key: sparsifying-exphormer
     title: Low-Width Approximations and Sparsification for Scaling Graph Transformers
@@ -1485,7 +1486,7 @@ papers:
     gs_id: 7161387838783241803
     year: 2023
     date: 2023-07-23
-    citations: 68
+    citations: 71
     related: !!omap
       - blog post: https://blog.research.google/2024/01/exphormer-scaling-transformers-for.html
 
@@ -1563,7 +1564,7 @@ papers:
       - saraswat
       - vytla
       - stark
-    citations: 22
+    citations: 23
     gs_id: 18334777895960251368
 
   - key: dp-mepf
@@ -1630,7 +1631,7 @@ papers:
     ss_id: 244833b8e577d73c1a3552e6f41e0afcd8fc87a1
     gs_id: 8937404985150107657 7310171816056904535
     date: 2023-04-25
-    citations: 6
+    citations: 7
 
   - key: moreau
     title: A Non-Asymptotic Moreau Envelope Theory for High-Dimensional Generalized Linear Models
@@ -1646,7 +1647,7 @@ papers:
     ss_id: f8b29bc83e9d84ff4283811faa2bb31b650c6d10
     gs_id: 2093430636599193484
     arXiv: '2210.12082'
-    citations: 19
+    citations: 20
 
   - key: active-ntk
     title: Making Look-Ahead Active Learning Strategies Feasible with Neural Tangent Kernels
@@ -1693,7 +1694,7 @@ papers:
     gs_id: 4274032166116217116
     related: !!omap
       - code: https://github.com/jinhseo/OD-WSCL
-    citations: 22
+    citations: 23
 
   - key: prediction-filtering
     title: One Weird Trick to Improve Your Semi-Weakly Supervised Semantic Segmentation Model
@@ -1791,7 +1792,7 @@ papers:
       - NYU talk: '#talk-nyu-interpolation'
     ss_id: 24721e44b5510bfda275ddb023c2f107c9526870
     gs_id: 14582780933724089324
-    citations: 61
+    citations: 63
 
   - key: ssl-hsic
     title: Self-Supervised Learning with Kernel Dependence Maximization
@@ -1807,7 +1808,7 @@ papers:
     ss_id: 1a3d5d6cec457f8f3b088cb3636a1a197bd248f6
     gs_id: 13912402342615870661
     arXiv: '2106.08320'
-    citations: 66
+    citations: 67
 
   - key: meta-2st
     title: 'Meta Two-Sample Testing: Learning Kernels for Testing with Limited Data'
@@ -1823,7 +1824,7 @@ papers:
     ss_id: 6b32180f7849dcd5a9f79d7cd0f58a2068d81c32
     gs_id: 3537368320170973148
     arXiv: '2106.07636'
-    citations: 18
+    citations: 20
 
   - key: pot
     title: 'POT: Python Optimal Transport'
@@ -1858,7 +1859,7 @@ papers:
     official: https://jmlr.org/papers/v22/20-451.html
     ss_id: 2be40f5336afa68b49fef41e009b7172c2c9fdeb
     gs_id: 3559273292438013868
-    citations: 826
+    citations: 842
 
   - key: irm
     title: Does Invariant Risk Minimization Capture Invariance?
@@ -1917,7 +1918,7 @@ papers:
       - video and slides: https://icml.cc/virtual/2020/poster/5999
     ss_id: cce73b08abf1554c1c730c0333b0b29dadc03c19
     gs_id: 11419051350787047758
-    citations: 184
+    citations: 185
 
   - key: unbiased-mmd-variance
     title: Unbiased estimators for the variance of MMD estimators
@@ -1931,7 +1932,7 @@ papers:
     date: 2019-06-05
     ss_id: cf8365023bf88bbd3c18ebb71591c7b60492497d
     gs_id: 11678116865040215413
-    citations: 14
+    citations: 15
 
   - key: cosmo-ml
     title: The Role of Machine Learning in the Next Decade of Cosmology
@@ -2013,7 +2014,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 3d597e16ef56119bb6e6d78e3f379623862f0752
     gs_id: 12044208657387141906
-    citations: 100
+    citations: 101
 
   - key: mmd-gans
     title: Demystifying MMD GANs
@@ -2034,7 +2035,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 9723066a5587e6267d8abfd7feefd0637a5a211c
     gs_id: 10236052458128513824
-    citations: 1432
+    citations: 1452
 
   - key: bdr-workshop
     title: Bayesian Approaches to Distribution Regression
@@ -2158,7 +2159,7 @@ papers:
       - Oxford talk: '#talk-oxford-opt-mmd'
     ss_id: d772a21f2f687985b41bec2dc47bc2760c57ed2f
     gs_id: 14039271793330969441 11531994075904943226
-    citations: 217
+    citations: 218
 
   - key: thesis
     title: Scalable, Flexible, and Active Learning on Distributions
@@ -2286,7 +2287,7 @@ papers:
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/rff_uai15.pdf
     ss_id: 78e95099ec2ac3cb087eb47ba7c87ddb01a19405
     gs_id: 2736757817032849196
-    citations: 214
+    citations: 215
 
   - key: apps
     title: Active Pointillistic Pattern Search
