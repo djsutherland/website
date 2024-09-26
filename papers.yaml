@@ -869,6 +869,7 @@ venues:
       2021: https://neurips.cc/Conferences/2021
       2022: https://neurips.cc/Conferences/2022
       2023: https://neurips.cc/Conferences/2023
+      2024: https://neurips.cc/Conferences/2024
     accepts:
       2018: !!omap
         - oral: 30
@@ -891,6 +892,9 @@ venues:
       2023: !!omap
         - unspecial: 3224 # might be off by a couple, they said 26.1%
         - submitted: 12343
+      2024: !!omap
+        - unspecial: 4043 # might be off by a couple, they said 26.1%
+        - submitted: 15671
     h5_rank: 7
 
   uai:
@@ -1266,18 +1270,29 @@ venues:
 ################################################################################
 
 cite_meta:
-  last_cite_update: '2024-09-18'
+  last_cite_update: '2024-09-26'
 
-  total: 4329
-  total_5y: 3975
+  total: 4345
+  total_5y: 3991
 
   h_index: 24
-  h_index_5y: 22
+  h_index_5y: 23
 
   i10_index: 36
   i10_index_5y: 33
 
 papers:
+  - key: simplicity-ld
+    title: Understanding Simplicity Bias towards Compositional Mappings via Learning Dynamics
+    authors:
+      - joshua
+      - me
+    venue: preprint
+    year: 2024
+    date: 2024-09-15
+    arXiv: '2409.09626'
+    citations: 0
+
   - key: llm-dynamics
     title: Learning Dynamics of LLM Finetuning
     authors:
@@ -1311,9 +1326,9 @@ papers:
       - ameya
       - david-woodruff
       - me
-    venue: private-sub
+    venue: neurips
     year: 2024
-    date: 2024-12-01
+    date: 2024-12-10
     citations: 0
 
   - key: maxherding
@@ -1363,8 +1378,8 @@ papers:
       - linlu-qiu
       - bailin-wang
       - me
-    venue: preprint
-    date: 2024-04-04
+    venue: neurips
+    date: 2024-12-10
     year: 2024
     arXiv: '2404.04286'
     gs_id: 16139395396553668193
@@ -1470,7 +1485,7 @@ papers:
     date: 2023-12-11
     gs_id: 4645152097706396762
     arXiv: '2310.18777'
-    citations: 5
+    citations: 6
 
   - key: exphormer
     title: 'Exphormer: Scaling Graph Transformers with Expander Graphs'
@@ -1617,7 +1632,7 @@ papers:
     ss_id: 75852ed23746bb8fceebeef8c5ae2d228b83dd24
     gs_id: 15928265510615609906
     arXiv: '2302.05779'
-    citations: 12
+    citations: 13
 
   - key: mmd-bfair
     title: 'MMD-B-Fair: Learning Fair Representations with Statistical Testing'
@@ -1725,7 +1740,7 @@ papers:
     ss_id: 91db2f1dae977f2cf139ce194173487133b1ad67
     gs_id: 4997668798655366002
     arXiv: '2203.02485'
-    citations: 22
+    citations: 23
 
   - key: private-mmd
     title: Learning Privacy-Preserving Deep Kernels with Known Demographics
@@ -1808,7 +1823,7 @@ papers:
     ss_id: 1a3d5d6cec457f8f3b088cb3636a1a197bd248f6
     gs_id: 13912402342615870661
     arXiv: '2106.08320'
-    citations: 67
+    citations: 68
 
   - key: meta-2st
     title: 'Meta Two-Sample Testing: Learning Kernels for Testing with Limited Data'
@@ -1859,7 +1874,7 @@ papers:
     official: https://jmlr.org/papers/v22/20-451.html
     ss_id: 2be40f5336afa68b49fef41e009b7172c2c9fdeb
     gs_id: 3559273292438013868
-    citations: 842
+    citations: 849
 
   - key: irm
     title: Does Invariant Risk Minimization Capture Invariance?
@@ -1918,7 +1933,7 @@ papers:
       - video and slides: https://icml.cc/virtual/2020/poster/5999
     ss_id: cce73b08abf1554c1c730c0333b0b29dadc03c19
     gs_id: 11419051350787047758
-    citations: 185
+    citations: 186
 
   - key: unbiased-mmd-variance
     title: Unbiased estimators for the variance of MMD estimators
@@ -2035,7 +2050,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 9723066a5587e6267d8abfd7feefd0637a5a211c
     gs_id: 10236052458128513824
-    citations: 1452
+    citations: 1454
 
   - key: bdr-workshop
     title: Bayesian Approaches to Distribution Regression
@@ -2159,7 +2174,7 @@ papers:
       - Oxford talk: '#talk-oxford-opt-mmd'
     ss_id: d772a21f2f687985b41bec2dc47bc2760c57ed2f
     gs_id: 14039271793330969441 11531994075904943226
-    citations: 218
+    citations: 219
 
   - key: thesis
     title: Scalable, Flexible, and Active Learning on Distributions
@@ -2287,7 +2302,7 @@ papers:
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/rff_uai15.pdf
     ss_id: 78e95099ec2ac3cb087eb47ba7c87ddb01a19405
     gs_id: 2736757817032849196
-    citations: 215
+    citations: 216
 
   - key: apps
     title: Active Pointillistic Pattern Search
