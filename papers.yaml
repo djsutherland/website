@@ -56,6 +56,10 @@ coauthors:
     first: Aaron
     last: Courville
     web: https://mila.quebec/en/person/aaron-courville/
+  alan:
+    first: Alan
+    last: Milligan
+    web: https://www.cs.ubc.ca/~alanmil/
   alaya:
     first: Mokhtar Z.
     last: Alaya
@@ -162,7 +166,7 @@ coauthors:
     first: Daniel-Elia
     last: Feist-Alexandrov
   david-woodruff:
-    first: David
+    first: David P.
     last: Woodruff
     web: https://www.cs.cmu.edu/~dwoodruf/
   dennler:
@@ -210,6 +214,10 @@ coauthors:
   fournier:
     first: Nemo
     last: Fournier
+  fred-k:
+    first: Frederik
+    last: Kunstner
+    web: https://fkunstner.github.io/
   frederic:
     first: Frederic
     last: Koehler
@@ -388,6 +396,10 @@ coauthors:
     first: Marc Peter
     last: Deisenroth
     web: https://www.deisenroth.cc/
+  mark:
+    first: Mark
+    last: Schmidt
+    web: https://www.cs.ubc.ca/~schmidtm/
   markham:
     first: Alex
     last: Markham
@@ -980,6 +992,28 @@ venues:
     conference: neurips
     year: 2023
 
+  neurips-complearn-24:
+    name: "Compositional Learning: Perspectives, Methods, and Paths Forward"
+    web: https://compositional-learning.github.io/
+    type: workshop
+    conference: neurips
+    year: 2024
+
+  neurips-compression-24:
+    name: Machine Learning and Compression
+    web: https://www.itsoc.org/event/machine-learning-and-compression-workshop-neurips-2024
+    type: workshop
+    conference: neurips
+    year: 2024
+
+  neurips-opt-24:
+    name: Optimization for Machine Learning
+    short: OPT
+    web: https://opt-ml.org/
+    type: workshop
+    conference: neurips
+    year: 2024
+
   neurips-dfgg:
     name: Learning on Distributions, Functions, Graphs and Groups
     web: https://sites.google.com/site/nips2017learningon/
@@ -1282,14 +1316,39 @@ cite_meta:
   i10_index_5y: 33
 
 papers:
+  - key: gnn-norm
+    title: Normalization Matters for Optimization Performance on Graph Neural Networks
+    authors:
+      - alan
+      - fred-k
+      - hamed
+      - mark
+      - me
+    venue: neurips-opt-24
+    year: 2024
+    date: 2024-12-10
+
+  - key: spexphormer-compression
+    title: A Theory for Compressibility of Graph Transformers for Transductive Learning
+    authors:
+      - hamed
+      - honghao
+      - ameya
+      - balaji
+      - david-woodruff
+      - me
+    venue: neurips-compression-24
+    year: 2024
+    date: 2024-12-10
+
   - key: simplicity-ld
     title: Understanding Simplicity Bias towards Compositional Mappings via Learning Dynamics
     authors:
       - joshua
       - me
-    venue: preprint
+    venue: neurips-complearn-24
     year: 2024
-    date: 2024-09-15
+    date: 2024-12-10
     arXiv: '2409.09626'
     citations: 0
 
