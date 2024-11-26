@@ -1112,6 +1112,13 @@ venues:
     year: 2019
     web: https://www.math.ucdavis.edu/~saito/confs/ICIAM19/
 
+  log-vancouver:
+    name: Learning on Graphs 2024 Vancouver Meetup
+    short: LoG24-Vancouver
+    type: conference
+    year: 2024
+    web: https://log24vancouver.github.io/
+
   pca:
     name: Pacific Conference on Artificial Intelligence
     long_article: the
@@ -2538,6 +2545,16 @@ papers:
 ################################################################################
 
 talks:
+  - key: exphormer-logvan
+    title: Scaling Graph Transformers with Sparse and Sparsified Attention
+    date: 2024-11-26
+    type: local
+    papers:
+      - exphormer
+      - spexphormer
+      - spexphormer-compression
+    slides: https://djsutherland.ml/slides/exphormer-logvan.pdf
+
   - key: exphormer-sfu
     title: Scaling Graph Transformers with Expander Graphs
     date: 2024-06-28
@@ -2545,6 +2562,7 @@ talks:
     type: local
     papers:
       - exphormer
+      - spexphormer
     slides: https://djsutherland.ml/slides/exphormer-sfu.pdf
 
   - key: circe-at-banff
