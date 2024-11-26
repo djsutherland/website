@@ -1113,11 +1113,12 @@ venues:
     web: https://www.math.ucdavis.edu/~saito/confs/ICIAM19/
 
   log-vancouver:
-    name: Learning on Graphs 2024 Vancouver Meetup
-    short: LoG24-Vancouver
+    name: Learning on Graphs Vancouver Meetup
+    long_article: the
+    short: LoG-Vancouver
     type: conference
-    year: 2024
-    web: https://log24vancouver.github.io/
+    web_by_year:
+      2024: https://log24vancouver.github.io/
 
   pca:
     name: Pacific Conference on Artificial Intelligence
@@ -2549,6 +2550,7 @@ talks:
     title: Scaling Graph Transformers with Sparse and Sparsified Attention
     date: 2024-11-26
     type: local
+    venue: log-vancouver
     papers:
       - exphormer
       - spexphormer
