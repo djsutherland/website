@@ -1062,6 +1062,20 @@ venues:
     web: https://workshops.birs.ca/events/24w5284
     year: 2024
 
+  cms:
+    name: Canadian Mathematical Society Winter Meeting
+    short: CMS
+    long_article: the
+    type: conference
+    web_by_year:
+      2024: https://winter24.cms.math.ca/
+  cms-mml:
+    name: Mathematics of Machine Learning
+    type: workshop
+    conference: cms
+    year: 2024
+    web: https://www2.cms.math.ca/Events/winter24/sessions_scientific#mml
+
   dali:
     name: Data Analysis, Learning, and Inference
     short: DALI
@@ -2546,6 +2560,17 @@ papers:
 ################################################################################
 
 talks:
+  - key: exphormer-cms
+    title: Expander Graphs and Low-Distortion Embeddings for Learning on Graphs
+    date: 2024-12-01
+    type: national
+    venue: cms-mml
+    papers:
+      - exphormer
+      - spexphormer
+      - spexphormer-compression
+    slides: https://djsutherland.ml/slides/exphormer-cms.pdf
+
   - key: exphormer-logvan
     title: Scaling Graph Transformers with Sparse and Sparsified Attention
     date: 2024-11-26
