@@ -1326,16 +1326,16 @@ venues:
 ################################################################################
 
 cite_meta:
-  last_cite_update: '2024-12-01'
+  last_cite_update: '2024-12-23'
 
-  total: 4709
-  total_5y: 4327
+  total: 4835
+  total_5y: 4447
 
   h_index: 26
-  h_index_5y: 23
+  h_index_5y: 24
 
-  i10_index: 37
-  i10_index_5y: 34
+  i10_index: 38
+  i10_index_5y: 35
 
 papers:
   - key: gnn-norm
@@ -1415,7 +1415,7 @@ papers:
     date: 2024-12-10
     arXiv: '2411.16278'
     gs_id: 9232502564221333600
-    citations: 1
+    citations: 2
 
   - key: maxherding
     title: Generalized Coverage for More Robust Low-Budget Active Learning
@@ -1484,7 +1484,7 @@ papers:
     year: 2024
     arXiv: '2402.13196'
     gs_id: 14319205214147904712
-    citations: 3
+    citations: 4
 
   - key: adaflood
     title: 'AdaFlood: Adaptive Flood Regularization'
@@ -1573,7 +1573,7 @@ papers:
     date: 2023-12-11
     gs_id: 4645152097706396762
     arXiv: '2310.18777'
-    citations: 7
+    citations: 8
 
   - key: exphormer
     title: 'Exphormer: Scaling Graph Transformers with Expander Graphs'
@@ -1589,7 +1589,7 @@ papers:
     gs_id: 7161387838783241803
     year: 2023
     date: 2023-07-23
-    citations: 100
+    citations: 106
     related: !!omap
       - blog post: https://blog.research.google/2024/01/exphormer-scaling-transformers-for.html
 
@@ -1667,7 +1667,7 @@ papers:
       - saraswat
       - vytla
       - stark
-    citations: 26
+    citations: 27
     gs_id: 18334777895960251368
 
   - key: dp-mepf
@@ -1684,7 +1684,7 @@ papers:
     ss_id: 8cb6555517575be141174a17f1e0dcf48739aaf4
     gs_id: 854611520534599253 10298606910796508333
     arXiv: '2205.12900'
-    citations: 32
+    citations: 34
 
   - key: circe
     title: Efficient Conditionally Invariant Representation Learning
@@ -1734,7 +1734,7 @@ papers:
     ss_id: 244833b8e577d73c1a3552e6f41e0afcd8fc87a1
     gs_id: 8937404985150107657 7310171816056904535
     date: 2023-04-25
-    citations: 8
+    citations: 9
 
   - key: moreau
     title: A Non-Asymptotic Moreau Envelope Theory for High-Dimensional Generalized Linear Models
@@ -1750,7 +1750,7 @@ papers:
     ss_id: f8b29bc83e9d84ff4283811faa2bb31b650c6d10
     gs_id: 2093430636599193484
     arXiv: '2210.12082'
-    citations: 22
+    citations: 23
 
   - key: active-ntk
     title: Making Look-Ahead Active Learning Strategies Feasible with Neural Tangent Kernels
@@ -1778,7 +1778,7 @@ papers:
     ss_id: 28f8c4826c1af49b176009c6be39c7a0251764e4
     gs_id: 11402654840281713194
     arXiv: '2206.06234'
-    citations: 9
+    citations: 10
 
   - key: contrastive-wsod
     title: Object Discovery via Contrastive Learning for Weakly Supervised Object Detection
@@ -1797,7 +1797,7 @@ papers:
     gs_id: 4274032166116217116
     related: !!omap
       - code: https://github.com/jinhseo/OD-WSCL
-    citations: 29
+    citations: 35
 
   - key: prediction-filtering
     title: One Weird Trick to Improve Your Semi-Weakly Supervised Semantic Segmentation Model
@@ -1895,7 +1895,7 @@ papers:
       - NYU talk: '#talk-nyu-interpolation'
     ss_id: 24721e44b5510bfda275ddb023c2f107c9526870
     gs_id: 14582780933724089324
-    citations: 70
+    citations: 73
 
   - key: ssl-hsic
     title: Self-Supervised Learning with Kernel Dependence Maximization
@@ -1927,7 +1927,7 @@ papers:
     ss_id: 6b32180f7849dcd5a9f79d7cd0f58a2068d81c32
     gs_id: 3537368320170973148
     arXiv: '2106.07636'
-    citations: 21
+    citations: 23
 
   - key: pot
     title: 'POT: Python Optimal Transport'
@@ -1962,7 +1962,7 @@ papers:
     official: https://jmlr.org/papers/v22/20-451.html
     ss_id: 2be40f5336afa68b49fef41e009b7172c2c9fdeb
     gs_id: 3559273292438013868
-    citations: 925
+    citations: 948
 
   - key: irm
     title: Does Invariant Risk Minimization Capture Invariance?
@@ -1981,7 +1981,7 @@ papers:
     accept-kind: oral
     ss_id: 1fc4470c1766aea4c435015f5ef873b066f50121
     gs_id: 12319413802596970196
-    citations: 126
+    citations: 130
 
   - key: uniform-interpolation
     title: On Uniform Convergence and Low-Norm Interpolation Learning
@@ -2001,7 +2001,7 @@ papers:
       - NYU talk: '#talk-nyu-interpolation'
     ss_id: 65a2da57b52942cf486cd06682db0a4c53eaae34
     gs_id: 11067119780138908286
-    citations: 40
+    citations: 41
 
   - key: deep-testing
     title: Learning Deep Kernels for Non-Parametric Two-Sample Tests
@@ -2021,7 +2021,7 @@ papers:
       - video and slides: https://icml.cc/virtual/2020/poster/5999
     ss_id: cce73b08abf1554c1c730c0333b0b29dadc03c19
     gs_id: 11419051350787047758
-    citations: 201
+    citations: 206
 
   - key: unbiased-mmd-variance
     title: Unbiased estimators for the variance of MMD estimators
@@ -2035,7 +2035,7 @@ papers:
     date: 2019-06-05
     ss_id: cf8365023bf88bbd3c18ebb71591c7b60492497d
     gs_id: 11678116865040215413
-    citations: 14
+    citations: 16
 
   - key: cosmo-ml
     title: The Role of Machine Learning in the Next Decade of Cosmology
@@ -2076,7 +2076,7 @@ papers:
     date: 2019-02-26
     ss_id: 333ddc46a211ab1eb6ceb1f4b7c4952eadce8015
     gs_id: 12908060365392151722
-    citations: 69
+    citations: 71
 
   - key: dkef
     title: Learning deep kernels for exponential family densities
@@ -2096,7 +2096,7 @@ papers:
     my_talk: true
     ss_id: fbc0863a25d99ef3895f174c7c2ee01c4f19df21
     gs_id: 18438114656627425154
-    citations: 85
+    citations: 87
 
   - key: smmd
     title: On gradient regularizers for MMD GANs
@@ -2117,7 +2117,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 3d597e16ef56119bb6e6d78e3f379623862f0752
     gs_id: 12044208657387141906
-    citations: 104
+    citations: 105
 
   - key: mmd-gans
     title: Demystifying MMD GANs
@@ -2138,7 +2138,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 9723066a5587e6267d8abfd7feefd0637a5a211c
     gs_id: 10236052458128513824
-    citations: 1584
+    citations: 1636
 
   - key: bdr-workshop
     title: Bayesian Approaches to Distribution Regression
@@ -2237,7 +2237,7 @@ papers:
     date: 2016-11-11
     ss_id: 3962dfb23f150b25307bb50112dbad67636f28ec
     gs_id: 10764238927160739355
-    citations: 32
+    citations: 33
 
   - key: opt-mmd
     title: Generative Models and Model Criticism via Optimized Maximum Mean Discrepancy
@@ -2262,7 +2262,7 @@ papers:
       - Oxford talk: '#talk-oxford-opt-mmd'
     ss_id: d772a21f2f687985b41bec2dc47bc2760c57ed2f
     gs_id: 14039271793330969441 11531994075904943226
-    citations: 231
+    citations: 234
 
   - key: thesis
     title: Scalable, Flexible, and Active Learning on Distributions
@@ -2390,7 +2390,7 @@ papers:
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/rff_uai15.pdf
     ss_id: 78e95099ec2ac3cb087eb47ba7c87ddb01a19405
     gs_id: 2736757817032849196
-    citations: 223
+    citations: 226
 
   - key: apps
     title: Active Pointillistic Pattern Search
@@ -2448,7 +2448,7 @@ papers:
     arXiv: '1410.0686'
     ss_id: f5b6eb5c3fa7eb7a569d6c2af0a43f7123034bd0
     gs_id: 15766717484171055980
-    citations: 119
+    citations: 120
 
   - key: active-mf
     title: Active learning and search on low-rank matrices
