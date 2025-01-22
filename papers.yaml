@@ -789,6 +789,7 @@ venues:
       2018: http://www.iclr.cc/doku.php?id=ICLR2018:main
       2022: https://iclr.cc/Conferences/2022/
       2023: https://iclr.cc/Conferences/2023/
+      2025: https://iclr.cc/Conferences/2025/
     accepts:
       2017: !!omap
         - oral: 15
@@ -808,6 +809,9 @@ venues:
         - notable (top 25%): 281
         - unspecial: 1277
         - submitted: 5039  # 2268 rejects, 1123 withdrawn
+      2025: !!omap
+        - unspecial: 3710
+        - submitted: 11565
     h5_rank: 10
 
   icml:
@@ -1338,6 +1342,18 @@ cite_meta:
   i10_index_5y: 35
 
 papers:
+  - key: u-herding
+    title: "Uncertainty Herding: One Active Learning Method for All Label Budgets"
+    authors:
+      - won
+      - me
+      - gabriel-oliveira
+    venue: iclr
+    year: 2025
+    date: 2025-04-27
+    arXiv: '2412.20644'
+    official: https://openreview.net/forum?id=UgPoHhYQ2U
+
   - key: gnn-norm
     title: Normalization Matters for Optimization Performance on Graph Neural Networks
     authors:
@@ -1382,12 +1398,13 @@ papers:
     authors:
       - joshua
       - me
-    venue: preprint
-    year: 2024
-    date: 2024-07-15
+    venue: iclr
+    year: 2025
+    date: 2025-04-27
     arXiv: '2407.10490'
     gs_id: 12299741007955922
     citations: 5
+    official: https://openreview.net/forum?id=tPNHOoZFl9
 
   - key: hsic-d
     title: Learning Deep Kernels for Non-Parametric Independence Testing
