@@ -1346,8 +1346,8 @@ papers:
     title: 'Uncertainty Herding: One Active Learning Method for All Label Budgets'
     authors:
       - won
-      - me
-      - gabriel-oliveira
+      - me*
+      - gabriel-oliveira*
     venue: iclr
     year: 2025
     date: 2025-04-27
