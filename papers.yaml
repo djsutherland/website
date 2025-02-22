@@ -810,7 +810,9 @@ venues:
         - unspecial: 1277
         - submitted: 5039  # 2268 rejects, 1123 withdrawn
       2025: !!omap
-        - unspecial: 3710
+        - oral: 208  # they said 1.8% of submissions
+        - spotlight: 381  # they said 5.1% oral|spotlight
+        - unspecial: 3121  # 3710 - 208 - 381
         - submitted: 11565
     h5_rank: 10
 
@@ -1405,6 +1407,8 @@ papers:
     gs_id: 12299741007955922
     citations: 5
     official: https://openreview.net/forum?id=tPNHOoZFl9
+    accept-kind: oral
+    note: Selected for oral presentation.
 
   - key: hsic-d
     title: Learning Deep Kernels for Non-Parametric Independence Testing
