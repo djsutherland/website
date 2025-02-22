@@ -1302,6 +1302,10 @@ venues:
     name: Simon Fraser University, AI seminar
     type: seminar
 
+  snowflake:
+    name: Snowflake
+    type: seminar
+
   ucl-csml:
     name: Computational Statistics and Machine Learning seminar, University College London
     type: seminar
@@ -2587,6 +2591,17 @@ papers:
 ################################################################################
 
 talks:
+  - key: herding-squeezing
+    title: Data-efficient learning, in general and in LLM preference tuning
+    date: 2025-02-22
+    type: international
+    venue: snowflake
+    papers:
+      - maxherding
+      - u-herding
+      - llm-dynamics
+    slides: https://djsutherland.ml/slides/herding-squeezing-snowflake.pdf
+
   - key: exphormer-cms
     title: Expander Graphs and Low-Distortion Embeddings for Learning on Graphs
     date: 2024-12-01
