@@ -9,9 +9,9 @@ OUTDIR ?= built
 
 STATIC := $(notdir $(wildcard static/*))
 TEMPLATE := $(notdir $(wildcard templates/*))
-TEX := form100-contributions
+TEX := 
 UBC_CV_PARTS := $(notdir $(wildcard templates/ubc-cv-*.tex))
-OTHER := biblio.bib ubc-cv.pdf ubc-cv-anno.pdf cv.pdf form100a-contributions.pdf
+OTHER := biblio.bib ubc-cv.pdf ubc-cv-anno.pdf cv.pdf 
 
 STATIC_TARGETS := $(addprefix ${OUTDIR}/,${STATIC})
 TEMPLATE_TARGETS := $(addprefix ${OUTDIR}/,${TEMPLATE})
@@ -30,7 +30,6 @@ ${TEMPLATE_TARGETS}: ${OUTDIR}/%: templates/% papers.yaml build.py
 	@mkdir -p ${OUTDIR}
 	$(PYTHON) build.py --output-path ${OUTDIR} $(notdir $@)
 
-${OUTDIR}/form100-contributions.pdf: ${OUTDIR}/biblio-cv-subs.bib
 ${TEX_TARGETS}: ${OUTDIR}/%.pdf: ${OUTDIR}/%.tex
 	mkdir -p .build/$(notdir $<)/
 	ln -f $+ .build/$(notdir $<)/
@@ -45,9 +44,7 @@ ubc-cv/biblio-cv-subs.bib: ${OUTDIR}/biblio-cv-subs.bib
 	ln -f $< $@
 ubc-cv/ubc-cv.pdf ubc-cv/ubc-cv-anno.pdf ubc-cv/cv.pdf: ubc-cv/ubc-cv.tex $(addprefix ubc-cv/,${UBC_CV_PARTS}) ubc-cv/biblio-cv.bib FORCE_MAKE
 	$(LATEXMK) -cd -pdf -silent -jobname=$(basename $(notdir $@)) $<
-ubc-cv/form100a-contributions.pdf: ubc-cv/form100a-contributions.tex ubc-cv/biblio-cv-subs.bib
-	$(LATEXMK) -cd -pdf -silent $<
-${OUTDIR}/ubc-cv.pdf ${OUTDIR}/ubc-cv-anno.pdf ${OUTDIR}/cv.pdf ${OUTDIR}/form100a-contributions.pdf: ${OUTDIR}/%.pdf: ubc-cv/%.pdf
+${OUTDIR}/ubc-cv.pdf ${OUTDIR}/ubc-cv-anno.pdf ${OUTDIR}/cv.pdf: ${OUTDIR}/%.pdf: ubc-cv/%.pdf
 	ln -f $< $@
 
 ${OUTDIR}/biblio.bib: ${OUTDIR}/biblio-cv.bib
@@ -58,7 +55,6 @@ tidy:
 	$(LATEXMK) -cd -silent -jobname=ubc-cv -c ubc-cv/ubc-cv.tex
 	$(LATEXMK) -cd -silent -jobname=ubc-cv-anno -c ubc-cv/ubc-cv.tex
 	$(LATEXMK) -cd -silent -jobname=cv -c ubc-cv/ubc-cv.tex
-	$(LATEXMK) -cd -silent -c ubc-cv/form100a-contributions.tex
 	rm -f $(addprefix ${OUTDIR}/,${UBC_CV_PARTS}) ubc-cv/biblio-cv.bib ubc-cv/*.bbl ubc-cv/*.run.xml ubc-cv/*.synctex*
 
 clean: tidy
