@@ -44,7 +44,11 @@
     \rightsymb{ {{- "" -}} %
       \iffieldundef{usera}{\space}{\space\printfield{usera}}%
       {% for thresh in cite_threshes -%}
-      \ifkeyword{cites {{- thresh -}} }{\citestext{$\ge {{ "{:,}".format(thresh) }} $}}{}%
+      \ifkeyword{cites {{- thresh -}} }{
+        {%- if thresh|int() >= 100 -%} \textbf{ {%- endif -%}
+        \citestext{ {{- "" -}} $\ge $ {{ "{:,}".format(thresh) }} {{- "" -}} }
+        {%- if thresh|int() >= 100 -%} } {%- endif -%}
+      }{}%
       {% endfor -%}
     }
   }

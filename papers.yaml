@@ -1336,10 +1336,10 @@ venues:
 ################################################################################
 
 cite_meta:
-  last_cite_update: '2025-04-04'
+  last_cite_update: '2025-04-15'
 
-  total: 5305
-  total_5y: 4678
+  total: 5355
+  total_5y: 4728
 
   h_index: 27
   h_index_5y: 25
@@ -1481,7 +1481,7 @@ papers:
     date: 2024-07-21
     arXiv: 2407.12332
     gs_id: 77021859622142169
-    citations: 5
+    citations: 6
 
   - key: il-icl
     title: 'Bias Amplification in Language Model Evolution: An Iterated Learning Perspective'
@@ -1544,7 +1544,7 @@ papers:
     arXiv: '2303.01687'
     ss_id: 9fdc5d89eda1b6d8437757792286471465add203
     gs_id: 6645133680438219650 739951386474118426
-    citations: 14
+    citations: 15
 
   - key: dp-ntk-workshop
     title: Differentially Private Neural Tangent Kernels for Privacy-Preserving Data Generation
@@ -1616,7 +1616,7 @@ papers:
     gs_id: 7161387838783241803
     year: 2023
     date: 2023-07-23
-    citations: 140
+    citations: 142
     related: !!omap
       - blog post: https://blog.research.google/2024/01/exphormer-scaling-transformers-for.html
 
@@ -1711,7 +1711,7 @@ papers:
     ss_id: 8cb6555517575be141174a17f1e0dcf48739aaf4
     gs_id: 854611520534599253 10298606910796508333
     arXiv: '2205.12900'
-    citations: 39
+    citations: 40
 
   - key: circe
     title: Efficient Conditionally Invariant Representation Learning
@@ -1761,7 +1761,7 @@ papers:
     ss_id: 244833b8e577d73c1a3552e6f41e0afcd8fc87a1
     gs_id: 8937404985150107657 7310171816056904535
     date: 2023-04-25
-    citations: 11
+    citations: 12
 
   - key: moreau
     title: A Non-Asymptotic Moreau Envelope Theory for High-Dimensional Generalized Linear Models
@@ -1824,7 +1824,7 @@ papers:
     gs_id: 4274032166116217116
     related: !!omap
       - code: https://github.com/jinhseo/OD-WSCL
-    citations: 40
+    citations: 41
 
   - key: prediction-filtering
     title: One Weird Trick to Improve Your Semi-Weakly Supervised Semantic Segmentation Model
@@ -1954,7 +1954,7 @@ papers:
     ss_id: 6b32180f7849dcd5a9f79d7cd0f58a2068d81c32
     gs_id: 3537368320170973148
     arXiv: '2106.07636'
-    citations: 29
+    citations: 30
 
   - key: pot
     title: 'POT: Python Optimal Transport'
@@ -1985,11 +1985,11 @@ papers:
     year: 2021
     date: 2021-04-15
     venue: jmlr
-    note: Machine Learning Open Source Software Paper.
+    series: Machine Learning Open Source Software Paper
     official: https://jmlr.org/papers/v22/20-451.html
     ss_id: 2be40f5336afa68b49fef41e009b7172c2c9fdeb
     gs_id: 3559273292438013868
-    citations: 1070
+    citations: 1079
 
   - key: irm
     title: Does Invariant Risk Minimization Capture Invariance?
@@ -2008,7 +2008,7 @@ papers:
     accept-kind: oral
     ss_id: 1fc4470c1766aea4c435015f5ef873b066f50121
     gs_id: 12319413802596970196
-    citations: 146
+    citations: 148
 
   - key: uniform-interpolation
     title: On Uniform Convergence and Low-Norm Interpolation Learning
@@ -2028,7 +2028,7 @@ papers:
       - NYU talk: '#talk-nyu-interpolation'
     ss_id: 65a2da57b52942cf486cd06682db0a4c53eaae34
     gs_id: 11067119780138908286
-    citations: 43
+    citations: 44
 
   - key: deep-testing
     title: Learning Deep Kernels for Non-Parametric Two-Sample Tests
@@ -2048,7 +2048,7 @@ papers:
       - video and slides: https://icml.cc/virtual/2020/poster/5999
     ss_id: cce73b08abf1554c1c730c0333b0b29dadc03c19
     gs_id: 11419051350787047758
-    citations: 228
+    citations: 229
 
   - key: unbiased-mmd-variance
     title: Unbiased estimators for the variance of MMD estimators
@@ -2123,7 +2123,7 @@ papers:
     my_talk: true
     ss_id: fbc0863a25d99ef3895f174c7c2ee01c4f19df21
     gs_id: 18438114656627425154
-    citations: 90
+    citations: 91
 
   - key: smmd
     title: On gradient regularizers for MMD GANs
@@ -2144,7 +2144,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 3d597e16ef56119bb6e6d78e3f379623862f0752
     gs_id: 12044208657387141906
-    citations: 111
+    citations: 113
 
   - key: mmd-gans
     title: Demystifying MMD GANs
@@ -2165,7 +2165,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 9723066a5587e6267d8abfd7feefd0637a5a211c
     gs_id: 10236052458128513824
-    citations: 1796
+    citations: 1818
 
   - key: bdr-workshop
     title: Bayesian Approaches to Distribution Regression
@@ -2289,7 +2289,7 @@ papers:
       - Oxford talk: '#talk-oxford-opt-mmd'
     ss_id: d772a21f2f687985b41bec2dc47bc2760c57ed2f
     gs_id: 14039271793330969441 11531994075904943226
-    citations: 250
+    citations: 252
 
   - key: thesis
     title: Scalable, Flexible, and Active Learning on Distributions
@@ -2497,7 +2497,7 @@ papers:
     my_talk: true
     ss_id: 2bf7e7fb156466546428dc6d25702d32514ef41d
     gs_id: 6061284565694240919
-    citations: 47
+    citations: 48
 
   - key: sdm-arxiv
     title: Kernels on Sample Sets via Nonparametric Divergence Estimates

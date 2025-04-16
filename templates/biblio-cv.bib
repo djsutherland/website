@@ -27,6 +27,7 @@
     booktitle = { {{- venue.name -}} {{- venue.short | maybe_wrap(" (", ")") -}} },
     {%- elif venue.type == "journal" %}
     journal = { {{- venue.name -}} },
+    {{ paper.series | maybe_wrap("series = {", "},\n    ") -}}
     {%- elif venue.type == "phd-thesis" %}
     type = {Ph.D. thesis},
     {%- elif venue.type == "ba-thesis" %}
