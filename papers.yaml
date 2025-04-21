@@ -1336,16 +1336,16 @@ venues:
 ################################################################################
 
 cite_meta:
-  last_cite_update: '2025-04-15'
+  last_cite_update: '2025-04-20'
 
-  total: 5355
-  total_5y: 4728
+  total: 5377
+  total_5y: 4750
 
   h_index: 27
   h_index_5y: 25
 
   i10_index: 40
-  i10_index_5y: 36
+  i10_index_5y: 37
 
 papers:
   - key: u-herding
@@ -1410,7 +1410,7 @@ papers:
     date: 2025-04-27
     arXiv: '2407.10490'
     gs_id: 12299741007955922
-    citations: 7
+    citations: 8
     official: https://openreview.net/forum?id=tPNHOoZFl9
     accept-kind: oral
     note: Selected for oral presentation.
@@ -1454,7 +1454,8 @@ papers:
     year: 2024
     date: 2024-09-29
     arXiv: '2407.12212'
-    citations: 0
+    citations: 1
+    gs_id: 11914806130472742386
 
   - key: active-meta
     title: 'Exploring Active Learning in Meta-Learning: Enhancing Context Set Labeling'
@@ -1481,7 +1482,7 @@ papers:
     date: 2024-07-21
     arXiv: 2407.12332
     gs_id: 77021859622142169
-    citations: 6
+    citations: 7
 
   - key: il-icl
     title: 'Bias Amplification in Language Model Evolution: An Iterated Learning Perspective'
@@ -1616,7 +1617,7 @@ papers:
     gs_id: 7161387838783241803
     year: 2023
     date: 2023-07-23
-    citations: 142
+    citations: 143
     related: !!omap
       - blog post: https://blog.research.google/2024/01/exphormer-scaling-transformers-for.html
 
@@ -1694,7 +1695,7 @@ papers:
       - saraswat
       - vytla
       - stark
-    citations: 32
+    citations: 33
     gs_id: 18334777895960251368 4841877026388899314
 
   - key: dp-mepf
@@ -1989,7 +1990,7 @@ papers:
     official: https://jmlr.org/papers/v22/20-451.html
     ss_id: 2be40f5336afa68b49fef41e009b7172c2c9fdeb
     gs_id: 3559273292438013868
-    citations: 1079
+    citations: 1084
 
   - key: irm
     title: Does Invariant Risk Minimization Capture Invariance?
@@ -2048,7 +2049,7 @@ papers:
       - video and slides: https://icml.cc/virtual/2020/poster/5999
     ss_id: cce73b08abf1554c1c730c0333b0b29dadc03c19
     gs_id: 11419051350787047758
-    citations: 229
+    citations: 231
 
   - key: unbiased-mmd-variance
     title: Unbiased estimators for the variance of MMD estimators
@@ -2123,7 +2124,7 @@ papers:
     my_talk: true
     ss_id: fbc0863a25d99ef3895f174c7c2ee01c4f19df21
     gs_id: 18438114656627425154
-    citations: 91
+    citations: 92
 
   - key: smmd
     title: On gradient regularizers for MMD GANs
@@ -2165,7 +2166,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 9723066a5587e6267d8abfd7feefd0637a5a211c
     gs_id: 10236052458128513824
-    citations: 1818
+    citations: 1827
 
   - key: bdr-workshop
     title: Bayesian Approaches to Distribution Regression
@@ -2512,7 +2513,7 @@ papers:
     arXiv: '1202.0302'
     ss_id: a87ba84a66b769fd58aea07a0bba749b1426c934
     gs_id: 18253015138965857725 2233414225380654183
-    citations: 33
+    citations: 34
 
   - key: sdm-cvpr
     title: Nonparametric kernel estimators for image classification
