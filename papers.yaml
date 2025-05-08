@@ -805,16 +805,16 @@ venues:
         - unspecial: 865
         - submitted: 3328
       2023: !!omap
-        - notable (top 5%): 90
-        - notable (top 25%): 281
-        - unspecial: 1277
-        - submitted: 5039  # 2268 rejects, 1123 withdrawn
+        - notable (top 5%): 91
+        - notable (top 25%): 280
+        - unspecial: 1204
+        - submitted: 4955
       2025: !!omap
         - outstanding paper: 3
-        - oral: 205  # they said 1.8% of submissions; minus 3 outstanding
-        - spotlight: 381  # they said 5.1% oral|spotlight
-        - unspecial: 3121  # 3710 - 208 - 381
-        - submitted: 11565
+        - oral: 210 # minus 3 outstanding
+        - spotlight: 380
+        - unspecial: 3111
+        - submitted: 11672
     h5_rank: 10
 
   icml:
@@ -833,14 +833,14 @@ venues:
         - unspecial: 773
         - submitted: 3424
       2020: !!omap
-        - unspecial: 1088
+        - unspecial: 1084
         - submitted: 4990
       2023: !!omap
-        - unspecial: 1827
+        - unspecial: 1828
         - submitted: 6538
       2024: !!omap
-        - unspecial: 2609
-        - submitted: 9473
+        - unspecial: 2944
+        - submitted: 9653
     h5_rank: 17
 
   ijcai:
@@ -892,27 +892,27 @@ venues:
     accepts:
       2018: !!omap
         - oral: 30
-        - spotlight: 168
-        - unspecial: 813
+        - spotlight: 167
+        - unspecial: 812
         - submitted: 4856
       2020: !!omap
-        - oral: 105
+        - oral: 106
         - spotlight: 280
-        - unspecial: 1515
-        - submitted: 9454
+        - unspecial: 1513
+        - submitted: 9467
       2021: !!omap
         - oral: 55
         - spotlight: 260
-        - unspecial: 2029
+        - unspecial: 2019
         - submitted: 9122
       2022: !!omap
-        - unspecial: 2665
+        - unspecial: 2671
         - submitted: 10411
       2023: !!omap
-        - unspecial: 3224 # might be off by a couple, they said 26.1%
-        - submitted: 12343
+        - unspecial: 3218
+        - submitted: 12345
       2024: !!omap
-        - unspecial: 4043 # might be off by a couple, they said 26.1%
+        - unspecial: 4035
         - submitted: 15671
     h5_rank: 7
 

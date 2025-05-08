@@ -100,8 +100,11 @@ def _rate_str(got_in, out_of, verbose=False):
     elif rate >= 0.001:
         pct = f"{rate :.1%}"
         op = "="
+    elif rate >= 0.0001:
+        pct = f"{rate :.2%}"
+        op = "="
     else:
-        pct = f"0.1%"
+        pct = f"0.01%"
         op = "<"
 
     if verbose:
