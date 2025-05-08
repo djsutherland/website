@@ -1337,13 +1337,13 @@ venues:
 ################################################################################
 
 cite_meta:
-  last_cite_update: '2025-04-20'
+  last_cite_update: '2025-05-07'
 
-  total: 5377
-  total_5y: 4750
+  total: 5427
+  total_5y: 4801
 
   h_index: 27
-  h_index_5y: 25
+  h_index_5y: 26
 
   i10_index: 40
   i10_index_5y: 37
@@ -1455,7 +1455,7 @@ papers:
     year: 2024
     date: 2024-09-29
     arXiv: '2407.12212'
-    citations: 1
+    citations: 2
     gs_id: 11914806130472742386
 
   - key: active-meta
@@ -1498,7 +1498,7 @@ papers:
     year: 2024
     arXiv: '2404.04286'
     gs_id: 16139395396553668193 7973927278752154333
-    citations: 4
+    citations: 5
 
   - key: split-kci
     title: Practical Kernel Tests of Conditional Independence
@@ -1546,7 +1546,7 @@ papers:
     arXiv: '2303.01687'
     ss_id: 9fdc5d89eda1b6d8437757792286471465add203
     gs_id: 6645133680438219650 739951386474118426
-    citations: 15
+    citations: 16
 
   - key: dp-ntk-workshop
     title: Differentially Private Neural Tangent Kernels for Privacy-Preserving Data Generation
@@ -1618,7 +1618,7 @@ papers:
     gs_id: 7161387838783241803
     year: 2023
     date: 2023-07-23
-    citations: 143
+    citations: 145
     related: !!omap
       - blog post: https://blog.research.google/2024/01/exphormer-scaling-transformers-for.html
 
@@ -1696,7 +1696,7 @@ papers:
       - saraswat
       - vytla
       - stark
-    citations: 33
+    citations: 35
     gs_id: 18334777895960251368 4841877026388899314
 
   - key: dp-mepf
@@ -1733,7 +1733,7 @@ papers:
     ss_id: 422b68799bfc5cae91febc5c33d59e28b067a368
     gs_id: 7462248955033708193
     official: https://openreview.net/forum?id=dJruFeSRym1
-    citations: 19
+    citations: 20
 
   - key: finetuning
     title: How to prepare your task head for finetuning
@@ -1763,7 +1763,7 @@ papers:
     ss_id: 244833b8e577d73c1a3552e6f41e0afcd8fc87a1
     gs_id: 8937404985150107657 7310171816056904535
     date: 2023-04-25
-    citations: 12
+    citations: 14
 
   - key: moreau
     title: A Non-Asymptotic Moreau Envelope Theory for High-Dimensional Generalized Linear Models
@@ -1779,7 +1779,7 @@ papers:
     ss_id: f8b29bc83e9d84ff4283811faa2bb31b650c6d10
     gs_id: 2093430636599193484
     arXiv: '2210.12082'
-    citations: 25
+    citations: 27
 
   - key: active-ntk
     title: Making Look-Ahead Active Learning Strategies Feasible with Neural Tangent Kernels
@@ -1826,7 +1826,7 @@ papers:
     gs_id: 4274032166116217116
     related: !!omap
       - code: https://github.com/jinhseo/OD-WSCL
-    citations: 41
+    citations: 42
 
   - key: prediction-filtering
     title: One Weird Trick to Improve Your Semi-Weakly Supervised Semantic Segmentation Model
@@ -1885,7 +1885,7 @@ papers:
     ss_id: d050f2f50a490fd90a06e5bcc7ed22079a28e404
     gs_id: 3078534230907333706 16851788017931748094
     date: 2023-05-01
-    citations: 28
+    citations: 29
 
   - key: queerinai-dni
     title: 'How to Make Virtual Conferences Queer-Friendly: A Guide'
@@ -1924,7 +1924,7 @@ papers:
       - NYU talk: '#talk-nyu-interpolation'
     ss_id: 24721e44b5510bfda275ddb023c2f107c9526870
     gs_id: 14582780933724089324
-    citations: 80
+    citations: 81
 
   - key: ssl-hsic
     title: Self-Supervised Learning with Kernel Dependence Maximization
@@ -1940,7 +1940,7 @@ papers:
     ss_id: 1a3d5d6cec457f8f3b088cb3636a1a197bd248f6
     gs_id: 13912402342615870661
     arXiv: '2106.08320'
-    citations: 85
+    citations: 89
 
   - key: meta-2st
     title: 'Meta Two-Sample Testing: Learning Kernels for Testing with Limited Data'
@@ -1991,7 +1991,7 @@ papers:
     official: https://jmlr.org/papers/v22/20-451.html
     ss_id: 2be40f5336afa68b49fef41e009b7172c2c9fdeb
     gs_id: 3559273292438013868
-    citations: 1084
+    citations: 1093
 
   - key: irm
     title: Does Invariant Risk Minimization Capture Invariance?
@@ -2010,7 +2010,7 @@ papers:
     accept-kind: oral
     ss_id: 1fc4470c1766aea4c435015f5ef873b066f50121
     gs_id: 12319413802596970196
-    citations: 148
+    citations: 151
 
   - key: uniform-interpolation
     title: On Uniform Convergence and Low-Norm Interpolation Learning
@@ -2050,7 +2050,7 @@ papers:
       - video and slides: https://icml.cc/virtual/2020/poster/5999
     ss_id: cce73b08abf1554c1c730c0333b0b29dadc03c19
     gs_id: 11419051350787047758
-    citations: 231
+    citations: 232
 
   - key: unbiased-mmd-variance
     title: Unbiased estimators for the variance of MMD estimators
@@ -2167,7 +2167,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 9723066a5587e6267d8abfd7feefd0637a5a211c
     gs_id: 10236052458128513824
-    citations: 1827
+    citations: 1845
 
   - key: bdr-workshop
     title: Bayesian Approaches to Distribution Regression
