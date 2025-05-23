@@ -1355,6 +1355,7 @@ papers:
       - won
       - me*
       - gabriel-oliveira*
+    collabinfo: Gabriel was Won's internship supervisor; I was the primary week-to-week advisor and wrote the main proof.
     venue: iclr
     year: 2025
     date: 2025-04-20
@@ -1369,6 +1370,7 @@ papers:
       - hamed
       - mark
       - me
+    collabinfo: This paper arose from conversations between the first three authors; I did much more regular supervision on the project and substantial amounts of editing the writeup.
     venue: neurips-opt-24
     year: 2024
     date: 2024-12-10
@@ -1524,6 +1526,7 @@ papers:
       - frederick-tung
       - me
       - gabriel-oliveira
+    collabinfo: This was an internship project where I did not participate in the early stages, but substantially helped with the later stages and writing up the paper.
     venue: tmlr
     arXiv: '2311.02891'
     official: https://openreview.net/forum?id=2s5YU6CSEz
@@ -1540,6 +1543,7 @@ papers:
       - xiaoxiao
       - me
       - mijung
+    collabinfo: I gave substantial advice on this project and helped with the writeup, but was not the main supervisor.
     year: 2024
     date: 2024-09-10
     venue: jair
@@ -1556,6 +1560,7 @@ papers:
       - me
       - xiaoxiao
       - mijung
+    collabinfo: I gave substantial advice on this project and helped with the writeup, but was not the main supervisor.
     year: 2024
     date: 2024-02-26
     venue: ppai-24
@@ -1570,6 +1575,7 @@ papers:
       - ameya
       - me
       - david-woodruff
+    collabinfo: David and I had similar amounts of supervision for this workshop version, and was listed last primarily for seniority reasons; I was far more involved in the later work to turn this into a full paper and am listed last there.
     venue: glfrontiers-23
     year: 2023
     date: 2023-12-15
@@ -1597,6 +1603,7 @@ papers:
       - mikhail-galkin
       - me
       - aaron-c
+    collabinfo: This work was done in part while Yi visited Aaron's group, but I helped a lot too; Aaron is last primarily because of seniority.
     venue: neurips
     year: 2023
     date: 2023-12-11
@@ -1619,6 +1626,7 @@ papers:
     year: 2023
     date: 2023-07-23
     citations: 145
+    collabinfo: Ali initiated the initial idea of this project, but I did most of the "supervisory" work after the extremely early stages; the ordering is partly because of some cross-field confusion about norms between theory and ML.
     related: !!omap
       - blog post: https://blog.research.google/2024/01/exphormer-scaling-transformers-for.html
 
@@ -1698,6 +1706,7 @@ papers:
       - stark
     citations: 35
     gs_id: 18334777895960251368 4841877026388899314
+    collabinfo: This was a highly collaborative work (fifty authors); I was one of the five or so most involved in the writing.
 
   - key: dp-mepf
     title: Pre-trained Perceptual Features Improve Differentially Private Image Generation
@@ -1706,6 +1715,7 @@ papers:
       - milad
       - me
       - mijung
+    collabinfo: This project arose from conversations between me and Mijung; I helped with supervisory advice throughout, and did most of the theoretical analysis.
     year: 2023
     date: 2023-04-19
     venue: tmlr
@@ -1734,6 +1744,7 @@ papers:
     gs_id: 7462248955033708193
     official: https://openreview.net/forum?id=dJruFeSRym1
     citations: 20
+    collabinfo: A portion of this paper happened while I was out on medical leave; during the periods I was present, supervision was roughly equal among the three faculty authors.
 
   - key: finetuning
     title: How to prepare your task head for finetuning
@@ -1780,6 +1791,7 @@ papers:
     gs_id: 2093430636599193484
     arXiv: '2210.12082'
     citations: 27
+    collabinfo: Nati and I were both more ``big idea'' supervisors here, and are listed according to seniority.
 
   - key: active-ntk
     title: Making Look-Ahead Active Learning Strategies Feasible with Neural Tangent Kernels
@@ -1827,6 +1839,7 @@ papers:
     related: !!omap
       - code: https://github.com/jinhseo/OD-WSCL
     citations: 42
+    collabinfo: "I had only a small part in this paper: some general ideas and significant writing help."
 
   - key: prediction-filtering
     title: One Weird Trick to Improve Your Semi-Weakly Supervised Semantic Segmentation Model
@@ -1886,6 +1899,7 @@ papers:
     gs_id: 3078534230907333706 16851788017931748094
     date: 2023-05-01
     citations: 29
+    collabinfo: Nati and I were both more ``big idea'' supervisors here, and are listed according to seniority.
 
   - key: queerinai-dni
     title: 'How to Make Virtual Conferences Queer-Friendly: A Guide'
@@ -1898,6 +1912,7 @@ papers:
       - me
       - sabine
       - pan
+    collabinfo: This was a highly collaborative work in which all authors other than Pranav contributed roughly equally.
     venue: winlp-21
     related: !!omap
       - web: https://queerinai.org/diversity-guide
@@ -1925,6 +1940,7 @@ papers:
     ss_id: 24721e44b5510bfda275ddb023c2f107c9526870
     gs_id: 14582780933724089324
     citations: 81
+    collabinfo: Nati and I were both more ``big idea'' supervisors here, and are listed according to seniority.
 
   - key: ssl-hsic
     title: Self-Supervised Learning with Kernel Dependence Maximization
@@ -1941,6 +1957,7 @@ papers:
     gs_id: 13912402342615870661
     arXiv: '2106.08320'
     citations: 89
+    collabinfo: Arthur and I were both more ``big idea'' supervisors here, and are listed according to seniority.
 
   - key: meta-2st
     title: 'Meta Two-Sample Testing: Learning Kernels for Testing with Limited Data'
@@ -1987,6 +2004,7 @@ papers:
     year: 2021
     date: 2021-04-15
     venue: jmlr
+    collabinfo: This was a highly collaborative paper about a highly collaborative piece of software; I helped primarily with infrastructure on the package and editing the paper.
     series: Machine Learning Open Source Software Paper
     official: https://jmlr.org/papers/v22/20-451.html
     ss_id: 2be40f5336afa68b49fef41e009b7172c2c9fdeb
@@ -2001,6 +2019,7 @@ papers:
       - akilesh
       - me
       - nati
+    collabinfo: This paper arose out of my idea, with primarily my week-to-week supervision; Nati was very helpful in framing the paper but is mostly listed according to seniority and because he was the advisor of the first two authors.
     arXiv: '2101.01134'
     official: http://proceedings.mlr.press/v130/kamath21a.html
     year: 2021
@@ -2020,6 +2039,7 @@ papers:
       - lijia
       - me
       - nati
+    collabinfo: I joined this project after Lijia and Nati had begun work on it. I took over weekly supervision at the start of the pandemic, proved several of the theorems, and wrote much of the paper, with Nati's feedback.
     venue: neurips
     note: Selected for spotlight presentation.
     accept-kind: spotlight
@@ -2058,6 +2078,7 @@ papers:
     authors:
       - me
       - namrata
+    collabinfo: I originally wrote this paper; Namrata added content to a later revision.
     venue: tech-report
     arXiv: '1906.02104'
     year: 2019
@@ -2099,6 +2120,7 @@ papers:
       - me
       - hy
       - wandelt
+    collabinfo: I had a small role in this many-author position paper, which was spearheaded by Michelle.
     venue: white-paper
     arXiv: '1902.10159'
     year: 2019
@@ -2257,6 +2279,7 @@ papers:
       - me
       - yu-xiang
       - yee-whye
+    collabinfo: Seth led this work, based on his earlier work, but I did substantial model work, programming, and writing on this project.
     arXiv: '1611.03787'
     related: !!omap
       - code: https://github.com/flaxter/us2016/
@@ -2324,6 +2347,7 @@ papers:
       - labov
       - nelson
       - artur
+    collabinfo: I primarily helped give advice on this paper, which applied my methods to a new problem.
     venue: nss
     year: 2016
     date: 2016-10-29
@@ -2353,6 +2377,7 @@ papers:
       - sebastian
       - barnabas
       - jeff
+    collabinfo: I was very involved in the machine learning setup of this paper and helped with writing.
     venue: ApJ
     year: 2016
     date: 2016-11-03
@@ -2467,6 +2492,7 @@ papers:
       - battaglia
       - barnabas
       - jeff
+    collabinfo: I was very involved in the machine learning setup of this paper and helped with writing.
     venue: ApJ
     year: 2015
     date: 2015-04-14
@@ -2533,6 +2559,7 @@ papers:
     ss_id: 76710cce6eb7f6cab032f8ec0832b47a474fd285
     gs_id: 5009114706015842197
     citations: 66
+    collabinfo: I joined this project when it was already underway, but did significant portions of the work.
 
   - key: guts
     title: Managing User Requests with the Grand Unified Task System (GUTS)
@@ -2558,6 +2585,7 @@ papers:
     web_note: Work done as part of the <a href='http://www.sccs.swarthmore.edu'>Swarthmore College Computer Society</a>.
     ss_id: 7bd11dfb2effc8ab7c47f427f3478d96bf8e54b0
     citations: 0
+    collabinfo: I was roughly the second-most involved of many collaborators in both the work and the writing.
 
   - key: smrf
     title: Grounding Conceptual Knowledge with Spatio-Temporal Multi-Dimensional Relational Framework Trees
@@ -2566,6 +2594,7 @@ papers:
       - palmer
       - me
       - fagg
+    collabinfo: I participated in this project as an undergraduate summer intern, but helped significantly with code and experiments.
     venue: tech-report
     year: 2012
     date: 2012-01-01

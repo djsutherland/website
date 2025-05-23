@@ -43,6 +43,7 @@
     {{- venue.department | maybe_wrap("\n    department = {", "},") -}}
     {{- venue.bib_type | maybe_wrap("\n    type = {", "},") -}}
     {{- paper.official | maybe_wrap("\n    url = {", "},") -}}
+    {{- paper.collabinfo | maybe_wrap("\n    collabinfo = {", "},") -}}
     {{- [paper.note, paper.cv_note] | maybe_join | bibtex_escape | maybe_wrap("\n    addendum = {", "},") -}}
     {%- if paper.date and paper.date > today %}
     pubstate = {To appear.},

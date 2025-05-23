@@ -50,6 +50,7 @@
         {%- if thresh|int() >= 100 -%} } {%- endif -%}
       }{}%
       {% endfor -%}
-    }
+    }%
+    \printfield{abstract}%
   }
 }
