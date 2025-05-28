@@ -11,7 +11,7 @@
 %
   {{ venue.short or venue.name }}
   {{ paper["accept-kind"] | bibtex_escape }}:
-  {{ paper | ar_info(venue, verbose=True, first_only=True) | bibtex_escape }}
+  {{ paper | ar_info(venue, verbose=True, first_only=True) | bibtex_escape }}.
   {% if paper|in_last_year(month=5) -%} } {%- endif -%}
 
 {%- endfor -%}
