@@ -1370,7 +1370,7 @@ papers:
       - hamed
       - mark
       - me
-    collabinfo: This paper arose from conversations between the first three authors; I did much more regular supervision on the project and substantial amounts of editing the writeup.
+    collabinfo: This paper arose from conversations between the first three authors; compared to Mark, I did much more regular supervision on the project and substantial amounts of editing the writeup.
     venue: neurips-opt-24
     year: 2024
     date: 2024-12-10
@@ -1566,6 +1566,7 @@ papers:
     venue: ppai-24
     related: !!omap
       - JAIR version: '#dp-ntk'
+    full_version: dp-ntk
 
   - key: sparsifying-exphormer
     title: Low-Width Approximations and Sparsification for Scaling Graph Transformers
@@ -1579,6 +1580,7 @@ papers:
     venue: glfrontiers-23
     year: 2023
     date: 2023-12-15
+    full_version: spexphormer
 
   - key: grokking-workshop
     title: Grokking modular arithmetic can be explained by margin maximization
@@ -1594,6 +1596,7 @@ papers:
     citations: 3
     related: !!omap
       - ICML version: '#grokking'
+    full_version: grokking
 
   - key: sem-il
     title: Improving Compositional Generalization using Iterated Learning and Simplicial Embeddings

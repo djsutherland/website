@@ -45,6 +45,9 @@
     {{- paper.official | maybe_wrap("\n    url = {", "},") -}}
     {{- paper.collabinfo | maybe_wrap("\n    collabinfo = {", "},") -}}
     {{- [paper.note, paper.cv_note] | maybe_join | bibtex_escape | maybe_wrap("\n    addendum = {", "},") -}}
+    {%- if paper.full_version %}
+    note = {Full version: \cite{ {{- paper.full_version | get_paper(papers) | bibtex_key(coauthors) -}} }.},
+    {%- endif -%}
     {%- if paper.date and paper.date > today %}
     pubstate = {To appear.},
     {%- elif show_submission and paper['submitted-date'] %}
