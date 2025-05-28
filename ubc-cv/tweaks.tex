@@ -447,9 +447,11 @@
 
 % Reduce spacing between references
 \setlength\bibitemsep{.2\baselineskip}
-%% Show abstract
-\DeclareFieldFormat{abstract}{\par\small#1}
-\renewbibmacro*{finentry}{\printfield{abstract}\finentry}
+
+\setlength\bibparsep{.2\baselineskip}
+%% Show abstract, which is actually used for collaboration info.
+\DeclareFieldFormat{abstract}{\small\textit{#1}}
+%\renewbibmacro*{finentry}{\printfield{abstract}\finentry}
 
 
 % TODO: would be nice to link to the article a la % https://tex.stackexchange.com/a/48506/9019
@@ -498,20 +500,29 @@
 %  \printtext{%
 %    \bibstring{in}\intitlepunct}}
 
-% handle author annotations: equal, mystudent
+% handle author annotations: equal, mystudent, me
 \newcommand{\bibeqcon}{\ensuremath{^{\boldsymbol\star}}}
-\renewcommand*{\mkbibnamegiven}[1]{%
-  \ifitemannotation{me}%
-    {#1}%{\textbf{#1}}%
-    {\ifitemannotation{mystudent}{\textbf{#1}}{#1}}}
-\renewcommand*{\mkbibnamefamily}[1]{%
-  \ifitemannotation{me}%
-    {#1}%{\textbf{#1}}%
-    {\ifitemannotation{mystudent}{\textbf{#1}}{#1}}%
-  \ifitemannotation{equal}
-    {\bibeqcon}
-    {}%
-}
+\renewcommand*{\mkbibcompletename}[1]{%
+    \ifitemannotation{me}%
+        {\textcolor{orange!70!black}{#1}}%
+        {\ifitemannotation{mystudent}%
+            {\textbf{#1}}%
+            {#1}}%
+    \ifitemannotation{equal}%
+        {\bibeqcon}%
+    {}}
+% \renewcommand*{\mkbibnamegiven}[1]{%
+%   \ifitemannotation{me}%
+%     {#1}%{\textbf{#1}}%
+%     {\ifitemannotation{mystudent}{\textbf{#1}}{#1}}}
+% \renewcommand*{\mkbibnamefamily}[1]{%
+%   \ifitemannotation{me}%
+%     {#1}%{\textbf{#1}}%
+%     {\ifitemannotation{mystudent}{\textbf{#1}}{#1}}%
+%   \ifitemannotation{equal}
+%     {\bibeqcon}
+%     {}%
+% }
 
 
 %%
@@ -682,12 +693,22 @@
       \step[fieldsource=arinfo]
       \step[fieldset=usera,origfieldval]
     }
+  }
+}
+\iftoggle{ubcformat}{
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map{ % turn collabinfo into abstract to print it
+      \step[fieldsource=collabinfo]
+      \step[fieldset=abstract,origfieldval]
+    }
     \map[overwrite]{ % strip eprint (arXiv) info from published papers
       \step[fieldsource=keywords,notmatch=\regexp{submitted|tech-report},final]
       \step[fieldset=eprint,fieldvalue=]
     }
   }
 }
+}{}
 
 % \DeclareFieldFormat{usera}{\sloppy{\ARtext{#1}}
 \DeclareFieldFormat{usera}{\ARtext{#1}}
