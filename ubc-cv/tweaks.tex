@@ -689,19 +689,23 @@
 
 \DeclareSourcemap{
   \maps[datatype=bibtex]{
-    \map{ % turn arinfo into usera for rendering purposes
+    \map{ % arinfo => usera, to not have to modify data model
       \step[fieldsource=arinfo]
       \step[fieldset=usera,origfieldval]
+    }
+    \map{ % citesrounded => userb
+      \step[fieldsource=citesrounded]
+      \step[fieldset=userb,origfieldval]
+    }
+    \map{ % collabinfo => abstract
+      \step[fieldsource=collabinfo]
+      \step[fieldset=abstract,origfieldval]
     }
   }
 }
 \iftoggle{ubcformat}{
 \DeclareSourcemap{
   \maps[datatype=bibtex]{
-    \map{ % turn collabinfo into abstract to print it
-      \step[fieldsource=collabinfo]
-      \step[fieldset=abstract,origfieldval]
-    }
     \map[overwrite]{ % strip eprint (arXiv) info from published papers
       \step[fieldsource=keywords,notmatch=\regexp{submitted|tech-report},final]
       \step[fieldset=eprint,fieldvalue=]
@@ -712,6 +716,7 @@
 
 % \DeclareFieldFormat{usera}{\sloppy{\ARtext{#1}}
 \DeclareFieldFormat{usera}{\ARtext{#1}}
+\DeclareFieldFormat{userb}{\citestext{$\ge$ #1}}
 
 \DeclareFieldFormat{addendum}{\textbf{#1}}
 
@@ -721,21 +726,23 @@
 \input{ubc-cv-citation-info.tex}
 
 % now in ubc-cv-citation-info.tex so it can loop over thresholds
-% \AtEveryBibitem{%
-%   \csappto{blx@bbx@\thefield{entrytype}}{% put at end of entry
-%     \rightsymb{%
-%       \iffieldundef{usera}{\space}{\space\printfield{usera}}%
-%       \ifkeyword{cites1000}{\citestext{$\ge 1\,000$}}{}%
-%       \ifkeyword{cites500}{\citestext{$\ge 500$}}{}%
-%       \ifkeyword{cites100}{\citestext{$\ge 100$}}{}%
-%       \ifkeyword{cites50}{\citestext{$\ge 50$}}{}%
-%       \ifkeyword{cites10}{\citestext{$\ge 10$}}{}%
-%       % \ifkeyword{cites1000}{$\;$\includegraphics[height=9pt]{figs/1000-cites.pdf}}{}%
-%       % \ifkeyword{cites100}{$\;$\includegraphics[height=9pt]{figs/100-cites.pdf}}{}%
-%       % \ifkeyword{cites10}{$\;$\includegraphics[height=9pt]{figs/10-cites.pdf}}{}%
-%     }
-%   }
-% }
+\AtEveryBibitem{%
+  \csappto{blx@bbx@\thefield{entrytype}}{% put at end of entry
+    \rightsymb{%
+      \iffieldundef{usera}{\space}{\space\printfield{usera}}%
+      \iffieldundef{userb}{}{\printfield{userb}}
+      %\ifkeyword{cites1000}{\citestext{$\ge 1\,000$}}{}%
+      %\ifkeyword{cites500}{\citestext{$\ge 500$}}{}%
+      %\ifkeyword{cites100}{\citestext{$\ge 100$}}{}%
+      %\ifkeyword{cites50}{\citestext{$\ge 50$}}{}%
+      %\ifkeyword{cites10}{\citestext{$\ge 10$}}{}%
+      % \ifkeyword{cites1000}{$\;$\includegraphics[height=9pt]{figs/1000-cites.pdf}}{}%
+      % \ifkeyword{cites100}{$\;$\includegraphics[height=9pt]{figs/100-cites.pdf}}{}%
+      % \ifkeyword{cites10}{$\;$\includegraphics[height=9pt]{figs/10-cites.pdf}}{}%
+    }%
+    \printfield{abstract}%
+  }
+}
 
 % \newcommand{\remark}[1]{\fontsize{8}{9}\selectfont#1\fontsize{11}{12}\selectfont}
 \newcommand{\remark}[1]{{\footnotesize#1}}

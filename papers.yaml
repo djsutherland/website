@@ -1755,7 +1755,7 @@ papers:
       - mikhail-galkin
       - me
       - aaron-c
-    collabinfo: This work was done in part while Yi visited Aaron's group, but I helped a lot too; Aaron is last primarily because of seniority.
+    collabinfo: This work was done in part while Yi visited Aaron's group, but I also helped substantially.
     venue: neurips
     year: 2023
     date: 2023-12-11
@@ -1778,7 +1778,7 @@ papers:
     year: 2023
     date: 2023-07-23
     citations: 156
-    collabinfo: Ali initiated the initial idea of this project, but I did most of the "supervisory" work after the extremely early stages; the ordering is partly because of some cross-field confusion about norms between theory and ML.
+    collabinfo: Ali initiated the initial idea of this project, but I did most of the supervisory work after the extremely early stages; the ordering is partly because of some cross-field confusion about norms between theory and ML.
     related: !!omap
       - blog post: https://blog.research.google/2024/01/exphormer-scaling-transformers-for.html
 

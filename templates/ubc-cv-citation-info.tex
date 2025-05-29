@@ -39,6 +39,7 @@
   {%- endfor -%}
 }
 
+{#
 \AtEveryBibitem{ {{- "" -}} %
   \csappto{blx@bbx@\thefield{entrytype}}{ {{- "" -}} % put at end of entry
     \rightsymb{ {{- "" -}} %
@@ -54,3 +55,4 @@
     \printfield{abstract}%
   }
 }
+#}

@@ -31,7 +31,7 @@
     booktitle = { {{- venue.name -}} {{- venue.short | maybe_wrap(" (", ")") -}} },
     {%- elif venue.type == "journal" %}
     journal = { {{- venue.name -}} },
-    {{ paper.series | maybe_wrap("series = {", "},\n    ") -}}
+    {{- paper.series | maybe_wrap("\n    series = {", "},\n    ") -}}
     {%- elif venue.type == "phd-thesis" %}
     type = {Ph.D. thesis},
     {%- elif venue.type == "ba-thesis" %}
@@ -57,9 +57,8 @@
     {%- elif paper.date and paper.date > today %}
     pubstate = {To appear.},
     {%- endif -%}
-
     {{- paper | ar_info(venue) | bibtex_escape | maybe_wrap("\n    arinfo = {", "},") -}}
-{# make sure there's a newline here #}
+    {{- "" }}
     keywords = {
 	  {%- if show_submission and paper.submitted -%} submission {%- else -%} {{- venue.type -}} {%- endif -%}
       {%- if paper | in_last_year(month=5) -%}
@@ -78,6 +77,11 @@
       {%- endfor -%}
       , mine {{- "" -}}
     },
+    {%- if cites >= 100 %}
+    citesrounded = { \textbf{ {{- cites | round(-2, 'floor') | int | pformat("{:,}") -}} } },
+    {%- elif cites >= 10 %}
+    citesrounded = { {{- cites | round(-1, 'floor') | int -}} },
+    {%- endif %}
 }
 
 {% endfor -%}

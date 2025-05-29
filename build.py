@@ -81,6 +81,11 @@ def tojson(x):
 
 
 @filter
+def pformat(obj, s):
+    return s.format(obj)
+
+
+@filter
 def venue_url(venue, year=None):
     if year is not None:
         year = int(year)
