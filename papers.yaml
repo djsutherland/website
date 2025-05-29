@@ -9,6 +9,11 @@ coauthors:
     last: Mohamadi
     web: https://mohamad-amin.github.io/
     student_years: [2021, 2024]
+  bingshan:
+    first: Bingshan
+    last: Hu
+    web: https://sites.google.com/view/bingshan-hu
+    student_years: [2023, 2025]
   hamed:
     first: Hamed
     last: Shirzad
@@ -37,6 +42,10 @@ coauthors:
     last: Bae
     web: https://won-bae.github.io/
     student_years: [2020, 3000]
+  zheng:
+    first: Zheng
+    last: He
+    student_years: [2023, 3000]
 
   akilesh:
     first: Akilesh
@@ -142,9 +151,16 @@ coauthors:
   chambon:
     first: Stanislas
     last: Chambon
+  chao-lei:
+    first: Chao
+    last: Lei
   chapel:
     first: Laetitia
     last: Chapel
+  christos:
+    first: Christos
+    last: Thrampoulidis
+    web: https://sites.google.com/view/cthrampo
   cisewski:
     first: Jessi
     last: Cisewski-Kehe
@@ -245,6 +261,9 @@ coauthors:
   ghosh:
     first: Avijit
     last: Ghosh
+  giyeong-oh:
+    first: Giyeong
+    last: Oh
   goodman:
     first: Alyssa
     last: Goodman
@@ -289,6 +308,9 @@ coauthors:
     first: Jeff
     last: Schneider
     web: https://www.cs.cmu.edu/~schneide/
+  jeongin-kim:
+    first: Jeongin
+    last: Kim
   jie-lu:
     first: Jie
     last: Lu
@@ -376,6 +398,9 @@ coauthors:
   linlu-qiu:
     first: Linlu
     last: Qiu
+  liuhua-peng:
+    first: Liuhua
+    last: Peng
   lipton:
     first: Benjamin
     last: Lipton
@@ -442,6 +467,10 @@ coauthors:
   milind:
     first: Milind
     last: Agarwal
+  mingyu:
+    first: Mingyu
+    last: Kim
+    web: https://mingyukim87.github.io
   ml-p:
     first: Maria Leonor
     last: Pacheco
@@ -449,6 +478,10 @@ coauthors:
   mohamad-osama-ahmed:
     first: Mohamad Osama
     last: Ahmed
+  muchen-li:
+    first: Muchen
+    last: Li
+    web: https://jojoml.github.io/
   nagai:
     first: Daisuke
     last: Nagai
@@ -633,6 +666,9 @@ coauthors:
     first: Wenkai
     last: Xu
     web: http://www.stats.ox.ac.uk/~wxu/
+  wenlong:
+    first: Wenlong
+    last: Deng
   willie:
     first: William
     last: Agnew
@@ -641,6 +677,9 @@ coauthors:
     first: Xiaoxiao
     last: Li
     web: https://xxlya.github.io/xiaoxiao/
+  xunye-tian:
+    first: Xunye
+    last: Tian
   yanan:
     first: Yanan
     last: Long
@@ -655,6 +694,13 @@ coauthors:
     first: Yifei
     last: Ma
     web: http://yma.io/
+  youlee-han:
+    first: Youlee
+    last: Han
+    web: https://yyullmucha.notion.site
+  youngjae-yu:
+    first: Youngjae
+    last: Yu
   yuan:
     first: Hang
     last: Yuan
@@ -662,6 +708,9 @@ coauthors:
     first: Yu-Xiang
     last: Wang
     web: https://www.cs.cmu.edu/~yuxiangw/
+  zhijian-zhou:
+    first: Zhijian
+    last: Zhou
   zhiyuan:
     first: Zhiyuan
     last: Li
@@ -984,6 +1033,13 @@ venues:
     type: workshop
     conference: neurips
     year: 2023
+
+  icml-exait:
+    name: Exploration in AI Today
+    web: https://exait-workshop.github.io/
+    type: workshop
+    conference: icml
+    year: 2025
 
   icml-implicit:
     name: Implicit Models
@@ -1349,6 +1405,112 @@ cite_meta:
   i10_index_5y: 37
 
 papers:
+  - key: hsic-d
+    # title: Learning Deep Kernels for Non-Parametric Independence Testing
+    title: Learning Representations for Independence Testing
+    authors:
+      - nate
+      - feng
+      - me
+    venue: preprint
+    submitted: tmlr
+    submitted-date: 2025-06-01
+    year: 2024
+    date: 2024-09-11
+    citations: 2
+    arXiv: '2409.06890'
+    gs_id: 3927924380698217287
+
+  - key: llm-selective-annotation
+    title: "How Effective is Embedding-Based Selective Annotation for In-Context Learning in LLMs?"
+    authors:
+      - won
+      - mingyu
+      - hamed
+      - me
+    year: 2025
+    date: 2025-05-31
+    submitted-date: 2025-05-31
+    venue: private-sub
+    submitted: icml-exait
+
+  - key: explore-bandits
+    title: "Efficient kernelized bandit algorithms via exploration distributions"
+    authors:
+      - bingshan
+      - zheng
+      - me
+    year: 2025
+    date: 2025-05-15
+    submitted-date: 2025-05-15
+    venue: private-sub
+    submitted: neurips
+
+  - key: kci-is-hard
+    title: "On the Hardness of Conditional Independence Testing in Practice"
+    authors:
+      - zheng
+      - roman-p
+      - yazhe
+      - namrata
+      - arthur
+      - me
+    year: 2025
+    date: 2025-05-15
+    submitted-date: 2025-05-15
+    venue: private-sub
+    submitted: neurips
+
+  - key: lld-grpo
+    title: "On the Effect of Negative Gradient in Group Relative Deep Reinforcement Optimization"
+    authors:
+      - wenlong
+      - joshua
+      - muchen-li
+      - me
+      - xiaoxiao
+      - christos
+    collabinfo: My student Yi Ren helped significantly with this paper; my role was much smaller.
+    year: 2025
+    date: 2025-05-15
+    submitted-date: 2025-05-15
+    venue: private-sub
+    submitted: neurips
+
+  - key: active-segmentation
+    title: "Diffusion-Driven Two-Stage Active Learning for Low-Budget Semantic Segmentation"
+    authors:
+      - jeongin-kim
+      - won
+      - youlee-han
+      - giyeong-oh
+      - youngjae-yu
+      - me
+      - june
+    collabinfo: My student Wonho helped significantly with this paper; I helped in developing and framing the method, but didn't have a major supervisory role.
+    year: 2025
+    date: 2025-05-15
+    submitted-date: 2025-05-15
+    venue: private-sub
+    submitted: neurips
+
+  - key: diverse-kernels
+    title: "Learning Diverse Kernels for Aggregated Two-sample and Independence Testing"
+    authors:
+      - zhijian-zhou
+      - xunye-tian
+      - liuhua-peng
+      - chao-lei
+      - antonin
+      - me
+      - feng
+    collabinfo: Once this project was well underway, I joined to help shape the approach and evaluation, and in writing the paper.
+    year: 2025
+    date: 2025-05-15
+    submitted-date: 2025-05-15
+    venue: private-sub
+    submitted: neurips
+
   - key: u-herding
     title: 'Uncertainty Herding: One Active Learning Method for All Label Budgets'
     authors:
@@ -1417,19 +1579,6 @@ papers:
     official: https://openreview.net/forum?id=tPNHOoZFl9
     accept-kind: outstanding paper
     note: Outstanding Paper Award.
-
-  - key: hsic-d
-    title: Learning Deep Kernels for Non-Parametric Independence Testing
-    authors:
-      - nate
-      - feng
-      - me
-    venue: preprint
-    year: 2024
-    date: 2024-09-11
-    citations: 2
-    arXiv: '2409.06890'
-    gs_id: 3927924380698217287
 
   - key: spexphormer
     title: Even Sparser Graph Transformers
@@ -2282,7 +2431,7 @@ papers:
       - me
       - yu-xiang
       - yee-whye
-    collabinfo: Seth led this work, based on his earlier work, but I did substantial model work, programming, and writing on this project.
+    collabinfo: Seth led this work, but I did substantial modeling, programming, and writing on this project.
     arXiv: '1611.03787'
     related: !!omap
       - code: https://github.com/flaxter/us2016/
@@ -2597,7 +2746,7 @@ papers:
       - palmer
       - me
       - fagg
-    collabinfo: I participated in this project as an undergraduate summer intern, but helped significantly with code and experiments.
+    collabinfo: I was an undergraduate summer intern for this project, and helped significantly with code and experiments.
     venue: tech-report
     year: 2012
     date: 2012-01-01

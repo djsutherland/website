@@ -1,5 +1,5 @@
 {%- for paper in papers|sort(attribute="date", reverse=True)
-    if (show_submission or venues[paper.venue].type != "private")
+    if (show_submission or venues.get(paper.get("venue"), {}).get("type") != "private")
 -%}
 
 {%- if show_submission and paper.submitted -%}
@@ -13,7 +13,11 @@
     author = { {{- paper.authors | bibtex_authors(coauthors, year=paper.year) -}} },
     {{ paper.authors | bibtex_author_an(coauthors, year=paper.year) | maybe_wrap("author+an = {", "},\n    ") -}}
     title = { {{- paper.bibtex_title | default(paper.title | latex_escape) -}} },
+    {%- if show_submission and paper['submitted-date'] %}
+    date = { {{- paper['submitted-date'] -}} },
+    {%- else %}
     year = { {{- paper.year -}} },
+    {%- endif %}
     {%- if paper.arXiv %}
     archivePrefix = {arXiv},
     arxivId = { {{- paper.arXiv -}} },
@@ -48,12 +52,10 @@
     {%- if paper.full_version %}
     note = {Full version: \cite{ {{- paper.full_version | get_paper(papers) | bibtex_key(coauthors) -}} }.},
     {%- endif -%}
-    {%- if paper.date and paper.date > today %}
-    pubstate = {To appear.},
-    {%- elif show_submission and paper['submitted-date'] %}
-    pubstate = {In submission ({{ paper['submitted-date'].strftime("%B %Y") }}).},
-    {%- elif show_submission and paper.submitted %}
+    {%- if show_submission and paper.submitted %}
     pubstate = {In submission.},
+    {%- elif paper.date and paper.date > today %}
+    pubstate = {To appear.},
     {%- endif -%}
 
     {{- paper | ar_info(venue) | bibtex_escape | maybe_wrap("\n    arinfo = {", "},") -}}
@@ -74,6 +76,7 @@
            , cites{{thresh}}
         {%- endif -%}
       {%- endfor -%}
+      , mine {{- "" -}}
     },
 }
 

@@ -44,7 +44,7 @@ def paper_data():
         if "date" not in paper:
             print(paper)
 
-        venue_type = data["venues"].get(paper["venue"], {}).get("type", None)
+        venue_type = data["venues"].get(paper.get("venue"), {}).get("type", None)
         v.add(venue_type, paper)
 
         if venue_type != "private":

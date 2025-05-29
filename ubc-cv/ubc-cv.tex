@@ -33,7 +33,7 @@
 
 \input{tweaks.tex}
 
-\addbibresource{biblio-cv.bib}
+\addbibresource{biblio-cv-subs.bib}
 
 \begin{document}
 
@@ -924,18 +924,21 @@ Most of these papers have (or will have) a corresponding conference version abov
 
   Not applicable.
 }%
-
 \nasection{%
   \ulsection{OTHER WORKS}
 
   Not applicable.
 }%
 
-\nasubsection{
-\ulsection{WORK SUBMITTED} % (including publisher and date of submission)}
 
-% \newrefcontext[labelprefix=S]
-% \printbibliography[heading=none,filter=submission]
+\ifboolexpr{togl{ubcformat} and not togl{annualReview}}{
+  \ulsection{WORK SUBMITTED} % (including publisher and date of submission)}
+  \newrefcontext[labelprefix=S]
+  \printbibliography[heading=none,filter=submission]
+}{
+  \nasection{\ulsection{WORK SUBMITTED}
+
+  Not applicable.}
 }
 
 \nasection{%

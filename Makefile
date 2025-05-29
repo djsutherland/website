@@ -42,7 +42,7 @@ ubc-cv/biblio-cv.bib: ${OUTDIR}/biblio-cv.bib
 	ln -f $< $@
 ubc-cv/biblio-cv-subs.bib: ${OUTDIR}/biblio-cv-subs.bib
 	ln -f $< $@
-ubc-cv/ubc-cv.pdf ubc-cv/ubc-cv-anno.pdf ubc-cv/cv.pdf: ubc-cv/ubc-cv.tex $(addprefix ubc-cv/,${UBC_CV_PARTS}) ubc-cv/biblio-cv.bib FORCE_MAKE
+ubc-cv/ubc-cv.pdf ubc-cv/ubc-cv-anno.pdf ubc-cv/cv.pdf: ubc-cv/ubc-cv.tex $(addprefix ubc-cv/,${UBC_CV_PARTS}) ubc-cv/biblio-cv-subs.bib FORCE_MAKE
 	$(LATEXMK) -cd -pdf -silent -jobname=$(basename $(notdir $@)) $<
 ${OUTDIR}/ubc-cv.pdf ${OUTDIR}/ubc-cv-anno.pdf ${OUTDIR}/cv.pdf: ${OUTDIR}/%.pdf: ubc-cv/%.pdf
 	ln -f $< $@
