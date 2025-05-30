@@ -13,7 +13,7 @@
     author = { {{- paper.authors | bibtex_authors(coauthors, year=paper.year) -}} },
     {{ paper.authors | bibtex_author_an(coauthors, year=paper.year) | maybe_wrap("author+an = {", "},\n    ") -}}
     title = { {{- paper.bibtex_title | default(paper.title | latex_escape) -}} },
-    {%- if show_submission and paper['submitted-date'] %}
+    {%- if show_submission and paper.submitted and paper['submitted-date'] %}
     date = { {{- paper['submitted-date'] -}} },
     {%- else %}
     year = { {{- paper.year -}} },
@@ -31,7 +31,7 @@
     booktitle = { {{- venue.name -}} {{- venue.short | maybe_wrap(" (", ")") -}} },
     {%- elif venue.type == "journal" %}
     journal = { {{- venue.name -}} },
-    {{- paper.series | maybe_wrap("\n    series = {", "},\n    ") -}}
+    {{- paper.series | maybe_wrap("\n    series = {", "},") -}}
     {%- elif venue.type == "phd-thesis" %}
     type = {Ph.D. thesis},
     {%- elif venue.type == "ba-thesis" %}
@@ -75,7 +75,6 @@
            , cites{{thresh}}
         {%- endif -%}
       {%- endfor -%}
-      , mine {{- "" -}}
     },
     {%- if cites >= 100 %}
     citesrounded = { \textbf{ {{- cites | round(-2, 'floor') | int | pformat("{:,}") -}} } },

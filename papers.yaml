@@ -986,7 +986,7 @@ venues:
     web: https://iopscience.iop.org/0004-637X/
 
   jair:
-    name: Journal of Artifical Intelligence Research
+    name: Journal of Artificial Intelligence Research
     short: JAIR
     type: journal
     web: https://www.jair.org/index.php/jair
@@ -1665,6 +1665,8 @@ papers:
     arXiv: '2402.13196'
     gs_id: 14319205214147904712
     citations: 4
+    submitted-date: 2025-06-10
+    submitted: jmlr
 
   - key: adaflood
     title: 'AdaFlood: Adaptive Flood Regularization'
@@ -2045,11 +2047,13 @@ papers:
       - nati
     arXiv: '2112.04470'
     venue: jds
+    volume: 1
+    number: 2
     submitted-date: 2022-02-25
-    year: 2023
+    year: 2024
     ss_id: d050f2f50a490fd90a06e5bcc7ed22079a28e404
     gs_id: 3078534230907333706 16851788017931748094
-    date: 2023-05-01
+    date: 2024-04-01
     citations: 30
     collabinfo: Nati and I were both more ``big idea'' supervisors here, and are listed according to seniority.
 
@@ -2214,6 +2218,7 @@ papers:
       - guangquan-zhang
       - arthur
       - me
+    collabinfo: I was the primary supervisor on this project and also did most of the proofs. The three middle authors all gave relatively smaller feedback.
     venue: icml
     official: http://proceedings.mlr.press/v119/liu20m.html
     year: 2020
