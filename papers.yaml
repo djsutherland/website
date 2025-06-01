@@ -1393,16 +1393,16 @@ venues:
 ################################################################################
 
 cite_meta:
-  last_cite_update: '2025-05-29'
+  last_cite_update: '2025-06-01'
 
-  total: 5540
-  total_5y: 4914
+  total: 5574
+  total_5y: 4948
 
   h_index: 28
   h_index_5y: 26
 
-  i10_index: 41
-  i10_index_5y: 38
+  i10_index: 42
+  i10_index_5y: 39
 
 papers:
   - key: hsic-d
@@ -1417,7 +1417,7 @@ papers:
     submitted-date: 2025-06-01
     year: 2024
     date: 2024-09-11
-    citations: 2
+    citations: 1
     arXiv: '2409.06890'
     gs_id: 3927924380698217287
 
@@ -1575,7 +1575,7 @@ papers:
     date: 2025-04-20
     arXiv: '2407.10490'
     gs_id: 12299741007955922
-    citations: 15
+    citations: 18
     official: https://openreview.net/forum?id=tPNHOoZFl9
     accept-kind: outstanding paper
     note: Outstanding Paper Award.
@@ -1633,8 +1633,8 @@ papers:
     year: 2024
     date: 2024-07-21
     arXiv: 2407.12332
-    gs_id: 77021859622142169
-    citations: 8
+    gs_id: 77021859622142169 16561363804118007192
+    citations: 13
 
   - key: il-icl
     title: 'Bias Amplification in Language Model Evolution: An Iterated Learning Perspective'
@@ -1743,8 +1743,6 @@ papers:
     venue: m3l-23
     year: 2023
     date: 2023-12-15
-    gs_id: 16561363804118007192
-    citations: 3
     related: !!omap
       - ICML version: '#grokking'
     full_version: grokking
@@ -1779,7 +1777,7 @@ papers:
     gs_id: 7161387838783241803
     year: 2023
     date: 2023-07-23
-    citations: 156
+    citations: 158
     collabinfo: Ali initiated the initial idea of this project, but I did most of the supervisory work after the extremely early stages; the ordering is partly because of some cross-field confusion about norms between theory and ML.
     related: !!omap
       - blog post: https://blog.research.google/2024/01/exphormer-scaling-transformers-for.html
@@ -1897,7 +1895,7 @@ papers:
     ss_id: 422b68799bfc5cae91febc5c33d59e28b067a368
     gs_id: 7462248955033708193
     official: https://openreview.net/forum?id=dJruFeSRym1
-    citations: 20
+    citations: 21
     collabinfo: A portion of this paper happened while I was out on medical leave; during the periods I was present, supervision was roughly equal among the three faculty authors.
 
   - key: finetuning
@@ -2165,7 +2163,7 @@ papers:
     official: https://jmlr.org/papers/v22/20-451.html
     ss_id: 2be40f5336afa68b49fef41e009b7172c2c9fdeb
     gs_id: 3559273292438013868
-    citations: 1116
+    citations: 1124
 
   - key: irm
     title: Does Invariant Risk Minimization Capture Invariance?
@@ -2185,7 +2183,7 @@ papers:
     accept-kind: oral
     ss_id: 1fc4470c1766aea4c435015f5ef873b066f50121
     gs_id: 12319413802596970196
-    citations: 152
+    citations: 153
 
   - key: uniform-interpolation
     title: On Uniform Convergence and Low-Norm Interpolation Learning
@@ -2304,7 +2302,7 @@ papers:
     my_talk: true
     ss_id: fbc0863a25d99ef3895f174c7c2ee01c4f19df21
     gs_id: 18438114656627425154
-    citations: 93
+    citations: 94
 
   - key: smmd
     title: On gradient regularizers for MMD GANs
@@ -2325,7 +2323,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 3d597e16ef56119bb6e6d78e3f379623862f0752
     gs_id: 12044208657387141906
-    citations: 114
+    citations: 115
 
   - key: mmd-gans
     title: Demystifying MMD GANs
@@ -2346,7 +2344,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 9723066a5587e6267d8abfd7feefd0637a5a211c
     gs_id: 10236052458128513824
-    citations: 1881
+    citations: 1895
 
   - key: bdr-workshop
     title: Bayesian Approaches to Distribution Regression
@@ -2471,7 +2469,7 @@ papers:
       - Oxford talk: '#talk-oxford-opt-mmd'
     ss_id: d772a21f2f687985b41bec2dc47bc2760c57ed2f
     gs_id: 14039271793330969441 11531994075904943226
-    citations: 252
+    citations: 254
 
   - key: thesis
     title: Scalable, Flexible, and Active Learning on Distributions
