@@ -47,7 +47,7 @@ if True:
             continue
         elif len(matches) > 1:
             raise ValueError(
-                "multiple matches for GS publication: {' '.join(p['key'] for p in matches)}\n{pub!r}\n"
+                f"multiple matches for GS publication: {' '.join(p['key'] for p in matches)}\n{pub!r}\n"
             )
         (p,) = matches
 

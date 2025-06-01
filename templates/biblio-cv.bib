@@ -76,6 +76,7 @@
         {%- endif -%}
       {%- endfor -%}
     },
+    cites = { {{- cites | pformat("{:,}") -}} },
     {%- if cites >= 100 %}
     citesrounded = { \textbf{ {{- cites | round(-2, 'floor') | int | pformat("{:,}") -}} } },
     {%- elif cites >= 10 %}

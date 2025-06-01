@@ -48,7 +48,7 @@ ${OUTDIR}/ubc-cv.pdf ${OUTDIR}/ubc-cv-anno.pdf ${OUTDIR}/cv.pdf: ${OUTDIR}/%.pdf
 	ln -f $< $@
 
 ${OUTDIR}/biblio.bib: ${OUTDIR}/biblio-cv.bib
-	sed -e '/author+an = /d; /addendum = /d; /keywords = /d; /pubstate =/d; /arinfo =/d; /collabinfo =/d; /note = /d;' < $< > $@
+	sed -e '/author+an = /d; /addendum = /d; /keywords = /d; /pubstate =/d; /arinfo =/d; /collabinfo =/d; /note = /d; /cites = /d; /citesrounded = /d' < $< > $@
 
 tidy:
 	rm -rf .build/
