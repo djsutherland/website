@@ -720,6 +720,16 @@
 
 \DeclareFieldFormat{addendum}{\textbf{#1}}
 
+\renewbibmacro*{date}{%
+  \iffieldundef{month}
+    {\printdate}
+    {\printfield{month}\setunit{\addspace}\printfield{year}}}
+
+\renewbibmacro*{date+extradate}{%
+  \iffieldundef{month}
+    {\printdateextra}
+    {\printfield{month}\setunit{\addspace}\printfield{year}\printfield{extradate}}}
+
 % \AtEveryBibitem{% put at start of entry
 % }
 
