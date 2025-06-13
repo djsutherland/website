@@ -1386,10 +1386,10 @@ venues:
 ################################################################################
 
 cite_meta:
-  last_cite_update: '2025-06-09'
+  last_cite_update: '2025-06-12'
 
-  total: 5632
-  total_5y: 5006
+  total: 5662
+  total_5y: 5036
 
   h_index: 28
   h_index_5y: 26
@@ -1587,7 +1587,7 @@ papers:
     date: 2024-12-10
     arXiv: '2411.16278'
     gs_id: 9232502564221333600
-    citations: 3
+    citations: 4
 
   - key: maxherding
     title: Generalized Coverage for More Robust Low-Budget Active Learning
@@ -1754,7 +1754,7 @@ papers:
     date: 2023-12-11
     gs_id: 4645152097706396762 12390267246817978257
     arXiv: '2310.18777'
-    citations: 12
+    citations: 13
 
   - key: exphormer
     title: 'Exphormer: Scaling Graph Transformers with Expander Graphs'
@@ -1770,7 +1770,7 @@ papers:
     gs_id: 7161387838783241803
     year: 2023
     date: 2023-07-23
-    citations: 161
+    citations: 164
     collabinfo: Ali initiated the idea of this project, but I did most of the supervisory work after the extremely early stages; the ordering is partly because of some cross-field confusion about norms between theory and ML.
     related: !!omap
       - blog post: https://blog.research.google/2024/01/exphormer-scaling-transformers-for.html
@@ -1787,7 +1787,7 @@ papers:
     ss_id: 923f93d2ae0c73c3934e4b56b063c6dc00bfb978
     gs_id: 4580998787359405017
     arXiv: '2206.12543'
-    citations: 30
+    citations: 32
 
   - key: qai
     title: 'Queer in AI: A Case Study in Community-Led Participatory AI'
@@ -1950,7 +1950,7 @@ papers:
     ss_id: 7fe95ccdc3cfe8acd2c4975b6cbdc419f7e62b85
     gs_id: 15930502597666827182
     arXiv: '2206.12569'
-    citations: 28
+    citations: 29
 
   - key: contrastive-graph-eval
     title: Evaluating Graph Generative Models with Contrastively Learned Features
@@ -1983,7 +1983,7 @@ papers:
     gs_id: 4274032166116217116
     related: !!omap
       - code: https://github.com/jinhseo/OD-WSCL
-    citations: 45
+    citations: 46
     collabinfo: 'I had only a small part in this paper: some general ideas and significant writing help.'
 
   - key: prediction-filtering
@@ -2103,7 +2103,7 @@ papers:
     ss_id: 1a3d5d6cec457f8f3b088cb3636a1a197bd248f6
     gs_id: 13912402342615870661
     arXiv: '2106.08320'
-    citations: 92
+    citations: 93
     collabinfo: Arthur and I were both broad supervisors here, and are listed according to seniority.
 
   - key: meta-2st
@@ -2156,7 +2156,7 @@ papers:
     official: https://jmlr.org/papers/v22/20-451.html
     ss_id: 2be40f5336afa68b49fef41e009b7172c2c9fdeb
     gs_id: 3559273292438013868
-    citations: 1134
+    citations: 1138
 
   - key: irm
     title: Does Invariant Risk Minimization Capture Invariance?
@@ -2176,7 +2176,7 @@ papers:
     accept-kind: oral
     ss_id: 1fc4470c1766aea4c435015f5ef873b066f50121
     gs_id: 12319413802596970196
-    citations: 153
+    citations: 152
 
   - key: uniform-interpolation
     title: On Uniform Convergence and Low-Norm Interpolation Learning
@@ -2218,7 +2218,7 @@ papers:
       - video and slides: https://icml.cc/virtual/2020/poster/5999
     ss_id: cce73b08abf1554c1c730c0333b0b29dadc03c19
     gs_id: 11419051350787047758
-    citations: 237
+    citations: 238
 
   - key: unbiased-mmd-variance
     title: Unbiased estimators for the variance of MMD estimators
@@ -2275,7 +2275,7 @@ papers:
     date: 2019-02-26
     ss_id: 333ddc46a211ab1eb6ceb1f4b7c4952eadce8015
     gs_id: 12908060365392151722
-    citations: 75
+    citations: 76
 
   - key: dkef
     title: Learning deep kernels for exponential family densities
@@ -2295,7 +2295,7 @@ papers:
     my_talk: true
     ss_id: fbc0863a25d99ef3895f174c7c2ee01c4f19df21
     gs_id: 18438114656627425154
-    citations: 95
+    citations: 96
 
   - key: smmd
     title: On gradient regularizers for MMD GANs
@@ -2337,7 +2337,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 9723066a5587e6267d8abfd7feefd0637a5a211c
     gs_id: 10236052458128513824
-    citations: 1924
+    citations: 1938
 
   - key: bdr-workshop
     title: Bayesian Approaches to Distribution Regression
