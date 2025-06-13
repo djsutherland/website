@@ -707,7 +707,7 @@
 \DeclareSourcemap{
   \maps[datatype=bibtex]{
     \map[overwrite]{ % strip eprint (arXiv) info from published papers
-      \step[fieldsource=keywords,notmatch=\regexp{submitted|tech-report},final]
+      \step[fieldsource=keywords,notmatch=\regexp{submission|tech-report},final]
       \step[fieldset=eprint,fieldvalue=]
     }
   }

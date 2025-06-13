@@ -1034,13 +1034,6 @@ venues:
     conference: neurips
     year: 2023
 
-  icml-exait:
-    name: Exploration in AI Today
-    web: https://exait-workshop.github.io/
-    type: workshop
-    conference: icml
-    year: 2025
-
   icml-implicit:
     name: Implicit Models
     web: https://sites.google.com/view/implicitmodels/
@@ -1432,7 +1425,6 @@ papers:
     date: 2025-05-31
     submitted-date: 2025-05-31
     venue: private-sub
-    submitted: icml-exait
 
   - key: explore-bandits
     title: Efficient kernelized bandit algorithms via exploration distributions
@@ -1443,7 +1435,8 @@ papers:
     year: 2025
     date: 2025-05-15
     submitted-date: 2025-05-15
-    venue: private-sub
+    venue: preprint
+    arXiv: '2506.10091'
     submitted: neurips
 
   - key: kci-is-hard
