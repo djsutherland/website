@@ -1386,12 +1386,12 @@ venues:
 ################################################################################
 
 cite_meta:
-  last_cite_update: '2025-06-12'
+  last_cite_update: '2025-06-16'
 
-  total: 5662
-  total_5y: 5036
+  total: 5694
+  total_5y: 5068
 
-  h_index: 28
+  h_index: 29
   h_index_5y: 26
 
   i10_index: 42
@@ -1467,7 +1467,8 @@ papers:
     year: 2025
     date: 2025-05-15
     submitted-date: 2025-05-15
-    venue: private-sub
+    arXiv: '2505.18830'
+    venue: preprint
     submitted: neurips
 
   - key: active-segmentation
@@ -1770,7 +1771,7 @@ papers:
     gs_id: 7161387838783241803
     year: 2023
     date: 2023-07-23
-    citations: 164
+    citations: 165
     collabinfo: Ali initiated the idea of this project, but I did most of the supervisory work after the extremely early stages; the ordering is partly because of some cross-field confusion about norms between theory and ML.
     related: !!omap
       - blog post: https://blog.research.google/2024/01/exphormer-scaling-transformers-for.html
@@ -1935,7 +1936,7 @@ papers:
     ss_id: f8b29bc83e9d84ff4283811faa2bb31b650c6d10
     gs_id: 2093430636599193484
     arXiv: '2210.12082'
-    citations: 27
+    citations: 30
     collabinfo: Nati and I were both broad supervisors here, and are listed according to seniority.
 
   - key: active-ntk
@@ -1950,7 +1951,7 @@ papers:
     ss_id: 7fe95ccdc3cfe8acd2c4975b6cbdc419f7e62b85
     gs_id: 15930502597666827182
     arXiv: '2206.12569'
-    citations: 29
+    citations: 30
 
   - key: contrastive-graph-eval
     title: Evaluating Graph Generative Models with Contrastively Learned Features
@@ -2103,7 +2104,7 @@ papers:
     ss_id: 1a3d5d6cec457f8f3b088cb3636a1a197bd248f6
     gs_id: 13912402342615870661
     arXiv: '2106.08320'
-    citations: 93
+    citations: 95
     collabinfo: Arthur and I were both broad supervisors here, and are listed according to seniority.
 
   - key: meta-2st
@@ -2156,7 +2157,7 @@ papers:
     official: https://jmlr.org/papers/v22/20-451.html
     ss_id: 2be40f5336afa68b49fef41e009b7172c2c9fdeb
     gs_id: 3559273292438013868
-    citations: 1138
+    citations: 1148
 
   - key: irm
     title: Does Invariant Risk Minimization Capture Invariance?
@@ -2176,7 +2177,7 @@ papers:
     accept-kind: oral
     ss_id: 1fc4470c1766aea4c435015f5ef873b066f50121
     gs_id: 12319413802596970196
-    citations: 152
+    citations: 154
 
   - key: uniform-interpolation
     title: On Uniform Convergence and Low-Norm Interpolation Learning
@@ -2197,7 +2198,7 @@ papers:
       - NYU talk: '#talk-nyu-interpolation'
     ss_id: 65a2da57b52942cf486cd06682db0a4c53eaae34
     gs_id: 11067119780138908286
-    citations: 44
+    citations: 43
 
   - key: deep-testing
     title: Learning Deep Kernels for Non-Parametric Two-Sample Tests
@@ -2218,7 +2219,7 @@ papers:
       - video and slides: https://icml.cc/virtual/2020/poster/5999
     ss_id: cce73b08abf1554c1c730c0333b0b29dadc03c19
     gs_id: 11419051350787047758
-    citations: 238
+    citations: 240
 
   - key: unbiased-mmd-variance
     title: Unbiased estimators for the variance of MMD estimators
@@ -2295,7 +2296,7 @@ papers:
     my_talk: true
     ss_id: fbc0863a25d99ef3895f174c7c2ee01c4f19df21
     gs_id: 18438114656627425154
-    citations: 96
+    citations: 97
 
   - key: smmd
     title: On gradient regularizers for MMD GANs
@@ -2337,7 +2338,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 9723066a5587e6267d8abfd7feefd0637a5a211c
     gs_id: 10236052458128513824
-    citations: 1938
+    citations: 1948
 
   - key: bdr-workshop
     title: Bayesian Approaches to Distribution Regression
@@ -2462,7 +2463,7 @@ papers:
       - Oxford talk: '#talk-oxford-opt-mmd'
     ss_id: d772a21f2f687985b41bec2dc47bc2760c57ed2f
     gs_id: 14039271793330969441 11531994075904943226
-    citations: 255
+    citations: 256
 
   - key: thesis
     title: Scalable, Flexible, and Active Learning on Distributions
