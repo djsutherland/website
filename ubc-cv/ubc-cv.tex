@@ -943,19 +943,22 @@ Most of these papers have (or will have) a corresponding conference version abov
 
 
 \ifboolexpr{togl{ubcformat} and not togl{annualReview}}{
-  \ulsection{WORK SUBMITTED} % (including publisher and date of submission)}
+  \ulsection{WORK SUBMITTED} % (including publisher and date of submission)
   \newrefcontext[labelprefix=S]
   \printbibliography[heading=none,filter=submission]
+
+
+  \ulsection{WORK IN PROGRESS} % (including degree of completion)
+  \newrefcontext[labelprefix=P]
+  \printbibliography[heading=none,filter=prep]
 }{
   \nasection{\ulsection{WORK SUBMITTED}
 
   Not applicable.}
-}
 
-\nasection{%
-  \ulsection{WORK IN PROGRESS} % (including degree of completion)
+  \nasection{\ulsection{WORK IN PROGRESS}
 
-  Not applicable.
+  Not applicable.}
 }
 
 \end{document}

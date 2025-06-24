@@ -361,6 +361,10 @@ coauthors:
     first: Li  # how he wants it...
     last: Wenliang
     web: https://kevin-w-li.github.io/
+  khanh:
+    first: Khanh
+    last: Dao Duc
+    web: https://kdaoduc.com/
   klubicka:
     first: Filip
     last: Klubička
@@ -662,6 +666,10 @@ coauthors:
   welkie:
     first: Allen
     last: Welkie
+  wenjun:
+    first: Wenjun
+    last: Zhao
+    web: https://wenjunzhaowo.github.io/
   wenkai:
     first: Wenkai
     last: Xu
@@ -1398,6 +1406,17 @@ cite_meta:
   i10_index_5y: 39
 
 papers:
+  - key: distance-dists
+    title: Quantifying variability in biological shapes through distance distributions and kernel methods
+    authors:
+      - wenjun
+      - me
+      - khanh
+    venue: in-prep
+    year: 2025
+    date: 2025-08-31
+    collabinfo: This work is mostly done, and should be submitted this summer.
+
   - key: hsic-d
     # title: Learning Deep Kernels for Non-Parametric Independence Testing
     title: Learning Representations for Independence Testing
@@ -1406,13 +1425,12 @@ papers:
       - feng
       - me
     venue: preprint
-    submitted: tmlr
-    submitted-date: 2025-06-01
     year: 2024
     date: 2024-09-11
     citations: 1
     arXiv: '2409.06890'
     gs_id: 3927924380698217287
+    collabinfo: This work is essentially complete, and will be submitted to TMLR in the coming days.
 
   - key: llm-selective-annotation
     title: How Effective is Embedding-Based Selective Annotation for In-Context Learning in LLMs?
@@ -1423,8 +1441,8 @@ papers:
       - me
     year: 2025
     date: 2025-05-31
-    submitted-date: 2025-05-31
-    venue: private-sub
+    venue: in-prep
+    collabinfo: This work is essentially done and will be submitted to a workshop in the near future.
 
   - key: explore-bandits
     title: Efficient kernelized bandit algorithms via exploration distributions
@@ -1659,8 +1677,7 @@ papers:
     arXiv: '2402.13196'
     gs_id: 14319205214147904712
     citations: 4
-    submitted-date: 2025-06-10
-    submitted: jmlr
+    collabinfo: This paper is nearly complete, and will be submitted to JMLR in the next few weeks.
 
   - key: adaflood
     title: 'AdaFlood: Adaptive Flood Regularization'

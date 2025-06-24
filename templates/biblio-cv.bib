@@ -54,6 +54,8 @@
     {%- endif -%}
     {%- if show_submission and paper.submitted %}
     pubstate = {In submission.},
+    {%- elif show_submission and venue.type == "private" %}
+    pubstate = { {{- venue.name -}} .},
     {%- elif paper.date and paper.date > today %}
     pubstate = {To appear.},
     {%- endif -%}
@@ -68,7 +70,7 @@
           , new
         {%- endif -%}
       {%- endif -%}
-      {%- if paper.date and paper.date > today -%}, toappear{%- endif -%}
+      {%- if venue.type != "private" and paper.date and paper.date > today -%}, toappear{%- endif -%}
       {%- set cites = paper.get('citations', 0) -%}
       {%- for thresh in cite_threshes if cites >= thresh -%}
         {%- if loop.first -%}
