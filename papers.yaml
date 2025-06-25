@@ -1356,6 +1356,10 @@ venues:
     name: Computational Statistics and Machine Learning seminar, Oxford University
     type: seminar
 
+  penn:
+    name: University of Pennsylvania
+    type: seminar
+
   penn-state-stat:
     name: Penn State, Statistics colloquium
     type: seminar
@@ -2793,6 +2797,22 @@ papers:
 ################################################################################
 
 talks:
+  - key: entk-penn
+    title: Local Learning Dynamics Help Explain (Post-)Training Behaviour
+    date: 2025-06-26
+    type: international
+    venue: penn
+    papers:
+      - llm-dynamics
+      - lld-grpo
+      - learning-path
+      - finetuning
+      - active-ntk
+      - pseudo-ntk
+    slides: https://djsutherland.ml/slides/entk-penn/
+    related: !!omap
+      - slides (pdf): https://djsutherland.ml/slides/entk-penn.pdf
+
   - key: entk-mila
     title: Local Learning Dynamics Help Explain (Post-)Training Behaviour
     date: 2025-06-25
