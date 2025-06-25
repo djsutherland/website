@@ -1339,6 +1339,10 @@ venues:
     name: Machine Learning reading group, Google New York
     type: seminar
 
+  mila-mlopt:
+    name: Machine Learning and Optimization seminar, Mila
+    type: seminar
+
   msr-montreal:
     name: Microsoft Research Montréal
     type: seminar
@@ -2789,6 +2793,22 @@ papers:
 ################################################################################
 
 talks:
+  - key: entk-mila
+    title: Local Learning Dynamics Help Explain (Post-)Training Behaviour
+    date: 2025-06-25
+    type: national
+    venue: mila-mlopt
+    papers:
+      - llm-dynamics
+      - lld-grpo
+      - learning-path
+      - finetuning
+      - active-ntk
+      - pseudo-ntk
+    slides: https://djsutherland.ml/slides/entk-mila/
+    related: !!omap
+      - slides (pdf): https://djsutherland.ml/slides/entk-mila.pdf
+
   - key: herding-squeezing
     title: Data-efficient learning, in general and in LLM preference tuning
     date: 2025-02-22
