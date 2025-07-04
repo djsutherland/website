@@ -1402,10 +1402,10 @@ venues:
 ################################################################################
 
 cite_meta:
-  last_cite_update: '2025-06-24'
+  last_cite_update: '2025-07-04'
 
-  total: 5730
-  total_5y: 5104
+  total: 5803
+  total_5y: 5177
 
   h_index: 29
   h_index_5y: 26
@@ -1583,7 +1583,7 @@ papers:
     date: 2024-12-10
     arXiv: '2409.09626'
     gs_id: 4259114175241749809
-    citations: 1
+    citations: 2
 
   - key: llm-dynamics
     title: Learning Dynamics of LLM Finetuning
@@ -1595,7 +1595,7 @@ papers:
     date: 2025-04-20
     arXiv: '2407.10490'
     gs_id: 12299741007955922
-    citations: 23
+    citations: 25
     official: https://openreview.net/forum?id=tPNHOoZFl9
     accept-kind: outstanding paper
     note: Outstanding Paper Award.
@@ -1654,7 +1654,7 @@ papers:
     date: 2024-07-21
     arXiv: 2407.12332
     gs_id: 77021859622142169 16561363804118007192
-    citations: 13
+    citations: 14
 
   - key: il-icl
     title: 'Bias Amplification in Language Model Evolution: An Iterated Learning Perspective'
@@ -1684,7 +1684,7 @@ papers:
     year: 2024
     arXiv: '2402.13196'
     gs_id: 14319205214147904712
-    citations: 4
+    citations: 5
     collabinfo: This paper is nearly complete, and will be submitted to JMLR in the next few weeks.
 
   - key: adaflood
@@ -1780,7 +1780,7 @@ papers:
     date: 2023-12-11
     gs_id: 4645152097706396762 12390267246817978257
     arXiv: '2310.18777'
-    citations: 14
+    citations: 15
 
   - key: exphormer
     title: 'Exphormer: Scaling Graph Transformers with Expander Graphs'
@@ -1796,7 +1796,7 @@ papers:
     gs_id: 7161387838783241803
     year: 2023
     date: 2023-07-23
-    citations: 168
+    citations: 176
     collabinfo: Ali initiated the idea of this project, but I did most of the supervisory work after the extremely early stages; the ordering is partly because of some cross-field confusion about norms between theory and ML.
     related: !!omap
       - blog post: https://blog.research.google/2024/01/exphormer-scaling-transformers-for.html
@@ -1875,7 +1875,7 @@ papers:
       - saraswat
       - vytla
       - stark
-    citations: 44
+    citations: 48
     gs_id: 18334777895960251368 4841877026388899314
     collabinfo: This was a highly collaborative work (fifty authors); I was one of the five or so most involved in the writing.
 
@@ -1894,7 +1894,7 @@ papers:
     ss_id: 8cb6555517575be141174a17f1e0dcf48739aaf4
     gs_id: 854611520534599253 10298606910796508333
     arXiv: '2205.12900'
-    citations: 40
+    citations: 41
 
   - key: circe
     title: Efficient Conditionally Invariant Representation Learning
@@ -1976,7 +1976,7 @@ papers:
     ss_id: 7fe95ccdc3cfe8acd2c4975b6cbdc419f7e62b85
     gs_id: 15930502597666827182
     arXiv: '2206.12569'
-    citations: 30
+    citations: 31
 
   - key: contrastive-graph-eval
     title: Evaluating Graph Generative Models with Contrastively Learned Features
@@ -2041,7 +2041,7 @@ papers:
     ss_id: 91db2f1dae977f2cf139ce194173487133b1ad67
     gs_id: 4997668798655366002
     arXiv: '2203.02485'
-    citations: 27
+    citations: 29
 
   - key: private-mmd
     title: Learning Privacy-Preserving Deep Kernels with Known Demographics
@@ -2112,7 +2112,7 @@ papers:
       - NYU talk: '#talk-nyu-interpolation'
     ss_id: 24721e44b5510bfda275ddb023c2f107c9526870
     gs_id: 14582780933724089324
-    citations: 85
+    citations: 86
     collabinfo: Nati and I were both broad supervisors here, though I had perhaps more significant regular involvement, and are listed according to seniority.
 
   - key: ssl-hsic
@@ -2146,7 +2146,7 @@ papers:
     ss_id: 6b32180f7849dcd5a9f79d7cd0f58a2068d81c32
     gs_id: 3537368320170973148
     arXiv: '2106.07636'
-    citations: 31
+    citations: 33
 
   - key: pot
     title: 'POT: Python Optimal Transport'
@@ -2182,7 +2182,7 @@ papers:
     official: https://jmlr.org/papers/v22/20-451.html
     ss_id: 2be40f5336afa68b49fef41e009b7172c2c9fdeb
     gs_id: 3559273292438013868
-    citations: 1156
+    citations: 1170
 
   - key: irm
     title: Does Invariant Risk Minimization Capture Invariance?
@@ -2202,7 +2202,7 @@ papers:
     accept-kind: oral
     ss_id: 1fc4470c1766aea4c435015f5ef873b066f50121
     gs_id: 12319413802596970196
-    citations: 154
+    citations: 155
 
   - key: uniform-interpolation
     title: On Uniform Convergence and Low-Norm Interpolation Learning
@@ -2223,7 +2223,7 @@ papers:
       - NYU talk: '#talk-nyu-interpolation'
     ss_id: 65a2da57b52942cf486cd06682db0a4c53eaae34
     gs_id: 11067119780138908286
-    citations: 43
+    citations: 44
 
   - key: deep-testing
     title: Learning Deep Kernels for Non-Parametric Two-Sample Tests
@@ -2244,7 +2244,7 @@ papers:
       - video and slides: https://icml.cc/virtual/2020/poster/5999
     ss_id: cce73b08abf1554c1c730c0333b0b29dadc03c19
     gs_id: 11419051350787047758
-    citations: 241
+    citations: 243
 
   - key: unbiased-mmd-variance
     title: Unbiased estimators for the variance of MMD estimators
@@ -2301,7 +2301,7 @@ papers:
     date: 2019-02-26
     ss_id: 333ddc46a211ab1eb6ceb1f4b7c4952eadce8015
     gs_id: 12908060365392151722
-    citations: 76
+    citations: 77
 
   - key: dkef
     title: Learning deep kernels for exponential family densities
@@ -2342,7 +2342,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 3d597e16ef56119bb6e6d78e3f379623862f0752
     gs_id: 12044208657387141906
-    citations: 116
+    citations: 117
 
   - key: mmd-gans
     title: Demystifying MMD GANs
@@ -2363,7 +2363,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 9723066a5587e6267d8abfd7feefd0637a5a211c
     gs_id: 10236052458128513824
-    citations: 1962
+    citations: 1984
 
   - key: bdr-workshop
     title: Bayesian Approaches to Distribution Regression
@@ -2488,7 +2488,7 @@ papers:
       - Oxford talk: '#talk-oxford-opt-mmd'
     ss_id: d772a21f2f687985b41bec2dc47bc2760c57ed2f
     gs_id: 14039271793330969441 11531994075904943226
-    citations: 257
+    citations: 260
 
   - key: thesis
     title: Scalable, Flexible, and Active Learning on Distributions
@@ -2618,7 +2618,7 @@ papers:
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/rff_uai15.pdf
     ss_id: 78e95099ec2ac3cb087eb47ba7c87ddb01a19405
     gs_id: 2736757817032849196
-    citations: 243
+    citations: 245
 
   - key: apps
     title: Active Pointillistic Pattern Search
@@ -2699,7 +2699,7 @@ papers:
     my_talk: true
     ss_id: 2bf7e7fb156466546428dc6d25702d32514ef41d
     gs_id: 6061284565694240919
-    citations: 49
+    citations: 50
 
   - key: sdm-arxiv
     title: Kernels on Sample Sets via Nonparametric Divergence Estimates
