@@ -1433,12 +1433,13 @@ papers:
       - feng
       - me
     venue: preprint
-    year: 2024
-    date: 2024-09-11
+    year: 2025
+    date: 2025-07-04
     citations: 1
     arXiv: '2409.06890'
     gs_id: 3927924380698217287
-    collabinfo: This work is essentially complete, and will be submitted to TMLR in the coming days.
+    submitted: tmlr
+    submitted-date: 2025-07-04
 
   - key: llm-selective-annotation
     title: How Effective is Embedding-Based Selective Annotation for In-Context Learning in LLMs?
