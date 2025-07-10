@@ -1020,6 +1020,14 @@ venues:
   ############################################################################
   # Workshops with publications
 
+  ai4math-25:
+    name: AI for Math
+    short: AI4MATH
+    web: https://sites.google.com/view/ai4mathworkshopicml2025/
+    type: workshop
+    conference: icml
+    year: 2025
+
   bayesopt-14:
     name: Bayesian Optimization
     short: BayesOpt
@@ -1402,13 +1410,13 @@ venues:
 ################################################################################
 
 cite_meta:
-  last_cite_update: '2025-07-04'
+  last_cite_update: '2025-07-10'
 
-  total: 5803
-  total_5y: 5177
+  total: 5828
+  total_5y: 5200
 
   h_index: 29
-  h_index_5y: 26
+  h_index_5y: 27
 
   i10_index: 42
   i10_index_5y: 39
@@ -1480,6 +1488,37 @@ papers:
     submitted-date: 2025-05-15
     venue: private-sub
     submitted: neurips
+
+  - key: thr-grpo-ai4math
+    title: 'Token Hidden Reward: Steering Exploration-Exploitation in GRPO Training'
+    authors:
+      - wenlong
+      - joshua
+      - me
+      - christos
+      - xiaoxiao
+    collabinfo: My student Yi Ren helped significantly with this paper; my role was much smaller.
+    venue: ai4math-25
+    year: 2025
+    date: 2025-07-18
+    # official: https://openreview.net/forum?id=eyPPunAzSr
+    note: Best Paper Award.
+
+  - key: lld-grpo-ai4math
+    title: On the Effect of Negative Gradient in Group Relative Deep Reinforcement Optimization
+    authors:
+      - wenlong
+      - joshua
+      - muchen-li
+      - me
+      - xiaoxiao
+      - christos
+    collabinfo: My student Yi Ren helped significantly with this paper; my role was much smaller.
+    year: 2025
+    date: 2025-07-18
+    venue: ai4math-25
+    # official: https://openreview.net/forum?id=a3v2HhEWrf
+    full_version: lld-grpo
 
   - key: lld-grpo
     title: On the Effect of Negative Gradient in Group Relative Deep Reinforcement Optimization
@@ -1596,7 +1635,7 @@ papers:
     date: 2025-04-20
     arXiv: '2407.10490'
     gs_id: 12299741007955922
-    citations: 25
+    citations: 27
     official: https://openreview.net/forum?id=tPNHOoZFl9
     accept-kind: outstanding paper
     note: Outstanding Paper Award.
@@ -1735,8 +1774,6 @@ papers:
     year: 2024
     date: 2024-02-26
     venue: ppai-24
-    related: !!omap
-      - JAIR version: '#dp-ntk'
     full_version: dp-ntk
 
   - key: sparsifying-exphormer
@@ -1763,8 +1800,6 @@ papers:
     venue: m3l-23
     year: 2023
     date: 2023-12-15
-    related: !!omap
-      - ICML version: '#grokking'
     full_version: grokking
 
   - key: sem-il
@@ -1797,7 +1832,7 @@ papers:
     gs_id: 7161387838783241803
     year: 2023
     date: 2023-07-23
-    citations: 176
+    citations: 178
     collabinfo: Ali initiated the idea of this project, but I did most of the supervisory work after the extremely early stages; the ordering is partly because of some cross-field confusion about norms between theory and ML.
     related: !!omap
       - blog post: https://blog.research.google/2024/01/exphormer-scaling-transformers-for.html
@@ -1876,7 +1911,7 @@ papers:
       - saraswat
       - vytla
       - stark
-    citations: 48
+    citations: 49
     gs_id: 18334777895960251368 4841877026388899314
     collabinfo: This was a highly collaborative work (fifty authors); I was one of the five or so most involved in the writing.
 
@@ -2010,7 +2045,7 @@ papers:
     gs_id: 4274032166116217116
     related: !!omap
       - code: https://github.com/jinhseo/OD-WSCL
-    citations: 46
+    citations: 47
     collabinfo: 'I had only a small part in this paper: some general ideas and significant writing help.'
 
   - key: prediction-filtering
@@ -2053,8 +2088,7 @@ papers:
     date: 2022-02-28
     venue: ppai-22
     citations: 0
-    related: !!omap
-      - AISTATS version: '#mmd-bfair'
+    full_version: mmd-bfair
 
   - key: optimistic-rates
     title: 'Optimistic Rates: A Unifying Theory for Interpolation Learning and Regularization in Linear Regression'
@@ -2072,7 +2106,7 @@ papers:
     ss_id: d050f2f50a490fd90a06e5bcc7ed22079a28e404
     gs_id: 3078534230907333706 16851788017931748094
     date: 2024-04-01
-    citations: 30
+    citations: 31
     collabinfo: Nati and I were both broad supervisors here, and are listed according to seniority.
 
   - key: queerinai-dni
@@ -2183,7 +2217,7 @@ papers:
     official: https://jmlr.org/papers/v22/20-451.html
     ss_id: 2be40f5336afa68b49fef41e009b7172c2c9fdeb
     gs_id: 3559273292438013868
-    citations: 1170
+    citations: 1173
 
   - key: irm
     title: Does Invariant Risk Minimization Capture Invariance?
@@ -2364,7 +2398,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 9723066a5587e6267d8abfd7feefd0637a5a211c
     gs_id: 10236052458128513824
-    citations: 1984
+    citations: 1995
 
   - key: bdr-workshop
     title: Bayesian Approaches to Distribution Regression
@@ -2380,7 +2414,6 @@ papers:
     related: !!omap
       - slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/bdr-nips/
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/bdr-nips17ws.pdf
-      - AISTATS version: '#bdr'
     full_version: bdr
     note: Selected for oral presentation.
     accept-kind: oral
@@ -2489,7 +2522,7 @@ papers:
       - Oxford talk: '#talk-oxford-opt-mmd'
     ss_id: d772a21f2f687985b41bec2dc47bc2760c57ed2f
     gs_id: 14039271793330969441 11531994075904943226
-    citations: 260
+    citations: 261
 
   - key: thesis
     title: Scalable, Flexible, and Active Learning on Distributions
@@ -2598,7 +2631,6 @@ papers:
     related: !!omap
       - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/hdd_nips15ws.pdf
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/hdd_nips15ws.pdf
-      - AAAI version: '#hdd'
     citations: 0
 
   - key: rff
@@ -2619,7 +2651,7 @@ papers:
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/rff_uai15.pdf
     ss_id: 78e95099ec2ac3cb087eb47ba7c87ddb01a19405
     gs_id: 2736757817032849196
-    citations: 245
+    citations: 246
 
   - key: apps
     title: Active Pointillistic Pattern Search
@@ -2654,7 +2686,6 @@ papers:
     related: !!omap
       - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/apps_nips14ws.pdf
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/apps_nips14ws.pdf
-      - AISTATS version: '#apps'
     full_version: apps
     citations: 0
 
@@ -2678,7 +2709,7 @@ papers:
     arXiv: '1410.0686'
     ss_id: f5b6eb5c3fa7eb7a569d6c2af0a43f7123034bd0
     gs_id: 15766717484171055980
-    citations: 118
+    citations: 120
 
   - key: active-mf
     title: Active learning and search on low-rank matrices
