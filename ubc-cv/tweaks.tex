@@ -193,14 +193,19 @@
     \begin{longtable}{ p{0.26\textwidth} p{0.24\textwidth} p{0.075\textwidth} p{0.075\textwidth} p{0.27\textwidth} }
       %% The header for the top of the table
       \toprule
-      \multicolumn{1}{c}{\bf Student} & \multicolumn{1}{c}{\bf Program} & \multicolumn{1}{c}{\bf Start} & \multicolumn{1}{c}{\bf Finish}  & \multicolumn{1}{c}{\bf Supervisory Role}                                                                                            \\
+      \multicolumn{1}{c}{\bf Student} & \multicolumn{1}{c}{\bf Program} & \multicolumn{1}{c}{\bf Start} & \multicolumn{1}{c}{\bf Finish} 
+      % & \multicolumn{1}{c}{\bf Supervisory Role}
+      & \multicolumn{1}{c}{\bf Co-supervisors}
+      \\
       % \cmidrule(lr){3-4}
       %                                      & \multicolumn{1}{c}{\bf Type}    & \multicolumn{1}{c}{\bf Start} & \multicolumn{1}{c}{\bf Finish}           & \multicolumn{1}{c}{\bf\parbox[t]{0.27\textwidth}{\centering(supervisor, co-supervisor)}} \\
       \midrule \endfirsthead
       %% The header for the continuation pages
       \toprule
-      \multicolumn{1}{c}{\bf Student} & \multicolumn{1}{c}{\bf Program} & \multicolumn{1}{c}{\bf Start} & \multicolumn{1}{c}{\bf Finish}  & \multicolumn{1}{c}{\bf Supervisory Role}                                                                                            \\
-      % \cmidrule(lr){3-4}
+      \multicolumn{1}{c}{\bf Student} & \multicolumn{1}{c}{\bf Program} & \multicolumn{1}{c}{\bf Start} & \multicolumn{1}{c}{\bf Finish} 
+      %& \multicolumn{1}{c}{\bf Supervisory Role}
+      & \multicolumn{1}{c}{\bf Co-supervisors}
+      \\ % \cmidrule(lr){3-4}
       %                                      & \multicolumn{1}{c}{\bf Type}    & \multicolumn{1}{c}{\bf Start} & \multicolumn{1}{c}{\bf Finish}           & \multicolumn{1}{c}{\bf\parbox[t]{0.27\textwidth}{\centering(supervisor, co-supervisor)}} \\
       \midrule \endhead
       %% Footer for the bottom of the table
@@ -231,6 +236,33 @@
       %% Footer for the continued pages
       \bottomrule \footnotesize{\emph{(continued\ldots)}} \endfoot
       }{
+    \end{longtable}
+  \end{center}
+}
+
+\newenvironment{usuptable}{
+  \begin{center}
+    \begin{longtable}{ p{0.22\textwidth} p{0.52\textwidth} p{0.075\textwidth} p{0.075\textwidth}}
+      %% The header for the top of the table
+      \toprule
+      \multicolumn{1}{c}{\bf Student} & \multicolumn{1}{c}{\bf Program} & \multicolumn{1}{c}{\bf Start} & \multicolumn{1}{c}{\bf Finish} 
+      % & \multicolumn{1}{c}{\bf Supervisory Role}
+      \\
+      % \cmidrule(lr){3-4}
+      %                                      & \multicolumn{1}{c}{\bf Type}    & \multicolumn{1}{c}{\bf Start} & \multicolumn{1}{c}{\bf Finish}           & \multicolumn{1}{c}{\bf\parbox[t]{0.27\textwidth}{\centering(supervisor, co-supervisor)}} \\
+      \midrule \endfirsthead
+      %% The header for the continuation pages
+      \toprule
+      \multicolumn{1}{c}{\bf Student} & \multicolumn{1}{c}{\bf Program} & \multicolumn{1}{c}{\bf Start} & \multicolumn{1}{c}{\bf Finish} 
+      %& \multicolumn{1}{c}{\bf Supervisory Role}
+      \\ % \cmidrule(lr){3-4}
+      %                                      & \multicolumn{1}{c}{\bf Type}    & \multicolumn{1}{c}{\bf Start} & \multicolumn{1}{c}{\bf Finish}           & \multicolumn{1}{c}{\bf\parbox[t]{0.27\textwidth}{\centering(supervisor, co-supervisor)}} \\
+      \midrule \endhead
+      %% Footer for the bottom of the table
+      \bottomrule \endlastfoot
+      %% Footer for the continued pages
+      \bottomrule \footnotesize{\emph{(continued\ldots)}} \endfoot
+}{
     \end{longtable}
   \end{center}
 }
