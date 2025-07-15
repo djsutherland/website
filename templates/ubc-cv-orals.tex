@@ -1,4 +1,5 @@
-{%- for paper in papers if paper["accept-kind"] and venues[paper.venue].type == "conference" -%}
+{%- for paper in papers if paper["accept-kind"]
+    and (venues[paper.venue].type == "conference" or paper["accept-kind"] == "best paper") -%}
 {%- set venue = venues[paper.venue] %}
 
 \item[

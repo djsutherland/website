@@ -1027,6 +1027,11 @@ venues:
     type: workshop
     conference: icml
     year: 2025
+    accepts:
+      2025: !!omap
+        - best paper: 2
+        - unspecial: 110
+        - submitted: 172
 
   bayesopt-14:
     name: Bayesian Optimization
@@ -1502,6 +1507,7 @@ papers:
     year: 2025
     date: 2025-07-18
     # official: https://openreview.net/forum?id=eyPPunAzSr
+    accept-kind: best paper
     note: Best Paper Award.
 
   - key: lld-grpo-ai4math
