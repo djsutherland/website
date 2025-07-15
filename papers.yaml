@@ -3,64 +3,67 @@ coauthors:
     first: Danica J.
     last: Sutherland
     is_me: true
+    student_years: [2000, 2019]
 
   amin:
     first: Mohamad Amin
     last: Mohamadi
     web: https://mohamad-amin.github.io/
-    student_years: [2021, 2024]
+    my_student_years: [2021, 2024]
   bingshan:
     first: Bingshan
     last: Hu
     web: https://sites.google.com/view/bingshan-hu
-    student_years: [2023, 2025]
+    my_student_years: [2023, 2025]
   hamed:
     first: Hamed
     last: Shirzad
     web: https://sites.google.com/view/hamedshirzad/home
-    student_years: [2021, 3000]
+    my_student_years: [2021, 3000]
   joshua:
     first: Yi
     last: Ren
     web: https://joshua-ren.github.io/
-    student_years: [2020, 3000]
+    my_student_years: [2020, 2025]
   milad:
     first: Milad
     last: Jalali Asadabadi
-    student_years: [2020, 2024]
+    my_student_years: [2020, 2024]
   namrata:
     first: Namrata
     last: Deka
     web: https://namratadeka.github.io/
-    student_years: [2019, 2024]  # fudge for the unbiased est paper
+    my_student_years: [2019, 2024]  # fudge for the unbiased est paper
+    student_years: [2000, 2030]
   nate:
     first: Nathaniel
     last: Xu
-    student_years: [2023, 3000]
+    my_student_years: [2023, 3000]
   won:
     first: Wonho
     last: Bae
     web: https://won-bae.github.io/
-    student_years: [2020, 3000]
+    my_student_years: [2020, 2025]
   zheng:
     first: Zheng
     last: He
-    student_years: [2023, 3000]
+    my_student_years: [2023, 3000]
 
   akilesh:
     first: Akilesh
     last: Tangella
-      #student_years: [2020, 2021]
+    student_years: [2019, 2021]
   lijia:
     first: Lijia
     last: Zhou
     web: https://zhoulijia.github.io/
-      #student_years: [2020, 3000]
+    student_years: [2019, 2024]
 
   aadi:
     first: Aaditya
     last: Ramdas
     web: https://people.eecs.berkeley.edu/~aramdas/
+    student_years: [2000, 2017]
   aaron-c:
     first: Aaron
     last: Courville
@@ -69,6 +72,7 @@ coauthors:
     first: Alan
     last: Milligan
     web: https://www.cs.ubc.ca/~alanmil/
+    student_years: [2020, 3000]
   alaya:
     first: Mokhtar Z.
     last: Alaya
@@ -87,10 +91,12 @@ coauthors:
     first: Antonin
     last: Schrab
     web: https://antoninschrab.github.io/
+    student_years: [2000, 2025]
   arjun:
     first: Arjun
     last: Subramonian
     web: https://arjunsubramonian.github.io/
+    student_years: [2000, 2025]
   arthur:
     first: Arthur
     last: Gretton
@@ -108,6 +114,7 @@ coauthors:
   bailin-wang:
     first: Bailin
     last: Wang
+    student_years: [2000, 2024]
   balaji:
     first: Balaji
     last: Venkatachalam
@@ -115,6 +122,7 @@ coauthors:
     first: Barnabás
     last: Póczos
     web: https://www.cs.cmu.edu/~bapoczos/
+    student_years: [2000, 2013]
   battaglia:
     first: Nicholas
     last: Battaglia
@@ -126,6 +134,7 @@ coauthors:
     first: Rebecca
     last: Roelofs
     web: http://ww.eecs.berkeley.edu/~roelofs/
+    student_years: [2000, 2020]
   bilenko:
     first: Natalia Y.
     last: Bilenko
@@ -135,6 +144,7 @@ coauthors:
   bodenhamer:
     first: Matthew
     last: Bodenhamer
+    student_years: [2000, 2015]
   boisbunon:
     first: Aurélie
     last: Boisbunon
@@ -145,6 +155,7 @@ coauthors:
     first: Alexander
     last: Burka
     web: http://alexburka.com
+    student_years: [2000, 2020]
   caldeira:
     first: João
     last: Caldeira
@@ -154,6 +165,7 @@ coauthors:
   chao-lei:
     first: Chao
     last: Lei
+    student_years: [2000, 3000]
   chapel:
     first: Laetitia
     last: Chapel
@@ -181,6 +193,7 @@ coauthors:
   daniel-elia:
     first: Daniel-Elia
     last: Feist-Alexandrov
+    student_years: [2000, 2020]
   david-woodruff:
     first: David P.
     last: Woodruff
@@ -191,6 +204,7 @@ coauthors:
   dini:
     first: Steve
     last: Dini
+    student_years: [2000, 2020]
   dino:
     first: Dino
     last: Sejdinovic
@@ -221,6 +235,7 @@ coauthors:
     first: Feng
     last: Liu
     web: https://fengliu90.github.io/
+    student_years: [2000, 2021]
   finkbeiner:
     first: Doug
     last: Finkbeiner
@@ -234,10 +249,12 @@ coauthors:
     first: Frederik
     last: Kunstner
     web: https://fkunstner.github.io/
+    student_years: [2000, 2026]
   frederic:
     first: Frederic
     last: Koehler
     web: https://frkoehle.github.io
+    student_years: [2000, 2023]
   frederick-tung:
     first: Frederick
     last: Tung
@@ -245,6 +262,7 @@ coauthors:
     first: Frederik
     last: Harder
     web: https://is.mpg.de/person/fharder
+    student_years: [2000, 2024]
   gabriel-oliveira:
     first: Gabriel
     last: Oliveira
@@ -264,6 +282,7 @@ coauthors:
   giyeong-oh:
     first: Giyeong
     last: Oh
+    student_years: [2000, 3000]
   goodman:
     first: Alyssa
     last: Goodman
@@ -284,6 +303,7 @@ coauthors:
     first: Heiko
     last: Strathmann
     web: http://herrstrathmann.de/about/
+    student_years: [2000, 2019]
   hetvi:
     first: Hetvi
     last: J
@@ -291,6 +311,7 @@ coauthors:
     first: Honghao
     last: Lin
     web: https://honghlin.github.io/
+    student_years: [2020, 2025]
   huan:
     first: Huan
     last: Zhang
@@ -311,6 +332,7 @@ coauthors:
   jeongin-kim:
     first: Jeongin
     last: Kim
+    student_years: [2000, 3000]
   jie-lu:
     first: Jie
     last: Lu
@@ -319,9 +341,11 @@ coauthors:
     first: Jing
     last: Wang
     web: https://sites.google.com/view/jingwang18/home
+    student_years: [2000, 2026]
   jinhwan:
     first: Jinhwan
     last: Seo
+    student_years: [2000, 3000]
   joshi:
     first: Aditya
     last: Joshi
@@ -329,27 +353,34 @@ coauthors:
     first: Junier B.
     last: Oliva
     web: https://cs.unc.edu/person/junier-oliva/
+    student_years: [2000, 2017]
   justin:
     first: Yilin
     last: Yang
     web: https://freddieneverleft.github.io/
+    student_years: [2000, 2025]
   felt:
     first: Nicholas
     last: Felt
+    student_years: [2000, 2020]
   fish:
     first: Hsiao-Yu
     last: Tung
     web: https://sfish0101.bitbucket.io/
+    student_years: [2000, 2020]
   jay:
     first: Jay
     last: Jin
+    student_years: [2000, 2020]
   june:
     first: Jyunhug
     last: Noh
     web: https://junhyug.github.io/
+    student_years: [2000, 2023]
   kamil:
     first: Kamil
     last: Adamczewski
+    student_years: [2000, 2024]
   kaveh:
     first: Kaveh
     last: Hassani
@@ -361,6 +392,7 @@ coauthors:
     first: Li  # how he wants it...
     last: Wenliang
     web: https://kevin-w-li.github.io/
+    student_years: [2000, 2022]
   khanh:
     first: Khanh
     last: Dao Duc
@@ -395,13 +427,16 @@ coauthors:
     first: Ho Chung Leon
     last: Law
     web: http://csml.stats.ox.ac.uk/people/law/
+    student_years: [2000, 2020]
   liang:
     first: Liang
     last: Xiong
     web: https://ai.facebook.com/people/liang-xiong/
+    student_years: [2000, 2015]
   linlu-qiu:
     first: Linlu
     last: Qiu
+    student_years: [2020, 2025]
   liuhua-peng:
     first: Liuhua
     last: Peng
@@ -409,6 +444,7 @@ coauthors:
     first: Benjamin
     last: Lipton
     web: http://benjaminlipton.com
+    student_years: [2000, 2020]
   locatelli:
     first: Davide
     last: Locatelli
@@ -452,10 +488,12 @@ coauthors:
     first: Michael
     last: Arbel
     web: https://michaelarbel.github.io/
+    student_years: [2000, 2020]
   michelle:
     first: Michelle
     last: Ntampaka
     web: https://www.cfa.harvard.edu/~mntampaka/
+    student_years: [2000, 2020]
   mijung:
     first: Mijung
     last: Park
@@ -468,6 +506,7 @@ coauthors:
     first: Mikołaj
     last: Bińkowski
     web: https://github.com/mbinkowski
+    student_years: [2000, 2020]
   milind:
     first: Milind
     last: Agarwal
@@ -475,6 +514,7 @@ coauthors:
     first: Mingyu
     last: Kim
     web: https://mingyukim87.github.io
+    student_years: [2000, 2025]
   ml-p:
     first: Maria Leonor
     last: Pacheco
@@ -486,6 +526,7 @@ coauthors:
     first: Muchen
     last: Li
     web: https://jojoml.github.io/
+    student_years: [2000, 3000]
   nagai:
     first: Daisuke
     last: Nagai
@@ -517,10 +558,12 @@ coauthors:
     first: Thomas
     last: Palmer
     web: http://www.cs.ou.edu/~tjpalmer/
+    student_years: [2000, 2015]
   pan:
     first: Pan
     last: Xu
     web: https://panxulab.github.io/
+    student_years: [2000, 2022]
   peel:
     first: Austin
     last: Peel
@@ -534,10 +577,12 @@ coauthors:
   pranav:
     first: A
     last: Pranav
+    student_years: [2000, 3000]
   pritish:
     first: Pritish
     last: Kamath
     web: https://pritishkamath.github.io/
+    student_years: [2000, 2021]
   queerinai:
     first: Organizers of
     last: QueerInAI
@@ -559,6 +604,7 @@ coauthors:
     first: Soumyajit
     last: De
     web: https://github.com/lambday/
+    student_years: [2000, 2020]
   rau:
     first: Markus Michael
     last: Rau
@@ -572,10 +618,12 @@ coauthors:
     first: Roman
     last: Garnett
     web: http://www.cse.wutsl.edu/~garnett/
+    student_years: [2000, 2015]
   roman-p:
     first: Roman
     last: Pogodin
     web: https://roman-pogodin.com/
+    student_years: [2000, 2025]
   ruchira:
     first: Ruchira
     last: Ray
@@ -585,6 +633,8 @@ coauthors:
   sam-lavoie:
     first: Samuel
     last: Lavoie
+    web: https://lavoiems.github.io/
+    student_years: [2000, 3000]
   sarah-mathew:
     first: Sarah
     last: Mathew
@@ -598,7 +648,7 @@ coauthors:
     first: Antony
     last: Schutz
   sebastian:
-    first: Sebastian
+    first: Sebastien
     last: Fromenteau
   seguy:
     first: Vivien
@@ -610,6 +660,7 @@ coauthors:
   shangmin:
     first: Shangmin
     last: Guo
+    student_years: [2000, 2025]
   sharvani:
     first: Sharvani
     last: Jha
@@ -631,6 +682,7 @@ coauthors:
     first: Andrew
     last: Stromme
     web: http://andrewstromme.com
+    student_years: [2000, 2020]
   talat:
     first: Zeerak
     last: Talat
@@ -666,17 +718,21 @@ coauthors:
   welkie:
     first: Allen
     last: Welkie
+    student_years: [2000, 2020]
   wenjun:
     first: Wenjun
     last: Zhao
     web: https://wenjunzhaowo.github.io/
+    student_years: [2000, 2025]
   wenkai:
     first: Wenkai
     last: Xu
     web: http://www.stats.ox.ac.uk/~wxu/
+    student_years: [2000, 2022]
   wenlong:
     first: Wenlong
     last: Deng
+    student_years: [2000, 3000]
   willie:
     first: William
     last: Agnew
@@ -688,12 +744,14 @@ coauthors:
   xunye-tian:
     first: Xunye
     last: Tian
+    student_years: [2000, 3000]
   yanan:
     first: Yanan
     last: Long
   yazhe:
     first: Yazhe
     last: Li
+    student_years: [2000, 2025]
   yee-whye:
     first: Yee Whye
     last: Teh
@@ -702,13 +760,16 @@ coauthors:
     first: Yifei
     last: Ma
     web: http://yma.io/
+    student_years: [2000, 2016]
   youlee-han:
     first: Youlee
     last: Han
     web: https://yyullmucha.notion.site
+    student_years: [2000, 3000]
   youngjae-yu:
     first: Youngjae
     last: Yu
+    student_years: [2000, 3000]
   yuan:
     first: Hang
     last: Yuan
@@ -719,6 +780,7 @@ coauthors:
   zhijian-zhou:
     first: Zhijian
     last: Zhou
+    student_years: [2000, 3000]
   zhiyuan:
     first: Zhiyuan
     last: Li

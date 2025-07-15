@@ -173,13 +173,20 @@ def get_author(author, coauthors, year=None):
     d = copy(coauthors[author])
     d["is_equal"] = is_equal
     d["key"] = author
+    if "my_student_years" in d:
+        if not year:
+            d["my_student"] = d["student"] = True
+        else:
+            first, last = d["my_student_years"]
+            if first <= year <= last:
+                d["my_student"] = d["student"] = True
     if "student_years" in d:
         if not year:
-            d["my_student"] = True
+            d["student"] = True
         else:
             first, last = d["student_years"]
             if first <= year <= last:
-                d["my_student"] = True
+                d["student"] = True
     return d
 
 
@@ -286,6 +293,9 @@ def bibtex_author_an(authors, coauthors, year=None):
             auth_anns.append("me")
         if info.get("my_student"):
             auth_anns.append("mystudent")
+            auth_anns.append("student")
+        elif info.get("student"):
+            auth_anns.append("student")
         if auth_anns:
             anns.append("{}={}".format(i, ",".join(auth_anns)))
     return "; ".join(anns)

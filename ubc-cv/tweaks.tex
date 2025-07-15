@@ -539,10 +539,10 @@
 \newcommand{\bibeqcon}{\ensuremath{^{\boldsymbol\star}}}
 \renewcommand*{\mkbibcompletename}[1]{%
     \ifitemannotation{me}%
-        {\textcolor{orange!70!black}{#1}}%
+        {\textcolor{orange!70!black}{\ifitemannotation{student}{\underline{#1}}{#1}}}%
         {\ifitemannotation{mystudent}%
-            {\textbf{#1}}%
-            {#1}}%
+            {\textbf{\underline{#1}}}%
+            {\ifitemannotation{student}{\underline{#1}}{#1}}}%
     \ifitemannotation{equal}%
         {\bibeqcon}%
     {}}
