@@ -657,6 +657,7 @@ coauthors:
     first: Seth
     last: Flaxman
     web: http://sethrf.com/
+    student_years: [2000, 2016]
   shangmin:
     first: Shangmin
     last: Guo
@@ -777,6 +778,7 @@ coauthors:
     first: Yu-Xiang
     last: Wang
     web: https://www.cs.cmu.edu/~yuxiangw/
+    student_years: [2000, 2016]
   zhijian-zhou:
     first: Zhijian
     last: Zhou
