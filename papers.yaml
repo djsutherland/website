@@ -1217,6 +1217,14 @@ venues:
     year: 2024
     web: https://www2.cms.math.ca/Events/winter24/sessions_scientific#mml
 
+  fsml:
+    name: Workshop on Frontiers in Statistical Machine Learning
+    short: FSML
+    long_article: the
+    type: workshop
+    web: https://fsmlims.wixsite.com/fsml25
+    year: 2025
+
   dali:
     name: Data Analysis, Learning, and Inference
     short: DALI
@@ -2899,6 +2907,22 @@ papers:
 ################################################################################
 
 talks:
+  - key: entk-fsml
+    title: Local Learning Dynamics Help Explain (Post-)Training Behaviour
+    date: 2025-08-02
+    type: international
+    venue: fsml
+    papers:
+      - llm-dynamics
+      - lld-grpo
+      - learning-path
+      - finetuning
+      - active-ntk
+      - pseudo-ntk
+    slides: https://djsutherland.ml/slides/entk-fsml/
+    related: !!omap
+      - slides (pdf): https://djsutherland.ml/slides/entk-fsml.pdf
+
   - key: entk-penn
     title: Local Learning Dynamics Help Explain (Post-)Training Behaviour
     date: 2025-06-26
