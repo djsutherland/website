@@ -936,7 +936,7 @@ venues:
         - spotlight: 380
         - unspecial: 3111
         - submitted: 11672
-    h5_rank: 10
+    h5_rank: 8
 
   icml:
     name: International Conference on Machine Learning
@@ -962,7 +962,7 @@ venues:
       2024: !!omap
         - unspecial: 2944
         - submitted: 9653
-    h5_rank: 17
+    h5_rank: 19
 
   ijcai:
     name: International Joint Conference on Artificial Intelligence
@@ -1479,10 +1479,10 @@ venues:
 ################################################################################
 
 cite_meta:
-  last_cite_update: '2025-07-15'
+  last_cite_update: '2025-07-31'
 
-  total: 5912
-  total_5y: 5290
+  total: 5983
+  total_5y: 5361
 
   h_index: 30
   h_index_5y: 27
@@ -1705,7 +1705,7 @@ papers:
     date: 2025-04-20
     arXiv: '2407.10490'
     gs_id: 12299741007955922
-    citations: 38
+    citations: 40
     official: https://openreview.net/forum?id=tPNHOoZFl9
     accept-kind: outstanding paper
     note: Outstanding Paper Award.
@@ -1724,7 +1724,7 @@ papers:
     date: 2024-12-10
     arXiv: '2411.16278'
     gs_id: 9232502564221333600
-    citations: 7
+    citations: 8
 
   - key: maxherding
     title: Generalized Coverage for More Robust Low-Budget Active Learning
@@ -1764,7 +1764,7 @@ papers:
     date: 2024-07-21
     arXiv: 2407.12332
     gs_id: 77021859622142169 16561363804118007192
-    citations: 15
+    citations: 18
 
   - key: il-icl
     title: 'Bias Amplification in Language Model Evolution: An Iterated Learning Perspective'
@@ -1779,7 +1779,7 @@ papers:
     year: 2024
     arXiv: '2404.04286'
     gs_id: 16139395396553668193 7973927278752154333
-    citations: 7
+    citations: 8
 
   - key: split-kci
     title: Practical Kernel Tests of Conditional Independence
@@ -1830,7 +1830,7 @@ papers:
     arXiv: '2303.01687'
     ss_id: 9fdc5d89eda1b6d8437757792286471465add203
     gs_id: 6645133680438219650 739951386474118426
-    citations: 19
+    citations: 18
 
   - key: dp-ntk-workshop
     title: Differentially Private Neural Tangent Kernels for Privacy-Preserving Data Generation
@@ -1902,7 +1902,7 @@ papers:
     gs_id: 7161387838783241803
     year: 2023
     date: 2023-07-23
-    citations: 181
+    citations: 188
     collabinfo: Ali initiated the idea of this project, but I did most of the supervisory work after the extremely early stages; the ordering is partly because of some cross-field confusion about norms between theory and ML.
     related: !!omap
       - blog post: https://blog.research.google/2024/01/exphormer-scaling-transformers-for.html
@@ -2000,7 +2000,7 @@ papers:
     ss_id: 8cb6555517575be141174a17f1e0dcf48739aaf4
     gs_id: 854611520534599253 10298606910796508333
     arXiv: '2205.12900'
-    citations: 42
+    citations: 43
 
   - key: circe
     title: Efficient Conditionally Invariant Representation Learning
@@ -2037,7 +2037,7 @@ papers:
     ss_id: 75852ed23746bb8fceebeef8c5ae2d228b83dd24
     gs_id: 15928265510615609906
     arXiv: '2302.05779'
-    citations: 17
+    citations: 18
 
   - key: mmd-bfair
     title: 'MMD-B-Fair: Learning Fair Representations with Statistical Testing'
@@ -2217,7 +2217,7 @@ papers:
       - NYU talk: '#talk-nyu-interpolation'
     ss_id: 24721e44b5510bfda275ddb023c2f107c9526870
     gs_id: 14582780933724089324
-    citations: 89
+    citations: 90
     collabinfo: Nati and I were both broad supervisors here, though I had perhaps more significant regular involvement, and are listed according to seniority.
 
   - key: ssl-hsic
@@ -2234,7 +2234,7 @@ papers:
     ss_id: 1a3d5d6cec457f8f3b088cb3636a1a197bd248f6
     gs_id: 13912402342615870661
     arXiv: '2106.08320'
-    citations: 97
+    citations: 98
     collabinfo: Arthur and I were both broad supervisors here, and are listed according to seniority.
 
   - key: meta-2st
@@ -2251,7 +2251,7 @@ papers:
     ss_id: 6b32180f7849dcd5a9f79d7cd0f58a2068d81c32
     gs_id: 3537368320170973148
     arXiv: '2106.07636'
-    citations: 32
+    citations: 33
 
   - key: pot
     title: 'POT: Python Optimal Transport'
@@ -2287,7 +2287,7 @@ papers:
     official: https://jmlr.org/papers/v22/20-451.html
     ss_id: 2be40f5336afa68b49fef41e009b7172c2c9fdeb
     gs_id: 3559273292438013868
-    citations: 1184
+    citations: 1200
 
   - key: irm
     title: Does Invariant Risk Minimization Capture Invariance?
@@ -2307,7 +2307,7 @@ papers:
     accept-kind: oral
     ss_id: 1fc4470c1766aea4c435015f5ef873b066f50121
     gs_id: 12319413802596970196
-    citations: 160
+    citations: 162
 
   - key: uniform-interpolation
     title: On Uniform Convergence and Low-Norm Interpolation Learning
@@ -2349,7 +2349,7 @@ papers:
       - video and slides: https://icml.cc/virtual/2020/poster/5999
     ss_id: cce73b08abf1554c1c730c0333b0b29dadc03c19
     gs_id: 11419051350787047758
-    citations: 246
+    citations: 248
 
   - key: unbiased-mmd-variance
     title: Unbiased estimators for the variance of MMD estimators
@@ -2406,7 +2406,7 @@ papers:
     date: 2019-02-26
     ss_id: 333ddc46a211ab1eb6ceb1f4b7c4952eadce8015
     gs_id: 12908060365392151722
-    citations: 79
+    citations: 80
 
   - key: dkef
     title: Learning deep kernels for exponential family densities
@@ -2468,7 +2468,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 9723066a5587e6267d8abfd7feefd0637a5a211c
     gs_id: 10236052458128513824
-    citations: 2020
+    citations: 2046
 
   - key: bdr-workshop
     title: Bayesian Approaches to Distribution Regression
@@ -2567,7 +2567,7 @@ papers:
     date: 2016-11-11
     ss_id: 3962dfb23f150b25307bb50112dbad67636f28ec
     gs_id: 10764238927160739355
-    citations: 32
+    citations: 33
 
   - key: opt-mmd
     title: Generative Models and Model Criticism via Optimized Maximum Mean Discrepancy
@@ -2592,7 +2592,7 @@ papers:
       - Oxford talk: '#talk-oxford-opt-mmd'
     ss_id: d772a21f2f687985b41bec2dc47bc2760c57ed2f
     gs_id: 14039271793330969441 11531994075904943226
-    citations: 262
+    citations: 263
 
   - key: thesis
     title: Scalable, Flexible, and Active Learning on Distributions
@@ -2666,7 +2666,7 @@ papers:
     arXiv: '1509.05409'
     ss_id: 45c0b51a6543f0fdfbf504838059f7acdfc0e409
     gs_id: 5213844651993496360
-    citations: 90
+    citations: 91
 
   - key: hdd
     title: Linear-time Learning on Distributions with Approximate Kernel Embeddings
@@ -2721,7 +2721,7 @@ papers:
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/rff_uai15.pdf
     ss_id: 78e95099ec2ac3cb087eb47ba7c87ddb01a19405
     gs_id: 2736757817032849196
-    citations: 248
+    citations: 250
 
   - key: apps
     title: Active Pointillistic Pattern Search
@@ -2779,7 +2779,7 @@ papers:
     arXiv: '1410.0686'
     ss_id: f5b6eb5c3fa7eb7a569d6c2af0a43f7123034bd0
     gs_id: 15766717484171055980
-    citations: 119
+    citations: 120
 
   - key: active-mf
     title: Active learning and search on low-rank matrices
