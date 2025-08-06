@@ -1487,10 +1487,10 @@ venues:
 ################################################################################
 
 cite_meta:
-  last_cite_update: '2025-07-31'
+  last_cite_update: '2025-08-05'
 
-  total: 5983
-  total_5y: 5361
+  total: 6004
+  total_5y: 5382
 
   h_index: 30
   h_index_5y: 27
@@ -1713,7 +1713,7 @@ papers:
     date: 2025-04-20
     arXiv: '2407.10490'
     gs_id: 12299741007955922
-    citations: 40
+    citations: 42
     official: https://openreview.net/forum?id=tPNHOoZFl9
     accept-kind: outstanding paper
     note: Outstanding Paper Award.
@@ -1910,7 +1910,7 @@ papers:
     gs_id: 7161387838783241803
     year: 2023
     date: 2023-07-23
-    citations: 188
+    citations: 191
     collabinfo: Ali initiated the idea of this project, but I did most of the supervisory work after the extremely early stages; the ordering is partly because of some cross-field confusion about norms between theory and ML.
     related: !!omap
       - blog post: https://blog.research.google/2024/01/exphormer-scaling-transformers-for.html
@@ -1989,7 +1989,7 @@ papers:
       - saraswat
       - vytla
       - stark
-    citations: 49
+    citations: 50
     gs_id: 18334777895960251368 4841877026388899314
     collabinfo: This was a highly collaborative work (fifty authors); I was one of the five or so most involved in the writing.
 
@@ -2090,7 +2090,7 @@ papers:
     ss_id: 7fe95ccdc3cfe8acd2c4975b6cbdc419f7e62b85
     gs_id: 15930502597666827182
     arXiv: '2206.12569'
-    citations: 33
+    citations: 34
 
   - key: contrastive-graph-eval
     title: Evaluating Graph Generative Models with Contrastively Learned Features
@@ -2295,7 +2295,7 @@ papers:
     official: https://jmlr.org/papers/v22/20-451.html
     ss_id: 2be40f5336afa68b49fef41e009b7172c2c9fdeb
     gs_id: 3559273292438013868
-    citations: 1200
+    citations: 1203
 
   - key: irm
     title: Does Invariant Risk Minimization Capture Invariance?
@@ -2357,7 +2357,7 @@ papers:
       - video and slides: https://icml.cc/virtual/2020/poster/5999
     ss_id: cce73b08abf1554c1c730c0333b0b29dadc03c19
     gs_id: 11419051350787047758
-    citations: 248
+    citations: 249
 
   - key: unbiased-mmd-variance
     title: Unbiased estimators for the variance of MMD estimators
@@ -2476,7 +2476,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 9723066a5587e6267d8abfd7feefd0637a5a211c
     gs_id: 10236052458128513824
-    citations: 2046
+    citations: 2055
 
   - key: bdr-workshop
     title: Bayesian Approaches to Distribution Regression
@@ -2729,7 +2729,7 @@ papers:
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/rff_uai15.pdf
     ss_id: 78e95099ec2ac3cb087eb47ba7c87ddb01a19405
     gs_id: 2736757817032849196
-    citations: 250
+    citations: 251
 
   - key: apps
     title: Active Pointillistic Pattern Search
