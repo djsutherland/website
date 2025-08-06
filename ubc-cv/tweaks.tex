@@ -732,10 +732,6 @@
       \step[fieldsource=citesrounded]
       \step[fieldset=userb,origfieldval]
     }
-    \map{ % collabinfo => abstract
-      \step[fieldsource=collabinfo]
-      \step[fieldset=abstract,origfieldval]
-    }
   }
 }
 \iftoggle{ubcformat}{
@@ -744,6 +740,10 @@
     \map[overwrite]{ % strip eprint (arXiv) info from published papers
       \step[fieldsource=keywords,notmatch=\regexp{submission|tech-report},final]
       \step[fieldset=eprint,fieldvalue=]
+    }
+    \map{ % collabinfo => abstract
+      \step[fieldsource=collabinfo]
+      \step[fieldset=abstract,origfieldval]
     }
   }
 }
