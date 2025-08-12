@@ -106,10 +106,19 @@ img#me {
     height: 220px;
 }
 
-
+.group-members {
+    display: flex;
+    flex-wrap: wrap;
+}
 .group-members li {
+    flex-basis: 19em;
+    margin: 5px;
+    list-style-type: none;
+}
+.group-members li .affil {
     display: inline-block;
-    width: 19em;
+    font-size: 90%;
+    max-width: 18em;
 }
 
 .paper, .talk {
