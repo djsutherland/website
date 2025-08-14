@@ -1070,7 +1070,7 @@ venues:
     web: https://jmlr.org
 
   jds:
-    name: ACM/IMS Journal of Data Science
+    name: ACM / IMS Journal of Data Science
     short: JDS
     type: journal
     web: https://jds.acm.org/
