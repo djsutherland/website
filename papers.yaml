@@ -1487,10 +1487,10 @@ venues:
 ################################################################################
 
 cite_meta:
-  last_cite_update: '2025-08-13'
+  last_cite_update: '2025-08-20'
 
-  total: 6046
-  total_5y: 5422
+  total: 6081
+  total_5y: 5456
 
   h_index: 30
   h_index_5y: 27
@@ -1615,7 +1615,7 @@ papers:
     venue: preprint
     gs_id: 8898899477402539415
     submitted: neurips
-    citations: 1
+    citations: 2
 
   - key: active-segmentation
     title: Diffusion-Driven Two-Stage Active Learning for Low-Budget Semantic Segmentation
@@ -1715,7 +1715,7 @@ papers:
     date: 2025-04-20
     arXiv: '2407.10490'
     gs_id: 12299741007955922
-    citations: 44
+    citations: 47
     official: https://openreview.net/forum?id=tPNHOoZFl9
     accept-kind: outstanding paper
     note: Outstanding Paper Award.
@@ -1774,7 +1774,7 @@ papers:
     date: 2024-07-21
     arXiv: 2407.12332
     gs_id: 77021859622142169 16561363804118007192
-    citations: 18
+    citations: 19
 
   - key: il-icl
     title: 'Bias Amplification in Language Model Evolution: An Iterated Learning Perspective'
@@ -1912,7 +1912,7 @@ papers:
     gs_id: 7161387838783241803
     year: 2023
     date: 2023-07-23
-    citations: 196
+    citations: 199
     collabinfo: Ali initiated the idea of this project, but I did most of the supervisory work after the extremely early stages; the ordering is partly because of some cross-field confusion about norms between theory and ML.
     related: !!omap
       - blog post: https://blog.research.google/2024/01/exphormer-scaling-transformers-for.html
@@ -1929,7 +1929,7 @@ papers:
     ss_id: 923f93d2ae0c73c3934e4b56b063c6dc00bfb978
     gs_id: 4580998787359405017
     arXiv: '2206.12543'
-    citations: 34
+    citations: 35
 
   - key: qai
     title: 'Queer in AI: A Case Study in Community-Led Participatory AI'
@@ -2297,7 +2297,7 @@ papers:
     official: https://jmlr.org/papers/v22/20-451.html
     ss_id: 2be40f5336afa68b49fef41e009b7172c2c9fdeb
     gs_id: 3559273292438013868
-    citations: 1212
+    citations: 1217
 
   - key: irm
     title: Does Invariant Risk Minimization Capture Invariance?
@@ -2359,7 +2359,7 @@ papers:
       - video and slides: https://icml.cc/virtual/2020/poster/5999
     ss_id: cce73b08abf1554c1c730c0333b0b29dadc03c19
     gs_id: 11419051350787047758
-    citations: 249
+    citations: 250
 
   - key: unbiased-mmd-variance
     title: Unbiased estimators for the variance of MMD estimators
@@ -2478,7 +2478,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 9723066a5587e6267d8abfd7feefd0637a5a211c
     gs_id: 10236052458128513824
-    citations: 2074
+    citations: 2093
 
   - key: bdr-workshop
     title: Bayesian Approaches to Distribution Regression
@@ -2731,7 +2731,7 @@ papers:
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/rff_uai15.pdf
     ss_id: 78e95099ec2ac3cb087eb47ba7c87ddb01a19405
     gs_id: 2736757817032849196
-    citations: 252
+    citations: 253
 
   - key: apps
     title: Active Pointillistic Pattern Search
