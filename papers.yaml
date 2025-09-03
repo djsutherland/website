@@ -1457,6 +1457,10 @@ venues:
     name: Snowflake
     type: seminar
 
+  ubc-ai-lunch:
+    name: UBC Faculty of Science AI Lunch and Learn
+    type: seminar
+
   ucl-csml:
     name: Computational Statistics and Machine Learning seminar, University College London
     type: seminar
@@ -2909,6 +2913,12 @@ papers:
 ################################################################################
 
 talks:
+  - key: ubc-testing
+    title: Distinguishing Distributions and Detecting (Conditional) Dependence Beyond Scalar Data
+    type: local
+    date: 2025-08-27
+    venue: ubc-ai-lunch
+
   - key: entk-fsml
     title: Local Learning Dynamics Help Explain (Post-)Training Behaviour
     date: 2025-08-02
