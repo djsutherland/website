@@ -34,7 +34,8 @@ if True:
             continue
         cites_ids = frozenset(pub["cites_id"])
 
-        if cites_ids == {"7841818900121312344"}:  # dumb undergrad python thing
+        # skip: dumb ugrad python thing, course notes
+        if cites_ids in ({"7841818900121312344"}, {"9919551662281582171"}):
             continue
 
         matches = [
