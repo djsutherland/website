@@ -1010,6 +1010,7 @@ venues:
       2022: https://neurips.cc/Conferences/2022
       2023: https://neurips.cc/Conferences/2023
       2024: https://neurips.cc/Conferences/2024
+      2025: https://neurips.cc/Conferences/2025
     accepts:
       2018: !!omap
         - oral: 30
@@ -1035,6 +1036,11 @@ venues:
       2024: !!omap
         - unspecial: 4035
         - submitted: 15671
+      2025: !!omap
+        - oral: 77
+        - spotlight: 688
+        - unspecial: 4525
+        - submitted: 21575
     h5_rank: 7
 
   uai:
@@ -1553,7 +1559,6 @@ papers:
     submitted-date: 2025-05-15
     venue: preprint
     arXiv: '2506.10091'
-    submitted: neurips
 
   - key: kci-is-hard
     title: On the Hardness of Conditional Independence Testing in Practice
@@ -1567,8 +1572,8 @@ papers:
     year: 2025
     date: 2025-05-15
     submitted-date: 2025-05-15
-    venue: private-sub
-    submitted: neurips
+    venue: neurips
+    accept-kind: spotlight
 
   - key: thr-grpo-ai4math
     title: 'Token Hidden Reward: Steering Exploration-Exploitation in GRPO Training'
@@ -1616,9 +1621,8 @@ papers:
     date: 2025-05-15
     submitted-date: 2025-05-15
     arXiv: '2505.18830'
-    venue: preprint
+    venue: neurips
     gs_id: 8898899477402539415
-    submitted: neurips
     citations: 2
 
   - key: active-segmentation
@@ -1635,8 +1639,7 @@ papers:
     year: 2025
     date: 2025-05-15
     submitted-date: 2025-05-15
-    venue: private-sub
-    submitted: neurips
+    venue: neurips
 
   - key: diverse-kernels
     title: Learning Diverse Kernels for Aggregated Two-sample and Independence Testing
@@ -1652,8 +1655,7 @@ papers:
     year: 2025
     date: 2025-05-15
     submitted-date: 2025-05-15
-    venue: private-sub
-    submitted: neurips
+    venue: neurips
 
   - key: u-herding
     title: 'Uncertainty Herding: One Active Learning Method for All Label Budgets'
