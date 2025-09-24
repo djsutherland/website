@@ -1497,16 +1497,16 @@ venues:
 ################################################################################
 
 cite_meta:
-  last_cite_update: '2025-09-15'
+  last_cite_update: '2025-09-24'
 
-  total: 6195
-  total_5y: 5570
+  total: 6227
+  total_5y: 5602
 
   h_index: 30
   h_index_5y: 27
 
-  i10_index: 42
-  i10_index_5y: 39
+  i10_index: 43
+  i10_index_5y: 40
 
 papers:
   - key: distance-dists
@@ -1574,6 +1574,7 @@ papers:
     submitted-date: 2025-05-15
     venue: neurips
     accept-kind: spotlight
+    note: Selected for spotlight presentation.
 
   - key: thr-grpo-ai4math
     title: 'Token Hidden Reward: Steering Exploration-Exploitation in GRPO Training'
@@ -1723,7 +1724,7 @@ papers:
     date: 2025-04-20
     arXiv: '2407.10490'
     gs_id: 12299741007955922
-    citations: 50
+    citations: 52
     official: https://openreview.net/forum?id=tPNHOoZFl9
     accept-kind: outstanding paper
     note: Outstanding Paper Award.
@@ -1797,7 +1798,7 @@ papers:
     year: 2024
     arXiv: '2404.04286'
     gs_id: 16139395396553668193 7973927278752154333
-    citations: 9
+    citations: 10
 
   - key: split-kci
     title: Practical Kernel Tests of Conditional Independence
@@ -1808,12 +1809,14 @@ papers:
       - me
       - arthur
     venue: preprint
+    submitted: jmlr
+    submitted-date: 2025-09-29
     date: 2024-02-20
     year: 2024
     arXiv: '2402.13196'
     gs_id: 14319205214147904712
-    citations: 5
-    collabinfo: This paper is essentially complete, and will be submitted to JMLR in the next few weeks.
+    citations: 6
+    collabinfo: Arthur and I played roughly equal supervisory roles on this work.
 
   - key: adaflood
     title: 'AdaFlood: Adaptive Flood Regularization'
@@ -1920,7 +1923,7 @@ papers:
     gs_id: 7161387838783241803
     year: 2023
     date: 2023-07-23
-    citations: 203
+    citations: 205
     collabinfo: Ali initiated the idea of this project, but I did most of the supervisory work after the extremely early stages; the ordering is partly because of some cross-field confusion about norms between theory and ML.
     related: !!omap
       - blog post: https://blog.research.google/2024/01/exphormer-scaling-transformers-for.html
@@ -2018,7 +2021,7 @@ papers:
     ss_id: 8cb6555517575be141174a17f1e0dcf48739aaf4
     gs_id: 854611520534599253 10298606910796508333
     arXiv: '2205.12900'
-    citations: 45
+    citations: 46
 
   - key: circe
     title: Efficient Conditionally Invariant Representation Learning
@@ -2235,7 +2238,7 @@ papers:
       - NYU talk: '#talk-nyu-interpolation'
     ss_id: 24721e44b5510bfda275ddb023c2f107c9526870
     gs_id: 14582780933724089324
-    citations: 91
+    citations: 92
     collabinfo: Nati and I were both broad supervisors here, though I had perhaps more significant regular involvement, and are listed according to seniority.
 
   - key: ssl-hsic
@@ -2305,7 +2308,7 @@ papers:
     official: https://jmlr.org/papers/v22/20-451.html
     ss_id: 2be40f5336afa68b49fef41e009b7172c2c9fdeb
     gs_id: 3559273292438013868
-    citations: 1252
+    citations: 1262
 
   - key: irm
     title: Does Invariant Risk Minimization Capture Invariance?
@@ -2346,7 +2349,7 @@ papers:
       - NYU talk: '#talk-nyu-interpolation'
     ss_id: 65a2da57b52942cf486cd06682db0a4c53eaae34
     gs_id: 11067119780138908286
-    citations: 44
+    citations: 45
 
   - key: deep-testing
     title: Learning Deep Kernels for Non-Parametric Two-Sample Tests
@@ -2367,7 +2370,7 @@ papers:
       - video and slides: https://icml.cc/virtual/2020/poster/5999
     ss_id: cce73b08abf1554c1c730c0333b0b29dadc03c19
     gs_id: 11419051350787047758
-    citations: 251
+    citations: 252
 
   - key: unbiased-mmd-variance
     title: Unbiased estimators for the variance of MMD estimators
@@ -2486,7 +2489,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 9723066a5587e6267d8abfd7feefd0637a5a211c
     gs_id: 10236052458128513824
-    citations: 2134
+    citations: 2145
 
   - key: bdr-workshop
     title: Bayesian Approaches to Distribution Regression
@@ -2797,7 +2800,7 @@ papers:
     arXiv: '1410.0686'
     ss_id: f5b6eb5c3fa7eb7a569d6c2af0a43f7123034bd0
     gs_id: 15766717484171055980
-    citations: 121
+    citations: 122
 
   - key: active-mf
     title: Active learning and search on low-rank matrices
