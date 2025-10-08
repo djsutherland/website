@@ -853,6 +853,11 @@ venues:
         - unspecial: 490
         - submitted: 1689
 
+  alt:
+    name: International Conference on Algorithmic Learning Theory
+    short: ALT
+    type: conference
+
   cvpr:
     name: Computer Vision and Pattern Recognition
     short: CVPR
@@ -1518,7 +1523,7 @@ papers:
     venue: in-prep
     year: 2025
     date: 2025-08-31
-    collabinfo: This work is mostly done, and should be submitted in the next month or two.
+    collabinfo: This work is mostly done, and should be submitted to a computational biology venue in the next month or two.
 
   - key: hsic-d
     # title: Learning Deep Kernels for Non-Parametric Independence Testing
@@ -1556,7 +1561,8 @@ papers:
       - me
     year: 2025
     date: 2025-05-15
-    submitted-date: 2025-05-15
+    submitted-date: 2025-10-02
+    submitted: alt
     venue: preprint
     arXiv: '2506.10091'
 
@@ -2929,6 +2935,8 @@ talks:
     type: local
     date: 2025-08-27
     venue: ubc-ai-lunch
+    teaching: true
+    cv_note: Ninety minute lecture, about 30 participants.
 
   - key: entk-fsml
     title: Local Learning Dynamics Help Explain (Post-)Training Behaviour
