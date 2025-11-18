@@ -1,0 +1,33 @@
+name: Compile and post
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: self-hosted
+    container: texlive/texlive:latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          clean: false
+      - name: Build
+        run: |
+          source venv/bin/activate
+          make -j$((`nproc`+1)) all || ( make clean && make all )
+        shell: bash
+      - run: apt-get update && apt-get install -y nodejs openssh-client
+      - uses: webfactory/ssh-agent@v0.9.1
+        with:
+          ssh-private-key: ${{ secrets.SSH_DEPLOY_KEY }}
+      - name: Upload
+        shell: bash
+        run: |
+          rsync -rlptvz -e 'ssh -o StrictHostKeyChecking=no' built/ djs@djsutherland.ml:djsutherland.ml/
+      - name: Removing stuff on failure
+        if: ${{ failure() }}
+        run: |
+          git config --global --add safe.directory '*'
+          git clean -ffdx
+        # could be nice to automatically rerun from a clean checkout if it fails...
+        # https://github.com/orgs/community/discussions/67654#discussioncomment-8038649
