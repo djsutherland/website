@@ -11,12 +11,18 @@ jobs:
       - uses: actions/checkout@v4
         with:
           clean: false
+      - name: Install system prereqs
+        run: apt-get update && apt-get install -y python3-venv nodejs openssh-client
+      - name: Set up venv
+        run: |
+          python -mvenv venv
+          venv/bin/pip install -r requirements.txt
       - name: Build
         run: |
           source venv/bin/activate
+          git config --global --add safe.directory /__w/website/website  # dubious ownership is okay
           make -j$((`nproc`+1)) all || ( make clean && make all )
         shell: bash
-      - run: apt-get update && apt-get install -y nodejs openssh-client
       - uses: webfactory/ssh-agent@v0.9.1
         with:
           ssh-private-key: ${{ secrets.SSH_DEPLOY_KEY }}
