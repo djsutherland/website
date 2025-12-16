@@ -1577,6 +1577,7 @@ papers:
       - me
     year: 2025
     date: 2025-05-15
+    official: https://openreview.net/forum?id=Tn1M71PDfF
     submitted-date: 2025-05-15
     venue: neurips
     accept-kind: spotlight
@@ -1630,6 +1631,7 @@ papers:
     date: 2025-05-15
     submitted-date: 2025-05-15
     arXiv: '2505.18830'
+    official: https://openreview.net/forum?id=2K9QsDaqkM
     venue: neurips
     gs_id: 8898899477402539415
     citations: 7
@@ -1645,13 +1647,15 @@ papers:
       - me
       - june
     collabinfo: My student Wonho helped significantly with this paper; I helped in developing and framing the method, but didn't have a major supervisory role.
+    official: https://openreview.net/forum?id=RX5tYZAaeF
+    arXiv: '2510.22229'
     year: 2025
     date: 2025-05-15
     submitted-date: 2025-05-15
     venue: neurips
 
   - key: diverse-kernels
-    title: Learning Diverse Kernels for Aggregated Two-sample and Independence Testing
+    title: "DUAL: Learning Diverse Kernels for Aggregated Two-sample and Independence Testing"
     authors:
       - zhijian-zhou
       - xunye-tian
@@ -1664,6 +1668,8 @@ papers:
     year: 2025
     date: 2025-05-15
     submitted-date: 2025-05-15
+    arXiv: '2510.11140'
+    official: https://openreview.net/forum?id=CVekdZDzLG
     venue: neurips
 
   - key: u-herding
