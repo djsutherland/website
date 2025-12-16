@@ -1578,10 +1578,9 @@ papers:
     year: 2025
     date: 2025-05-15
     submitted-date: 2025-05-15
-    venue: preprint
-      # venue: neurips
-      # accept-kind: spotlight
-      # note: Selected for spotlight presentation.
+    venue: neurips
+    accept-kind: spotlight
+    note: Selected for spotlight presentation.
 
   - key: thr-grpo-ai4math
     title: 'Token Hidden Reward: Steering Exploration-Exploitation in GRPO Training'
