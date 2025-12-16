@@ -1502,16 +1502,16 @@ venues:
 ################################################################################
 
 cite_meta:
-  last_cite_update: '2025-10-29'
+  last_cite_update: '2025-12-15'
 
-  total: 6479
-  total_5y: 5856
+  total: 6739
+  total_5y: 6110
 
   h_index: 31
-  h_index_5y: 27
+  h_index_5y: 28
 
-  i10_index: 43
-  i10_index_5y: 40
+  i10_index: 46
+  i10_index_5y: 43
 
 papers:
   - key: distance-dists
@@ -1535,7 +1535,7 @@ papers:
     venue: preprint
     year: 2025
     date: 2025-07-04
-    citations: 2
+    citations: 4
     arXiv: '2409.06890'
     gs_id: 3927924380698217287
     submitted: tmlr
@@ -1600,7 +1600,7 @@ papers:
     accept-kind: best paper
     note: Best Paper Award.
 
-    citations: 2
+    citations: 3
   - key: lld-grpo-ai4math
     title: On the Effect of Negative Gradient in Group Relative Deep Reinforcement Optimization
     authors:
@@ -1634,7 +1634,7 @@ papers:
     official: https://openreview.net/forum?id=2K9QsDaqkM
     venue: neurips
     gs_id: 8898899477402539415
-    citations: 7
+    citations: 11
 
   - key: active-segmentation
     title: Diffusion-Driven Two-Stage Active Learning for Low-Budget Semantic Segmentation
@@ -1655,7 +1655,7 @@ papers:
     venue: neurips
 
   - key: diverse-kernels
-    title: "DUAL: Learning Diverse Kernels for Aggregated Two-sample and Independence Testing"
+    title: 'DUAL: Learning Diverse Kernels for Aggregated Two-sample and Independence Testing'
     authors:
       - zhijian-zhou
       - xunye-tian
@@ -1686,7 +1686,7 @@ papers:
     official: https://openreview.net/forum?id=UgPoHhYQ2U
     gs_id: 7817216976501377899
 
-    citations: 4
+    citations: 7
   - key: gnn-norm
     title: Normalization Matters for Optimization Performance on Graph Neural Networks
     authors:
@@ -1740,7 +1740,7 @@ papers:
     date: 2025-04-20
     arXiv: '2407.10490'
     gs_id: 12299741007955922
-    citations: 71
+    citations: 82
     official: https://openreview.net/forum?id=tPNHOoZFl9
     accept-kind: outstanding paper
     note: Outstanding Paper Award.
@@ -1759,7 +1759,7 @@ papers:
     date: 2024-12-10
     arXiv: '2411.16278'
     gs_id: 9232502564221333600
-    citations: 8
+    citations: 11
 
   - key: maxherding
     title: Generalized Coverage for More Robust Low-Budget Active Learning
@@ -1771,7 +1771,7 @@ papers:
     year: 2024
     date: 2024-09-29
     arXiv: '2407.12212'
-    citations: 6
+    citations: 8
     gs_id: 11914806130472742386
 
   - key: active-meta
@@ -1799,7 +1799,7 @@ papers:
     date: 2024-07-21
     arXiv: 2407.12332
     gs_id: 77021859622142169 16561363804118007192
-    citations: 25
+    citations: 31
 
   - key: il-icl
     title: 'Bias Amplification in Language Model Evolution: An Iterated Learning Perspective'
@@ -1831,7 +1831,7 @@ papers:
     year: 2024
     arXiv: '2402.13196'
     gs_id: 14319205214147904712
-    citations: 8
+    citations: 12
     collabinfo: Arthur and I played roughly equal supervisory roles on this work.
 
   - key: adaflood
@@ -1867,7 +1867,7 @@ papers:
     arXiv: '2303.01687'
     ss_id: 9fdc5d89eda1b6d8437757792286471465add203
     gs_id: 6645133680438219650 739951386474118426
-    citations: 18
+    citations: 20
 
   - key: dp-ntk-workshop
     title: Differentially Private Neural Tangent Kernels for Privacy-Preserving Data Generation
@@ -1923,7 +1923,7 @@ papers:
     date: 2023-12-11
     gs_id: 4645152097706396762 12390267246817978257
     arXiv: '2310.18777'
-    citations: 18
+    citations: 19
 
   - key: exphormer
     title: 'Exphormer: Scaling Graph Transformers with Expander Graphs'
@@ -1939,7 +1939,7 @@ papers:
     gs_id: 7161387838783241803
     year: 2023
     date: 2023-07-23
-    citations: 224
+    citations: 242
     collabinfo: Ali initiated the idea of this project, but I did most of the supervisory work after the extremely early stages; the ordering is partly because of some cross-field confusion about norms between theory and ML.
     related: !!omap
       - blog post: https://blog.research.google/2024/01/exphormer-scaling-transformers-for.html
@@ -1956,7 +1956,7 @@ papers:
     ss_id: 923f93d2ae0c73c3934e4b56b063c6dc00bfb978
     gs_id: 4580998787359405017
     arXiv: '2206.12543'
-    citations: 37
+    citations: 40
 
   - key: qai
     title: 'Queer in AI: A Case Study in Community-Led Participatory AI'
@@ -2018,7 +2018,7 @@ papers:
       - saraswat
       - vytla
       - stark
-    citations: 54
+    citations: 58
     gs_id: 18334777895960251368 4841877026388899314
     collabinfo: This was a highly collaborative work (fifty authors); I was one of the five or so most involved in the writing.
 
@@ -2057,7 +2057,7 @@ papers:
     ss_id: 422b68799bfc5cae91febc5c33d59e28b067a368
     gs_id: 7462248955033708193
     official: https://openreview.net/forum?id=dJruFeSRym1
-    citations: 21
+    citations: 26
     collabinfo: A portion of this paper happened while I was out on medical leave; during the periods I was present, supervision was roughly equal among the three faculty authors.
 
   - key: finetuning
@@ -2074,7 +2074,7 @@ papers:
     ss_id: 75852ed23746bb8fceebeef8c5ae2d228b83dd24
     gs_id: 15928265510615609906
     arXiv: '2302.05779'
-    citations: 22
+    citations: 25
 
   - key: mmd-bfair
     title: 'MMD-B-Fair: Learning Fair Representations with Statistical Testing'
@@ -2088,7 +2088,7 @@ papers:
     ss_id: 244833b8e577d73c1a3552e6f41e0afcd8fc87a1
     gs_id: 8937404985150107657 7310171816056904535
     date: 2023-04-25
-    citations: 17
+    citations: 21
 
   - key: moreau
     title: A Non-Asymptotic Moreau Envelope Theory for High-Dimensional Generalized Linear Models
@@ -2119,7 +2119,7 @@ papers:
     ss_id: 7fe95ccdc3cfe8acd2c4975b6cbdc419f7e62b85
     gs_id: 15930502597666827182
     arXiv: '2206.12569'
-    citations: 36
+    citations: 39
 
   - key: contrastive-graph-eval
     title: Evaluating Graph Generative Models with Contrastively Learned Features
@@ -2133,7 +2133,7 @@ papers:
     ss_id: 28f8c4826c1af49b176009c6be39c7a0251764e4
     gs_id: 11402654840281713194
     arXiv: '2206.06234'
-    citations: 13
+    citations: 14
 
   - key: contrastive-wsod
     title: Object Discovery via Contrastive Learning for Weakly Supervised Object Detection
@@ -2152,7 +2152,7 @@ papers:
     gs_id: 4274032166116217116
     related: !!omap
       - code: https://github.com/jinhseo/OD-WSCL
-    citations: 52
+    citations: 55
     collabinfo: 'I had only a small part in this paper: some general ideas and significant writing help.'
 
   - key: prediction-filtering
@@ -2184,7 +2184,7 @@ papers:
     ss_id: 91db2f1dae977f2cf139ce194173487133b1ad67
     gs_id: 4997668798655366002
     arXiv: '2203.02485'
-    citations: 31
+    citations: 32
 
   - key: private-mmd
     title: Learning Privacy-Preserving Deep Kernels with Known Demographics
@@ -2213,7 +2213,7 @@ papers:
     ss_id: d050f2f50a490fd90a06e5bcc7ed22079a28e404
     gs_id: 3078534230907333706 16851788017931748094
     date: 2024-04-01
-    citations: 33
+    citations: 34
     collabinfo: Nati and I were both broad supervisors here, and are listed according to seniority.
 
   - key: queerinai-dni
@@ -2254,7 +2254,7 @@ papers:
       - NYU talk: '#talk-nyu-interpolation'
     ss_id: 24721e44b5510bfda275ddb023c2f107c9526870
     gs_id: 14582780933724089324
-    citations: 93
+    citations: 97
     collabinfo: Nati and I were both broad supervisors here, though I had perhaps more significant regular involvement, and are listed according to seniority.
 
   - key: ssl-hsic
@@ -2271,7 +2271,7 @@ papers:
     ss_id: 1a3d5d6cec457f8f3b088cb3636a1a197bd248f6
     gs_id: 13912402342615870661
     arXiv: '2106.08320'
-    citations: 102
+    citations: 108
     collabinfo: Arthur and I were both broad supervisors here, and are listed according to seniority.
 
   - key: meta-2st
@@ -2288,7 +2288,7 @@ papers:
     ss_id: 6b32180f7849dcd5a9f79d7cd0f58a2068d81c32
     gs_id: 3537368320170973148
     arXiv: '2106.07636'
-    citations: 35
+    citations: 37
 
   - key: pot
     title: 'POT: Python Optimal Transport'
@@ -2324,7 +2324,7 @@ papers:
     official: https://jmlr.org/papers/v22/20-451.html
     ss_id: 2be40f5336afa68b49fef41e009b7172c2c9fdeb
     gs_id: 3559273292438013868
-    citations: 1313
+    citations: 1360
 
   - key: irm
     title: Does Invariant Risk Minimization Capture Invariance?
@@ -2344,7 +2344,7 @@ papers:
     accept-kind: oral
     ss_id: 1fc4470c1766aea4c435015f5ef873b066f50121
     gs_id: 12319413802596970196
-    citations: 171
+    citations: 172
 
   - key: uniform-interpolation
     title: On Uniform Convergence and Low-Norm Interpolation Learning
@@ -2365,7 +2365,7 @@ papers:
       - NYU talk: '#talk-nyu-interpolation'
     ss_id: 65a2da57b52942cf486cd06682db0a4c53eaae34
     gs_id: 11067119780138908286
-    citations: 46
+    citations: 47
 
   - key: deep-testing
     title: Learning Deep Kernels for Non-Parametric Two-Sample Tests
@@ -2386,7 +2386,7 @@ papers:
       - video and slides: https://icml.cc/virtual/2020/poster/5999
     ss_id: cce73b08abf1554c1c730c0333b0b29dadc03c19
     gs_id: 11419051350787047758
-    citations: 259
+    citations: 269
 
   - key: unbiased-mmd-variance
     title: Unbiased estimators for the variance of MMD estimators
@@ -2401,7 +2401,7 @@ papers:
     date: 2019-06-05
     ss_id: cf8365023bf88bbd3c18ebb71591c7b60492497d
     gs_id: 11678116865040215413
-    citations: 17
+    citations: 18
 
   - key: cosmo-ml
     title: The Role of Machine Learning in the Next Decade of Cosmology
@@ -2443,7 +2443,7 @@ papers:
     date: 2019-02-26
     ss_id: 333ddc46a211ab1eb6ceb1f4b7c4952eadce8015
     gs_id: 12908060365392151722
-    citations: 83
+    citations: 85
 
   - key: dkef
     title: Learning deep kernels for exponential family densities
@@ -2463,7 +2463,7 @@ papers:
     my_talk: true
     ss_id: fbc0863a25d99ef3895f174c7c2ee01c4f19df21
     gs_id: 18438114656627425154
-    citations: 99
+    citations: 100
 
   - key: smmd
     title: On gradient regularizers for MMD GANs
@@ -2484,7 +2484,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 3d597e16ef56119bb6e6d78e3f379623862f0752
     gs_id: 12044208657387141906
-    citations: 122
+    citations: 124
 
   - key: mmd-gans
     title: Demystifying MMD GANs
@@ -2505,7 +2505,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 9723066a5587e6267d8abfd7feefd0637a5a211c
     gs_id: 10236052458128513824
-    citations: 2238
+    citations: 2320
 
   - key: bdr-workshop
     title: Bayesian Approaches to Distribution Regression
@@ -2551,7 +2551,7 @@ papers:
     my_talk: true
     ss_id: 63ca8b71d2e2e755140ff09d157de0521de3d5c0
     gs_id: 9035704111500533087 12599253809303872014 15731144284682630817
-    citations: 43
+    citations: 44
 
   - key: bdr
     title: Bayesian Approaches to Distribution Regression
@@ -2584,7 +2584,7 @@ papers:
     gs_id: 9179369638374246622
     year: 2017
     date: 2017-02-09
-    citations: 5
+    citations: 6
 
   - key: trump-clinton
     title: Understanding the 2016 US Presidential Election using ecological inference and distribution regression with census microdata
@@ -2629,7 +2629,7 @@ papers:
       - Oxford talk: '#talk-oxford-opt-mmd'
     ss_id: d772a21f2f687985b41bec2dc47bc2760c57ed2f
     gs_id: 14039271793330969441 11531994075904943226
-    citations: 268
+    citations: 276
 
   - key: thesis
     title: Scalable, Flexible, and Active Learning on Distributions
@@ -2758,7 +2758,7 @@ papers:
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/rff_uai15.pdf
     ss_id: 78e95099ec2ac3cb087eb47ba7c87ddb01a19405
     gs_id: 2736757817032849196
-    citations: 257
+    citations: 261
 
   - key: apps
     title: Active Pointillistic Pattern Search
@@ -2816,7 +2816,7 @@ papers:
     arXiv: '1410.0686'
     ss_id: f5b6eb5c3fa7eb7a569d6c2af0a43f7123034bd0
     gs_id: 15766717484171055980
-    citations: 125
+    citations: 126
 
   - key: active-mf
     title: Active learning and search on low-rank matrices
@@ -2838,7 +2838,7 @@ papers:
     my_talk: true
     ss_id: 2bf7e7fb156466546428dc6d25702d32514ef41d
     gs_id: 6061284565694240919
-    citations: 50
+    citations: 51
 
   - key: sdm-arxiv
     title: Kernels on Sample Sets via Nonparametric Divergence Estimates
