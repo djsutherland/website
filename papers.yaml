@@ -1542,6 +1542,24 @@ papers:
     related: !!omap
       - bioRxiv: https://www.biorxiv.org/content/10.1101/2025.11.05.686865v1
 
+  - key: thr-grpo
+    title: 'Token Hidden Reward: Steering Exploration-Exploitation in GRPO Training'
+    authors:
+      - wenlong
+      - joshua
+      - me
+      - christos
+      - xiaoxiao
+    collabinfo: My student Yi Ren helped significantly with this paper; my role was much smaller.
+    venue: iclr
+    year: 2026
+    date: 2026-04-23
+    submitted-date: 2025-09-24
+    official: https://openreview.net/forum?id=htQDmHvva6
+    gs_id: 18045020272459181770
+    arXiv: 2510.03669
+    citations: 3
+
   - key: hsic-d
     title: Learning Representations for Independence Testing
     authors:
@@ -1617,6 +1635,7 @@ papers:
     accept-kind: best paper
     note: Best Paper Award.
     citations: 3
+    full_version: thr-grpo
 
   - key: lld-grpo-ai4math
     title: On the Effect of Negative Gradient in Group Relative Deep Reinforcement Optimization
