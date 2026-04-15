@@ -1090,6 +1090,11 @@ venues:
     type: journal
     web: https://jds.acm.org/
 
+  plos-compbio:
+    name: PLOS Computational Biology
+    type: journal
+    web: https://journals.plos.org/ploscompbiol/
+
   tmlr:
     name: Transactions on Machine Learning Research
     short: TMLR
@@ -1532,6 +1537,7 @@ papers:
     date: 2025-12-16
     year: 2025
     venue: preprint
+    submitted: tmlr
     gs_id: 5091642510698977721
     citations: 1
 
@@ -1545,6 +1551,7 @@ papers:
     year: 2025
     date: 2025-11-07
     collabinfo: Wenjun did the bulk of this work; I helped guide the methodology and theory, while Khanh helped with the biological applications and motivation.
+    submitted: plos-compbio
     related: !!omap
       - bioRxiv: https://www.biorxiv.org/content/10.1101/2025.11.05.686865v1
     gs_id: 5578930647991327573
@@ -1582,17 +1589,16 @@ papers:
     gs_id: 3927924380698217287
     official: https://openreview.net/forum?id=pDvKoXRsnW
 
-  - key: llm-selective-annotation
-    title: How Effective is Embedding-Based Selective Annotation for In-Context Learning in LLMs?
-    authors:
-      - won
-      - mingyu
-      - hamed
-      - me
-    year: 2025
-    date: 2025-05-31
-    venue: in-prep
-    collabinfo: This work is done and will be submitted to a workshop in the near future.
+      # - key: llm-selective-annotation
+      #   title: How Effective is Embedding-Based Selective Annotation for In-Context Learning in LLMs?
+      #   authors:
+      #     - won
+      #     - mingyu
+      #     - hamed
+      #     - me
+      #   year: 2025
+      #   date: 2025-05-31
+      #   venue: preprint
 
   - key: explore-bandits
     title: Efficient kernelized bandit algorithms via exploration distributions
@@ -1602,7 +1608,7 @@ papers:
       - me
     year: 2025
     date: 2025-05-15
-    venue: preprint
+    venue: tech-report
     arXiv: '2506.10091'
 
   - key: kci-is-hard
@@ -1865,9 +1871,7 @@ papers:
       - yazhe
       - me
       - arthur
-    venue: preprint
-    submitted: jmlr
-    submitted-date: 2025-09-29
+    venue: tech-report
     date: 2024-02-20
     year: 2024
     arXiv: '2402.13196'
