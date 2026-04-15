@@ -1501,6 +1501,10 @@ venues:
     type: seminar
     web: https://trustmlresearch.github.io
 
+  uw-biostats:
+    name: Biostatistics Seminar, University of Washington
+    type: seminar
+
 ################################################################################
 ################################################################################
 ################################################################################
@@ -2971,6 +2975,17 @@ papers:
 ################################################################################
 
 talks:
+  - key: kci-uw-biostats
+    title: "Detecting conditional dependence in practice: why it’s so hard, and what we can do"
+    type: international
+    date: 2025-11-06
+    venue: uw-biostats
+    papers:
+      - circe
+      - split-kci
+      - kci-is-hard
+    slides: https://djsutherland.ml/slides/kci-uw.pdf
+
   - key: ubc-testing
     title: Distinguishing Distributions and Detecting (Conditional) Dependence Beyond Scalar Data
     type: local
