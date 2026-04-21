@@ -1515,10 +1515,10 @@ venues:
 ################################################################################
 
 cite_meta:
-  last_cite_update: '2026-04-14'
+  last_cite_update: '2026-04-21'
 
-  total: 7450
-  total_5y: 6476
+  total: 7488
+  total_5y: 6514
 
   h_index: 32
   h_index_5y: 28
@@ -1573,7 +1573,7 @@ papers:
     official: https://openreview.net/forum?id=htQDmHvva6
     gs_id: 18045020272459181770
     arXiv: 2510.03669
-    citations: 5
+    citations: 6
 
   - key: hsic-d
     title: Learning Representations for Independence Testing
@@ -1787,7 +1787,7 @@ papers:
     date: 2025-04-20
     arXiv: '2407.10490'
     gs_id: 12299741007955922
-    citations: 119
+    citations: 122
     official: https://openreview.net/forum?id=tPNHOoZFl9
     accept-kind: outstanding paper
     note: Outstanding Paper Award.
@@ -1861,7 +1861,7 @@ papers:
     year: 2024
     arXiv: '2404.04286'
     gs_id: 16139395396553668193 7973927278752154333
-    citations: 15
+    citations: 16
 
   - key: split-kci
     title: Practical Kernel Tests of Conditional Independence
@@ -1984,7 +1984,7 @@ papers:
     gs_id: 7161387838783241803
     year: 2023
     date: 2023-07-23
-    citations: 314
+    citations: 320
     collabinfo: Ali initiated the idea of this project, but I did most of the supervisory work after the extremely early stages; the ordering is partly because of some cross-field confusion about norms between theory and ML.
     related: !!omap
       - blog post: https://blog.research.google/2024/01/exphormer-scaling-transformers-for.html
@@ -2063,7 +2063,7 @@ papers:
       - saraswat
       - vytla
       - stark
-    citations: 60
+    citations: 64
     gs_id: 18334777895960251368 4841877026388899314
     collabinfo: This was a highly collaborative work (fifty authors); I was one of the five or so most involved in the writing.
 
@@ -2258,7 +2258,7 @@ papers:
     ss_id: d050f2f50a490fd90a06e5bcc7ed22079a28e404
     gs_id: 3078534230907333706 16851788017931748094
     date: 2024-04-01
-    citations: 35
+    citations: 36
     collabinfo: Nati and I were both broad supervisors here, and are listed according to seniority.
 
   - key: queerinai-dni
@@ -2369,7 +2369,7 @@ papers:
     official: https://jmlr.org/papers/v22/20-451.html
     ss_id: 2be40f5336afa68b49fef41e009b7172c2c9fdeb
     gs_id: 3559273292438013868
-    citations: 1516
+    citations: 1522
 
   - key: irm
     title: Does Invariant Risk Minimization Capture Invariance?
@@ -2550,7 +2550,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 9723066a5587e6267d8abfd7feefd0637a5a211c
     gs_id: 10236052458128513824
-    citations: 2591
+    citations: 2605
 
   - key: bdr-workshop
     title: Bayesian Approaches to Distribution Regression
@@ -2674,7 +2674,7 @@ papers:
       - Oxford talk: '#talk-oxford-opt-mmd'
     ss_id: d772a21f2f687985b41bec2dc47bc2760c57ed2f
     gs_id: 14039271793330969441 11531994075904943226
-    citations: 281
+    citations: 283
 
   - key: thesis
     title: Scalable, Flexible, and Active Learning on Distributions
