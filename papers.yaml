@@ -728,7 +728,7 @@ coauthors:
     first: Wenjun
     last: Zhao
     web: https://wenjunzhaowo.github.io/
-    student_years: [2000, 2025]
+    student_years: [2000, 2026]
   wenkai:
     first: Wenkai
     last: Xu
@@ -1547,11 +1547,11 @@ papers:
       - wenjun
       - me
       - khanh
-    venue: preprint
-    year: 2025
-    date: 2025-11-07
+    venue: plos-compbio
+    year: 2026
+    date: 2026-05-01
     collabinfo: Wenjun did the bulk of this work; I helped guide the methodology and theory, while Khanh helped with the biological applications and motivation.
-    submitted: plos-compbio
+    # doi: 10.1371/journal.pcbi.1014254
     related: !!omap
       - bioRxiv: https://www.biorxiv.org/content/10.1101/2025.11.05.686865v1
     gs_id: 5578930647991327573
