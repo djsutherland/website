@@ -1529,15 +1529,15 @@ cite_meta:
 papers:
   - key: mmd-unequal
     title: Maximum Mean Discrepancy with Unequal Sample Sizes via Generalized U-Statistics
-    arXiv: '2512.13997'
     authors:
       - aaron
       - milad
       - me
-    date: 2025-12-16
-    year: 2025
-    venue: preprint
-    submitted: tmlr
+    date: 2026-05-16
+    year: 2026
+    venue: tmlr
+    official: https://openreview.net/forum?id=KjXW75GHHF
+    arXiv: '2512.13997'
     gs_id: 5091642510698977721
     citations: 1
 
