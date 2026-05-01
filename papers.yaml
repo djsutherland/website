@@ -958,6 +958,7 @@ venues:
       2020: https://icml.cc/Conferences/2020
       2023: https://icml.cc/Conferences/2023
       2024: https://icml.cc/Conferences/2024
+      2026: https://icml.cc/Conferences/2026
     accepts:
       2019: !!omap
         - unspecial: 773
@@ -971,6 +972,9 @@ venues:
       2024: !!omap
         - unspecial: 2944
         - submitted: 9653
+      2026: !!omap
+        - unspecial: 6_352
+        - submitted: 23_918
     h5_rank: 19
 
   ijcai:
@@ -1527,6 +1531,15 @@ cite_meta:
   i10_index_5y: 42
 
 papers:
+  - key: skci
+    title: 'Sequential Kernel-based Conditional Independence Testing via Adaptive Betting'
+    authors:
+      - zheng
+      - me
+    year: 2026
+    date: 2026-07-05
+    venue: icml
+
   - key: mmd-unequal
     title: Maximum Mean Discrepancy with Unequal Sample Sizes via Generalized U-Statistics
     authors:
