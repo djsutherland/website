@@ -1519,10 +1519,10 @@ venues:
 ################################################################################
 
 cite_meta:
-  last_cite_update: '2026-04-21'
+  last_cite_update: '2026-05-01'
 
-  total: 7488
-  total_5y: 6514
+  total: 7563
+  total_5y: 6590
 
   h_index: 32
   h_index_5y: 28
@@ -1532,7 +1532,7 @@ cite_meta:
 
 papers:
   - key: skci
-    title: 'Sequential Kernel-based Conditional Independence Testing via Adaptive Betting'
+    title: Sequential Kernel-based Conditional Independence Testing via Adaptive Betting
     authors:
       - zheng
       - me
@@ -1586,7 +1586,7 @@ papers:
     official: https://openreview.net/forum?id=htQDmHvva6
     gs_id: 18045020272459181770
     arXiv: 2510.03669
-    citations: 6
+    citations: 8
 
   - key: hsic-d
     title: Learning Representations for Independence Testing
@@ -1642,7 +1642,7 @@ papers:
     accept-kind: spotlight
     note: Selected for spotlight presentation.
     gs_id: 12544415138696676225
-    citations: 4
+    citations: 5
 
   - key: thr-grpo-ai4math
     title: 'Token Hidden Reward: Steering Exploration-Exploitation in GRPO Training'
@@ -1694,7 +1694,7 @@ papers:
     official: https://openreview.net/forum?id=2K9QsDaqkM
     venue: neurips
     gs_id: 8898899477402539415
-    citations: 21
+    citations: 22
 
   - key: active-segmentation
     title: Diffusion-Driven Two-Stage Active Learning for Low-Budget Semantic Segmentation
@@ -1800,7 +1800,7 @@ papers:
     date: 2025-04-20
     arXiv: '2407.10490'
     gs_id: 12299741007955922
-    citations: 122
+    citations: 130
     official: https://openreview.net/forum?id=tPNHOoZFl9
     accept-kind: outstanding paper
     note: Outstanding Paper Award.
@@ -1819,7 +1819,7 @@ papers:
     date: 2024-12-10
     arXiv: '2411.16278'
     gs_id: 9232502564221333600
-    citations: 18
+    citations: 19
 
   - key: maxherding
     title: Generalized Coverage for More Robust Low-Budget Active Learning
@@ -1874,7 +1874,7 @@ papers:
     year: 2024
     arXiv: '2404.04286'
     gs_id: 16139395396553668193 7973927278752154333
-    citations: 16
+    citations: 19
 
   - key: split-kci
     title: Practical Kernel Tests of Conditional Independence
@@ -1981,7 +1981,7 @@ papers:
     date: 2023-12-11
     gs_id: 4645152097706396762 12390267246817978257
     arXiv: '2310.18777'
-    citations: 19
+    citations: 20
 
   - key: exphormer
     title: 'Exphormer: Scaling Graph Transformers with Expander Graphs'
@@ -1997,7 +1997,7 @@ papers:
     gs_id: 7161387838783241803
     year: 2023
     date: 2023-07-23
-    citations: 320
+    citations: 330
     collabinfo: Ali initiated the idea of this project, but I did most of the supervisory work after the extremely early stages; the ordering is partly because of some cross-field confusion about norms between theory and ML.
     related: !!omap
       - blog post: https://blog.research.google/2024/01/exphormer-scaling-transformers-for.html
@@ -2014,7 +2014,7 @@ papers:
     ss_id: 923f93d2ae0c73c3934e4b56b063c6dc00bfb978
     gs_id: 4580998787359405017
     arXiv: '2206.12543'
-    citations: 45
+    citations: 44
 
   - key: qai
     title: 'Queer in AI: A Case Study in Community-Led Participatory AI'
@@ -2076,7 +2076,7 @@ papers:
       - saraswat
       - vytla
       - stark
-    citations: 64
+    citations: 66
     gs_id: 18334777895960251368 4841877026388899314
     collabinfo: This was a highly collaborative work (fifty authors); I was one of the five or so most involved in the writing.
 
@@ -2382,7 +2382,7 @@ papers:
     official: https://jmlr.org/papers/v22/20-451.html
     ss_id: 2be40f5336afa68b49fef41e009b7172c2c9fdeb
     gs_id: 3559273292438013868
-    citations: 1522
+    citations: 1537
 
   - key: irm
     title: Does Invariant Risk Minimization Capture Invariance?
@@ -2444,7 +2444,7 @@ papers:
       - video and slides: https://icml.cc/virtual/2020/poster/5999
     ss_id: cce73b08abf1554c1c730c0333b0b29dadc03c19
     gs_id: 11419051350787047758
-    citations: 286
+    citations: 287
 
   - key: unbiased-mmd-variance
     title: Unbiased estimators for the variance of MMD estimators
@@ -2501,7 +2501,7 @@ papers:
     date: 2019-02-26
     ss_id: 333ddc46a211ab1eb6ceb1f4b7c4952eadce8015
     gs_id: 12908060365392151722
-    citations: 95
+    citations: 96
 
   - key: dkef
     title: Learning deep kernels for exponential family densities
@@ -2521,7 +2521,7 @@ papers:
     my_talk: true
     ss_id: fbc0863a25d99ef3895f174c7c2ee01c4f19df21
     gs_id: 18438114656627425154
-    citations: 104
+    citations: 105
 
   - key: smmd
     title: On gradient regularizers for MMD GANs
@@ -2542,7 +2542,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 3d597e16ef56119bb6e6d78e3f379623862f0752
     gs_id: 12044208657387141906
-    citations: 126
+    citations: 127
 
   - key: mmd-gans
     title: Demystifying MMD GANs
@@ -2563,7 +2563,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 9723066a5587e6267d8abfd7feefd0637a5a211c
     gs_id: 10236052458128513824
-    citations: 2605
+    citations: 2629
 
   - key: bdr-workshop
     title: Bayesian Approaches to Distribution Regression
@@ -2609,7 +2609,7 @@ papers:
     my_talk: true
     ss_id: 63ca8b71d2e2e755140ff09d157de0521de3d5c0
     gs_id: 9035704111500533087 12599253809303872014 15731144284682630817
-    citations: 48
+    citations: 49
 
   - key: bdr
     title: Bayesian Approaches to Distribution Regression
@@ -2761,7 +2761,7 @@ papers:
     arXiv: '1509.05409'
     ss_id: 45c0b51a6543f0fdfbf504838059f7acdfc0e409
     gs_id: 5213844651993496360
-    citations: 91
+    citations: 92
 
   - key: hdd
     title: Linear-time Learning on Distributions with Approximate Kernel Embeddings
@@ -2816,7 +2816,7 @@ papers:
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/rff_uai15.pdf
     ss_id: 78e95099ec2ac3cb087eb47ba7c87ddb01a19405
     gs_id: 2736757817032849196
-    citations: 275
+    citations: 276
 
   - key: apps
     title: Active Pointillistic Pattern Search
@@ -2874,7 +2874,7 @@ papers:
     arXiv: '1410.0686'
     ss_id: f5b6eb5c3fa7eb7a569d6c2af0a43f7123034bd0
     gs_id: 15766717484171055980
-    citations: 133
+    citations: 134
 
   - key: active-mf
     title: Active learning and search on low-rank matrices
