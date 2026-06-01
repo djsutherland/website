@@ -96,6 +96,9 @@ coauthors:
     last: Schrab
     web: https://antoninschrab.github.io/
     student_years: [2000, 2025]
+  aram:
+    first: Aram
+    last: Ebtekar
   arjun:
     first: Arjun
     last: Subramonian
@@ -465,6 +468,10 @@ coauthors:
     first: Marc Peter
     last: Deisenroth
     web: https://www.deisenroth.cc/
+  marcus:
+    first: Marcus
+    last: Hutter
+    web: https://hutter1.net/
   mark:
     first: Mark
     last: Schmidt
@@ -1531,6 +1538,18 @@ cite_meta:
   i10_index_5y: 44
 
 papers:
+  - key: nfl-ait
+    title: Understanding Generalization Requires Universal Induction
+    authors:
+      - aram
+      - marcus
+      - me
+    year: 2026
+    date: 2026-05-31
+    venue: preprint
+    related: !!omap
+      - pdf: https://djsutherland.ml/papers/nfl-ait.pdf
+
   - key: skci
     title: Sequential Kernel-based Conditional Independence Testing via Adaptive Betting
     authors:
@@ -1564,7 +1583,7 @@ papers:
     year: 2026
     date: 2026-05-01
     collabinfo: Wenjun did the bulk of this work; I helped guide the methodology and theory, while Khanh helped with the biological applications and motivation.
-    # doi: 10.1371/journal.pcbi.1014254
+    doi: 10.1371/journal.pcbi.1014254
     related: !!omap
       - bioRxiv: https://www.biorxiv.org/content/10.1101/2025.11.05.686865v1
     gs_id: 5578930647991327573

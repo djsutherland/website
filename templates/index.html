@@ -325,7 +325,7 @@
 
               <div class="links">
                 {% if paper.official %}<span class="info">[<a href="{{ paper.official }}">official</a>]</span>{% endif %}
-                {% if paper.doi %}<span class="info">[<a href="https://dx.doi.org/{{ paper.doi }}">doi</a>]</span>{% endif %}
+                {% if paper.doi %}<span class="info">[<a href="https://doi.org/{{ paper.doi }}">doi</a>]</span>{% endif %}
                 {% if paper.arXiv %}<span class="info">[<a href="https://arxiv.org/abs/{{ paper.arXiv }}">arXiv</a>]</span>{% endif %}
                 {% if paper.full_version %}
                   <span class="info">[<a href="#{{ paper.full_version }}">full version</a>]</span>
