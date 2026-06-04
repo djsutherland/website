@@ -1526,10 +1526,10 @@ venues:
 ################################################################################
 
 cite_meta:
-  last_cite_update: '2026-05-31'
+  last_cite_update: '2026-06-04'
 
-  total: 7787
-  total_5y: 6811
+  total: 7821
+  total_5y: 6845
 
   h_index: 32
   h_index_5y: 28
@@ -1605,7 +1605,7 @@ papers:
     official: https://openreview.net/forum?id=htQDmHvva6
     gs_id: 18045020272459181770
     arXiv: 2510.03669
-    citations: 12
+    citations: 13
 
   - key: hsic-d
     title: Learning Representations for Independence Testing
@@ -1821,7 +1821,7 @@ papers:
     date: 2025-04-20
     arXiv: '2407.10490'
     gs_id: 12299741007955922
-    citations: 145
+    citations: 148
     official: https://openreview.net/forum?id=tPNHOoZFl9
     accept-kind: outstanding paper
     note: Outstanding Paper Award.
@@ -2002,7 +2002,7 @@ papers:
     date: 2023-12-11
     gs_id: 4645152097706396762 12390267246817978257
     arXiv: '2310.18777'
-    citations: 20
+    citations: 21
 
   - key: exphormer
     title: 'Exphormer: Scaling Graph Transformers with Expander Graphs'
@@ -2018,7 +2018,7 @@ papers:
     gs_id: 7161387838783241803
     year: 2023
     date: 2023-07-23
-    citations: 345
+    citations: 347
     collabinfo: Ali initiated the idea of this project, but I did most of the supervisory work after the extremely early stages; the ordering is partly because of some cross-field confusion about norms between theory and ML.
     related: !!omap
       - blog post: https://blog.research.google/2024/01/exphormer-scaling-transformers-for.html
@@ -2097,7 +2097,7 @@ papers:
       - saraswat
       - vytla
       - stark
-    citations: 66
+    citations: 67
     gs_id: 18334777895960251368 4841877026388899314
     collabinfo: This was a highly collaborative work (fifty authors); I was one of the five or so most involved in the writing.
 
@@ -2116,7 +2116,7 @@ papers:
     ss_id: 8cb6555517575be141174a17f1e0dcf48739aaf4
     gs_id: 854611520534599253 10298606910796508333
     arXiv: '2205.12900'
-    citations: 52
+    citations: 53
 
   - key: circe
     title: Efficient Conditionally Invariant Representation Learning
@@ -2333,7 +2333,7 @@ papers:
       - NYU talk: '#talk-nyu-interpolation'
     ss_id: 24721e44b5510bfda275ddb023c2f107c9526870
     gs_id: 14582780933724089324
-    citations: 104
+    citations: 105
     collabinfo: Nati and I were both broad supervisors here, though I had perhaps more significant regular involvement, and are listed according to seniority.
 
   - key: ssl-hsic
@@ -2403,7 +2403,7 @@ papers:
     official: https://jmlr.org/papers/v22/20-451.html
     ss_id: 2be40f5336afa68b49fef41e009b7172c2c9fdeb
     gs_id: 3559273292438013868
-    citations: 1585
+    citations: 1593
 
   - key: irm
     title: Does Invariant Risk Minimization Capture Invariance?
@@ -2444,7 +2444,7 @@ papers:
       - NYU talk: '#talk-nyu-interpolation'
     ss_id: 65a2da57b52942cf486cd06682db0a4c53eaae34
     gs_id: 11067119780138908286
-    citations: 50
+    citations: 51
 
   - key: deep-testing
     title: Learning Deep Kernels for Non-Parametric Two-Sample Tests
@@ -2563,7 +2563,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 3d597e16ef56119bb6e6d78e3f379623862f0752
     gs_id: 12044208657387141906
-    citations: 128
+    citations: 129
 
   - key: mmd-gans
     title: Demystifying MMD GANs
@@ -2584,7 +2584,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 9723066a5587e6267d8abfd7feefd0637a5a211c
     gs_id: 10236052458128513824
-    citations: 2714
+    citations: 2724
 
   - key: bdr-workshop
     title: Bayesian Approaches to Distribution Regression
@@ -2650,7 +2650,7 @@ papers:
       - NeurIPS workshop version: '#bdr-workshop'
     ss_id: f35f56b7048a74244ab0530e4bc705cc71125862
     gs_id: 18333796385560193193 16793725927913159067
-    citations: 45
+    citations: 46
 
   - key: caponnetto-fix
     title: Fixing an error in Caponnetto and de Vito (2007)
@@ -2782,7 +2782,7 @@ papers:
     arXiv: '1509.05409'
     ss_id: 45c0b51a6543f0fdfbf504838059f7acdfc0e409
     gs_id: 5213844651993496360
-    citations: 92
+    citations: 93
 
   - key: hdd
     title: Linear-time Learning on Distributions with Approximate Kernel Embeddings
@@ -2837,7 +2837,7 @@ papers:
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/rff_uai15.pdf
     ss_id: 78e95099ec2ac3cb087eb47ba7c87ddb01a19405
     gs_id: 2736757817032849196
-    citations: 280
+    citations: 281
 
   - key: apps
     title: Active Pointillistic Pattern Search
@@ -2895,7 +2895,7 @@ papers:
     arXiv: '1410.0686'
     ss_id: f5b6eb5c3fa7eb7a569d6c2af0a43f7123034bd0
     gs_id: 15766717484171055980
-    citations: 134
+    citations: 135
 
   - key: active-mf
     title: Active learning and search on low-rank matrices
