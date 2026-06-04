@@ -8,11 +8,11 @@ jobs:
     runs-on: self-hosted
     container: texlive/texlive:latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           clean: false
       - name: Install system prereqs
-        run: apt-get update && apt-get install -y python3-venv nodejs openssh-client
+        run: apt-get update && apt-get install -y python3-venv openssh-client rsync
       - name: Set up venv
         run: |
           python -mvenv venv
@@ -23,13 +23,29 @@ jobs:
           git config --global --add safe.directory /__w/website/website  # dubious ownership is okay
           make -j$((`nproc`+1)) all || ( make clean && make all )
         shell: bash
-      - uses: webfactory/ssh-agent@v0.9.1
-        with:
-          ssh-private-key: ${{ secrets.SSH_DEPLOY_KEY }}
+      - name: Set up SSH
+        shell: bash
+        run: |
+          SSH_DIR="$GITHUB_WORKSPACE/.ssh"
+
+          mkdir -p "$SSH_DIR"
+          chmod 700 "$SSH_DIR"
+          printf '%s\n' "${{ secrets.SSH_DEPLOY_KEY }}" > "$SSH_DIR/deploy_key"
+          printf '%s\n' "${{ secrets.SSH_KNOWN_HOSTS }}" > "$SSH_DIR/known_hosts"
+
+          cat > "$SSH_DIR"/config <<EOF
+          Host target
+            HostName djsutherland.ml
+            User djs
+            IdentityFile $SSH_DIR/deploy_key
+            UserKnownHostsFile $SSH_DIR/known_hosts
+            IdentitiesOnly yes
+          EOF
+          chmod 600 "$SSH_DIR/deploy_key" "$SSH_DIR/known_hosts" "$SSH_DIR/config"
       - name: Upload
         shell: bash
         run: |
-          rsync -rlptvz -e 'ssh -o StrictHostKeyChecking=no' built/ djs@djsutherland.ml:djsutherland.ml/
+          rsync -rlptvz -e "ssh -F $GITHUB_WORKSPACE/.ssh/config" built/ target:djsutherland.ml/
       - name: Removing stuff on failure
         if: ${{ failure() }}
         run: |
