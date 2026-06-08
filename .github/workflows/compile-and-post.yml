@@ -45,7 +45,9 @@ jobs:
       - name: Upload
         shell: bash
         run: |
-          rsync -rlptvz -e "ssh -F $GITHUB_WORKSPACE/.ssh/config" built/ target:djsutherland.ml/
+          rsync -rlptvz \
+            -e "ssh -F $GITHUB_WORKSPACE/.ssh/config -o BatchMode=yes -o ConnectTimeout=15" \
+            built/ target:djsutherland.ml/
       - name: Removing stuff on failure
         if: ${{ failure() }}
         run: |
