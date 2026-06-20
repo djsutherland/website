@@ -1552,6 +1552,7 @@ papers:
 
   - key: skci
     title: Sequential Kernel-based Conditional Independence Testing via Adaptive Betting
+    arXiv: '2606.18993'
     authors:
       - zheng
       - me
