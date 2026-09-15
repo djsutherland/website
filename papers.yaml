@@ -1227,6 +1227,12 @@ venues:
   birs:
     name: Banff International Research Station
     long_article: the
+  birs-kagp:
+    name: Kernel Approximation and Gaussian Processes
+    type: workshop
+    conference: birs
+    web: https://www.birs.ca/events/2026/5-day-workshops/26w5635
+    year: 2026
   birs-stattrust:
     name: Statistical Aspects of Trustworthy Machine Learning
     type: workshop
@@ -3016,6 +3022,18 @@ papers:
 ################################################################################
 
 talks:
+  - key: kci-birs
+    title: "Kernel measures of (conditional) dependence: a foundational statistical problem"
+    type: national
+    date: 2025-09-15
+    venue: birs-kagp
+    papers:
+      - split-kci
+      - kci-is-hard
+    slides: https://djsutherland.ml/slides/kci-birs.html
+    related: !!omap
+      - slides (pdf): https://djsutherland.ml/slides/kci-birs.pdf
+
   - key: kci-uw-biostats
     title: 'Detecting conditional dependence in practice: why it’s so hard, and what we can do'
     type: international
