@@ -1544,6 +1544,15 @@ cite_meta:
   i10_index_5y: 44
 
 papers:
+  - key: pointwise-ci
+    title: Conditional Independence Is Not (Quite) Pointwise Testable
+    authors:
+      - me
+    year: 2026
+    date: 2026-09-21
+    venue: preprint
+    arXiv: '2609.24221'
+
   - key: nfl-ait
     title: Understanding Generalization Requires Universal Induction
     authors:
