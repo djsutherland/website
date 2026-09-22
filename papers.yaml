@@ -1532,13 +1532,13 @@ venues:
 ################################################################################
 
 cite_meta:
-  last_cite_update: '2026-07-31'
+  last_cite_update: '2026-09-22'
 
-  total: 8182
-  total_5y: 7185
+  total: 8426
+  total_5y: 7498
 
-  h_index: 32
-  h_index_5y: 29
+  h_index: 31
+  h_index_5y: 30
 
   i10_index: 49
   i10_index_5y: 44
@@ -1602,7 +1602,7 @@ papers:
     doi: 10.1371/journal.pcbi.1014254
     related: !!omap
       - bioRxiv: https://www.biorxiv.org/content/10.1101/2025.11.05.686865v1
-    gs_id: 5578930647991327573
+    gs_id: 5578930647991327573 7609327405018164740
     citations: 3
 
   - key: thr-grpo
@@ -1621,7 +1621,7 @@ papers:
     official: https://openreview.net/forum?id=htQDmHvva6
     gs_id: 18045020272459181770
     arXiv: 2510.03669
-    citations: 14
+    citations: 16
 
   - key: hsic-d
     title: Learning Representations for Independence Testing
@@ -1676,7 +1676,7 @@ papers:
     venue: neurips
     accept-kind: spotlight
     note: Selected for spotlight presentation.
-    gs_id: 12544415138696676225
+    gs_id: 12544415138696676225 95634009803109080
     citations: 7
 
   - key: thr-grpo-ai4math
@@ -1728,8 +1728,8 @@ papers:
     arXiv: '2505.18830'
     official: https://openreview.net/forum?id=2K9QsDaqkM
     venue: neurips
-    gs_id: 8898899477402539415
-    citations: 30
+    gs_id: 8898899477402539415 1086904647014923459
+    citations: 31
 
   - key: active-segmentation
     title: Diffusion-Driven Two-Stage Active Learning for Low-Budget Semantic Segmentation
@@ -1765,8 +1765,8 @@ papers:
     submitted-date: 2025-05-15
     arXiv: '2510.11140'
     official: https://openreview.net/forum?id=CVekdZDzLG
-    gs_id: 9076596006746934616
-    citations: 7
+    gs_id: 9076596006746934616 6873640409914988144
+    citations: 8
     venue: neurips
 
   - key: u-herding
@@ -1781,9 +1781,9 @@ papers:
     date: 2025-04-20
     arXiv: '2412.20644'
     official: https://openreview.net/forum?id=UgPoHhYQ2U
-    gs_id: 7817216976501377899
+    gs_id: 7817216976501377899 6341761920002891839
+    citations: 20
 
-    citations: 11
   - key: gnn-norm
     title: Normalization Matters for Optimization Performance on Graph Neural Networks
     authors:
@@ -1836,8 +1836,8 @@ papers:
     year: 2025
     date: 2025-04-20
     arXiv: '2407.10490'
-    gs_id: 12299741007955922
-    citations: 165
+    gs_id: 12299741007955922 12807570913785598968
+    citations: 158
     official: https://openreview.net/forum?id=tPNHOoZFl9
     accept-kind: outstanding paper
     note: Outstanding Paper Award.
@@ -1856,7 +1856,7 @@ papers:
     date: 2024-12-10
     arXiv: '2411.16278'
     gs_id: 9232502564221333600
-    citations: 23
+    citations: 27
 
   - key: maxherding
     title: Generalized Coverage for More Robust Low-Budget Active Learning
@@ -1868,7 +1868,7 @@ papers:
     year: 2024
     date: 2024-09-29
     arXiv: '2407.12212'
-    citations: 18
+    citations: 25
     gs_id: 11914806130472742386
 
   - key: active-meta
@@ -1896,7 +1896,7 @@ papers:
     date: 2024-07-21
     arXiv: 2407.12332
     gs_id: 77021859622142169 16561363804118007192
-    citations: 53
+    citations: 62
 
   - key: il-icl
     title: 'Bias Amplification in Language Model Evolution: An Iterated Learning Perspective'
@@ -1911,7 +1911,7 @@ papers:
     year: 2024
     arXiv: '2404.04286'
     gs_id: 16139395396553668193 7973927278752154333
-    citations: 26
+    citations: 28
 
   - key: split-kci
     title: Practical Kernel Tests of Conditional Independence
@@ -1926,7 +1926,7 @@ papers:
     year: 2024
     arXiv: '2402.13196'
     gs_id: 14319205214147904712
-    citations: 19
+    citations: 18
     collabinfo: Arthur and I played roughly equal supervisory roles on this work.
 
   - key: adaflood
@@ -1962,7 +1962,7 @@ papers:
     arXiv: '2303.01687'
     ss_id: 9fdc5d89eda1b6d8437757792286471465add203
     gs_id: 6645133680438219650 739951386474118426
-    citations: 23
+    citations: 26
 
   - key: dp-ntk-workshop
     title: Differentially Private Neural Tangent Kernels for Privacy-Preserving Data Generation
@@ -2018,7 +2018,7 @@ papers:
     date: 2023-12-11
     gs_id: 4645152097706396762 12390267246817978257
     arXiv: '2310.18777'
-    citations: 23
+    citations: 25
 
   - key: exphormer
     title: 'Exphormer: Scaling Graph Transformers with Expander Graphs'
@@ -2034,7 +2034,7 @@ papers:
     gs_id: 7161387838783241803
     year: 2023
     date: 2023-07-23
-    citations: 378
+    citations: 419
     collabinfo: Ali initiated the idea of this project, but I did most of the supervisory work after the extremely early stages; the ordering is partly because of some cross-field confusion about norms between theory and ML.
     related: !!omap
       - blog post: https://blog.research.google/2024/01/exphormer-scaling-transformers-for.html
@@ -2051,7 +2051,7 @@ papers:
     ss_id: 923f93d2ae0c73c3934e4b56b063c6dc00bfb978
     gs_id: 4580998787359405017
     arXiv: '2206.12543'
-    citations: 49
+    citations: 51
 
   - key: qai
     title: 'Queer in AI: A Case Study in Community-Led Participatory AI'
@@ -2113,7 +2113,7 @@ papers:
       - saraswat
       - vytla
       - stark
-    citations: 69
+    citations: 80
     gs_id: 18334777895960251368 4841877026388899314
     collabinfo: This was a highly collaborative work (fifty authors); I was one of the five or so most involved in the writing.
 
@@ -2132,7 +2132,7 @@ papers:
     ss_id: 8cb6555517575be141174a17f1e0dcf48739aaf4
     gs_id: 854611520534599253 10298606910796508333
     arXiv: '2205.12900'
-    citations: 53
+    citations: 55
 
   - key: circe
     title: Efficient Conditionally Invariant Representation Learning
@@ -2152,7 +2152,7 @@ papers:
     ss_id: 422b68799bfc5cae91febc5c33d59e28b067a368
     gs_id: 7462248955033708193
     official: https://openreview.net/forum?id=dJruFeSRym1
-    citations: 29
+    citations: 30
     collabinfo: A portion of this paper happened while I was out on medical leave; during the periods I was present, supervision was roughly equal among the three faculty authors.
 
   - key: finetuning
@@ -2169,7 +2169,7 @@ papers:
     ss_id: 75852ed23746bb8fceebeef8c5ae2d228b83dd24
     gs_id: 15928265510615609906
     arXiv: '2302.05779'
-    citations: 29
+    citations: 31
 
   - key: mmd-bfair
     title: 'MMD-B-Fair: Learning Fair Representations with Statistical Testing'
@@ -2183,7 +2183,7 @@ papers:
     ss_id: 244833b8e577d73c1a3552e6f41e0afcd8fc87a1
     gs_id: 8937404985150107657 7310171816056904535
     date: 2023-04-25
-    citations: 25
+    citations: 29
 
   - key: moreau
     title: A Non-Asymptotic Moreau Envelope Theory for High-Dimensional Generalized Linear Models
@@ -2199,7 +2199,7 @@ papers:
     ss_id: f8b29bc83e9d84ff4283811faa2bb31b650c6d10
     gs_id: 2093430636599193484
     arXiv: '2210.12082'
-    citations: 32
+    citations: 31
     collabinfo: Nati and I were both broad supervisors here, and are listed according to seniority.
 
   - key: active-ntk
@@ -2214,7 +2214,7 @@ papers:
     ss_id: 7fe95ccdc3cfe8acd2c4975b6cbdc419f7e62b85
     gs_id: 15930502597666827182
     arXiv: '2206.12569'
-    citations: 45
+    citations: 44
 
   - key: contrastive-graph-eval
     title: Evaluating Graph Generative Models with Contrastively Learned Features
@@ -2228,7 +2228,7 @@ papers:
     ss_id: 28f8c4826c1af49b176009c6be39c7a0251764e4
     gs_id: 11402654840281713194
     arXiv: '2206.06234'
-    citations: 17
+    citations: 20
 
   - key: contrastive-wsod
     title: Object Discovery via Contrastive Learning for Weakly Supervised Object Detection
@@ -2349,7 +2349,7 @@ papers:
       - NYU talk: '#talk-nyu-interpolation'
     ss_id: 24721e44b5510bfda275ddb023c2f107c9526870
     gs_id: 14582780933724089324
-    citations: 106
+    citations: 109
     collabinfo: Nati and I were both broad supervisors here, though I had perhaps more significant regular involvement, and are listed according to seniority.
 
   - key: ssl-hsic
@@ -2366,7 +2366,7 @@ papers:
     ss_id: 1a3d5d6cec457f8f3b088cb3636a1a197bd248f6
     gs_id: 13912402342615870661
     arXiv: '2106.08320'
-    citations: 114
+    citations: 118
     collabinfo: Arthur and I were both broad supervisors here, and are listed according to seniority.
 
   - key: meta-2st
@@ -2383,7 +2383,7 @@ papers:
     ss_id: 6b32180f7849dcd5a9f79d7cd0f58a2068d81c32
     gs_id: 3537368320170973148
     arXiv: '2106.07636'
-    citations: 39
+    citations: 41
 
   - key: pot
     title: 'POT: Python Optimal Transport'
@@ -2419,7 +2419,7 @@ papers:
     official: https://jmlr.org/papers/v22/20-451.html
     ss_id: 2be40f5336afa68b49fef41e009b7172c2c9fdeb
     gs_id: 3559273292438013868
-    citations: 1664
+    citations: 1613
 
   - key: irm
     title: Does Invariant Risk Minimization Capture Invariance?
@@ -2439,7 +2439,7 @@ papers:
     accept-kind: oral
     ss_id: 1fc4470c1766aea4c435015f5ef873b066f50121
     gs_id: 12319413802596970196
-    citations: 191
+    citations: 196
 
   - key: uniform-interpolation
     title: On Uniform Convergence and Low-Norm Interpolation Learning
@@ -2481,7 +2481,7 @@ papers:
       - video and slides: https://icml.cc/virtual/2020/poster/5999
     ss_id: cce73b08abf1554c1c730c0333b0b29dadc03c19
     gs_id: 11419051350787047758
-    citations: 304
+    citations: 315
 
   - key: unbiased-mmd-variance
     title: Unbiased estimators for the variance of MMD estimators
@@ -2496,7 +2496,7 @@ papers:
     date: 2019-06-05
     ss_id: cf8365023bf88bbd3c18ebb71591c7b60492497d
     gs_id: 11678116865040215413
-    citations: 21
+    citations: 20
 
   - key: cosmo-ml
     title: The Role of Machine Learning in the Next Decade of Cosmology
@@ -2538,7 +2538,7 @@ papers:
     date: 2019-02-26
     ss_id: 333ddc46a211ab1eb6ceb1f4b7c4952eadce8015
     gs_id: 12908060365392151722
-    citations: 102
+    citations: 105
 
   - key: dkef
     title: Learning deep kernels for exponential family densities
@@ -2558,7 +2558,7 @@ papers:
     my_talk: true
     ss_id: fbc0863a25d99ef3895f174c7c2ee01c4f19df21
     gs_id: 18438114656627425154
-    citations: 107
+    citations: 111
 
   - key: smmd
     title: On gradient regularizers for MMD GANs
@@ -2579,7 +2579,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 3d597e16ef56119bb6e6d78e3f379623862f0752
     gs_id: 12044208657387141906
-    citations: 131
+    citations: 133
 
   - key: mmd-gans
     title: Demystifying MMD GANs
@@ -2600,7 +2600,7 @@ papers:
       - UMass talk: '#talk-umass-gans'
     ss_id: 9723066a5587e6267d8abfd7feefd0637a5a211c
     gs_id: 10236052458128513824
-    citations: 2864
+    citations: 3015
 
   - key: bdr-workshop
     title: Bayesian Approaches to Distribution Regression
@@ -2646,7 +2646,7 @@ papers:
     my_talk: true
     ss_id: 63ca8b71d2e2e755140ff09d157de0521de3d5c0
     gs_id: 9035704111500533087 12599253809303872014 15731144284682630817
-    citations: 54
+    citations: 56
 
   - key: bdr
     title: Bayesian Approaches to Distribution Regression
@@ -2666,7 +2666,7 @@ papers:
       - NeurIPS workshop version: '#bdr-workshop'
     ss_id: f35f56b7048a74244ab0530e4bc705cc71125862
     gs_id: 18333796385560193193 16793725927913159067
-    citations: 46
+    citations: 47
 
   - key: caponnetto-fix
     title: Fixing an error in Caponnetto and de Vito (2007)
@@ -2679,7 +2679,7 @@ papers:
     gs_id: 9179369638374246622
     year: 2017
     date: 2017-02-09
-    citations: 6
+    citations: 7
 
   - key: trump-clinton
     title: Understanding the 2016 US Presidential Election using ecological inference and distribution regression with census microdata
@@ -2699,7 +2699,7 @@ papers:
     date: 2016-11-11
     ss_id: 3962dfb23f150b25307bb50112dbad67636f28ec
     gs_id: 10764238927160739355
-    citations: 33
+    citations: 32
 
   - key: opt-mmd
     title: Generative Models and Model Criticism via Optimized Maximum Mean Discrepancy
@@ -2724,7 +2724,7 @@ papers:
       - Oxford talk: '#talk-oxford-opt-mmd'
     ss_id: d772a21f2f687985b41bec2dc47bc2760c57ed2f
     gs_id: 14039271793330969441 11531994075904943226
-    citations: 294
+    citations: 296
 
   - key: thesis
     title: Scalable, Flexible, and Active Learning on Distributions
@@ -2798,7 +2798,7 @@ papers:
     arXiv: '1509.05409'
     ss_id: 45c0b51a6543f0fdfbf504838059f7acdfc0e409
     gs_id: 5213844651993496360
-    citations: 94
+    citations: 95
 
   - key: hdd
     title: Linear-time Learning on Distributions with Approximate Kernel Embeddings
@@ -2853,7 +2853,7 @@ papers:
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/rff_uai15.pdf
     ss_id: 78e95099ec2ac3cb087eb47ba7c87ddb01a19405
     gs_id: 2736757817032849196
-    citations: 290
+    citations: 298
 
   - key: apps
     title: Active Pointillistic Pattern Search
@@ -2911,7 +2911,7 @@ papers:
     arXiv: '1410.0686'
     ss_id: f5b6eb5c3fa7eb7a569d6c2af0a43f7123034bd0
     gs_id: 15766717484171055980
-    citations: 136
+    citations: 137
 
   - key: active-mf
     title: Active learning and search on low-rank matrices
@@ -2948,7 +2948,7 @@ papers:
     arXiv: '1202.0302'
     ss_id: a87ba84a66b769fd58aea07a0bba749b1426c934
     gs_id: 18253015138965857725 2233414225380654183
-    citations: 35
+    citations: 36
 
   - key: sdm-cvpr
     title: Nonparametric kernel estimators for image classification
@@ -2966,7 +2966,7 @@ papers:
         # - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/cvpr-12.pdf
     ss_id: 76710cce6eb7f6cab032f8ec0832b47a474fd285
     gs_id: 5009114706015842197
-    citations: 66
+    citations: 65
     collabinfo: I joined this project when it was already underway, but did significant portions of the work.
 
   - key: guts
@@ -3032,7 +3032,7 @@ papers:
 
 talks:
   - key: kci-birs
-    title: "Kernel measures of (conditional) dependence: a foundational statistical problem"
+    title: 'Kernel measures of (conditional) dependence: a foundational statistical problem'
     type: national
     date: 2025-09-15
     venue: birs-kagp
