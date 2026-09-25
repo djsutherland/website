@@ -1560,10 +1560,21 @@ papers:
       - marcus
       - me
     year: 2026
-    date: 2026-05-31
-    venue: preprint
+    date: 2026-12-06
+    venue: neurips
+    note: Position paper.
     related: !!omap
       - pdf: https://djsutherland.ml/papers/nfl-ait.pdf
+
+  - key: floe
+    title: Bet Imaginatively, not Historically in Independent-Data Sequential Testing
+    authors:
+      - nate
+      - feng
+      - me
+    year: 2026
+    date: 2026-12-06
+    venue: neurips
 
   - key: skci
     title: Sequential Kernel-based Conditional Independence Testing via Adaptive Betting
@@ -1675,7 +1686,7 @@ papers:
     submitted-date: 2025-05-15
     venue: neurips
     accept-kind: spotlight
-    note: Selected for spotlight presentation.
+    addendum: Selected for spotlight presentation.
     gs_id: 12544415138696676225 95634009803109080
     citations: 7
 
@@ -1693,7 +1704,7 @@ papers:
     date: 2025-07-18
     # official: https://openreview.net/forum?id=eyPPunAzSr
     accept-kind: best paper
-    note: Best Paper Award.
+    addendum: Best Paper Award.
     full_version: thr-grpo
 
   - key: lld-grpo-ai4math
@@ -1840,7 +1851,7 @@ papers:
     citations: 158
     official: https://openreview.net/forum?id=tPNHOoZFl9
     accept-kind: outstanding paper
-    note: Outstanding Paper Award.
+    addendum: Outstanding Paper Award.
 
   - key: spexphormer
     title: Even Sparser Graph Transformers
@@ -2060,7 +2071,7 @@ papers:
     year: 2023
     date: 2023-06-12
     accept-kind: best paper
-    note: Best Paper award.
+    addendum: Best Paper award.
     authors:
       - queerinai
       - anaelia
@@ -2147,7 +2158,7 @@ papers:
     year: 2023
     arXiv: '2212.08645'
     accept-kind: notable (top 5%)
-    note: Selected as notable (top 5%), i.e. as an oral.
+    addendum: Selected as notable (top 5%), i.e. as an oral.
     date: 2023-05-01
     ss_id: 422b68799bfc5cae91febc5c33d59e28b067a368
     gs_id: 7462248955033708193
@@ -2342,7 +2353,7 @@ papers:
     year: 2021
     date: 2021-12-06
     venue: neurips
-    note: Selected for oral presentation.
+    addendum: Selected for oral presentation.
     accept-kind: oral
     arXiv: '2106.09276'
     related: !!omap
@@ -2435,7 +2446,7 @@ papers:
     year: 2021
     date: 2021-04-13
     venue: aistats
-    note: Selected for oral presentation.
+    addendum: Selected for oral presentation.
     accept-kind: oral
     ss_id: 1fc4470c1766aea4c435015f5ef873b066f50121
     gs_id: 12319413802596970196
@@ -2451,7 +2462,7 @@ papers:
       - nati
     collabinfo: I joined this project after Lijia and Nati had begun work on it. I took over weekly supervision at the start of the pandemic, proved several of the theorems, and wrote much of the paper, with Nati's feedback.
     venue: neurips
-    note: Selected for spotlight presentation.
+    addendum: Selected for spotlight presentation.
     accept-kind: spotlight
     year: 2020
     date: 2020-12-06
@@ -2617,7 +2628,7 @@ papers:
       - slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/bdr-nips/
       - poster: http://www.gatsby.ucl.ac.uk/~dougals/posters/bdr-nips17ws.pdf
     full_version: bdr
-    note: Selected for oral presentation.
+    addendum: Selected for oral presentation.
     accept-kind: oral
     my_talk: true
     citations: 0
@@ -2634,7 +2645,7 @@ papers:
     venue: aistats
     year: 2018
     date: 2018-04-09
-    note: Selected for oral presentation.
+    addendum: Selected for oral presentation.
     accept-kind: oral
     related: !!omap
       - slides: http://www.gatsby.ucl.ac.uk/~dougals/slides/aistats18/
@@ -2923,7 +2934,7 @@ papers:
     year: 2013
     date: 2013-08-11
     doi: 10.1145/2487575.2487627
-    note: Selected for oral presentation.
+    addendum: Selected for oral presentation.
     accept-kind: oral
     related: !!omap
       - pdf: http://www.gatsby.ucl.ac.uk/~dougals/papers/kdd-13.pdf
