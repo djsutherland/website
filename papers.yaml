@@ -219,9 +219,15 @@ coauthors:
   distefano:
     first: Rosanne
     last: Di Stefano
+  dominique-beaini:
+    first: Dominique
+    last: Beaini
   dvorkin:
     first: Cora
     last: Dvorkin
+  emmanuel-noutahi:
+    first: Emmanuel
+    last: Noutahi
   evrard:
     first: August E.
     last: Evrard
@@ -270,6 +276,9 @@ coauthors:
     last: Harder
     web: https://is.mpg.de/person/fharder
     student_years: [2000, 2024]
+  frederik-wenkel:
+    first: Frederik
+    last: Wenkel
   gabriel-oliveira:
     first: Gabriel
     last: Oliveira
@@ -1552,6 +1561,19 @@ papers:
     date: 2026-09-21
     venue: preprint
     arXiv: '2609.24221'
+
+  - key: seeder
+    title: SeedER: Seed-and-Expand Retrieval from Knowledge Graphs
+    bibtex_title: '{SeedER}: Seed-and-Expand Retrieval from Knowledge Graphs'
+    authors:
+      - hamed
+      - frederik-wenkel
+      - me
+      - emmanuel-noutahi
+    year: 2026
+    date: 2026-05-22
+    venue: preprint
+    arXiv: '2605.23753'
 
   - key: nfl-ait
     title: Understanding Generalization Requires Universal Induction
