@@ -1561,10 +1561,9 @@ papers:
       - me
     year: 2026
     date: 2026-12-06
+    arXiv: '2609.34458'
     venue: neurips
     note: Position paper.
-    related: !!omap
-      - pdf: https://djsutherland.ml/papers/nfl-ait.pdf
 
   - key: floe
     title: Bet Imaginatively, not Historically in Independent-Data Sequential Testing
