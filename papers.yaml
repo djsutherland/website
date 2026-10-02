@@ -29,6 +29,10 @@ coauthors:
     last: Ren
     web: https://joshua-ren.github.io/
     my_student_years: [2020, 2026]
+  ke:
+    first: Ke
+    last: Zhang
+    my_student_years: [2024, 3000]
   milad:
     first: Milad
     last: Jalali Asadabadi
@@ -173,6 +177,10 @@ coauthors:
     first: Chao
     last: Lei
     student_years: [2000, 3000]
+  chao-liu:
+    first: Chao
+    last: Liu
+    web: https://chaoliu.tech
   chapel:
     first: Laetitia
     last: Chapel
@@ -1553,6 +1561,17 @@ cite_meta:
   i10_index_5y: 44
 
 papers:
+  - key: memorize-adapt-ignore
+    title: "Memorize, Adapt, Ignore: Diagnosing Robot Learning Mechanisms under Training Data Variation"
+    authors:
+      - ke
+      - me
+      - chao-liu
+    year: 2026
+    date: 2026-09-29
+    venue: preprint
+    arXiv: '2609.38401'
+
   - key: pointwise-ci
     title: Conditional Independence Is Not (Quite) Pointwise Testable
     authors:
@@ -1563,7 +1582,7 @@ papers:
     arXiv: '2609.24221'
 
   - key: seeder
-    title: SeedER: Seed-and-Expand Retrieval from Knowledge Graphs
+    title: "SeedER: Seed-and-Expand Retrieval from Knowledge Graphs"
     bibtex_title: '{SeedER}: Seed-and-Expand Retrieval from Knowledge Graphs'
     authors:
       - hamed
