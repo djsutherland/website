@@ -1561,8 +1561,18 @@ cite_meta:
   i10_index_5y: 44
 
 papers:
+  - key: global-or-graph
+    title: 'Global Communication or Graph-Specific Memory?'
+    authors:
+      - hamed
+      - me
+    year: 2026
+    date: 2026-10-05
+    venue: preprint
+    arXiv: '2610.05874'
+
   - key: memorize-adapt-ignore
-    title: "Memorize, Adapt, Ignore: Diagnosing Robot Learning Mechanisms under Training Data Variation"
+    title: 'Memorize, Adapt, Ignore: Diagnosing Robot Learning Mechanisms under Training Data Variation'
     authors:
       - ke
       - me
