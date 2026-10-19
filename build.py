@@ -135,9 +135,13 @@ def bibtex_type(paper, venue):
 
 @filter
 def ar_info(paper, venue, verbose=False, first_only=False):
-    if "accepts" not in venue or paper["year"] not in venue["accepts"]:
+    if "accept-track" in paper:
+        accepts = venue.get("accepts_by_track", {}).get(paper["accept-track"], {})
+    else:
+        accepts = venue.get("accepts", {})
+    if paper["year"] not in accepts:
         return None
-    info = venue["accepts"][paper["year"]]
+    info = accepts[paper["year"]]
 
     this_kind = paper.get("accept-kind", "unspecial")
 

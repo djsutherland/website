@@ -971,7 +971,7 @@ venues:
         - submitted: 11672
       2026: !!omap
         - unspecial: 5335
-        - sumbitted: 18746
+        - submitted: 18746
     h5_rank: 8
 
   icml:
@@ -1084,10 +1084,12 @@ venues:
       2026: !!omap
         - unspecial: 7900
         - submitted: 30709
-      # 2026 position paper track:
-      # - unspecial: 135
-      # - submitted: 667
-      # "There were 956 submissions to the NeurIPS Position Paper Track this year. The program committee desk rejected 289 papers due to LLM usage. Of the 590 remaining papers that had not been withdrawn before the final decision stage, we accepted 135, corresponding to an acceptance rate of 22.9%."
+    accepts_by_track:
+      position:
+        2026: !!omap
+          - unspecial: 135
+          - submitted: 667  # 956 submissions minus 289 desk rejections
+          # "There were 956 submissions to the NeurIPS Position Paper Track this year. The program committee desk rejected 289 papers due to LLM usage. Of the 590 remaining papers that had not been withdrawn before the final decision stage, we accepted 135, corresponding to an acceptance rate of 22.9%."
     h5_rank: 7
 
   uai:
@@ -1624,6 +1626,7 @@ papers:
     date: 2026-12-06
     arXiv: '2609.34458'
     venue: neurips
+    accept-track: position
     note: Position paper.
     gs_id: 14981072411367473527
 
