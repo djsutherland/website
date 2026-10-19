@@ -969,6 +969,9 @@ venues:
         - spotlight: 380
         - unspecial: 3111
         - submitted: 11672
+      2026: !!omap
+        - unspecial: 5335
+        - sumbitted: 18746
     h5_rank: 8
 
   icml:
@@ -1078,6 +1081,13 @@ venues:
         - spotlight: 688
         - unspecial: 4525
         - submitted: 21575
+      2026: !!omap
+        - unspecial: 7900
+        - submitted: 30709
+      # 2026 position paper track:
+      # - unspecial: 135
+      # - submitted: 667
+      # "There were 956 submissions to the NeurIPS Position Paper Track this year. The program committee desk rejected 289 papers due to LLM usage. Of the 590 remaining papers that had not been withdrawn before the final decision stage, we accepted 135, corresponding to an acceptance rate of 22.9%."
     h5_rank: 7
 
   uai:
@@ -3097,7 +3107,7 @@ talks:
   - key: kci-birs
     title: 'Kernel measures of (conditional) dependence: a foundational statistical problem'
     type: national
-    date: 2025-09-15
+    date: 2026-09-15
     venue: birs-kagp
     papers:
       - split-kci
