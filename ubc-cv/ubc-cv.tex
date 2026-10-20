@@ -240,6 +240,11 @@
 \iftoggle{ubcformat}{}{
     ~\vspace*{-3ex}
 
+    AI 240: Introduction to Machine Learning is a new course I am developing,
+    to be taught for the first time beginning January 2027.
+    This will eventually be a core course for all computer science undergraduates;
+    I am also developing a sequel, AI 340, to teach the following year.
+
     CPSC 532D: Modern Statistical Learning Theory
     is a graduate course giving students the broad background in learning theory
     required for mathematical understanding of machine learning theory.
@@ -254,8 +259,10 @@
 }
 
 \begin{coursetable}
-  \newtable 25-26 W2  & CPSC 440+550 & 3 & 140+17        & 3/week  & 1h/week office hours \\
-  \newtable 25-26 W1  & CPSC 532D    & 3 & 17            & 3/week  & 1h/week office hours \\
+  \newtable 26-27 W2  & AI 240       & 4 & {\small tbd}  & 3/week  & 1h/week office hours \\
+  \newtable 26-27 W1  & CPSC 532D    & 3 & 19            & 3/week  & 1h/week office hours \\
+            25-26 W2  & CPSC 440+550 & 3 & 140+17        & 3/week  & 1h/week office hours \\
+            25-26 W1  & CPSC 532D    & 3 & 17            & 3/week  & 1h/week office hours \\
             24-25 W2  & CPSC 440+550 & 3 & 67+22         & 3/week  & 1h/week office hours \\
             24-25 W1  & CPSC 532D    & 3 &  9            & 3/week  & 2h/week office hours \\
             23-24 W2  & CPSC 440+550 & 3 & 96+16         & 3/week  & 1h/week office hours \\
@@ -993,13 +1000,14 @@ Most of these papers have (or will have) a corresponding conference version abov
   \newrefcontext[labelprefix=P]
   \printbibliography[heading=none,filter=prep]
 }{
-  \nasection{\ulsection{WORK SUBMITTED}
-
-  Not applicable.}
-
-  \nasection{\ulsection{WORK IN PROGRESS}
-
-  Not applicable.}
+  \ifboolexpr{togl{ubcformat}}{
+    \nasection{\ulsection{WORK SUBMITTED} Not applicable.}
+    \nasection{\ulsection{WORK IN PROGRESS} Not applicable.}
+  }{
+    \ulsection{PREPRINTS}
+    \newrefcontext[labelprefix=P]
+    \printbibliography[heading=none,filter=preprint]
+  }
 }
 
 \end{document}
