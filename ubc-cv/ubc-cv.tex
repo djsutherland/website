@@ -909,21 +909,21 @@ Highly-cited papers are noted below, to the tens/hundreds of citations.
 
 \ulsection{REFEREED PUBLICATIONS}
 
-\subsection{Conference Proceedings}
+% \bibsection / \bibsubsection (tweaks.tex) print the heading only if the
+% filtered bibliography is non-empty (and otherwise still bump the counter in
+% the UBC format, like \nasection / \nasubsection).
+
 \newrefcontext[labelprefix=C]
-\printbibliography[heading=none,filter=conf]
+\bibsubsection{Conference Proceedings}{filter=conf}
 
-\subsection{Journals}
 \newrefcontext[labelprefix=J]
-\printbibliography[heading=none,filter=journal]
+\bibsubsection{Journals}{filter=journal}
 
-\subsection{Workshop Proceedings}
-\remark{Workshops in machine learning play a similar role to conferences in most fields;
+\defbibnote{workshopnote}{\remark{Workshops in machine learning play a similar role to conferences in most fields;
 submissions are peer-reviewed but acceptance rates are high (and typically not published).
-Most of these papers have (or will have) a corresponding conference version above.}
-
+Most of these papers have (or will have) a corresponding conference version above.}}
 \newrefcontext[labelprefix=W]
-\printbibliography[heading=none,filter=workshop]
+\bibsubsection{Workshop Proceedings}{filter=workshop,prenote=workshopnote}
 
 \nasubsection{
 \subsection{Other}
@@ -935,19 +935,14 @@ Most of these papers have (or will have) a corresponding conference version abov
 
 \ulsection{NON-REFEREED PUBLICATIONS}
 
-\nasubsection{
-\subsection{Journals}
-}
+\newrefcontext[labelprefix=JN]
+\bibsubsection{Journals}{filter=journalnoreview}
 
-\nasubsection{
-\subsection{Conferences}
 \newrefcontext[labelprefix=CN]
-\printbibliography[heading=none,filter=confnoreview]
-}
+\bibsubsection{Conferences}{filter=confnoreview}
 
-\subsection{Other}
 \newrefcontext[labelprefix=N]
-\printbibliography[heading=none,filter=noreview]
+\bibsubsection{Other}{filter=noreview}
 
 
 \nasection{%
@@ -993,21 +988,18 @@ Most of these papers have (or will have) a corresponding conference version abov
 
 
 \ifboolexpr{togl{ubcformat} and not togl{annualReview}}{
-  \ulsection{WORK SUBMITTED} % (including publisher and date of submission)
   \newrefcontext[labelprefix=S]
-  \printbibliography[heading=none,filter=submission]
+  \bibsection{WORK SUBMITTED}{filter=submission} % (including publisher and date of submission)
 
-%  \ulsection{WORK IN PROGRESS} % (including degree of completion)
-%  \newrefcontext[labelprefix=P]
-%  \printbibliography[heading=none,filter=prep]
+  \newrefcontext[labelprefix=P]
+  \bibsection{WORK IN PROGRESS}{filter=prep} % (including degree of completion)
 }{
   \ifboolexpr{togl{ubcformat}}{
     \nasection{\ulsection{WORK SUBMITTED} Not applicable.}
     \nasection{\ulsection{WORK IN PROGRESS} Not applicable.}
   }{
-    \ulsection{PREPRINTS}
     \newrefcontext[labelprefix=P]
-    \printbibliography[heading=none,filter=preprint]
+    \bibsection{PREPRINTS}{filter=preprint}
   }
 }
 

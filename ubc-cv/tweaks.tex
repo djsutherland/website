@@ -534,6 +534,21 @@
 }
 \defbibfilter{preprint}{ keyword=preprint }
 
+%% Bibliography blocks whose heading is only printed when the block has
+%% entries. \printbibliography applies the filter before printing anything, so
+%% with the heading passed via heading= an empty block prints nothing at all.
+%% In the UBC format we then still advance the section counter, exactly as
+%% \nasection / \nasubsection do for sections that aren't there.
+\newif\ifubcbibprinted
+\defbibheading{ubcsection}[\refname]{\global\ubcbibprintedtrue\ulsection{#1}}
+\defbibheading{ubcsubsection}[\refname]{\global\ubcbibprintedtrue\subsection{#1}}
+\newcommand{\ubcbibblock}[3]{% {section|subsection}{title}{\printbibliography options}
+  \global\ubcbibprintedfalse
+  \printbibliography[heading=ubc#1,title={#2},#3]%
+  \ifubcbibprinted\else\iftoggle{ubcformat}{\addtocounter{#1}{1}}{}\fi}
+\newcommand{\bibsection}[2]{\ubcbibblock{section}{#1}{#2}}
+\newcommand{\bibsubsection}[2]{\ubcbibblock{subsection}{#1}{#2}}
+
 % handle pubstate = {toappear}
 % https://tex.stackexchange.com/a/408041/9019
 \NewBibliographyString{toappear}
