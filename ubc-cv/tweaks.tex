@@ -16,6 +16,19 @@
 \usepackage{lipsum} % Lipsum
 \usepackage{titlesec}
 
+% Keep headings with the start of what follows them. In particular, longtable
+% (coursetable, suptable, supcommtable, usuptable, granttable, extcomtable, ...)
+% inserts its own page-break point before the table, and forces a break if its
+% header + first row won't fit, which can strand the heading at a page bottom.
+\usepackage{needspace}
+\newcommand{\headingneedspace}{\Needspace{7\baselineskip}}
+\let\origsection\section
+\renewcommand{\section}{\headingneedspace\origsection}
+\let\origsubsection\subsection
+\renewcommand{\subsection}{\headingneedspace\origsubsection}
+\let\origparagraph\paragraph
+\renewcommand{\paragraph}{\headingneedspace\origparagraph}
+
 % Font to arial
 \usepackage{helvet}
 \renewcommand{\familydefault}{\sfdefault}
