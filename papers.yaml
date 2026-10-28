@@ -275,7 +275,7 @@ coauthors:
     first: Frederic
     last: Koehler
     web: https://frkoehle.github.io
-    student_years: [2000, 2023]
+    student_years: [2000, 2024]
   frederick-tung:
     first: Frederick
     last: Tung
@@ -1112,6 +1112,10 @@ venues:
     type: journal
     web: https://iopscience.iop.org/0004-637X/
 
+  bernoulli:
+    name: Bernoulli
+    type: journal
+
   jair:
     name: Journal of Artificial Intelligence Research
     short: JAIR
@@ -1580,7 +1584,7 @@ papers:
       - me
     year: 2026
     date: 2026-10-05
-    venue: preprint
+    venue: tech-report
     arXiv: '2610.05874'
 
   - key: memorize-adapt-ignore
@@ -1592,6 +1596,7 @@ papers:
     year: 2026
     date: 2026-09-29
     venue: preprint
+    submitted: iclr
     arXiv: '2609.38401'
 
   - key: pointwise-ci
@@ -1599,8 +1604,9 @@ papers:
     authors:
       - me
     year: 2026
-    date: 2026-09-21
+    date: 2026-10-10
     venue: preprint
+    submitted: bernoulli
     arXiv: '2609.24221'
 
   - key: seeder
@@ -1614,6 +1620,7 @@ papers:
     year: 2026
     date: 2026-05-22
     venue: preprint
+    submitted: iclr
     arXiv: '2605.23753'
 
   - key: nfl-ait
