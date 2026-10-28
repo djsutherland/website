@@ -789,9 +789,14 @@
 % now in ubc-cv-citation-info.tex so it can loop over thresholds
 \AtEveryBibitem{%
   \csappto{blx@bbx@\thefield{entrytype}}{% put at end of entry
-    \rightsymb{%
+    % Only use \rightsymb when there is actually something to right-align:
+    % with empty content it still emits \hskip.2em\hfill, which wraps onto
+    % an empty extra line whenever the entry's last line is already full.
+    \ifboolexpr{test {\iffieldundef{usera}} and test {\iffieldundef{userb}}}
+    {\par}
+    {\rightsymb{%
       \iffieldundef{usera}{\space}{\space\printfield{usera}}%
-      \iffieldundef{userb}{}{\printfield{userb}}
+      \iffieldundef{userb}{}{\printfield{userb}}%
       %\ifkeyword{cites1000}{\citestext{$\ge 1\,000$}}{}%
       %\ifkeyword{cites500}{\citestext{$\ge 500$}}{}%
       %\ifkeyword{cites100}{\citestext{$\ge 100$}}{}%
@@ -800,7 +805,7 @@
       % \ifkeyword{cites1000}{$\;$\includegraphics[height=9pt]{figs/1000-cites.pdf}}{}%
       % \ifkeyword{cites100}{$\;$\includegraphics[height=9pt]{figs/100-cites.pdf}}{}%
       % \ifkeyword{cites10}{$\;$\includegraphics[height=9pt]{figs/10-cites.pdf}}{}%
-    }%
+    }}%
     \printfield{abstract}%
   }
 }
